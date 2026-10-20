@@ -1,0 +1,25 @@
+TITLE Viscosity problem
+SOLUTION 1
+    temp      25
+    pH        8.0
+    units     ppm
+    Ca        50
+    Mg        12
+    Na        20
+    K         2
+    Alkalinity 150 as HCO3
+    S(6)      40
+    Cl        15
+REACTION 1
+    H2O -1
+    1.0 moles in 50 steps
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Gypsum  0 0
+    Halite  0 0
+SELECTED_OUTPUT
+    -file viscosity.sel
+    -reset false
+    -solution true
+    -totals Cl Na Ca Mg K S(6) Alkalinity
+END

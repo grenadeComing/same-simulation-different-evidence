@@ -1,0 +1,54 @@
+SOLUTION 0
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 1
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 2-10
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 11
+    pH 7 charge
+    Na 1
+    Cl 1
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -lengths 1 1 1 1 1 1 1 1 1 1
+    -dispersivities 0 0 0 0 0 0 0 0 0 0
+    -boundary_conditions flux flux
+    -initial_time 0
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file sel.out
+    -reset false
+    -time true
+    -distance true
+    -totals Ca Na Cl
+    -pH
+    -solution
+    -equilibrium_phases false
+    -saturation_indices false
+
+USER_PUNCH
+    -headings shift cell exch8_CaX2
+10  PUNCH KINETIC_SHIFT, CELL_NO

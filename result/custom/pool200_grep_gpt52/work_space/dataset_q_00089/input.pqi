@@ -1,0 +1,16 @@
+SOLUTION 1 Pure water pH7 150C
+    temp 150
+    pH 7 charge
+    pe 0
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+USER_PUNCH
+    -headings pe
+    10 PUNCH PE
+END

@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp      100
+    pH        3.0
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1.0
+    water     1.0 # kg
+
+EQUILIBRIUM_PHASES 1
+    K-mica          0.0  10.0
+    Kaolinite       0.0  10.0
+    Dolomite        0.0  10.0
+    Epsomite        0.0  10.0
+    Fe(OH)3(a)      0.0  10.0
+    Halite          0.0  10.0
+
+SELECTED_OUTPUT
+    -file           sim_100c_ph3.out
+    -reset          false
+    -temperature    true
+    -pH             true
+    -ionic_strength true
+    -totals         K Na Ca Mg Fe Al Si Cl S C
+
+USER_PUNCH
+    -headings SC_uS_cm
+    -start
+10 PUNCH SC
+    -end
+
+END

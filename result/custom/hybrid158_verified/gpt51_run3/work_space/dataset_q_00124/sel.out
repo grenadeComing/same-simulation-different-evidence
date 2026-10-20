@@ -1,0 +1,2 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	          Ca	          Na	          Cl	       false	     d_false	    si_false	    pressure	   total mol	      volume	     g_false	     k_false	    dk_false	     s_false	     V_false	
+           1	      i_soln	           0	         -99	         -99	         -99	     6.99361	           4	  1.0000e-03	  0.0000e+00	  2.0000e-03	  0.0000e+00	  0.0000e+00	   -999.9990	  0.0000e+00	  0.0000e+00	  0.0000e+00	  0.0000e+00	  0.0000e+00	  0.0000e+00	  0.0000e+00	

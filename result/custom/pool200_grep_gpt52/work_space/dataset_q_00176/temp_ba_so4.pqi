@@ -1,0 +1,17 @@
+SOLUTION 1
+    temp 25
+    units mg/L
+    Ba 2.0
+    S(6) 15.0
+    pH 7 charge
+
+REACTION_TEMPERATURE 1
+    25 95 in 5
+
+SELECTED_OUTPUT
+    -file temp_ba_so4.sel
+    -reset false
+USER_PUNCH
+    -headings step temp Ba_m
+10 PUNCH TOTAL_TIME, TC, TOT("Ba")
+END

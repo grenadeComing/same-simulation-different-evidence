@@ -1,0 +1,17 @@
+TITLE Pyrite oxidation equilibrium, 1 kg water, 25C, log PO2=-0.7, allow 0.1 mol pyrite; goethite+gypsum possible
+SOLUTION 1
+  temp 25
+  pH 7 charge
+  -water 1
+EQUILIBRIUM_PHASES 1
+  O2(g) -0.7 10
+  Pyrite 0 0.1
+  Goethite 0 0
+  Gypsum 0 0
+SELECTED_OUTPUT
+  -reset false
+  -high_precision true
+  -pH true
+  -totals Fe S(6) Ca
+  -si Pyrite Goethite Gypsum
+END

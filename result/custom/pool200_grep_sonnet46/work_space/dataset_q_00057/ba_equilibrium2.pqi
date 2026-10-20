@@ -1,0 +1,25 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    units     mmol/kgw
+    Ba        100
+    Mn        1e-10
+    Mg        1e-10
+    Si        1e-10
+    Pb        1e-10
+    C         1e-10
+
+EQUILIBRIUM_PHASES 1
+    Talc           0  10
+    Rhodochrosite  0  10
+    Sepiolite      0  10
+    Sepiolite(d)   0  10
+    Pb(OH)2        0  10
+
+SELECTED_OUTPUT
+    -file     ba_equilibrium2.sel
+    -pH       true
+    -temp     true
+    -si       Talc Rhodochrosite Sepiolite Sepiolite(d) Pb(OH)2
+
+END

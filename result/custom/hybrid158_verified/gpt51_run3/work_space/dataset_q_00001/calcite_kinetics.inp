@@ -1,0 +1,38 @@
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    pe 4
+    units mmol/kgw
+    C(4) 0.5
+    Mn 1
+
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3 0
+
+KINETICS 1
+    Calcite_kin 1.0
+    -formula CaCO3 1
+    -m0 1.0
+    -steps 10*100
+    -cvode false
+
+RATES
+    Calcite_kin
+    -start
+    10 REM Kinetic rate for calcite dissolution, simple constant rate
+    20 k = 0.001
+    30 ssa = 10.0
+    40 rate = k * ssa
+    50 moles = rate * TIME
+    60 SAVE moles
+    -end
+
+SELECTED_OUTPUT
+    -file calcite_kinetics.sel
+    -reset false
+    -time true
+    -pH true
+    -step true
+    -kinetic_reactants true
+
+END

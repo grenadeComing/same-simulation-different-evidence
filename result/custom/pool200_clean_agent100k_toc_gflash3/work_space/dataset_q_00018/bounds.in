@@ -1,0 +1,23 @@
+
+SOLUTION 1
+    temp 200
+    pH 2.0
+    units mmol/kgw
+    Fe(+3) 4.0
+    Fe(+2) 4.0
+    Cl 10.0 charge
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+
+# Case 1: No Albite dissolution
+END
+
+# Case 2: Equilibrium with Albite
+USE solution 1
+USE gas_phase 1
+EQUILIBRIUM_PHASES 1
+    Albite 0 1.0
+END

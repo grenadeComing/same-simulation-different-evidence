@@ -1,0 +1,46 @@
+SOLUTION 1
+    temp      200
+    pH        2 charge
+    pe        4
+    units     mmol/kgw
+    Cu        10
+    Ba        5
+
+EQUILIBRIUM_PHASES 1
+    CO2(g)   -3 0
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  0
+        -parms 10 1.0
+        -steps 100 in 10 seconds
+        -bad_step_max 500
+
+RATES
+Calcite
+-start
+10 k = PARM(1)
+20 ssa = PARM(2)
+30 m = M
+40 if (m <= 0) then goto 200
+50 rate = k * ssa
+60 moles = rate * TIME
+70 SAVE moles
+200 END
+-end
+
+SELECTED_OUTPUT
+    -reset false
+    -file calcite_kinetics.sel
+    -time true
+    -alk true
+    -step true
+
+USER_PUNCH
+    -headings step alkalinity
+    -start
+    10 PUNCH STEP_NO, TOT("Alk")
+    -end
+
+END

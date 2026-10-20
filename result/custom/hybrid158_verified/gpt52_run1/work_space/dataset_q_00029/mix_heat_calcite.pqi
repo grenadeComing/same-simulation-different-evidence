@@ -1,0 +1,35 @@
+TITLE Mix DIC and Ca solutions 1:1; heat 20C to 200C in 10 steps; allow calcite precip/dissolve
+
+SOLUTION 1 DIC_solution
+    temp 20
+    pH   7 charge
+    units mmol/kgw
+    C(4) 50
+
+SOLUTION 2 Ca_solution
+    temp 20
+    pH   7 charge
+    units mmol/kgw
+    Ca   50
+
+MIX 1
+    1 0.5
+    2 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+REACTION_TEMPERATURE 1
+    20 200 in 10
+
+SELECTED_OUTPUT
+    -file mix_heat_sel.csv
+    -reset false
+    -temperature true
+    -si Calcite
+    -state false
+USER_PUNCH
+    -headings logIAP_Calcite
+10 PUNCH (SI("Calcite") + LK_PHASE("Calcite"))
+
+END

@@ -1,0 +1,51 @@
+TITLE Mix river water (pH 6.0, Cl 10) and seawater (pH 8.1, Cl 19000) at 0.7:0.3 ratio
+
+# Solution 1: River water - only pH and Cl specified
+SOLUTION 1 River Water
+    pH      6.0
+    temp    25
+    units   mg/L
+    Cl      10
+
+# Solution 2: Seawater - full composition with Cl 19000 mg/L
+# Standard seawater composition scaled to Cl = 19000 mg/L
+# Standard seawater has Cl ~ 19354 mg/L (salinity ~35)
+# Scale factor = 19000/19354 = 0.9817
+# Standard seawater major ions (mg/L):
+# Na: 10752, Mg: 1295, Ca: 416, K: 380, Sr: 13
+# SO4: 2701, HCO3: 145, Br: 67, B: 4.6, F: 1.3
+# Scaled to Cl=19000:
+SOLUTION 2 Seawater
+    pH      8.1
+    temp    25
+    units   mg/L
+    Cl      19000
+    Na      10540    # 10752 * (19000/19354)
+    Mg      1272     # 1295 * (19000/19354)
+    Ca      408      # 416 * (19000/19354)
+    K       373      # 380 * (19000/19354)
+    S(6)    2652     as SO4   # 2701 * (19000/19354)
+    C       142      as HCO3  # 145 * (19000/19354)
+    Br      65.7     # 67 * (19000/19354)
+    B       4.5      # 4.6 * (19000/19354)
+    F       1.28     # 1.3 * (19000/19354)
+    Sr      12.8     # 13 * (19000/19354)
+
+# Mix 70% river water + 30% seawater
+MIX 1
+    1   0.7
+    2   0.3
+
+SAVE SOLUTION 3
+
+END
+
+USE SOLUTION 3
+
+SELECTED_OUTPUT
+    -file           mix_output2.sel
+    -reset          false
+    -solution       true
+    -pH             true
+
+END

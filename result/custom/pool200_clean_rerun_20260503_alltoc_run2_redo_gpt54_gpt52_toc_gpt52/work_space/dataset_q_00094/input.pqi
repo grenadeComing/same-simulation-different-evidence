@@ -1,0 +1,15 @@
+TITLE Pure water pH 7, 150C, equilibrate with chrysotile and talc; report SI quartz
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    -water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+SELECTED_OUTPUT
+    -file selected.csv
+    -reset false
+USER_PUNCH
+    -headings SI_Quartz
+    10 PUNCH SI("Quartz")
+END

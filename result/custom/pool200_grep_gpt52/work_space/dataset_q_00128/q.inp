@@ -1,0 +1,7 @@
+SOLUTION 1 Pure water
+    pH 7.0 charge
+    units mol/kgw
+    temp 25
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+END

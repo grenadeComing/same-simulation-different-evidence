@@ -1,0 +1,10 @@
+SOLUTION 1
+    temp 25
+    pH 7.0
+    water 1
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10
+SELECTED_OUTPUT
+    -file selected.txt
+    -alkalinity true
+END

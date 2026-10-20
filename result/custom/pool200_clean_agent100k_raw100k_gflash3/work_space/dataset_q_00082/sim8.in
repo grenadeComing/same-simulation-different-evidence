@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe -5
+END
+EQUILIBRIUM_PHASES 1
+    CO2(g) -0.39794 100
+    Mtg(g) -0.39794 100
+    NH3(g) -0.69897 100
+END
+SELECTED_OUTPUT
+    -file output2.txt
+    -alkalinity true
+    -high_precision true
+END

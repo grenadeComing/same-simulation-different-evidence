@@ -1,0 +1,30 @@
+SOLUTION 1
+    temp      200
+    pH        2
+    pe        4
+    redox     pe
+    units     mmol/kgw
+    Fe(2)     4
+    Fe(3)     4
+
+EQUILIBRIUM_PHASES 1
+    H2S(g) 0.69897 10
+
+KINETICS 1
+    Albite
+        -m0  1.0
+        -m   1.0
+        -parms 1.0  10
+        -tol 1e-8
+
+    -steps 1000 in 100
+
+SELECTED_OUTPUT 1
+    -file result4.out
+    -reset false
+    -step true
+    -totals S(-2) S(6) S
+    -equilibrium_phases H2S(g)
+    -kinetic_reactants Albite
+
+END

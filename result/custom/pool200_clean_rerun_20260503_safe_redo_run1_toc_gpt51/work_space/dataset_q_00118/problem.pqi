@@ -1,0 +1,23 @@
+SOLUTION 1 Pure water
+    pH 7.0 charge
+
+REACTION 1
+    H2SO4 1.0
+    0.001
+    0.005
+    0.01
+    0.05
+    0.1
+
+USE solution 1
+USE reaction 1
+
+SELECTED_OUTPUT
+    -reset false
+    -solution  true
+    -pH        true
+    -pe        true
+    -totals    S(6)
+    -step      true
+    -high_precision  true
+END

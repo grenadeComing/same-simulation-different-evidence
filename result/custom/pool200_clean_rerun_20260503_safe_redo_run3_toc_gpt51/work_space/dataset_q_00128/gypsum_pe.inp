@@ -1,0 +1,6 @@
+SOLUTION 1 Pure water
+    pH 7.0
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+USE solution 1
+END

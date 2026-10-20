@@ -1,0 +1,11 @@
+SOLUTION 1
+END
+USE solution 1
+SELECTED_OUTPUT
+    -file logk.txt
+    -reset false
+    -user_punch true
+USER_PUNCH
+    10 PUNCH "Sepiolite:", LOGK("Sepiolite")
+    20 PUNCH "Sepiolite(d):", LOGK("Sepiolite(d)")
+END

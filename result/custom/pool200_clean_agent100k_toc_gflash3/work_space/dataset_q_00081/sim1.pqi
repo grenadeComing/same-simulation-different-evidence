@@ -1,0 +1,15 @@
+TITLE NH4+ vs NH3 Scenario 1 (Fixed Partial Pressures)
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    CO2(g) -0.3979 10 # log10(0.4) = -0.3979
+    NH3(g) -0.6990 10 # log10(0.2) = -0.6990
+    CH4(g) -0.3979 10 # log10(0.4) = -0.3979
+SELECTED_OUTPUT 1
+    -file output1.sel
+    -molalities NH4+ NH3
+    -pH
+END

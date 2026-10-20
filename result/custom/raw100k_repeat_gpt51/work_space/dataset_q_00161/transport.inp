@@ -1,0 +1,35 @@
+TITLE 1D transport with exchange
+SOLUTION 0
+    pH 7 charge
+    Ca 1
+    Cl 2
+SOLUTION 1-10
+    pH 7 charge
+    Ca 1
+    Cl 2
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+SOLUTION 11
+    pH 7 charge
+    Na 1
+    Cl 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -lengths 1
+    -boundary_conditions flux flux
+    -dispersivities 0
+    -correct_disp false
+    -print_cells 3
+    -print_frequency 1
+    -punch_cells 3
+    -punch_frequency 1
+USER_PUNCH
+    -headings Na_activity
+    -start
+    10 PUNCH ACT("Na+")
+    -end
+END

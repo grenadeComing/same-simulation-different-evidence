@@ -1,0 +1,21 @@
+SOLUTION 1 River
+    pH 6.0 charge
+    units mol/kgw
+    Cl 1e-3
+
+SOLUTION 2 Seawater
+    pH 8.1 charge
+    units mol/kgw
+    Cl 0.535
+
+MIX
+    1 0.7
+    2 0.3
+
+SELECTED_OUTPUT
+    -file mix_sel.out
+    -reset false
+    -solution true
+    -pH true
+    -activities H+
+END

@@ -1,0 +1,33 @@
+TITLE Mixing DIC and Ca solutions with calcite, heating 20-200 C
+SOLUTION 1
+    temp 20
+    pH 7 charge
+    C(4) 0.05
+SOLUTION 2
+    temp 20
+    pH 7 charge
+    Ca 0.05
+MIX 1
+    1 1
+    2 1
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+REACTION_TEMPERATURE 1
+    20 200 in 10
+SELECTED_OUTPUT 1
+    -file mix_calcite.sel
+    -reset false
+    -temperature true
+    -molalities Ca+2 CaHCO3+ CaCO3(aq) CaOH+
+USER_PUNCH 1
+    -headings n_Ca_species
+    -start
+10 REM count aqueous Ca species with m>0
+20 n = 0
+30 IF (TOT("Ca") <= 0) THEN GOTO 80
+40 IF (MOL("Ca+2") > 0) THEN n = n + 1
+50 IF (MOL("CaHCO3+") > 0) THEN n = n + 1
+60 IF (MOL("CaCO3(aq)") > 0) THEN n = n + 1
+70 IF (MOL("CaOH+") > 0) THEN n = n + 1
+80 PUNCH n
+90 END

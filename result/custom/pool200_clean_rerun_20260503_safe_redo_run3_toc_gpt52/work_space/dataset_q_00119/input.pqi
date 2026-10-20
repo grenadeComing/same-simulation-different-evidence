@@ -1,0 +1,16 @@
+SOLUTION 1
+  pH 7 charge
+  temp 25
+  units mol/kgw
+  -water 1
+REACTION 1
+  H2SO4 1
+  0.001 0.005 0.01 0.05 0.1
+  INCREMENTAL_REACTIONS true
+SELECTED_OUTPUT
+  -file selected.txt
+  -reset false
+USER_PUNCH
+  -headings logIAP_H2g
+  10 PUNCH SI("H2(g)")
+END

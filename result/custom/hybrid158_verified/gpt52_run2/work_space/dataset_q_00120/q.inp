@@ -1,0 +1,40 @@
+TITLE 1D transport, exchange, Ca/Na/Cl
+SOLUTION 1-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+END
+
+SOLUTION 0
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+END
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+END
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -high_precision true
+END
+USER_PUNCH
+    -headings step CaX2_1
+10 PUNCH STEP_NO, MOL("CaX2")
+END
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1
+    -dispersivities 0
+    -diffusion_coefficient 0
+    -time_step 1
+    -punch_cells 1
+    -punch_frequency 1
+END

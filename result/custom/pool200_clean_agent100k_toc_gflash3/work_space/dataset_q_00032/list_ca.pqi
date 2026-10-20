@@ -1,0 +1,11 @@
+USER_PRINT
+10 t = SYS("species", count, names, types, moles)
+20 FOR i = 1 TO count
+30   p$ = names(i)
+40   IF (INSTR(p$, "Ca") > 0) THEN PRINT p$
+50 NEXT i
+END
+SOLUTION 1
+    Ca 1
+    C(4) 1
+END

@@ -1,0 +1,12 @@
+SOLUTION 1
+    temp 25
+    # pH 7.0
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10.0
+SELECTED_OUTPUT
+    -file output.sel
+    -reset false
+    -molalities OH-
+    -high_precision true
+END

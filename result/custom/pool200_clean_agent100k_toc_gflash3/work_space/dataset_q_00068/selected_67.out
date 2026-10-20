@@ -1,0 +1,5 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	   si_Pyrite	
+           1	      i_soln	           1	         -99	         -99	         -99	           7	           4	   -999.9990	
+           1	       react	           1	         -99	           0	           1	    0.944741	     19.6859	   -219.5463	
+           2	      i_soln	           2	         -99	         -99	         -99	           7	           4	   -999.9990	
+           2	       react	           2	         -99	           0	           1	    0.944741	     19.6842	   -219.5201	

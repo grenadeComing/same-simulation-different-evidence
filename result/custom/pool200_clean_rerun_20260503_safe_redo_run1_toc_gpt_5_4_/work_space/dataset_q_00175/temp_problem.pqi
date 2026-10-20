@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 25
+    units mg/L
+    pH 7
+    Ba 2.0
+    S(6) 15.0 as SO4
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -temperature true
+    -ionic_strength true
+END

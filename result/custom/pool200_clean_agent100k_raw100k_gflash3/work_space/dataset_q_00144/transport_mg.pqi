@@ -1,0 +1,32 @@
+# Transport simulation with mg/L
+SOLUTION 0
+    units mg/L
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10
+    units mg/L
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    -equilibrate 1
+    X 0.001
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1
+    -dispersivity 0
+    -boundary_conditions flux flux
+
+SELECTED_OUTPUT
+    -file solution_mg.sel
+    -reset false
+    -step
+    -pe
+    -solution
+
+END

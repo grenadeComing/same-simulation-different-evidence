@@ -1,0 +1,7 @@
+SOLUTION 1
+temp 150
+USER_PUNCH 1
+    -start
+    10 PUNCH LK_SPECIES("MgOH+")
+    -end
+END

@@ -1,0 +1,21 @@
+TITLE Pyrite oxidation equilibrium; pH 7; log pO2=-0.7; allow goethite+gypsum
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    O2(g)   -0.7  10
+    Pyrite  0     0.1
+    Goethite 0    0
+    Gypsum   0    0
+SELECTED_OUTPUT
+    -file pyrite_ox_sel.csv
+    -reset false
+    -pH true
+    -totals Fe S Ca
+    -si Goethite Gypsum Pyrite
+USER_PUNCH
+    -headings SC_uScm
+10 PUNCH SC
+END

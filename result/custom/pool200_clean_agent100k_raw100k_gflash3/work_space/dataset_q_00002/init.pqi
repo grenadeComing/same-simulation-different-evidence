@@ -1,0 +1,8 @@
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 4
+    C(4) 0.5
+    Mn 1
+    Cl 1 charge # Adding Cl to balance the 1 mmol Mn2+ and other species
+END

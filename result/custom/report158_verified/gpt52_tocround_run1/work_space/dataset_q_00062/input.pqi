@@ -1,0 +1,20 @@
+TITLE Pyrite oxidation equilibrium in pure water, fixed O2(g)
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    units mol/kgw
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    O2(g)   -0.7  10
+    Pyrite  0    0.1
+    Goethite 0 0
+    Gypsum   0 0
+
+SELECTED_OUTPUT
+    -file selected.csv
+    -reset false
+USER_PUNCH
+    -headings S6_molal
+    10 PUNCH TOT("S(6)")
+END

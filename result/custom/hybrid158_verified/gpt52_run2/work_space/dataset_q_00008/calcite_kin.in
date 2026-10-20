@@ -1,0 +1,24 @@
+TITLE Calcite kinetics pH 2, 200C, Cu and Ba, pe 4
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    Cl 25
+    -water 1
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0 1.0
+        -tol 1e-12
+    -steps 1000 in 100
+USER_PUNCH
+    -head step time_s m_calcite
+    10 PUNCH STEP_NO, TOTAL_TIME, KIN("Calcite")
+SELECTED_OUTPUT
+    -reset false
+    -user_punch true
+END

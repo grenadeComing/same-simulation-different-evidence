@@ -1,0 +1,31 @@
+PHASES
+Fix_pH
+H+ = H+
+log_k 0
+
+SOLUTION 1
+    temp 100
+    pH 3
+    water 1 # kg
+
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+    Fix_pH -3 HCl 10
+
+SELECTED_OUTPUT 1
+    -file result2.sel
+    -reset false
+    -pH true
+    -totals Fe
+    
+USER_PUNCH 1
+    -headings Fe2_total Fe3_total
+    -start
+    10 PUNCH TOT("Fe(2)"), TOT("Fe(3)")
+    -end
+END

@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 100
+    units mmol/kgw
+    Ca 50
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Calcite 0 100
+    Gypsum 0 100
+    Aragonite 0 100
+    CO2(g) 0 100
+    Mtg(g) 0.69897 100
+    H2Sg(g) 1.0 100
+SAVE solution 2
+END
+USE solution 2
+REACTION_TEMPERATURE 2
+    25
+END

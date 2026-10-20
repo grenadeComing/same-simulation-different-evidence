@@ -1,0 +1,9 @@
+SOLUTION 1
+    temp 15
+    C(-4) 5 mmol/kgw
+EQUILIBRIUM_PHASES 1
+    CH4(g) 0 0
+SELECTED_OUTPUT
+    -si CO2(g)
+    -reset false
+END

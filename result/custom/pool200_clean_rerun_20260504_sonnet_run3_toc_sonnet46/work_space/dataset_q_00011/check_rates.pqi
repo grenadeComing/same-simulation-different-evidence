@@ -1,0 +1,8 @@
+SOLUTION 1
+    temp      25
+    pH        7.0
+
+PRINT
+    -rates true
+
+END

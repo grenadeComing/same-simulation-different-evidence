@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    units mol/kgw
+
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+
+SELECTED_OUTPUT
+    -file sel.out
+    -reset false
+    -molalities H4SiO4 SiO(OH)3- H3SiO4- H2SiO4-2 SiO2(aq)
+END

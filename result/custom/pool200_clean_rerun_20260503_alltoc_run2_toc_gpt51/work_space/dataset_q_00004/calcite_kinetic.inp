@@ -1,0 +1,23 @@
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    pe 4
+    units mmol/kgw
+    C(4) 0.5
+    Mn 1
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 10.0 1.0
+        -tol 1e-12
+        -steps 10 in 100
+
+SELECTED_OUTPUT
+    -file calcite_kinetic.sel
+    -reset false
+    -time true
+    -si Calcite
+
+END

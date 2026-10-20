@@ -1,0 +1,8 @@
+SOLUTION 1 Pure water
+    pH 7.0
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+SELECTED_OUTPUT
+    -file gypsum_ca_hso4.sel
+    -molalities CaHSO4+
+END

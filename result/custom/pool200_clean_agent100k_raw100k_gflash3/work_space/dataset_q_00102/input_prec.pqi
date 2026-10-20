@@ -1,0 +1,10 @@
+SOLUTION 1
+    temp 25
+    pH 7.5
+    units mmol/L
+    Ca 2.5
+    Alkalinity 5.0
+SELECTED_OUTPUT
+    -file output_prec.sel
+    -si Aragonite
+END

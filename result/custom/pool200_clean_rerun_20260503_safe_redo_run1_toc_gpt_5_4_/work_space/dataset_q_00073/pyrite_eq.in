@@ -1,0 +1,17 @@
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    pe 4
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    O2(g) -0.7 10
+    Pyrite 0 0.1
+    Goethite 0 0
+    Gypsum 0 0
+SELECTED_OUTPUT
+    -file selected.out
+    -saturation_indices Hematite Pyrite Goethite Gypsum
+    -pH true
+    -pe true
+END

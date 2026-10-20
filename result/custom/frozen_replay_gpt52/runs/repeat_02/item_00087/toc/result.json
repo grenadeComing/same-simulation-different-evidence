@@ -1,0 +1,33 @@
+{
+  "index": 87,
+  "row_index": 86,
+  "task_type": "mcq",
+  "truth": "D",
+  "prediction": "B",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": false,
+  "item_id": 87,
+  "condition": "toc",
+  "status": "submitted",
+  "calls": 3,
+  "estimated_cost_usd": 0.036358,
+  "input_tokens": 20184,
+  "output_tokens": 74,
+  "read_paths": [
+    {
+      "path": "selected.txt",
+      "ok": true,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "95",
+      "end_line": "130"
+    }
+  ],
+  "checkpoint_fingerprint": "160e07b15d796da27e954bf50d1bcdafdb8d274a1f4c86af7cf79bf6b6f37d2f",
+  "remaining_steps": 20
+}

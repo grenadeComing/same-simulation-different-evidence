@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 150
+END
+PHASES
+    H2O(g); H2O = H2O; log_k 0.0
+    CO2(g); CO2 = CO2; log_k 0.0
+    NH3(g); NH3 = NH3; log_k 0.0
+END
+USER_PUNCH
+    -headings logK_CO2 logK_NH3 logK_H2O logK_a1_CO2 logK_a_NH4 logK_w
+    10 PUNCH T_S1("CO2(g)"), T_S1("NH3(g)"), T_S1("H2O(g)")
+    20 PUNCH T_S1("HCO3-"), T_S1("NH4+"), T_S1("OH-")
+END
+RUN_CELLS
+    -cells 1
+END

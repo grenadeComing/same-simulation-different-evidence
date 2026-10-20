@@ -1,0 +1,14 @@
+SOLUTION 1
+    pH 7.0
+    temp 25.0
+
+EQUILIBRIUM_PHASES 1
+    Gypsum 0.0 10.0
+
+SELECTED_OUTPUT
+    -file gypsum_equilibrium.sel
+    -ionic_strength true
+    -totals Ca S(6)
+    -pH true
+
+END

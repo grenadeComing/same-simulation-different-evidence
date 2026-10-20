@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp      25
+    pH        7.0
+    pe        4
+    units     mol/kgw
+    -water    1 # kg
+
+REACTION 1
+    H2SO4 1.0
+    0.001 0.005 0.01 0.05 0.1 moles
+USER_PUNCH
+    -headings step_no moles_added pH
+    -start
+10 PUNCH STEP_NO, RXN, -LA("H+")
+    -end
+END

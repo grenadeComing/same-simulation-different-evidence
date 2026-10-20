@@ -1,0 +1,29 @@
+TITLE Calcite kinetics in acidic Cu-Ba solution at 200 C
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    redox pe
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    water 1
+RATES
+Calcite
+-start
+10 moles = 0
+20 if (M <= 0) then goto 200
+30 sa = PARM(1)
+40 k = PARM(2)
+50 rate = k * sa
+60 moles = rate * TIME
+70 if (moles > M) then moles = M
+200 SAVE moles
+-end
+KINETICS 1
+    Calcite
+        -m0 1
+        -m 1
+        -parms 1.0 10
+    -steps 1000 in 100 steps
+END

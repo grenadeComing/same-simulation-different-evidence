@@ -1,0 +1,13 @@
+
+SOLUTION 1
+    temp 200
+    pH 2
+    units mmol/kgw
+    Fe(2) 4
+    Fe(3) 4
+    Cl 10 charge
+END
+
+EQUILIBRIUM_PHASES 1
+    H2S(g) 0.69897 # log10(5) = 0.69897
+END

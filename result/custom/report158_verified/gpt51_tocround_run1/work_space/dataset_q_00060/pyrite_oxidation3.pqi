@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp 25.0
+    pH 7.0
+    pe 12.0
+    redox pe
+EQUILIBRIUM_PHASES 1
+    O2(g)  -0.7
+    Pyrite 0.0 0.1
+    Goethite 0.0 0.0
+    Gypsum 0.0 0.0
+USE solution 1
+EQUILIBRIUM_PHASES 1
+    O2(g)  -0.7
+    Pyrite 0.0 0.1
+    Goethite 0.0 0.0
+    Gypsum 0.0 0.0
+SELECTED_OUTPUT
+    -file pyrite_selout3.txt
+    -si Hematite
+END

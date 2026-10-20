@@ -1,0 +1,14 @@
+TITLE Pure water pH 7 at 150C equilibrated with chrysotile and talc, force initial pH
+SOLUTION 1
+    temp 150
+    pH 7
+    water 1
+EQUILIBRIUM_PHASES 1
+    Fix_H+ -7 NaOH 10
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT
+    -file selected2.out
+    -reset false
+    -pH true
+END

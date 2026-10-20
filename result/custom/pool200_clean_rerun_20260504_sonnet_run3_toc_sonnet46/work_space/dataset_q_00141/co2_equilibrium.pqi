@@ -1,0 +1,19 @@
+SOLUTION 1
+    temp      25
+    pH        7.0
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    water     1 # kg
+
+EQUILIBRIUM_PHASES 1
+    CO2(g)    -3.4    10
+
+SELECTED_OUTPUT
+    -file     co2_equilibrium.out
+    -reset    false
+    -pH       true
+    -activities   H+
+
+END

@@ -1,0 +1,53 @@
+TITLE Step 0: Initial pure water at pH 7.0
+SOLUTION 1
+    pH 7.0
+    temp 25
+    units mol/L
+END
+
+TITLE Step 1: Add 0.001 mol H2SO4
+USE SOLUTION 1
+REACTION 1
+    H2SO4  1
+    0.001 moles
+SAVE SOLUTION 1
+END
+
+TITLE Step 2: Add 0.005 mol H2SO4
+USE SOLUTION 1
+REACTION 1
+    H2SO4  1
+    0.005 moles
+SAVE SOLUTION 1
+END
+
+TITLE Step 3: Add 0.01 mol H2SO4
+USE SOLUTION 1
+REACTION 1
+    H2SO4  1
+    0.01 moles
+SAVE SOLUTION 1
+END
+
+TITLE Step 4: Add 0.05 mol H2SO4
+USE SOLUTION 1
+REACTION 1
+    H2SO4  1
+    0.05 moles
+SAVE SOLUTION 1
+END
+
+TITLE Step 5: Add 0.1 mol H2SO4
+USE SOLUTION 1
+REACTION 1
+    H2SO4  1
+    0.1 moles
+SAVE SOLUTION 1
+
+SELECTED_OUTPUT
+    -file selected_output3.txt
+    -reset false
+    -pH true
+    -activities H+
+
+END

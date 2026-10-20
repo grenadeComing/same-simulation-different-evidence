@@ -1,0 +1,19 @@
+SOLUTION 1
+    temp 100
+    pH 3
+    units mol/L
+
+EQUILIBRIUM_PHASES 1
+    K-mica       0  10
+    Kaolinite    0  10
+    Dolomite     0  10
+    Epsomite     0  10
+    Fe(OH)3(a)   0  10
+    Halite       0  10
+
+SELECTED_OUTPUT
+    -file kaolinite_sim.out
+    -reset false
+    -equilibrium_phases K-mica Kaolinite Dolomite Epsomite Fe(OH)3(a) Halite
+
+END

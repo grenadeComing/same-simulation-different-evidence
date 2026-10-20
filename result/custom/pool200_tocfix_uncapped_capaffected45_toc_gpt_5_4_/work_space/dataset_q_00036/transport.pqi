@@ -1,0 +1,36 @@
+SOLUTION 0
+    pH 7.0
+    temp 25
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10
+    pH 7.0
+    temp 25
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+PRINT
+    -selected_output true
+    -user_punch true
+SELECTED_OUTPUT
+    -file selected_output_1.sel
+    -reset false
+    -step true
+    -simulation true
+    -state true
+    -solution true
+    -distance true
+    -time true
+    -totals Na Ca Cl
+    -molalities Na+
+USER_PUNCH
+    -headings step sol eq_NaX eq_CaX2
+10 PUNCH STEP_NO, SOLN_NO, EQUI("NaX"), EQUI("CaX2")
+END

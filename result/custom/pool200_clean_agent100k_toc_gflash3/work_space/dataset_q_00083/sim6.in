@@ -1,0 +1,25 @@
+SOLUTION 1
+    units mol/kgw
+    temp 150
+    pH 7
+    pe 4
+    water 1
+EQUILIBRIUM_PHASES 1
+    Fix_H+ -7.0 NaOH 10.0
+    Fix_pe -4.0 O2(g) 10.0
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    -volume 868.12
+    CH4(g) 10
+    CO2(g) 10
+    NH3(g) 5
+PHASES
+Fix_H+
+    H+ = H+
+    log_k 0
+Fix_pe
+    e- = e-
+    log_k 0
+END

@@ -1,0 +1,15 @@
+TITLE Pyrite oxidation, equilibrium, with constant atmospheric O2
+SOLUTION 1 Pure water, initial neutral pH
+    temp 25
+    pH 7 charge
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    O2(g)   -0.7  10
+    Pyrite   0.0  0.1
+    Goethite 0.0  0
+    Gypsum   0.0  0
+SELECTED_OUTPUT
+    -reset false
+    -totals S
+END

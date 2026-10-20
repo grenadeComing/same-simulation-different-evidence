@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 10 mmol/kgw
+    Ba 5 mmol/kgw
+    Cl 40 charge
+    units mmol/kgw
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 1.0
+
+USER_PRINT
+10 PRINT "SI(Tenorite) = ", SI("Tenorite")
+20 PRINT "SI(Malachite) = ", SI("Malachite")
+30 PRINT "SI(Azurite) = ", SI("Azurite")
+40 PRINT "SI(Cu(OH)2) = ", SI("Cu(OH)2")
+END

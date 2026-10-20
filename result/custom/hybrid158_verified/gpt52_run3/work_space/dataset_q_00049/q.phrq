@@ -1,0 +1,21 @@
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    units mmol/kgw
+    Ba 100
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    Talc 0 10
+    Rhodochrosite 0 10
+    Sepiolite 0 10
+    Sepiolite(d) 0 10
+    Pb(OH)2 0 10
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+USER_PUNCH
+    -headings Talc_mol Rhodo_mol Sepiolite_mol Sepiolite_d_mol PbOH2_mol
+10  PUNCH EQUI("Talc"), EQUI("Rhodochrosite"), EQUI("Sepiolite"), EQUI("Sepiolite(d)"), EQUI("Pb(OH)2")
+END

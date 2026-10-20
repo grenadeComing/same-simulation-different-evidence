@@ -1,0 +1,38 @@
+
+SOLUTION 1
+    temp 200
+    pH 2.0
+    units mmol/kgw
+    Fe(+3) 4.0
+    Fe(+2) 4.0
+    Cl 10.0 charge
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+
+RATES
+Albite
+-start
+10 k = 1e-8
+20 area = 1.0 * M
+30 rate = k * area * (1 - SR("Albite"))
+40 moles = rate * TIME
+50 SAVE moles
+-end
+
+KINETICS 1
+Albite
+    -m 1.0
+    -m0 1.0
+    -steps 1000 in 100
+
+SELECTED_OUTPUT
+    -file output.sel
+    -reset false
+    -step true
+    -pe true
+    -ph true
+    -kin Albite
+END

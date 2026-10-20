@@ -1,0 +1,6 @@
+TITLE Gypsum equilibrium, pure water pH 7
+SOLUTION 1 Pure water pH 7
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+END

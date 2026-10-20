@@ -1,0 +1,12 @@
+SOLUTION 1
+    temp 25
+    pH 7.5
+    Ca 100 mg/L
+    Alkalinity 250 mg/L as CaCO3
+    units mg/L
+END
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -si O2(g)
+END

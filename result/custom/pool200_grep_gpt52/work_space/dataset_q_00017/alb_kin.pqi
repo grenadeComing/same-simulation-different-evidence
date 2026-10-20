@@ -1,0 +1,27 @@
+TITLE Albite kinetic dissolution with H2S(g) fixed pressure
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(3) 4e-3
+    Fe(2) 4e-3
+
+GAS_PHASE 1
+    -fixed_pressure true
+    -pressure 5
+    H2S(g) 1
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+        -steps 1000 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -file alb_kin.sel
+    -reset false
+USER_PUNCH
+    -head step  time_s  alb_m  alb_diss
+10 PUNCH STEP_NO, TOTAL_TIME, KIN("Albite"), (1-KIN("Albite"))
+END

@@ -1,0 +1,37 @@
+TITLE Transport Question
+
+SOLUTION 0
+    units mmol/kgw
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10
+    units mmol/kgw
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    -equilibrate 1
+    X 0.001
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1.0
+    -dispersivities 0.0
+    -time_step 1.0
+
+SELECTED_OUTPUT
+    -file output.sel
+    -high_precision true
+    -reset false
+    -step
+    -solution
+    -activities Na+
+    -molalities Na+
+
+END

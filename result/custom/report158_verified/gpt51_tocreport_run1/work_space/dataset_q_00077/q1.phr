@@ -1,0 +1,14 @@
+SOLUTION 1 Pure water pH 7 150C
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+END
+USER_PUNCH
+    -headings   SI_CHRYSOTILE LOG_IAP_CHRYSOTILE
+    -start
+10  PUNCH SI("Chrysotile"), SI("Chrysotile") + LOG10(K("Chrysotile"))
+    -end
+END
+PRINT
+    -reset false
+END

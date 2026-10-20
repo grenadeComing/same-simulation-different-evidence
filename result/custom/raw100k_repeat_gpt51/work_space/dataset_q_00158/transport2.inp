@@ -1,0 +1,35 @@
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 101
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X- 0.001
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -boundary_conditions flux flux
+    -dispersivities 0
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+
+SELECTED_OUTPUT
+    -file selout.txt
+    -reset false
+    -solution true
+    -si H2O(g)

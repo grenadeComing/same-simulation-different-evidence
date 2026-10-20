@@ -1,0 +1,19 @@
+SOLUTION 1 Pure water pH 3, 100C
+    temp 100
+    pH 3 charge
+    units mol/kgw
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -pH true
+END

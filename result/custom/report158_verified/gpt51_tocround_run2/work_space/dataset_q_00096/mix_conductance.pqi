@@ -1,0 +1,24 @@
+SOLUTION 1 River
+    pH 6.0
+    units mg/L
+    Cl 10
+
+SOLUTION 2 Seawater
+    pH 8.1
+    units mg/L
+    Cl 19000
+
+MIX
+    1 0.7
+    2 0.3
+
+SELECTED_OUTPUT
+    -file mix_sel.out
+    -reset false
+    -solution 3
+    -totals Cl
+END
+USER_PUNCH
+    -headings sc
+    10 PUNCH SC
+END

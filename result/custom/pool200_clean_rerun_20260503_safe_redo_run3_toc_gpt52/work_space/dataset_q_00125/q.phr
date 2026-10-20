@@ -1,0 +1,16 @@
+TITLE H2SO4 addition steps to pure water; report pe at step 4
+SOLUTION 1 Pure water
+    pH 7 charge
+    temp 25
+    units mol/kgw
+    -water 1
+REACTION 1
+    H2SO4 1
+    0.001 0.005 0.01 0.05 0.1
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -step true
+    -pH true
+    -pe true
+END

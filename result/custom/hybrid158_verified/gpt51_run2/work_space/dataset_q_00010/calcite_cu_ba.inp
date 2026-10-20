@@ -1,0 +1,35 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    C(4) 0 charge
+
+KINETICS 1
+    Calcite_kinetics
+        -formula CaCO3 1
+        -m0 1
+        -parms 10 1.0
+        -steps 1000 in 100 steps
+
+RATES
+Calcite_kinetics
+-start
+10 k = PARM(1)
+20 sA = PARM(2)
+30 m = MOL("Calcite_kinetics")
+40 if (m <= 0) then m = 0 : rate = 0 : goto 100
+50 rate = k * sA
+100 moles = rate
+-end
+
+SELECTED_OUTPUT
+    -file calcite_cu_ba.sel
+    -reset false
+    -time true
+    -step true
+    -totals C(4) Cu(2)
+
+END

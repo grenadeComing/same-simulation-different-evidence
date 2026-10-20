@@ -1,0 +1,41 @@
+TITLE Kinetic dissolution of Calcite in hydrothermal solution at 100C - Simple rate
+
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1.0
+
+RATES
+Calcite
+-start
+10  si_cc = SI("Calcite")
+20  IF (M <= 0 AND si_cc < 0) THEN GOTO 200
+30  rate = PARM(2) * PARM(1) * (1 - 10^si_cc)
+40  moles = rate * TIME
+50  IF (moles > M) THEN moles = M
+60  IF (moles < 0) THEN moles = 0
+200 SAVE moles
+-end
+
+KINETICS 1
+Calcite
+    -tol    1e-8
+    -m0     1.0
+    -m      1.0
+    -parms  10.0   0.001
+    -steps  1000 in 100
+    -bad_step_max 5000
+
+SELECTED_OUTPUT
+    -file   calcite_kinetic5.out
+    -reset  false
+    -time   true
+    -pH     true
+    -pe     true
+    -si     Calcite
+    -kinetic_reactants  Calcite
+
+END

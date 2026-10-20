@@ -1,0 +1,11 @@
+
+SOLUTION 1
+    temp 100
+    pH 3
+EQUILIBRIUM_PHASES 1
+    Fe(OH)3(a) 0 10
+SELECTED_OUTPUT
+    -file logk_check.sel
+    -si Fe(OH)3(a)
+    -activities Fe+3 Fe+2
+END

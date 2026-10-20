@@ -1,0 +1,23 @@
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 4
+    units mmol/kgw
+    Mn 1
+    C(4) 0.5
+
+KINETICS 1
+    Calcite
+        -m0 1
+        -parms 10.0 1.0
+        -steps 10 seconds in 100
+        -cvode
+
+USER_PUNCH
+    -headings step SI_Aragonite
+    -start
+    10 PUNCH KIN_TIME/10
+    20 PUNCH SI("Aragonite")
+    -end
+
+END

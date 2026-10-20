@@ -1,0 +1,29 @@
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    units mmol/kgw
+    Ba 100
+
+EQUILIBRIUM_PHASES 1
+    Talc 0 10
+    Rhodochrosite 0 10
+    Sepiolite 0 10
+    Sepiolite(d) 0 10
+    Pb(OH)2 0 10
+
+SELECTED_OUTPUT
+    -file sel.out
+    -high_precision true
+    -si
+    -totals Ba Mn Mg Pb Si C
+    -ionic_strength true
+    -activities Ba+2 Mn+2 Mg+2 Pb+2 H+ CO3-2 HCO3- H4SiO4
+    -pH true
+    -temperature true
+    -charge_balance true
+    -percent_error true
+
+USER_PUNCH
+    -headings sc
+    10 PUNCH SC
+END

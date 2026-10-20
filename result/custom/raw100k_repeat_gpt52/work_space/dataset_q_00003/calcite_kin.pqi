@@ -1,0 +1,29 @@
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 4
+    units mol/kgw
+    C 0.0005
+    Mn 0.001
+
+KINETICS 1
+    Calcite
+        -m0 1
+        -parms 10.0 0.001
+        -steps 1000 in 100 steps
+
+RATES
+Calcite
+-start
+10 ssa = PARM(1)
+20 k = PARM(2)
+30 rate = k*ssa
+40 moles = rate*TIME
+50 SAVE moles
+-end
+
+SELECTED_OUTPUT
+    -reset false
+    -time true
+    -totals C
+END

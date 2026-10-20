@@ -1,0 +1,31 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 0-10
+    X- 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -boundary_conditions flux flux
+    -dispersivities 0
+    -punch_cells 8
+    -punch_frequency 1
+
+SELECTED_OUTPUT
+    -file exch8.out
+    -reset false
+    -high_precision true
+    -dist  true
+    -state true
+END

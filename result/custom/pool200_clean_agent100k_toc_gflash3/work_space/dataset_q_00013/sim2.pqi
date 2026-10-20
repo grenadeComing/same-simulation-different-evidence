@@ -1,0 +1,21 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    Cl 100 charge
+
+KINETICS 1
+    Calcite
+    -m 1.0
+    -m0 1.0
+    -parms 1.0 0.6667
+    -step 1000 in 100
+
+USER_PRINT
+    -start
+    10 if (STEP_NO == 10) then print "PH_AT_STEP_10: ", -LA("H+")
+    -end
+END

@@ -1,0 +1,14 @@
+SOLUTION 1
+    units mol/kgw
+    temp 20
+    pH 7.0
+    water 1 
+
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+
+SELECTED_OUTPUT 1
+    -file output_20C.sel
+    -reset false
+    -molalities CaHSO4+
+END

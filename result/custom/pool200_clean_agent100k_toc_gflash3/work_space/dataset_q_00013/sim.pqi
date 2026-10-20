@@ -1,0 +1,50 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    Cl 100 charge
+END
+
+# Variation 1: SSA=1.0, Exponent=0.6667 (Standard Plummer)
+KINETICS 1
+    Calcite
+    -m 1.0
+    -m0 1.0
+    -parms 1.0 0.6667
+    -step 1000 in 100
+END
+
+# Variation 2: SSA=10.0, Exponent=0.6667
+KINETICS 2
+    Calcite
+    -m 1.0
+    -m0 1.0
+    -parms 10.0 0.6667
+    -step 1000 in 100
+END
+
+# Variation 3: SSA=1.0, Exponent=1.0
+KINETICS 3
+    Calcite
+    -m 1.0
+    -m0 1.0
+    -parms 1.0 1.0
+    -step 1000 in 100
+END
+
+SELECTED_OUTPUT 1
+    -file output.sel
+    -time true
+    -step true
+    -pH true
+END
+
+USER_PUNCH 1
+    -headings step pH_V1 pH_V2 pH_V3
+    -start
+    10 punch STEP, -LA("H+"), -LA("H+"), -LA("H+") # This won't work as intended with multiple kinetics.
+    # I will just run them one by one or use different files.
+    -end

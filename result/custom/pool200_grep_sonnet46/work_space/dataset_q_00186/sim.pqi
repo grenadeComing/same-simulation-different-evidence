@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp      15
+    pH        7
+    pe        4
+    units     mmol/kgw
+    C(-4)     5.0
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure    1.0
+    -temperature 15
+    -volume      1.0
+    CH4(g)       0.0
+
+SELECTED_OUTPUT
+    -file        result.out
+    -reset       false
+    -molalities  HCO3-
+
+END

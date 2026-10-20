@@ -1,0 +1,15 @@
+# Simulation: Add sulfuric acid in cumulative steps to pure water at pH 7.0
+# The steps represent TOTAL moles added at each step
+# Step 1: 0.001 total, Step 2: 0.005 total, Step 3: 0.01 total, Step 4: 0.05 total, Step 5: 0.1 total
+# Incremental: 0.001, 0.004, 0.005, 0.04, 0.05
+
+SOLUTION 1  Pure water at pH 7.0
+    pH      7.0
+    temp    25.0
+    units   mol/L
+
+REACTION 1
+    H2SO4   1.0
+    0.001  0.004  0.005  0.04  0.05
+
+END

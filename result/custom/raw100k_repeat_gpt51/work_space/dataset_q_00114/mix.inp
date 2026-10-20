@@ -1,0 +1,21 @@
+SOLUTION 1 River
+    units mmol/kgw
+    temp 25
+    pH 6 charge
+    Cl 10
+
+SOLUTION 2 Seawater
+    units mmol/kgw
+    temp 25
+    pH 8.1 charge
+    Cl 19000
+
+MIX 1
+    1 0.7
+    2 0.3
+
+SELECTED_OUTPUT
+    -reset false
+    -solution 1
+    -molalities HCl
+END

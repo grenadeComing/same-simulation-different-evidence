@@ -1,0 +1,40 @@
+SOLUTION 0-10
+    pH 7.0
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+
+USE solution 0
+USE exchange 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1 1 1 1 1 1 1 1 1 1
+    -boundary_conditions flux flux
+    -initial_time 0
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+    -dump dump5
+    -dump_frequency 5
+
+SELECTED_OUTPUT
+    -file selout.txt
+    -reset false
+    -solution true
+    -totals Ca Na Cl
+    -equilibrium_phases true
+
+END

@@ -1,0 +1,24 @@
+SOLUTION 1  River Water
+    pH      6.0
+    pe      4.0
+    redox   pe
+    Cl      10
+    O(0)    0.258  # dissolved oxygen ~8 mg/L
+
+SOLUTION 2  Seawater
+    pH      8.1
+    pe      4.0
+    redox   pe
+    Cl      19000
+    O(0)    0.258
+
+MIX 1
+    1   0.7
+    2   0.3
+
+SELECTED_OUTPUT
+    -file mix_output3.sel
+    -pe     true
+    -pH     true
+
+END

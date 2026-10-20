@@ -1,0 +1,31 @@
+
+SOLUTION 0
+    units mmol/L
+    pH 7.0
+    pe 4.0
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10
+    units mmol/L
+    pH 7.0
+    pe 4.0
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1.0
+    -dispersivity 0.1
+SELECTED_OUTPUT
+    -file disp_check.sel
+    -reset false
+    -step
+    -solution
+    -si H2(g)
+USER_PUNCH
+    -headings log_IAP_H2g
+    10 PUNCH SI("H2(g)") - 3.10
+END

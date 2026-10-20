@@ -1,0 +1,20 @@
+PHASES
+Fix_H+
+    H+ = H+
+    log_k 0
+END
+
+SOLUTION 1
+    pH 7.0
+    temp 25
+    units mol/kgw
+    water 1
+
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+    Fix_H+ -7.0 HCl 10.0
+
+SELECTED_OUTPUT 1
+    -file output_fixed.sel
+    -molalities CaHSO4+
+END

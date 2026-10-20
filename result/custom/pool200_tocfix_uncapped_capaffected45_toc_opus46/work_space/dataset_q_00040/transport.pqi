@@ -1,0 +1,36 @@
+SOLUTION 0  # Infilling solution
+    pH      7.0
+    Na      1.0
+    Cl      1.0
+    -units  mmol/kgw
+
+SOLUTION 1-10  # Initial solution in cells
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+    -units  mmol/kgw
+
+EXCHANGE 1-10
+    X       0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells          10
+    -shifts         10
+    -lengths        1.0
+    -dispersivities 0.0
+    -diffusion_coefficient 0.0
+    -time_step      1.0
+    -boundary_conditions flux flux
+    -punch_cells    1-10
+    -punch_frequency 10
+
+SELECTED_OUTPUT
+    -file           transport_out.txt
+    -reset          false
+    -solution
+    -totals         Ca Na Cl
+    -molalities     HCl CaCl+ CaCl2 NaCl
+    -pH
+
+END

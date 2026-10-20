@@ -1,0 +1,10 @@
+SOLUTION 1
+    units mmol/kgw
+    Ca 50
+    C(4) 50
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+REACTION_TEMPERATURE 1
+    100
+END

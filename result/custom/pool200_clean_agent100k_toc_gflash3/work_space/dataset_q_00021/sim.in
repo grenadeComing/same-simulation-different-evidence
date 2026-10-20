@@ -1,0 +1,44 @@
+
+RATES
+AlbiteCustom
+-start
+10 k = PARM(1)
+20 area = PARM(2)
+30 sr_albite = SR("Albite")
+40 rate = k * area * (1 - sr_albite)
+50 moles = rate * TIME
+60 if (moles > M) then moles = M
+70 if (moles < -M0 + M) then moles = -M0 + M
+80 save moles
+-end
+
+SOLUTION 1
+    temp 200
+    pH 2
+    Fe(2) 4 mmol/kgw
+    Fe(3) 4 mmol/kgw
+    Cl 1.0 charge
+    units mmol/kgw
+
+EQUILIBRIUM_PHASES 1
+    H2S(g) 0.69897 10.0 # log10(5) = 0.69897. 10.0 moles to ensure it doesn't run out.
+
+KINETICS 1
+    AlbiteCustom
+    -formula NaAlSi3O8 1.0
+    -m 1.0
+    -m0 1.0
+    -parms 10 1.0
+    -steps 1000 in 100
+    -bad_step_max 1000
+
+SELECTED_OUTPUT
+    -file solution_output.sel
+    -reset false
+    -step true
+    -ionic_strength true
+    -time true
+    -charge_balance true
+    -percent_error true
+
+END

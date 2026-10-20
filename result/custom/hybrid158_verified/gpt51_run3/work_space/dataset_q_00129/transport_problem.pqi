@@ -1,0 +1,55 @@
+SOLUTION 0-10
+    pH 7.0
+    temp 25.0
+    units mol/kgw
+
+SOLUTION 0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+
+EXCHANGE_SPECIES
+    X- = X-
+    Na+ + X- = NaX
+        log_k 0.0
+    Ca+2 + 2X- = CaX2
+        log_k 0.0
+
+EQUILIBRIUM_PHASES 1-10
+    HCl(g) 0.0 0.0
+
+USE solution 0
+USE exchange 1
+USE equilibrium_phases 1
+SAVE solution 0
+SAVE exchange 1
+SAVE equilibrium_phases 1
+
+USE solution 1
+USE exchange 2
+USE equilibrium_phases 2
+SAVE solution 1
+SAVE exchange 2
+SAVE equilibrium_phases 2
+
+TRANSPORT
+    cells 10
+    shifts 10
+    length 10
+    time_step 1
+    boundary_conditions flux flux
+    initial_time 0
+    print_cells 4
+    print_frequency 10
+    punch_cells 4
+    punch_frequency 10
+
+SELECTED_OUTPUT
+    -file transport_sel.out
+    -molalities HCl

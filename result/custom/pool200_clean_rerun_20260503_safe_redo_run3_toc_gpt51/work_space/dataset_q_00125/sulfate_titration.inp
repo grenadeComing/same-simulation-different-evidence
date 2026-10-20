@@ -1,0 +1,16 @@
+SOLUTION 1 Pure water
+    pH 7.0 charge
+    temp 25.0
+
+REACTION 1
+    H2SO4 1.0
+    5
+    0.001 0.005 0.01 0.05 0.1
+
+SELECTED_OUTPUT
+    -file sulf_titration.sel
+    -reset false
+    -step true
+    -pH true
+    -pe true
+END

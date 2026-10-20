@@ -1,0 +1,22 @@
+TITLE Calcite kinetics dissolution, pH 2, 200 C
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 10 mmol/kgw
+    Ba 5 mmol/kgw
+    -water 1
+KINETICS 1
+    Calcite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+        -tol 1e-12
+        -steps 10 in 100
+SELECTED_OUTPUT
+    -file calcite_kin.sel
+    -reset false
+USER_PUNCH
+    -head step	m_calcite
+    10 PUNCH STEP_NO, KIN("Calcite")
+END

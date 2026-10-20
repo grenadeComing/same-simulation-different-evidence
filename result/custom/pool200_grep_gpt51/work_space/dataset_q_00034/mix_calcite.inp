@@ -1,0 +1,12 @@
+SOLUTION 1
+    temp 20
+    C(4) 0.05
+SOLUTION 2
+    temp 20
+    Ca 0.05
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+MIX 1
+    1 0.5
+    2 0.5
+END

@@ -1,0 +1,19 @@
+SOLUTION 1
+    pH      7.0
+    temp    25.0
+    Ca      0.01  # mmol/L? No, mol/L as per PHREEQC default (mmol/L)
+    Sr      0.01
+    Alkalinity 0.04
+
+SOLID_SOLUTIONS 1
+    Ca_Sr_carbonate
+        -comp Calcite     0.0
+        -comp Strontianite 0.0
+
+SELECTED_OUTPUT
+    -file solid_solution.out
+    -reset false
+    -totals C(4)
+    -molalities C(4)
+
+END

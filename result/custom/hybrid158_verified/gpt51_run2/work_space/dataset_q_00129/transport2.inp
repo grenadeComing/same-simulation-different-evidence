@@ -1,0 +1,30 @@
+TITLE 1D transport exchange problem
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+SOLUTION 1
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+EXCHANGE 1
+    X- 0.001
+END
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1
+    -flow_direction      forward
+    -boundary_conditions constant
+    -lengths             10*1
+    -dispersivities      10*0
+    -print_cells         1-10
+    -print_frequency     1
+    -punch_cells         1-10
+    -punch_frequency     1
+SELECTED_OUTPUT
+    -file transport.sel
+    -reset false
+    -solution true
+    -molalities HCl
+END

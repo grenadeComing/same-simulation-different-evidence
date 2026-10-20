@@ -1,0 +1,27 @@
+SOLUTION 1
+  temp 25
+  pH 7 charge
+  units mol/kgw
+  -water 1
+
+GAS_PHASE 1
+  -fixed_pressure
+  -volume 1
+  O2(g) -0.7
+
+EQUILIBRIUM_PHASES 1
+  Pyrite 0 0.1
+  Goethite 0 0
+  Gypsum 0 0
+
+SELECTED_OUTPUT
+  -file selected.csv
+  -reset false
+USER_PUNCH
+  -headings Fe3_aq_species_count
+  10 PUNCH TOT("Fe(+3)")
+END
+
+PRINT
+  -species true
+  -selected_output true

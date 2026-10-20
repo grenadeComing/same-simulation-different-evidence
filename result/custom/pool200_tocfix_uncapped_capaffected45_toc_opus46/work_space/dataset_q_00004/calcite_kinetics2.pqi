@@ -1,0 +1,39 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1
+
+RATES
+    Calcite_custom
+    -start
+    10 area = PARM(1)
+    20 k = PARM(2)
+    30 SR_calc = SR("Calcite")
+    40 rate = area * k * (1 - SR_calc)
+    50 moles = rate * TIME
+    60 SAVE moles
+    -end
+
+KINETICS 1
+    Calcite_custom
+        -formula Calcite 1
+        -m0  1
+        -m   1
+        -parms 10.0  0.001
+        -tol 1e-8
+
+    -steps 1000 in 100
+
+SELECTED_OUTPUT
+    -file result2.out
+    -totals Ca C(4) Mn
+    -kinetics Calcite_custom
+    -saturation_indices Calcite Aragonite
+    -pH
+    -pe
+    -time
+
+END

@@ -1,0 +1,21 @@
+SOLUTION 1
+    temp 25
+    pH 7.0
+    pe 4
+    redox pe
+    units mol/kgw
+    density 1
+EQUILIBRIUM_PHASES 1
+    Pyrite 0 0.1
+    O2(g)   -0.7 10
+    Goethite 0 0
+    Gypsum 0 0
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -totals H(0) H(1) O(0)
+    -si Goethite Gypsum
+    -pH true
+    -alkalinity true
+    -ionic_strength true
+END

@@ -1,0 +1,19 @@
+SOLUTION 1 Pure water 150C
+    temp 150
+    pH 7 charge
+    pe 4
+    units mol/kgw
+    -water 1
+
+GAS_PHASE 1 Fixed P at 1 atm, 150C
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g) 0 10
+    CO2(g) 0 10
+    NH3(g) 0 5
+
+SELECTED_OUTPUT
+    -reset false
+
+END

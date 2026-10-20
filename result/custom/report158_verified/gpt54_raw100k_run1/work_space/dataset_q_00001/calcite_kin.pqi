@@ -1,0 +1,28 @@
+TITLE Calcite kinetic dissolution at 100 C
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1
+RATES
+Calcite_diss
+-start
+10 rate = PARM(1) * PARM(2)
+20 moles = rate * TIME
+30 SAVE moles
+-end
+KINETICS 1
+Calcite_diss
+    -formula  CaCO3 1
+    -m0       1
+    -m        1
+    -parms    10.0 0.001
+    -steps    10 in 100
+SELECTED_OUTPUT
+    -reset false
+    -time true
+    -step true
+    -pH true
+END

@@ -1,0 +1,21 @@
+SOLUTION 1 River
+    pH 6.0
+    units mg/L
+    Cl 10
+    Na 1 charge
+
+SOLUTION 2 Seawater
+    pH 8.1
+    units mmol/kgw
+    Cl 535.97 # This is 19000 mg/L
+    Na 468.0
+    Mg 50.0
+    S(6) 28.0
+    Ca 10.0
+    K 10.0
+    Alkalinity 2.3
+
+MIX 1
+    1 0.7
+    2 0.3
+END

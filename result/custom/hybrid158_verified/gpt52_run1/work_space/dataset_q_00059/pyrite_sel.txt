@@ -1,0 +1,2 @@
+          pH	          pe	          Fe	        S(6)	Fe3_species_count	
+     6.99738	           4	  0.0000e+00	  0.0000e+00	

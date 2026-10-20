@@ -1,0 +1,9 @@
+SOLUTION 1
+    units mol/kgw
+    temp 25
+    pH 7.0
+    Fe(3) 0.01
+    C(4) 0.1
+    S(6) 0.1
+    Cl 0.1
+END

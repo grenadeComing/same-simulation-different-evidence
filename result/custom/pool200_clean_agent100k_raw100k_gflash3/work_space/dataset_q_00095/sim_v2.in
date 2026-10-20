@@ -1,0 +1,19 @@
+TITLE Variations
+PHASES
+Fix_pH
+    H+ = H+
+    log_k 0
+SOLUTION 1
+    temp 150
+    pH 7.0
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+    Fix_pH -7.0 HCl 10.0
+SELECTED_OUTPUT 1
+    -file output_v2.sel
+    -reset false
+    -molalities MgOH+
+    -pH true
+END

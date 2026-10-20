@@ -1,0 +1,43 @@
+TITLE 1D transport exchange problem
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+SOLUTION 1-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+EXCHANGE 1-10
+    X- 0.001
+EQUILIBRIUM_PHASES 1-10
+END
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1
+    -flow_direction      forward
+    -boundary_conditions constant
+    -lengths             10*1
+    -dispersivities      10*0
+    -stagnant            0
+    -multi_d             false
+    -correct_disp        false
+    -punch_cells         1-10
+    -punch_frequency     1
+    -input_echo          true
+    -warnings            true
+SOLUTION 0
+    -equilibrate 11
+EXCHANGE 0
+    X- 0.001
+    -equilibrate 11
+SELECTED_OUTPUT
+    -file transport.sel
+    -reset false
+    -solution true
+    -molalities HCl
+END

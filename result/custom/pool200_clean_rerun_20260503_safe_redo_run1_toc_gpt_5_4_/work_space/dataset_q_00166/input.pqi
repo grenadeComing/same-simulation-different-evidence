@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 25
+    pH 7
+    pe 4
+    Ca 0.01
+    Sr 0.01
+    Alkalinity 0.04
+SOLID_SOLUTIONS 1
+    Ca_Sr_carbonate
+        -comp1 Calcite 0.0
+        -comp2 Strontianite 0.0
+SELECTED_OUTPUT
+    -reset false
+    -solution true
+    -pe true
+END

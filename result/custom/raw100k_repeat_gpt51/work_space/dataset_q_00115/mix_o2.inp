@@ -1,0 +1,22 @@
+SOLUTION 1 River
+    temp 25
+    pH 6.0 charge
+    pe 4.0
+    Cl 10
+
+SOLUTION 2 Seawater
+    temp 25
+    pH 8.1 charge
+    pe 4.0
+    Cl 19000
+
+MIX 1
+    1 0.7
+    2 0.3
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -si O2(g)
+    -pH true
+END

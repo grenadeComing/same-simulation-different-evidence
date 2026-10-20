@@ -1,0 +1,33 @@
+TITLE Calcite kinetics; report SI(Aragonite) at step 47
+SOLUTION 1
+    temp 100
+    pH   5
+    pe   4
+    units mmol/kgw
+    C(4) 0.5
+    Mn   1
+
+RATES
+Calcite_simple
+-start
+10 k = PARM(1)
+20 SA = PARM(2)
+30 rate = k*SA
+40 moles = rate * TIME
+50 SAVE moles
+-end
+
+KINETICS 1
+    Calcite_simple
+        -formula CaCO3 1
+        -m0 1.0
+        -parms 0.001 10.0
+        -steps 10 in 100
+
+SELECTED_OUTPUT
+    -file calcite_kin.sel
+    -reset false
+    -time true
+    -step true
+    -si Aragonite
+END

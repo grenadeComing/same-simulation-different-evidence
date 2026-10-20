@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 100
+    pH 5.0
+    water 1
+
+EQUILIBRIUM_PHASES 1
+    Talc 0 10
+    Rhodochrosite 0 10
+    Sepiolite 0 10
+    Sepiolite(d) 0 10
+    Pb(OH)2 0 10
+
+SELECTED_OUTPUT 1
+    -file output.sel
+    -mol CO3-2
+END

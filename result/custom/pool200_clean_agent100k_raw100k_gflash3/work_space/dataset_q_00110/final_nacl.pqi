@@ -1,0 +1,16 @@
+SOLUTION 1
+    units ppm
+    temp 25
+    pH 6.0
+    Cl 10
+    Na 10 charge
+SOLUTION 2
+    units ppm
+    temp 25
+    pH 8.1
+    Cl 11525 # Cl in 19000 ppm NaCl
+    Na 7475 # Na in 19000 ppm NaCl
+MIX
+    1 0.7
+    2 0.3
+END

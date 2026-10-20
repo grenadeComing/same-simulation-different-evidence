@@ -1,0 +1,39 @@
+{
+  "index": 25,
+  "row_index": 24,
+  "task_type": "mcq",
+  "truth": "D",
+  "prediction": "B",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": false,
+  "item_id": 25,
+  "condition": "toc",
+  "status": "submitted",
+  "calls": 4,
+  "estimated_cost_usd": 0.054978,
+  "input_tokens": 30504,
+  "output_tokens": 114,
+  "read_paths": [
+    {
+      "path": "selected.csv",
+      "ok": true,
+      "start_line": "95",
+      "end_line": "105"
+    },
+    {
+      "path": "selected.csv",
+      "ok": true,
+      "start_line": "1",
+      "end_line": "5"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "15495",
+      "end_line": "15520"
+    }
+  ],
+  "checkpoint_fingerprint": "0c14e6ee15b90d74b73630b7b5270559a036a89bfa83de8c2464e6ee5b2a7389",
+  "remaining_steps": 20
+}

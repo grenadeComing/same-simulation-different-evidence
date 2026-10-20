@@ -1,0 +1,2 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	          Ca	           C	
+           1	      i_soln	           1	         -99	         -99	         -99	         7.5	           4	  2.4959e-03	  5.2875e-03	

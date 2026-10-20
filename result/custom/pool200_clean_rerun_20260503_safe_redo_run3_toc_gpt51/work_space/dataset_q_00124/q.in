@@ -1,0 +1,13 @@
+SOLUTION 1 Pure water
+    pH 7 charge
+
+REACTION 1
+    H2SO4 1.0
+    0.001 0.005 0.01 0.05 0.1 moles
+
+SELECTED_OUTPUT
+    -reset false
+    -pH true
+    -activities H+
+    -totals S O H
+END

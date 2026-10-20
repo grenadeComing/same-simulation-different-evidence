@@ -1,0 +1,36 @@
+SOLUTION 1
+    temp      25
+    pH        8.0
+    units     ppm
+    Ca        50
+    Mg        12
+    Na        20
+    K         2
+    Alkalinity 150
+    S(6)      40
+    Cl        15
+
+REACTION 1
+    H2O  -1
+    50.0 moles
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0  0
+    Gypsum    0  0
+    Halite    0  0
+
+SELECTED_OUTPUT
+    -file     evaporation.out
+    -solution true
+    -pH       true
+    -pe       true
+    -totals   Ca Mg Na K S(6) Cl
+    -si       Calcite Gypsum Halite
+
+USER_PUNCH
+    -headings SC
+    -start
+10  PUNCH SYS("sc")
+    -end
+
+END

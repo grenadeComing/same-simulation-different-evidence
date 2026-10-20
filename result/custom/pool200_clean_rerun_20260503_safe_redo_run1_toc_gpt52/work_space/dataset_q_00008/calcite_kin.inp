@@ -1,0 +1,22 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1
+
+KINETICS 1
+    Calcite
+        -m0     1
+        -m      1
+        -parms  10.0  0.001
+        -steps  1000 in 100
+        -tol    1e-12
+
+SELECTED_OUTPUT
+    -file sel.out
+    -reset false
+    -time true
+    -step true
+    -pe true

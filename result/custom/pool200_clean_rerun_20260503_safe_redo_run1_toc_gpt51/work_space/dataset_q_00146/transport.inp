@@ -1,0 +1,48 @@
+SOLUTION 0
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 1
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 2-10
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 11
+    pH 7 charge
+    Na 1
+    Cl 1
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -initial_time 0
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+
+SELECTED_OUTPUT
+    -file trans.sel
+    -reset false
+    -step true
+
+USER_PUNCH
+    -head step cell m_Ca m_X m_CaX2_1
+    10 LET mCa = MOL("Ca")
+    20 LET mX = TOT("X")
+    30 LET mCaX2_1 = mCa - TOT("Ca")
+    40 PUNCH STEP_NO, CELL_NO, mCa, mX, mCaX2_1

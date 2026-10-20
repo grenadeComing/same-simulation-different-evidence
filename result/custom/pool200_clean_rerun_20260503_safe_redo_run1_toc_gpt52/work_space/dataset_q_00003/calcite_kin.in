@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp 100
+    pH   5
+    pe   4
+    units mol/kgw
+    C(4) 5e-4
+    Mn   1e-3
+
+RATES
+Calcite_custom
+-start
+ 10 k = PARM(2)
+ 20 sa = PARM(1)
+ 30 rate = k*sa
+ 40 moles = rate * TIME
+ 50 SAVE moles
+-end
+
+KINETICS 1
+    Calcite_custom
+        -formula CaCO3 1
+        -m0 1
+        -parms 10.0 0.001
+        -steps 10 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -reset false
+    -time true
+    -step true
+    -totals C
+END

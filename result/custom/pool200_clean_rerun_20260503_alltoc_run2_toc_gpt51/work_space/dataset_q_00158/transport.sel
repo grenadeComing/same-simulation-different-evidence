@@ -1,0 +1,6 @@
+         sim	       state	        soln	        step	   si_H2O(g)	
+           1	      i_soln	           0	         -99	     -1.5028	
+           1	      i_soln	           1	         -99	     -1.5028	
+           1	      i_soln	          11	         -99	     -1.5028	
+           1	       react	           0	           1	     -1.5029	
+      Sum_resid	    Sum_Delta/U	     MaxFracErr	         Soln_4	     Soln_4_min	     Soln_4_max	

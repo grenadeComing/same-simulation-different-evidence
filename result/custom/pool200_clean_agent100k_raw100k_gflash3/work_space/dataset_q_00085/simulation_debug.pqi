@@ -1,0 +1,28 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    water 1
+END
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g) 10
+    CO2(g) 10
+    NH3(g) 5
+END
+
+USER_PUNCH
+    -headings initial_CH4 final_CH4 delta_CH4
+    10 PUNCH G_M("CH4(g)") # This will be the final moles after equilibration
+END
+
+# We need to run it in a way that we can see the initial state too.
+# But PHREEQC's USER_PUNCH in a batch reaction step only punches the final state.
+# We can use the delta from the output file.
+
+USE solution 1
+USE gas_phase 1
+END

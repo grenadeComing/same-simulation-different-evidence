@@ -1,0 +1,37 @@
+TITLE 1D transport with cation exchange
+
+SOLUTION 0  Infilling solution
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10 Initial solutions
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions constant constant
+    -lengths 1
+    -dispersivities 0
+    -diffusion_coefficient 0
+    -time_step 1
+    -print_frequency 1
+    -punch_frequency 1
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+
+USER_PUNCH
+    -headings shift cell CaX2_moles
+10 PUNCH SIM_NO, CELL_NO, MOL("CaX2")
+
+END

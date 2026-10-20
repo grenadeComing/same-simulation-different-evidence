@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 25
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10
+USER_PUNCH 1
+    -headings act_H+
+    10 PUNCH ACT("H+")
+SELECTED_OUTPUT 1
+    -file output_pure.sel
+    -user_punch true
+    -reset false
+END

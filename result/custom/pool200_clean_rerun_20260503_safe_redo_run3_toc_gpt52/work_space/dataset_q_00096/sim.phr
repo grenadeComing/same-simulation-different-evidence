@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT
+    -file sel.tsv
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings Mg_molality Si_molality
+10 PUNCH MOL("Mg"), MOL("Si")
+END

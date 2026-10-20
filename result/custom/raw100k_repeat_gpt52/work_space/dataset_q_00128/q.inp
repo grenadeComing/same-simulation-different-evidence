@@ -1,0 +1,11 @@
+SOLUTION 1 Pure water pH 7
+    pH 7 charge
+    pe 4
+    temp 25
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -pe true
+END

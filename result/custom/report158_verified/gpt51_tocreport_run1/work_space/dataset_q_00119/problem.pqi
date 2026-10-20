@@ -1,0 +1,38 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+SOLUTION 1 INFILL
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 0-10
+    X- 0.001
+    -equilibrate 1
+
+SELECTED_OUTPUT
+    -file sel.out
+    -reset false
+    -state true
+    -solution true
+    -pH true
+    -pe true
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1
+    -dispersivities 0
+    -correct_disp true
+    -print_cells 10
+    -print_frequency 1
+    -punch_cells 10
+    -punch_frequency 1
+
+PRINT
+    -reset false
+    -status true

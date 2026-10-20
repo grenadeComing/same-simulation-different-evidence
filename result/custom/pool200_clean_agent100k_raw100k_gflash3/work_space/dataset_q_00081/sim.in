@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    water 1 kg
+END
+EQUILIBRIUM_PHASES 1
+    CH4(g) -0.39794 10.0
+    CO2(g) -0.39794 10.0
+    NH3(g) -0.69897 5.0
+END
+SELECTED_OUTPUT
+    -file result.sel
+    -molalities NH4+ NH3
+END

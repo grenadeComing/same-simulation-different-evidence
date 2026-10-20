@@ -1,0 +1,19 @@
+SOLUTION 1 River
+    pH 6.0
+    temp 25
+    Cl 10
+
+SOLUTION 2 Seawater
+    pH 8.1
+    temp 25
+    Cl 19000
+
+MIX 3
+    1 0.7
+    2 0.3
+
+SELECTED_OUTPUT
+    -file mix_si_h2o.sel
+    -reset false
+    -si H2O(g)
+END

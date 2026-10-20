@@ -1,0 +1,37 @@
+SOLUTION 0
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 1-10
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 0
+    pH 7 charge
+    Na 1
+    Cl 1
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -initial_time 0
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1*1
+    -dispersivities 1*0
+    -correct_disp false
+
+SELECTED_OUTPUT
+    -file tran_sel.out
+    -reset false
+    -solution true
+    -si Halite
+
+END

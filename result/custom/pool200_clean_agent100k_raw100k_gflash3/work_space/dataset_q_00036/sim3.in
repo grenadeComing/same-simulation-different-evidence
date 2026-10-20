@@ -1,0 +1,24 @@
+SOLUTION 1
+    units mmol/kgw
+    temp 20
+    pH 7 charge
+    C(4) 50
+    Na 50
+SOLUTION 2
+    units mmol/kgw
+    temp 20
+    pH 7 charge
+    Ca 50
+    Cl 100
+MIX 1
+    1 0.5
+    2 0.5
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10.0
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+REACTION_PRESSURE 1
+    1.0
+USER_PRINT
+    10 PRINT "Temp: ", TC, " P: ", PR_P, " LogK: ", LK_PHASE("Calcite"), " LogIAP: ", SI("Calcite") + LK_PHASE("Calcite")
+END

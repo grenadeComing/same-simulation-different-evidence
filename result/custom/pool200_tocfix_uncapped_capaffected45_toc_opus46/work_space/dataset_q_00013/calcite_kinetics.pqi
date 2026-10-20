@@ -1,0 +1,30 @@
+SOLUTION 1
+    temp      200
+    pH        2
+    pe        4
+    units     mmol/kgw
+    Cu        10
+    Ba        5
+
+KINETICS 1
+    Calcite
+        -m0    1
+        -m     1
+        -parms 1.0  10
+        -tol   1e-8
+    -steps 1000 in 100 steps
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file result.out
+    -reset false
+    -step
+    -time
+    -pH
+    -pe
+    -totals Ca C Cu Ba
+    -kinetic_reactants Calcite
+    -saturation_indices Calcite
+
+END

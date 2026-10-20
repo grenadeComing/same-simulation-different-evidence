@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    Fe(+2) 4 mmol/kgw
+    Fe(+3) 4 mmol/kgw
+    Cl 1 charge
+END
+USE solution 1
+EQUILIBRIUM_PHASES 1
+    H2S(g) 0.69897 10
+SELECTED_OUTPUT
+    -file initial_pe.sel
+    -reset false
+    -pe
+END

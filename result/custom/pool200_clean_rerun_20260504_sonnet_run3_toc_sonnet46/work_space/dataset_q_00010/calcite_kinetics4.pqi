@@ -1,0 +1,35 @@
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4.0
+    units     mmol/kgw
+    Cu        10.0
+    Ba        5.0
+
+RATES
+Calcite
+-start
+10 si_cc = SI("Calcite")
+20 rate = 10 * PARM(1) * (M/M0)^0.6 * (1 - 10^si_cc)
+30 moles = rate * TIME
+40 if (moles > M) then moles = M
+50 SAVE moles
+-end
+
+KINETICS 1
+Calcite
+    -tol   1e-8
+    -m0    1.0
+    -m     1.0
+    -parms 1.0
+    -bad_step_max 500
+    -step  1000 in 100
+
+SELECTED_OUTPUT
+    -file   calcite_kinetics4.out
+    -reset  false
+    -step   true
+    -time   true
+    -si     Witherite
+
+END

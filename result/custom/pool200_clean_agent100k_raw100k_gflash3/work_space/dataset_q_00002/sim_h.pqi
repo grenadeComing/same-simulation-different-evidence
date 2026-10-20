@@ -1,0 +1,28 @@
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 4
+    C(4) 0.5 mmol/kgw
+    Mn 1 mmol/kgw
+    Cl 1.99 mmol/kgw # balance
+KINETICS 1
+    Calcite
+    -m 1.0
+    -parms 0.001 10.0
+    -step 1000 in 100
+RATES
+    Calcite
+    -start
+    10 k = PARM(1)
+    20 ssa = PARM(2)
+    30 rate = k * ssa * ACT("H+") * (1 - SR("Calcite"))
+    40 moles = rate * TIME
+    50 save moles
+    -end
+SELECTED_OUTPUT
+    -file result.sel
+    -reset false
+    -step
+    -pH
+    -time
+END

@@ -1,0 +1,11 @@
+SOLUTION 1
+temp 200
+pH 2
+Fe(+3) 4e-3
+Fe(+2) 4e-3
+Cl 1.0 charge
+EQUILIBRIUM_PHASES 1
+FIX_PH -2 HCl 10
+H2S(g) 0.69897 100
+Albite 0 1.0
+END

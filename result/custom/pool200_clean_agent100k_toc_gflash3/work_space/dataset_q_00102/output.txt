@@ -1,0 +1,2 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	si_Aragonite	
+           1	      i_soln	           1	         -99	         -99	         -99	         7.5	           4	      0.0391	

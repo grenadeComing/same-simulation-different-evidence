@@ -1,0 +1,7 @@
+SOLUTION 1
+    temp 25
+    pH 7.0
+    pe 0.0
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10.0
+END

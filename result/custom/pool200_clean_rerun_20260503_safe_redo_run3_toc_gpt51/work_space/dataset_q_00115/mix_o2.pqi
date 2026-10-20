@@ -1,0 +1,19 @@
+SOLUTION 1 River
+    pH 6.0
+    Cl 10
+SOLUTION 2 Seawater
+    pH 8.1
+    Cl 19000
+MIX 1
+    1 0.7
+    2 0.3
+EQUILIBRIUM_PHASES 1
+    O2(g) 0 0
+USE solution 1
+USE equilibrium_phases 1
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -totals O(0)
+    -si O2(g)
+END

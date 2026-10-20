@@ -1,0 +1,19 @@
+SOLUTION 1
+    temp 100
+    units mmol/kgw
+    Ca 50
+    pH 7 charge
+END
+
+USE solution 1
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 10
+    Mtg(g) -0.50515 10  # 5/16 atm
+END
+SELECTED_OUTPUT
+    -file result_mtg.sel
+    -reset false
+    -m Mtg
+END

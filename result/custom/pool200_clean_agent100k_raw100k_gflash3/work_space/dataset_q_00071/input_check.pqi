@@ -1,0 +1,25 @@
+SOLUTION 1
+    temp 25
+    pH 7.0
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    Pyrite 0 0.1
+    O2(g) -0.7 10
+    Goethite 0 0
+    Gypsum 0 0
+USER_PRINT
+    10 t = 0
+    20 t = t + ALK("H+") * MOL("H+")
+    30 t = t + ALK("HSO4-") * MOL("HSO4-")
+    40 t = t + ALK("FeSO4+") * MOL("FeSO4+")
+    50 t = t + ALK("FeHSO4+2") * MOL("FeHSO4+2")
+    60 t = t + ALK("Fe(SO4)2-") * MOL("Fe(SO4)2-")
+    70 t = t + ALK("Fe+3") * MOL("Fe+3")
+    80 PRINT "Total calc Alk: ", t
+    90 PRINT "H+ Alk: ", ALK("H+")
+    100 PRINT "HSO4- Alk: ", ALK("HSO4-")
+    110 PRINT "FeSO4+ Alk: ", ALK("FeSO4+ ")
+    120 PRINT "FeHSO4+2 Alk: ", ALK("FeHSO4+2")
+    130 PRINT "Fe+3 Alk: ", ALK("Fe+3")
+END

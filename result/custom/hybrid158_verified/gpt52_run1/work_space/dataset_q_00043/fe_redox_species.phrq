@@ -1,0 +1,22 @@
+SOLUTION 1
+    temp 100
+    pH 3 charge
+    units mol/kgw
+    water 1
+
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+
+SELECTED_OUTPUT
+    -file fe_sel.csv
+    -high_precision true
+USER_PUNCH
+    -headings n_Fe2_aq_species n_Fe3_aq_species
+    10 PUNCH SYS("count_aq Fe(2)")
+    20 PUNCH SYS("count_aq Fe(3)")
+END

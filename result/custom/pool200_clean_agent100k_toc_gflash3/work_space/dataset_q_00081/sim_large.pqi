@@ -1,0 +1,23 @@
+TITLE NH4+ vs NH3 at 150C (Correct Gas Volume)
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    units mol/kgw
+    water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    -volume 868.2
+    CH4(g) 10
+    CO2(g) 10
+    NH3(g) 5
+
+SELECTED_OUTPUT 1
+    -file output_large.sel
+    -molalities NH4+ NH3
+    -pH
+
+END

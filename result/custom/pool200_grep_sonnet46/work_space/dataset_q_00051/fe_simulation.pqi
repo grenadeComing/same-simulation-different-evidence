@@ -1,0 +1,23 @@
+TITLE Fe(2) vs Fe(3) in solution at 100C, pH 3, equilibrium with minerals
+
+SOLUTION 1
+    temp    100
+    pH      3
+    units   mol/L
+    water   1 kg
+
+EQUILIBRIUM_PHASES 1
+    K-mica          0  10
+    Kaolinite       0  10
+    Dolomite        0  10
+    Epsomite        0  10
+    Fe(OH)3(a)      0  10
+    Halite          0  10
+
+SELECTED_OUTPUT
+    -file           fe_simulation.out
+    -reset          false
+    -totals         Fe(2) Fe(3)
+    -molalities     Fe+2 Fe+3 FeOH+ FeSO4 Fe(OH)2+ Fe(OH)3 Fe(OH)4- FeHSO4+2 FeSO4+ Fe2(OH)2+4 Fe3(OH)4+5
+
+END

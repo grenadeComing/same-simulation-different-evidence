@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 20
+    pH 7.0
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+SOLUTION 2
+    temp 30
+    pH 7.0
+EQUILIBRIUM_PHASES 2
+    Gypsum 0 10
+SELECTED_OUTPUT 1
+    -file temps.sel
+    -ionic_strength true
+END

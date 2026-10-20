@@ -1,0 +1,39 @@
+TITLE 1D transport with exchange
+SOLUTION 0
+    temp 25
+    pH 7.0
+    pe 4
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10
+    temp 25
+    pH 7.0
+    pe 4
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X 0.001
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1 1 1 1 1 1 1 1 1 1
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -print_cells 4
+    -print_frequency 1
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -simulation true
+    -state true
+    -solution true
+    -distance true
+    -time true
+    -pH true
+USER_PUNCH
+    -headings HCl
+10 PUNCH MOL("H+")*MOL("Cl-")/TOT("water")
+END

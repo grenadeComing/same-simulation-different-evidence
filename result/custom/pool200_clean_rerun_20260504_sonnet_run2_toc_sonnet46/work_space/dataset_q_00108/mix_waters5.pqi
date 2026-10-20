@@ -1,0 +1,20 @@
+SOLUTION 1  River Water
+    pH      6.0
+    pe      12.5
+    Cl      10   mg/L
+
+SOLUTION 2  Seawater
+    pH      8.1
+    pe      12.5
+    Cl      19000  mg/L
+
+MIX 1
+    1   0.7
+    2   0.3
+
+SELECTED_OUTPUT
+    -file mix_output5.sel
+    -pe     true
+    -pH     true
+
+END

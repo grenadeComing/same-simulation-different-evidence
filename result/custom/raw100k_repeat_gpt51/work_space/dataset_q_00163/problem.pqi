@@ -1,0 +1,29 @@
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    Ca 0.01
+    Sr 0.01
+    Alkalinity 0.04 as HCO3
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Strontianite 0 0
+SAVE solution 1
+SAVE equilibration_phases 1
+END
+
+SOLUTION 2
+    -solution 1
+SOLID_SOLUTIONS 1
+    Ca_Sr_carbonate
+        -comp Calcite 0.0
+        -comp Strontianite 0.0
+USE solution 2
+USE solid_solutions 1
+EQUILIBRIUM_PHASES 2
+    CaCO3(ss) 0 10
+END
+
+SELECTED_OUTPUT
+    -file ss.out
+    -solid_solutions true
+END

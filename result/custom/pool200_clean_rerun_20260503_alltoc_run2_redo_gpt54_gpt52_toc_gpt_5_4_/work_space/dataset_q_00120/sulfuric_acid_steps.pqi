@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    water 1
+REACTION 1
+    H2SO4 1
+    0.001 0.005 0.01 0.05 0.1
+USER_PUNCH
+    -headings act_H
+    10 PUNCH ACT("H+")
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -high_precision true
+    -user_punch true
+END

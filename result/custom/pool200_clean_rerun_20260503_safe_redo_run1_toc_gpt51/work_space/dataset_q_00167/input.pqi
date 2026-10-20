@@ -1,0 +1,11 @@
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    Ca 0.01
+    Sr 0.01
+    C(4) 0.0008
+
+SELECTED_OUTPUT
+    -file selected.out
+    -activities Ca+2
+END

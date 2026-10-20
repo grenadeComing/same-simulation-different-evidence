@@ -1,0 +1,12 @@
+
+SOLUTION 1
+    temp 100
+    Ca 50
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Aragonite 0 1000
+    Gypsum 0 1000
+    CO2(g) 0 1000
+    CH4(g) 0.69897 1000
+    H2S(g) 1.0 1000
+END

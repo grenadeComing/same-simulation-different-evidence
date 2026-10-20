@@ -1,0 +1,33 @@
+SOLUTION 1
+    temp      200
+    pH        2 charge
+    pe        4
+    units     mmol/kgw
+    Ba        5
+
+KINETICS 1
+    Calcite
+        -m0 1
+        -parms 10 1.0
+        -steps 1000 in 100 seconds
+
+RATES
+    Calcite
+    -start
+        10  k = PARM(1)
+        20  ssa = PARM(2)
+        30  m = MOL("Calcite")
+        40  if (m <= 0) THEN m = 0
+        50  si = SI("Calcite")
+        60  rate = k * ssa * (1 - 10^si)
+        70  moles = rate * TIME
+    -end
+
+SELECTED_OUTPUT
+    -file selout.csv
+    -reset false
+    -time true
+    -step true
+    -si Witherite
+
+END

@@ -1,0 +1,26 @@
+TITLE 1D transport with exchange
+SOLUTION 0
+    pH 7.0 charge
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10
+    pH 7.0 charge
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1
+    X 0.001
+    -equilibrate 1
+COPY exchange 1 2-10
+TRANSPORT
+    -cells 10
+    -shifts 10
+SELECTED_OUTPUT
+    -file selected_output.txt
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings step sim cell mol_NaX
+10 PUNCH STEP_NO, SIM_NO, CELL_NO, MOL("NaX")
+END

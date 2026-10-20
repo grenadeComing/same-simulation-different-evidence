@@ -1,0 +1,53 @@
+TITLE River water and seawater mixing (0.7:0.3)
+
+# Solution 1: River water, pH 6.0, Cl 10 mg/L
+SOLUTION 1 River Water
+    temp      25
+    pH        6.0
+    pe        4.0
+    units     mg/L
+    Cl        10.0
+    Na        10.0
+    Ca        10.0
+    Mg        5.0
+    S(6)      5.0
+    Alkalinity 20.0 as HCO3
+
+# Solution 2: Seawater, pH 8.1, Cl 19000 mg/L
+SOLUTION 2 Seawater
+    temp      25
+    pH        8.1
+    pe        4.0
+    units     mg/L
+    Cl        19000.0
+    Na        10500.0
+    Mg        1350.0
+    Ca        400.0
+    K         380.0
+    S(6)      2700.0
+    Alkalinity 142.0 as HCO3
+
+# Mix 70% river water and 30% seawater
+MIX 1
+    1    0.7
+    2    0.3
+
+SAVE SOLUTION 3
+
+END
+
+USE SOLUTION 3
+
+SELECTED_OUTPUT
+    -file mix_output.sel
+    -reset false
+    -si O2(g)
+
+USER_PUNCH
+    -headings logIAP_O2g SI_O2g
+    -start
+    10 PUNCH LOG10(ACT("O2"))
+    20 PUNCH SI("O2(g)")
+    -end
+
+END

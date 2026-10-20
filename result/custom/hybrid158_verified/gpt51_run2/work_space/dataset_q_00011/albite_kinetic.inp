@@ -1,0 +1,35 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(3) 4e-3
+    Fe(2) 4e-3
+    units mol/kgw
+
+GAS_PHASE 1
+    -fixed_pressure true
+    -pressure 5
+    H2S(g) 1
+
+KINETICS 1
+    Albite 1.0
+    -m0 1.0
+    -parms 10 1.0
+    -steps 10 in 100 steps
+
+RATES
+    Albite
+    -start
+    10 k = PARM(1)
+    20 s_surf = PARM(2)
+    30 rate = k * s_surf
+    40 moles = rate * TIME
+    50 SAVE moles
+    -end
+
+SELECTED_OUTPUT
+    -file albite_sel.out
+    -reset false
+    -totals Na Al Si
+    -kinetic_reactants Albite
+
+END

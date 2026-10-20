@@ -1,0 +1,24 @@
+SOLUTION 1 River
+    temp 25
+    pH 6.0 charge
+    units mg/L
+    Cl 10
+
+SOLUTION 2 Seawater
+    temp 25
+    pH 8.1 charge
+    units mg/L
+    Cl 19000
+
+MIX 1
+    1 0.7
+    2 0.3
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings charge_balance
+    10 PUNCH CHARGE_BALANCE
+END

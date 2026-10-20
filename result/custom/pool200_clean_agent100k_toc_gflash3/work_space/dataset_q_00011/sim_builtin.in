@@ -1,0 +1,25 @@
+
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 0.01
+    Ba 0.005
+    Cl 1.0 charge
+    units mol/kgw
+
+KINETICS 1
+    Calcite
+    -m 1.0
+    -parms 1.0 10
+    -steps 1000 in 100
+    -runge_kutta 4
+
+SELECTED_OUTPUT
+    -file result.sel
+    -reset false
+    -time true
+    -molalities CO2
+    -step
+
+END

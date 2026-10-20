@@ -1,0 +1,24 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mol/kgw
+    C(4)      0.0005
+    Mn        0.001
+
+KINETICS 1
+Calcite
+    -tol    1e-8
+    -m0     1.0
+    -m      1.0
+    -parms  10.0   0.001
+    -steps  1000 in 100
+
+SELECTED_OUTPUT
+    -file   calcite_kinetic8.out
+    -reset  false
+    -step   true
+    -time   true
+    -totals C Mn Ca
+
+END

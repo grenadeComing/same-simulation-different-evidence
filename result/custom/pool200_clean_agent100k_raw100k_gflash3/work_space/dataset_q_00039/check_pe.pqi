@@ -1,0 +1,11 @@
+SOLUTION 1
+    temp 100
+    pH 6.6
+    pe -4.646
+    units mmol/kgw
+    Ca 50
+    S(6) 50
+    S(-2) 50
+    C(4) 50
+    C(-4) 50
+END

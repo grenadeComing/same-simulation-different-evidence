@@ -1,0 +1,35 @@
+TITLE Count of aqueous C(+4) species after equilibration with fixed-pressure gas phase at 150C
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    pe 4
+    units mol/kgw
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g)  10
+    CO2(g)  10
+    NH3(g)  5
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -totals C
+
+USER_PUNCH
+    -headings n_C4_aq_species
+10 n = 0
+20 i = SYS("species"); j = 0
+30 if i <= 0 then goto 100
+40 name$ = SYS("species_name", j)
+50 if name$ = "" then goto 100
+60 if SYS("element", name$, "C", 4) > 0 then
+70   if SYS("mol", name$) > 0 then n = n + 1
+80 end if
+90 j = j + 1
+95 goto 40
+100 PUNCH n
+END

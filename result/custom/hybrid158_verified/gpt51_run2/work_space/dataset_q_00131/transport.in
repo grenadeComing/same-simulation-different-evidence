@@ -1,0 +1,52 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+END
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+END
+
+EXCHANGE_SPECIES
+    X- = X-
+        -log_k 0.0
+        gamma 4.0 0.075
+
+EXCHANGE 0-10
+    X- 0.001
+EQUILIBRIUM_PHASES 0-10
+    Calcite 0 0
+END
+
+EXCHANGE 11
+    X- 0.001
+EQUILIBRIUM_PHASES 11
+    Calcite 0 0
+END
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1.0
+    -length              1.0
+    -flow_direction      forward
+    -boundary_conditions flux
+    -initial_time        0.0
+    -print_cells         1-10
+    -print_frequency     1
+    -punch_cells         1-10
+    -punch_frequency     1
+    -correct_disp        true
+
+SELECTED_OUTPUT
+    -file                selout.txt
+    -reset               false
+    -time                true
+    -distance            true
+    -solution            true
+    -totals              Na Ca Cl
+    -activities          Na+
+END

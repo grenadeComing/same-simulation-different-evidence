@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 100
+    pH 5
+    units mmol/kgw
+    Ba 100
+    Cl 200
+    water 1 kg
+
+EQUILIBRIUM_PHASES 1
+    Rhodochrosite 0 10
+    Talc 0 10
+    Sepiolite 0 10
+    Sepiolite(d) 0 10
+    Pb(OH)2 0 10
+END

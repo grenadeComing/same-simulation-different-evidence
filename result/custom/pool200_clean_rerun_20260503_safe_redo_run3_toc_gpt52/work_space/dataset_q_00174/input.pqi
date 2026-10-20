@@ -1,0 +1,19 @@
+SOLUTION 1
+    units mg/L
+    temp 25
+    pH 7 charge
+    Ba 2.0
+    S(6) 15.0
+
+REACTION_TEMPERATURE 1
+    25 95 in 5
+
+SELECTED_OUTPUT
+    -reset false
+    -step true
+    -temperature true
+    -high_precision true
+USER_PUNCH
+    -headings Step Temp_C SpecCond_uS_cm
+    10 PUNCH STEP_NO, TC, SC
+END

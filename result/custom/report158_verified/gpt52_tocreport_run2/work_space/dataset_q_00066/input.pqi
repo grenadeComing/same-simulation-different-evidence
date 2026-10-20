@@ -1,0 +1,13 @@
+TITLE Use EQUILIBRIUM_PHASES with fixed CO2(g) partial pressure at 150C; count C(+4) species
+SOLUTION 1
+  temp 150
+  pH 7
+  pe 4
+  units kgw
+  water 1
+EQUILIBRIUM_PHASES 1
+  CO2(g) -0.39794 10
+END
+PRINT
+  -species true
+END

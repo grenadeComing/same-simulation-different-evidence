@@ -1,0 +1,45 @@
+TITLE Kinetic dissolution of Albite at pH 2, 200C, with H2S gas phase
+
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4.0
+    units     mmol/kgw
+    Fe(2)     4.0
+    Fe(3)     4.0
+    water     1.0 # kg
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5.0
+    -volume   1.0
+    -temp     200
+    H2S(g)    5.0
+
+KINETICS 1
+Albite
+    -m0   1.0
+    -m    1.0
+    -parms 1.0  10.0
+    -step  1000 in 100
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT 1
+    -file   albite_out2.sel
+    -reset  false
+    -step   true
+    -totals Si Al Na Fe
+
+USER_PUNCH 1
+    -headings step Si_count
+    -start
+10 n = 0
+20 FOR i = 1 TO TOTAL_SPECIES
+30   sp$ = SPECIES_NAME(i)
+40   IF INSTR(sp$, "Si") > 0 THEN n = n + 1
+50 NEXT i
+60 PUNCH STEP_NO, n
+    -end
+
+END

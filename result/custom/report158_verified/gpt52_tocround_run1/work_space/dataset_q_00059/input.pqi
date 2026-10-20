@@ -1,0 +1,24 @@
+SOLUTION 1
+  temp 25
+  pH 7 charge
+  units mol/kgw
+  -water 1
+
+GAS_PHASE 1
+  -fixed_pressure
+  -pressure 1
+  O2(g) -0.7
+
+EQUILIBRIUM_PHASES 1
+  Pyrite 0 0.1
+  Goethite 0 0
+  Gypsum 0 0
+
+SELECTED_OUTPUT
+  -file selected.txt
+
+USER_PUNCH
+  -headings FeIII_aq_species
+10 PUNCH TOT("Fe(3)")
+
+END

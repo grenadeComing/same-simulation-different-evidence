@@ -1,0 +1,30 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+    S(-2) 1e-10
+    Cl 1 charge
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 20.34
+    H2S(g) 5.0
+    H2O(g) 15.34
+
+KINETICS 1
+    Albite
+    -m0 1.0
+    -m 1.0
+    -parms 1.0 10
+    -steps 1000 in 100
+
+SELECTED_OUTPUT
+    -file albite.out
+    -kinetics Albite
+    -time
+    -step
+    -pe
+    -pH
+END

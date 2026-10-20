@@ -1,0 +1,30 @@
+TITLE Albite kinetic dissolution, pH 2, 200C, Fe2/Fe3, fixed P H2S
+
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(+3) 4e-3
+    Fe(+2) 4e-3
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+        -steps 10 in 100
+        -tol 1e-15
+
+SELECTED_OUTPUT
+    -file alb_kin.sel
+    -reset false
+    -time true
+    -step true
+    -kinetic_reactants Albite
+
+END

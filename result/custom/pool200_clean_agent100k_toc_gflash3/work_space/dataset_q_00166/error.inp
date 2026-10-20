@@ -1,0 +1,103 @@
+SOLUTION_RAW                 1 
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.05210169332
+  -total_o                   55.639327634112
+  -cb                        -1.0141257925907e-16
+  -density                   1.000116130273
+  -viscosity                 0.9166014844174
+  -viscos_0                  0.89002391782618
+  -totals
+    C(4)                     0.046638393725746
+    Ca                       0.01
+    H(0)                     1.3983136872225e-25
+    Sr                       0.01
+  -pH                        7
+  -pe                        4
+  -mu                        0.054253869525137
+  -ah2o                      0.99891511683133
+  -mass_water                1
+  -soln_vol                  1.0038903570023
+  -total_alkalinity          0.04
+  -activities
+    Alkalinity               -4.8449295174369
+    C(4)                     -4.8449295174369
+    Ca                       -2.3667893463734
+    E                        -4
+    H(0)                     -25.15
+    O(0)                     -42.08094282907
+    Sr                       -2.4351797470352
+  -gammas
+EQUILIBRIUM_PHASES_RAW       1 
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 Fix_pH
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -add_formula           HCl
+      -si                    -7
+      -moles                 10
+      -force_equality        1
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                -7
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    Cl                       1
+    H                        2
+  # PPassemblage workspace variables #
+  -assemblage_totals
+SOLID_SOLUTIONS_RAW          1 
+  # SOLID_SOLUTION_MODIFY candidate identifiers #
+  -solid_solution            Ca_Sr_carbonate
+    # SOLID_SOLUTION_MODIFY candidate identifiers #
+    -component               Calcite
+        # SOLID_SOLUTION_MODIFY candidate identifiers #
+        -moles               0
+        # Solid solution workspace variables #
+        -initial_moles       1e-27
+        -init_moles          0
+        -delta               0
+        -fraction_x          0.5
+        -log10_lambda        0
+        -log10_fraction_x    -0.30102999566398
+        -dn                  5e+26
+        -dnc                 0
+        -dnb                 5e+26
+    -component               Strontianite
+        # SOLID_SOLUTION_MODIFY candidate identifiers #
+        -moles               0
+        # Solid solution workspace variables #
+        -initial_moles       1e-27
+        -init_moles          0
+        -delta               0
+        -fraction_x          0.5
+        -log10_lambda        0
+        -log10_fraction_x    -0.30102999566398
+        -dn                  5e+26
+        -dnc                 0
+        -dnb                 5e+26
+    # SOLID_SOLUTION_MODIFY candidate identifiers with new_def=true #
+    -tk                      298.15
+    -input_case              -1
+    -p			              0	0	0	0
+    # solid solution workspace variables #
+    -ag0                     0
+    -ag1                     0
+    -a0                      0
+    -a1                      0
+    -xb1                     0
+    -xb2                     0
+    -miscibility             0
+    -spinodal                0
+    -ss_in                   0
+    -total_moles             0
+    -dn                      5e+26
+    -totals                  
+  # SOLID_SOLUTION candidate identifiers with new_def=true #
+  -new_def                   0
+  # solid solution workspace variables #
+  -SSassemblage_totals       

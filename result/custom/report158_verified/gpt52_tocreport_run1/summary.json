@@ -1,0 +1,39 @@
+{
+  "model": "gpt-5.2",
+  "method": "custom_agent_toc_report",
+  "context_mode": "toc_report",
+  "dataset": "dataset_158_verified.jsonl",
+  "run_name": "report158_verified/gpt52_tocreport_run1",
+  "max_steps": 24,
+  "workers": 4,
+  "task_filter": "all",
+  "start_index": null,
+  "end_index": null,
+  "started_at": "2026-10-11T10:38:57-07:00",
+  "ended_at": "2026-10-11T10:53:52-07:00",
+  "elapsed_seconds": 894.528,
+  "seconds_per_row": 5.662,
+  "total_rows": 158,
+  "graded_rows": 143,
+  "ungraded_rows": 15,
+  "correct_rows": 106,
+  "error_rows": 1,
+  "accuracy": 0.6708860759493671,
+  "graded_accuracy": 0.7412587412587412,
+  "by_task_type": {
+    "mcq": {
+      "total": 158,
+      "correct": 106,
+      "graded": 143,
+      "ungraded": 15,
+      "errors": 1,
+      "accuracy": 0.6708860759493671,
+      "graded_accuracy": 0.7412587412587412
+    }
+  },
+  "total_input_tokens": 7776110,
+  "total_output_tokens": 58691,
+  "agent_input_tokens": 7776110,
+  "agent_output_tokens": 58691,
+  "aux_by_source": {}
+}

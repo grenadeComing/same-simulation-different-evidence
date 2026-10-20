@@ -1,0 +1,17 @@
+TITLE pe after equilibration with fixed-pressure gas using EQUILIBRIUM_PHASES fugacities
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    pe 4
+    units kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    CO2(g) -0.39794 10
+    CH4(g) -0.39794 10
+    NH3(g) -0.69897 5
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -pH true
+    -pe true
+END

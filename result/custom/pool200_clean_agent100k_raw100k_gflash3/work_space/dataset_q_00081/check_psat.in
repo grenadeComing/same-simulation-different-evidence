@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    water 1 kg
+END
+PHASES
+    H2O(g)
+    H2O = H2O
+    log_k 0.0 # Just a dummy to check saturation
+END
+USER_PUNCH
+    -headings P_sat
+    10 PUNCH SI("H2O(g)")
+END
+RUN_CELLS
+    -cells 1
+END

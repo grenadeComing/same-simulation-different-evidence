@@ -1,0 +1,48 @@
+# 1D Transport with Ion Exchange
+# 10 cells, 10 shifts
+# Initial solution: pH 7.0, Ca 1.0 mmol/L, Cl 2.0 mmol/L
+# Infilling solution: pH 7.0, Na 1.0 mmol/L, Cl 1.0 mmol/L
+# Exchange: 0.001 mol X-, equilibrated with solution 1
+
+# Solution 0 = infilling solution (enters from left)
+SOLUTION 0
+    pH      7.0
+    Na      1.0
+    Cl      1.0
+    units   mmol/L
+
+# Solution 1 = initial solution filling all cells
+SOLUTION 1-10
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+    units   mmol/L
+
+# Exchange assemblage for all 10 cells, equilibrated with solution 1
+EXCHANGE 1-10
+    X       0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells          10
+    -shifts         10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -dispersivities 0
+    -lengths        1.0
+    -time_step      1.0
+    -diffusion_coefficient 0
+
+SELECTED_OUTPUT
+    -file           transport_exchange.sel
+    -reset          false
+    -step
+    -totals         Na Ca Cl
+
+USER_PUNCH
+    -headings  NaX CaX2
+    -start
+10 PUNCH MOL("NaX"), MOL("CaX2")
+    -end
+
+END

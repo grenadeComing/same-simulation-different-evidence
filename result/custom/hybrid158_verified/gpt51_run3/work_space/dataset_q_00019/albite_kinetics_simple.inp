@@ -1,0 +1,40 @@
+TITLE Albite kinetics with gas H2S - coarser steps
+
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(2) 4e-3
+    Fe(3) 4e-3
+    units mol/kgw
+
+GAS_PHASE 1
+    -fixed_pressure true
+    -pressure 5
+    H2S(g) 5
+
+KINETICS 1
+    Albite_kin
+    -formula Albite 1
+    -m0 1.0
+    -m        1.0
+    -steps 1000 in 20 steps
+
+RATES
+    Albite_kin
+    -start
+    10 k = 10
+    20 ssa = 1.0
+    30 rate = k * ssa
+    40 moles = rate * TIME
+    50 SAVE moles
+    -end
+
+SELECTED_OUTPUT
+    -file albite_kinetics_simple.sel
+    -reset false
+    -totals Si
+    -molalities SiO2(aq) H4SiO4 H3SiO4- H2SiO4-2 HSiO3- SiO3-2
+    -step true
+    -high_precision true
+
+END

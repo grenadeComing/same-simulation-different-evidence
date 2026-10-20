@@ -1,0 +1,28 @@
+TITLE Pyrite oxidation with atmospheric O2
+
+SOLUTION 1
+    temp 25
+    pH 7.0 charge
+    pe 4
+    redox pe
+    units mol/kgw
+    density 1
+
+EQUILIBRIUM_PHASES 1
+    Pyrite 0 0.1
+    O2(g)  -0.7
+    Goethite 0 0
+    Gypsum  0 0
+
+SELECTED_OUTPUT
+    -file pyrite_sel.out
+    -temperature true
+    -ionic_strength true
+    -totals Fe S Ca O(0)
+    -equilibrium_phases Pyrite Goethite Gypsum
+
+USER_PUNCH
+    -headings sc
+    10 PUNCH SC
+
+END

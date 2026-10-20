@@ -1,0 +1,15 @@
+SOLUTION 1 Pure water
+    pH 7 charge
+    temp 25
+    -water 1
+REACTION 1
+    H2SO4 1
+    0.001 0.005 0.01 0.05 0.1
+END
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings I
+    10 PUNCH IONIC_STRENGTH
+END

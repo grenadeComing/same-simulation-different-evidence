@@ -1,0 +1,28 @@
+TITLE NaHCO3 and Ca
+SOLUTION 1
+    temp 20
+    units mmol/kgw
+    C(4) 50
+    Na 50
+SOLUTION 2
+    temp 20
+    units mmol/kgw
+    Ca 50
+    Cl 100
+MIX 1
+    1 0.5
+    2 0.5
+SAVE solution 3
+END
+
+USE solution 3
+EQUILIBRIUM_PHASES 1
+    Calcite 0.0 1.0
+REACTION_TEMPERATURE 1
+    180
+SELECTED_OUTPUT 1
+    -file result.sel
+    -reset false
+    -temperature true
+    -pH true
+END

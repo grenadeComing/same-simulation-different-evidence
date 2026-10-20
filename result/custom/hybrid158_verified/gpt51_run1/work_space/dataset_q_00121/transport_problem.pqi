@@ -1,0 +1,52 @@
+SOLUTION 1-10
+    pH 7.0
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 0
+    pH 7.0
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+
+EQUILIBRIUM_PHASES 1-10
+    Fix_H+ 0 7.0
+
+EXCHANGE_SPECIES
+    X- = X-
+        -formula X
+    Na+ + X- = NaX
+        log_k 0
+    Ca+2 + 2X- = CaX2
+        log_k 0
+
+SELECTED_OUTPUT
+    -file selout.txt
+    -reset false
+    -solution true
+    -step true
+    -totals Na Ca Cl
+    -ionic_strength true
+    -specific_conductance true
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -length 1
+    -flow_direction forward
+    -boundary_condition flux
+    -dispersivities 0
+    -correct_disp false
+    -porosity 1
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+    -dump dump.trn
+    -dump_frequency 10
+    -dump_restart false

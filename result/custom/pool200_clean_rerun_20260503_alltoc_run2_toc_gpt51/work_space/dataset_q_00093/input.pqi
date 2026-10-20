@@ -1,0 +1,9 @@
+TITLE Chalcedony SI with chrysotile+talc at 150C
+SOLUTION 1
+    temp 150
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+    Chalcedony 0 0
+END

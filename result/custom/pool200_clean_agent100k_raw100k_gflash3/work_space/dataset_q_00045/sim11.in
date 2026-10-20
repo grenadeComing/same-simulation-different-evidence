@@ -1,0 +1,12 @@
+
+SOLUTION 1
+    temp 100
+    Na 1.0
+    Cl 1.0
+EQUILIBRIUM_PHASES 1
+    Calcite 0 1000
+    Gypsum 0 1000
+    CO2(g) 0 1000
+    CH4(g) 0.69897 1000
+    H2S(g) 1.0 1000
+END

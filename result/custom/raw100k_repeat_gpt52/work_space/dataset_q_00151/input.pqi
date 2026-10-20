@@ -1,0 +1,37 @@
+TITLE 1D transport with exchange; get specific conductance in cell 8, step 4
+SOLUTION 0  Infilling
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10 Initial
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1 1 1 1 1 1 1 1 1 1
+    -time_step 1
+    -dispersivities 0 0 0 0 0 0 0 0 0 0
+    -diffusion_coefficient 0
+    -punch_cells 8
+    -punch_frequency 1
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -step true
+    -simulation true
+    -state true
+    -time true
+    -distance true
+    -totals Ca Na Cl
+    -molalities Ca+2 Na+ Cl-
+USER_PUNCH
+    -headings Step Cell SC_uS_cm
+10 PUNCH STEP_NO, CELL_NO, SC
+END

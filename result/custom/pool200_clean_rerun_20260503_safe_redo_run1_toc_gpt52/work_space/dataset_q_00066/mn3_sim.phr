@@ -1,0 +1,20 @@
+TITLE Mn(3) in solution after equilibration with mineral assemblage at 100C
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    units mmol/kgw
+    Ba 100
+    water 1
+EQUILIBRIUM_PHASES 1
+    Talc 0 10
+    Rhodochrosite 0 10
+    Sepiolite 0 10
+    Sepiolite(d) 0 10
+    Pb(OH)2 0 10
+SELECTED_OUTPUT
+    -file mn3_sel.txt
+    -reset false
+USER_PUNCH
+    -headings Mn_molality Mn3_molality Mn3_moles
+10 PUNCH TOT("Mn"), TOT("Mn(+3)"), TOT("Mn(+3)")*SOLN_VOL
+END

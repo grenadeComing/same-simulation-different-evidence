@@ -1,0 +1,35 @@
+SOLUTION 0 Infilling
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10 Initial
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+
+# equilibrate each cell with exchange; create initial exchanger composition
+EQUILIBRATE 1-10 with solution 1-10
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -diffusion_coefficient 0
+    -dispersivity 0
+    -punch_cells 1
+
+SELECTED_OUTPUT
+    -file selected.csv
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings Step SC_uS_cm
+10 PUNCH TOT("cells")  # dummy
+20 PUNCH TRANSPORT_STEP, SC
+END

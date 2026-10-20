@@ -1,0 +1,10 @@
+SOLUTION 1
+    temp 25
+    pH 7.0
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+SELECTED_OUTPUT
+    -file gypsum_oh.sel
+    -activities OH-
+END

@@ -1,0 +1,33 @@
+SOLUTION 0-10
+    pH 7.0 charge
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1
+    pH 7.0 charge
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 0-10
+    X- 0.001
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1 1 1 1 1 1 1 1 1 1
+    -boundary_conditions flux flux
+    -initial_time 0
+    -print_cells 4
+    -print_frequency 10
+    -punch_cells 4
+    -punch_frequency 10
+    -flow_direction forward
+    -correct_disp true
+    -diffusion_coefficient 1e-9
+
+SELECTED_OUTPUT
+    -file selout.txt
+    -reset false
+    -solution true
+    -molalities HCl

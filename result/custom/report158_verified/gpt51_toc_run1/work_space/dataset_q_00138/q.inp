@@ -1,0 +1,15 @@
+SOLUTION 1
+ temp 25
+ units mg/L
+ pH 7 charge
+ Ba 2.0
+ S(6) 15.0
+
+REACTION_TEMPERATURE 5
+ 25 35 55 75 95
+
+SELECTED_OUTPUT
+ -reset false
+ -temperature true
+ -si Barite
+ -step true

@@ -1,0 +1,25 @@
+TITLE Al species count at 100C, pH 3, equilibrium with minerals
+SOLUTION 1
+    temp 100
+    pH 3 charge
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+SELECTED_OUTPUT
+    -file al_sel.txt
+    -reset false
+USER_PUNCH
+    -headings Al_aq_species_count
+    10 cnt = 0
+    20 FOR i = 1 TO SYS("species")
+    30 s$ = SYS("species", i)
+    40 IF (INSTR(s$, "Al") > 0) THEN cnt = cnt + 1
+    50 NEXT i
+    60 PUNCH cnt
+END

@@ -1,0 +1,17 @@
+SOLUTION 1
+    temp 25
+    pH 7.0
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    Gypsum 0.0 10.0
+SELECTED_OUTPUT
+    -file output_3.sel
+    -reset false
+    -user_punch true
+USER_PUNCH
+    -headings OH_activity
+    -start
+10 PUNCH ACT("OH-")
+    -end
+END

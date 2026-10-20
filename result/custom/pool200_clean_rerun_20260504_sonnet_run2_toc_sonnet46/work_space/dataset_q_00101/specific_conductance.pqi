@@ -1,0 +1,24 @@
+TITLE Specific Conductance Calculation
+# pH 7.5, 100 mg/L Ca, 250 mg/L Alkalinity as CaCO3
+
+SOLUTION 1
+    temp      25
+    pH        7.5
+    units     mg/L
+    Ca        100
+    Alkalinity 250 as CaCO3
+
+SELECTED_OUTPUT
+    -file     result.out
+    -reset    false
+    -pH       true
+    -temperature true
+    -totals   Ca C
+
+USER_PUNCH
+    -headings SC_uS_cm
+    -start
+10  PUNCH SC
+    -end
+
+END

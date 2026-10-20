@@ -1,0 +1,22 @@
+SOLUTION 1
+    temp 100
+    pH 3 charge
+    units mol/kgw
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+
+SELECTED_OUTPUT
+    -file fe_redox.sel
+    -reset false
+USER_PUNCH
+    -headings Fe2_molal Fe3_molal
+10 PUNCH TOT("Fe(+2)")
+20 PUNCH TOT("Fe(+3)")
+END

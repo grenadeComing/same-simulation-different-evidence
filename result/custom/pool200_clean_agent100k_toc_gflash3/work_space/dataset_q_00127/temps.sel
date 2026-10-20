@@ -1,0 +1,4 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	          mu	
+           1	      i_soln	           1	         -99	         -99	         -99	           7	           4	 8.42719e-08	
+           1	      i_soln	           2	         -99	         -99	         -99	           7	           4	 1.23468e-07	
+           1	       react	           1	         -99	           0	           1	     7.07953	      11.181	   0.0413219	

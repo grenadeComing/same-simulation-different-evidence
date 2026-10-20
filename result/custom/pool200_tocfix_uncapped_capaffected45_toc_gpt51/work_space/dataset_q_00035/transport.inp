@@ -1,0 +1,37 @@
+SOLUTION 0-10
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 1
+    pH 7 charge
+    Na 1
+    Cl 1
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -boundary_conditions flux flux
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+
+SELECTED_OUTPUT
+    -file exch_frac.csv
+    -reset false
+    -pH true
+    -step true
+    -state true
+    -equilibria true
+    -molalities Ca+2 Na+
+
+USER_PUNCH
+    -headings step cell CaX2
+    10 PUNCH SIM_NO, CELL_NO, MOL("CaX2")/TOT("X")

@@ -1,0 +1,22 @@
+TITLE Calcite kinetics with Ba and Cu at 200 C
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+KINETICS 1
+Calcite
+    -m0 1
+    -m 1
+    -parms 1.0 10
+    -steps 1000 in 100
+USER_PUNCH
+    -headings sim_time SI_witherite
+10 PUNCH TOTAL_TIME, SI("Witherite")
+SELECTED_OUTPUT
+    -file kin.sel
+    -reset false
+    -user_punch true
+END

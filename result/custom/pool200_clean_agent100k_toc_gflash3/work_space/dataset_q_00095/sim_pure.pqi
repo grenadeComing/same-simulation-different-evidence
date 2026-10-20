@@ -1,0 +1,12 @@
+TITLE Chrysotile-Talc Pure Water
+SOLUTION 1
+    temp 150
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT 1
+    -file output_pure.sel
+    -reset false
+    -mol MgOH+
+    -pH true
+END

@@ -1,0 +1,15 @@
+SOLUTION 1 Pure water
+    temp 25
+    pH 7 charge
+    units mol/kgw
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 10
+    CO2(g) -3.4
+
+SELECTED_OUTPUT
+    -file selected.tsv
+    -reset false
+    -pH true
+END

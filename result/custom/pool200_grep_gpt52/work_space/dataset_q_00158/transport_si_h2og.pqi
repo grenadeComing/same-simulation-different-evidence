@@ -1,0 +1,40 @@
+TITLE 1D transport, exchange, SI(H2O(g)) at cell 4 step 10
+SOLUTION 0  Initial solution
+    pH     7.0
+    temp   25
+    Ca     1.0
+    Cl     2.0
+    -water 1.0
+SOLUTION 1-10  Initial in cells
+    pH     7.0
+    temp   25
+    Ca     1.0
+    Cl     2.0
+    -water 1.0
+SOLUTION 11  Inflow solution
+    pH     7.0
+    temp   25
+    Na     1.0
+    Cl     1.0
+    -water 1.0
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -initial_time 0
+    -time_step 1
+    -lengths 1
+    -dispersivities 0
+    -punch_cells 4
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings step cell si_H2O_g
+10 PUNCH TOTAL_SHIFTS, CELL_NO, SI("H2O(g)")
+END

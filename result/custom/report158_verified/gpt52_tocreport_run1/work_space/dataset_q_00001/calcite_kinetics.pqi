@@ -1,0 +1,57 @@
+TITLE Calcite kinetic dissolution, hydrothermal solution
+
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1
+
+# Use built-in Calcite rate law, but set specific surface area to 10.0
+# Convert 10.0 m2/mol to cm2/mol: 10 * 1e4 = 1e5 cm2/mol
+# Exponent for M/M0 set to 1 (not specified)
+KINETICS 1
+    Calcite
+        -m0    1.0
+        -m     1.0
+        -parms 1e5  1.0
+        -tol   1e-12
+        -steps 10 in 100
+
+# Set rate constant to 0.001 by scaling the rate with -cvode or user?
+# Built-in Calcite rate has fixed constants; apply overall multiplier via -parm? not available.
+# Implement custom rate law: rate = k * SA * (1 - SR)
+
+RATES
+Calcite_custom
+-start
+10 k = PARM(1)
+20 sa = PARM(2)
+30 sr = SR("Calcite")
+40 if (sr > 1) then rate = 0
+50 if (sr <= 1) then rate = k*sa*(1 - sr)
+60 m = rate * TIME
+70 SAVE m
+-end
+
+KINETICS 2
+    Calcite_custom
+        -formula CaCO3 1
+        -m0    1.0
+        -m     1.0
+        -parms 0.001 10.0
+        -tol   1e-12
+        -steps 10 in 100
+
+# Ensure only custom kinetics applies; remove built-in by not using it. But both defined above.
+# We'll run only KINETICS 2 by isolating simulation in a new cell.
+
+USE solution 1
+KINETICS 2
+
+SELECTED_OUTPUT
+    -reset false
+    -pH true
+
+END

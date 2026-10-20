@@ -1,0 +1,14 @@
+SOLUTION 1
+    pH 7.0
+    temp 25
+    water 1
+REACTION 1
+    H2SO4 1
+    0.001 0.005 0.01 0.05 0.1 moles
+SELECTED_OUTPUT
+    -file result_punch.sel
+    -reset false
+USER_PUNCH
+    -headings step act_H+
+    10 PUNCH STEP, ACT("H+")
+END

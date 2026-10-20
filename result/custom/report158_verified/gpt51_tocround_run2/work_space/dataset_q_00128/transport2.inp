@@ -1,0 +1,31 @@
+SOLUTION 0-10
+    pH 7.0
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 0-10
+    X- 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -print_cells 4
+    -print_frequency 1
+    -punch_cells 4
+    -punch_frequency 1
+    -boundary_conditions flux flux
+
+USER_PUNCH
+    -head NaX
+    10 PUNCH TOT("NaX")
+
+END

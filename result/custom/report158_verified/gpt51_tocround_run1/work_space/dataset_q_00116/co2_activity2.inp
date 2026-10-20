@@ -1,0 +1,18 @@
+SOLUTION 1 Pure water
+    temp 25
+    pH 7.0 charge
+
+GAS_PHASE 1
+    -fixed_pressure true
+    -pressure 10
+    CO2(g)  -3.4
+
+USER_PUNCH
+    -headings aHplus
+    10 PUNCH ACT("H+")
+
+SELECTED_OUTPUT
+    -file co2_activity2.sel
+    -reset false
+    -user_punch true
+END

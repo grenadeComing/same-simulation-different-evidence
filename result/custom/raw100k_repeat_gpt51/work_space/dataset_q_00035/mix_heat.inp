@@ -1,0 +1,36 @@
+SOLUTION 1
+    temp 20
+    units mmol/kgw
+    C(4) 50 charge
+
+SOLUTION 2
+    temp 20
+    units mmol/kgw
+    Ca 50
+
+MIX 1
+    1 0.5
+    2 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+
+SELECTED_OUTPUT 1
+    -reset false
+    -temperature true
+    -totals Ca C(4)
+    -si Calcite
+    -pH true
+    -mu true
+    -step true
+    -solution true
+    -high_precision true
+
+USER_PUNCH 1
+    -headings density
+    10 PUNCH RHO
+
+END

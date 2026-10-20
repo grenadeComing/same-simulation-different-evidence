@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    Cu 0.01
+    Ba 0.005
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0 1.0 10.0
+        -steps 10*10
+        -bad_step_max 100
+
+SELECTED_OUTPUT
+    -reset false
+    -time true
+    -kinetic_reactants Calcite
+    -step true

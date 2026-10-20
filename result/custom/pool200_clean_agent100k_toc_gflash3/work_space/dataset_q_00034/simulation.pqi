@@ -1,0 +1,37 @@
+SOLUTION 1
+    temp 20
+    units mmol/kgw
+    C(4) 50
+    Na 50 charge
+END
+
+SOLUTION 2
+    temp 20
+    units mmol/kgw
+    Ca 50
+    Cl 100 charge
+END
+
+MIX 1
+    1 1
+    2 1
+END
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0.0 0.0
+END
+
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+END
+
+USER_PUNCH
+    -headings temp mol_C mol_Ca
+    -start
+    10 PUNCH TC, TOT("C(4)"), TOT("Ca")
+    -end
+SELECTED_OUTPUT
+    -file solution_results.sel
+    -user_punch true
+    -reset false
+END

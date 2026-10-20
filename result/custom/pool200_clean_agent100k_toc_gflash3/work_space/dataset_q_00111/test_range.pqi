@@ -1,0 +1,25 @@
+SOLUTION 1
+    units mol/kgw
+    Cl 1
+    Na 1 charge
+SOLUTION 2
+    units mol/kgw
+    Cl 2
+    Na 2 charge
+SOLUTION 3
+    units mol/kgw
+    Cl 3
+    Na 3 charge
+SOLUTION 4
+    units mol/kgw
+    Cl 4
+    Na 4 charge
+SOLUTION 5
+    units mol/kgw
+    Cl 5
+    Na 5 charge
+SOLUTION 6
+    units mol/kgw
+    Cl 6
+    Na 6 charge
+END

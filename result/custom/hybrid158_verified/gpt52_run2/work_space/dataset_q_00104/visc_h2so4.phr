@@ -1,0 +1,14 @@
+SOLUTION 1 PureWater
+    temp 25
+    pH   7 charge
+    units mol/kgw
+    -water 1
+
+REACTION 1
+    H2SO4 1
+    0.001 0.005 0.01 0.05 0.1
+
+USER_PUNCH
+    -headings step viscosity
+10  PUNCH STEP_NO, VISC
+END

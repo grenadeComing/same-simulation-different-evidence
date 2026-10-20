@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 100
+    pH 5.0
+    pe 4.0
+    C(4) 0.5 mmol/kgw
+    Mn 1.0 mmol/kgw
+    units mmol/kgw
+REACTION 1
+    Calcite 1.0
+    0.000001 0.000002 0.000005 0.00001 0.00002 0.00005 0.0001 0.0002 0.0005 0.001 moles
+USER_PUNCH
+    -head moles_CaCO3 pH
+    10 PUNCH RXN, -LA("H+")
+END

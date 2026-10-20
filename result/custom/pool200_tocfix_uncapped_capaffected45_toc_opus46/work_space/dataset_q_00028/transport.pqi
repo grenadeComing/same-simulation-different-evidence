@@ -1,0 +1,36 @@
+# Initial solution (cells 1-10)
+SOLUTION 1-10
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+
+# Infilling solution (solution 0)
+SOLUTION 0
+    pH      7.0
+    Na      1.0
+    Cl      1.0
+
+# Exchange sites for all 10 cells, equilibrated with solution 1
+EXCHANGE 1-10
+    X       0.001
+    -equilibrate 1
+
+SELECTED_OUTPUT
+    -file   result.out
+    -reset  false
+    -solution true
+    -step    true
+    -pe      true
+    -pH      true
+    -totals  Na Ca Cl
+
+TRANSPORT
+    -cells          10
+    -shifts         10
+    -lengths        1.0
+    -dispersivities 0.0
+    -diffusion_coefficient 0.0
+    -punch_cells    1
+    -punch_frequency 10
+
+END

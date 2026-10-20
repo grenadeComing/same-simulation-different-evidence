@@ -1,0 +1,17 @@
+TITLE Equilibrate Ca solution with calcite, gypsum, aragonite and gas phase using fixed fugacity
+SOLUTION 1
+    temp 100
+    pH 7 charge
+    Ca 50 mmol/kgw
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 10
+    CO2(g) -0.0 10
+    CH4(g) 0.69897 10
+    H2S(g) 1.0 10
+SELECTED_OUTPUT
+    -file selected2.out
+    -reset false
+    -alkalinity true
+END

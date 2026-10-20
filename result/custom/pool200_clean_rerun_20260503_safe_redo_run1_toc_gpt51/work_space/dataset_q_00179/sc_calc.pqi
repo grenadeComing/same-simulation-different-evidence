@@ -1,0 +1,17 @@
+SOLUTION 1
+    temp 77.5
+    units mol/kgw
+    Ba 1.4563e-05
+    S(6) 1.5615e-04
+
+SELECTED_OUTPUT
+    -file sc_calc.sel
+    -reset false
+    -step true
+    -temperature true
+    -ph true
+    -mu true
+USER_PUNCH
+    -headings sc
+    10 PUNCH SC
+END

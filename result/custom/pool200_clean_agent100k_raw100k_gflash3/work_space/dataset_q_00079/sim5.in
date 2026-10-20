@@ -1,0 +1,47 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    units mol/kgw
+    water 1
+END
+USE solution 1
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g) 10
+    CO2(g) 10
+    NH3(g) 5
+END
+SELECTED_OUTPUT 1
+    -file output1.sel
+    -si N2(g)
+END
+RUN_CELLS
+    -cells 1
+END
+
+SOLUTION 2
+    temp 150
+    pH 7
+    pe 4
+    units mol/kgw
+    water 1
+END
+USE solution 2
+GAS_PHASE 2
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g) 100
+    CO2(g) 100
+    NH3(g) 50
+END
+SELECTED_OUTPUT 2
+    -file output2.sel
+    -si N2(g)
+END
+RUN_CELLS
+    -cells 2
+END

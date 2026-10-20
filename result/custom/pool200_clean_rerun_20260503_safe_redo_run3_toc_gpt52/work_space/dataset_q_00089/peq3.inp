@@ -1,0 +1,16 @@
+TITLE Pure water pH 7 at 150C equilibrated with chrysotile and talc; pe from O2(g)=1 atm
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+    O2(g)      0 1
+SELECTED_OUTPUT
+    -file peq3.sel
+    -reset false
+    -pH true
+    -pe true
+END

@@ -1,0 +1,18 @@
+SOLUTION 1 Pure water
+    pH 7 charge
+END
+
+REACTION 1
+    H2SO4 1
+    0.001 moles
+    0.005 moles
+    0.01 moles
+    0.05 moles
+    0.1 moles
+END
+
+SELECTED_OUTPUT
+    -file sulfuric_pH2.sel
+    -reset false
+    -pH true
+END

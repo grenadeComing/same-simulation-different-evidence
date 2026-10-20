@@ -1,0 +1,23 @@
+SOLUTION 1
+    temp 200
+    pH   2
+    pe   4
+    Cu   10 mmol/kgw
+    Ba   5  mmol/kgw
+    -water 1
+
+KINETICS 1
+    Calcite
+        -m0    1.0
+        -m     1.0
+        -parms 1.0 10
+        -steps 10 100*10
+        -tol   1e-12
+
+SELECTED_OUTPUT
+    -file calcite_kin.sel
+    -reset false
+USER_PUNCH
+    -headings step time_s m_calcite
+10 PUNCH STEP_NO, TOTAL_TIME, KIN("Calcite")
+END

@@ -1,0 +1,21 @@
+SOLUTION 1 First
+    temp 20
+    units mmol/kgw
+    C(4) 50 as HCO3
+
+SOLUTION 2 Second
+    temp 20
+    units mmol/kgw
+    Ca 50
+
+MIX 1
+    1 0.5
+    2 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+SELECTED_OUTPUT
+    -file mix_calcite.sel
+    -ph true
+END

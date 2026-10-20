@@ -1,0 +1,22 @@
+PHASES
+Fix_H+
+    H+ = H+
+    log_k 0
+END
+
+TITLE Chrysotile-Talc Equilibrium Fixed pH 7
+SOLUTION 1
+    units mol/kgw
+    temp 150
+    pH 7
+    water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+    Fix_H+ -7.0 NaOH 10.0
+SELECTED_OUTPUT 1
+    -file output_fixed.sel
+    -reset false
+    -mol MgOH+
+    -pH true
+END

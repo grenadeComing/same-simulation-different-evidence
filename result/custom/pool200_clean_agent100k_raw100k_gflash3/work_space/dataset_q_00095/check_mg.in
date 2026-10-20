@@ -1,0 +1,8 @@
+TITLE Check Mg species
+SOLUTION 1
+    temp 150
+    pH 7.0
+    units mol/kgw
+    Mg 1.0
+    Si 1.0
+END

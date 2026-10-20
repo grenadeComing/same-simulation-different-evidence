@@ -1,0 +1,51 @@
+TITLE 1D transport, 10 cells, 10 shifts, cation exchange
+
+SOLUTION 0  Initial solution composition (for equilibration step)
+    pH      7.0
+    pe      0
+    redox   pe
+    units   mol/kgw
+    Ca      1.0
+    Cl      2.0
+
+SOLUTION 1  Influent solution
+    pH      7.0
+    pe      0
+    redox   pe
+    units   mol/kgw
+    Na      1.0
+    Cl      1.0
+
+# Define initial solutions for each of 10 cells
+SOLUTION 2-11
+    pH      7.0
+    pe      0
+    redox   pe
+    units   mol/kgw
+    Ca      1.0
+    Cl      2.0
+
+EXCHANGE 2-11
+    X   0.001
+
+TRANSPORT
+    -cells              10
+    -shifts             10
+    -flow_direction     forward
+    -boundary_conditions flux flux
+    -lengths            1
+    -dispersivities     0
+    -diffusion_coefficient 0
+    -time_step          1
+    -punch_cells        10
+    -print_cells        10
+
+SELECTED_OUTPUT
+    -file sel_pe.csv
+    -reset false
+    -high_precision true
+    -solution true
+    -pH true
+    -pe true
+
+END

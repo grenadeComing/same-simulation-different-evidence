@@ -1,0 +1,12 @@
+TITLE viscosity step 1
+SOLUTION 1
+    temp 25
+    pH 7 charge
+REACTION 1
+    H2SO4 1
+    1 moles in 5 steps
+
+USER_PUNCH
+    -headings step viscosity
+    10 PUNCH STEP_NO, VISCOSITY
+END

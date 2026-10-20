@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp      25
+    pH        7 charge
+    pe        4
+    units     mol/kgw
+    Ba        2.0e-3
+    S(6)      15.0e-3 as S
+
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+
+SELECTED_OUTPUT
+    -reset false
+    -step true
+    -si true
+END

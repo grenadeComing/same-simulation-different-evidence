@@ -1,0 +1,36 @@
+SOLUTION 1
+    temp 25
+    pH 2 charge
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+
+KINETICS 1
+    Calcite_kin 1
+    -m0 1
+    -parms 10 1.0
+    -steps 1000 in 100 steps
+
+RATES
+Calcite_kin
+-start
+10 rate_const = PARM(1)
+20 surf = PARM(2)
+30 m = MOL("Calcite")
+40 if (m <= 0) then rate = 0: goto 200
+50 SIc = SI("Calcite")
+60 rate = rate_const * surf * (1 - 10^SIc)
+200 moles = rate * TIME
+-end
+
+PRINT
+    -reset false
+
+SELECTED_OUTPUT
+    -file witherite_si.sel
+    -reset false
+    -time true
+    -si Witherite
+
+END

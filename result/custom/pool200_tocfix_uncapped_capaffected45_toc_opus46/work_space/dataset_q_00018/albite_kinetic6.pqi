@@ -1,0 +1,36 @@
+SOLUTION 1
+    temp      200
+    pH        2
+    pe        4.0
+    redox     pe
+    units     mmol/kgw
+    Fe(2)     4
+    Fe(3)     4
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    -temp 200
+    -volume 1000
+    H2S(g) 5.0
+
+KINETICS 1
+    Albite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0  10
+        -tol 1e-8
+
+    -steps 1000 in 100
+
+SELECTED_OUTPUT
+    -file selected6.out
+    -reset false
+    -step
+    -pe
+    -pH
+    -totals Fe(2) Fe(3) Na Al Si S(-2)
+    -kinetic_reactants Albite
+    -gases H2S(g)
+
+END

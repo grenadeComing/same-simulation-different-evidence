@@ -1,0 +1,64 @@
+SOLUTION_RAW                 1 
+  -temp                      200
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01245504548
+  -total_o                   55.506237524008
+  -cb                        1.272243486776e-18
+  -density                   0.8646709374397
+  -viscosity                 0.13459735425748
+  -viscos_0                  0.13458814160221
+  -totals
+    Fe(2)                    4.0000000000009e-06
+    Fe(3)                    4e-06
+    H(0)                     3.1925544849707e-24
+    O(0)                     1.2676530777954e-09
+  -pH                        6.0850106563556
+  -pe                        4
+  -mu                        7.7005270447017e-06
+  -ah2o                      0.99999975024225
+  -mass_water                1
+  -soln_vol                  1.1565102497916
+  -total_alkalinity          1.2000000000001e-05
+  -activities
+    E                        -4
+    Fe(2)                    -5.8303750544736
+    Fe(3)                    -17.875587648933
+    H(0)                     -23.796890913301
+    O(0)                     -9.1980287994602
+  -gammas
+GAS_PHASE_RAW                1 
+  # GAS_PHASE_MODIFY candidate identifiers #
+  -type                      0
+  -total_p                   5
+  -volume                    1
+  -component                 H2S(g)
+    # GAS_PHASE_MODIFY candidate identifiers #
+    -moles                   0.2130754053558
+    # GAS_PHASE_MODIFY candidate identifiers with new_def=true #
+    -p_read                  5
+    # GasComp workspace variables #
+    -initial_moles           0
+    -p                       5
+    -phi                     0.96049518557469
+    -f                       4.8024759278734
+  # GAS_PHASE_MODIFY candidate identifiers with new_def=true #
+  -new_def                   0
+  -solution_equilibria       0
+  -n_solution                -999
+  -temperature               298.15
+  # GasPhase workspace variables #
+  -total_moles               0.2130754053558
+  -v_m                       4.6931742231357
+  -pr_in                     1
+  -totals                    
+REACTION_RAW                 1 
+  -reactant_list
+    Albite                   1
+  -steps
+    0.001 1000 
+  -count_steps               0
+  -equal_increments          0
+  -units                     Mol
+  # REACTION workspace variables #
+  -element_list

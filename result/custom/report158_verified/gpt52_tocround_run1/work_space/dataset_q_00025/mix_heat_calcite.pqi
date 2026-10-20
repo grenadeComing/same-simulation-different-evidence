@@ -1,0 +1,38 @@
+SOLUTION 1 DIC_50mmol
+    temp 20
+    pH 7 charge
+    units mmol/kgw
+    C(4) 50
+
+SOLUTION 2 Ca_50mmol
+    temp 20
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+
+MIX 1
+    1 0.5
+    2 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+
+SELECTED_OUTPUT
+    -reset false
+
+USER_PUNCH
+    -headings step temp Ca_species_count
+10 PUNCH STEP_NO, TC, TOT("Ca")
+20 PUNCH STEP_NO, TC,
+30  count = 0
+40  FOR i = 1 TO SPECIES
+50    s$ = SPECIES_NAME$(i)
+60    IF (INSTR(s$, "Ca") = 1) THEN
+70      m = MOL(i)
+80      IF (m > 0) THEN count = count + 1
+90    ENDIF
+100 NEXT i
+110 PUNCH count

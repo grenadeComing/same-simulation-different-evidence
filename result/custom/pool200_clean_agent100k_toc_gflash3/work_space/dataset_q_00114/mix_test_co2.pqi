@@ -1,0 +1,18 @@
+SOLUTION 1 River Water
+    pH 6.0
+    Cl 10
+    EQUILIBRIUM_PHASES
+        CO2(g) -3.5
+    units mg/L
+END
+SOLUTION 2 Seawater
+    pH 8.1
+    Cl 19000
+    EQUILIBRIUM_PHASES
+        CO2(g) -3.5
+    units mg/L
+END
+MIX 1
+    1 0.7
+    2 0.3
+END

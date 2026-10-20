@@ -1,0 +1,32 @@
+SOLUTION 1 Pure water
+    temp 20
+    pH 7 charge
+
+SOLUTION 2
+    temp 20
+    C(4) 0.05 mol/kgw as C
+    pH 7 charge
+
+SOLUTION 3
+    temp 20
+    Ca 0.05 mol/kgw
+    pH 7 charge
+
+MIX 10
+    1 0.5
+    2 0.25
+    3 0.25
+
+EQUILIBRIUM_PHASES 10
+    Calcite 0 0
+
+REACTION_TEMPERATURE 10
+    20 200 in 10 steps
+
+SELECTED_OUTPUT
+    -reset false
+    -temperature true
+    -ionic_strength true
+    -simulation true
+
+END

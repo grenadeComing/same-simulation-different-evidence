@@ -1,0 +1,32 @@
+SOLUTION 1 River water
+    pH 6.0
+    units mg/L
+    Cl 10
+    Na 10 charge
+END
+USE solution 1
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.5
+SAVE solution 1
+END
+
+SOLUTION 2 Seawater
+    pH 8.1
+    units mg/L
+    Cl 19000
+    Na 19000 charge
+END
+USE solution 2
+EQUILIBRIUM_PHASES 2
+    CO2(g) -3.5
+SAVE solution 2
+END
+
+MIX 1
+    1 0.7
+    2 0.3
+
+SELECTED_OUTPUT
+    -file output.sel
+    -pH true
+END

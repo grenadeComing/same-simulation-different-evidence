@@ -1,0 +1,29 @@
+SOLUTION 1 Pure DIC
+    temp 20
+    pH 7 charge
+    C(4) 50 mmol
+
+SOLUTION 2 Pure Ca
+    temp 20
+    pH 7 charge
+    Ca 50 mmol
+
+MIX 1
+    1 0.5
+    2 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+
+SELECTED_OUTPUT 1
+    -file mix_heat.sel
+    -temperature
+    -solution
+    -step
+    -high_precision
+USER_PUNCH 1
+    -headings density
+    10 PUNCH RHO

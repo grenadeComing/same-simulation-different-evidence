@@ -1,0 +1,35 @@
+
+SOLUTION 0
+    units mmol/kgw
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10
+    units mmol/kgw
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    -equilibrate 1
+    X 0.0001
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1
+    -dispersivity 0
+    -diffc 0
+    -punch_cells 3
+    -punch_frequency 10
+
+SELECTED_OUTPUT
+    -file output.sel
+    -reset false
+    -high_precision true
+    -step true
+
+USER_PUNCH
+    -headings Na_activity
+    10 PUNCH ACT("Na+")

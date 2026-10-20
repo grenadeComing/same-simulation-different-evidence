@@ -1,0 +1,25 @@
+SOLUTION 1
+    temp 200
+    pH   2
+    pe   4
+    redox pe
+    units mmol/kgw
+    Cu   10
+    Ba   5
+    Cl   25 charge
+
+KINETICS 1
+    Calcite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+        -steps 1000 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -time true
+    -step true
+    -totals Alkalinity
+END

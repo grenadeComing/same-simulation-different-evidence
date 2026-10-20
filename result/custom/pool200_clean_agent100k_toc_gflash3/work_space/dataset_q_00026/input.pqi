@@ -1,0 +1,33 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+    Cl 1 charge
+END
+RATES
+Albite
+-start
+10 k = 10
+20 ssa = 1.0
+30 rate = k * ssa * (1 - SR("Albite"))
+40 save rate * TIME
+-end
+END
+USE solution 1
+KINETICS 1
+Albite
+    -m0 1.0
+    -parms 10 1.0
+    -steps 1000 in 100
+    -cvode true
+EQUILIBRIUM_PHASES 1
+    H2S(g) 0.69897 10.0
+SELECTED_OUTPUT 1
+    -file count.pun
+    -reset false
+USER_PUNCH 1
+    10 n = SYS("Si", count, names$, types$, moles)
+    20 PUNCH count
+END

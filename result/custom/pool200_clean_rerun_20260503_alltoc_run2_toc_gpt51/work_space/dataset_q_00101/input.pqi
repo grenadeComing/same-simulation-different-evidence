@@ -1,0 +1,29 @@
+SOLUTION 1
+    temp 25
+    pH 7.5
+    units mg/L
+    Ca 100
+    Alkalinity 250 as CaCO3
+END
+
+PRINT
+    selected_output true
+END
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -si false
+    -totals Ca C O H
+    -ionic_strength true
+    -solution true
+    -step true
+    -equilibrium_phases false
+    -activities true
+    -description solution
+    -charge_balance false
+    -pp_scale false
+    -temperature true
+    -density true
+    -conductivity true
+END

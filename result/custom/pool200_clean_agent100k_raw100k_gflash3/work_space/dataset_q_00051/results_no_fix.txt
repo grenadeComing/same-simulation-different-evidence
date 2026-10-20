@@ -1,0 +1,2 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	      m_Fe+2	      m_Fe+3	
+           3	       react	           1	         -99	           0	           1	      5.5016	     9.27524	  1.1638e-08	  2.1157e-10	

@@ -1,0 +1,5 @@
+SOLUTION 1
+    temp 100
+EQUILIBRIUM_PHASES 1
+    Calcite 0 1
+END

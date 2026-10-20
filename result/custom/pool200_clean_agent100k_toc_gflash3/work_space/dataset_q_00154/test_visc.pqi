@@ -1,0 +1,11 @@
+SOLUTION 1
+    temp 25
+    Na 1
+    Cl 1
+USER_PUNCH
+    -headings visc
+    10 PUNCH VISCOSITY
+SELECTED_OUTPUT
+    -file test_visc.sel
+    -user_punch true
+END

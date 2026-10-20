@@ -1,0 +1,352 @@
+   Input file: /workspace/calcite_kin.in
+  Output file: /workspace/result.out
+Database file: /database/phreeqc.dat
+
+------------------
+Reading data base.
+------------------
+
+	SOLUTION_MASTER_SPECIES
+	SOLUTION_SPECIES
+	PHASES
+	EXCHANGE_MASTER_SPECIES
+	EXCHANGE_SPECIES
+	SURFACE_MASTER_SPECIES
+	SURFACE_SPECIES
+	MEAN_GAMMAS
+	RATES
+	END
+------------------------------------
+Reading input data for simulation 1.
+------------------------------------
+
+	TITLE Calcite kinetics at 200C, pH 2, Cu and Ba present
+	SOLUTION 1
+	    temp 200
+	    pH 2
+	    pe 4
+	    units mmol/kgw
+	    Cu 10
+	    Ba 5
+	    water 1
+	KINETICS 1
+	    Calcite
+	        m0 1.0
+	        m  1.0
+	        parms 1.0 10
+	        tol 1e-12
+	        steps 10 100
+	SELECTED_OUTPUT
+	    file sel.out
+	    reset false
+	    time true
+	    step true
+	    ph true
+	END
+-----
+TITLE
+-----
+
+ Calcite kinetics at 200C, pH 2, Cu and Ba present
+
+-------------------------------------------
+Beginning of initial solution calculations.
+-------------------------------------------
+
+Initial solution 1.	
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ba                5.000e-03   5.000e-03
+	Cu                1.000e-02   1.000e-02
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   2.000    
+                                       pe  =   4.000    
+      Specific Conductance (µS/cm, 200°C)  = 11264
+                          Density (g/cm³)  =   0.86617
+                               Volume (L)  =   1.15605
+                        Viscosity (mPa s)  =   0.13496
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.520e-02
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =  -1.242e-02
+                         Temperature (°C)  = 200.00
+                           Pressure (atm)  = 15.37
+                  Electrical balance (eq)  =   4.174e-02
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  = 100.00
+                               Iterations  =   4
+                                  Total H  = 1.110249e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   H+              1.242e-02   1.000e-02    -1.906    -2.000    -0.094      0.00
+   OH-             6.469e-10   4.877e-10    -9.189    -9.312    -0.123    -24.86
+   H2O             5.551e+01   9.995e-01     1.744    -0.000     0.000     20.84
+Ba            5.000e-03
+   Ba+2            5.000e-03   1.685e-03    -2.301    -2.773    -0.472    -11.19
+   BaOH+           7.435e-15   5.727e-15   -14.129   -14.242    -0.113     (0)  
+Cu(1)         6.738e-04
+   Cu+             6.738e-04   4.996e-04    -3.171    -3.301    -0.130     (0)  
+Cu(2)         9.326e-03
+   Cu+2            9.324e-03   3.454e-03    -2.030    -2.462    -0.431    -43.47
+   Cu2(OH)2+2      8.776e-07   2.916e-07    -6.057    -6.535    -0.478     (0)  
+   CuOH+           4.507e-09   3.423e-09    -8.346    -8.466    -0.119     (0)  
+   Cu(OH)2         7.146e-13   7.204e-13   -12.146   -12.142     0.004     (0)  
+   Cu(OH)3-        5.759e-24   4.372e-24   -23.240   -23.359    -0.120     (0)  
+   Cu(OH)4-2       2.644e-34   8.787e-35   -33.578   -34.056    -0.478     (0)  
+H(0)          4.635e-16
+   H2              2.318e-16   2.336e-16   -15.635   -15.631     0.004     28.55
+O(0)          5.747e-26
+   O2              2.873e-26   2.897e-26   -25.542   -25.538     0.004     39.26
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(473 K,  15 atm)
+
+  H2(g)           -12.82    -15.63   -2.81  H2
+  H2O(g)            1.16     -0.00   -1.16  H2O
+  O2(g)           -22.66    -25.54   -2.87  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+-----------------------------------------
+Beginning of batch-reaction calculations.
+-----------------------------------------
+
+Reaction step 1.
+
+Using solution 1.	
+Using kinetics 1.	
+
+Kinetics 1.	
+
+	Time step: 10 seconds
+
+	Rate name       Delta Moles Total Moles   Reactant        Coefficient
+
+	Calcite          -1.832e-05   1.000e+00   Calcite                   1
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ba                5.000e-03   5.000e-03
+	C                 1.832e-05   1.832e-05
+	Ca                1.832e-05   1.832e-05
+	Cu                1.000e-02   1.000e-02
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   2.001      Charge balance
+                                       pe  =   4.000      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm, 200°C)  = 10831
+                          Density (g/cm³)  =   0.86617
+                               Volume (L)  =   1.15605
+                        Viscosity (mPa s)  =   0.13836
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.522e-02
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =  -1.238e-02
+                       Total CO2 (mol/kg)  =   1.832e-05
+                         Temperature (°C)  = 200.00
+                           Pressure (atm)  = 15.37
+                  Electrical balance (eq)  =   4.174e-02
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  = 100.00
+                               Iterations  =  60
+                                  Total H  = 1.110249e+02
+                                  Total O  = 5.550627e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   H+              1.238e-02   9.970e-03    -1.907    -2.001    -0.094      0.00
+   OH-             6.489e-10   4.891e-10    -9.188    -9.311    -0.123    -24.85
+   H2O             5.551e+01   9.995e-01     1.744    -0.000     0.000     20.84
+Ba            5.000e-03
+   Ba+2            5.000e-03   1.684e-03    -2.301    -2.774    -0.473    -11.19
+   BaHCO3+         5.814e-10   4.414e-10    -9.236    -9.355    -0.120     (0)  
+   BaOH+           7.456e-15   5.743e-15   -14.128   -14.241    -0.113     (0)  
+   BaCO3           5.347e-18   5.390e-18   -17.272   -17.268     0.004     -9.78
+C(-4)         0.000e+00
+   CH4             0.000e+00   0.000e+00   -46.246   -46.242     0.004     58.68
+C(4)          1.832e-05
+   CO2             1.832e-05   1.842e-05    -4.737    -4.735     0.002     57.09
+   BaHCO3+         5.814e-10   4.414e-10    -9.236    -9.355    -0.120     (0)  
+   CuHCO3+         2.496e-10   1.895e-10    -9.603    -9.722    -0.120     (0)  
+   HCO3-           1.436e-10   1.112e-10    -9.843    -9.954    -0.111      1.80
+   (CO2)2          5.071e-11   5.112e-11   -10.295   -10.291     0.004    114.18
+   CaHCO3+         2.837e-12   2.213e-12   -11.547   -11.655    -0.108    121.62
+   CuCO3           3.340e-15   3.367e-15   -14.476   -14.473     0.004     (0)  
+   BaCO3           5.347e-18   5.390e-18   -17.272   -17.268     0.004     -9.78
+   CO3-2           5.243e-19   1.885e-19   -18.280   -18.725    -0.444    -57.14
+   CaCO3           1.914e-20   1.930e-20   -19.718   -19.715     0.004    -13.98
+   Cu(CO3)2-2      2.354e-30   7.820e-31   -29.628   -30.107    -0.479     (0)  
+Ca            1.832e-05
+   Ca+2            1.832e-05   6.536e-06    -4.737    -5.185    -0.448    -29.18
+   CaHCO3+         2.837e-12   2.213e-12   -11.547   -11.655    -0.108    121.62
+   CaOH+           1.428e-16   1.084e-16   -15.845   -15.965    -0.120     (0)  
+   CaCO3           1.914e-20   1.930e-20   -19.718   -19.715     0.004    -13.98
+Cu(1)         6.738e-04
+   Cu+             6.738e-04   4.995e-04    -3.171    -3.301    -0.130     (0)  
+Cu(2)         9.326e-03
+   Cu+2            9.324e-03   3.453e-03    -2.030    -2.462    -0.431    -43.47
+   Cu2(OH)2+2      8.827e-07   2.933e-07    -6.054    -6.533    -0.479     (0)  
+   CuOH+           4.520e-09   3.433e-09    -8.345    -8.464    -0.119     (0)  
+   CuHCO3+         2.496e-10   1.895e-10    -9.603    -9.722    -0.120     (0)  
+   Cu(OH)2         7.187e-13   7.246e-13   -12.143   -12.140     0.004     (0)  
+   CuCO3           3.340e-15   3.367e-15   -14.476   -14.473     0.004     (0)  
+   Cu(OH)3-        5.810e-24   4.411e-24   -23.236   -23.355    -0.120     (0)  
+   Cu(CO3)2-2      2.354e-30   7.820e-31   -29.628   -30.107    -0.479     (0)  
+   Cu(OH)4-2       2.676e-34   8.892e-35   -33.572   -34.051    -0.479     (0)  
+H(0)          4.608e-16
+   H2              2.304e-16   2.323e-16   -15.637   -15.634     0.004     28.55
+O(0)          5.813e-26
+   O2              2.907e-26   2.930e-26   -25.537   -25.533     0.004     39.26
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(473 K,  15 atm)
+
+  Aragonite       -12.70    -23.91  -11.21  CaCO3
+  Calcite         -11.64    -23.91  -12.27  CaCO3
+  CH4(g)          -43.49    -46.24   -2.75  CH4
+  CO2(g)           -2.67     -4.73   -2.06  CO2
+  H2(g)           -12.82    -15.63   -2.81  H2
+  H2O(g)            1.16     -0.00   -1.16  H2O
+  O2(g)           -22.66    -25.53   -2.87  O2
+  Witherite       -11.54    -21.50   -9.96  BaCO3
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+Reaction step 2.
+
+Using solution 1.	
+Using kinetics 1.	
+
+Kinetics 1.	
+
+	Time step: 100 seconds
+
+	Rate name       Delta Moles Total Moles   Reactant        Coefficient
+
+	Calcite          -1.808e-04   9.998e-01   Calcite                   1
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ba                5.000e-03   5.000e-03
+	C                 1.808e-04   1.808e-04
+	Ca                1.808e-04   1.808e-04
+	Cu                1.000e-02   1.000e-02
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   2.013      Charge balance
+                                       pe  =   3.999      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm, 200°C)  = 10652
+                          Density (g/cm³)  =   0.86618
+                               Volume (L)  =   1.15606
+                        Viscosity (mPa s)  =   0.13913
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.538e-02
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =  -1.206e-02
+                       Total CO2 (mol/kg)  =   1.808e-04
+                         Temperature (°C)  = 200.00
+                           Pressure (atm)  = 15.37
+                  Electrical balance (eq)  =   4.174e-02
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  = 100.00
+                               Iterations  =  61
+                                  Total H  = 1.110249e+02
+                                  Total O  = 5.550676e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   H+              1.206e-02   9.706e-03    -1.919    -2.013    -0.094      0.00
+   OH-             6.670e-10   5.024e-10    -9.176    -9.299    -0.123    -24.85
+   H2O             5.551e+01   9.995e-01     1.744    -0.000     0.000     20.84
+Ba            5.000e-03
+   Ba+2            5.000e-03   1.681e-03    -2.301    -2.774    -0.473    -11.18
+   BaHCO3+         5.884e-09   4.465e-09    -8.230    -8.350    -0.120     (0)  
+   BaOH+           7.647e-15   5.888e-15   -14.116   -14.230    -0.114     (0)  
+   BaCO3           5.556e-17   5.602e-17   -16.255   -16.252     0.004     -9.78
+C(-4)         0.000e+00
+   CH4             0.000e+00   0.000e+00   -45.341   -45.338     0.004     58.68
+C(4)          1.808e-04
+   CO2             1.808e-04   1.818e-04    -3.743    -3.741     0.002     57.09
+   BaHCO3+         5.884e-09   4.465e-09    -8.230    -8.350    -0.120     (0)  
+   (CO2)2          4.937e-09   4.977e-09    -8.307    -8.303     0.004    114.18
+   CuHCO3+         2.527e-09   1.918e-09    -8.597    -8.717    -0.120     (0)  
+   HCO3-           1.457e-09   1.127e-09    -8.837    -8.948    -0.111      1.81
+   CaHCO3+         2.834e-10   2.210e-10    -9.548    -9.656    -0.108    121.62
+   CuCO3           3.472e-14   3.500e-14   -13.459   -13.456     0.004     (0)  
+   BaCO3           5.556e-17   5.602e-17   -16.255   -16.252     0.004     -9.78
+   CO3-2           5.469e-18   1.962e-18   -17.262   -17.707    -0.445    -57.13
+   CaCO3           1.963e-18   1.979e-18   -17.707   -17.704     0.004    -13.98
+   Cu(CO3)2-2      2.553e-28   8.466e-29   -27.593   -28.072    -0.479     (0)  
+Ca            1.808e-04
+   Ca+2            1.808e-04   6.439e-05    -3.743    -4.191    -0.448    -29.17
+   CaHCO3+         2.834e-10   2.210e-10    -9.548    -9.656    -0.108    121.62
+   CaOH+           1.446e-15   1.097e-15   -14.840   -14.960    -0.120     (0)  
+   CaCO3           1.963e-18   1.979e-18   -17.707   -17.704     0.004    -13.98
+Cu(1)         6.738e-04
+   Cu+             6.738e-04   4.992e-04    -3.171    -3.302    -0.130     (0)  
+Cu(2)         9.326e-03
+   Cu+2            9.324e-03   3.447e-03    -2.030    -2.463    -0.432    -43.47
+   Cu2(OH)2+2      9.302e-07   3.085e-07    -6.031    -6.511    -0.479     (0)  
+   CuOH+           4.638e-09   3.521e-09    -8.334    -8.453    -0.120     (0)  
+   CuHCO3+         2.527e-09   1.918e-09    -8.597    -8.717    -0.120     (0)  
+   Cu(OH)2         7.572e-13   7.634e-13   -12.121   -12.117     0.004     (0)  
+   CuCO3           3.472e-14   3.500e-14   -13.459   -13.456     0.004     (0)  
+   Cu(OH)3-        6.291e-24   4.774e-24   -23.201   -23.321    -0.120     (0)  
+   Cu(CO3)2-2      2.553e-28   8.466e-29   -27.593   -28.072    -0.479     (0)  
+   Cu(OH)4-2       2.981e-34   9.885e-35   -33.526   -34.005    -0.479     (0)  
+H(0)          4.376e-16
+   H2              2.188e-16   2.206e-16   -15.660   -15.656     0.004     28.55
+O(0)          6.446e-26
+   O2              3.223e-26   3.250e-26   -25.492   -25.488     0.004     39.26
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(473 K,  15 atm)
+
+  Aragonite       -10.69    -21.90  -11.21  CaCO3
+  Calcite          -9.63    -21.90  -12.27  CaCO3
+  CH4(g)          -42.58    -45.34   -2.75  CH4
+  CO2(g)           -1.68     -3.74   -2.06  CO2
+  H2(g)           -12.84    -15.66   -2.81  H2
+  H2O(g)            1.16     -0.00   -1.16  H2O
+  O2(g)           -22.61    -25.49   -2.87  O2
+  Witherite       -10.52    -20.48   -9.96  BaCO3
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+------------------
+End of simulation.
+------------------
+
+------------------------------------
+Reading input data for simulation 2.
+------------------------------------
+
+----------------------------------
+End of Run after 0.004531 Seconds.
+----------------------------------
+

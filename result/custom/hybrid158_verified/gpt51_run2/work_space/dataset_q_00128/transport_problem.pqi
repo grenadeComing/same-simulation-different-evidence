@@ -1,0 +1,39 @@
+TITLE 1D transport with cation exchange
+
+SOLUTION 0-9
+    pH 7.0 charge
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 10
+    pH 7.0 charge
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 0-9
+    X 0.001
+
+SAVE solution 0-9
+SAVE exchange 0-9
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -dispersivities 0
+    -boundary_conditions flux flux
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 4
+    -punch_frequency 1
+    -initial_time 0
+    -flow_direction forward
+
+SELECTED_OUTPUT
+    -file transport_sel.out
+    -reset false
+    -simulation true
+    -state true
+    -totals Na Ca Cl
+    -molalities NaX CaX2 X-

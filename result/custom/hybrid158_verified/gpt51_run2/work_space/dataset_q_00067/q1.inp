@@ -1,0 +1,27 @@
+SOLUTION 1 Pure water at 150C
+    temp 150
+    pH 7 charge
+    pe 4
+    units mol/kgw
+    water 1
+
+GAS_PHASE 1 Fixed pressure gas
+    -pressure 1.0
+    -temperature 150
+    -fixed_pressure true
+    -volume 1.0
+    CH4(g) 10
+    CO2(g) 10
+    NH3(g) 5
+
+EQUILIBRIUM_PHASES 1
+    CH4(g) 0 0
+    CO2(g) 0 0
+    NH3(g) 0 0
+
+SELECTED_OUTPUT
+    -reset false
+    -solution  true
+    -molalities NH3 NH4+
+    -high_precision true
+END

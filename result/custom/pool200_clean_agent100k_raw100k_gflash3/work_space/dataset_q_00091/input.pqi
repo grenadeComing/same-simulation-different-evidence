@@ -1,0 +1,11 @@
+SOLUTION 1
+    temp 150
+    pressure 1
+SELECTED_OUTPUT
+    -file precision.sel
+    -user_punch true
+    -reset false
+USER_PUNCH
+    -headings logK
+    10 PUNCH LK_PHASE("Chrysotile")
+END

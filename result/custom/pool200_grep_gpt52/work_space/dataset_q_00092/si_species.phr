@@ -1,0 +1,18 @@
+TITLE Si species count, water pH7, 150C, eq with chrysotile and talc
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+SELECTED_OUTPUT
+    -file si_selected.txt
+    -molalities H4SiO4 H3SiO4- H2SiO4-2
+    -activities H4SiO4 H3SiO4- H2SiO4-2
+    -totals Si
+    -pH true
+    -temperature true
+    -reset false
+END

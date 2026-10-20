@@ -1,0 +1,14 @@
+EQUILIBRIUM_PHASES 1
+    O2(g) -0.67
+SOLUTION 1
+    pH 7.0
+    pe 4.0
+REACTION 1
+    H2SO4 1.0
+    0.001 0.005 0.01 0.05 0.1
+SELECTED_OUTPUT
+    -file results_4.txt
+    -si H2(g)
+    -pH
+    -pe
+END

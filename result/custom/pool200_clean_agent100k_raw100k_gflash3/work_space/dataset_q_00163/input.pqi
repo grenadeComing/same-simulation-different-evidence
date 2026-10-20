@@ -1,0 +1,25 @@
+SOLUTION 1
+    pH      7.0
+    temp    25
+    units   mol/kgw
+    Ca      0.01
+    Sr      0.01
+    Alkalinity 0.04
+END
+
+SELECTED_OUTPUT
+    -file mf.txt
+    -user_punch true
+END
+
+USER_PUNCH
+    -headings mf_Sr
+    10 PUNCH S_S("Strontianite") / (S_S("Strontianite") + S_S("Calcite"))
+END
+
+USE solution 1
+SOLID_SOLUTIONS 1
+    Ca_Sr_carbonate
+        -comp1 Calcite 0.0
+        -comp2 Strontianite 0.0
+END

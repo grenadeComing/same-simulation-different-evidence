@@ -1,0 +1,13 @@
+SOLUTION 1
+  temp 25
+  pH 7 charge
+  -water 1
+EQUILIBRIUM_PHASES 1
+  CO2(g) -3.4 10
+SELECTED_OUTPUT
+  -reset false
+  -high_precision true
+USER_PUNCH
+  -headings a_H+
+  10 PUNCH ACT("H+")
+END

@@ -1,0 +1,32 @@
+
+# Solution 1: River water
+SOLUTION 1 River Water
+    pH      6.0
+    Cl      10       # mg/L as Cl
+    temp    25
+
+# Solution 2: Seawater
+SOLUTION 2 Seawater
+    pH      8.1
+    Cl      19000    # mg/L as Cl
+    temp    25
+
+# Mix 70% river water and 30% seawater
+MIX 1
+    1   0.7
+    2   0.3
+
+# Save the mixed solution as solution 3
+SAVE SOLUTION 3
+
+# Equilibrate and get output
+END
+
+USE SOLUTION 3
+SELECTED_OUTPUT
+    -file           mix_output.sel
+    -reset          false
+    -pH             true
+    -activities     H+
+
+END

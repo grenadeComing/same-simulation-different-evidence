@@ -1,0 +1,26 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(2) 0.004
+    Fe(3) 0.004
+    units mol/kgw
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+        -steps 10 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -step true
+    -totals Na Al Si S Fe
+END

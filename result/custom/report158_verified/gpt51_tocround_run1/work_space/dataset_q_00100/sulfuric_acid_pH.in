@@ -1,0 +1,12 @@
+TITLE Sulfuric acid titration to 0.166 mol/kgw total
+
+SOLUTION 1 Pure water
+    temp 25
+    pH 7 charge
+    units mol/kgw
+
+REACTION 1
+    H2SO4 1.0
+    0.166
+
+END

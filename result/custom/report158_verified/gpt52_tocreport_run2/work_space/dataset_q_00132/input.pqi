@@ -1,0 +1,27 @@
+SOLUTION 1-10 Initial
+    pH 7.0
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+SOLUTION 0 Inflow
+    pH 7.0
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1
+    -dispersivities 0
+    -time_step 1
+    -print_cells 3
+    -print_frequency 10
+
+END

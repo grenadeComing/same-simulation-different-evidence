@@ -1,0 +1,21 @@
+SOLUTION 1
+    temp 100
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+END
+
+USE solution 1
+EQUILIBRIUM_PHASES 1
+    Calcite   0.0 10.0
+    Gypsum    0.0 10.0
+    CO2(g)    0.0 1.0
+    CH4(g)    0.69897 5.0
+    H2S(g)    1.0 10.0
+    Aragonite 0.0 0.0
+END
+SELECTED_OUTPUT
+    -file output.sel
+    -si Aragonite Calcite Gypsum
+    -temp
+END

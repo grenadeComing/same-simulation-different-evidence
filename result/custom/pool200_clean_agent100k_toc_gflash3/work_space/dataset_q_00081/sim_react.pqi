@@ -1,0 +1,17 @@
+TITLE NH4+ vs NH3 Reaction
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    units mol/kgw
+    water 1
+REACTION 1
+    CO2 10.0
+    CH4 10.0
+    NH3 5.0
+    1.0 moles
+SELECTED_OUTPUT 1
+    -file output_react.sel
+    -molalities NH4+ NH3
+    -pH
+END

@@ -1,0 +1,13 @@
+SOLUTION 1 Pure water
+    pH 7.0
+    temp 25
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+SELECTED_OUTPUT
+    -reset false
+USER_PUNCH
+    -headings CaHSO4_m
+    10 PUNCH MOL("CaHSO4+")
+END

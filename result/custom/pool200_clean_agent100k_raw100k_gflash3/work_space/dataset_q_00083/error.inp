@@ -1,0 +1,98 @@
+SOLUTION_RAW                 1 
+  -temp                      150
+  -pressure                  4.6999580377139
+  -potential                 0
+  -total_h                   111.01245727464
+  -total_o                   55.506240477823
+  -cb                        -2.3681007820401e-05
+  -density                   0.91701013171401
+  -viscosity                 0.18261560343299
+  -viscos_0                  0.18261166899867
+  -totals
+    O(0)                     2.5511628314297e-13
+  -pH                        7
+  -pe                        4
+  -mu                        1.1941048373009e-05
+  -ah2o                      0.99999959400435
+  -mass_water                1
+  -soln_vol                  1.0905009334072
+  -total_alkalinity          2.3681007820401e-05
+  -activities
+    E                        -4
+    H(0)                     -25.532190981699
+    O(0)                     -12.89429062263
+  -gammas
+EQUILIBRIUM_PHASES_RAW       1 
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 CH4(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    -0.39794
+      -moles                 10
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                -0.39794
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -component                 CO2(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    -0.39794
+      -moles                 10
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                -0.39794
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -component                 Fix_pH
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -add_formula           NaOH
+      -si                    -7
+      -moles                 10
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                -7
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -component                 Fix_pe
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -add_formula           O2
+      -si                    -4
+      -moles                 10
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                -4
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -component                 NH3(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    -0.69897
+      -moles                 10
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                -0.69897
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    C                        2
+    H                        9
+    N                        1
+    Na                       1
+    O                        5
+    e                        1
+  # PPassemblage workspace variables #
+  -assemblage_totals

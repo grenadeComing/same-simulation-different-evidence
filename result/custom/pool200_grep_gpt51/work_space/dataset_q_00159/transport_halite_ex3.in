@@ -1,0 +1,37 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X- 0.001
+
+EQUILIBRIUM_PHASES 1-10
+    Halite 0 0
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -length              1
+    -time_step           1
+    -flow_direction      forward
+    -boundary_conditions flux flux
+    -print_cells         1-10
+    -print_frequency     1
+    -punch_cells         1-10
+    -punch_frequency     1
+    -initial_time        0
+
+SELECTED_OUTPUT
+    -file transport_sel.out
+    -reset false
+    -simulation true
+    -state true
+    -solution true
+    -equilibrium_phases true
+    -saturation_indices Halite

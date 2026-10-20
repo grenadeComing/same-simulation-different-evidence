@@ -1,0 +1,21 @@
+TITLE Check Na+ activity from log value
+
+SOLUTION 1
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+    units mmol/L
+
+SELECTED_OUTPUT
+    -file check_act.sel
+    -reset false
+    -activities Na+
+
+USER_PUNCH
+    -headings log_Na act_Na
+    -start
+10 PUNCH LOG10(ACT("Na+"))
+20 PUNCH ACT("Na+")
+    -end
+
+END

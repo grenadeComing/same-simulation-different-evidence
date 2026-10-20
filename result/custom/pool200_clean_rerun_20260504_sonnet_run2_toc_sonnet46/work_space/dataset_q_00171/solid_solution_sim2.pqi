@@ -1,0 +1,20 @@
+SOLUTION 1
+    pH      7.0
+    temp    25.0
+    Ca      10.0   # mmol/L = 0.01 mol/L
+    Sr      10.0   # mmol/L = 0.01 mol/L
+    Alkalinity 40.0 as HCO3  # mmol/L = 0.04 mol/L
+
+SOLID_SOLUTION 1  Ca_Sr_carbonate
+    -comp  Calcite      0.0
+    -comp  Strontianite 0.0
+
+SELECTED_OUTPUT
+    -file   solid_solution_sim2.out
+    -reset  false
+    -si     Calcite Strontianite Aragonite
+
+PRINT
+    -solid_solutions true
+
+END

@@ -1,0 +1,17 @@
+SOLUTION 1
+    pH 7 charge
+    temp 25
+    units mol/kgw
+REACTION 1
+    H 2
+    S 1
+    O 4
+    0.001 0.005 0.01 0.05 0.1
+SELECTED_OUTPUT 1
+    -file output.sel
+    -reset false
+    -step
+USER_PUNCH 1
+    -headings mol_h activity_h gamma_h la_h
+    10 PUNCH MOL("H+"), ACT("H+"), GAMMA("H+"), LA("H+")
+END

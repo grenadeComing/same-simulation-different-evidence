@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp 100
+    units mmol/kgw
+    Ca 50
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Gypsum 0 0
+    Aragonite 0 0
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    CO2(g) 1.0
+    CH4(g) 5.0
+    H2S(g) 10.0
+SELECTED_OUTPUT
+    -reset false
+    -solution 1
+    -molalities Ca+2 CaCO3 CaHCO3+ CaOH+ CO2 CO3-2 H+ HCO3- OH-
+END

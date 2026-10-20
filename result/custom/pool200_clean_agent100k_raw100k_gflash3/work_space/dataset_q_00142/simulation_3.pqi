@@ -1,0 +1,8 @@
+SOLUTION 1
+    temp 25
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10
+SELECTED_OUTPUT 1
+    -file solution_results_3.txt
+    -molalities OH-
+END

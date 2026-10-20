@@ -1,0 +1,25 @@
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    pe 4
+    redox pe
+    units mol/kgw
+    density 1
+
+EQUILIBRIUM_PHASES 1
+    Pyrite 0 0.1
+    Goethite 0 0
+    Gypsum 0 0
+
+GAS_PHASE 1
+    -fixed_pressure true
+    -temperature 25
+    -volume 1.0
+    O2(g)  -0.7
+
+SELECTED_OUTPUT
+    -reset false
+    -solution 1
+    -equilibrium_phases true
+    -saturation_indices Pyrite
+END

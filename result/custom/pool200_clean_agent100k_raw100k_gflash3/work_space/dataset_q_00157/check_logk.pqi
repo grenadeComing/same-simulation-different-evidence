@@ -1,0 +1,6 @@
+SOLUTION 1
+SELECTED_OUTPUT
+-file logk.sel
+-user_punch
+10 PUNCH LOGK("HCl")
+END

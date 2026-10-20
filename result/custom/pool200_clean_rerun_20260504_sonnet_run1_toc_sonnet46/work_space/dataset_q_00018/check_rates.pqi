@@ -1,0 +1,9 @@
+SOLUTION 1
+    temp      25
+    pH        7.0
+    pe        4.0
+
+PRINT
+    -reset false
+
+END

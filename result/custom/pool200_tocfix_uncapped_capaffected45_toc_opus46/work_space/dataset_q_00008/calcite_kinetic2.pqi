@@ -1,0 +1,31 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1
+
+KINETICS 1
+Calcite
+    -formula CaCO3 1
+    -m       1
+    -m0      1
+    -parms   10.0  0.001
+    -tol     1e-8
+-steps 1000 in 100
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file result2.out
+    -reset false
+    -step
+    -time
+    -pH
+    -pe
+    -totals Ca C(4) Mn
+    -kinetic_reactants Calcite
+    -saturation_indices Calcite
+
+END

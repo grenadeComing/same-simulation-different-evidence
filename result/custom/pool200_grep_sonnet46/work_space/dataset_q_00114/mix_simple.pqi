@@ -1,0 +1,22 @@
+SOLUTION 1  River water
+    pH      6.0
+    temp    25
+
+SOLUTION 2  Seawater
+    pH      8.1
+    temp    25
+
+MIX 1
+    1       0.7
+    2       0.3
+
+SAVE SOLUTION 3
+
+END
+
+SELECTED_OUTPUT
+    -file           mix_simple.sel
+    -reset          false
+    -molalities     HCl
+
+END

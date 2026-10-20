@@ -1,0 +1,24 @@
+SOLUTION 1
+    pH      7.0
+    temp    25.0
+    units   mol/L
+    Ca      0.01
+    Sr      0.01
+    Alkalinity 0.04
+
+SOLID_SOLUTION 1  Ca_Sr_carbonate
+    -comp  Calcite      0.0
+    -comp  Strontianite 0.0
+
+SELECTED_OUTPUT
+    -file   result3.out
+    -reset  false
+    -solution
+    -pH
+    -temperature
+
+USER_PUNCH
+    -headings  spec_cond
+    10 PUNCH SC
+
+END

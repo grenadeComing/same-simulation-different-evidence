@@ -1,0 +1,60 @@
+TITLE Sulfuric acid addition to pure water - separate steps
+
+# Step 1: pure water + 0.001 mol H2SO4
+SOLUTION 1
+    pH 7.0
+    temp 25
+    units mol/L
+
+REACTION 1
+    H2SO4  1
+    0.001
+
+# Step 2: pure water + 0.005 mol H2SO4
+SOLUTION 2
+    pH 7.0
+    temp 25
+    units mol/L
+
+REACTION 2
+    H2SO4  1
+    0.005
+
+# Step 3: pure water + 0.01 mol H2SO4
+SOLUTION 3
+    pH 7.0
+    temp 25
+    units mol/L
+
+REACTION 3
+    H2SO4  1
+    0.01
+
+# Step 4: pure water + 0.05 mol H2SO4
+SOLUTION 4
+    pH 7.0
+    temp 25
+    units mol/L
+
+REACTION 4
+    H2SO4  1
+    0.05
+
+# Step 5: pure water + 0.1 mol H2SO4
+SOLUTION 5
+    pH 7.0
+    temp 25
+    units mol/L
+
+REACTION 5
+    H2SO4  1
+    0.1
+
+SELECTED_OUTPUT
+    -file sulfuric_acid2.sel
+    -reset false
+    -simulation true
+    -pH true
+    -ionic_strength true
+
+END

@@ -1,0 +1,10 @@
+SOLUTION 1
+    pH 7.0
+    pe 4.0
+REACTION 1
+    H2SO4 1.0
+    0.1
+SELECTED_OUTPUT
+    -file all_phases.txt
+    -si H2(g) Hdg(g) O2(g) Oxg(g)
+END

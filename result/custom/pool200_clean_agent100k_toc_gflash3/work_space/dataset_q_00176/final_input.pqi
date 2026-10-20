@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 25
+    units mg/l
+    Ba 2.0
+    S(6) 15.0
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+SELECTED_OUTPUT 1
+    -file final_result.sel
+    -reset false
+    -temperature true
+    -step true
+USER_PUNCH
+    -headings Ba_molality
+    10 PUNCH TOT("Ba")
+END

@@ -1,0 +1,14 @@
+SOLUTION 1 Pure water
+    temp 25
+    pH 7 charge
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+USER_PUNCH
+    -headings log_IAP_CO2g
+    10 PUNCH SI("CO2(g)")
+END

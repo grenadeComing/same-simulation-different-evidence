@@ -1,0 +1,14 @@
+SOLUTION 1 Pure water pH 7 at 150C
+    temp 150
+    pH 7 charge
+
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+
+SELECTED_OUTPUT
+    -reset false
+    -solution 1
+    -high_precision true
+    -totals Mg Si H
+END

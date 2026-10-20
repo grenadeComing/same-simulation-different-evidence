@@ -1,0 +1,24 @@
+TITLE Calcite kinetic dissolution hydrothermal solution
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 4
+    redox pe
+    units mmol/kgw
+    C(4) 0.5
+    Mn 1
+KINETICS 1
+    Calcite
+        -m0 1
+        -m 1
+        -parms 10 0.001
+        -steps 1000 in 100
+        -tol 1e-12
+SELECTED_OUTPUT
+    -file selected3.txt
+    -reset false
+    -time true
+    -pH true
+    -si Calcite Rhodochrosite
+    -totals Ca C(4) Mn
+END

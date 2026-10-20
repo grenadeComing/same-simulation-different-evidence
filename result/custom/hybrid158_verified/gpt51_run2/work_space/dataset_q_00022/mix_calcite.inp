@@ -1,0 +1,21 @@
+SOLUTION 1
+    temp 20
+    pH 7 charge
+    C(4) 50e-3
+SOLUTION 2
+    temp 20
+    pH 7 charge
+    Ca 50e-3
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+MIX 1
+    1 0.5
+    2 0.5
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+SAVE solution 1
+SAVE equilibrium_phases 1
+END
+USE solution 1
+USE equilibrium_phases 1
+END

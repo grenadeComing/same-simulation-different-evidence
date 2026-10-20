@@ -1,0 +1,14 @@
+TITLE Compute pe of pure water at pH 7, 150C (no minerals), equilibrated with O2(g)=1 atm
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    O2(g) 0 1
+SELECTED_OUTPUT
+    -file peq4.sel
+    -reset false
+    -pH true
+    -pe true
+END

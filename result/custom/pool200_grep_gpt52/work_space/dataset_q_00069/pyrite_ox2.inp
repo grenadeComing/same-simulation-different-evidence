@@ -1,0 +1,27 @@
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    pe 19.676
+    units mol/kgw
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    O2(g) -0.7
+
+REACTION 1
+    Pyrite 1
+    0.1
+
+EQUILIBRIUM_PHASES 1
+    Goethite 0 0
+    Gypsum 0 0
+
+SELECTED_OUTPUT
+    -file pyrite_ox2.sel
+    -reset false
+USER_PUNCH
+    -headings pe
+10 PUNCH PE
+END

@@ -1,0 +1,45 @@
+# 1D Transport problem with 10 cells, 10 shifts
+# Initial solution: pH 7.0, Ca 1.0 mmol/L, Cl 2.0 mmol/L
+# Infilling solution: pH 7.0, Na 1.0 mmol/L, Cl 1.0 mmol/L
+# Exchange sites: 0.001 mol, equilibrated with solution 1
+
+# Solution 0 - Infilling solution (boundary condition)
+SOLUTION 0
+    pH      7.0
+    Na      1.0
+    Cl      1.0
+    units   mmol/L
+
+# Solutions 1-10 - Initial solution (fills all cells)
+SOLUTION 1-10
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+    units   mmol/L
+
+# Exchange assemblage for all 10 cells
+# Equilibrate with solution 1 (initial solution)
+EXCHANGE 1-10
+    X       0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells          10
+    -shifts         10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -dispersivities 0
+    -time_step      1
+    -length         1
+
+SELECTED_OUTPUT
+    -file           transport_exchange.sel
+    -reset          false
+    -step
+    -totals         Ca Na Cl
+
+USER_PUNCH
+    -headings  step cell CaX2 NaX
+    10 PUNCH SIM_NO, CELL_NO, MOL("CaX2"), MOL("NaX")
+
+END

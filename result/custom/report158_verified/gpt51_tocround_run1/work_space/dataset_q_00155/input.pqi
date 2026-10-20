@@ -1,0 +1,25 @@
+SOLUTION 1
+    temp 25
+    pH 8.0
+    units ppm
+    Ca 50
+    Mg 12
+    Na 20
+    K 2
+    Alkalinity 150 as HCO3
+    S(6) 40
+    Cl 15
+
+MIX 1
+    1 1.0
+    -water 50.0
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Gypsum 0 0
+    Halite 0 0
+
+SELECTED_OUTPUT
+    -file sel.out
+    -activities Cl-
+END

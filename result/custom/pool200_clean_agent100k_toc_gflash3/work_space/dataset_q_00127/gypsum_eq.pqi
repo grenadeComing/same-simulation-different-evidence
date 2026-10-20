@@ -1,0 +1,15 @@
+SOLUTION 1
+    units mol/kgw
+    temp 25
+    pH 7.0
+    water 1
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+USER_PUNCH
+    -headings mu m_Ca2 m_SO42 m_CaSO4 m_H m_OH
+    10 PUNCH MU, MOL("Ca+2"), MOL("SO4-2"), MOL("CaSO4"), MOL("H+"), MOL("OH-")
+SELECTED_OUTPUT 1
+    -file species.sel
+    -user_punch true
+    -high_precision true
+END

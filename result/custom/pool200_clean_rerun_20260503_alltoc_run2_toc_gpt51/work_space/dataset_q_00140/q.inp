@@ -1,0 +1,15 @@
+SOLUTION 1 Pure water
+    temp 25
+    pH 7.0
+EQUILIBRIUM_PHASES 1
+    CO2(g)  -3.4 10
+END
+Saturation_indices 1
+    CO2(g)
+END
+USER_PUNCH
+    -headings SI_CH4
+    -start
+10 PUNCH SI("CH4(g)")
+    -end
+END

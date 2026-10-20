@@ -1,0 +1,11 @@
+SOLUTION 1
+    temp 25
+    pH 7
+    Ca 0.01
+    Sr 0.01
+    Alkalinity 0.04 as CaCO3
+
+SELECTED_OUTPUT
+    -si Strontianite
+    -high_precision true
+END

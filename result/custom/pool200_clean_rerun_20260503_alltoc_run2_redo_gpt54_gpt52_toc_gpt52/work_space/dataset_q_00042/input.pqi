@@ -1,0 +1,25 @@
+TITLE Equilibrate 100C Ca solution with calcite+gypsum+aragonite and multi-gas (fixed partial pressures)
+SOLUTION 1
+  temp 100
+  pH 7 charge
+  Ca 50e-3
+  -water 1 # kg
+EQUILIBRIUM_PHASES 1
+  Calcite 0 0
+  Gypsum 0 0
+  Aragonite 0 0
+GAS_PHASE 1
+  -fixed_pressure
+  -temperature 25
+  CO2(g) 1
+  CH4(g) 5
+  H2S(g) 10
+SELECTED_OUTPUT
+  -file selected.txt
+  -reset false
+USER_PUNCH
+  -headings molkg_CO2_diss molkg_CH4_diss molkg_H2S_diss
+  10 PUNCH TOT("C(4)")
+  20 PUNCH TOT("C(-4)")
+  30 PUNCH TOT("S(-2)")
+END

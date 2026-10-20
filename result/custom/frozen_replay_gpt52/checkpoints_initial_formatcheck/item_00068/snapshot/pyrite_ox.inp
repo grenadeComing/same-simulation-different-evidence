@@ -1,0 +1,23 @@
+TITLE Pyrite oxidation in pure water, O2 fixed, allow goethite+gypsum
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    pe 4
+    units mol/kgw
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    O2(g) -0.7
+
+EQUILIBRIUM_PHASES 1
+    Pyrite 0 0.1
+    Goethite 0 0
+    Gypsum 0 0
+
+SELECTED_OUTPUT
+    -file selected.csv
+    -reset false
+    -si Pyrite
+END

@@ -1,0 +1,199 @@
+Resuming: 0 done, 158 remaining
+
+custom/toc_report (gpt-5.2):   0%|          | 0/158 [00:00<?, ?q/s]
+custom/toc_report (gpt-5.2):   1%|          | 1/158 [00:23<1:00:55, 23.29s/q]
+custom/toc_report (gpt-5.2):   1%|▏         | 2/158 [00:23<25:17,  9.73s/q]  
+custom/toc_report (gpt-5.2):   2%|▏         | 3/158 [00:33<26:00, 10.07s/q]
+custom/toc_report (gpt-5.2):   3%|▎         | 4/158 [00:55<36:56, 14.39s/q]
+custom/toc_report (gpt-5.2):   3%|▎         | 5/158 [00:59<27:22, 10.74s/q]
+custom/toc_report (gpt-5.2):   4%|▍         | 6/158 [01:11<28:09, 11.11s/q]
+custom/toc_report (gpt-5.2):   4%|▍         | 7/158 [01:21<27:19, 10.86s/q]
+custom/toc_report (gpt-5.2):   5%|▌         | 8/158 [01:27<23:30,  9.40s/q]
+custom/toc_report (gpt-5.2):   6%|▌         | 9/158 [01:40<26:16, 10.58s/q]
+custom/toc_report (gpt-5.2):   6%|▋         | 10/158 [01:41<18:24,  7.46s/q]
+custom/toc_report (gpt-5.2):   7%|▋         | 11/158 [01:47<17:05,  6.98s/q]
+custom/toc_report (gpt-5.2):   8%|▊         | 12/158 [01:57<19:41,  8.09s/q]
+custom/toc_report (gpt-5.2):   8%|▊         | 13/158 [01:59<15:05,  6.24s/q]
+custom/toc_report (gpt-5.2):   9%|▉         | 14/158 [02:09<17:10,  7.16s/q]
+custom/toc_report (gpt-5.2):   9%|▉         | 15/158 [02:28<25:38, 10.76s/q]
+custom/toc_report (gpt-5.2):  10%|█         | 16/158 [02:30<19:43,  8.34s/q]
+custom/toc_report (gpt-5.2):  11%|█         | 17/158 [02:36<17:21,  7.39s/q]
+custom/toc_report (gpt-5.2):  11%|█▏        | 18/158 [02:48<20:55,  8.97s/q]
+custom/toc_report (gpt-5.2):  12%|█▏        | 19/158 [02:50<15:25,  6.66s/q]
+custom/toc_report (gpt-5.2):  13%|█▎        | 20/158 [03:06<21:48,  9.48s/q]
+custom/toc_report (gpt-5.2):  13%|█▎        | 21/158 [03:06<15:29,  6.78s/q]
+custom/toc_report (gpt-5.2):  14%|█▍        | 22/158 [03:09<12:33,  5.54s/q]
+custom/toc_report (gpt-5.2):  15%|█▍        | 23/158 [03:23<18:34,  8.26s/q]
+custom/toc_report (gpt-5.2):  15%|█▌        | 24/158 [03:26<14:45,  6.61s/q]
+custom/toc_report (gpt-5.2):  16%|█▌        | 25/158 [03:29<12:16,  5.54s/q]
+custom/toc_report (gpt-5.2):  16%|█▋        | 26/158 [03:43<17:47,  8.09s/q]
+custom/toc_report (gpt-5.2):  17%|█▋        | 27/158 [03:55<20:03,  9.18s/q]
+custom/toc_report (gpt-5.2):  18%|█▊        | 29/158 [03:56<11:18,  5.26s/q]
+custom/toc_report (gpt-5.2):  19%|█▉        | 30/158 [04:00<10:26,  4.89s/q]
+custom/toc_report (gpt-5.2):  20%|█▉        | 31/158 [04:12<14:03,  6.64s/q]
+custom/toc_report (gpt-5.2):  20%|██        | 32/158 [04:12<10:22,  4.94s/q]
+custom/toc_report (gpt-5.2):  21%|██        | 33/158 [04:14<08:21,  4.01s/q]
+custom/toc_report (gpt-5.2):  22%|██▏       | 34/158 [04:17<07:57,  3.85s/q]
+custom/toc_report (gpt-5.2):  22%|██▏       | 35/158 [04:29<12:38,  6.17s/q]
+custom/toc_report (gpt-5.2):  23%|██▎       | 36/158 [04:29<08:56,  4.40s/q]
+custom/toc_report (gpt-5.2):  23%|██▎       | 37/158 [04:30<06:49,  3.38s/q]
+custom/toc_report (gpt-5.2):  24%|██▍       | 38/158 [04:34<07:04,  3.54s/q]
+custom/toc_report (gpt-5.2):  25%|██▍       | 39/158 [04:46<11:56,  6.02s/q]
+custom/toc_report (gpt-5.2):  25%|██▌       | 40/158 [04:47<08:57,  4.55s/q]
+custom/toc_report (gpt-5.2):  27%|██▋       | 42/158 [04:54<07:48,  4.04s/q]
+custom/toc_report (gpt-5.2):  27%|██▋       | 43/158 [05:03<10:04,  5.25s/q]
+custom/toc_report (gpt-5.2):  28%|██▊       | 44/158 [05:03<07:42,  4.06s/q]
+custom/toc_report (gpt-5.2):  28%|██▊       | 45/158 [05:06<06:53,  3.66s/q]
+custom/toc_report (gpt-5.2):  29%|██▉       | 46/158 [05:18<10:55,  5.85s/q]
+custom/toc_report (gpt-5.2):  30%|██▉       | 47/158 [05:20<08:54,  4.82s/q]
+custom/toc_report (gpt-5.2):  30%|███       | 48/158 [05:20<06:24,  3.50s/q]
+custom/toc_report (gpt-5.2):  31%|███       | 49/158 [05:23<05:50,  3.22s/q]
+custom/toc_report (gpt-5.2):  32%|███▏      | 50/158 [05:35<10:50,  6.03s/q]
+custom/toc_report (gpt-5.2):  32%|███▏      | 51/158 [05:36<08:06,  4.55s/q]
+custom/toc_report (gpt-5.2):  34%|███▎      | 53/158 [05:39<05:26,  3.11s/q]
+custom/toc_report (gpt-5.2):  34%|███▍      | 54/158 [05:52<09:34,  5.52s/q]
+custom/toc_report (gpt-5.2):  35%|███▍      | 55/158 [05:53<07:36,  4.43s/q]
+custom/toc_report (gpt-5.2):  36%|███▌      | 57/158 [05:56<05:16,  3.14s/q]
+custom/toc_report (gpt-5.2):  37%|███▋      | 58/158 [06:09<08:54,  5.34s/q]
+custom/toc_report (gpt-5.2):  37%|███▋      | 59/158 [06:10<07:17,  4.42s/q]
+custom/toc_report (gpt-5.2):  38%|███▊      | 60/158 [06:15<07:15,  4.44s/q]
+custom/toc_report (gpt-5.2):  39%|███▊      | 61/158 [06:15<05:26,  3.36s/q]
+custom/toc_report (gpt-5.2):  39%|███▉      | 62/158 [06:27<09:16,  5.80s/q]
+custom/toc_report (gpt-5.2):  40%|███▉      | 63/158 [06:28<06:43,  4.24s/q]
+custom/toc_report (gpt-5.2):  41%|████      | 64/158 [06:32<06:30,  4.16s/q]
+custom/toc_report (gpt-5.2):  41%|████      | 65/158 [06:32<04:51,  3.13s/q]
+custom/toc_report (gpt-5.2):  42%|████▏     | 66/158 [06:45<08:59,  5.86s/q]
+custom/toc_report (gpt-5.2):  42%|████▏     | 67/158 [06:47<07:05,  4.67s/q]
+custom/toc_report (gpt-5.2):  43%|████▎     | 68/158 [06:51<06:46,  4.51s/q]
+custom/toc_report (gpt-5.2):  44%|████▎     | 69/158 [07:33<23:15, 15.68s/q]
+custom/toc_report (gpt-5.2):  44%|████▍     | 70/158 [07:45<21:18, 14.53s/q]
+custom/toc_report (gpt-5.2):  45%|████▍     | 71/158 [07:45<14:59, 10.33s/q]
+custom/toc_report (gpt-5.2):  46%|████▌     | 72/158 [07:45<10:29,  7.32s/q]
+custom/toc_report (gpt-5.2):  46%|████▌     | 73/158 [07:50<09:13,  6.51s/q]
+custom/toc_report (gpt-5.2):  47%|████▋     | 74/158 [08:01<11:09,  7.97s/q]
+custom/toc_report (gpt-5.2):  47%|████▋     | 75/158 [08:03<08:14,  5.95s/q]
+custom/toc_report (gpt-5.2):  49%|████▊     | 77/158 [08:07<05:40,  4.20s/q]
+custom/toc_report (gpt-5.2):  49%|████▉     | 78/158 [08:18<07:44,  5.80s/q]
+custom/toc_report (gpt-5.2):  50%|█████     | 79/158 [08:19<06:16,  4.77s/q]
+custom/toc_report (gpt-5.2):  51%|█████     | 80/158 [08:21<04:54,  3.78s/q]
+custom/toc_report (gpt-5.2):  51%|█████▏    | 81/158 [08:24<04:42,  3.67s/q]
+custom/toc_report (gpt-5.2):  52%|█████▏    | 82/158 [08:32<06:17,  4.97s/q]
+custom/toc_report (gpt-5.2):  53%|█████▎    | 83/158 [08:34<05:14,  4.19s/q]
+custom/toc_report (gpt-5.2):  53%|█████▎    | 84/158 [08:36<04:11,  3.39s/q]
+custom/toc_report (gpt-5.2):  54%|█████▍    | 85/158 [08:40<04:17,  3.53s/q]
+custom/toc_report (gpt-5.2):  54%|█████▍    | 86/158 [08:50<06:44,  5.61s/q]
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+custom/toc_report (gpt-5.2):  55%|█████▌    | 87/158 [08:51<05:03,  4.27s/q]
+custom/toc_report (gpt-5.2):  56%|█████▋    | 89/158 [09:01<05:03,  4.39s/q]
+custom/toc_report (gpt-5.2):  57%|█████▋    | 90/158 [09:07<05:26,  4.80s/q]
+custom/toc_report (gpt-5.2):  58%|█████▊    | 91/158 [09:13<05:50,  5.23s/q]
+custom/toc_report (gpt-5.2):  59%|█████▉    | 93/158 [09:17<04:08,  3.82s/q]
+custom/toc_report (gpt-5.2):  59%|█████▉    | 94/158 [09:29<06:13,  5.83s/q]
+custom/toc_report (gpt-5.2):  60%|██████    | 95/158 [09:31<05:09,  4.91s/q]
+custom/toc_report (gpt-5.2):  61%|██████    | 96/158 [09:33<04:11,  4.05s/q]
+custom/toc_report (gpt-5.2):  61%|██████▏   | 97/158 [09:35<03:25,  3.38s/q]
+custom/toc_report (gpt-5.2):  62%|██████▏   | 98/158 [09:47<05:50,  5.83s/q]
+custom/toc_report (gpt-5.2):  63%|██████▎   | 99/158 [09:50<05:04,  5.16s/q]
+custom/toc_report (gpt-5.2):  63%|██████▎   | 100/158 [09:51<03:47,  3.92s/q]
+custom/toc_report (gpt-5.2):  64%|██████▍   | 101/158 [09:59<04:44,  5.00s/q]
+custom/toc_report (gpt-5.2):  65%|██████▍   | 102/158 [10:03<04:25,  4.75s/q]
+custom/toc_report (gpt-5.2):  65%|██████▌   | 103/158 [10:07<04:05,  4.46s/q]
+custom/toc_report (gpt-5.2):  66%|██████▌   | 104/158 [10:16<05:18,  5.90s/q]
+custom/toc_report (gpt-5.2):  66%|██████▋   | 105/158 [10:20<04:49,  5.45s/q]
+custom/toc_report (gpt-5.2):  67%|██████▋   | 106/158 [10:24<04:09,  4.80s/q]
+custom/toc_report (gpt-5.2):  68%|██████▊   | 108/158 [10:28<03:05,  3.70s/q]
+custom/toc_report (gpt-5.2):  69%|██████▉   | 109/158 [10:34<03:28,  4.26s/q]
+custom/toc_report (gpt-5.2):  70%|██████▉   | 110/158 [10:40<03:39,  4.58s/q]
+custom/toc_report (gpt-5.2):  70%|███████   | 111/158 [10:40<02:40,  3.42s/q]
+custom/toc_report (gpt-5.2):  71%|███████   | 112/158 [10:45<02:56,  3.84s/q]
+custom/toc_report (gpt-5.2):  72%|███████▏  | 113/158 [10:51<03:20,  4.45s/q]
+custom/toc_report (gpt-5.2):  72%|███████▏  | 114/158 [10:57<03:27,  4.72s/q]
+custom/toc_report (gpt-5.2):  73%|███████▎  | 115/158 [10:57<02:33,  3.57s/q]
+custom/toc_report (gpt-5.2):  73%|███████▎  | 116/158 [11:01<02:35,  3.69s/q]
+custom/toc_report (gpt-5.2):  74%|███████▍  | 117/158 [11:08<03:04,  4.50s/q]
+custom/toc_report (gpt-5.2):  75%|███████▍  | 118/158 [11:13<03:05,  4.64s/q]
+custom/toc_report (gpt-5.2):  75%|███████▌  | 119/158 [11:16<02:48,  4.31s/q]
+custom/toc_report (gpt-5.2):  76%|███████▌  | 120/158 [11:36<05:37,  8.88s/q]
+custom/toc_report (gpt-5.2):  77%|███████▋  | 121/158 [11:44<05:22,  8.71s/q]
+custom/toc_report (gpt-5.2):  77%|███████▋  | 122/158 [11:55<05:35,  9.31s/q]
+custom/toc_report (gpt-5.2):  78%|███████▊  | 123/158 [12:02<05:00,  8.60s/q]
+custom/toc_report (gpt-5.2):  78%|███████▊  | 124/158 [12:08<04:30,  7.96s/q]
+custom/toc_report (gpt-5.2):  79%|███████▉  | 125/158 [12:13<03:53,  7.08s/q]
+custom/toc_report (gpt-5.2):  80%|███████▉  | 126/158 [12:22<04:00,  7.51s/q]
+custom/toc_report (gpt-5.2):  80%|████████  | 127/158 [12:32<04:15,  8.25s/q]
+custom/toc_report (gpt-5.2):  81%|████████  | 128/158 [12:38<03:44,  7.50s/q]
+custom/toc_report (gpt-5.2):  82%|████████▏ | 129/158 [12:39<02:47,  5.78s/q]
+custom/toc_report (gpt-5.2):  82%|████████▏ | 130/158 [12:50<03:26,  7.37s/q]
+custom/toc_report (gpt-5.2):  83%|████████▎ | 131/158 [12:52<02:34,  5.71s/q]
+custom/toc_report (gpt-5.2):  84%|████████▎ | 132/158 [12:57<02:20,  5.39s/q]
+custom/toc_report (gpt-5.2):  84%|████████▍ | 133/158 [13:06<02:42,  6.50s/q]
+custom/toc_report (gpt-5.2):  85%|████████▍ | 134/158 [13:09<02:09,  5.38s/q]
+custom/toc_report (gpt-5.2):  85%|████████▌ | 135/158 [13:13<01:55,  5.02s/q]
+custom/toc_report (gpt-5.2):  86%|████████▌ | 136/158 [13:23<02:23,  6.51s/q]
+custom/toc_report (gpt-5.2):  87%|████████▋ | 137/158 [13:27<02:01,  5.77s/q]
+custom/toc_report (gpt-5.2):  87%|████████▋ | 138/158 [13:29<01:34,  4.71s/q]
+custom/toc_report (gpt-5.2):  88%|████████▊ | 139/158 [13:32<01:18,  4.12s/q]
+custom/toc_report (gpt-5.2):  89%|████████▊ | 140/158 [13:42<01:44,  5.79s/q]
+custom/toc_report (gpt-5.2):  89%|████████▉ | 141/158 [13:43<01:13,  4.35s/q]
+custom/toc_report (gpt-5.2):  90%|████████▉ | 142/158 [13:45<01:01,  3.85s/q]
+custom/toc_report (gpt-5.2):  91%|█████████ | 143/158 [13:48<00:52,  3.48s/q]
+custom/toc_report (gpt-5.2):  91%|█████████ | 144/158 [13:58<01:16,  5.43s/q]
+custom/toc_report (gpt-5.2):  92%|█████████▏| 145/158 [13:58<00:51,  3.96s/q]
+custom/toc_report (gpt-5.2):  92%|█████████▏| 146/158 [14:01<00:43,  3.64s/q]
+custom/toc_report (gpt-5.2):  93%|█████████▎| 147/158 [14:05<00:38,  3.52s/q]
+custom/toc_report (gpt-5.2):  94%|█████████▎| 148/158 [14:14<00:53,  5.36s/q]
+custom/toc_report (gpt-5.2):  94%|█████████▍| 149/158 [14:15<00:36,  4.05s/q]
+custom/toc_report (gpt-5.2):  95%|█████████▍| 150/158 [14:18<00:29,  3.70s/q]
+custom/toc_report (gpt-5.2):  96%|█████████▌| 151/158 [14:21<00:25,  3.60s/q]
+custom/toc_report (gpt-5.2):  96%|█████████▌| 152/158 [14:31<00:32,  5.44s/q]
+custom/toc_report (gpt-5.2):  97%|█████████▋| 153/158 [14:33<00:21,  4.24s/q]
+custom/toc_report (gpt-5.2):  97%|█████████▋| 154/158 [14:35<00:14,  3.72s/q]
+custom/toc_report (gpt-5.2):  98%|█████████▊| 155/158 [14:38<00:10,  3.50s/q]
+custom/toc_report (gpt-5.2):  99%|█████████▊| 156/158 [14:50<00:11,  5.90s/q]
+custom/toc_report (gpt-5.2):  99%|█████████▉| 157/158 [14:50<00:04,  4.26s/q]
+custom/toc_report (gpt-5.2): 100%|██████████| 158/158 [14:54<00:00,  4.19s/q]
+custom/toc_report (gpt-5.2): 100%|██████████| 158/158 [14:54<00:00,  5.66s/q]
+
+Results: /workspace/artifact/result/custom/report158_verified/gpt52_tocreport_run1
+{
+  "model": "gpt-5.2",
+  "method": "custom_agent_toc_report",
+  "context_mode": "toc_report",
+  "dataset": "dataset_158_verified.jsonl",
+  "run_name": "report158_verified/gpt52_tocreport_run1",
+  "max_steps": 24,
+  "workers": 4,
+  "task_filter": "all",
+  "start_index": null,
+  "end_index": null,
+  "started_at": "2026-10-11T10:38:57-07:00",
+  "ended_at": "2026-10-11T10:53:52-07:00",
+  "elapsed_seconds": 894.528,
+  "seconds_per_row": 5.662,
+  "total_rows": 158,
+  "graded_rows": 143,
+  "ungraded_rows": 15,
+  "correct_rows": 106,
+  "error_rows": 1,
+  "accuracy": 0.6708860759493671,
+  "graded_accuracy": 0.7412587412587412,
+  "by_task_type": {
+    "mcq": {
+      "total": 158,
+      "correct": 106,
+      "graded": 143,
+      "ungraded": 15,
+      "errors": 1,
+      "accuracy": 0.6708860759493671,
+      "graded_accuracy": 0.7412587412587412
+    }
+  },
+  "total_input_tokens": 7776110,
+  "total_output_tokens": 58691,
+  "agent_input_tokens": 7776110,
+  "agent_output_tokens": 58691,
+  "aux_by_source": {}
+}

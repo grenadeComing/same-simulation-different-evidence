@@ -1,0 +1,28 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(3) 4e-3
+    Fe(2) 4e-3
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    -temperature 200
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m 1
+        -parms 1.0 10
+        -steps 1000 in 100 steps
+
+USER_PUNCH
+    -head    Step  Time  H2S_gas_moles
+    -start
+    10 PUNCH STEP_NO, TOT("H2S(g)")
+    -end
+
+SELECTED_OUTPUT
+    -file albite_h2s.sel
+    -user_punch true

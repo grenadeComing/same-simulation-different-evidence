@@ -1,0 +1,27 @@
+SOLUTION 1 River
+    pH 6.0
+    pe 4
+    Cl 10
+
+SOLUTION 2 Seawater
+    pH 8.1
+    pe 4
+    Cl 19000
+
+MIX 1
+    1 0.7
+    2 0.3
+SAVE solution 3
+END
+
+USE solution 3
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+USER_PUNCH
+    -head pe
+    10 PUNCH -LA("e-")
+END
+RUN_CELLS
+    -cells 1
+END

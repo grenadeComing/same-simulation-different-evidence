@@ -1,0 +1,13 @@
+SOLUTION 1
+    temp 100
+    pH 3
+    pe 9
+EQUILIBRIUM_PHASES 1
+    Fe(OH)3(a) 0 10
+    Magnetite 0 10
+    Fix_pH -3.0 HCl 10
+PHASES
+Fix_pH
+    H+ = H+
+    log_k 0.0
+END

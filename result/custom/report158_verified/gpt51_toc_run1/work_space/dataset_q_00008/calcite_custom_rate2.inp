@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    Cu 0.01
+    Ba 0.005
+
+KINETICS 1
+    Calcite_custom
+        -m0 1.0
+        -m 1.0
+        -parms 1.0 10.0
+        -steps 10*10
+        -step_divide 1
+        -tol 1e-12
+
+RATES
+    Calcite_custom
+    -start
+    10 k = PARM(2)
+    20 m = MOL("Calcite_custom")
+    30 rate = -k * PARM(1) * m
+    40 moles = rate * TIME
+    50 SAVE moles
+    -end
+
+SELECTED_OUTPUT
+    -file sel_custom2.csv
+    -reset false
+    -time true
+    -step true
+    -kinetic_reactants true

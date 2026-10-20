@@ -1,0 +1,64 @@
+SOLUTION_RAW                 0 
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243360721
+  -total_o                   55.506216805187
+  -cb                        -3.1607253810484e-09
+  -density                   0.99713564917927
+  -viscosity                 0.89091869660108
+  -viscos_0                  0.89002391827256
+  -totals
+    Ca                       0.0010000000000001
+    Cl                       0.002
+    H(0)                     1.4149138092145e-25
+  -pH                        7
+  -pe                        4
+  -mu                        0.0030001044862677
+  -ah2o                      0.99994899637532
+  -mass_water                1
+  -soln_vol                  1.0029838856752
+  -total_alkalinity          3.1607256092199e-09
+  -activities
+    Ca                       -3.1020254319918
+    Cl                       -2.7251420157384
+    E                        -4
+    H(0)                     -25.15
+    O(0)                     -42.080044302315
+  -gammas
+EXCHANGE_RAW                 1 
+  # EXCHANGE_MODIFY candidate identifiers #
+  -exchange_gammas           1
+  -component                 X-
+    # EXCHANGE_MODIFY candidate identifiers #
+    -totals
+      X                      0.001
+    -charge_balance          0
+    -la                      0
+    -phase_proportion        0
+    -formula_z               -1
+  # EXCHANGE_MODIFY candidates with new_def=true #
+  -new_def                   0
+  -solution_equilibria       0
+  -n_solution                -999
+  # Exchange workspace variables #
+  -totals
+EQUILIBRIUM_PHASES_RAW       1 
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 H2(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 10
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    H                        2
+  # PPassemblage workspace variables #
+  -assemblage_totals

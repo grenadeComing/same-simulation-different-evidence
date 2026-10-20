@@ -1,0 +1,36 @@
+TITLE Calcite kinetics simplified (fixed dissolution rate)
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    -water 1
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0
+        -steps 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10
+        -bad_step_max 5000
+        -tol 1e-10
+
+RATES
+Calcite
+-start
+10 k = 10
+20 sa = PARM(1)
+30 moles = -k*sa*TIME
+40 if (KIN("Calcite") + moles < 0) then moles = -KIN("Calcite")
+50 SAVE moles
+-end
+
+SELECTED_OUTPUT
+    -file calcite_kin.sel
+    -reset false
+USER_PUNCH
+    -head step	m_calcite
+10 PUNCH STEP_NO, KIN("Calcite")
+END

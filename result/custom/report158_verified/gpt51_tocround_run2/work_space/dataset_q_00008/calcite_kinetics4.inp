@@ -1,0 +1,24 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0 1.0
+        -step 10 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -file calcite_kinetics4.sel
+    -reset false
+    -time true
+    -kinetic_reactants true
+    -step true
+    -high_precision true
+END

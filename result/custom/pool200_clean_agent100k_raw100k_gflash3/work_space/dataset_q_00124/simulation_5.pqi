@@ -1,0 +1,18 @@
+SOLUTION 1
+    pH 7 charge
+    temp 25
+    units mol/kgw
+REACTION 1
+    H 2
+    S 1
+    O 4
+    0.001 0.005 0.01 0.05 0.1
+SELECTED_OUTPUT 1
+    -file output.sel
+    -reset false
+    -high_precision true
+    -step
+    -activities H+
+    -molalities H+
+    -gammas H+
+END

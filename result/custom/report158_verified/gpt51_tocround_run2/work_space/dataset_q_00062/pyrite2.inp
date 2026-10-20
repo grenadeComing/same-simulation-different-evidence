@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 25
+    pH 7.0 charge
+
+EQUILIBRIUM_PHASES 1
+    O2(g)  -0.7 10
+    Pyrite 0 0.1
+    Goethite 0 0
+    Gypsum 0 0
+
+USER_PUNCH
+    -headings m_S6
+10  PUNCH TOT("S(6)")
+
+SELECTED_OUTPUT
+    -file pyrite2_sel.out
+    -user_punch true
+END

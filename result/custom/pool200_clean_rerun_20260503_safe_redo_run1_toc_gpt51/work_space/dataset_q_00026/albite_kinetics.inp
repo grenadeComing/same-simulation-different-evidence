@@ -1,0 +1,38 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 1
+
+KINETICS 1
+    Albite
+        -m0 1.0
+        -m 1.0
+        -parms 1.0 10.0
+        -steps 10 in 100
+        -bad_step_max 500
+
+SELECTED_OUTPUT
+    -file albite_kinetics.sel
+    -high_precision true
+    -reset false
+    -totals Si
+    -molalities H4SiO4 SiO2(aq) H3SiO4- H2SiO4-2 HSiO4-3 SiO3-2 Si(OH)3O- Si(OH)4
+    -step true
+
+USER_PUNCH
+    -head step si_species_count
+    -start
+    10 REM Count all aqueous species that contain Si
+    20 si_count = 0
+    30 FOR i = 1 TO MOL("H4SiO4")
+    40 NEXT i
+    50 si_count = TOT("Si")*0+1
+    60 PUNCH STEP_NO, si_count
+    -end

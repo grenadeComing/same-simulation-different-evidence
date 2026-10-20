@@ -1,0 +1,37 @@
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4
+    units     mmol/kgw
+    Fe(2)     4.0
+    Fe(3)     4.0
+
+RATES
+Albite
+-start
+10 si_alb = SI("Albite")
+20 rate = PARM(2) * PARM(1) * (M/M0)^0.67 * (1 - 10^si_alb)
+30 moles = rate * TIME
+40 SAVE moles
+-end
+
+KINETICS 1
+Albite
+    -m0   1.0
+    -m    1.0
+    -parms 1.0  10.0
+    -step  10 in 100
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5.0
+    -volume   1.0
+    H2S(g)    5.0
+
+SELECTED_OUTPUT
+    -file     albite_kinetic2.out
+    -reset    false
+    -step     true
+    -ionic_strength  true
+
+END

@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 25
+    units mg/L
+    Ba 2.0
+    S(6) 15.0
+
+REACTION_TEMPERATURE 1
+    25 30 40 60 95
+
+SELECTED_OUTPUT
+    -file sel.out
+    -si Barite
+    -temperature true
+    -step true
+END

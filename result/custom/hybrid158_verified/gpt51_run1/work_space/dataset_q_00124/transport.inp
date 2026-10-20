@@ -1,0 +1,51 @@
+TITLE Transport exchange problem
+
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE_SPECIES
+    X- = X-
+        -log_k 0
+    Na+ + X- = NaX
+        -log_k 0
+    Ca+2 + 2X- = CaX2
+        -log_k 0
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+
+USE solution 0
+USE exchange 1-10
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1.0
+    -flow_direction forward
+    -lengths 1*1
+    -boundary_conditions flux flux
+    -dispersivities 0
+    -punch_cells 1-10
+    -punch_frequency 1
+    -print_cells 1-10
+    -print_frequency 1
+
+INVERSE_MODELING 1
+
+SELECTED_OUTPUT
+    -file trans.sel
+    -reset false
+    -user_punch true
+
+USER_PUNCH
+    -head cell shift CaX2
+    10 PUNCH CELL_NO, KINETICS_SHIFT, EQUI("CaX2")
+END

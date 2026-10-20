@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pressure 100
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT 1
+    -file output_p100.sel
+    -reset false
+    -pH true
+END

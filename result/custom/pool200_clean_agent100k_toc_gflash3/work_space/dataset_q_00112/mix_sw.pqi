@@ -1,0 +1,22 @@
+SOLUTION 2 Seawater
+    pH 8.1
+    units mg/L
+    Na 10760
+    Mg 1290
+    Ca 411
+    K 399
+    Cl 19350
+    S(6) 2710
+    Alkalinity 142 as HCO3
+SOLUTION 1 River
+    pH 6.0
+    units mg/L
+    Cl 10
+    Na 10 charge
+MIX 1
+    1 0.7
+    2 0.3
+SELECTED_OUTPUT
+    -file results3.sel
+    -si H2O(g)
+END

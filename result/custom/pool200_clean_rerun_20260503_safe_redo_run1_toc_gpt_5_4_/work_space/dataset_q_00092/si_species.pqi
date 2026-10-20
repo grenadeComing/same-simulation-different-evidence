@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+USER_PUNCH
+    -headings si1 si2 si3 si4 si5 si6 si7 si8 si9 si10 si11 si12 si13 si14 si15 si16 si17 si18 si19 si20
+10 PUNCH MOL("H4SiO4")
+20 PUNCH MOL("H3SiO4-")
+30 PUNCH MOL("H2SiO4-2")
+40 PUNCH MOL("HSiO3-")
+50 PUNCH MOL("SiO2")
+60 PUNCH MOL("SiO(OH)3-")
+70 PUNCH TOT("Si")
+80 PUNCH ACT("H4SiO4")
+END

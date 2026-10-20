@@ -1,0 +1,3 @@
+Calcite_moles	Strontianite_moles	
+  0.0000e+00	  0.0000e+00	
+  0.0000e+00	  0.0000e+00	

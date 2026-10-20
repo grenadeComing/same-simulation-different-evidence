@@ -1,0 +1,30 @@
+SOLUTION 1  River Water
+    pH      6.0
+    Cl      10      # mmol/L as Cl (or mg/L - units don't matter for pH mixing)
+    temp    25
+
+SOLUTION 2  Seawater
+    pH      8.1
+    Cl      19000
+    temp    25
+
+MIX 1
+    1   0.7
+    2   0.3
+
+SAVE SOLUTION 3
+
+END
+
+SELECTED_OUTPUT
+    -file           mix_output.sel
+    -reset          false
+    -pH             true
+
+USER_PUNCH
+    -headings  SolNum pH
+    -start
+10  PUNCH SIM_NO(), -LA("H+")
+    -end
+
+END

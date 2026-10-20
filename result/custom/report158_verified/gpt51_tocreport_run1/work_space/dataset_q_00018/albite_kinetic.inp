@@ -1,0 +1,38 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(2) 0.004
+    Fe(3) 0.004
+    units mol/kgw
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    H2S(g) 5.0
+
+KINETICS 1
+    Albite
+        -m        1.0
+        -m0       1.0
+        -parms    10.0 1.0
+        -steps    10*100
+
+RATES
+Albite
+-start
+10 k = PARM(1)
+20 ssa = PARM(2)
+30 rate = k*ssa
+40 moles = rate * TIME
+50 SAVE moles
+-end
+
+SURFACE 1
+# dummy surface to allow SSA if needed
+
+SELECTED_OUTPUT
+    -file selout.csv
+    -reset false
+    -time true
+    -si Goethite
+END

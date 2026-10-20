@@ -1,0 +1,29 @@
+TITLE Albite kinetics with H2S gas, pH 2, 200C
+SOLUTION 1
+    temp 200
+    pH   2 charge
+    units mol/kgw
+    Fe(3) 0.004
+    Fe(2) 0.004
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    -volume 1
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+        -tol 1e-12
+    -steps 10 in 100
+
+SELECTED_OUTPUT
+    -reset false
+    -time true
+    -step true
+    -totals Si
+END

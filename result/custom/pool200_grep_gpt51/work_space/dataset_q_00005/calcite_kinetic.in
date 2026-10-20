@@ -1,0 +1,26 @@
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    pe 4
+    C(4) 0.5e-3
+    Mn 1e-3
+
+KNOBS
+    -logfile false
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 10.0 1.0
+        -steps 10 in 100
+        -cvode
+        -tol 1e-12
+
+USER_PUNCH
+    -head step pH
+    -start
+      10 PUNCH SIM_NO, KIN_TIME, -LA("H+")
+    -end
+
+END

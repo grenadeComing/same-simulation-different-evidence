@@ -1,0 +1,13 @@
+SOLUTION 1 Pure_water
+    temp 25
+    pH 7 charge
+    units mol/kgw
+
+EQUILIBRIUM_PHASES 1
+    CO2(g)   -3.4   10
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -pe true
+END

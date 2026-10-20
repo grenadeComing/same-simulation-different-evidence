@@ -1,0 +1,35 @@
+SOLUTION 1
+    temp      200
+    pH        2.0    charge
+    pe        4
+    units     mmol/kgw
+    Cu        1e-2
+    Ba        5e-3
+
+KINETICS 1
+    Calcite
+        -formula   CaCO3 1
+        -m0        1
+        -parms     10 1.0
+
+RATES
+Calcite
+-start
+10 k = PARM(1)
+20 SA = PARM(2)
+30 rate = k * SA
+40 moles = rate * TIME
+50 SAVE moles
+-end
+
+REACTION 1
+    1.0 Kinetics 1
+    100 steps of 10 seconds
+
+SELECTED_OUTPUT
+    -file               calcite_kinetics.sel
+    -high_precision     true
+    -time               true
+    -pH                 true
+    -step               true
+END

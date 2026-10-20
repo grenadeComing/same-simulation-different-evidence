@@ -1,0 +1,48 @@
+TITLE Mix river water (70%) and seawater (30%) - more complete
+
+# Solution 1: River water, pH 6.0, Cl 10 mg/L
+SOLUTION 1 River Water
+    temp      25
+    pH        6.0
+    pe        4
+    units     mg/L
+    Cl        10
+    Na        6.3
+    Ca        15
+    Mg        4
+    S(6)      11.2
+    C(4)      12.2 as HCO3
+
+# Solution 2: Seawater, pH 8.1, Cl 19000 mg/L
+SOLUTION 2 Seawater
+    temp      25
+    pH        8.1
+    pe        4
+    units     mg/L
+    Cl        19000
+    Na        10500
+    Mg        1350
+    S(6)      2700
+    Ca        400
+    K         380
+    C(4)      142 as HCO3
+    B         4.5
+    Sr        8
+
+# Mix 70% river water and 30% seawater
+MIX 1
+    1    0.7
+    2    0.3
+
+SAVE SOLUTION 3
+
+END
+
+USE SOLUTION 3
+
+SELECTED_OUTPUT
+    -file           mix_output2.sel
+    -reset          false
+    -saturation_indices   H2O(g)
+
+END

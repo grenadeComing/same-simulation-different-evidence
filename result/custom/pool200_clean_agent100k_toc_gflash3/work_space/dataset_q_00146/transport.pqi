@@ -1,0 +1,31 @@
+SOLUTION 0
+    pH 7
+    temp 25
+    units mmol/kgw
+    Na 1
+    Cl 1
+SOLUTION 1-10
+    pH 7
+    temp 25
+    units mmol/kgw
+    Ca 1
+    Cl 2
+EXCHANGE 1-10
+    -equilibrate 1
+    X 0.001
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1
+    -time_step 1
+    -punch_cells 1-10
+    -punch_frequency 5
+SELECTED_OUTPUT
+    -file result.sel
+    -reset false
+    -high_precision true
+    -step
+USER_PUNCH
+    -headings cell mol_CaX2
+    10 PUNCH CELL_NO, MOL("CaX2")
+END

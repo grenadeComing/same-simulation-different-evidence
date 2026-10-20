@@ -1,0 +1,32 @@
+SOLUTION 0-10
+    pH 7.0
+    temp 25.0
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1
+    pH 7.0
+    temp 25.0
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+
+TRANSPORT
+    cells 10
+    shifts 10
+    length 10
+    time_step 1
+    boundary_conditions flux flux
+    initial_time 0
+    print_cells 4
+    print_frequency 10
+    punch_cells 4
+    punch_frequency 10
+
+SELECTED_OUTPUT
+    -file transport_sel.out
+    -molalities HCl

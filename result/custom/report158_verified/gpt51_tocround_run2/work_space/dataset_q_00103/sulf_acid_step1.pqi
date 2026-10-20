@@ -1,0 +1,14 @@
+TITLE Sulfuric acid titration step 1
+SOLUTION 1 Pure water
+    pH 7.0 charge
+    temp 25.0
+
+REACTION 1
+    H2SO4 1.0
+    0.001 moles in 1 step
+
+SELECTED_OUTPUT
+    -file step1.sel
+    -reset false
+    -pH true
+END

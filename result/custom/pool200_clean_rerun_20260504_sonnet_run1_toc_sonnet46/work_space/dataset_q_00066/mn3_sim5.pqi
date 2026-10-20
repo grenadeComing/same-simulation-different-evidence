@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    Ba        100
+    Mn        0  # no Mn initially - comes from minerals
+
+EQUILIBRIUM_PHASES 1
+    Talc             0  10
+    Rhodochrosite    0  10
+    Sepiolite        0  10
+    Sepiolite(d)     0  10
+    Pb(OH)2          0  10
+
+# Check what pe gives Mn(3) in the 6.93e-18 range
+# Try pe = 6.938 to see if that matches
+
+SELECTED_OUTPUT
+    -file   mn3_output5.sel
+    -reset  false
+    -totals  Mn
+
+USER_PUNCH
+    -headings Mn3_mol pe_val pH_val
+    -start
+10  PUNCH MOL("Mn+3")
+20  PUNCH -LA("e-")
+30  PUNCH -LA("H+") * (-1)
+    -end
+
+END

@@ -1,0 +1,36 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    Ca 0
+    C(4) 0
+
+KINETICS 1
+    Calcite_kin
+    -formula CaCO3 1
+    -m0 1.0
+    -parms 10
+    -steps 10*10
+    -step_divide 1
+
+RATES
+Calcite_kin
+-start
+10 k = PARM(1)
+20 m = MOL("Calcite_kin")
+30 SA = 1.0
+40 rate = k * SA
+50 moles = rate * TIME
+60 if (moles > m) then moles = m
+70 SAVE moles
+-end
+
+SELECTED_OUTPUT
+    -reset false
+    -step true
+    -pH true
+
+END

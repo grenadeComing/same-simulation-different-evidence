@@ -1,0 +1,42 @@
+SOLUTION 1
+    temp 100
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Gypsum 0 0
+    Aragonite 0 0
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 25
+    CO2(g) 1
+    CH4(g) 5
+    H2S(g) 10
+
+SELECTED_OUTPUT
+    -file ca_species.sel
+    -reset false
+USER_PUNCH
+    -headings Ca_aq_species_count
+10 count = 0
+20 IF MOL("Ca+2") > 0 THEN count = count + 1
+30 IF MOL("CaOH+") > 0 THEN count = count + 1
+40 IF MOL("CaHCO3+") > 0 THEN count = count + 1
+50 IF MOL("CaCO3") > 0 THEN count = count + 1
+60 IF MOL("CaSO4") > 0 THEN count = count + 1
+70 IF MOL("CaHS+") > 0 THEN count = count + 1
+80 IF MOL("CaH2S+") > 0 THEN count = count + 1
+90 IF MOL("CaCl+") > 0 THEN count = count + 1
+100 IF MOL("CaF+") > 0 THEN count = count + 1
+110 IF MOL("CaHPO4") > 0 THEN count = count + 1
+120 IF MOL("CaH2PO4+") > 0 THEN count = count + 1
+130 IF MOL("CaNO3+") > 0 THEN count = count + 1
+140 IF MOL("CaS2O3") > 0 THEN count = count + 1
+150 PUNCH count
+END
+
+END

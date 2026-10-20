@@ -1,0 +1,21 @@
+TITLE Equilibrate pure water with CO2(g) at log PCO2 = -3.4
+
+SOLUTION 1 Pure water at pH 7.0
+    temp      25
+    pH        7.0
+    pe        4.0
+    units     mol/L
+    water     1.0  # kg
+
+EQUILIBRIUM_PHASES 1
+    CO2(g)   -3.4   10.0
+
+SELECTED_OUTPUT
+    -file     co2_output.sel
+    -reset    false
+    -pH       true
+    -temperature  true
+    -si       CO2(g)
+    -activities   CO2
+
+END

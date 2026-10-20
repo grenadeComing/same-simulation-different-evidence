@@ -1,0 +1,24 @@
+SOLUTION 1
+    temp      100
+    pH        3.0
+    pe        4
+    units     mol/kgw
+    water     1.0
+
+EQUILIBRIUM_PHASES 1
+    K-mica          0.0   10.0
+    Kaolinite       0.0   10.0
+    Dolomite        0.0   10.0
+    Epsomite        0.0   10.0
+    Fe(OH)3(a)      0.0   10.0
+    Halite          0.0   10.0
+
+SELECTED_OUTPUT
+    -file           selected2.out
+    -reset          false
+    -temperature    true
+    -pH             true
+    -ionic_strength true
+    -si             K-mica Kaolinite Dolomite Epsomite Fe(OH)3(a) Halite
+
+END

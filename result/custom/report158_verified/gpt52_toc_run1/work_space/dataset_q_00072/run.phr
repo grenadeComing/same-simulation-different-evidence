@@ -1,0 +1,13 @@
+TITLE 150C water equilibrated with fixed-pressure NH3 gas mixture
+SOLUTION 1
+  temp 150
+  pH 7
+  pe 4
+  units kgw
+  water 1
+GAS_PHASE 1
+  -fixed_pressure
+  -pressure 1
+  -temperature 150
+  NH3(g) 1.0
+END

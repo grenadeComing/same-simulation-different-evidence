@@ -1,0 +1,36 @@
+TITLE 1D transport with exchange; query log IAP H2(g)
+
+SOLUTION 0  Influent
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10  Initial
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -dispersivities 0
+    -diffusion_coefficient 0
+    -boundary_conditions flux flux
+    -print_cells 3
+    -punch_cells 3
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+
+USER_PUNCH
+    -headings logIAP_H2g
+10 PUNCH SI("H2(g)")
+
+END

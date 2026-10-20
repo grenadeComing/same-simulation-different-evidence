@@ -1,0 +1,3 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	        temp	
+           2	      i_soln	           2	         -99	         -99	         -99	           3	       9.266	     100.000	
+           2	       react	           2	         -99	           0	           1	      5.5016	     9.37297	     100.000	

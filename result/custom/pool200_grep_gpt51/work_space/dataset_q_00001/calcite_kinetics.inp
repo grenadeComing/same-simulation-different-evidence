@@ -1,0 +1,36 @@
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    pe 4
+    units mmol/kgw
+    C(4) 0.5
+    Mn 1
+
+KINETICS 1
+    Calcite_kin 1
+    -formula CaCO3 1
+    -m0 1
+    -m 1
+    -steps 1000 in 100 steps
+
+RATES
+    Calcite_kin
+    -start
+    10 REM Rate in mol/s based on surface area and rate constant
+    20 sarea = 10.0
+    30 k = 0.001
+    40 rate = k * sarea
+    50 moles = rate * TIME
+    60 SAVE moles
+    -end
+
+SELECTED_OUTPUT
+    -file sel_out.txt
+    -reset false
+    -time true
+    -step true
+    -solution true
+    -pH true
+    -pe true
+
+END

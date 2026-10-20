@@ -1,0 +1,25 @@
+SOLUTION 1
+    temp 20
+    units mmol/kgw
+    C(4) 100
+    Na 100
+    pH 8 charge
+SOLUTION 2
+    temp 20
+    units mmol/kgw
+    Ca 100
+    Cl 200
+    pH 7 charge
+MIX 1
+    1 0.5
+    2 0.5
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+REACTION_TEMPERATURE 1
+    160
+SELECTED_OUTPUT 1
+    -file output.sel
+    -reset false
+    -temperature true
+    -si aragonite calcite
+END

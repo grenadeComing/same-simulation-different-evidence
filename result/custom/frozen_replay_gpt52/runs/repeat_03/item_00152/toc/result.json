@@ -1,0 +1,117 @@
+{
+  "index": 152,
+  "row_index": 151,
+  "task_type": "mcq",
+  "truth": "B",
+  "prediction": "A",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": false,
+  "item_id": 152,
+  "condition": "toc",
+  "status": "submitted",
+  "calls": 17,
+  "estimated_cost_usd": 0.3625545,
+  "input_tokens": 203110,
+  "output_tokens": 508,
+  "read_paths": [
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "7590",
+      "end_line": "7620"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "7620",
+      "end_line": "7640"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "5910",
+      "end_line": "5940"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "5870",
+      "end_line": "5885"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "5885",
+      "end_line": "5905"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "6660",
+      "end_line": "6685"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "6685",
+      "end_line": "6705"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "6705",
+      "end_line": "6725"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "6740",
+      "end_line": "6765"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "6765",
+      "end_line": "6795"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "6795",
+      "end_line": "6810"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "6820",
+      "end_line": "6835"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "6878",
+      "end_line": "6905"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "7700",
+      "end_line": "7725"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "7750",
+      "end_line": "7775"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "7775",
+      "end_line": "7795"
+    }
+  ],
+  "checkpoint_fingerprint": "fcb89b49a948346f41ecc61e466db13fbab4f8589b5721be05bee9fb6e90ea10",
+  "remaining_steps": 18
+}

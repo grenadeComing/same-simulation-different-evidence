@@ -1,0 +1,20 @@
+SOLUTION 1
+    units mmol/kgw
+    C(4) 50
+    pH 7 charge
+SOLUTION 2
+    units mmol/kgw
+    Ca 50
+    pH 7 charge
+MIX 1
+    1 0.5
+    2 0.5
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+REACTION_TEMPERATURE 1
+    20 40 60 80 100 120 140 160 180 200
+SELECTED_OUTPUT 1
+    -file solution_results.txt
+    -temperature
+    -mu
+END

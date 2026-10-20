@@ -1,0 +1,11 @@
+SOLUTION 1
+    temp 100
+END
+USE solution 1
+EQUILIBRIUM_PHASES 1
+    Mtg(g) 0.0
+END
+SELECTED_OUTPUT
+    -file pure_sol.sel
+    -molalities Mtg
+END

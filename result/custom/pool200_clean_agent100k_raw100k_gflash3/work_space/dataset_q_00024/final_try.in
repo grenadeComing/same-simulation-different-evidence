@@ -1,0 +1,38 @@
+RATES
+Albite_custom
+-start
+10 k = 10
+20 area = 1.0
+30 rate = k * area * (1 - SR("Albite"))
+40 save rate * TIME
+-end
+
+SOLUTION 1
+temp 200
+pH 2
+Fe(+3) 4e-3
+Fe(+2) 4e-3
+Cl 1.0 charge
+
+EQUILIBRIUM_PHASES 1
+H2S(g) 0.69897 100
+
+KINETICS 1
+Albite_custom
+-formula Albite 1.0
+-m0 1.0
+-m 1.0
+-steps 1000 in 100
+-cvode true
+
+USER_PUNCH 1
+-headings H2S_dissolved
+-start
+10 punch 100 - EQUI("H2S(g)")
+-end
+SELECTED_OUTPUT 1
+-file result.sel
+-reset false
+-user_punch true
+-step true
+END

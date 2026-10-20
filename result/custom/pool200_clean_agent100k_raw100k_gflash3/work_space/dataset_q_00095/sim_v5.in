@@ -1,0 +1,16 @@
+TITLE Variation 5 - Pressure
+SOLUTION 1
+    temp 150
+    pressure 100
+    pH 7.0
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT 1
+    -file output_v5.sel
+    -reset false
+    -high_precision true
+    -molalities MgOH+
+    -pH true
+END

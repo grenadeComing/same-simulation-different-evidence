@@ -1,0 +1,50 @@
+TITLE Add sulfuric acid in steps to pure water at pH 7.0
+
+# Initial pure water at pH 7.0
+SOLUTION 1
+    pH 7.0
+    temp 25
+    units mol/L
+
+# Add all steps sequentially using USE and SAVE
+REACTION 1
+    H2SO4  1
+    0.001 moles
+
+SAVE SOLUTION 1
+
+USE SOLUTION 1
+REACTION 2
+    H2SO4  1
+    0.005 moles
+
+SAVE SOLUTION 1
+
+USE SOLUTION 1
+REACTION 3
+    H2SO4  1
+    0.01 moles
+
+SAVE SOLUTION 1
+
+USE SOLUTION 1
+REACTION 4
+    H2SO4  1
+    0.05 moles
+
+SAVE SOLUTION 1
+
+USE SOLUTION 1
+REACTION 5
+    H2SO4  1
+    0.1 moles
+
+SAVE SOLUTION 1
+
+SELECTED_OUTPUT
+    -file selected_output2.txt
+    -reset false
+    -pH true
+    -activities H+
+
+END

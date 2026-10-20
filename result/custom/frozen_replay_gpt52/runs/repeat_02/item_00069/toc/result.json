@@ -1,0 +1,27 @@
+{
+  "index": 69,
+  "row_index": 68,
+  "task_type": "mcq",
+  "truth": "A",
+  "prediction": "A",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": true,
+  "item_id": 69,
+  "condition": "toc",
+  "status": "submitted",
+  "calls": 2,
+  "estimated_cost_usd": 0.01944425,
+  "input_tokens": 10639,
+  "output_tokens": 59,
+  "read_paths": [
+    {
+      "path": "pyrite_ox.sel",
+      "ok": true,
+      "start_line": "1",
+      "end_line": "50"
+    }
+  ],
+  "checkpoint_fingerprint": "d8a5de5cc3aeae4be4a1aef9f11eecb0225d5197722149a7f0d74a632e6f57b6",
+  "remaining_steps": 20
+}

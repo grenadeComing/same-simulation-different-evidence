@@ -1,0 +1,38 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    -volume 1
+    H2S(g) 1.0
+
+RATES
+Albite_kin
+-start
+10 k = 10
+20 SA = 1.0
+30 rate = k * SA
+40 moles = rate * TIME
+50 if (moles > (KIN_M0 - KIN_M)) then moles = (KIN_M0 - KIN_M)
+60 SAVE moles
+-end
+
+KINETICS 1
+    Albite_kin
+        -m0 1
+        -formula NaAlSi3O8 1
+        -steps 1000
+        -step_divide 1
+        -runge_kutta 0
+
+SELECTED_OUTPUT
+    -file sel.tsv
+    -reset false
+    -time true
+    -totals Na Al Si Fe S
+END

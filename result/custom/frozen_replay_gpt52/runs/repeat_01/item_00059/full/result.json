@@ -1,0 +1,27 @@
+{
+  "index": 59,
+  "row_index": 58,
+  "task_type": "mcq",
+  "truth": "B",
+  "prediction": "B",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": true,
+  "item_id": 59,
+  "condition": "full",
+  "status": "submitted",
+  "calls": 2,
+  "estimated_cost_usd": 0.03395175,
+  "input_tokens": 18953,
+  "output_tokens": 56,
+  "read_paths": [
+    {
+      "path": "sel.txt",
+      "ok": true,
+      "start_line": "1",
+      "end_line": "20"
+    }
+  ],
+  "checkpoint_fingerprint": "35c67e7877fdffde031e34e8d5eae173ad3dd358f5149917eb25e0f61f735a4b",
+  "remaining_steps": 20
+}

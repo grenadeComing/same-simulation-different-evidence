@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 25
+    pH 7.5
+    units mg/l
+    Ca 100
+    Alkalinity 250 as CaCO3
+SOLUTION 2
+    temp 25
+    pH 7.5
+    units mg/kgw
+    Ca 100
+    Alkalinity 250 as CaCO3
+SELECTED_OUTPUT 2
+    -totals C
+END

@@ -1,0 +1,15 @@
+SOLUTION 1 Pure water
+    pH 7.0
+
+REACTION 1
+    H2SO4 1.0
+    0.001 0.005 0.01 0.05 0.1
+
+SELECTED_OUTPUT
+    -file q.sel
+    -reset false
+    -simulation true
+    -state true
+    -pH true
+    -pe true
+END

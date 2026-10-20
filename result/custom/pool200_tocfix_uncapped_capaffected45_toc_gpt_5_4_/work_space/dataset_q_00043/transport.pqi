@@ -1,0 +1,41 @@
+SOLUTION 0 Infilling
+    temp 25
+    pH 7.0
+    pe 4
+    redox pe
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10 Initial
+    temp 25
+    pH 7.0
+    pe 4
+    redox pe
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -correct_disp false
+    -diffusion_coefficient 0
+    -dispersivities 0
+    -lengths 1
+    -punch_cells 3
+    -punch_frequency 1
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -step true
+    -distance true
+    -pH true
+    -ionic_strength true
+    -totals Na Ca Cl
+    -activities H+
+    -si H2(g)
+END

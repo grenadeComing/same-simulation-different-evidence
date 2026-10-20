@@ -1,0 +1,12 @@
+SOLUTION 1
+    temp      25
+    pH        7.5
+    Ca        100 mg/kgw as Ca
+    Alkalinity 250 mg/kgw as CaCO3
+
+SELECTED_OUTPUT
+    -file     si_o2.out
+    -reset    false
+    -si       O2(g)
+
+END

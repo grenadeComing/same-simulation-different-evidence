@@ -1,0 +1,6 @@
+SOLUTION 1
+    temp 25
+    units mmol/kgw
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+END

@@ -1,0 +1,7 @@
+         sim	       state	        soln	        temp	   si_Barite	
+           1	      i_soln	           1	      25.000	      1.0756	
+           1	       react	           1	      25.000	      1.0756	
+           1	       react	           1	      42.500	      0.9201	
+           1	       react	           1	      60.000	      0.7988	
+           1	       react	           1	      77.500	      0.7116	
+           1	       react	           1	      95.000	      0.6564	

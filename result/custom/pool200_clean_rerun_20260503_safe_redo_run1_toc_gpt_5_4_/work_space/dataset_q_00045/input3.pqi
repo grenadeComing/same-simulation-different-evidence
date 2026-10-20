@@ -1,0 +1,23 @@
+TITLE Equilibrate with gas phase and report molalities
+SOLUTION 1
+    temp 100
+    units mmol/kgw
+    pH 7 charge
+    Ca 50
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 10
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 25
+    -volume 1
+    CO2(g) 0 1
+    CH4(g) 0.69897 1
+    H2S(g) 1 1
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -alkalinity true
+END

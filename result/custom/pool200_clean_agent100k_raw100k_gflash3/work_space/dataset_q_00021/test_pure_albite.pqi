@@ -1,0 +1,13 @@
+SOLUTION 1
+    temp 200
+END
+EQUILIBRIUM_PHASES 1
+    Albite 0 1
+END
+SELECTED_OUTPUT 1
+    -file solution_results_pure_albite.txt
+    -ionic_strength
+END
+USE solution 1
+USE equilibrium_phases 1
+END

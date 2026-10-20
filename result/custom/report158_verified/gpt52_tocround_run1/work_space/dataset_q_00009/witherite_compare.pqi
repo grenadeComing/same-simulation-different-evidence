@@ -1,0 +1,26 @@
+TITLE Calcite kinetic dissolution into acidic solution; compare SI(Witherite) at step 10 vs 100
+
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0  1.0
+        -tol 1e-10
+        -steps 10 100*10
+
+SELECTED_OUTPUT
+    -file selected.csv
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings step si_witherite
+10 PUNCH STEP_NO, SI("Witherite")
+END

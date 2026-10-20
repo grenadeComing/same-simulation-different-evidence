@@ -1,0 +1,17 @@
+SOLUTION 1
+    temp 25
+    units mg/L
+    Ba 2.0
+    S(6) 15.0
+
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+
+USER_PUNCH
+    -headings step temp spec_cond_uS_cm
+    10 PUNCH STEP_NO, TC, SC
+
+SELECTED_OUTPUT
+    -reset false
+    -user_punch true
+END

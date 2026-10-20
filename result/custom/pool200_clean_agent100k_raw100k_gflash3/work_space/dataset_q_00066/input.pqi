@@ -1,0 +1,29 @@
+PHASES
+Fix_H+
+    H+ = H+
+    log_k 0.0
+Fix_pe
+    e- = e-
+    log_k 0.0
+
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 7
+    units mol/kgw
+    Ba 0.1
+    water 1
+
+EQUILIBRIUM_PHASES 1
+    Fix_H+ -5.0 HCl 10.0
+    Fix_pe -7.0 e- 10.0
+    Rhodochrosite 0 10.0
+    Talc 0 10.0
+    Pb(OH)2 0 10.0
+
+SELECTED_OUTPUT 1
+    -file result.sel
+    -reset false
+    -mol Mn+3
+    -totals Mn(3)
+END

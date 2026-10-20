@@ -1,0 +1,14 @@
+TITLE CO2 activity for pH 7.5, Ca 100 mg/L, Alk 250 mg/L as CaCO3 at 25C
+SOLUTION 1
+    temp 25
+    pH   7.5
+    units mg/L
+    Ca   100
+    Alkalinity 250 as CaCO3
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings a_CO2
+10  PUNCH ACT("CO2")
+END

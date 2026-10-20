@@ -1,0 +1,3 @@
+          pH	  Talc_delta	 Rhodo_delta	Sepiolite_d_delta	 PbOH2_delta	Sepiolite_delta	
+     11.3427	  0.0000e+00	  0.0000e+00	  0.0000e+00	  0.0000e+00	  0.0000e+00	
+     7.41658	  1.3333e+01	 -3.1604e-04	 -1.0000e+01	 -2.2164e-08	 -1.0000e+01	

@@ -1,0 +1,11 @@
+SOLUTION 1 Pure water
+    temp 25
+    pH 7 charge
+    units mol/kgw
+    -water 1
+
+REACTION 1
+    H2SO4 0.001
+    1
+
+END

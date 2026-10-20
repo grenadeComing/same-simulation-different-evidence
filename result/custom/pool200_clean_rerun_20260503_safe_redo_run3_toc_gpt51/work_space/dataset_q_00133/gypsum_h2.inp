@@ -1,0 +1,13 @@
+SOLUTION 1
+    temp 25
+    pH 7.0
+    units mol/kgw
+
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+
+SELECTED_OUTPUT
+    -file gypsum_h2.sel
+    -molalities H2
+    -high_precision true
+END

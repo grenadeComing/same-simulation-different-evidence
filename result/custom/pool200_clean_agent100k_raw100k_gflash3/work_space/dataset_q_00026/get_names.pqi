@@ -1,0 +1,11 @@
+SOLUTION 1
+END
+SELECTED_OUTPUT
+    -file species_names.sel
+    -reset false
+USER_PUNCH
+    10 n = count_species
+    20 for i = 1 to n
+    30   PUNCH species_name(i)
+    40 next i
+END

@@ -1,0 +1,25 @@
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    pe 4
+    density 1
+    C(4) 0.0005
+    Mn  0.001
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 10.0 1.0
+        -time 1000 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -file selout.csv
+    -reset false
+    -time true
+    -si Calcite
+    -step true
+    -totals Ca C(4) Mn
+
+END

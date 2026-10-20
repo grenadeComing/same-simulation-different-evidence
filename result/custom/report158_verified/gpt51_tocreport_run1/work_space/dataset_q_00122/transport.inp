@@ -1,0 +1,36 @@
+SOLUTION 0
+    pH 7.0
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1
+    pH 7.0
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+
+EXCHANGE_SPECIES
+    Na+ + X- = NaX
+    log_k 0.0
+    -gamma 1 0.0
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -lengths             10*1
+    -time_step           1
+    -flow_direction      forward
+    -boundary_conditions flux flux
+    -dispersivities      10*0
+    -initial_conditions  10*0
+    -boundary_conditions  constant    flux
+
+SELECTED_OUTPUT
+    -file sel_out.txt
+    -reset false
+    -time
+    -totals Na

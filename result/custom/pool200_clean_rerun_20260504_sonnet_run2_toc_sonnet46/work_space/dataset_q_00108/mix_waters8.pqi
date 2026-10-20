@@ -1,0 +1,20 @@
+SOLUTION 1  River Water
+    pH      6.0
+    Cl      10
+    O(0)    1.0  O2(g)  -0.7
+
+SOLUTION 2  Seawater
+    pH      8.1
+    Cl      19000
+    O(0)    1.0  O2(g)  -0.7
+
+MIX 1
+    1   0.7
+    2   0.3
+
+SELECTED_OUTPUT
+    -file mix_output8.sel
+    -pe     true
+    -pH     true
+
+END

@@ -1,0 +1,13 @@
+SOLUTION 1 Pure water
+    pH 7.0 charge
+    units mol/kgw
+    temp 25
+    water 1
+REACTION 1 Add H2SO4 steps
+    H2SO4 1
+    0.001 0.005 0.01 0.05 0.1
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -pH true
+END

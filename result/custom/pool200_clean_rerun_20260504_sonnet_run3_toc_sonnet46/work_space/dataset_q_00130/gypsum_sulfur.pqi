@@ -1,0 +1,18 @@
+TITLE Equilibrate pure water pH 7.0 with 10 moles of Gypsum, check SI of Sulfur
+
+SOLUTION 1
+    temp      25
+    pH        7.0
+    pe        4.0
+    units     mol/L
+    water     1.0  # kg
+
+EQUILIBRIUM_PHASES 1
+    Gypsum    0.0   10.0
+
+SELECTED_OUTPUT
+    -file     gypsum_sulfur.out
+    -reset    false
+    -si       Sulfur Gypsum
+
+END

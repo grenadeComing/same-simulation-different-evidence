@@ -1,0 +1,20 @@
+TITLE Equilibrate Ca solution with calcite gypsum aragonite and gas phase
+SOLUTION 1
+    temp      100
+    units     mmol/kgw
+    pH        7 charge
+    Ca        50
+    C(4)      0
+    S(6)      0
+EQUILIBRIUM_PHASES 1
+    Calcite   0 0.03645
+    Gypsum    0 0.03645
+    Aragonite 0 0.03645
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 16
+    -temperature 25
+    CO2(g)    1.0
+    CH4(g)    5.0
+    H2S(g)    10.0
+END

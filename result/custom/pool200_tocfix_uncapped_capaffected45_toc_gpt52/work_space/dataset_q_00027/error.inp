@@ -1,0 +1,50 @@
+SOLUTION_RAW                 1 
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243359383
+  -total_o                   55.506216797524
+  -cb                        -1.2163078454124e-09
+  -density                   0.99704301397645
+  -viscosity                 0.8900243330192
+  -viscos_0                  0.89002391829458
+  -totals
+    H(0)                     1.4158915359558e-25
+  -pH                        7
+  -pe                        4
+  -mu                        1.0064538259865e-07
+  -ah2o                      0.99999999657806
+  -mass_water                1
+  -soln_vol                  1.0029657575501
+  -total_alkalinity          1.2163078454124e-09
+  -activities
+    E                        -4
+    H(0)                     -25.15
+    O(0)                     -42.080000002972
+  -gammas
+EXCHANGE_RAW                 1 
+  # EXCHANGE_MODIFY candidate identifiers #
+  -exchange_gammas           1
+  -component                 X
+    # EXCHANGE_MODIFY candidate identifiers #
+    -totals
+      X                      0.001
+    -charge_balance          0
+    -la                      0
+    -phase_proportion        0
+    -formula_z               0
+  -component                 NaX
+    # EXCHANGE_MODIFY candidate identifiers #
+    -totals
+      Na                     0.001
+      X                      0.001
+    -charge_balance          0
+    -la                      0
+    -phase_proportion        0
+    -formula_z               0
+  # EXCHANGE_MODIFY candidates with new_def=true #
+  -new_def                   0
+  -solution_equilibria       0
+  -n_solution                -999
+  # Exchange workspace variables #
+  -totals

@@ -1,0 +1,12 @@
+SOLUTION 1
+    pH 7.0
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1
+    -equilibrate 1
+    X 0.001
+END
+USE solution 1
+USE exchange 1
+END

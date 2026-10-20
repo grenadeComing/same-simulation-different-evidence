@@ -1,0 +1,33 @@
+TITLE Mix 50 mM DIC with 50 mM Ca (1:1), equilibrate with calcite at 100 C
+
+SOLUTION 1
+    temp 20
+    pH 7 charge
+    units mmol/kgw
+    C(4) 50
+
+SOLUTION 2
+    temp 20
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+
+MIX 1
+    1 0.5
+    2 0.5
+SAVE solution 3
+END
+
+USE solution 3
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+REACTION_TEMPERATURE 1
+    100
+
+SELECTED_OUTPUT
+    -reset false
+    -temperature true
+USER_PUNCH
+    -headings Temp_C Ionic_strength
+    10 PUNCH TC, MU
+END

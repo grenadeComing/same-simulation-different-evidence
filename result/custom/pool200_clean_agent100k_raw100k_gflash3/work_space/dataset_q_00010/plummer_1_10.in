@@ -1,0 +1,23 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 10
+    Ba 5
+    units mmol/kgw
+
+KINETICS 1
+    Calcite
+    -m 1.0
+    -m0 1.0
+    -parms 1.0 10.0
+    -steps 1000 in 100
+
+SELECTED_OUTPUT
+    -file plummer_1_10.sel
+    -reset false
+    -step
+    -si Witherite
+    -high_precision true
+
+END

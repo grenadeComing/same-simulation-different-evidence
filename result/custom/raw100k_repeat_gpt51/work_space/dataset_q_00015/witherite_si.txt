@@ -1,0 +1,2 @@
+        step	si_witherite	
+  1.0000e+00	 -4.9734e+01	

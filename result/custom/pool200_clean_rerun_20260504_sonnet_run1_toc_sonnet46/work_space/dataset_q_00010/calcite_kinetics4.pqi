@@ -1,0 +1,32 @@
+TITLE Calcite kinetic dissolution - specific surface area 1.0, rate constant 10 as parm2
+
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4.0
+    units     mmol/kgw
+    Cu        10.0
+    Ba        5.0
+    -water    1.0  # kg
+
+KINETICS 1
+Calcite
+    -tol    1e-8
+    -m0     1.0
+    -m      1.0
+    -parms  1.0  10.0
+    -step   1000 in 100
+    -bad_step_max 500
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file   calcite_kinetics4.out
+    -reset  false
+    -step
+    -time
+    -pH
+    -pe
+    -si     Witherite Calcite
+
+END

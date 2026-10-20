@@ -1,0 +1,4 @@
+EXCHANGE_SPECIES
+    Ca+2 + 2X- = CaX2
+    log_k 0.8
+END

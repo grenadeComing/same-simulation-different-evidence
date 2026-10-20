@@ -1,0 +1,27 @@
+TITLE Equilibration with gas phase at 25C with specific partial pressures
+
+SOLUTION 1
+    temp      100
+    pH        7 charge
+    Ca        50 mmol/kgw
+
+EQUILIBRIUM_PHASES 1
+    Calcite    0 10
+    Gypsum     0 10
+    Aragonite  0 10
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 16
+    -temperature 25
+    CO2(g)    0.04087
+    CH4(g)    0.20435
+    H2S(g)    0.40870
+
+SELECTED_OUTPUT
+    -file     sim_eq7.sel
+    -reset    false
+    -pH       true
+    -temperature true
+
+END

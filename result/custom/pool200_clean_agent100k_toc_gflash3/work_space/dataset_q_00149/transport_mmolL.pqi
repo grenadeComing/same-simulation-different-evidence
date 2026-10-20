@@ -1,0 +1,25 @@
+SOLUTION 0
+    pH 7.0
+    units mmol/L
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10
+    pH 7.0
+    units mmol/L
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X 0.001
+    equilibrate 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1
+    -boundary_conditions flux flux
+    -dispersivity 0
+    -time_step 1
+SELECTED_OUTPUT
+    -file output.sel
+    -reset true
+    -molalities NaX
+END

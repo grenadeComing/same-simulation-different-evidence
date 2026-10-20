@@ -1,0 +1,36 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 0-10
+    X- 0.001
+
+EXCHANGE_SPECIES
+    Na+ + X- = NaX
+        log_k 0.0
+    Ca+2 + 2X- = CaX2
+        log_k 0.0
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1
+    -flow_direction      forward
+    -boundary_conditions flux flux
+    -lengths             10*1
+    -dispersivities      10*0
+    -punch_cells         1-10
+    -punch_frequency     1
+
+SELECTED_OUTPUT
+    -file                trans.sel
+    -reset               false
+    -step                true
+    -totals              Na Ca Cl
+    -molalities          NaX CaX2

@@ -1,0 +1,35 @@
+TITLE Calcite kinetic dissolution custom rate law (k*SA, not limited by time step)
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    pe 4
+    units mmol/kgw
+    C(4) 0.5
+    Mn   1
+
+RATES
+Calcite_kin
+-start
+10 sa = PARM(1)
+20 k  = PARM(2)
+30 if (M <= 0) then goto 200
+40 rate = k * sa
+50 moles = rate
+60 if (moles > M) then moles = M
+200 SAVE moles
+-end
+
+KINETICS 1
+    Calcite_kin
+        -formula CaCO3 1
+        -m0 1
+        -m  1
+        -parms 10.0 0.001
+        -tol 1e-12
+    -steps 10 100
+
+SELECTED_OUTPUT
+    -reset false
+    -step true
+    -pH true
+END

@@ -1,0 +1,37 @@
+TITLE Custom kinetic dissolution of 1 mol Calcite, 100C
+SOLUTION 1
+    temp 100
+    pH   5 charge
+    pe   4
+    units mmol/kgw
+    C(4) 0.5
+    Mn   1
+    -water 1
+
+RATES
+Calcite_kin
+-start
+  sa = PARM(1)
+  k  = PARM(2)
+  m = MOL("Calcite_kin")
+  rate = k * sa
+  if (m <= 0) then rate = 0
+  moles = rate * TIME
+  if (moles > m) then moles = m
+  save moles
+-end
+
+KINETICS 1
+    Calcite_kin
+        -formula CaCO3 1
+        -m0 1
+        -m  1
+        -parms 10.0 0.001
+        -steps 10 in 100
+
+SELECTED_OUTPUT
+    -reset false
+    -time true
+    -step true
+    -pH true
+END

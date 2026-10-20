@@ -1,0 +1,1 @@
+<<< None of the options. PHREEQC gives SI(Aragonite) = -2.8275 at step 47, which does not match A–D. >>>

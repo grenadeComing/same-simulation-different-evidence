@@ -1,0 +1,23 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    units mmol/kgw
+    Cu 1.e-6
+    Ba 1.e-6
+
+KINETICS 1
+    Calcite
+        -m0 1
+        -m 1
+        -parms 1.0 1.0
+        -steps 10 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -file calcite_sel.out
+    -reset false
+    -time true
+    -pH true
+    -step true
+END

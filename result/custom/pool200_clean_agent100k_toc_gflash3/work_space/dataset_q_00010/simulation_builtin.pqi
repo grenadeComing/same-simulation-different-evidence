@@ -1,0 +1,44 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    Cl 50 charge
+END
+
+# Using the built-in Calcite rate from phreeqc.dat
+SELECTED_OUTPUT
+    -file results_p1_1_p2_10.txt
+    -reset false
+    -step
+    -time
+    -si Witherite
+END
+
+USE solution 1
+KINETICS 1
+Calcite
+    -m 1.0
+    -m0 1.0
+    -parms 1.0 10.0
+    -steps 1000 in 100
+END
+
+SELECTED_OUTPUT
+    -file results_p1_10_p2_1.txt
+    -reset false
+    -step
+    -time
+    -si Witherite
+END
+
+USE solution 1
+KINETICS 2
+Calcite
+    -m 1.0
+    -m0 1.0
+    -parms 10.0 1.0
+    -steps 1000 in 100
+END

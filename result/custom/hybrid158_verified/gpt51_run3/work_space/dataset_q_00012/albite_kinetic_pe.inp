@@ -1,0 +1,39 @@
+TITLE Albite kinetic dissolution with gas H2S
+
+SOLUTION 1
+    temp      200
+    pH        2    charge
+    pe        4
+    units     mmol/kgw
+    Fe(2)     4
+    Fe(3)     4
+
+GAS_PHASE 1
+    -fixed_pressure   true
+    -pressure         5
+    H2S(g)            5
+
+KINETICS 1
+    Albite
+    -formula   NaAlSi3O8 1
+    -m         1.0
+    -m0        1.0
+    -parms     1.0   10.0
+    -steps     10*100
+
+RATES
+    Albite
+    -start
+10  rate = PARM(2) * PARM(1)
+20  moles = rate * TIME
+30  SAVE moles
+    -end
+
+USER_PUNCH
+    -headings step_time pe
+    -start
+10  PUNCH TOT("water")
+20  PUNCH PE
+    -end
+
+END

@@ -1,0 +1,12 @@
+SOLUTION 1
+    pH 7
+SOLUTION_SPECIES
+HSO4- = H+ + SO4-2
+    -log_k -1.99
+REACTION 1
+    H2SO4 1.0
+    0.1
+SELECTED_OUTPUT 1
+    -file out2.sel
+    -ionic_strength
+END

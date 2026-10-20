@@ -1,0 +1,19 @@
+SOLUTION 1 River water
+    pH      6.0
+    Cl      10
+    units   mg/L
+    temp    25
+    Na      10 charge
+
+SOLUTION 2 Seawater
+    pH      8.1
+    Cl      11525
+    units   mg/L
+    temp    25
+    Na      7475 # Total NaCl = 19000
+
+MIX 1
+    1   0.7
+    2   0.3
+
+END

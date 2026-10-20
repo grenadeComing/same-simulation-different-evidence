@@ -1,0 +1,4 @@
+         sim	       state	        time	    pressure	   total mol	      volume	    g_H2S(g)	
+           1	      i_soln	         -99	  0.0000e+00	  0.0000e+00	  0.0000e+00	  0.0000e+00	
+           1	       react	          10	  5.0000e+00	  1.0906e-01	  8.3792e-01	  1.0906e-01	
+           1	       react	         100	  5.0000e+00	  1.0906e-01	  8.3792e-01	  1.0906e-01	

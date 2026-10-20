@@ -1,0 +1,43 @@
+SOLUTION 0 Inflow
+    units mmol/kgw
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10 Initial
+    units mmol/kgw
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+EXCHANGE_SPECIES
+    X- = X-
+    Na+ + X- = NaX
+    K+ + X- = KX
+    Li+ + X- = LiX
+    NH4+ + X- = NH4X
+    Ca+2 + 2 X- = CaX2
+    Mg+2 + 2 X- = MgX2
+    Sr+2 + 2 X- = SrX2
+    Ba+2 + 2 X- = BaX2
+    Mn+2 + 2 X- = MnX2
+    Fe+2 + 2 X- = FeX2
+    Cu+2 + 2 X- = CuX2
+    Zn+2 + 2 X- = ZnX2
+    Cd+2 + 2 X- = CdX2
+    Pb+2 + 2 X- = PbX2
+    Al+3 + 3 X- = AlX3
+    AlOH+2 + 2 X- = AlOHX2
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -step true
+    -solution true
+USER_PUNCH
+    -headings Na
+    10 PUNCH TOT("Na")
+TRANSPORT
+    -cells 10
+    -shifts 10
+END

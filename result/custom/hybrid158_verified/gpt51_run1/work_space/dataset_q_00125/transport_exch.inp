@@ -1,0 +1,39 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 0-10
+    X 0.001
+
+EQUILIBRIUM_PHASES 0-10
+    Exchange 1.0 0.0
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -flow_direction      forward
+    -lengths             10*1.0
+    -time_step           1.0
+    -boundary_conditions flux flux
+    -initial_time        0.0
+    -print_cells         1-10
+    -print_frequency     1
+    -punch_cells         1-10
+    -punch_frequency     1
+
+SELECTED_OUTPUT
+    -file                trans_exch.sel
+    -reset               false
+    -high_precision      true
+    -user_punch          true
+
+USER_PUNCH
+    -headings step cell CaX2
+    10 PUNCH SIM_NO, CELL_NO, MOL("CaX2")/TOT("X")
+END

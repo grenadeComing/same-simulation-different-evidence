@@ -1,0 +1,8 @@
+SOLUTION 1
+    temp      25
+    units     mg/l
+    Ba        2.0
+    S(6)      15.0
+REACTION_TEMPERATURE 1
+    25 39 53 67 81 95
+END

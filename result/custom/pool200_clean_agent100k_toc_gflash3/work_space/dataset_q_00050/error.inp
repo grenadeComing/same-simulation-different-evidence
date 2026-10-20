@@ -1,0 +1,79 @@
+SOLUTION_RAW                 1 
+  -temp                      100
+  -pressure                  1
+  -potential                 0
+  -total_h                   115.21683649203
+  -total_o                   59.709148901218
+  -cb                        3.7985386896821
+  -density                   1.0935581999976
+  -viscosity                 0.3428206836513
+  -viscos_0                  0.28158213758247
+  -totals
+    Al                       1
+    H(0)                     2.760726350008e-18
+    K                        1
+    Si                       1.0000000000233
+  -pH                        3
+  -pe                        4
+  -mu                        4.5086437271905
+  -ah2o                      0.94897491401054
+  -mass_water                1
+  -soln_vol                  1.0659265813256
+  -total_alkalinity          0.20146131031793
+  -activities
+    Al                       -1.6111278395562
+    E                        -4
+    H(0)                     -17.40914226251
+    K                        -0.29195604086694
+    O(0)                     -38.26773865194
+    Si                       0.4508623095445
+  -gammas
+EQUILIBRIUM_PHASES_RAW       1 
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 Fix_pH
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -add_formula           HCl
+      -si                    -3
+      -moles                 10
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                -3
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -component                 K-mica
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 10
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -component                 Kaolinite
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 10
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    Al                       5
+    Cl                       1
+    H                        8
+    K                        1
+    O                        21
+    Si                       5
+  # PPassemblage workspace variables #
+  -assemblage_totals

@@ -1,0 +1,31 @@
+TITLE Mix then heat with calcite; totals for 1 kg of mixed water (2 kg -> 1 kg)
+
+SOLUTION 1 DIC solution
+    temp 20
+    pH 7 charge
+    units mmol/kgw
+    C(4) 50 as HCO3
+
+SOLUTION 2 Ca solution
+    temp 20
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+
+MIX 1
+    1 0.5
+    2 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+REACTION_TEMPERATURE 1
+    20 200 in 10
+
+SELECTED_OUTPUT
+    -file mix_heat_calcite2.sel
+    -reset false
+USER_PUNCH
+    -headings step temp moles_calcite total_ppt
+10 PUNCH STEP_NO, TC, EQUI("Calcite"), EQUI("Calcite")*2
+END

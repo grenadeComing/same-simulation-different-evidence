@@ -1,0 +1,25 @@
+SOLUTION 1 Pure water
+    pH 7.0 charge
+
+REACTION 1
+    H2SO4 1.0
+    0.001
+REACTION 1
+    H2SO4 1.0
+    0.005
+REACTION 1
+    H2SO4 1.0
+    0.01
+REACTION 1
+    H2SO4 1.0
+    0.05
+REACTION 1
+    H2SO4 1.0
+    0.1
+
+SELECTED_OUTPUT
+    -file q.sel
+    -ionic_strength true
+    -totals S(6)
+    -step true
+END

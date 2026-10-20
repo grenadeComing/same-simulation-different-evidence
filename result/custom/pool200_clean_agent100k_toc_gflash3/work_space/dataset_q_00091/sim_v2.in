@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    Mg 1e-4
+    Si 1e-5
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+    Fix_H+ -7.0 NaOH 10.0
+PHASES
+Fix_H+
+    H+ = H+
+    log_k 0
+END

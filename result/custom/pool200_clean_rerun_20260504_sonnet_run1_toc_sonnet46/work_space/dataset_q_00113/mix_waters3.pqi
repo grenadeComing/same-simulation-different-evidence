@@ -1,0 +1,35 @@
+
+# Solution 1: River water - pH 6.0, Cl 10 mmol/L
+SOLUTION 1 River Water
+    pH      6.0
+    Cl      10      charge
+    units   mmol/L
+    temp    25
+
+# Solution 2: Seawater - pH 8.1, Cl 19000 mmol/L  (but that's too high)
+# Let's try mol/L for seawater
+SOLUTION 2 Seawater
+    pH      8.1
+    Cl      19000   charge
+    units   mmol/L
+    temp    25
+
+# Mix 70% river water and 30% seawater
+MIX 1
+    1   0.7
+    2   0.3
+
+SAVE SOLUTION 3
+
+END
+
+# Examine the mixed solution
+USE SOLUTION 3
+
+SELECTED_OUTPUT
+    -file           mix_output3.sel
+    -reset          false
+    -pH             true
+    -activities     H+
+
+END

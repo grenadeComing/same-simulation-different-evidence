@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT 1
+    -file output.sel
+    -reset false
+    -pH true
+USER_PUNCH 1
+    -headings pH_high_res
+    10 PUNCH PH()
+END

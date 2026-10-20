@@ -1,0 +1,9 @@
+SOLUTION 1
+    temp 100
+EQUILIBRIUM_PHASES 1
+    Calcite 0 1
+SELECTED_OUTPUT 1
+    -file SI_data.txt
+    -si Aragonite Calcite
+    -logk Aragonite Calcite
+END

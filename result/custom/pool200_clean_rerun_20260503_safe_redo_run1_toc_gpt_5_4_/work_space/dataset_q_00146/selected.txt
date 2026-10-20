@@ -1,0 +1,16 @@
+         sim	       state	        soln	      dist_x	        time	        step	        CaX2	
+           1	      i_soln	           0	         -99	         -99	         -99	  1.0000e-99	
+           1	      i_soln	           1	         -99	         -99	         -99	  1.0000e-99	
+           1	      i_exch	           1	         -99	         -99	         -99	  5.0000e-04	
+           1	       react	           0	         -99	           0	           1	  4.6808e-04	
+           1	      transp	           1	         0.5	           0	           0	  5.0000e-04	
+           1	      transp	           1	         0.5	           1	           1	  4.6808e-04	
+           1	      transp	           1	         0.5	           2	           2	  4.5289e-04	
+           1	      transp	           1	         0.5	           3	           3	  4.4265e-04	
+           1	      transp	           1	         0.5	           4	           4	  4.3480e-04	
+           1	      transp	           1	         0.5	           5	           5	  4.2836e-04	
+           1	      transp	           1	         0.5	           6	           6	  4.2285e-04	
+           1	      transp	           1	         0.5	           7	           7	  4.1802e-04	
+           1	      transp	           1	         0.5	           8	           8	  4.1369e-04	
+           1	      transp	           1	         0.5	           9	           9	  4.0976e-04	
+           1	      transp	           1	         0.5	          10	          10	  4.0616e-04	

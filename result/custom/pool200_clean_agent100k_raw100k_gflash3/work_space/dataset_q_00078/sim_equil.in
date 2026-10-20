@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    water 1
+EQUILIBRIUM_PHASES 1
+    CH4(g) -0.3979  100
+    CO2(g) -0.3979  100
+    NH3(g) -0.6990  100
+USER_PUNCH
+    -headings density act_H2O pH pe
+    10 PUNCH RHO, LA("H2O"), -LA("H+"), pe
+SELECTED_OUTPUT
+    -file output.sel
+    -user_punch true
+END

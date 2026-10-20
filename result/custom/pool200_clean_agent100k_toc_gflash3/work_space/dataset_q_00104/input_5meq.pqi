@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp      25
+    pH        7.5
+    units     mg/l
+    Ca        100
+    Alkalinity 5.0 meq/l
+SELECTED_OUTPUT
+    -file output.sel
+    -reset false
+    -user_punch true
+USER_PUNCH
+    -headings act_CO2
+    10 PUNCH ACT("CO2")
+END

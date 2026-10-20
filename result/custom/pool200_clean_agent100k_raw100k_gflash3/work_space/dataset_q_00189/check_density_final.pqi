@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    C(-4) 5.0
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    -temperature 15
+    CH4(g) 0.0
+SELECTED_OUTPUT 1
+    -file density_final.txt
+USER_PUNCH 1
+    -head density
+    10 PUNCH RHO
+END

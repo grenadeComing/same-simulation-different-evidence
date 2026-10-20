@@ -1,0 +1,43 @@
+SOLUTION 0-10
+    pH 7 charge
+    units mmol/kgw
+    Ca 1
+    Cl 2
+
+SOLUTION 11
+    pH 7 charge
+    units mmol/kgw
+    Na 1
+    Cl 1
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+SELECTED_OUTPUT
+    -file trans.sel
+    -reset false
+    -solution true
+    -step true
+
+USER_PUNCH
+    -head step sc
+    10 PUNCH STEP_NO, SC
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -initial_time 0
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+    -lengths 1
+    -dispersivities 0
+    -correct_disp false
+
+RUN_CELLS
+    -cells 0-10

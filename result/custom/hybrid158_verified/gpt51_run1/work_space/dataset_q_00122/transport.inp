@@ -1,0 +1,51 @@
+TITLE Transport exchange problem
+
+SOLUTION 0-10
+    pH 7.0
+    temp 25
+    Ca 1.0
+    Cl 2.0
+END
+
+SOLUTION 1
+    pH 7.0
+    temp 25
+    Na 1.0
+    Cl 1.0
+END
+
+EXCHANGE 1-10
+    X- 0.001
+END
+
+EXCHANGE_MASTER_SPECIES
+    X-  X-  0  X-  35.45
+EXCHANGE_SPECIES
+    Na+ + X- = NaX
+        log_k 0.0
+    Ca+2 + 2X- = CaX2
+        log_k 0.0
+END
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1
+    -flow_direction      forward
+    -boundary_conditions flux
+    -initial_time        0
+    -print_cells         1-10
+    -print_frequency     1
+    -punch_cells         1-10
+    -punch_frequency     1
+END
+
+SELECTED_OUTPUT
+    -file                transport.sel
+    -reset               false
+    -time
+    -step
+    -distance
+    -solution            true
+    -totals              Na
+END

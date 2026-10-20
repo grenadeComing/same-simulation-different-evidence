@@ -1,0 +1,8 @@
+
+SOLUTION 1
+    temp 100
+    pH 3
+    pe 4
+EQUILIBRIUM_PHASES 1
+    O2(g) 0.0
+END

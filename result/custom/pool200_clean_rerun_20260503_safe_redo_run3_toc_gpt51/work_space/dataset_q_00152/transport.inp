@@ -1,0 +1,48 @@
+TITLE Exchange transport question (simple setup per problem)
+
+SOLUTION 0
+    temp 25
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 1-10
+    temp 25
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 11
+    temp 25
+    pH 7 charge
+    Na 1
+    Cl 1
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1
+    -dispersivities 0
+    -initial_time 0
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+
+BOUNDARY_CONDITIONS
+    11 0
+
+SELECTED_OUTPUT
+    -file transport.sel
+    -reset false
+
+USER_PUNCH
+    -head step cell CaX2
+    10 PUNCH STEP_NO, CELL_NO, MOL("CaX2")/1e-3

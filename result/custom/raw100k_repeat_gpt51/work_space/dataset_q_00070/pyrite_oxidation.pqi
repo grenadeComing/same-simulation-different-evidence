@@ -1,0 +1,23 @@
+SOLUTION 1
+    temp 25
+    pH 7.0 charge
+    pe 4
+    redox pe
+    units mol/kgw
+
+EQUILIBRIUM_PHASES 1
+    O2(g)   -0.7   10
+    Pyrite  0      0.1
+    Goethite 0    0
+    Gypsum   0    0
+
+SELECTED_OUTPUT
+    -file pyrite_sel.out
+    -state true
+    -totals Fe S Ca
+    -ionic_strength true
+    -pH true
+    -temperature true
+    -solution true
+    -equilibrium_phases true
+END

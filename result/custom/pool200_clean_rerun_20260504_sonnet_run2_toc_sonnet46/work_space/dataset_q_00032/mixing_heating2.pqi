@@ -1,0 +1,44 @@
+# Solution 1: 50 mmol/kg dissolved inorganic carbon
+SOLUTION 1
+    temp      20
+    pH        7
+    units     mmol/kgw
+    C(4)      50
+
+# Solution 2: 50 mmol/kg calcium
+SOLUTION 2
+    temp      20
+    pH        7
+    units     mmol/kgw
+    Ca        50
+
+# Mix 1:1
+MIX 1
+    1    0.5
+    2    0.5
+
+# Save the mixed solution as solution 3
+SAVE SOLUTION 3
+
+END
+
+# Now heat from 20 to 200 in 10 steps (every 20 degrees) with calcite equilibrium
+# Steps: 20, 40, 60, 80, 100, 120, 140, 160, 180, 200
+
+USE SOLUTION 3
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0   0
+
+REACTION_TEMPERATURE 1
+    20  40  60  80  100  120  140  160  180  200
+
+SELECTED_OUTPUT
+    -file   mixing_heating2.sel
+    -reset  false
+    -temperature  true
+    -step         true
+    -totals       Ca
+    -molalities   Ca+2  CaHCO3+  CaCO3  CaOH+
+
+END

@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    units mmol/kgw
+    Fe(+3) 4
+    Fe(+2) 4
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    H2S(g) 0.69897
+
+SELECTED_OUTPUT 1
+    -file result.sel
+    -reset false
+    -si Goethite
+    -ph
+
+END

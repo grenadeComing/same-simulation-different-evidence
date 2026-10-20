@@ -1,0 +1,24 @@
+SOLUTION 1 First
+    temp 20
+    units mmol/kgw
+    C(4) 50 charge
+
+SOLUTION 2 Second
+    temp 20
+    units mmol/kgw
+    Ca 50 charge
+
+MIX 1
+    1 0.5
+    2 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+SELECTED_OUTPUT
+    -file sel.out
+    -solution 1
+    -totals Ca C(4)
+    -step true
+
+END

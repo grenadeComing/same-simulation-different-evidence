@@ -1,0 +1,15 @@
+TITLE Equilibrate only with CO2 gas and mineral assemblage
+SOLUTION 1
+    temp 100
+    pH 7 charge
+    Ca 50 mmol/kgw
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 10
+    CO2(g) 0 10
+SELECTED_OUTPUT
+    -file selected4.out
+    -reset false
+    -alkalinity true
+END

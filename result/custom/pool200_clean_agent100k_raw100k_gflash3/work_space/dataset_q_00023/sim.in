@@ -1,0 +1,41 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    Fe(2) 4
+    Fe(3) 4
+    units mmol/kgw
+END
+
+RATES
+Albite_custom
+-start
+10 k = 10
+20 area = 1.0
+30 rate = k * area * (1 - SR("Albite"))
+40 save rate * TIME
+-end
+
+KINETICS 1
+Albite_custom
+    -formula NaAlSi3O8 1.0
+    -m 1.0
+    -steps 1000 in 100
+END
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+END
+
+SELECTED_OUTPUT
+    -file output.sel
+    -reset false
+    -step
+    -totals Ba Na Fe(2) Fe(3)
+END
+
+USE solution 1
+USE kinetics 1
+USE gas_phase 1
+END

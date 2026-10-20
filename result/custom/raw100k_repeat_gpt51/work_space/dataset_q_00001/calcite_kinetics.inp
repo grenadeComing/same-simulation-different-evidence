@@ -1,0 +1,22 @@
+TITLE Calcite kinetic dissolution, 100 C, pe 4, pH 5
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    pe 4
+    C(4) 0.5e-3
+    Mn 1e-3
+    units mol/kgw
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 10.0 0.001
+        -steps 10 in 100
+        -tol 1e-12
+SELECTED_OUTPUT
+    -file sel_calcite.csv
+    -reset false
+    -time true
+    -step true
+    -pe true
+END

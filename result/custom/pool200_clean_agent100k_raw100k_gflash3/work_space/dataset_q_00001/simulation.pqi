@@ -1,0 +1,36 @@
+TITLE Calcite dissolution
+SOLUTION 1
+    temp 25
+    pH 5
+    pe 4
+    units mmol/kgw
+    C 0.5
+    Mn 1.0
+    Cl 1.0 charge
+
+RATES
+    Calcite_custom
+    -start
+    10 k = 0.001
+    20 ssa = 10.0
+    30 rate = k * ssa * m * (1 - SR("Calcite"))
+    40 moles = rate * TIME
+    50 SAVE moles
+    -end
+
+KINETICS 1
+    Calcite_custom
+    -formula CaCO3 1.0
+    -m 1.0
+    -m0 1.0
+    -step 1000 in 100
+    -cvode true
+
+SELECTED_OUTPUT
+    -file result.sel
+    -reset false
+    -step
+    -pe
+    -ph
+
+END

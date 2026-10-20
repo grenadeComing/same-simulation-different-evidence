@@ -1,0 +1,1 @@
+<<< None of the options (A–D) matches the PHREEQC result. The calculated saturation index of Goethite at reaction step 100 is +0.86 (≈ 0.8588), whereas all options are ≈ –1.7. >>>

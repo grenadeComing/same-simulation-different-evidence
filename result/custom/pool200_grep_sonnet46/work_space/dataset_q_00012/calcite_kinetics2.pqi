@@ -1,0 +1,38 @@
+TITLE Calcite dissolution kinetics at 200C with Cu and Ba - custom rate
+
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4.0
+    units     mmol/kgw
+    Cu        10.0
+    Ba        5.0
+
+RATES
+Calcite
+-start
+10  si_cc = SI("Calcite")
+20  kf = PARM(2)
+30  area = PARM(1)
+40  rate = kf * area * (1 - 10^si_cc)
+50  moles = rate * TIME
+60  SAVE moles
+-end
+
+KINETICS 1
+Calcite
+    -tol   1e-8
+    -m0    1.0
+    -m     1.0
+    -parms 1.0   10.0
+    -step  1000 in 100
+
+SELECTED_OUTPUT
+    -file   calcite_kinetics2.sel
+    -reset  false
+    -step   true
+    -time   true
+    -alkalinity true
+    -totals Ca C Ba Cu
+
+END

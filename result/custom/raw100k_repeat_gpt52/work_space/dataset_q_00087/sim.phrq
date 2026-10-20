@@ -1,0 +1,15 @@
+SOLUTION 1 Pure water
+    temp 150
+    pH 7 charge
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+USER_PUNCH
+    -headings pH
+10 PUNCH -LA("H+")
+END

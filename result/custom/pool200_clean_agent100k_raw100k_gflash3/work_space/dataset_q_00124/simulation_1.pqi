@@ -1,0 +1,14 @@
+SOLUTION 1
+    pH 7
+    temp 25
+    units mol/kgw
+REACTION 1
+    H2SO4 1.0
+    0.001 0.005 0.01 0.05 0.1
+SELECTED_OUTPUT 1
+    -file output.sel
+    -reset false
+    -high_precision true
+    -step
+    -activities H+
+END

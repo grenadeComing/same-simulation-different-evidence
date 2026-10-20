@@ -1,0 +1,3 @@
+Gypsum_moles_final	
+  0.0000e+00	
+  9.9849e+00	

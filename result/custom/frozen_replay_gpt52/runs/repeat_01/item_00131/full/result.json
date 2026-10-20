@@ -1,0 +1,27 @@
+{
+  "index": 131,
+  "row_index": 130,
+  "task_type": "mcq",
+  "truth": "C",
+  "prediction": "D",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": false,
+  "item_id": 131,
+  "condition": "full",
+  "status": "submitted",
+  "calls": 2,
+  "estimated_cost_usd": 0.026278000000000003,
+  "input_tokens": 14544,
+  "output_tokens": 59,
+  "read_paths": [
+    {
+      "path": "gypsum_oh.sel",
+      "ok": true,
+      "start_line": "1",
+      "end_line": "50"
+    }
+  ],
+  "checkpoint_fingerprint": "839d9919833382c196d79608b84be52932d1bfb9ba162f9e2db5e249d1dd5092",
+  "remaining_steps": 20
+}

@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 100
+    pH 3 charge
+EQUILIBRIUM_PHASES 1
+    K-mica     0 10
+    Kaolinite  0 10
+    Dolomite   0 10
+    Epsomite   0 10
+    Fe(OH)3(a) 0 10
+    Halite     0 10
+SELECTED_OUTPUT
+    -reset false
+    -molalities Al+3 AlOH+2 Al(OH)2+ Al(OH)3 Al(OH)4- AlSO4+ Al(SO4)2- AlHSiO4+ AlH3SiO4+2 AlH2PO4+2 AlHPO4+ AlF+2 AlF2+ AlF3 AlF4- AlF5-2 AlF6-3
+USER_PUNCH
+    -headings n_Al_species
+    10 PUNCH TOT("Al")
+    20 PUNCH MOL("Al+3")>0 + MOL("AlOH+2")>0 + MOL("Al(OH)2+")>0 + MOL("Al(OH)3")>0 + MOL("Al(OH)4-")>0 + MOL("AlSO4+")>0 + MOL("Al(SO4)2-")>0 + MOL("AlHSiO4+")>0 + MOL("AlH3SiO4+2")>0 + MOL("AlH2PO4+2")>0 + MOL("AlHPO4+")>0 + MOL("AlF+2")>0 + MOL("AlF2+")>0 + MOL("AlF3")>0 + MOL("AlF4-")>0 + MOL("AlF5-2")>0 + MOL("AlF6-3")>0
+END

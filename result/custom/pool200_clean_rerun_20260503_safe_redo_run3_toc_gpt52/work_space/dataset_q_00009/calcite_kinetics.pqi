@@ -1,0 +1,23 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    Cl 30
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0 10
+        -tol 1e-12
+    -steps 10 in 100
+
+SELECTED_OUTPUT
+    -reset false
+    -time true
+    -step true
+    -pH true
+END

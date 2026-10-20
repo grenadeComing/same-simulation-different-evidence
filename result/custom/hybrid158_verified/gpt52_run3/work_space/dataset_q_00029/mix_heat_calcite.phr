@@ -1,0 +1,27 @@
+TITLE Mix 50 mmol/kg DIC with 50 mmol/kg Ca, 1:1; heat 20C to 200C in 10 steps; calcite equilibrium
+SOLUTION 1 DIC
+    temp 20
+    units mmol/kgw
+    pH 7 charge
+    C(4) 50 as HCO3
+SOLUTION 2 Ca
+    temp 20
+    units mmol/kgw
+    pH 7 charge
+    Ca 50
+MIX 1
+    1 0.5
+    2 0.5
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+REACTION_TEMPERATURE 1
+    20 200 in 10
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -temperature true
+    -si Calcite
+USER_PUNCH
+    -headings Temp logIAP_Calcite
+10 PUNCH TC, (LOG10(ACT("Ca+2")) + LOG10(ACT("CO3-2")))
+END

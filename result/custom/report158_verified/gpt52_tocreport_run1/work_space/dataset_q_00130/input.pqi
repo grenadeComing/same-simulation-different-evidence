@@ -1,0 +1,29 @@
+TITLE 1D transport 10 cells 10 shifts with exchange
+
+SOLUTION 0  Infilling
+    pH 7.0
+    temp 25
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10 Initial
+    pH 7.0
+    temp 25
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions constant constant
+    -time_step 1
+    -lengths 1
+    -dispersivities 0
+    -diffusion_coefficient 0
+    -punch_cells 4
+END

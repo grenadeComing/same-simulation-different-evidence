@@ -1,0 +1,24 @@
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    Ba 0.1  # mol/kgw (100 mmol/kgw)
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    Talc 0 10
+    Rhodochrosite 0 10
+    Sepiolite 0 10
+    Sepiolite(d) 0 10
+    Pb(OH)2 0 10
+
+SELECTED_OUTPUT
+    -file selected.tsv
+    -reset false
+USER_PUNCH
+    -headings Talc_m Rhodo_m Sepiolite_m Sepiolite_d_m PbOH2_m
+    10 PUNCH EQUI("Talc")
+    20 PUNCH EQUI("Rhodochrosite")
+    30 PUNCH EQUI("Sepiolite")
+    40 PUNCH EQUI("Sepiolite(d)")
+    50 PUNCH EQUI("Pb(OH)2")
+END

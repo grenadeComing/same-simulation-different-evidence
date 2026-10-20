@@ -1,0 +1,17 @@
+SOLUTION 1
+    temp 100
+    pH 7.0
+    pe 4.0
+    water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0.0 10.0
+    Talc 0.0 10.0
+USER_PUNCH 1
+    -headings pH pe
+    -start
+    10 PUNCH PH, PE
+    -end
+SELECTED_OUTPUT 1
+    -file select4.out
+    -user_punch true
+END

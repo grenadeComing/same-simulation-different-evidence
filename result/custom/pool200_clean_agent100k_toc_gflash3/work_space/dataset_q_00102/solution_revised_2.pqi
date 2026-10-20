@@ -1,0 +1,10 @@
+SOLUTION 1
+    temp 25
+    pH 7.5
+    Ca 100 mg/L
+    Alkalinity 250 mg/L as CaCO3
+SELECTED_OUTPUT
+    -file output_revised.txt
+    -si Aragonite
+    -mol Ca
+END

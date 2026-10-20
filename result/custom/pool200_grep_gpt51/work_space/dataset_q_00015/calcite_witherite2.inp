@@ -1,0 +1,47 @@
+SOLUTION 1
+    temp      200
+    pH        2 charge
+    pe        4
+    units     mmol/kgw
+    Cu        1.e-3
+    Ba        5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 1
+
+KINETICS 1
+    Calcite_kinetics
+        -formula  Calcite 1
+        -m0       1
+        -parms    10 1.0
+        -steps    10*1 90*10  
+        -cvode    false
+
+RATES
+Calcite_kinetics
+    -start
+    10 REM Rate = k * A
+    20 k = PARM(1)
+    30 A = PARM(2)
+    40 m = MOL("Calcite")
+    50 if (m <= 0) then goto 90
+    60 rate = k * A
+    70 moles = rate * TIME
+    80 SAVE moles
+    90 END
+    -end
+
+SELECTED_OUTPUT
+    -file           sel.out
+    -reset          false
+    -time           true
+    -kinetics       true
+    -si             Witherite
+
+USER_PUNCH
+    -headings step
+    -start
+    10 PUNCH STEP_NO
+    -end
+
+END

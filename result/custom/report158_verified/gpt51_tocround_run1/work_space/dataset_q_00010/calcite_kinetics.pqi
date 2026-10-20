@@ -1,0 +1,28 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    Ca 0
+    C 0
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0 1.0
+        -steps 10*1
+        -step_divide 1
+        -cvode
+
+USER_PUNCH
+    -headings step C_mol Cu_mol
+    -start
+    10 PUNCH STEP_NO
+    20 PUNCH TOT("C(4)")
+    30 PUNCH TOT("Cu(2)")
+    -end
+
+END

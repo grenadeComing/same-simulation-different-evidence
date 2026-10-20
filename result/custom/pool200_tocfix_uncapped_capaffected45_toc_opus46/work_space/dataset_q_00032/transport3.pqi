@@ -1,0 +1,45 @@
+TITLE 1D transport with cation exchange
+
+# Solution 0 is the infilling (boundary) solution
+SOLUTION 0
+    pH      7.0
+    Na      1.0
+    Cl      1.0
+
+# Solutions 1-10 are the initial solutions in the 10 cells
+SOLUTION 1-10
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+
+# Exchange sites in all 10 cells, 0.001 moles each, equilibrated with solution 1
+EXCHANGE 1-10
+    X       0.001
+    -equilibrate 1
+
+SELECTED_OUTPUT
+    -file   sel_out2.tsv
+    -reset  false
+
+TRANSPORT
+    -cells          10
+    -shifts         10
+    -lengths        1.0
+    -dispersivities 0.0
+    -diffusion_coefficient 0.0
+    -punch_cells    1
+    -punch_frequency 1
+
+USER_PUNCH
+    -headings step cell NaX CaX2
+    -start
+    10 PUNCH SIM_NO
+    20 PUNCH CELL_NO
+    30 PUNCH MOL("NaX")
+    40 PUNCH MOL("CaX2")
+    -end
+
+PRINT
+    -selected_output true
+
+END

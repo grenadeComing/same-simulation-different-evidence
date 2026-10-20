@@ -1,0 +1,14 @@
+SOLUTION 1
+    pH 7
+    pe 2
+REACTION 1
+    H2SO4 1.0
+    0.1
+SELECTED_OUTPUT
+    -file output.sel
+    -reset false
+    -step
+    -ph
+    -pe
+    -si H2(g)
+END

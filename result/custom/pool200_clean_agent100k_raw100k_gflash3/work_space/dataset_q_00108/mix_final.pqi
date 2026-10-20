@@ -1,0 +1,14 @@
+SOLUTION 1
+    pH 6.0
+    pe 12.0
+    units mmol/kgw
+    Cl 0.282
+SOLUTION 2
+    pH 8.1
+    pe 12.0
+    units mmol/kgw
+    Cl 535.9
+MIX
+    1 0.7
+    2 0.3
+END

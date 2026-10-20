@@ -1,0 +1,18 @@
+SOLUTION 1
+    units mg/L
+    temp 25
+    pH 7.5
+    Ca 100
+    Alkalinity 250 as CaCO3
+END
+SELECTED_OUTPUT 1
+    -file selected_output_1.sel
+    -reset false
+    -high_precision true
+USER_PUNCH 1
+    -headings totC
+    10 PUNCH TOT("C")
+END
+RUN_CELLS
+    -cells 1
+END

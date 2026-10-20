@@ -1,0 +1,31 @@
+SOLUTION 1 Pure water at 100C, pH 3
+    temp 100
+    pH 3 charge
+    units mol/kgw
+    density 1
+
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -totals Fe(2) Fe(3)
+
+USER_PUNCH
+    -headings n_Fe2_species n_Fe3_species
+10 REM Count aqueous species of Fe(2) and Fe(3)
+20 LET nFe2 = 0
+30 LET nFe3 = 0
+40 FOR i = 1 TO COUNT_SPECIES
+50 IF ELT_SPECIES("Fe(2)", i) > 0 THEN nFe2 = nFe2 + 1
+60 IF ELT_SPECIES("Fe(3)", i) > 0 THEN nFe3 = nFe3 + 1
+70 NEXT i
+80 PUNCH nFe2, nFe3
+
+END

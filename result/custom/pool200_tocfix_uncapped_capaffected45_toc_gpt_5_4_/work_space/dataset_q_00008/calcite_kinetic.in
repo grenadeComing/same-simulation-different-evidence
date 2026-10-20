@@ -1,0 +1,22 @@
+TITLE Calcite kinetic dissolution at 100 C
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    C(4)      0.5 mmol/kgw
+    Mn        1 mmol/kgw
+KINETICS 1
+    Calcite
+        -m0    1
+        -m     1
+        -parms 10.0 0.001
+        -steps 1000 in 100
+        -tol   1e-12
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -step true
+    -time true
+    -pH true
+    -pe true
+END

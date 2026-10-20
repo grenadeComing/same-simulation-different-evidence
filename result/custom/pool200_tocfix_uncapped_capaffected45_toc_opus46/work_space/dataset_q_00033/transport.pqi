@@ -1,0 +1,44 @@
+# Initial solution (cells 1-10)
+SOLUTION 1-10
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+
+# Infilling solution (solution 0)
+SOLUTION 0
+    pH      7.0
+    Na      1.0
+    Cl      1.0
+
+# Exchange sites for all 10 cells
+EXCHANGE 1-10
+    X       0.001
+    -equilibrate 1
+
+SELECTED_OUTPUT
+    -file   result.out
+    -reset  false
+
+USER_PUNCH
+    -headings  step cell CaX2_mol NaX_mol CaX2_equivfrac
+    -start
+    10 PUNCH STEP_NO
+    20 PUNCH CELL_NO
+    30 mol_CaX2 = MOL("CaX2")
+    40 mol_NaX = MOL("NaX")
+    50 total_equiv = 2 * mol_CaX2 + mol_NaX
+    60 IF total_equiv > 0 THEN equiv_frac_CaX2 = 2 * mol_CaX2 / total_equiv ELSE equiv_frac_CaX2 = 0
+    70 PUNCH mol_CaX2
+    80 PUNCH mol_NaX
+    90 PUNCH equiv_frac_CaX2
+    -end
+
+TRANSPORT
+    -cells          10
+    -shifts         10
+    -lengths        1.0
+    -dispersivities 0.0
+    -diffusion_coefficient 0.0
+    -punch_cells    1-10
+    -punch_frequency 1
+END

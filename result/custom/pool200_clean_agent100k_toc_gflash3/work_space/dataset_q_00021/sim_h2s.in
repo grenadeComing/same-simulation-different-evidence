@@ -1,0 +1,18 @@
+
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(2) 4 mmol/kgw
+    Fe(3) 4 mmol/kgw
+    Cl 1.0
+    units mmol/kgw
+
+EQUILIBRIUM_PHASES 1
+    H2S(g) 0.69897 10.0
+
+SELECTED_OUTPUT
+    -file h2s_only.sel
+    -reset false
+    -ionic_strength true
+
+END

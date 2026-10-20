@@ -1,0 +1,39 @@
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4
+    units     mmol/kgw
+    Fe(+3)    4.0
+    Fe(+2)    4.0
+
+KINETICS 1
+Albite
+    -m0   1.0
+    -m    1.0
+    -parms 1.0  10.0
+    -step 1000 in 100
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5.0
+    -volume   1.0
+    -temp     200
+    H2S(g)    5.0
+
+SELECTED_OUTPUT
+    -file     albite_kinetic4.out
+    -reset    false
+    -step     true
+    -time     true
+    -pH       true
+    -totals   S
+    -gases    H2S(g)
+
+USER_PUNCH
+    -headings  S_total_mol  H2S_aq_mol
+    -start
+10 PUNCH TOT("S") * MASS_WATER
+20 PUNCH MOL("H2S") * MASS_WATER
+    -end
+
+END

@@ -1,0 +1,14 @@
+SOLUTION 1
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1
+    X 0.001
+    EQUILIBRATE 1
+SELECTED_OUTPUT
+    -file solution.sel
+    -reset false
+USER_PUNCH
+    -headings CaX2_mol NaX_mol HX_mol
+    10 PUNCH MOL("CaX2"), MOL("NaX"), MOL("HX")
+END

@@ -1,0 +1,20 @@
+TITLE Equilibrium of pure water with CO2 gas, check SI of CH4(g)
+
+SOLUTION 1 Pure water at pH 7.0, 25 C
+    temp      25
+    pH        7.0
+    pe        4.0
+    redox     pe
+    units     mol/kgw
+    density   1.0
+    water     1.0  # kg
+
+EQUILIBRIUM_PHASES 1
+    CO2(g)   -3.4   10.0   # log PCO2 = -3.4, 10 moles available
+
+SELECTED_OUTPUT
+    -file     result.out
+    -reset    false
+    -si       CH4(g)
+
+END

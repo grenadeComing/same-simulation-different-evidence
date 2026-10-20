@@ -1,0 +1,36 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1.0
+
+RATES
+Calcite
+-start
+10  SR_Calcite = SR("Calcite")
+20  area = PARM(1)
+30  krate = PARM(2)
+40  rate = area * krate * (1 - SR_Calcite)
+50  IF rate < 0 THEN rate = 0
+60  moles = rate * TIME
+70  SAVE moles
+-end
+
+KINETICS 1
+Calcite
+    -m0    1.0
+    -m     1.0
+    -parms 10.0  0.001
+    -steps 1000 in 100
+    -tol 1e-8
+
+SELECTED_OUTPUT
+    -file   calcite_kinetic.out
+    -reset  false
+    -step   true
+    -time   true
+    -totals C Mn Ca
+
+END

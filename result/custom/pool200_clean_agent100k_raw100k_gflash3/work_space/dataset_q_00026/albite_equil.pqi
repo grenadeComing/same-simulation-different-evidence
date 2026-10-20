@@ -1,0 +1,24 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    units mmol/kgw
+    Fe(2) 4
+    Fe(3) 4
+    Cl 10 charge
+END
+
+REACTION 1
+    Albite 1.0
+    1.0 moles
+END
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+END
+
+USE solution 1
+USE reaction 1
+USE gas_phase 1
+END

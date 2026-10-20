@@ -1,0 +1,17 @@
+SOLUTION 1
+    temp 25
+    pH 7.0
+    units mol/kgw
+    water 1
+REACTION 1
+    FeS2 1.0
+    0.1 moles
+EQUILIBRIUM_PHASES 1
+    O2(g) -0.7 10
+    Goethite 0 0
+    Gypsum 0 0
+SELECTED_OUTPUT
+    -file output_v2.sel
+    -reset false
+    -alkalinity true
+END

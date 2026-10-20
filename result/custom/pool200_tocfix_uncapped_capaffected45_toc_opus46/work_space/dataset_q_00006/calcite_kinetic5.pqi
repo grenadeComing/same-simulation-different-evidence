@@ -1,0 +1,39 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1
+
+RATES
+Calcite_dissolve
+    -start
+10 sr_cc = SR("Calcite")
+20 IF (M <= 0) THEN GOTO 50
+30 rate = PARM(1) * PARM(2) * (1 - sr_cc) * (M/M0)^(2/3)
+40 moles = rate * TIME
+50 SAVE moles
+    -end
+
+KINETICS 1
+Calcite_dissolve
+    -formula CaCO3 1.0
+    -m0 1
+    -m  1
+    -parms 10.0  0.001
+    -steps 1000 in 100
+    -tol 1e-8
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file calcite_sel5.out
+    -reset false
+    -step true
+    -time true
+    -totals C Ca Mn
+    -kinetic_reactants Calcite_dissolve
+    -saturation_indices Calcite
+
+END

@@ -1,0 +1,19 @@
+SOLUTION 1
+    pH      7.0
+    temp    25.0
+    Ca      0.01   # mmol/L
+    Sr      0.01   # mmol/L
+    Alkalinity 0.04  # meq/L
+
+SOLID_SOLUTIONS 1
+    Ca_Sr_carbonate
+        comp  Calcite      0.0
+        comp  Strontianite 0.0
+
+SELECTED_OUTPUT
+    -file   solid_solution2.out
+    -pH     true
+    -si     Calcite Strontianite
+    -solid_solution_moles  Ca_Sr_carbonate
+
+END

@@ -1,0 +1,36 @@
+TITLE 1D transport with cation exchange
+
+SOLUTION 0  # infilling solution
+    pH 7.0
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10  # initial cells
+    pH 7.0
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -print_cells 1
+    -print_frequency 1
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision false
+
+USER_PUNCH
+    -headings step NaX_m
+10 PUNCH TRANSPORT_STEP_NO, MOL("NaX")
+
+END

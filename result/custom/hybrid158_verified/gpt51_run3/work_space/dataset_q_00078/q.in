@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+END
+SELECTED_OUTPUT
+    -file sel.out
+    -reset false
+    -si si
+USER_PUNCH
+    -headings Si_master Si_total
+10 PUNCH TOT("Si"), MOL("Si")
+END

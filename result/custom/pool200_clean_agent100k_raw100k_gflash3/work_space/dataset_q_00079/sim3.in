@@ -1,0 +1,28 @@
+# Case 1: Gas phase as a reservoir of fixed P_CH4=0.4, P_CO2=0.4, P_NH3=0.2
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    CH4(g) -0.39794 10
+    CO2(g) -0.39794 10
+    NH3(g) -0.69897 10
+    Fix_pH -7.0 HCl 10.0
+END
+
+# Case 2: Fixed pe 4 and pH 7, and fixed P of the gases
+SOLUTION 2
+    temp 150
+    pH 7
+    pe 4
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 2
+    CH4(g) -0.39794 10
+    CO2(g) -0.39794 10
+    NH3(g) -0.69897 10
+    Fix_pH -7.0 HCl 10.0
+    Fix_pe -4.0 O2(g) 10.0
+END

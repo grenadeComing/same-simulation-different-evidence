@@ -1,0 +1,25 @@
+SOLUTION 1  River Water
+    units   mmol/L
+    pH      6.0
+    Cl      10      charge
+    temp    25
+
+SOLUTION 2  Seawater
+    units   mmol/L
+    pH      8.1
+    Cl      536
+    Na      536     charge
+    temp    25
+
+MIX 1
+    1   0.7
+    2   0.3
+
+SELECTED_OUTPUT
+    -file           mix_water7.sel
+    -reset          false
+    -solution       true
+    -pH             true
+    -activities     H+
+
+END

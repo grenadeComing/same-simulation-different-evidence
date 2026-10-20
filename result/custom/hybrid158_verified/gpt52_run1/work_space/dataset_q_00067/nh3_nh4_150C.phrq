@@ -1,0 +1,23 @@
+TITLE 150C water + fixed-pressure gas phase (CH4, CO2, NH3)
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    pe 4
+    redox pe
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g)  0.4  10
+    CO2(g)  0.4  10
+    NH3(g)  0.2  5
+
+SELECTED_OUTPUT
+    -file nh3_nh4_sel.txt
+    -reset false
+USER_PUNCH
+    -headings m_NH4 m_NH3 pH
+10 PUNCH MOL("NH4+"), MOL("NH3"), -LA("H+")
+END

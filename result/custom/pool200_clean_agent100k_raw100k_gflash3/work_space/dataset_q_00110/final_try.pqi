@@ -1,0 +1,18 @@
+SOLUTION 1
+    units mg/L
+    temp 25
+    pH 6.0
+    Cl 10
+    Na 10 charge
+SOLUTION 2
+    units mg/L
+    temp 25
+    pH 8.1
+    Cl 19000
+    Na 19000 charge
+MIX
+    1 0.7
+    2 0.3
+USER_PRINT
+10 PRINT "Mix Viscosity: ", VISCOSITY
+END

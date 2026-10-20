@@ -1,0 +1,20 @@
+TITLE Equilibration at 100C, pH 5, Ba 0.1 mol/kgw with mineral assemblage
+SOLUTION 1
+    temp 100
+    pH   5 charge
+    units mol/kgw
+    Ba   0.1
+    water 1
+EQUILIBRIUM_PHASES 1
+    Talc            0 10
+    Rhodochrosite   0 10
+    Sepiolite       0 10
+    Sepiolite(d)    0 10
+    Pb(OH)2         0 10
+SELECTED_OUTPUT
+    -file sel.tsv
+    -reset false
+USER_PUNCH
+    -headings Talc_mol Rhodo_mol Sep_mol Sepd_mol PbOH2_mol
+10 PUNCH EQUI("Talc"), EQUI("Rhodochrosite"), EQUI("Sepiolite"), EQUI("Sepiolite(d)"), EQUI("Pb(OH)2")
+END

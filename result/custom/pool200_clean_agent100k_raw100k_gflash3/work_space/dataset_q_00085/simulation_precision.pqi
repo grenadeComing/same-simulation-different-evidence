@@ -1,0 +1,25 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    water 1
+END
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g) 10
+    CO2(g) 10
+    NH3(g) 5
+END
+
+USE solution 1
+USE gas_phase 1
+
+USER_PRINT
+    10 n_initial = 10 / (3.4719) # Approximation, need better
+    20 n_final = G_M("CH4(g)")
+    30 PRINT "Final moles CH4: ", n_final
+END
+END

@@ -1,0 +1,23 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    Cl 50 charge
+END
+
+REACTION 1
+    CaCO3 1.0
+    0.000001 0.00001 0.0001 0.001 0.005 0.01 moles
+SELECTED_OUTPUT
+    -file test_reaction.txt
+    -reset false
+    -si Witherite
+    -mol CaCO3
+END
+USE solution 1
+RUN_CELLS
+    -cells 1
+END

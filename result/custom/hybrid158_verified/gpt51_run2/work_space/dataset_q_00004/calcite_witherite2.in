@@ -1,0 +1,30 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10 charge
+    Ba 5
+
+RATES
+Calcite_kinetic
+-start
+10 REM Calcite dissolution rate, simple linear rate law
+20 rate = 10 * SA
+30 moles = rate * TIME
+40 SAVE moles
+-end
+
+KINETICS 1
+    Calcite_kinetic
+        -m0 1
+        -steps 10 in 100 steps
+        -step_divide 1
+        -formula CaCO3 1
+        -parms 1.0
+
+SELECTED_OUTPUT
+    -file witherite_sel.out
+    -reset false
+    -time true
+    -si Witherite

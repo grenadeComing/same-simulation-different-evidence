@@ -1,0 +1,17 @@
+TITLE Check: Add only 0.1 mol H2SO4 to pure water at pH 7.0
+SOLUTION 1
+    pH 7.0
+    temp 25
+    units mol/L
+
+REACTION 1
+    H2SO4  1
+    0.1 moles
+
+SELECTED_OUTPUT
+    -file selected_check.txt
+    -reset false
+    -pH true
+    -activities H+
+
+END

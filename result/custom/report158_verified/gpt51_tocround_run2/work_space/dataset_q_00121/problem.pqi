@@ -1,0 +1,35 @@
+SOLUTION 0-10
+    pH 7.0 charge
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0 charge
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 0-10
+    X 0.001
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -length              10
+    -time_step           1
+    -flow_direction      forward
+    -boundary_conditions constant  flux
+    -initial_time        0
+    -print_cells         1-10
+    -print_frequency     1
+    -punch_cells         1
+    -punch_frequency     1
+    -correct_disp        true
+
+SELECTED_OUTPUT
+    -file               selout.txt
+    -reset              false
+    -step               true
+    -totals             Ca Na Cl
+    -ionic_strength     true
+
+RUN_TRANSPORT

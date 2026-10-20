@@ -1,0 +1,37 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    Cu 0.01
+    Ba 0.005
+
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3 10
+
+KINETICS 1
+    Calcite
+        -m0 1
+        -formula CaCO3 1
+        -parms 10 1.0
+        -steps 10 100 steps
+        -runge_kutta 6
+
+RATES
+    Calcite
+    -start
+    10 k = PARM(1)
+    20 sarea = PARM(2)
+    30 si = -2.0
+    40 rate = k * sarea * (1 - 10^si)
+    50 m = rate * TIME
+    60 SAVE m
+    -end
+
+SELECTED_OUTPUT
+    -file selout.txt
+    -reset false
+    -time true
+    -pH true
+    -step true
+
+END

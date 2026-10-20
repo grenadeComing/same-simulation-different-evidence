@@ -1,0 +1,21 @@
+{
+  "completed_branches": 786,
+  "completed_pairs": 393,
+  "incomplete_pairs": 0,
+  "estimated_cost_usd": 38.747065,
+  "conditions": {
+    "full": {
+      "n": 393,
+      "correct": 280,
+      "no_commit": 0
+    },
+    "toc": {
+      "n": 393,
+      "correct": 243,
+      "no_commit": 1
+    }
+  },
+  "completed_items_with_a_pair": 131,
+  "completed_pair_item_mean_toc_minus_full_pp": -9.414758269720101,
+  "note": "Descriptive effect over completed pairs, averaged within then across items. Interim coverage can be incomplete. Repeats are not independent items; use item/setup-aware uncertainty for the manuscript."
+}

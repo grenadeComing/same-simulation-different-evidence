@@ -1,0 +1,36 @@
+SOLUTION 0-10
+    pH 7.0
+    units mmol/kgw
+    Ca 1000
+    Cl 2000
+
+SOLUTION 11
+    pH 7.0
+    units mmol/kgw
+    Na 1000
+    Cl 1000
+
+EXCHANGE 0-10
+    X-   0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -flow_direction      forward
+    -boundary_conditions flux flux
+    -lengths             10*1.0
+    -dispersivities      10*0.0
+    -time_step           1.0
+    -punch_cells         10
+    -print_cells         10
+    -print_frequency     1
+
+SELECTED_OUTPUT
+    -file sel.out
+    -reset false
+    -time true
+    -distance true
+    -solution true
+    -pH true
+    -pe true

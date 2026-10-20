@@ -1,0 +1,36 @@
+SOLUTION 0-10
+    pH 7.0
+    units   mol/kgw
+    Ca      1.0
+    Cl      2.0
+
+SOLUTION 1
+    pH 7.0
+    units   mol/kgw
+    Na      1.0
+    Cl      1.0
+
+EXCHANGE 0-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -flow_direction      forward
+    -time_step           1
+    -length              1
+    -punch_cells         6
+    -punch_frequency     1
+
+SELECTED_OUTPUT
+    -file                vis.out
+    -high_precision      true
+    -state               true
+    -pH                  true
+    -step                true
+USER_PUNCH
+    -head step viscosity
+    10 visc = VISCOUS
+    20 PUNCH STEP_NO, visc
+END

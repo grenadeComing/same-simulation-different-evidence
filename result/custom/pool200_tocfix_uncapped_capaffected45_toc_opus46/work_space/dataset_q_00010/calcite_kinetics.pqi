@@ -1,0 +1,31 @@
+SOLUTION 1
+    temp      200
+    pH        2
+    pe        4
+    units     mmol/kgw
+    Cu        10
+    Ba        5
+
+KINETICS 1
+    Calcite
+        -m0  1
+        -m   1
+        -parms 1.0  10
+        -tol 1e-8
+
+    -steps 1000 in 100
+    -step_divide 1
+    -runge_kutta 3
+    -bad_step_max 500
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file result.out
+    -step
+    -totals Ca Cu Ba C
+    -saturation_indices Witherite Calcite
+    -pH
+    -temperature
+
+END

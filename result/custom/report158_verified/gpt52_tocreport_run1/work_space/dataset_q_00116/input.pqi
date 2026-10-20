@@ -1,0 +1,8 @@
+SOLUTION 1 Pure water
+    temp 25
+    pH   7.0
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10
+END

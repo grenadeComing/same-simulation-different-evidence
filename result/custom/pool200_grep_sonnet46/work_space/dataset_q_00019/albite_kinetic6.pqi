@@ -1,0 +1,28 @@
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4
+    units     mmol/kgw
+    Fe(2)     4.0
+    Fe(3)     4.0
+    -water    1.0
+
+EQUILIBRIUM_PHASES 1
+    H2S(g)    0.699  10.0
+
+KINETICS 1
+Albite
+    -m0   1.0
+    -m    1.0
+    -parms 1.0  10.0
+    -steps 1000 in 100
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file   albite_kinetic6.sel
+    -reset  false
+    -step
+    -totals Si
+
+END

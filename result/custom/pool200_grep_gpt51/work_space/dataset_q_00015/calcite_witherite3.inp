@@ -1,0 +1,28 @@
+SOLUTION 1
+    temp      200
+    pH        2 charge
+    pe        4
+    units     mmol/kgw
+    Cu        10
+    Ba        5
+
+KINETICS 1
+    Calcite
+        -m0       1
+        -parms    1.0 10
+        -steps    10*1 90*10  
+
+SELECTED_OUTPUT
+    -file           sel.out
+    -reset          false
+    -time           true
+    -kinetics       true
+    -si             Witherite
+
+USER_PUNCH
+    -headings step
+    -start
+    10 PUNCH STEP_NO
+    -end
+
+END

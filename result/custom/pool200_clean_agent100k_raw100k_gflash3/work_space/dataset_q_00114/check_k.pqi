@@ -1,0 +1,8 @@
+SELECTED_OUTPUT
+    -file check.sel
+    -user_punch true
+USER_PUNCH
+    -head logK_HCl
+    10 PUNCH LK_SPECIES("HCl")
+SOLUTION 1
+END

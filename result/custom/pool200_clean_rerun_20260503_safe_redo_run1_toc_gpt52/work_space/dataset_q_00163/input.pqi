@@ -1,0 +1,23 @@
+SOLUTION 1
+    temp 25
+    pH 7
+    Ca 0.01
+    Sr 0.01
+    Alkalinity 0.04
+
+SOLID_SOLUTION 1 Ca_Sr_carbonate
+    -comp  Calcite      0.5
+    -comp  Strontianite 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Strontianite 0 0
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -solid_solutions Ca_Sr_carbonate
+USER_PUNCH
+    -headings X_Sr
+    10 PUNCH MOL("Strontianite")/ (MOL("Strontianite")+MOL("Calcite"))
+END

@@ -1,0 +1,14 @@
+SOLUTION 1 Pure water 150C
+    temp 150
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+END
+SELECTED_OUTPUT
+    -file si_species.sel
+    -reset false
+    -si true
+    -species      true
+    -totals       Si
+END

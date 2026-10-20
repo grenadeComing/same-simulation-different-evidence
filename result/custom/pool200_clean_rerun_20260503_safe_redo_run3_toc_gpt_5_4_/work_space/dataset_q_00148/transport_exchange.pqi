@@ -1,0 +1,32 @@
+TITLE 1D transport with exchange
+SOLUTION 0 Infilling
+    temp 25
+    pH 7.0
+    pe 4
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10 Initial
+    temp 25
+    pH 7.0
+    pe 4
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X 0.001
+    equilibrate 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -step true
+    -simulation true
+    -state true
+    -solution true
+USER_PUNCH
+    -headings Step Soln Na
+    10 PUNCH STEP_NO, SOLN_NO, TOT("Na")
+END

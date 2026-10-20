@@ -1,0 +1,18 @@
+SOLUTION 1
+    C(4) 50
+    pH 7 charge
+SOLUTION 2
+    Ca 50
+    pH 7 charge
+MIX 1
+    1 0.5
+    2 0.5
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+REACTION_TEMPERATURE 1
+    160
+SELECTED_OUTPUT 1
+    -file species_no_counter.sel
+    -temperature
+    -totals Ca
+END

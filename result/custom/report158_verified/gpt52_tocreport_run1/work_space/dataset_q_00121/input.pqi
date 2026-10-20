@@ -1,0 +1,35 @@
+TITLE Transport with USER_PUNCH for SC (for checking only)
+SOLUTION 0  Initial
+    pH 7.0
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+SOLUTION 1-10
+    pH 7.0
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+SOLUTION 11  Influent
+    pH 7.0
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+USER_PUNCH
+  -headings step cell SC_uScm
+10 PUNCH STEP_NO, CELL_NO, SC
+SELECTED_OUTPUT
+  -reset false
+  -user_punch true
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -boundary_conditions constant constant
+    -time_step 1
+    -lengths 1
+    -dispersivities 0
+    -diffusion_coefficient 0
+    -correct_disp true
+END

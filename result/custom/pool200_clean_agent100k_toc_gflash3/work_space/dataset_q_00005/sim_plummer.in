@@ -1,0 +1,30 @@
+SOLUTION 1
+    temp 100
+    pH 5.0
+    pe 4.0
+    C(4) 0.5 mmol/kgw
+    Mn 1.0 mmol/kgw
+    units mmol/kgw
+RATES
+    Calcite_custom
+    -start
+    10 T = TK
+    20 k1 = 10^(0.198 - 444.0 / T)
+    30 k2 = 0.001
+    40 k3 = 10^(-1.1 - 1737.0 / T)
+    50 area = 10.0 * M
+    60 rate = area * (k1 * ACT("H+") + k2 * ACT("CO2") + k3 * ACT("H2O")) * (1 - SR("Calcite"))
+    70 save rate * 1e-3 * TIME
+    -end
+KINETICS 1
+    Calcite_custom
+    -formula CaCO3
+    -m0 1.0
+    -m 1.0
+    -steps 1000 in 100
+SELECTED_OUTPUT
+    -file result_plummer.sel
+    -reset false
+    -step
+    -ph
+END

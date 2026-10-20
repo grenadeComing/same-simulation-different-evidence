@@ -1,0 +1,38 @@
+TITLE 1D transport 10 cells 10 shifts; Na-Ca exchange
+
+SOLUTION 0  Infilling
+    pH 7.0
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10  Initial
+    pH 7.0
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+
+EQUILIBRATE 1-10 with_solution 1
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+USER_PUNCH
+    -headings step NaX_ex4
+10 PUNCH SIM_NO, MOL("NaX")
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1
+    -time_step 1
+    -diffusion_coefficient 0
+    -dispersivities 0
+    -punch_frequency 1
+    -print_cells 4
+END

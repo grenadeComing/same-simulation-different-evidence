@@ -1,0 +1,44 @@
+# Simulation: Mix two solutions 1:1, then heat from 20°C to 200°C in 10 steps
+# The mixed solution should have 50 mmol/kg of each component
+# So original solutions need 100 mmol/kg each (since mixing halves concentrations)
+# OR: interpret as each solution contributes 50 mmol/kg to the mix
+# Let's try: 100 mmol/kg in each solution so after 1:1 mix = 50 mmol/kg each
+
+SOLUTION 1
+    temp      20
+    pH        7
+    units     mmol/kgw
+    C(4)      100
+
+SOLUTION 2
+    temp      20
+    pH        7
+    units     mmol/kgw
+    Ca        100
+
+# Mix 1:1 (0.5 + 0.5 = 1 kg total)
+MIX 1
+    1   0.5
+    2   0.5
+
+SAVE solution 3
+
+END
+
+# Now heat the mixed solution from 20 to 200°C in 10 steps
+# 10 steps: 20, 40, 60, 80, 100, 120, 140, 160, 180, 200
+USE solution 3
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0   0
+
+REACTION_TEMPERATURE 1
+    20 40 60 80 100 120 140 160 180 200
+
+SELECTED_OUTPUT
+    -file   mixing_heating4.sel
+    -reset  false
+    -temperature true
+    -equilibrium_phases Calcite
+
+END

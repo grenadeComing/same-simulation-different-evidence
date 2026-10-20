@@ -1,0 +1,29 @@
+TITLE Ca speciation at 100C with calcite+gypsum+aragonite and gas phase
+SOLUTION 1
+    temp 100
+    pH 7 charge
+    Ca 50 mmol/kgw
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Gypsum 0 0
+    Aragonite 0 0
+GAS_PHASE 1
+    -fixed_pressure true
+    -pressure 1
+    -temperature 25
+    CO2(g) 1
+    CH4(g) 5
+    H2S(g) 10
+SELECTED_OUTPUT
+    -file selected.tsv
+    -reset false
+USER_PUNCH
+    -headings Ca_aq_species_count
+10 n=0
+20 FOR i = 1 TO TOT("Ca")
+30   sp$=SPECIES$ ("Ca", i)
+40   m=LA("Ca", i)
+50   IF (m > -99) THEN n=n+1
+60 NEXT i
+70 PUNCH n
+END

@@ -1,0 +1,10 @@
+SOLUTION 1
+    units   mg/l
+    pH      6.63
+    Cl      5707
+    Na      1 charge
+SELECTED_OUTPUT
+    -file output.sel
+    -reset false
+    -molalities HCl
+END

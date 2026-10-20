@@ -1,0 +1,37 @@
+SOLUTION 1 Hydrothermal
+    temp 100
+    pH   5
+    pe   4
+    units mmol/kgw
+    C(4) 0.5
+    Mn   1
+
+RATES
+Calcite_custom
+-start
+10 k = PARM(2)
+20 sa = PARM(1)
+30 rate = k * sa
+40 moles = rate * TIME
+50 if (M <= 0) then moles = 0
+60 if (moles > M) then moles = M
+70 SAVE moles
+-end
+
+KINETICS 1
+    Calcite_custom
+        -formula CaCO3 1
+        -m0 1
+        -parms 10.0 0.001
+        -steps 100*10
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -reset false
+    -time true
+    -si Calcite
+
+USER_PUNCH
+    -headings time_s SI_Calcite
+10 PUNCH TOT("time"), SI("Calcite")
+END

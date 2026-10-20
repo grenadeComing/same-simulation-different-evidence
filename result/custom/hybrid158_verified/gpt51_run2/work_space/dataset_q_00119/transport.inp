@@ -1,0 +1,46 @@
+SOLUTION 0-10
+pH 7.0
+pe 4.0
+Ca 1.0
+Cl 2.0
+
+SOLUTION 11
+pH 7.0
+pe 4.0
+Na 1.0
+Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+-equilibrate 1
+
+EXCHANGE_MASTER_SPECIES
+    X   X- 0 X
+
+EXCHANGE_SPECIES
+    Na+ + X- = NaX
+        log_k 0.0
+    Ca+2 + 2X- = CaX2
+        log_k 0.0
+
+TRANSPORT
+-cells 10
+-shifts 10
+-flow_direction forward
+-boundary_conditions flux flux
+-lengths 1*1
+-time_step 1
+-initial_time 0
+-print_cells 10
+-print_frequency 1
+-punch_cells 10
+-punch_frequency 1
+
+SELECTED_OUTPUT
+-file transport.sel
+-reset false
+-user_punch true
+
+USER_PUNCH
+10 PUNCH SIM_NO, STNO, pe
+END

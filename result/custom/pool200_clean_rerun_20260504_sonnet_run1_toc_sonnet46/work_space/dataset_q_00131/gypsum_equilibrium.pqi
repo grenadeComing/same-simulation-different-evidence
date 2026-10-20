@@ -1,0 +1,21 @@
+SOLUTION 1
+    temp      25
+    pH        7.0
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    water     1 # kg
+
+EQUILIBRIUM_PHASES 1
+    Gypsum    0.0    10.0
+
+SELECTED_OUTPUT
+    -file     gypsum_equilibrium.sel
+    -reset    false
+    -pH       true
+    -pe       true
+    -ionic_strength true
+    -activities OH-
+
+END

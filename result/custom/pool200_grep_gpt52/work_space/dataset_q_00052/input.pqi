@@ -1,0 +1,29 @@
+SOLUTION 1
+    temp 100
+    pH 3 charge
+    units mol/kgw
+    water 1
+
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+
+SELECTED_OUTPUT
+    -file selected.tsv
+    -reset false
+USER_PUNCH
+    -headings Fe2_species Fe3_species
+10  fe2 = 0
+20  fe3 = 0
+30  FOR i = 1 TO SYS("N_Species")
+40    s$ = SPECIES$ (i)
+50    IF INSTR(s$, "Fe+2") > 0 THEN fe2 = fe2 + 1
+60    IF INSTR(s$, "Fe+3") > 0 THEN fe3 = fe3 + 1
+70  NEXT i
+80  PUNCH fe2, fe3
+
+END

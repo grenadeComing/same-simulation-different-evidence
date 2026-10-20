@@ -1,0 +1,37 @@
+# Simulation: Mix two solutions 1:1, then heat from 20°C to 200°C in 10 discrete steps
+# Solution 1: 50 mmol/kg dissolved inorganic carbon (1 kg water)
+# Solution 2: 50 mmol/kg calcium (1 kg water)
+# After 1:1 mixing: 25 mmol/kg C and 25 mmol/kg Ca in 2 kg water
+# Allow calcite to precipitate/dissolve
+
+SOLUTION 1
+    temp      20
+    pH        7.0
+    C(4)      50 mmol/kgw
+    units     mmol/kgw
+
+SOLUTION 2
+    temp      20
+    pH        7.0
+    Ca        50 mmol/kgw
+    units     mmol/kgw
+
+# Mix 1:1 (equal masses) and heat from 20 to 200 in 10 steps
+# Using fractions 1 and 1 to get 2 kg total water
+MIX 1
+    1   1.0
+    2   1.0
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0.0   0.0
+
+REACTION_TEMPERATURE 1
+    20.0  38.0  56.0  74.0  92.0  110.0  128.0  146.0  164.0  182.0  200.0
+
+SELECTED_OUTPUT
+    -file   mixing_heating3.sel
+    -reset  false
+    -temperature true
+    -equilibrium_phases Calcite
+
+END

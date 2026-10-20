@@ -1,0 +1,20 @@
+TITLE Pyrite Oxidation Simulation
+SOLUTION 1
+    temp 25
+    pH 7.0
+    units mol/kgw
+    water 1.0
+
+EQUILIBRIUM_PHASES 1
+    Pyrite 0 0.1
+    Goethite 0 0
+    Gypsum 0 0
+    O2(g) -0.7 10.0
+
+SELECTED_OUTPUT 1
+    -file output.sel
+    -reset false
+    -totals Fe(2) Fe(3) Fe
+    -pH true
+
+END

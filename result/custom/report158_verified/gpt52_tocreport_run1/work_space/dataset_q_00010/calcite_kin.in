@@ -1,0 +1,24 @@
+TITLE Calcite kinetics with Cu and Ba, 200 C
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    Cl 25
+    -water 1
+KINETICS 1
+    Calcite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+        -tol 1e-12
+        -steps 10 in 100
+USER_PUNCH
+    -headings step tot_C4 tot_Cu2
+    10 PUNCH STEP_NO, TOT("C(4)"), TOT("Cu(2)")
+SELECTED_OUTPUT
+    -reset false
+    -user_punch true
+END

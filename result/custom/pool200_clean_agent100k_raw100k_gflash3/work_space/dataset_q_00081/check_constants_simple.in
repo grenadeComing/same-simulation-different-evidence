@@ -1,0 +1,8 @@
+SOLUTION 1
+    temp 150
+    C 0.1
+    N(-3) 0.1
+END
+RUN_CELLS
+    -cells 1
+END

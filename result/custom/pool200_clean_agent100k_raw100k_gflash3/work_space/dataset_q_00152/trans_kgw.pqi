@@ -1,0 +1,29 @@
+SOLUTION 0
+    pH      7.0
+    units   mol/kgw
+    Na      1.0e-3
+    Cl      1.0e-3
+
+SOLUTION 1-10
+    pH      7.0
+    units   mol/kgw
+    Ca      1.0e-3
+    Cl      2.0e-3
+
+EXCHANGE 1-10
+    -equilibrate 1
+    X       0.001
+
+TRANSPORT
+    -cells  10
+    -shifts 10
+    -lengths 1
+    -dispersivities 0
+    -diffusion_coefficient 0
+
+SELECTED_OUTPUT
+    -file output.sel
+    -reset false
+    -step true
+    -molalities CaX2 NaX
+END

@@ -1,0 +1,19 @@
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    pH 7 charge
+    C(-4) 5.0
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    -temperature 15
+    CH4(g) 0
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -head pe
+    10 PUNCH PE
+END

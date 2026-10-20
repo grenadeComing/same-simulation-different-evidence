@@ -1,0 +1,18 @@
+TITLE Pure water pH 7, add sulfuric acid in steps
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    units mol/kgw
+    water 1
+REACTION 1
+    H2SO4 1
+    0.001 0.005 0.01 0.05 0.1
+USER_PUNCH
+    -headings viscosity
+    10 PUNCH VISCOS
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -reaction true
+    -user_punch true
+END

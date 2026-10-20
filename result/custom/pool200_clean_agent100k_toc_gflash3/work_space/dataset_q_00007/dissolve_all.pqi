@@ -1,0 +1,11 @@
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 4
+    units mmol/kgw
+    C(4) 0.5
+    Mn 1
+REACTION 1
+    Calcite 1.0
+    1.0 moles
+END

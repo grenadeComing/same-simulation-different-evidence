@@ -1,0 +1,19 @@
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 4
+    units mmol/kgw
+    C(4) 0.5
+    Mn 1
+KINETICS 1
+    Calcite
+    -m 1.0
+    -parms 10.0 0.67
+    -steps 1000 in 100
+SELECTED_OUTPUT
+    -file res.sel
+    -reset false
+    -totals C
+    -step
+    -high_precision true
+END

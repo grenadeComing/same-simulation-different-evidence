@@ -1,0 +1,35 @@
+TITLE 1D transport 10 cells 10 shifts exchange
+SOLUTION 0-10
+    pH 7.0
+    pe 4
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 0-10
+    X- 0.001
+SOLUTION 11
+    pH 7.0
+    pe 4
+    Na 1.0
+    Cl 1.0
+EXCHANGE 11
+    X- 0.001
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -lengths             10*1.0
+    -time_step           1.0
+    -flow_direction      forward
+    -boundary_conditions flux flux
+    -dispersivities      10*0.0
+    -correct_disp        false
+    -print_cells         10
+    -print_frequency     1
+SELECTED_OUTPUT
+    -file                selout.txt
+    -reset               false
+    -pH                  true
+    -pe                  true
+USER_PUNCH
+    -headings cell shift pe
+    10 PUNCH CELL_NO, SIM_NO, PE
+END

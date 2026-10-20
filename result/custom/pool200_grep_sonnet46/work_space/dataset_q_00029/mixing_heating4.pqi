@@ -1,0 +1,36 @@
+
+# Mixed solution with 50 mmol/kg DIC and 50 mmol/kg Ca
+# (as if mixing doesn't dilute - or the original solutions had 100 mmol/kg each)
+SOLUTION 1
+    temp      20
+    pH        7.0
+    C(4)      100  # 100 mmol/kg DIC in solution 1
+    units     mmol/kgw
+
+SOLUTION 2
+    temp      20
+    pH        7.0
+    Ca        100  # 100 mmol/kg calcium in solution 2
+    units     mmol/kgw
+
+# Mix 1:1 proportions - gives 50 mmol/kg each in mixed solution
+MIX 1
+    1   0.5
+    2   0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0   0
+
+REACTION_TEMPERATURE 1
+    20  200  in 10 steps
+
+SAVE solution 3
+
+SELECTED_OUTPUT
+    -file     mixing_heating4.sel
+    -reset    false
+    -temperature  true
+    -equilibrium_phases  Calcite
+    -totals   C Ca
+
+END

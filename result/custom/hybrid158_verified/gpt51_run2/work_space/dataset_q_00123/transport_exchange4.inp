@@ -1,0 +1,36 @@
+SOLUTION 1
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 0
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE_SPECIES
+    X- = X-
+        log_k   0
+    Ca+2 + 2X- = CaX2
+        log_k   0
+    Na+ + X- = NaX
+        log_k   0
+
+EXCHANGE 1
+    X- 0.001
+
+TRANSPORT
+    -cells               1
+    -shifts              4
+    -time_step           1
+    -lengths             1*1
+    -boundary_conditions flux flux
+    -initial_time        0
+    -print_cells         1
+    -print_frequency     1
+
+SELECTED_OUTPUT
+    -file                ex4.out
+    -reset               false
+    -totals              NaX
+END

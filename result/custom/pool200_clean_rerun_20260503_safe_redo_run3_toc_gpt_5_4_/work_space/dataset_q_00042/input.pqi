@@ -1,0 +1,23 @@
+TITLE Gas dissolution with minerals at 100 C
+SOLUTION 1
+    temp 100
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 10
+GAS_PHASE 1
+    -fixed_pressure
+    -temperature 25
+    -pressure 16
+    -volume 1
+    CO2(g) 1
+    CH4(g) 5
+    H2S(g) 10
+SELECTED_OUTPUT
+    -file selected.out
+    -high_precision true
+    -gas true
+END

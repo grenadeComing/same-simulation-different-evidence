@@ -1,0 +1,30 @@
+TITLE 1D transport exchange test
+SOLUTION 0 Infilling
+    pH 7.0
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10 Initial
+    pH 7.0
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -simulation true
+    -state true
+    -solution true
+    -distance true
+    -time true
+    -step true
+USER_PUNCH
+    -headings step cell eqfrac_CaX2
+10 PUNCH STEP_NO, CELL_NO, EQUI("CaX2")
+END

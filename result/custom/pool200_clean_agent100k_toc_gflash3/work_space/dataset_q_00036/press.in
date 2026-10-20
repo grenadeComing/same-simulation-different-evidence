@@ -1,0 +1,16 @@
+SOLUTION 1
+EQUILIBRIUM_PHASES 1
+    Calcite 0 1
+REACTION_TEMPERATURE 1
+    200
+REACTION_PRESSURE 1
+    1 10 50 100
+SELECTED_OUTPUT 1
+    -file press.sel
+    -temperature
+    -pressure
+    -si Calcite
+USER_PUNCH
+    -headings logK
+    10 PUNCH LK_PHASE("Calcite")
+END

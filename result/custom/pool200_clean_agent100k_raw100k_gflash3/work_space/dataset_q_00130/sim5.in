@@ -1,0 +1,11 @@
+SOLUTION 1
+    pH 7.0
+    temp 30
+    pe 4
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+SELECTED_OUTPUT
+    -file output5.sel
+    -reset false
+    -si Sulfur
+END

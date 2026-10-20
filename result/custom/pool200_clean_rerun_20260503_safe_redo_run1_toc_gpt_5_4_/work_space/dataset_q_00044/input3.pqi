@@ -1,0 +1,18 @@
+TITLE test with equilibration only to CO2
+SOLUTION 1
+    temp 100
+    units mmol/kgw
+    pH 7 charge
+    Ca 50
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 10
+    CO2(g) -0.0 10
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings sc
+    10 PUNCH SC
+END

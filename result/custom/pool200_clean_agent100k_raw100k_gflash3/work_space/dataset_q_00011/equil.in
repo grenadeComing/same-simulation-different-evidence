@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 10 mmol/kgw
+    Ba 5 mmol/kgw
+    Cl 1 charge
+EQUILIBRIUM_PHASES 1
+    Calcite 0 1.0
+SELECTED_OUTPUT 1
+    -file equilibrium_results.sel
+    -reset false
+    -molalities CO2
+END

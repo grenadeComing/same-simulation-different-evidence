@@ -1,0 +1,29 @@
+TITLE Mix DIC and Ca solutions 1:1, heat 20C to 200C in 10 steps, equilibrate with calcite
+SOLUTION 1 DIC
+    temp 20
+    pH   7 charge
+    units mmol/kgw
+    C(4) 50 as HCO3
+SOLUTION 2 Ca
+    temp 20
+    pH   7 charge
+    units mmol/kgw
+    Ca   50
+
+MIX 1
+    1 0.5
+    2 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+REACTION_TEMPERATURE 1
+    20 200 in 10
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+USER_PUNCH
+    -headings Step Temp SI_Aragonite
+10 PUNCH STEP_NO, TC, SI("Aragonite")
+END

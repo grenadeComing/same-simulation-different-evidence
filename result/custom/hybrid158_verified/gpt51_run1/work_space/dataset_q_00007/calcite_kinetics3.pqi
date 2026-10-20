@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    Cu 0.01
+    Ba 0.005
+
+KINETICS 1
+    Calcite
+        -formula CaCO3 1
+        -m0 1.0
+        -parms 10 1.0
+        -steps 10 1000 in 100 steps
+
+RATES
+    Calcite
+    -start
+        10 k = PARM(1)
+        20 s = PARM(2)
+        30 rate = k * s
+        40 moles = rate * TIME
+        50 SAVE moles
+    -end
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file calcite_selout.txt
+    -time true
+    -pH true
+    -step true
+END

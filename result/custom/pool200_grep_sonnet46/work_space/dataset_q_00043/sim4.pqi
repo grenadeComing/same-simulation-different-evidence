@@ -1,0 +1,29 @@
+SOLUTION 1
+    temp      100
+    pH        7 charge
+    Ca        50 mmol/kgw
+
+EQUILIBRIUM_PHASES 1
+    Calcite    0 10
+    Gypsum     0 10
+    Aragonite  0 10
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 16
+    -temperature 25
+    -volume 100
+    CO2(g)   0.0625
+    CH4(g)   0.3125
+    H2S(g)   0.625
+
+SELECTED_OUTPUT
+    -file     result4.out
+    -totals   S Ca C
+    -molalities SO4-2 HS- H2S
+    -si       Calcite Gypsum Aragonite
+    -pH       true
+    -temperature true
+    -gases    CO2(g) CH4(g) H2S(g)
+
+END

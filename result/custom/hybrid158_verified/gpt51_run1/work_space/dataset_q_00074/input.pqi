@@ -1,0 +1,17 @@
+SOLUTION 1 Pure water
+    temp 150
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+END
+KNOBS
+    -pe 4
+END
+SELECTED_OUTPUT
+    -file sel.out
+    -reset false
+    -solution true
+    -conductivity true
+END
+END

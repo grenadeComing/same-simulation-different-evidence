@@ -1,0 +1,10 @@
+TITLE Sulfuric Acid Addition Pure Water
+SOLUTION 1
+REACTION 1
+    H2SO4 1.0
+    0.001 moles
+SELECTED_OUTPUT
+    -file solution_results3.sel
+    -reset false
+    -pH true
+END

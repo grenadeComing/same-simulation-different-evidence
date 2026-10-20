@@ -1,0 +1,25 @@
+TITLE Albite kinetics pH2 200C with Fe2/Fe3 and fixed P H2S
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    redox pe
+    Fe(3) 4e-3
+    Fe(2) 4e-3
+    -water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+    -steps 10 in 100
+    -tol 1e-12
+SELECTED_OUTPUT
+    -reset false
+    -time true
+    -step true
+    -totals Si
+END

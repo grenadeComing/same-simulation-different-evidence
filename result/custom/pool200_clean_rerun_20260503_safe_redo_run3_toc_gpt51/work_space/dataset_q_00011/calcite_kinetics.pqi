@@ -1,0 +1,25 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    Cu 0.01
+    Ba 0.005
+    C 1e-6
+
+KINETICS 1
+    Calcite
+        -m0 1
+        -m 1
+        -parms 1.0 1.0
+        -steps 10 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -file calcite_kinetics.sel
+    -reset false
+    -time true
+    -step true
+    -molalities CO2
+    -pH true
+    -si Calcite
+END

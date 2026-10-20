@@ -1,0 +1,37 @@
+TITLE 1D transport with exchange
+
+# Initial solution (in cells 1-10)
+SOLUTION 1-10
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+
+# Infilling solution (solution 0)
+SOLUTION 0
+    pH      7.0
+    Na      1.0
+    Cl      1.0
+
+EXCHANGE 1-10
+    X       0.001
+    -equilibrate 1
+
+SELECTED_OUTPUT
+    -file           selected.out
+    -reset          false
+    -step
+
+USER_PUNCH
+    -headings sc
+    10 PUNCH SC
+
+TRANSPORT
+    -cells          10
+    -shifts         10
+    -lengths        1.0
+    -dispersivities 0.0
+    -correct_disp   true
+    -punch_cells    8
+    -punch_frequency 1
+
+END

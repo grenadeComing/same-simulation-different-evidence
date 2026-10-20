@@ -1,0 +1,27 @@
+SOLUTION 1  River Water
+    pH      6.0
+    pe      4.0
+    Na      10      charge
+    Cl      10
+    temp    25
+    units   mg/L
+
+SOLUTION 2  Seawater
+    pH      8.1
+    pe      4.0
+    Na      19000   charge
+    Cl      19000
+    temp    25
+    units   mg/L
+
+MIX 1
+    1   0.7
+    2   0.3
+
+SELECTED_OUTPUT
+    -file   mix_output7.sel
+    -reset  false
+    -pe     true
+    -pH     true
+
+END

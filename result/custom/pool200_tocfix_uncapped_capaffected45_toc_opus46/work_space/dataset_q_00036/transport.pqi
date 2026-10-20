@@ -1,0 +1,43 @@
+TITLE 1D transport with exchange
+
+# Initial solution (cells 1-10)
+SOLUTION 1-10
+    pH    7.0
+    Ca    1.0
+    Cl    2.0
+
+# Infilling solution (solution 0)
+SOLUTION 0
+    pH    7.0
+    Na    1.0
+    Cl    1.0
+
+# Exchange sites for all 10 cells, equilibrated with solution 1
+EXCHANGE 1-10
+    X    0.001
+    -equilibrate 1
+
+SELECTED_OUTPUT
+    -file result.out
+    -reset false
+
+USER_PUNCH
+    -headings step cell Na_X
+    -start
+    10 PUNCH STEP_NO
+    20 PUNCH CELL_NO
+    30 PUNCH MOL("NaX")
+    -end
+
+TRANSPORT
+    -cells          10
+    -shifts         10
+    -lengths        1.0
+    -dispersivities 0.0
+    -time_step      1.0
+    -boundary_conditions flux flux
+    -diffusion_coefficient 0.0
+    -punch_cells    1
+    -punch_frequency 1
+
+END

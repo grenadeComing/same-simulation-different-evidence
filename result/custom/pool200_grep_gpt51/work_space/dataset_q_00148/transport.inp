@@ -1,0 +1,34 @@
+SOLUTION 0-10
+    pH 7.0 charge
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1
+    pH 7.0 charge
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+EQUILIBRIUM_PHASES 1-10
+EXCHANGE_SPECIES
+NaX = Na+ + X-
+    -log_k 0
+END
+
+USE solution 0
+USE exchange 1
+
+TRANSPORT
+    cells 10
+    shifts 10
+    length 1
+    time_step 1
+    flow_direction forward
+    boundary_conditions flux flux
+    print_frequency 1
+    punch_frequency 1
+    -dispersivity 0
+    -correct_disp true
+
+END

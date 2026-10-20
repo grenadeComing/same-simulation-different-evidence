@@ -1,0 +1,16 @@
+TITLE pe at 150C for pH 7 pure water with chrysotile+talc and fixed pe=3.506 (diagnostic)
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    pe 3.506
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+SELECTED_OUTPUT
+    -file peq5.sel
+    -reset false
+    -pH true
+    -pe true
+END

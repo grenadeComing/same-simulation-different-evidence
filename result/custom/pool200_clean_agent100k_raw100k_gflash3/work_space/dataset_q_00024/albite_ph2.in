@@ -1,0 +1,12 @@
+SOLUTION 1
+temp 200
+pH 2
+Cl 1.0 charge
+EQUILIBRIUM_PHASES 1
+Albite 0 10.0
+FIX_PH -2 HCl 10
+END
+PHASES
+FIX_PH
+H+ = H+
+log_k 0

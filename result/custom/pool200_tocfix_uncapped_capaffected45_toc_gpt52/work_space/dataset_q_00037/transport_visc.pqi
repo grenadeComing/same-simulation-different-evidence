@@ -1,0 +1,31 @@
+TITLE 1D transport 10 cells 10 shifts; exchange
+SOLUTION 0  Initial solution
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+SOLUTION 1-10 Initial cells
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+SOLUTION 11 Infilling solution
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -initial_time 0
+SELECTED_OUTPUT
+    -file selected_output_1.sel
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings step cell viscosity_mPas
+10 PUNCH SIM_NO, CELL_NO, RHO
+END

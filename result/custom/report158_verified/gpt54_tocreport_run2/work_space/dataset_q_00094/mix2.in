@@ -1,0 +1,31 @@
+SOLUTION 1 River
+    temp 25
+    pH 6.0
+    pe 4
+    redox pe
+    units mg/L
+    Ca 2.0
+    Mg 1.0
+    Na 4.0
+    K 1.0
+    Alkalinity 10 as HCO3
+    Cl 10
+    S(6) 5 as SO4
+SOLUTION 2 Seawater
+    temp 25
+    pH 8.1
+    pe 4
+    redox pe
+    units mg/L
+    density 1.025
+    Ca 412.3
+    Mg 1291.8
+    Na 10768
+    K 399.1
+    Alkalinity 141 as HCO3
+    Cl 19000
+    S(6) 2712 as SO4
+MIX 1
+    1 0.7
+    2 0.3
+END

@@ -1,0 +1,1 @@
+placeholder per instructions; assume standard phreeqc.dat species, including NaX, CaX2 exchange species and exchangers named X- (1) etc.

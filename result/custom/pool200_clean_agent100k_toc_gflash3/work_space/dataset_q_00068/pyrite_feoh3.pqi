@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 25
+    pH 7.0
+    units mol/kgw
+    water 1.0
+
+EQUILIBRIUM_PHASES 1
+    O2(g) -0.7 10.0
+    Fe(OH)3(a) 0.0 0.0
+    Pyrite 0.0 0.1
+
+SELECTED_OUTPUT 1
+    -file selected_feoh3.out
+    -si Pyrite
+END

@@ -1,0 +1,28 @@
+TITLE 1D exchange transport problem
+SOLUTION 0
+    pH 7.0
+    Na 1.0
+    Cl 1.0 charge
+SOLUTION 1-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0 charge
+EXCHANGE 1-10
+    X- 0.001
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -print_cells 1-10
+    -print_frequency 1
+PRINT
+    -reset false
+SELECTED_OUTPUT
+    -file selout.out
+    -reset false
+    -step true
+    -molalities NaX
+END

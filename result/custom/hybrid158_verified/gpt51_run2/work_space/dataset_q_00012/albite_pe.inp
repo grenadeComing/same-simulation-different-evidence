@@ -1,0 +1,38 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    units mmol/kgw
+    Fe(2) 4
+    Fe(3) 4
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 1
+
+KINETICS 1
+    Albite_kin
+    -m0 1.0
+    -steps 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10
+    -cvode
+
+RATES
+Albite_kin
+-start
+10 k = 10
+20 ssa = 1.0
+30 rate = k * ssa
+40 moles = rate * TIME
+50 SAVE moles
+-end
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file albite.sel
+    -reset false
+    -step true
+    -pe true
+
+END

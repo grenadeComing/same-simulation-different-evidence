@@ -1,0 +1,34 @@
+TITLE 1D transport with exchange; query alkalinity solution 3 at step 10
+
+SOLUTION 0
+    pH 7.0
+    units mol/kgw
+
+SOLUTION 1-10
+    pH 7.0
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -initial_time 0
+    -print_frequency 10
+    -punch_frequency 10
+    -warnings false
+
+END

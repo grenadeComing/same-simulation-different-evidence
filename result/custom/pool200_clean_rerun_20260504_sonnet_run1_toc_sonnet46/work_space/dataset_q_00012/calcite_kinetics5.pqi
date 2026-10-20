@@ -1,0 +1,40 @@
+TITLE Calcite kinetic dissolution in acidic solution with Cu and Ba
+
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4.0
+    units     mmol/kgw
+    Cu        10.0
+    Ba        5.0
+
+RATES
+Calcite
+-start
+10 si_cc = SI("Calcite")
+20 if (m <= 0 and si_cc > 0) then goto 200
+30 k = 10
+40 area = PARM(1) * (m/m0)^(2/3)
+50 rate = k * area * (1 - 10^si_cc)
+60 moles = rate * TIME
+70 if (moles > m) then moles = m
+200 save moles
+-end
+
+KINETICS 1
+Calcite
+    -tol    1e-8
+    -m0     1.0
+    -m      1.0
+    -parms  1.0  0.67
+    -steps  1000 in 100
+
+SELECTED_OUTPUT
+    -file   calcite_kinetics5.out
+    -reset  false
+    -step   true
+    -time   true
+    -alkalinity true
+    -totals Ca Ba Cu C
+
+END

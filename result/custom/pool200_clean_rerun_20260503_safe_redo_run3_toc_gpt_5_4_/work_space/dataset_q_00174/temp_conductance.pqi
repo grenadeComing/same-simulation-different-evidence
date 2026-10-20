@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 25
+    units mg/L
+    pH 7 charge
+    Ba 2.0
+    S(6) 15.0
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+USER_PUNCH
+    -headings temp sc
+    10 PUNCH TC, SC
+SELECTED_OUTPUT
+    -file temp_conductance.sel
+    -reset false
+    -user_punch true
+END

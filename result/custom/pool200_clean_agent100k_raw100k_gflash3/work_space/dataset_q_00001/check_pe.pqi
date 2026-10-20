@@ -1,0 +1,12 @@
+TITLE Check pe
+SOLUTION 1
+    temp 100
+    pH 7.199
+    Mn 1.0
+    units mmol/kgw
+
+EQUILIBRIUM_PHASES 1
+    Pyrolusite 0 10.0
+    Calcite 0 10.0
+
+END

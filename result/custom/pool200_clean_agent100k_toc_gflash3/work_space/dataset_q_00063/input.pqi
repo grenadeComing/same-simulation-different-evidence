@@ -1,0 +1,27 @@
+PHASES
+Fix_pH
+H+ = H+
+log_k 0
+END
+
+SOLUTION 1
+    temp 100
+    pH 5
+    units mmol/kgw
+    Ba 100
+    Cl 100 charge
+    water 1
+
+EQUILIBRIUM_PHASES 1
+    Talc 0 10
+    Rhodochrosite 0 10
+    Sepiolite 0 10
+    Sepiolite(d) 0 10
+    Pb(OH)2 0 10
+    Fix_pH -5.0 HCl 20
+
+USER_PUNCH
+    -file punch.txt
+    -headings MnCO32 MgCO32 BaCO32
+    10 PUNCH MOL("Mn(CO3)2-2"), MOL("Mg(CO3)2-2"), MOL("Ba(CO3)2-2")
+END

@@ -1,0 +1,39 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(3) 4e-3
+    Fe(2) 4e-3
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g)  5
+
+KINETICS 1
+    Albite
+    -m0 1
+    -steps 10*10
+    -tol 1e-12
+
+RATES
+Albite
+    -start
+    10 rem: simple constant rate, k = 10 mol/s, ssa = 1 m2/g, 1 mol mineral
+    20 k = 10
+    30 m = 1
+    40 ssa = 1
+    50 rate = k*ssa*m
+    60 moles = rate * TIME
+    70 SAVE moles
+    -end
+
+INCREMENTAL_REACTIONS true
+SELECTED_OUTPUT
+    -file albite_h2s.sel
+    -reset false
+    -kinetic_reactants Albite
+USER_PUNCH
+    -head Step H2S_moles
+    -start
+    10 PUNCH SIM_NO, GAS("H2S(g)")
+    -end

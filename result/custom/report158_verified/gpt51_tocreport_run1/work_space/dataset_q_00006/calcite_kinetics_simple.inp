@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp      200
+    pH        2
+    pe        4
+    Cu        1e-2
+    Ba        5e-3
+    units     mol/kgw
+
+KINETICS 1
+    Calcite_kin
+        -formula   CaCO3 1
+        -m0        1
+        -parms     10 1.0
+        -steps     1000 in 10
+
+RATES
+    Calcite_kin
+    -start
+    10 k = PARM(1)
+    20 ssa = PARM(2)
+    30 rate = k * ssa
+    40 moles = rate * TIME
+    50 SAVE moles
+    -end
+
+SELECTED_OUTPUT
+    -reset false
+    -file selected.out
+    -step true
+    -alkalinity true
+
+END

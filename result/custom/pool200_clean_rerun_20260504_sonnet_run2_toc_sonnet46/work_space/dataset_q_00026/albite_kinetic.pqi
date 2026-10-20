@@ -1,0 +1,41 @@
+SOLUTION 1
+    temp    200
+    pH      2.0
+    Fe(2)   4 mmol/kgw
+    Fe(3)   4 mmol/kgw
+    units   mmol/kgw
+
+KINETICS 1
+Albite
+    -m0     1.0
+    -m      1.0
+    -parms  1.0  10.0
+    -step   1000 in 100
+    -tol    1e-8
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5.0
+    -volume   1.0
+    -temperature 200
+    H2S(g)  5.0
+
+SELECTED_OUTPUT
+    -file   albite_out.sel
+    -reset  false
+    -step   true
+    -totals Si
+
+USER_PUNCH
+    -headings step Si_species_count
+    -start
+10  PUNCH STEP_NO
+20  count = 0
+30  FOR i = 1 TO TOTSPECIES
+40      sp$ = SPECIESNAME(i)
+50      IF LEFT$(sp$, 2) = "Si" OR INSTR(sp$, "SiO") > 0 OR INSTR(sp$, "H4SiO4") > 0 OR INSTR(sp$, "H3SiO4") > 0 OR INSTR(sp$, "H2SiO4") > 0 THEN count = count + 1
+60  NEXT i
+70  PUNCH count
+    -end
+
+END

@@ -1,0 +1,25 @@
+TITLE Calcite kinetics, pH 2, 200 C; 1000 s in 100 steps; SI(Witherite)
+SOLUTION 1
+    temp 200
+    pH   2
+    pe   4
+    units mmol/kgw
+    Cu   10
+    Ba   5
+    Cl   30 charge
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0 10.0
+        -tol 1e-12
+    -steps 10 in 100
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+USER_PUNCH
+    -headings step si_witherite
+10 PUNCH STEP_NO, SI("Witherite")
+END

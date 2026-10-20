@@ -1,0 +1,29 @@
+SOLUTION 1 Pure_C
+    temp 20
+    units mmol/kgw
+    C(4) 50
+    pH 7 charge
+
+SOLUTION 2 Pure_Ca
+    temp 20
+    units mmol/kgw
+    Ca 50
+    pH 7 charge
+
+MIX 3
+    1 1
+    2 1
+
+EQUILIBRIUM_PHASES 3
+    Calcite 0 0
+
+REACTION_TEMPERATURE 3
+    20 200 in 10 steps
+
+SELECTED_OUTPUT
+    -file mix_calcite.sel
+    -reset false
+    -temperature true
+    -ionic_strength true
+    -solution true
+END

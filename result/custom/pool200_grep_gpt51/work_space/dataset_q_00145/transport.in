@@ -1,0 +1,29 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 0-10
+    X 0.001
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+EXCHANGE_SPECIES
+    X- = X-
+        -log_k 0.0
+        gamma 0.0
+USE solution 0
+TRANSPORT
+    cells 10
+    shifts 10
+    length 10
+    time_step 1
+    boundary_conditions constant
+    print_cells 1
+    print_frequency 10
+    punch_cells 1
+    punch_frequency 10
+SELECTED_OUTPUT
+    -file trans.sel
+    -pe true
+END

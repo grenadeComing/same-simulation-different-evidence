@@ -1,0 +1,13 @@
+SOLUTION 1
+    pH 7.0
+    pe 10.927
+    O(0) 1e-10  # Tiny amount to buffer pe
+REACTION 1
+    H2SO4 1.0
+    0.001 0.005 0.01 0.05 0.1
+SELECTED_OUTPUT 1
+    -file output.sel
+    -pe true
+    -step true
+    -pH true
+END

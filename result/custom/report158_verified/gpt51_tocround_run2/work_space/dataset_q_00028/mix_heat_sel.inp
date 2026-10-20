@@ -1,0 +1,29 @@
+SOLUTION 1
+    temp 20
+    pH 7 charge
+    C(4) 50 mmol/kgw
+
+SOLUTION 2
+    temp 20
+    pH 7 charge
+    Ca 50 mmol/kgw
+
+MIX 1
+    1 1
+    2 1
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+
+USER_PUNCH
+    -head step temperature density
+    10 PUNCH STEP_NO, TOT("H2O"), RHO
+
+SELECTED_OUTPUT
+    -file mix_heat_sel.txt
+    -high_precision true
+
+END

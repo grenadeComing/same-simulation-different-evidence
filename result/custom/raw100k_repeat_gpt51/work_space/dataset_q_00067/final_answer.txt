@@ -1,0 +1,1 @@
+<<< None of the options (A–D). PHREEQC equilibrium simulation gives pH ≈ 7.003 under the stated conditions, so the multiple-choice values (~0.944–0.946) do not match the modeled result. >>>

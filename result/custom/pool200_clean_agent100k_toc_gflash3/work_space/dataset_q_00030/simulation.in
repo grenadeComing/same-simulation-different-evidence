@@ -1,0 +1,21 @@
+SOLUTION 1
+    units mmol/kgw
+    C 50
+    Na 50
+    pH 8.3 charge
+SOLUTION 2
+    units mmol/kgw
+    Ca 50
+    pH 12.5 charge
+MIX 1
+    1 1.0
+    2 1.0
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+REACTION_TEMPERATURE 1
+    100
+SELECTED_OUTPUT 1
+    -file result.sel
+    -temperature
+    -equilibrium_phases Calcite
+END

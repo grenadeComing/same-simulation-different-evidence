@@ -1,0 +1,27 @@
+{
+  "index": 17,
+  "row_index": 16,
+  "task_type": "mcq",
+  "truth": "A",
+  "prediction": "D",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": false,
+  "item_id": 17,
+  "condition": "full",
+  "status": "submitted",
+  "calls": 2,
+  "estimated_cost_usd": 0.1871275,
+  "input_tokens": 106466,
+  "output_tokens": 58,
+  "read_paths": [
+    {
+      "path": "albite_sel.tsv",
+      "ok": true,
+      "start_line": "1",
+      "end_line": "105"
+    }
+  ],
+  "checkpoint_fingerprint": "ad059b215f6fe7850498cd3ea0489dd61ef82f454d0e642f7bf1deadcaac47f9",
+  "remaining_steps": 20
+}

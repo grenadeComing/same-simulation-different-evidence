@@ -1,0 +1,38 @@
+
+SOLUTION 1
+    temp 200
+    pH 2
+    units mmol/kgw
+    Fe(2) 4
+    Fe(3) 4
+    Cl 10 charge
+    -water 1
+
+RATES
+Albite_diss
+  -start
+  10 k = 10
+  20 ssa = 1.0
+  30 rate = k * ssa * (M/M0) * (1 - SR("Albite"))
+  40 SAVE rate
+  -end
+
+KINETICS 1
+Albite_diss
+    -formula NaAlSi3O8 1.0
+    -m 1.0
+    -m0 1.0
+    -step 1000 in 100
+    -cvode true
+
+EQUILIBRIUM_PHASES 1
+    H2S(g) 0.0 10.0
+    Sulfur 0.0 0.0
+
+SELECTED_OUTPUT 1
+    -file output_1atm_sulfur.sel
+    -reset false
+    -step
+    -equilibrium_phases H2S(g)
+
+END

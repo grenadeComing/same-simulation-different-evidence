@@ -1,0 +1,35 @@
+SOLUTION 0
+    pH 7.0
+    temp 25
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10
+    pH 7.0
+    temp 25
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1 1 1 1 1 1 1 1 1 1
+    -dispersivities 0
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -correct_disp true
+    -diffusion_coefficient 0
+    -punch_cells 1
+    -punch_frequency 1
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -step true
+    -simulation true
+USER_PUNCH
+    -headings Step CaX2_eqfrac
+10 PUNCH STEP_NO, MOL("CaX2")*2/TOT("X")
+END

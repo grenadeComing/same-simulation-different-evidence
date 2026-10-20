@@ -1,0 +1,11 @@
+
+SOLUTION 1
+    pH 7.0
+    pe 0.0
+SELECTED_OUTPUT
+    -file logK.sel
+    -reset false
+USER_PUNCH
+    -headings logK_H2aq logK_H2g
+    10 PUNCH LK_SPECIES("H2"), LK_PHASE("H2(g)")
+END

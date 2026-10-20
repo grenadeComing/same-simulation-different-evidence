@@ -1,0 +1,48 @@
+# Simulation: Mix two solutions 1:1, then heat from 20°C to 200°C in 10 steps
+# Solution 1: 50 mmol/kg dissolved inorganic carbon
+# Solution 2: 50 mmol/kg calcium
+
+SOLUTION 1
+    temp      20
+    pH        7
+    units     mmol/kgw
+    C(4)      50
+
+SOLUTION 2
+    temp      20
+    pH        7
+    units     mmol/kgw
+    Ca        50
+
+# Mix 1:1
+MIX 1
+    1   0.5
+    2   0.5
+
+# Save the mixed solution as solution 3
+SAVE solution 3
+
+END
+
+# Now heat the mixed solution from 20 to 200°C in 10 steps
+# Steps: 20, 38, 56, 74, 92, 110, 128, 146, 164, 182, 200
+# 10 discrete steps means 10 intervals: 20 to 200 = 180°C range / 10 = 18°C per step
+# Temperatures: 20, 38, 56, 74, 92, 110, 128, 146, 164, 182, 200
+# Step 6 (index 5) = 110°C, Step 5 (index 4) = 92°C
+# We need 100°C - let's use REACTION_TEMPERATURE with steps
+
+USE solution 3
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0   0
+
+REACTION_TEMPERATURE 1
+    20 38 56 74 92 110 128 146 164 182 200
+
+SELECTED_OUTPUT
+    -file   mixing_heating.sel
+    -reset  false
+    -temperature true
+    -equilibrium_phases Calcite
+
+END

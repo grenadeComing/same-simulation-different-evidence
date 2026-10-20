@@ -1,0 +1,26 @@
+SOLUTION 1
+    temp 25
+    pH 7
+    units mol/kgw
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    O2(g) -0.7
+
+REACTION 1
+    Pyrite 1
+    0.1
+
+EQUILIBRIUM_PHASES 1
+    Goethite 0 0
+    Gypsum 0 0
+
+SELECTED_OUTPUT
+    -file pyrite_ox3.sel
+    -reset false
+USER_PUNCH
+    -headings pe pH
+10 PUNCH PE, -LA("H+")
+END

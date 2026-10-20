@@ -1,0 +1,18 @@
+TITLE Sulfuric acid titration pe question
+SOLUTION 1 Pure water pH 7 charge
+    temp 25
+    pH 7.0
+
+REACTION 1
+    H2SO4 1.0
+    0.001 0.005 0.01 0.05 0.1 moles
+
+USE solution 1
+USE reaction 1
+
+SELECTED_OUTPUT
+    -reset false
+    -step true
+    -pH true
+    -pe true
+END

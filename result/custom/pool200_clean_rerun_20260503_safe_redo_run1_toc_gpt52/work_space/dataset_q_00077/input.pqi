@@ -1,0 +1,18 @@
+TITLE Pure water + fixed-pressure gas phase at 150C
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    pe 4
+    units mol/kgw
+    -water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g) 0.4 10
+    CO2(g) 0.4 10
+    NH3(g) 0.2 5
+SELECTED_OUTPUT
+    -reset false
+    -pH true
+END

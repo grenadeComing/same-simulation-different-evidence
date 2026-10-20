@@ -1,0 +1,15 @@
+TITLE Pyrite oxidation with O2(g), Goethite and Gypsum
+SOLUTION 1
+    temp      25
+    pH        7.0    charge
+    pe        4
+    redox    pe
+    units    mol/kgw
+    density  1
+EQUILIBRIUM_PHASES 1
+    Pyrite   0.0   0.1
+    O2(g)   -0.7   10
+    Goethite  0.0  0
+    Gypsum    0.0  0
+USE solution 1
+END

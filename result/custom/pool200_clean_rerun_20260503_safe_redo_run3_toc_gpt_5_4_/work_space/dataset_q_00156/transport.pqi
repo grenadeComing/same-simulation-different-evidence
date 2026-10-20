@@ -1,0 +1,28 @@
+SOLUTION 0
+    pH 7.0
+    temp 25
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10
+    pH 7.0
+    temp 25
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X 0.001
+EQUILIBRIUM_PHASES 1-10
+    Calcite 0 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -step true
+USER_PUNCH
+    -headings NaX4
+10 PUNCH MOL("NaX")
+END

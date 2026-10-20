@@ -1,0 +1,27 @@
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+END
+
+EQUILIBRIUM_PHASES 1
+    Aragonite 0 10
+    Gypsum 0 10
+END
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    CO2(g) 1
+    CH4(g) 5
+    H2S(g) 10
+END
+
+USE solution 1
+USE equilibrium_phases 1
+USE gas_phase 1
+SELECTED_OUTPUT
+    -file selected.out
+    -pH true
+END

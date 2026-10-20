@@ -1,0 +1,39 @@
+SOLUTION 0
+    pH 7.0
+    units mol/kgw
+    Ca 1e-3
+    Cl 2e-3
+
+SOLUTION 1-10
+    pH 7.0
+    units mol/kgw
+    Ca 1e-3
+    Cl 2e-3
+
+SOLUTION 11
+    pH 7.0
+    units mol/kgw
+    Na 1e-3
+    Cl 1e-3
+
+EXCHANGE 1-10
+    X- 1e-3
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1 1 1 1 1 1 1 1 1 1
+    -dispersivities 0
+    -correct_disp none
+    -punch_cells 1-10
+    -punch_frequency 1
+
+SELECTED_OUTPUT
+    -file selout4.txt
+    -reset false
+    -time
+    -solution true
+    -totals Na

@@ -1,0 +1,43 @@
+SOLUTION 1
+    temp      200
+    pH        2
+    pe        4
+    units     mmol/kgw
+    Cu        10
+    Ba        5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 1
+
+KINETICS 1
+    Calcite_kin
+        -formula  CaCO3 1
+        -m0      1
+        -parms   10 1.0
+        -steps   100*10
+
+RATES
+Calcite_kin
+    -start
+    10 k = PARM(1)
+    20 ssa = PARM(2)
+    30 m = M
+    40 if (m <= 0) then goto 200
+    50 si = SI("Calcite")
+    60 rate = k * ssa * (1 - 10^si)
+    70 moles = rate * TIME
+    80 if (moles < -m) then moles = -m
+    90 SAVE moles
+    200 END
+    -end
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file witherite_si.txt
+    -reset false
+    -time true
+    -step true
+    -si Witherite
+
+END

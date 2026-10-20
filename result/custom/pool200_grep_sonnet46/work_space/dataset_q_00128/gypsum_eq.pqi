@@ -1,0 +1,16 @@
+SOLUTION 1
+    pH 7.0
+    temp 25.0
+    pe 4.0
+    units mol/L
+
+EQUILIBRIUM_PHASES 1
+    Gypsum 0.0 10.0
+
+SELECTED_OUTPUT
+    -file gypsum_eq.sel
+    -pe true
+    -pH true
+    -si Gypsum
+
+END

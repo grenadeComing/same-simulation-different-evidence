@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 0.01
+    Ba 0.005
+
+KINETICS 1
+    Calcite 1
+    -m0 1
+    -parms 10 1.0
+    -steps 1000 in 100 steps
+    -cvode false
+
+RATES
+Calcite
+-start
+10 rem parameters: k (1/s), SA (m2)
+20 k = PARM(1)
+30 SA = PARM(2)
+40 rate = k * SA
+50 moles = rate * (TIME - TIME_PREV)
+60 SAVE moles
+-end
+
+SELECTED_OUTPUT
+    -file calcite_cu_ba_kinetics.sel
+    -reset false
+    -time true
+    -si Witherite
+END

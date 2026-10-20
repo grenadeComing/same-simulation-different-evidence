@@ -1,0 +1,31 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    Cu 10e-3
+    Ba 5e-3
+
+KINETICS 1
+    Calcite
+        -formula CaCO3 1
+        -m0 1.0
+        -m    1.0
+        -parms 10 1.0
+        -steps 10*100
+        -cvode
+
+RATES
+Calcite
+-start
+10 rate_const = PARM(1)
+20 surf_area = PARM(2)
+30 moles = rate_const * surf_area * TIME
+40 SAVE moles
+-end
+
+SELECTED_OUTPUT
+    -file selout.txt
+    -reset false
+    -time true
+    -step true
+    -pH true

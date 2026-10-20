@@ -1,0 +1,43 @@
+TITLE 1D transport with exchange, 10 cells, 10 shifts; query Na in solution 1 at step 5
+
+SOLUTION 0  Initial solution (for cells)
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+
+SOLUTION 1-10
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+
+SOLUTION 11  Influent solution
+    pH      7.0
+    Na      1.0
+    Cl      1.0
+
+EXCHANGE 1-10
+    X- 0.001
+
+# Equilibrate exchanger with initial solution in each cell
+EQUILIBRATE 1-10 with_solution 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -initial_time 0
+    -punch_cells 1
+    -print_cells 1
+
+SELECTED_OUTPUT
+    -file na_sel.txt
+    -reset false
+    -high_precision true
+
+USER_PUNCH
+    -headings Step Na_cell1
+10 PUNCH SIM_NO, TOT("Na")
+
+END

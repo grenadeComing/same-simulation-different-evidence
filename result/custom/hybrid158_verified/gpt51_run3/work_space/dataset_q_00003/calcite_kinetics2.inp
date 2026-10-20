@@ -1,0 +1,33 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 10e-3
+    Ba 5e-3
+    units mol/kgw
+
+KINETICS 1
+    Calcite_kin
+        -formula CaCO3 1
+        -m0 1
+        -parms 1.0 10.0
+        -steps 100*10
+        -cvode
+
+RATES
+Calcite_kin
+    -start
+    10 REM parms: SA, k
+    20 SA = PARM(1)
+    30 k = PARM(2)
+    40 rate = k * SA
+    50 moles = rate * (TIME - TIME_OLD)
+    60 SAVE moles
+    -end
+
+SELECTED_OUTPUT
+    -reset false
+    -time true
+    -pH true
+
+END

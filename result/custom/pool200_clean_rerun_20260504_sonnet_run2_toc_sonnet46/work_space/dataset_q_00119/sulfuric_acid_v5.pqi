@@ -1,0 +1,71 @@
+TITLE Stepwise addition of H2SO4 to pure water at pH 7.0 - test different pe values
+
+# Test with pe = 4.0 fixed (not adjusted)
+SOLUTION 1
+    temp      25
+    pH        7.0
+    pe        4.0
+    units     mol/L
+    water     1.0 # kg
+
+# Step 1: Add 0.001 mol H2SO4
+REACTION 1
+    H2SO4     1.0
+    0.001 moles
+
+SAVE SOLUTION 1
+
+END
+
+# Step 2: Add 0.005 mol H2SO4
+USE SOLUTION 1
+REACTION 2
+    H2SO4     1.0
+    0.005 moles
+
+SAVE SOLUTION 1
+
+END
+
+# Step 3: Add 0.01 mol H2SO4
+USE SOLUTION 1
+REACTION 3
+    H2SO4     1.0
+    0.01 moles
+
+SAVE SOLUTION 1
+
+END
+
+# Step 4: Add 0.05 mol H2SO4
+USE SOLUTION 1
+REACTION 4
+    H2SO4     1.0
+    0.05 moles
+
+SAVE SOLUTION 1
+
+END
+
+# Step 5: Add 0.1 mol H2SO4
+USE SOLUTION 1
+REACTION 5
+    H2SO4     1.0
+    0.1 moles
+
+SAVE SOLUTION 1
+
+END
+
+# Final: report saturation indices for the final solution
+# Use EQUILIBRIUM_PHASES to force equilibrium with H2(g) at 0 atm
+USE SOLUTION 1
+
+EQUILIBRIUM_PHASES 1
+    H2(g)    0.0   0.0
+
+PRINT
+    -reset false
+    -saturation_indices true
+
+END

@@ -1,0 +1,38 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 1
+
+KINETICS 1
+    Calcite
+        -formula CaCO3 1
+        -m0 1
+        -parms 10 1.0
+        -steps 100*10
+
+RATES
+    Calcite
+    -start
+    10 k = PARM(1)
+    20 ssa = PARM(2)
+    30 rate = k * ssa
+    40 moles = rate * TIME
+    50 if (moles >= M0) then moles = M0
+    60 SAVE moles
+    -end
+
+SELECTED_OUTPUT
+    -file q16.sel
+    -reset false
+    -time true
+    -step true
+    -totals C(4) Cu(2)
+
+END

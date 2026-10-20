@@ -1,0 +1,15 @@
+
+SOLUTION 1
+    temp 200
+    pH 2
+    Fe(2) 4 mmol/kgw
+    Fe(3) 4 mmol/kgw
+    Cl 1.0 charge
+    units mmol/kgw
+
+SELECTED_OUTPUT
+    -file initial_state.sel
+    -reset false
+    -ionic_strength true
+
+END

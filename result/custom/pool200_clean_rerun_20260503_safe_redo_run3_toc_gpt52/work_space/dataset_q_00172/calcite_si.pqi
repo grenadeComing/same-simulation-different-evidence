@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 25
+    pH 7
+    Ca 0.01
+    Sr 0.01
+    Alkalinity 0.04
+
+SOLID_SOLUTION 1 Ca_Sr_carbonate
+    -comp Calcite 0.0
+    -comp Strontianite 0.0
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -si Calcite
+END

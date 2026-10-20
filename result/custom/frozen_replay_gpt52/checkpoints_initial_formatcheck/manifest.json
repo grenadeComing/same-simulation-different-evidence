@@ -1,0 +1,1363 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-12T05:19:07.823132+00:00",
+  "status": "complete",
+  "source_dir": "/workspace/artifact/result/custom/raw100k_repeat_gpt52",
+  "model": "gpt-5.2",
+  "all_numeric_item_ids": [
+    2,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    17,
+    18,
+    19,
+    21,
+    24,
+    25,
+    27,
+    28,
+    29,
+    30,
+    31,
+    33,
+    35,
+    36,
+    38,
+    39,
+    40,
+    41,
+    43,
+    44,
+    45,
+    47,
+    49,
+    50,
+    55,
+    57,
+    58,
+    59,
+    62,
+    65,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    77,
+    79,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    93,
+    94,
+    95,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    116,
+    117,
+    120,
+    121,
+    122,
+    123,
+    124,
+    126,
+    127,
+    129,
+    131,
+    132,
+    134,
+    135,
+    137,
+    139,
+    141,
+    142,
+    143,
+    144,
+    146,
+    147,
+    148,
+    149,
+    150,
+    152,
+    154,
+    155,
+    156,
+    157,
+    158,
+    161,
+    162,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    187,
+    188,
+    189,
+    190,
+    191,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200
+  ],
+  "requested_item_ids": [
+    2,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    17,
+    18,
+    19,
+    21,
+    24,
+    25,
+    27,
+    28,
+    29,
+    30,
+    31,
+    33,
+    35,
+    36,
+    38,
+    39,
+    40,
+    41,
+    43,
+    44,
+    45,
+    47,
+    49,
+    50,
+    55,
+    57,
+    58,
+    59,
+    62,
+    65,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    77,
+    79,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    93,
+    94,
+    95,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    116,
+    117,
+    120,
+    121,
+    122,
+    123,
+    124,
+    126,
+    127,
+    129,
+    131,
+    132,
+    134,
+    135,
+    137,
+    139,
+    141,
+    142,
+    143,
+    144,
+    146,
+    147,
+    148,
+    149,
+    150,
+    152,
+    154,
+    155,
+    156,
+    157,
+    158,
+    161,
+    162,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    187,
+    188,
+    189,
+    190,
+    191,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200
+  ],
+  "eligible": [
+    {
+      "item_id": 2,
+      "checkpoint": "item_00002/checkpoint.json",
+      "execute_step": 10,
+      "remaining_steps": 14,
+      "report_chars": 14740,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 7,
+      "checkpoint": "item_00007/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 479766,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 9,
+      "checkpoint": "item_00009/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 15644,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 10,
+      "checkpoint": "item_00010/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 680466,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 11,
+      "checkpoint": "item_00011/checkpoint.json",
+      "execute_step": 12,
+      "remaining_steps": 12,
+      "report_chars": 680269,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 12,
+      "checkpoint": "item_00012/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 19251,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 13,
+      "checkpoint": "item_00013/checkpoint.json",
+      "execute_step": 8,
+      "remaining_steps": 16,
+      "report_chars": 680182,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 14,
+      "checkpoint": "item_00014/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 681597,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 17,
+      "checkpoint": "item_00017/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 783112,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 18,
+      "checkpoint": "item_00018/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 837636,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 19,
+      "checkpoint": "item_00019/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 21666,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 21,
+      "checkpoint": "item_00021/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 837497,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 24,
+      "checkpoint": "item_00024/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 21661,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 25,
+      "checkpoint": "item_00025/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 837645,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 29,
+      "checkpoint": "item_00029/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 48021,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 30,
+      "checkpoint": "item_00030/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 47909,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 33,
+      "checkpoint": "item_00033/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 47696,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 35,
+      "checkpoint": "item_00035/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 47930,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 36,
+      "checkpoint": "item_00036/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 47989,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 38,
+      "checkpoint": "item_00038/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 9970,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 39,
+      "checkpoint": "item_00039/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 9775,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 40,
+      "checkpoint": "item_00040/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 9813,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 41,
+      "checkpoint": "item_00041/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 9811,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 43,
+      "checkpoint": "item_00043/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 10013,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 44,
+      "checkpoint": "item_00044/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 10046,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 45,
+      "checkpoint": "item_00045/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 9988,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 50,
+      "checkpoint": "item_00050/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 17422,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 55,
+      "checkpoint": "item_00055/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 17242,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 57,
+      "checkpoint": "item_00057/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 11350,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 58,
+      "checkpoint": "item_00058/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 11537,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 62,
+      "checkpoint": "item_00062/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 11475,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 65,
+      "checkpoint": "item_00065/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 11459,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 67,
+      "checkpoint": "item_00067/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 9744,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 68,
+      "checkpoint": "item_00068/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 9750,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 69,
+      "checkpoint": "item_00069/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 9790,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 71,
+      "checkpoint": "item_00071/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 9796,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 73,
+      "checkpoint": "item_00073/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 9811,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 75,
+      "checkpoint": "item_00075/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 9628,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 79,
+      "checkpoint": "item_00079/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 8252,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 82,
+      "checkpoint": "item_00082/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 8031,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 87,
+      "checkpoint": "item_00087/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7175,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 88,
+      "checkpoint": "item_00088/checkpoint.json",
+      "execute_step": 8,
+      "remaining_steps": 16,
+      "report_chars": 7185,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 91,
+      "checkpoint": "item_00091/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 7129,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 93,
+      "checkpoint": "item_00093/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7085,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 94,
+      "checkpoint": "item_00094/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7062,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 95,
+      "checkpoint": "item_00095/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7245,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 97,
+      "checkpoint": "item_00097/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 4663,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 98,
+      "checkpoint": "item_00098/checkpoint.json",
+      "execute_step": 2,
+      "remaining_steps": 22,
+      "report_chars": 4479,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 99,
+      "checkpoint": "item_00099/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 4661,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 100,
+      "checkpoint": "item_00100/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 4489,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 102,
+      "checkpoint": "item_00102/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 4425,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 103,
+      "checkpoint": "item_00103/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 4444,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 104,
+      "checkpoint": "item_00104/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 4656,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 105,
+      "checkpoint": "item_00105/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 4463,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 106,
+      "checkpoint": "item_00106/checkpoint.json",
+      "execute_step": 2,
+      "remaining_steps": 22,
+      "report_chars": 8662,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 107,
+      "checkpoint": "item_00107/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 8749,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 109,
+      "checkpoint": "item_00109/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 8794,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 110,
+      "checkpoint": "item_00110/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 8812,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 111,
+      "checkpoint": "item_00111/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 8945,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 112,
+      "checkpoint": "item_00112/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 8687,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 114,
+      "checkpoint": "item_00114/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 8751,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 116,
+      "checkpoint": "item_00116/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 19862,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 117,
+      "checkpoint": "item_00117/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 19934,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 120,
+      "checkpoint": "item_00120/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 19791,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 121,
+      "checkpoint": "item_00121/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 19872,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 122,
+      "checkpoint": "item_00122/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 19865,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 123,
+      "checkpoint": "item_00123/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 19748,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 124,
+      "checkpoint": "item_00124/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 19704,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 126,
+      "checkpoint": "item_00126/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7322,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 127,
+      "checkpoint": "item_00127/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7388,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 129,
+      "checkpoint": "item_00129/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7327,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 131,
+      "checkpoint": "item_00131/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7387,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 132,
+      "checkpoint": "item_00132/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7320,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 134,
+      "checkpoint": "item_00134/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7316,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 135,
+      "checkpoint": "item_00135/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 6688,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 137,
+      "checkpoint": "item_00137/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 6689,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 139,
+      "checkpoint": "item_00139/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 6741,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 141,
+      "checkpoint": "item_00141/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 6730,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 142,
+      "checkpoint": "item_00142/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 6733,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 143,
+      "checkpoint": "item_00143/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 6761,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 144,
+      "checkpoint": "item_00144/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 45354,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 146,
+      "checkpoint": "item_00146/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 47631,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 147,
+      "checkpoint": "item_00147/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 47649,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 148,
+      "checkpoint": "item_00148/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 50158,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 149,
+      "checkpoint": "item_00149/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 363809,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 150,
+      "checkpoint": "item_00150/checkpoint.json",
+      "execute_step": 11,
+      "remaining_steps": 13,
+      "report_chars": 369339,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 152,
+      "checkpoint": "item_00152/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 450279,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 155,
+      "checkpoint": "item_00155/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 49963,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 156,
+      "checkpoint": "item_00156/checkpoint.json",
+      "execute_step": 10,
+      "remaining_steps": 14,
+      "report_chars": 18299,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 157,
+      "checkpoint": "item_00157/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 369219,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 158,
+      "checkpoint": "item_00158/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 449626,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 161,
+      "checkpoint": "item_00161/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 456345,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 162,
+      "checkpoint": "item_00162/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 369338,
+      "inline_truncated": true
+    },
+    {
+      "item_id": 173,
+      "checkpoint": "item_00173/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 21037,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 174,
+      "checkpoint": "item_00174/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 21007,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 175,
+      "checkpoint": "item_00175/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 20943,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 177,
+      "checkpoint": "item_00177/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 20946,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 178,
+      "checkpoint": "item_00178/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 21031,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 179,
+      "checkpoint": "item_00179/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 21008,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 181,
+      "checkpoint": "item_00181/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 20940,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 182,
+      "checkpoint": "item_00182/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7220,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 183,
+      "checkpoint": "item_00183/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7227,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 184,
+      "checkpoint": "item_00184/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7220,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 187,
+      "checkpoint": "item_00187/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7203,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 188,
+      "checkpoint": "item_00188/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7218,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 189,
+      "checkpoint": "item_00189/checkpoint.json",
+      "execute_step": 6,
+      "remaining_steps": 18,
+      "report_chars": 7189,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 190,
+      "checkpoint": "item_00190/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 7185,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 191,
+      "checkpoint": "item_00191/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 15889,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 195,
+      "checkpoint": "item_00195/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 15915,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 196,
+      "checkpoint": "item_00196/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 15839,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 197,
+      "checkpoint": "item_00197/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 15869,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 198,
+      "checkpoint": "item_00198/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 15830,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 199,
+      "checkpoint": "item_00199/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 15830,
+      "inline_truncated": false
+    },
+    {
+      "item_id": 200,
+      "checkpoint": "item_00200/checkpoint.json",
+      "execute_step": 4,
+      "remaining_steps": 20,
+      "report_chars": 15919,
+      "inline_truncated": false
+    }
+  ],
+  "excluded": [
+    {
+      "item_id": 27,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    },
+    {
+      "item_id": 28,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    },
+    {
+      "item_id": 31,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    },
+    {
+      "item_id": 47,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    },
+    {
+      "item_id": 49,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    },
+    {
+      "item_id": 59,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    },
+    {
+      "item_id": 70,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    },
+    {
+      "item_id": 74,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    },
+    {
+      "item_id": 77,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    },
+    {
+      "item_id": 83,
+      "reason": "no_successful_execute",
+      "detail": "no_successful_execute"
+    },
+    {
+      "item_id": 84,
+      "reason": "no_successful_execute",
+      "detail": "no_successful_execute"
+    },
+    {
+      "item_id": 85,
+      "reason": "no_successful_execute",
+      "detail": "no_successful_execute"
+    },
+    {
+      "item_id": 86,
+      "reason": "no_successful_execute",
+      "detail": "no_successful_execute"
+    },
+    {
+      "item_id": 89,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    },
+    {
+      "item_id": 90,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    },
+    {
+      "item_id": 101,
+      "reason": "no_successful_execute",
+      "detail": "no_successful_execute"
+    },
+    {
+      "item_id": 113,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    },
+    {
+      "item_id": 154,
+      "reason": "no_successful_execute",
+      "detail": "no_successful_execute"
+    },
+    {
+      "item_id": 176,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 6: recorded untruncated report differs"
+    },
+    {
+      "item_id": 180,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 6: recorded untruncated report differs"
+    },
+    {
+      "item_id": 185,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    },
+    {
+      "item_id": 193,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    },
+    {
+      "item_id": 194,
+      "reason": "reexecution_report_mismatch",
+      "detail": "step 4: recorded untruncated report differs"
+    }
+  ],
+  "max_full_chars": 100000,
+  "toc_policy": "section TOC built at every report size; at most 50 entries plus omission marker",
+  "selection_policy": "first logged successful execute in the prespecified source; no prediction/correctness/value-match filter",
+  "files": {
+    "source_summary": {
+      "path": "/workspace/artifact/result/custom/raw100k_repeat_gpt52/summary.json",
+      "sha256": "0ab6fc115c43699cb934099ed3bb20e6304831dbd60a6f50de05b4c844901bce"
+    },
+    "source_dataset": {
+      "path": "/workspace/artifact/datasets/dataset_200_clean.jsonl",
+      "sha256": "eee19ade89350ed500b6438174599e1e9c13ddb6f598fd80b8cab0dff4f27549"
+    },
+    "verified_dataset": {
+      "path": "/workspace/artifact/datasets/dataset_158_verified.jsonl",
+      "sha256": "2ddbcdbff1f4a0fec69e52030d9ae708524d194a4ecf06eaca58ce3deecb2faf"
+    },
+    "numeric_items": {
+      "path": "/workspace/artifact/analysis/mechanism/auto/items.json",
+      "sha256": "ffae6f4c485f23bde1773dac87b22c270faa90a8338b5c143bfea28adc9aee8e"
+    },
+    "phreeqc_binary": {
+      "path": "/workspace/phreeqc-3.8.6-17100/src/phreeqc",
+      "sha256": "6d6891286e6f4be00a152951e151515cb950210698696b919bb4c4116ef5e638"
+    },
+    "database": {
+      "path": "/workspace/artifact/phreeqc.dat",
+      "sha256": "9a8230260463041cec921d08b217640422089700b43d56b7da36f6c85ccd38c7"
+    },
+    "database_reference": {
+      "path": "/workspace/artifact/archive_acm_2026/all_materials/database_reference.txt",
+      "sha256": "fcfec642f8a232e609998140455f2a80bf202bfd688ef22e08de637fe058615a"
+    }
+  },
+  "limitations": [
+    "Visible history is reconstructed; hidden provider reasoning state is unavailable.",
+    "Earlier failed executions and their visible results remain in the common prefix.",
+    "Checkpoints condition on a successful execution in one prespecified source protocol.",
+    "Inline reports exceeding max_full_chars are truncated; analyze the fits-inline subset separately.",
+    "No original log files or post-checkpoint files are copied into the snapshot."
+  ],
+  "counts": {
+    "all_numeric": 137,
+    "requested": 137,
+    "eligible": 114,
+    "excluded": 23
+  },
+  "completed_at": "2026-10-12T05:19:10.030428+00:00"
+}

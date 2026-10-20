@@ -1,0 +1,33 @@
+SOLUTION 0
+    pH 7
+    Na 1
+    Cl 1
+    units mmol/kgw
+
+SOLUTION 1-10
+    pH 7
+    Ca 1
+    Cl 2
+    units mmol/kgw
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1
+    -time_step 1
+    -punch_cells 4
+    -punch_frequency 10
+
+SELECTED_OUTPUT
+    -file solution_4_final.sel
+    -reset false
+    -high_precision true
+    -step
+    -pH
+    -molalities HCl
+    -activities HCl
+END

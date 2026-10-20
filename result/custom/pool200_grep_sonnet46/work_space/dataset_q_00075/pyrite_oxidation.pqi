@@ -1,0 +1,27 @@
+TITLE Pyrite Oxidation in Pure Water at 25C
+
+SOLUTION 1
+    temp      25
+    pH        7.0
+    pe        4.0
+    redox     pe
+    units     mol/kgw
+    density   1.0
+    water     1.0  # kg
+
+EQUILIBRIUM_PHASES 1
+    Pyrite        0.0   0.1   # allow up to 0.1 mol to dissolve
+    O2(g)        -0.7   10.0  # constant atmospheric O2 source
+    Goethite      0.0   0.0   # allow precipitation
+    Gypsum        0.0   0.0   # allow precipitation
+
+SELECTED_OUTPUT
+    -file         pyrite_oxidation.sel
+    -reset        false
+    -pH           true
+    -pe           true
+    -totals       S(6) Fe S Ca
+    -equilibrium_phases  Pyrite Goethite Gypsum O2(g)
+    -molalities   SO4-2 Fe+2 Fe+3
+
+END

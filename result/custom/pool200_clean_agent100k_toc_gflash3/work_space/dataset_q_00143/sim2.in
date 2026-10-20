@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 25
+    pH 9
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10.0
+SELECTED_OUTPUT 1
+    -file punch2.sel
+    -reset false
+USER_PUNCH 1
+    -headings logIAP
+    10 PUNCH SI("CO2(g)") + LK_PHASE("CO2(g)")
+END

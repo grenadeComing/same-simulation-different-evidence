@@ -1,0 +1,29 @@
+TITLE Evaporation with equilibrium phases
+SOLUTION 1
+    temp 25
+    pH   8.0
+    units ppm
+    Ca   50
+    Mg   12
+    Na   20
+    K    2
+    Alkalinity 150 as CaCO3
+    S(6) 40
+    Cl   15
+    -water 55.51  # 1 kg water
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Gypsum  0 0
+    Halite  0 0
+
+REACTION 1
+    H2O -50.0
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+USER_PUNCH
+    -headings Ca_m
+    10 PUNCH MOL("Ca+2")
+END

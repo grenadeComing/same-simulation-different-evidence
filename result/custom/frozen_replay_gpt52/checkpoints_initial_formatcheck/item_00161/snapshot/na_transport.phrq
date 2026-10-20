@@ -1,0 +1,39 @@
+TITLE 1D transport: Ca-Cl initial, Na-Cl inflow, cation exchange
+
+SOLUTION 1-10 Initial
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 0 Inflow
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+
+# equilibrate exchange with initial solution in each cell
+EQUILIBRIUM_PHASES 1-10
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -time_step 1
+    -lengths 1
+    -dispersivities 0
+    -correct_disp true
+    -punch_cells 3
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -step true
+    -simulation true
+    -state true
+    -solution true
+    -totals Na Ca Cl
+    -activities Na+
+END

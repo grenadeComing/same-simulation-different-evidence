@@ -1,0 +1,13 @@
+USER_PRINT
+10 t = SYS("species", count, names, types, moles)
+20 FOR i = 1 TO count
+30   IF (INSTR(names(i), "Ca") > 0) THEN PRINT names(i)
+40 NEXT i
+END
+SOLUTION 1
+    units mmol/kgw
+    Ca 50
+    Cl 100
+    C(4) 50
+    Na 50
+END

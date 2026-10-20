@@ -1,0 +1,39 @@
+{
+  "model": "gpt-5.1",
+  "method": "custom_agent_toc_round",
+  "context_mode": "toc_round",
+  "dataset": "dataset_158_verified.jsonl",
+  "run_name": "report158_verified/gpt51_tocround_run2",
+  "max_steps": 24,
+  "workers": 4,
+  "task_filter": "all",
+  "start_index": null,
+  "end_index": null,
+  "started_at": "2026-10-11T15:45:46-07:00",
+  "ended_at": "2026-10-11T16:02:25-07:00",
+  "elapsed_seconds": 999.048,
+  "seconds_per_row": 6.323,
+  "total_rows": 158,
+  "graded_rows": 148,
+  "ungraded_rows": 10,
+  "correct_rows": 91,
+  "error_rows": 1,
+  "accuracy": 0.5759493670886076,
+  "graded_accuracy": 0.6148648648648649,
+  "by_task_type": {
+    "mcq": {
+      "total": 158,
+      "correct": 91,
+      "graded": 148,
+      "ungraded": 10,
+      "errors": 1,
+      "accuracy": 0.5759493670886076,
+      "graded_accuracy": 0.6148648648648649
+    }
+  },
+  "total_input_tokens": 6508512,
+  "total_output_tokens": 74684,
+  "agent_input_tokens": 6508512,
+  "agent_output_tokens": 74684,
+  "aux_by_source": {}
+}

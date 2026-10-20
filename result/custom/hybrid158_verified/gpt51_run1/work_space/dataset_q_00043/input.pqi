@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 100
+    pH 3 charge
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    Muscovite 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+SELECTED_OUTPUT
+    -reset false
+    -totals Fe(2) Fe(3)
+    -molalities Fe(2) Fe(3)
+END

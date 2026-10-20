@@ -1,0 +1,39 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    Cu 0.01
+    Ba 0.005
+    units mol/kgw
+
+EQUILIBRIUM_PHASES 1
+    Fix_H+ 0 2
+
+KINETICS 1
+    Calcite
+        -formula CaCO3 1
+        -m0 1
+        -parms 10 1.0
+        -steps 100*10
+        -bad_step_max 100
+        -cvode
+
+RATES
+    Calcite
+    -start
+        10 REM Parameters: k (rate constant), s (surface area)
+        20 k = PARM(1)
+        30 s = PARM(2)
+        40 m = MOL("Calcite")
+        50 rate = k * s
+        60 moles = rate * TIME
+    -end
+
+SELECTED_OUTPUT
+    -file calcite_kinetics2.sel
+    -reset false
+    -time true
+    -step true
+    -alkalinity true
+
+END

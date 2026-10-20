@@ -1,0 +1,9 @@
+SOLUTION 1
+    pH 7.0
+    temp 25
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10.0
+USER_PRINT
+    10 PRINT "Log K CO2(g): ", LK_PHASE("CO2(g)")
+    20 PRINT "Log K1: ", LK_SPECIES("HCO3-")
+END

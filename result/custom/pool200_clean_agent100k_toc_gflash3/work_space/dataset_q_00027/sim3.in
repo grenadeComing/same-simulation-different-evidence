@@ -1,0 +1,8 @@
+SOLUTION 1
+    temp 20
+    units mmol/kgw
+    Na 50
+    Cl 50
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+END

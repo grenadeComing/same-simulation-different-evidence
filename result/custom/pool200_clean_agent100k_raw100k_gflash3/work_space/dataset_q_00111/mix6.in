@@ -1,0 +1,19 @@
+SOLUTION 1 River
+    pH 6.0
+    units mg/L
+    Cl 10
+    Na 10 charge
+SOLUTION 2 Seawater
+    pH 8.1
+    units mg/L
+    Na 10760
+    Mg 1292
+    Ca 412
+    K 399
+    Cl 19000
+    S(6) 2712
+    Alkalinity 142
+MIX 1
+    1 0.7
+    2 0.3
+END

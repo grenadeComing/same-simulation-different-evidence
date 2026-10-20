@@ -1,0 +1,10 @@
+TITLE Sulfuric acid titration question
+SOLUTION 1 Pure water
+    pH 7 charge
+
+REACTION 1
+    H2SO4 1.0
+    0.001 5e-3 1e-2 5e-2 0.1 moles
+
+USE solution 1
+END

@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    units mmol/kgw
+    density 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -temperature true
+USER_PUNCH
+    -headings sc
+    -start
+    10 PUNCH SC
+    -end
+END

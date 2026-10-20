@@ -1,0 +1,21 @@
+DATABASE wateq4f.dat
+SOLUTION 1
+    temp 25
+    pH 7.0
+    water 1
+EQUILIBRIUM_PHASES 1
+    O2(g) -0.7
+    Goethite 0 0
+    Gypsum 0 0
+REACTION 1
+    Pyrite 1.0
+    0.1 moles
+SELECTED_OUTPUT 1
+    -file result_wateq.sel
+    -reset false
+    -user_punch true
+    -high_precision true
+USER_PUNCH 1
+    -head sc
+    10 PUNCH SC
+END

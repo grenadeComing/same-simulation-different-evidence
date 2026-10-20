@@ -1,0 +1,13 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    Mg 1
+    Si 1
+USER_PUNCH 1
+    -headings logK_Chrys
+    10 PUNCH LK_PHASE("Chrysotile")
+SELECTED_OUTPUT 1
+    -file logk_out.txt
+    -user_punch true
+    -reset false
+END

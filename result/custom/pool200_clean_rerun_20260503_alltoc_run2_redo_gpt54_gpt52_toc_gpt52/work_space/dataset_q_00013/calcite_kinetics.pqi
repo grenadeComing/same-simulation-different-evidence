@@ -1,0 +1,31 @@
+TITLE Calcite kinetics at 200C, pH2; Cu and Ba; 1000 s in 100 equal steps; report pH at step 10
+
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    -water 1
+    Cu 10
+    Ba 5
+
+KNOBS
+    -iterations 500
+    -convergence_tolerance 1e-12
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0 10.0
+        -time 1000 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -file calcite_sel.txt
+    -reset false
+    -step true
+    -time true
+    -pH true
+
+END

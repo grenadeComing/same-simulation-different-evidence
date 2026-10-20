@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    redox pe
+    water 1
+    C(4) 1e-20
+    C(-4) 1e-20
+    N(-3) 1e-20
+EQUILIBRIUM_PHASES 1
+    CO2(g) -1.0 10
+    CH4(g) -1.0 10
+    NH3(g) -1.0 5
+END

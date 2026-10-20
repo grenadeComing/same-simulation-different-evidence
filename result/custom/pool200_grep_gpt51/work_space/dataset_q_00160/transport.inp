@@ -1,0 +1,40 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -length 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+    -initial_time 0
+    -dump dump
+    -dump_frequency 10
+
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -solution true
+    -state true
+    -equilibrium_phases true
+    -dist true
+    -totals H(0)
+    -molalities H2(aq)
+
+END

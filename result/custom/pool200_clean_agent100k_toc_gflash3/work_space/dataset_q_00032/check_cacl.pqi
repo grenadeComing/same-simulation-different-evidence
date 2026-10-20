@@ -1,0 +1,7 @@
+SOLUTION 1
+    units mmol/kgw
+    Ca 50
+    Cl 100
+SELECTED_OUTPUT 1
+    -molalities CaCl+
+END

@@ -1,0 +1,50 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(2) 4e-3
+    Fe(3) 4e-3
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    -temperature 200
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1.0
+        -parms 10 1.0
+        -steps 10*1 90*10
+        -cvode false
+
+RATES
+    Albite
+    -start
+    10 k = PARM(1)
+    20 ssa = PARM(2)
+    30 m = MOL("Albite")
+    40 if (m <= 0) then goto 200
+    50 rate = k*ssa
+    60 moles = rate * TIME
+    70 SAVE moles
+    200 END
+    -end
+
+PHASES
+    Albite
+        NaAlSi3O8 = Na+ + Al+3 + 3 SiO2(aq)
+
+SELECTED_OUTPUT
+    -reset false
+    -time true
+    -step true
+    -totals Ba
+
+USER_PUNCH
+    -start
+    10 PUNCH STEP_NO, TOT("Ba")
+    -end
+
+RUN_CELLS
+    -cells 1
+    -steps 100

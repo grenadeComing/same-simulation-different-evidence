@@ -1,0 +1,11 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 10 mmol/kgw
+    Ba 5 mmol/kgw
+    Cl 1e-1 charge
+REACTION 1
+    CaCO3 1.0
+    1.0 moles
+END

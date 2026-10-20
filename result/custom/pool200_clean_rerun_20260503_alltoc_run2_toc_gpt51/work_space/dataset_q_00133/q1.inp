@@ -1,0 +1,12 @@
+TITLE Gypsum equilibrium H2 molality
+SOLUTION 1 Pure water pH 7
+    temp 25
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+SELECTED_OUTPUT
+    -file q1.sel
+    -reset false
+    -high_precision true
+    -molalities H2
+END

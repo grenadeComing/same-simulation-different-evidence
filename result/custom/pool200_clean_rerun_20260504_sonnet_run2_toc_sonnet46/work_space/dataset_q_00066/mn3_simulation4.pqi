@@ -1,0 +1,28 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    Ba        100
+
+EQUILIBRIUM_PHASES 1
+    Talc             0  10
+    Rhodochrosite    0  10
+    Sepiolite        0  10
+    Sepiolite(d)     0  10
+    Pb(OH)2          0  10
+
+SELECTED_OUTPUT
+    -file   mn3_output4.sel
+    -reset  false
+    -totals  Mn
+
+USER_PUNCH
+    -headings Mn_3_mol Mn3_tot pe_val
+    -start
+10 PUNCH MOL("Mn+3")
+20 PUNCH TOT("Mn(3)")
+30 PUNCH -LA("e-")
+    -end
+
+END

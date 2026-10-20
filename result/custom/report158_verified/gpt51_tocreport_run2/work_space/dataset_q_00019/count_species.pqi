@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+
+EQUILIBRIUM_PHASES 1
+    SiO2(a) 0 0
+
+PRINT
+    -reset false
+
+USER_PRINT
+10 REM List Si species in solution
+20 FOR i = 1 TO SYS("totals")
+30 S$ = SYS("s_name", i)
+40 IF ELEM$ (S$, "Si") THEN PRINT S$
+50 NEXT i
+60 END

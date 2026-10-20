@@ -1,0 +1,27 @@
+SOLUTION 1
+    temp      200
+    pH        2
+    pe        4.0
+    redox     pe
+    units     mmol/kgw
+    Fe(2)     4
+    Fe(3)     4
+
+EQUILIBRIUM_PHASES 1
+    H2S(g) 0.69897 10.0
+
+KINETICS 1
+    Albite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0  10
+        -tol 1e-8
+
+    -steps 1000 in 100
+
+SELECTED_OUTPUT
+    -file result6.out
+    -saturation_indices Goethite
+    -step
+
+END

@@ -1,0 +1,20 @@
+TITLE Viscosity at transport step 6
+SOLUTION 0 Infilling
+    pH 7.0 charge
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10 Initial
+    pH 7.0 charge
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X 0.001
+END
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -print_cells 1
+    -print_frequency 1
+    -boundary_conditions flux flux
+END

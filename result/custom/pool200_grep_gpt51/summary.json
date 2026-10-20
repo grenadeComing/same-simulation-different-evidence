@@ -1,0 +1,39 @@
+{
+  "model": "gpt-5.1",
+  "method": "custom_agent_grep",
+  "context_mode": "grep",
+  "dataset": "dataset_200_clean.jsonl",
+  "run_name": "pool200_grep_gpt51",
+  "max_steps": 24,
+  "workers": 4,
+  "task_filter": "all",
+  "start_index": null,
+  "end_index": null,
+  "started_at": "2026-07-02T20:05:53-07:00",
+  "ended_at": "2026-07-02T20:27:34-07:00",
+  "elapsed_seconds": 1300.722,
+  "seconds_per_row": 6.504,
+  "total_rows": 200,
+  "graded_rows": 181,
+  "ungraded_rows": 19,
+  "correct_rows": 93,
+  "error_rows": 0,
+  "accuracy": 0.465,
+  "graded_accuracy": 0.5138121546961326,
+  "by_task_type": {
+    "mcq": {
+      "total": 200,
+      "correct": 93,
+      "graded": 181,
+      "ungraded": 19,
+      "errors": 0,
+      "accuracy": 0.465,
+      "graded_accuracy": 0.5138121546961326
+    }
+  },
+  "total_input_tokens": 7109538,
+  "total_output_tokens": 94416,
+  "agent_input_tokens": 7109538,
+  "agent_output_tokens": 94416,
+  "aux_by_source": {}
+}

@@ -1,0 +1,29 @@
+TITLE 1D exchange transport problem
+SOLUTION 0
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X- 0.001
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -length 1
+    -boundary_conditions constant flux
+    -print_cells 8
+    -print_frequency 1
+    -punch_cells 8
+    -punch_frequency 1
+    -flow_direction forward
+    -initial_time 0
+SELECTED_OUTPUT
+    -file exch8.sel
+    -reset false
+USER_PUNCH
+    -head Step CaX2
+    10 PUNCH STEP_NO, MOL("CaX2")

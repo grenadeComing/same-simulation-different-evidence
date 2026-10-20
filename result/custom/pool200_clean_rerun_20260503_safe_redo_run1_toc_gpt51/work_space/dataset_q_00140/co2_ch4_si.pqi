@@ -1,0 +1,16 @@
+SOLUTION 1 Pure water
+    temp 25
+    pH 7.0 charge
+
+EQUILIBRIUM_PHASES 1
+    CO2(g)  -3.4  10
+
+SOLUTION_SPECIES
+    CH4 = CH4
+        log_k     -3.248
+END
+
+SELECTED_OUTPUT
+    -file ch4_si.sel
+    -si CH4(g)
+END

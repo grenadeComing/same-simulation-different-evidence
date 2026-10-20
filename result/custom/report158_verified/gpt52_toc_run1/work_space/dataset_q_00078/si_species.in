@@ -1,0 +1,15 @@
+SOLUTION 1
+  temp 150
+  pH 7 charge
+  units mol/kgw
+  water 1
+EQUILIBRIUM_PHASES 1
+  Chrysotile 0 10
+  Talc 0 10
+SELECTED_OUTPUT
+  -file si_species.sel
+  -reset false
+USER_PUNCH
+  -headings Si_H4SiO4 Si_H3SiO4- Si_H2SiO4-2 Si_HSiO4-3 Si_SiO2
+  10 PUNCH MOL("H4SiO4"), MOL("H3SiO4-"), MOL("H2SiO4-2"), MOL("HSiO4-3"), MOL("SiO2")
+END

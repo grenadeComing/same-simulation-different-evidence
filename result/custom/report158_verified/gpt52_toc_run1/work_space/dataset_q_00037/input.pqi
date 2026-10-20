@@ -1,0 +1,23 @@
+TITLE Equilibrate 50 mmol/kgw Ca solution at 100C with calcite+aragonite+gypsum and gas at 25C
+SOLUTION 1
+    temp 100
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Aragonite 0 0
+    Gypsum 0 0
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 25
+    CO2(g) 1
+    CH4(g) 5
+    H2S(g) 10
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -totals Ca C S(6) S(-2)
+    -alkalinity true
+END

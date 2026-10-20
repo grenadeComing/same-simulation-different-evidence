@@ -1,0 +1,22 @@
+SOLUTION 1
+EQUILIBRIUM_PHASES 1
+    Talc            0 10
+    Rhodochrosite   0 10
+    Sepiolite       0 10
+    Sepiolite(d)    0 10
+    Pb(OH)2         0 10
+    BaCO3(s)        0 0 # Not a real mineral name in phreeqc.dat, but I want to see Ba, C
+END
+# Re-run simulation 1 from before
+SOLUTION 2
+    temp      100
+    pH        5
+    units     mmol/kgw
+    Ba        100
+EQUILIBRIUM_PHASES 2
+    Talc            0 10
+    Rhodochrosite   0 10
+    Sepiolite       0 10
+    Sepiolite(d)    0 10
+    Pb(OH)2         0 10
+END

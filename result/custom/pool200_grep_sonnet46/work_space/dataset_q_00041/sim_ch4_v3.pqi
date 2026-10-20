@@ -1,0 +1,19 @@
+SOLUTION 1
+    temp      100
+    pH        7 charge
+    Ca        50 mmol/kgw
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0 10
+    Gypsum    0 10
+    Aragonite 0 10
+    CO2(g)    0.0 10
+    CH4(g)    log(5) 10
+    H2S(g)    log(10) 10
+
+SELECTED_OUTPUT
+    -file     sim_ch4_v3.out
+    -reset    false
+    -equilibrium_phases Calcite Gypsum Aragonite CO2(g) CH4(g) H2S(g)
+
+END

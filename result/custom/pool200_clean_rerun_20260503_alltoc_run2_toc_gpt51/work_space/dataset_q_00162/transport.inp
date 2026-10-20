@@ -1,0 +1,46 @@
+TITLE Transport alkalinity problem
+
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+    units mmol/kgw
+
+SOLUTION 1
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+    units mmol/kgw
+
+SOLUTION 2-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+    units mmol/kgw
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+    units mmol/kgw
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -flow_direction forward
+    -boundary_conditions flux
+    -initial_time 0
+    -print_cells 3
+    -print_frequency 1
+    -punch_cells 3
+    -punch_frequency 1
+
+USER_PUNCH
+    -head Alkalinity
+    10 PUNCH TOT("Alkalinity")

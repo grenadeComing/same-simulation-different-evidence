@@ -1,0 +1,34 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 10
+    Ba 5
+    units mmol/kgw
+
+RATES
+    Calcite
+    -start
+    10 k = 10
+    20 area = 1.0 * (M/M0)^0.67
+    30 rate = k * area * (1 - SR("Calcite"))
+    40 save rate
+    -end
+
+KINETICS 1
+    Calcite
+    -m 1.0
+    -m0 1.0
+    -parms 1.0 10
+    -steps 1000 in 100
+    -step_divide 1
+
+SELECTED_OUTPUT
+    -file solution_output.sel
+    -reset false
+    -step
+    -si Witherite Calcite
+    -isotopes false
+    -high_precision true
+
+END

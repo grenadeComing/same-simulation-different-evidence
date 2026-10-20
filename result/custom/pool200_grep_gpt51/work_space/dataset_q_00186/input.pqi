@@ -1,0 +1,13 @@
+SOLUTION 1
+    temp 15
+    C(-4) 5e-3
+EQUILIBRIUM_PHASES 1
+    CH4(g) 0 0
+GAS_PHASE 1
+    -fixed_pressure true
+    -temperature 15
+    CH4(g) 0
+SELECTED_OUTPUT
+    -file sel.out
+    -molalities HCO3-
+END

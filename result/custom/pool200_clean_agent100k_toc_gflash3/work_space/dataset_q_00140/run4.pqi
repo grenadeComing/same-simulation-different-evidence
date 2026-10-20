@@ -1,0 +1,14 @@
+SOLUTION 1
+PHASES
+CH4(g)
+CH4 = CH4
+-log_k -2.8602
+END
+SOLUTION 1
+    temp 25
+    pH 7.0
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10
+SELECTED_OUTPUT
+    -si CH4(g)
+END

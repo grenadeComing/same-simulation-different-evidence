@@ -1,0 +1,21 @@
+SOLUTION 1 River water
+    temp 0
+    pH 6.0
+    units mg/L
+    Cl 10
+    Na 10 charge
+END
+SOLUTION 2 Seawater
+    temp 0
+    pH 8.1
+    units mg/L
+    Cl 19000
+    Na 19000 charge
+END
+MIX 1
+    1 0.7
+    2 0.3
+SELECTED_OUTPUT
+    -file output.sel
+    -pH true
+END

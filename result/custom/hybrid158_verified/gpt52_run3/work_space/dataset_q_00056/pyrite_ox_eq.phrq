@@ -1,0 +1,25 @@
+TITLE Pyrite oxidation equilibrium; 1 kg pure water; pH 7; fixed O2(g)
+SOLUTION 1
+    temp 25
+    pH   7 charge
+    redox pe
+    units mol/kgw
+    -water 1
+
+# Maintain constant atmospheric O2 reservoir
+GAS_PHASE 1
+    -fixed_pressure true
+    -pressure 1
+    -volume 1
+    O2(g) -0.7
+
+EQUILIBRIUM_PHASES 1
+    Pyrite     0  0.1
+    Goethite   0  0
+    Gypsum     0  0
+
+SELECTED_OUTPUT
+    -reset false
+    -pH true
+    -pe true
+END

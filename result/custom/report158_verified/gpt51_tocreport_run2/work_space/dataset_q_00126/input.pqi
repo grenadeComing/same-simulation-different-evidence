@@ -1,0 +1,47 @@
+SOLUTION 0-10 Initial
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11 Infilling
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE_SPECIES
+    X- = X-
+        -log_k 0
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+
+EXCHANGE 11
+    X- 0.001
+    -equilibrate 11
+
+USER_PRINT
+-start
+ 10 PRINT "SHIFT ", KIN_TIME, " CELL 1 VISCOS(cP) ", VISCOS("cP")
+-end
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1
+    -length              1
+    -boundary_conditions flux flux
+    -dispersivity        0
+    -flow_direction      forward
+    -initial_time        0
+    -print_cells         1
+    -print_frequency     1
+    -punch_cells         1
+    -punch_frequency     1
+    -correct_disp        false
+    -dump                dump
+    -dump_frequency      10
+
+PRINT
+    -reset false
+    -status  true

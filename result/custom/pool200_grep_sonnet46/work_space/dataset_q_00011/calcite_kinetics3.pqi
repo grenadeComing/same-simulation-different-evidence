@@ -1,0 +1,42 @@
+TITLE Calcite kinetic dissolution at 200C with Cu and Ba - custom rate
+
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4.0
+    units     mmol/kgw
+    Cu        10.0
+    Ba        5.0
+    water     1.0  # kg
+
+RATES
+Calcite
+-start
+10  sr_calcite = SR("Calcite")
+20  IF (M <= 0 AND sr_calcite >= 1) THEN GOTO 200
+30  rate = PARM(2) * PARM(1) * (1 - sr_calcite)
+40  IF (rate < 0 AND M <= 0) THEN rate = 0
+50  moles = rate * TIME
+60  IF (moles > M) THEN moles = M
+200 SAVE moles
+-end
+
+KINETICS 1
+Calcite
+    -tol    1e-8
+    -m0     1.0
+    -m      1.0
+    -parms  1.0  10.0
+    -step   1000 in 100
+    -bad_step_max 500
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file   calcite_kinetics3.sel
+    -reset  false
+    -step
+    -time
+    -molalities  CO2
+
+END

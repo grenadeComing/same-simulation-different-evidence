@@ -1,0 +1,12 @@
+SOLUTION 1
+    temp 25
+    pH 7
+    pe 4
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10
+SELECTED_OUTPUT 1
+    -file output.sel
+    -si CH4(g)
+END

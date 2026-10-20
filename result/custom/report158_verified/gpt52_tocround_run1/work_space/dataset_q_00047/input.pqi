@@ -1,0 +1,21 @@
+SOLUTION 1
+    temp 100
+    pH   5 charge
+    Ba   0.1  # mol/kgw (100 mmol/kgw)
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    Talc            0 10
+    Rhodochrosite   0 10
+    Sepiolite       0 10
+    Sepiolite(d)    0 10
+    Pb(OH)2         0 10
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings SpCond_uS_per_cm
+    10 PUNCH SC
+END

@@ -1,0 +1,25 @@
+SOLUTION 1
+    units mmol/kgw
+    temp 20
+    C(4) 50
+    Na 50
+SOLUTION 2
+    units mmol/kgw
+    temp 20
+    Ca 50
+    Cl 100
+MIX 1
+    1 0.5
+    2 0.5
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+SELECTED_OUTPUT 1
+    -file final.sel
+    -high_precision true
+    -temperature
+USER_PUNCH
+    -headings logK logIAP
+    10 PUNCH LK_PHASE("Calcite"), SI("Calcite") + LK_PHASE("Calcite")
+END

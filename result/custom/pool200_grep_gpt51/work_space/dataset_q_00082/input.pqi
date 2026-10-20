@@ -1,0 +1,12 @@
+SOLUTION 1 Pure water at 150C
+    temp 150
+    pH 7 charge
+    pe 4
+    units mol/kgw
+
+EQUILIBRIUM_PHASES 1
+    CO2(g)   -1.0 10
+    CH4(g)   -1.0 10
+    NH3(g)   -1.0 5
+
+END

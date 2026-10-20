@@ -1,0 +1,18 @@
+SOLUTION 1
+    pH      6.0
+    units   mg/l
+    Cl      10
+    Na      charge
+    EQUILIBRIUM_PHASES 1
+        CO2(g) -3.5
+SOLUTION 2
+    pH      8.1
+    units   mg/l
+    Cl      19000
+    Na      charge
+    EQUILIBRIUM_PHASES 2
+        CO2(g) -3.5
+MIX 1
+    1       0.7
+    2       0.3
+END

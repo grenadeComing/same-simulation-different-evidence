@@ -1,0 +1,10 @@
+SOLUTION 1
+    temp 25
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10.0
+SELECTED_OUTPUT 1
+    -file solution_results.txt
+    -pH true
+    -high_precision true
+END

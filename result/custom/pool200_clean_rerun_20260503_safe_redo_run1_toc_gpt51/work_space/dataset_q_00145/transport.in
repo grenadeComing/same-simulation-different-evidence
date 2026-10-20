@@ -1,0 +1,45 @@
+SOLUTION 0
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 1-10
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 11
+    pH 7 charge
+    Na 1
+    Cl 1
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -boundary_conditions flux flux
+    -initial_time 0
+    -print_cells 1
+    -print_frequency 10
+    -punch_cells 1
+    -punch_frequency 10
+    -flow_direction forward
+
+SOLUTION 0
+    -water 1
+    pH 7 charge
+    Na 1
+    Cl 1
+
+SELECTED_OUTPUT
+    -file transport.sel
+    -reset false
+    -time
+    -step
+    -distance
+    -pe

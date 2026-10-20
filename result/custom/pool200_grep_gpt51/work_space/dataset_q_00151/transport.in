@@ -1,0 +1,29 @@
+TITLE Transport exchange conductance problem
+
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+END
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+END
+
+EXCHANGE 1-10
+    X- 0.001
+END
+
+USE solution 0
+USE exchange 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -boundary_conditions flux flux
+    -flow_direction forward
+    -print_cells 8
+    -print_frequency 1
+END

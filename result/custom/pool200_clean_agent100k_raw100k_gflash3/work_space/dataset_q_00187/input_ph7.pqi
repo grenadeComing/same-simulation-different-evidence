@@ -1,0 +1,17 @@
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    pH 7.0
+    C(-4) 5.0
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    -temp 15
+    CH4(g) 0.0
+# Fix pH to 7.0 during reaction
+EQUILIBRIUM_PHASES 1
+    Fix_pH -7.0 NaOH 10.0
+# I need a Fix_pH phase. I'll just use a simple one if possible.
+# Actually, I can just use a large amount of a buffer? 
+# Or I'll just see how much it changes.
+END

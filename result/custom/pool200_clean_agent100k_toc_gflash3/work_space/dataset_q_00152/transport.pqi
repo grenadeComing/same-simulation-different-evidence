@@ -1,0 +1,32 @@
+SOLUTION 0
+    units mmol/kgw
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10
+    units mmol/kgw
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    -equilibrate 1
+    X 0.001
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1
+    -time_step 1
+    -punch_cells 1
+    -punch_frequency 1
+
+SELECTED_OUTPUT
+    -file transport_results.txt
+    -reset false
+    -step true
+
+USER_PUNCH
+    -headings step cell CaX2_frac
+    10 PUNCH STEP_NO, CELL_NO, 2 * MOL("CaX2") / 0.001

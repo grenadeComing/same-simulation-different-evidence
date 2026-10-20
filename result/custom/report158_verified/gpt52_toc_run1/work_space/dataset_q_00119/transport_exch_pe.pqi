@@ -1,0 +1,46 @@
+TITLE 1D transport with exchange, 10 cells 10 shifts; report pe of cell 10 after shift 10
+
+SOLUTION 0  Initial solution (for all cells)
+    units mol/kgw
+    pH 7.0
+    pe 4
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1-10
+    units mol/kgw
+    pH 7.0
+    pe 4
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11  Influent solution
+    units mol/kgw
+    pH 7.0
+    pe 4
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -dispersivities 0
+    -diffusion_coefficient 0
+    -correct_disp true
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -high_precision true
+
+USER_PUNCH
+    -headings Shift Cell pe
+    10 IF (SHIFT = 10 AND CELL_NO = 10) THEN PUNCH SHIFT, CELL_NO, PE
+END

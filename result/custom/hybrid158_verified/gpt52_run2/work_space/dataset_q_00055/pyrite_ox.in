@@ -1,0 +1,16 @@
+TITLE Pyrite oxidation equilibrium, 1 kg pure water, 25C, logPO2=-0.7
+SOLUTION 1
+    temp 25
+    pH   7.0 charge
+    pe   4
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    O2(g)   -0.7  10
+    Pyrite  0.0   0.1
+    Goethite 0.0  0
+    Gypsum  0.0   0
+SELECTED_OUTPUT
+    -reset false
+    -si Pyrite Goethite Gypsum
+END

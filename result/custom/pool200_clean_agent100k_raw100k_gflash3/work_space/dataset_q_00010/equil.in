@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 10
+    Ba 5
+    units mmol/kgw
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0.0 1.0
+
+SELECTED_OUTPUT
+    -file equilibrium.sel
+    -reset false
+    -si Witherite Calcite
+    -high_precision true
+
+END

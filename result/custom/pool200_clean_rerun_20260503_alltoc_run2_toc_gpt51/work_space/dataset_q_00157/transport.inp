@@ -1,0 +1,43 @@
+SOLUTION 0
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 1-10
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 11
+    pH 7 charge
+    Na 1
+    Cl 1
+
+EXCHANGE 1-10
+    X- 0.001
+
+USE solution 0
+USE exchange 1
+SAVE solution 0
+SAVE exchange 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1*10
+    -dispersivities 0
+    -correct_disp true
+    -initial_time 0
+    -print_cells 4
+    -print_frequency 10
+    -punch_cells 4
+    -punch_frequency 10
+
+SELECTED_OUTPUT
+    -file trans_sel.out
+    -reset false
+    -solution true
+    -molalities HCl

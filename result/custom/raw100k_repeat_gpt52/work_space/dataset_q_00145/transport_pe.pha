@@ -1,0 +1,30 @@
+TITLE 1D transport 10 cells, 10 shifts, exchange 0.001 mol per cell; report pe of solution 1 at step 10
+SOLUTION 0  # inflow
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+    -water 1
+SOLUTION 1-10  # initial cells
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+    -water 1
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions constant constant
+    -lengths 1
+    -dispersivities 0
+    -diffusion_coefficient 0
+    -time_step 1
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings step pe_sol1
+10 PUNCH STEP_NO, SOLN_Pe(1)
+END

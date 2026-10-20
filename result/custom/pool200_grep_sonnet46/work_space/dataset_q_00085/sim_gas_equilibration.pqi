@@ -1,0 +1,24 @@
+TITLE Equilibration of 1 kg pure water at 150C with fixed-pressure gas phase
+
+SOLUTION 1
+    temp      150
+    pH        7
+    pe        4
+    units     mol/kgw
+    water     1  # kg
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure    1.0
+    -temperature 150
+    -volume      1.0
+    CH4(g)       10.0
+    CO2(g)       10.0
+    NH3(g)        5.0
+
+SELECTED_OUTPUT
+    -file        sim_gas_equilibration.sel
+    -reset       false
+    -gas         CH4(g) CO2(g) NH3(g)
+
+END

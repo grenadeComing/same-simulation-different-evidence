@@ -1,0 +1,20 @@
+TITLE 100C Ca solution + calcite/gypsum/aragonite + gas (CO2/CH4/H2S)
+SOLUTION 1
+    temp 100
+    pH 7 charge
+    Ca 0.05
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Aragonite 0 10
+    Gypsum 0 10
+GAS_PHASE 1
+    -fixed_pressure
+    -temperature 25
+    -pressure 1
+    CO2(g) 1
+    CH4(g) 5
+    H2S(g) 10
+SELECTED_OUTPUT
+    -reset false
+    -totals S(6) S(-2)
+END

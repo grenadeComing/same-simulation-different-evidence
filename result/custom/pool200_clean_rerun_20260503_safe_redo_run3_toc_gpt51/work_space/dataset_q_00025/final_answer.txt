@@ -1,0 +1,1 @@
+<<< None of the provided options match the PHREEQC result. The saturation index of Goethite at step 100 is +1.09, so options A–D are all incorrect. >>>

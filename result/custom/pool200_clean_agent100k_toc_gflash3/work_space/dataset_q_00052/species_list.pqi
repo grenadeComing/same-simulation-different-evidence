@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 100
+    pH 3
+    pe 4
+    units mol/kgw
+    Na  1.0
+    Cl  1.0
+    Mg  1.0
+    S(6) 1.0
+    Ca  1.0
+    C(4) 1.0
+    K   1.0
+    Al  1.0
+    Si  1.0
+    Fe  1.0
+END

@@ -1,0 +1,36 @@
+TITLE 1D transport 10 cells, 10 shifts, cation exchange
+
+SOLUTION 0  Infilling
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10 Initial
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings step cell m_HCl
+10 PUNCH SIM_NO, CELL_NO, MOL("HCl")
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions constant constant
+    -punch_cells 1-10
+    -punch_frequency 1
+    -diffusion_coefficient 0
+    -dispersivities 0
+    -lengths 1
+
+END

@@ -1,0 +1,11 @@
+SOLUTION 1
+    temp 15
+    C(-4) 5e-3
+GAS_PHASE 1
+    -fixed_pressure
+    -temperature 15
+    CH4(g) 0
+USER_PUNCH
+    -headings I
+    10 PUNCH IONIC_STRENGTH
+END

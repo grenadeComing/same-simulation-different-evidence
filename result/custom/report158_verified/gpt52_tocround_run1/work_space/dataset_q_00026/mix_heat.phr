@@ -1,0 +1,24 @@
+TITLE Mix 50 mmol/kg DIC with 50 mmol/kg Ca, heat 20->200C, calcite equil, report SI aragonite
+SOLUTION 1 DIC
+    temp 20
+    pH 7 charge
+    units mmol/kgw
+    C(4) 50 as HCO3
+SOLUTION 2 Ca
+    temp 20
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+MIX 1
+    1 0.5
+    2 0.5
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+REACTION_TEMPERATURE 1
+    20 200 in 10
+SELECTED_OUTPUT
+    -file sel.csv
+    -reset false
+    -temperature true
+    -si Aragonite
+END

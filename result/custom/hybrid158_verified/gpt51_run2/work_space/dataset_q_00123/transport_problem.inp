@@ -1,0 +1,44 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE_SPECIES
+    X- = X-
+        log_k   0
+    Ca+2 + 2X- = CaX2
+        log_k   0
+    Na+ + X- = NaX
+        log_k   0
+
+EXCHANGE 1-10
+    X- 0.001
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1
+    -lengths             10*1
+    -boundary_conditions flux flux
+    -initial_time        0
+    -punch_cells         1-10
+    -punch_frequency     1
+    -print_cells         1-10
+    -print_frequency     1
+    -selected_output     true
+
+SELECTED_OUTPUT
+    -file                transport.out
+    -reset               false
+    -user_punch          true
+
+USER_PUNCH
+    -headings step cell NaX
+    10 PUNCH TOT("NaX")
+    20 PUNCH CELL_NO, TOT("NaX")
+END

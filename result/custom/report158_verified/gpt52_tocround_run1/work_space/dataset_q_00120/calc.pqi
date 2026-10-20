@@ -1,0 +1,36 @@
+TITLE 1D transport with exchange; query CaX2 on exchanger 1 at step 5
+
+SOLUTION 0  Infilling
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10  Initial
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    CaX2 0.001
+    -equilibrate 1
+
+SELECTED_OUTPUT
+    -file selected.sel
+    -reset false
+
+USER_PUNCH
+    -headings step cell CaX2
+10 PUNCH TRANSPORT_STEP_NO, CELL_NO, EQUI("CaX2")
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -dispersivity 0
+    -diffusion_coefficient 0
+    -lengths 1
+    -punch_cells 1-10
+    -punch_frequency 1
+END

@@ -1,0 +1,21 @@
+TITLE 150C water equilibrated with fixed-pressure gas phase (CH4/CO2/NH3)
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    -water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g) 10
+    CO2(g) 10
+    NH3(g) 5
+SELECTED_OUTPUT
+    -file selected.csv
+    -reset true
+USER_PUNCH
+    -headings ch4_final delta_ch4
+    10 PUNCH GAS("CH4(g)")
+    20 PUNCH (GAS("CH4(g)") - 10)
+END

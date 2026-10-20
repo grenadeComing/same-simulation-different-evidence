@@ -1,0 +1,19 @@
+SOLUTION 1 Pure water
+    pH 7 charge
+    units mol/kgw
+
+REACTION 1
+    H2SO4 1.0
+    0.001 0.005 0.01 0.05 0.1
+
+USER_PUNCH
+    -headings step pH ah
+    -start
+    10 PUNCH STEP_NO, -LA("H+"), ACT("H+")
+    -end
+
+SELECTED_OUTPUT
+    -reset false
+    -user_punch true
+    -high_precision true
+END

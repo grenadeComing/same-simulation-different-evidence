@@ -1,0 +1,40 @@
+SOLUTION 0-10
+    pH 7 charge
+    units mol/kgw
+    temp 25
+    Ca 1
+    Cl 2
+
+SOLUTION 11
+    pH 7 charge
+    units mol/kgw
+    temp 25
+    Na 1
+    Cl 1
+
+EXCHANGE 1-10
+    X 0.001
+    equilibrate 1
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1
+    -length              1
+    -dispersivity        0
+    -flow_direction      forward
+    -boundary_conditions flux flux
+    -initial_time        0
+    -print_frequency     1
+    -punch_frequency     1
+    -correct_disp        false
+
+USER_PUNCH
+    -headings Step Cell Viscosity
+    -start
+    10 PUNCH KIN_TIME
+    20 PUNCH CELL_NO
+    30 PUNCH VISCO
+    -end
+
+END

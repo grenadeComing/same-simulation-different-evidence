@@ -1,0 +1,24 @@
+TITLE Equilibrium simulation at 100C, pH 3 with multiple minerals - attempt 4
+
+SOLUTION 1
+    temp 100
+    pH 3
+    pe 4
+    units mol/L
+    water 1
+
+EQUILIBRIUM_PHASES 1
+    K-mica       0  10
+    Kaolinite    0  10
+    Dolomite     0  10
+    Epsomite     0  10
+    Fe(OH)3(a)   0  10
+    Halite       0  10
+
+SELECTED_OUTPUT
+    -file kaolinite_sim4.sel
+    -reset false
+    -equilibrium_phases K-mica Kaolinite Dolomite Epsomite Fe(OH)3(a) Halite
+    -high_precision true
+
+END

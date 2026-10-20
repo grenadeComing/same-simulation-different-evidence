@@ -1,0 +1,25 @@
+SOLUTION 1  River Water
+    pH      6.0
+    temp    25.0
+    units   mol/kgw
+    Cl      0.01
+
+SOLUTION 2  Seawater
+    pH      8.1
+    temp    25.0
+    units   mol/kgw
+    Cl      19.0
+
+MIX 1
+    1   0.7
+    2   0.3
+
+SELECTED_OUTPUT
+    -file           mix_output5.sel
+    -reset          false
+    -solution       true
+    -pH             true
+    -charge_balance true
+    -totals         Cl
+
+END

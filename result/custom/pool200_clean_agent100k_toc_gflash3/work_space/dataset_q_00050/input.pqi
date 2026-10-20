@@ -1,0 +1,21 @@
+SOLUTION 1
+    temp 100
+    pH 3
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+    MgSO4_phase 0 10
+PHASES
+MgSO4_phase
+    MgSO4 = Mg+2 + SO4-2
+    log_k -1.27
+SELECTED_OUTPUT 1
+    -file output.sel
+    -reset false
+    -mol Al(OH)4-
+    -pH true
+END

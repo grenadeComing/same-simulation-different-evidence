@@ -1,0 +1,21 @@
+TITLE Pure water equilibrated with CO2 at log PCO2 = -3.4
+
+SOLUTION 1 Pure water
+    temp      25
+    pH        7.0
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    water     1 # kg
+
+EQUILIBRIUM_PHASES 1
+    CO2(g)    -3.4    10
+
+SELECTED_OUTPUT
+    -file     co2_result.out
+    -reset    false
+    -pH       true
+    -activities   H+
+
+END

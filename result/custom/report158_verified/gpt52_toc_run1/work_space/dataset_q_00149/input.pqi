@@ -1,0 +1,17 @@
+TITLE Ionic strength for 5 mmol/kgw C(-4) at 15C with fixed gas phase CH4=0
+SOLUTION 1
+    temp 15
+    -water 1
+    C(-4) 5e-3
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    -temperature 15
+    CH4(g) 0
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings Ionic_strength
+    10 PUNCH MU
+END

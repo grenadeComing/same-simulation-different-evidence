@@ -1,0 +1,26 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+
+GAS_PHASE 1
+    -pressure 5
+    -fixed_pressure true
+    H2S(g) 1
+
+KINETICS 1
+    Albite
+        -m0 1
+        -parms 1.0 10.0
+        -steps 10 s in 100 steps
+
+SELECTED_OUTPUT
+    -file sel.out
+    -reset false
+    -time true
+    -totals Si
+    -molalities SiO2 H4SiO4 H3SiO4- H2SiO4-2 HSiO3- SiO3-2 Si(OH)3+ Si(OH)4 H2SiO3 SiO2(aq)
+
+END

@@ -1,0 +1,33 @@
+SOLUTION 1 Pure water, pH 7
+    temp 25
+    pH 7 charge
+    units mol/kgw
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    O2(g) -0.7
+
+EQUILIBRIUM_PHASES 1
+    Pyrite 0 0.1
+    Goethite 0 0
+    Gypsum 0 0
+
+SELECTED_OUTPUT
+    -file pyrite_ox.sel
+    -reset false
+
+USER_PUNCH
+    -headings Fe3_aq_species_count
+10 count = 0
+20 n = SYS("species")
+30 FOR i = 1 TO n
+40   s$ = SYS("species", i)
+50   if (INSTR(1, s$, "Fe(3)") > 0 OR INSTR(1, s$, "Fe+3") > 0) THEN
+60     if (SYS("species_mol", i) > 0) THEN count = count + 1
+70   end if
+80 NEXT i
+90 PUNCH count
+
+END

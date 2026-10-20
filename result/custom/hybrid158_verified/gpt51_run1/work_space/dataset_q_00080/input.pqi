@@ -1,0 +1,69 @@
+SOLUTION 1 Pure water
+    temp 150
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SAVE solution 1
+END
+
+USE solution 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SAVE solution 2
+END
+
+USE solution 2
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SAVE solution 3
+END
+
+USE solution 3
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SAVE solution 4
+END
+
+USE solution 4
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SAVE solution 5
+END
+
+USE solution 5
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SAVE solution 6
+END
+
+USE solution 6
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SAVE solution 7
+END
+
+USE solution 7
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SAVE solution 8
+END
+
+USE solution 8
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SAVE solution 9
+END
+
+SELECTED_OUTPUT
+    -file selout.txt
+    -si Quartz
+END

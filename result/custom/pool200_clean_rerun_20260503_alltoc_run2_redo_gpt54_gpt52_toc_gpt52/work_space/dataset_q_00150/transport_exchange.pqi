@@ -1,0 +1,34 @@
+TITLE 1D transport with cation exchange
+
+SOLUTION 0  Infilling solution
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10 Initial solution in cells
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -high_precision true
+    -equilibrium_phases false
+    -totals false
+    -molalities false
+    -activities false
+    -saturation_indices false
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -print_cells 8
+    -print_frequency 1
+END

@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+USER_PUNCH
+    -headings m_MgOH+
+10  PUNCH MOL("MgOH+")
+END
+KNOBS
+    -iterations 200
+    -convergence_tolerance 1e-12

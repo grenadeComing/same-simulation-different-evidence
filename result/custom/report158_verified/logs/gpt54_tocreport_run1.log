@@ -1,0 +1,200 @@
+Resuming: 0 done, 158 remaining
+
+custom/toc_report (gpt-5.4):   0%|          | 0/158 [00:00<?, ?q/s]
+custom/toc_report (gpt-5.4):   1%|          | 1/158 [00:17<45:07, 17.25s/q]
+custom/toc_report (gpt-5.4):   1%|▏         | 2/158 [00:17<18:59,  7.30s/q]
+custom/toc_report (gpt-5.4):   2%|▏         | 3/158 [00:22<16:13,  6.28s/q]
+custom/toc_report (gpt-5.4):   3%|▎         | 4/158 [00:33<20:18,  7.91s/q]
+custom/toc_report (gpt-5.4):   3%|▎         | 5/158 [00:38<17:29,  6.86s/q]
+custom/toc_report (gpt-5.4):   4%|▍         | 6/158 [00:38<12:12,  4.82s/q]
+custom/toc_report (gpt-5.4):   4%|▍         | 7/158 [00:55<21:29,  8.54s/q]
+custom/toc_report (gpt-5.4):   5%|▌         | 8/158 [00:55<15:08,  6.06s/q]
+custom/toc_report (gpt-5.4):   6%|▌         | 9/158 [01:08<20:15,  8.16s/q]
+custom/toc_report (gpt-5.4):   6%|▋         | 10/158 [01:12<16:55,  6.86s/q]
+custom/toc_report (gpt-5.4):   7%|▋         | 11/158 [01:13<12:39,  5.17s/q]
+custom/toc_report (gpt-5.4):   8%|▊         | 12/158 [01:28<19:43,  8.11s/q]
+custom/toc_report (gpt-5.4):   8%|▊         | 13/158 [01:50<29:35, 12.24s/q]
+custom/toc_report (gpt-5.4):   9%|▉         | 14/158 [01:51<20:58,  8.74s/q]
+custom/toc_report (gpt-5.4):   9%|▉         | 15/158 [01:54<16:49,  7.06s/q]
+custom/toc_report (gpt-5.4):  10%|█         | 16/158 [02:08<21:55,  9.26s/q]
+custom/toc_report (gpt-5.4):  11%|█         | 17/158 [02:09<15:42,  6.68s/q]
+custom/toc_report (gpt-5.4):  11%|█▏        | 18/158 [02:10<11:23,  4.88s/q]
+custom/toc_report (gpt-5.4):  12%|█▏        | 19/158 [02:23<17:34,  7.59s/q]
+custom/toc_report (gpt-5.4):  13%|█▎        | 20/158 [02:25<13:02,  5.67s/q]
+custom/toc_report (gpt-5.4):  13%|█▎        | 21/158 [02:40<19:20,  8.47s/q]
+custom/toc_report (gpt-5.4):  14%|█▍        | 22/158 [02:40<13:40,  6.03s/q]
+custom/toc_report (gpt-5.4):  15%|█▍        | 23/158 [02:41<10:00,  4.45s/q]
+custom/toc_report (gpt-5.4):  15%|█▌        | 24/158 [02:56<16:54,  7.57s/q]
+custom/toc_report (gpt-5.4):  16%|█▌        | 25/158 [02:57<12:28,  5.63s/q]
+custom/toc_report (gpt-5.4):  16%|█▋        | 26/158 [02:58<09:11,  4.18s/q]
+custom/toc_report (gpt-5.4):  17%|█▋        | 27/158 [03:12<15:38,  7.16s/q]
+custom/toc_report (gpt-5.4):  18%|█▊        | 28/158 [03:12<11:21,  5.24s/q]
+custom/toc_report (gpt-5.4):  18%|█▊        | 29/158 [03:13<08:31,  3.97s/q]
+custom/toc_report (gpt-5.4):  19%|█▉        | 30/158 [03:31<17:12,  8.07s/q]
+custom/toc_report (gpt-5.4):  20%|█▉        | 31/158 [03:31<12:06,  5.72s/q]
+custom/toc_report (gpt-5.4):  20%|██        | 32/158 [03:47<18:19,  8.72s/q]
+custom/toc_report (gpt-5.4):  22%|██▏       | 34/158 [03:56<14:01,  6.79s/q]
+custom/toc_report (gpt-5.4):  22%|██▏       | 35/158 [04:03<13:44,  6.70s/q]
+custom/toc_report (gpt-5.4):  23%|██▎       | 36/158 [04:05<11:27,  5.63s/q]
+custom/toc_report (gpt-5.4):  23%|██▎       | 37/158 [04:12<12:17,  6.09s/q]
+custom/toc_report (gpt-5.4):  24%|██▍       | 38/158 [04:18<12:02,  6.02s/q]
+custom/toc_report (gpt-5.4):  25%|██▍       | 39/158 [04:20<09:41,  4.89s/q]
+custom/toc_report (gpt-5.4):  25%|██▌       | 40/158 [04:28<11:09,  5.67s/q]
+custom/toc_report (gpt-5.4):  26%|██▌       | 41/158 [04:34<11:16,  5.79s/q]
+custom/toc_report (gpt-5.4):  27%|██▋       | 42/158 [04:36<08:59,  4.65s/q]
+custom/toc_report (gpt-5.4):  27%|██▋       | 43/158 [04:44<10:36,  5.53s/q]
+custom/toc_report (gpt-5.4):  28%|██▊       | 44/158 [04:50<10:59,  5.79s/q]
+custom/toc_report (gpt-5.4):  28%|██▊       | 45/158 [04:52<08:51,  4.70s/q]
+custom/toc_report (gpt-5.4):  29%|██▉       | 46/158 [05:00<10:43,  5.75s/q]
+custom/toc_report (gpt-5.4):  30%|██▉       | 47/158 [05:05<10:17,  5.56s/q]
+custom/toc_report (gpt-5.4):  30%|███       | 48/158 [05:07<08:06,  4.43s/q]
+custom/toc_report (gpt-5.4):  31%|███       | 49/158 [05:15<10:07,  5.57s/q]
+custom/toc_report (gpt-5.4):  32%|███▏      | 50/158 [05:21<10:15,  5.70s/q]
+custom/toc_report (gpt-5.4):  32%|███▏      | 51/158 [05:22<07:31,  4.22s/q]
+custom/toc_report (gpt-5.4):  33%|███▎      | 52/158 [05:30<09:33,  5.41s/q]
+custom/toc_report (gpt-5.4):  34%|███▎      | 53/158 [05:36<09:49,  5.62s/q]
+custom/toc_report (gpt-5.4):  34%|███▍      | 54/158 [05:38<07:29,  4.33s/q]
+custom/toc_report (gpt-5.4):  35%|███▍      | 55/158 [05:45<09:04,  5.29s/q]
+custom/toc_report (gpt-5.4):  35%|███▌      | 56/158 [05:52<09:44,  5.73s/q]
+custom/toc_report (gpt-5.4):  36%|███▌      | 57/158 [05:53<07:10,  4.27s/q]
+custom/toc_report (gpt-5.4):  37%|███▋      | 58/158 [06:01<08:48,  5.29s/q]
+custom/toc_report (gpt-5.4):  37%|███▋      | 59/158 [06:07<09:30,  5.76s/q]
+custom/toc_report (gpt-5.4):  38%|███▊      | 60/158 [06:08<07:00,  4.29s/q]
+custom/toc_report (gpt-5.4):  39%|███▊      | 61/158 [06:18<09:32,  5.90s/q]
+custom/toc_report (gpt-5.4):  39%|███▉      | 62/158 [06:22<08:46,  5.48s/q]
+custom/toc_report (gpt-5.4):  40%|███▉      | 63/158 [06:34<11:40,  7.38s/q]
+custom/toc_report (gpt-5.4):  41%|████      | 64/158 [06:39<10:04,  6.43s/q]
+custom/toc_report (gpt-5.4):  41%|████      | 65/158 [06:48<11:20,  7.32s/q]
+custom/toc_report (gpt-5.4):  42%|████▏     | 66/158 [07:04<15:03,  9.82s/q]
+custom/toc_report (gpt-5.4):  42%|████▏     | 67/158 [07:06<11:33,  7.63s/q]
+custom/toc_report (gpt-5.4):  43%|████▎     | 68/158 [07:14<11:47,  7.87s/q]
+custom/toc_report (gpt-5.4):  44%|████▎     | 69/158 [07:16<08:55,  6.02s/q]
+custom/toc_report (gpt-5.4):  44%|████▍     | 70/158 [07:19<07:29,  5.11s/q]
+custom/toc_report (gpt-5.4):  45%|████▍     | 71/158 [07:22<06:26,  4.44s/q]
+custom/toc_report (gpt-5.4):  46%|████▌     | 72/158 [07:32<08:31,  5.94s/q]
+custom/toc_report (gpt-5.4):  46%|████▌     | 73/158 [07:34<07:02,  4.97s/q]
+custom/toc_report (gpt-5.4):  47%|████▋     | 74/158 [07:37<06:08,  4.38s/q]
+custom/toc_report (gpt-5.4):  47%|████▋     | 75/158 [07:48<08:31,  6.17s/q]
+custom/toc_report (gpt-5.4):  48%|████▊     | 76/158 [07:50<06:44,  4.94s/q]
+custom/toc_report (gpt-5.4):  49%|████▊     | 77/158 [07:54<06:26,  4.77s/q]
+custom/toc_report (gpt-5.4):  49%|████▉     | 78/158 [07:56<05:19,  4.00s/q]
+custom/toc_report (gpt-5.4):  50%|█████     | 79/158 [08:02<06:07,  4.65s/q]
+custom/toc_report (gpt-5.4):  51%|█████     | 80/158 [08:04<05:00,  3.85s/q]
+custom/toc_report (gpt-5.4):  51%|█████▏    | 81/158 [08:11<05:54,  4.61s/q]
+custom/toc_report (gpt-5.4):  52%|█████▏    | 82/158 [08:16<06:11,  4.89s/q]
+custom/toc_report (gpt-5.4):  53%|█████▎    | 83/158 [08:17<04:34,  3.66s/q]
+custom/toc_report (gpt-5.4):  53%|█████▎    | 84/158 [08:24<05:38,  4.58s/q]
+custom/toc_report (gpt-5.4):  54%|█████▍    | 85/158 [08:30<06:08,  5.05s/q]
+custom/toc_report (gpt-5.4):  54%|█████▍    | 86/158 [08:32<05:03,  4.21s/q]
+custom/toc_report (gpt-5.4):  55%|█████▌    | 87/158 [08:35<04:22,  3.69s/q]
+custom/toc_report (gpt-5.4):  56%|█████▌    | 88/158 [08:44<06:11,  5.31s/q]
+custom/toc_report (gpt-5.4):  56%|█████▋    | 89/158 [08:47<05:20,  4.65s/q]
+custom/toc_report (gpt-5.4):  57%|█████▋    | 90/158 [08:48<04:13,  3.73s/q]
+custom/toc_report (gpt-5.4):  58%|█████▊    | 91/158 [08:54<04:52,  4.37s/q]
+custom/toc_report (gpt-5.4):  58%|█████▊    | 92/158 [09:02<05:49,  5.30s/q]
+custom/toc_report (gpt-5.4):  59%|█████▉    | 93/158 [09:10<06:43,  6.21s/q]
+custom/toc_report (gpt-5.4):  60%|██████    | 95/158 [09:17<05:04,  4.83s/q]
+custom/toc_report (gpt-5.4):  61%|██████    | 96/158 [09:17<03:48,  3.68s/q]
+custom/toc_report (gpt-5.4):  61%|██████▏   | 97/158 [09:26<05:05,  5.00s/q]
+custom/toc_report (gpt-5.4):  62%|██████▏   | 98/158 [09:27<03:54,  3.92s/q]
+custom/toc_report (gpt-5.4):  63%|██████▎   | 99/158 [09:32<04:13,  4.30s/q]
+custom/toc_report (gpt-5.4):  63%|██████▎   | 100/158 [09:33<03:14,  3.36s/q]
+custom/toc_report (gpt-5.4):  64%|██████▍   | 101/158 [09:44<05:23,  5.68s/q]
+custom/toc_report (gpt-5.4):  65%|██████▍   | 102/158 [09:53<06:03,  6.49s/q]
+custom/toc_report (gpt-5.4):  65%|██████▌   | 103/158 [09:55<04:57,  5.42s/q]
+custom/toc_report (gpt-5.4):  66%|██████▌   | 104/158 [09:59<04:17,  4.77s/q]
+custom/toc_report (gpt-5.4):  66%|██████▋   | 105/158 [10:00<03:21,  3.80s/q]
+custom/toc_report (gpt-5.4):  67%|██████▋   | 106/158 [10:08<04:21,  5.03s/q]
+custom/toc_report (gpt-5.4):  68%|██████▊   | 107/158 [10:11<03:42,  4.36s/q]
+custom/toc_report (gpt-5.4):  68%|██████▊   | 108/158 [10:14<03:15,  3.91s/q]
+custom/toc_report (gpt-5.4):  69%|██████▉   | 109/158 [10:16<02:40,  3.28s/q]
+custom/toc_report (gpt-5.4):  70%|██████▉   | 110/158 [10:24<03:52,  4.85s/q]
+custom/toc_report (gpt-5.4):  70%|███████   | 111/158 [10:27<03:14,  4.14s/q]
+custom/toc_report (gpt-5.4):  71%|███████   | 112/158 [10:29<02:48,  3.66s/q]
+custom/toc_report (gpt-5.4):  72%|███████▏  | 113/158 [10:31<02:14,  2.98s/q]
+custom/toc_report (gpt-5.4):  72%|███████▏  | 114/158 [10:39<03:24,  4.66s/q]
+custom/toc_report (gpt-5.4):  73%|███████▎  | 115/158 [10:41<02:50,  3.96s/q]
+custom/toc_report (gpt-5.4):  73%|███████▎  | 116/158 [10:44<02:30,  3.59s/q]
+custom/toc_report (gpt-5.4):  74%|███████▍  | 117/158 [10:46<02:04,  3.05s/q]
+custom/toc_report (gpt-5.4):  75%|███████▍  | 118/158 [10:54<03:03,  4.58s/q]
+custom/toc_report (gpt-5.4):  75%|███████▌  | 119/158 [10:57<02:37,  4.04s/q]
+custom/toc_report (gpt-5.4):  76%|███████▌  | 120/158 [11:05<03:16,  5.18s/q]
+custom/toc_report (gpt-5.4):  77%|███████▋  | 121/158 [11:05<02:22,  3.85s/q]
+custom/toc_report (gpt-5.4):  77%|███████▋  | 122/158 [11:17<03:37,  6.05s/q]
+custom/toc_report (gpt-5.4):  78%|███████▊  | 123/158 [11:34<05:33,  9.54s/q]
+custom/toc_report (gpt-5.4):  78%|███████▊  | 124/158 [11:37<04:16,  7.56s/q]
+custom/toc_report (gpt-5.4):  79%|███████▉  | 125/158 [11:44<03:59,  7.25s/q]
+custom/toc_report (gpt-5.4):  80%|███████▉  | 126/158 [11:50<03:44,  7.02s/q]
+custom/toc_report (gpt-5.4):  80%|████████  | 127/158 [12:01<04:11,  8.11s/q]
+custom/toc_report (gpt-5.4):  81%|████████  | 128/158 [12:05<03:27,  6.91s/q]
+custom/toc_report (gpt-5.4):  82%|████████▏ | 129/158 [12:14<03:37,  7.49s/q]
+custom/toc_report (gpt-5.4):  82%|████████▏ | 130/158 [12:21<03:24,  7.30s/q]
+custom/toc_report (gpt-5.4):  84%|████████▎ | 132/158 [12:28<02:24,  5.54s/q]
+custom/toc_report (gpt-5.4):  84%|████████▍ | 133/158 [12:29<01:53,  4.53s/q]
+custom/toc_report (gpt-5.4):  85%|████████▍ | 134/158 [12:43<02:47,  6.97s/q]
+custom/toc_report (gpt-5.4):  85%|████████▌ | 135/158 [12:44<02:02,  5.32s/q]
+custom/toc_report (gpt-5.4):  86%|████████▌ | 136/158 [12:47<01:42,  4.65s/q]
+custom/toc_report (gpt-5.4):  87%|████████▋ | 137/158 [12:49<01:21,  3.88s/q]
+custom/toc_report (gpt-5.4):  87%|████████▋ | 138/158 [12:59<01:54,  5.73s/q]
+custom/toc_report (gpt-5.4):  88%|████████▊ | 139/158 [13:05<01:48,  5.69s/q]
+custom/toc_report (gpt-5.4):  89%|████████▊ | 140/158 [13:09<01:33,  5.22s/q]
+custom/toc_report (gpt-5.4):  89%|████████▉ | 141/158 [13:11<01:11,  4.19s/q]
+custom/toc_report (gpt-5.4):  90%|████████▉ | 142/158 [13:14<01:05,  4.07s/q]
+custom/toc_report (gpt-5.4):  91%|█████████ | 143/158 [13:19<01:06,  4.40s/q]
+custom/toc_report (gpt-5.4):  91%|█████████ | 144/158 [13:24<01:01,  4.42s/q]
+custom/toc_report (gpt-5.4):  92%|█████████▏| 145/158 [13:30<01:02,  4.78s/q]
+custom/toc_report (gpt-5.4):  92%|█████████▏| 146/158 [13:33<00:52,  4.37s/q]
+custom/toc_report (gpt-5.4):  93%|█████████▎| 147/158 [13:35<00:41,  3.75s/q]
+custom/toc_report (gpt-5.4):  94%|█████████▎| 148/158 [13:39<00:38,  3.86s/q]
+custom/toc_report (gpt-5.4):  94%|█████████▍| 149/158 [13:45<00:38,  4.32s/q]
+custom/toc_report (gpt-5.4):  95%|█████████▍| 150/158 [13:51<00:40,  5.01s/q]
+custom/toc_report (gpt-5.4):  96%|█████████▌| 151/158 [13:54<00:29,  4.18s/q]
+custom/toc_report (gpt-5.4):  96%|█████████▌| 152/158 [13:55<00:20,  3.40s/q]
+custom/toc_report (gpt-5.4):  97%|█████████▋| 153/158 [14:01<00:20,  4.00s/q]
+custom/toc_report (gpt-5.4):  97%|█████████▋| 154/158 [14:07<00:19,  4.76s/q]
+custom/toc_report (gpt-5.4):  98%|█████████▊| 155/158 [14:09<00:11,  3.94s/q]
+custom/toc_report (gpt-5.4):  99%|█████████▊| 156/158 [14:11<00:06,  3.28s/q]
+custom/toc_report (gpt-5.4):  99%|█████████▉| 157/158 [14:16<00:03,  3.85s/q]
+custom/toc_report (gpt-5.4): 100%|██████████| 158/158 [14:24<00:00,  5.20s/q]
+custom/toc_report (gpt-5.4): 100%|██████████| 158/158 [14:24<00:00,  5.47s/q]
+
+Results: /workspace/artifact/result/custom/report158_verified/gpt54_tocreport_run1
+{
+  "model": "gpt-5.4",
+  "method": "custom_agent_toc_report",
+  "context_mode": "toc_report",
+  "dataset": "dataset_158_verified.jsonl",
+  "run_name": "report158_verified/gpt54_tocreport_run1",
+  "max_steps": 24,
+  "workers": 4,
+  "task_filter": "all",
+  "start_index": null,
+  "end_index": null,
+  "started_at": "2026-10-11T12:34:11-07:00",
+  "ended_at": "2026-10-11T12:48:36-07:00",
+  "elapsed_seconds": 864.984,
+  "seconds_per_row": 5.475,
+  "total_rows": 158,
+  "graded_rows": 157,
+  "ungraded_rows": 1,
+  "correct_rows": 129,
+  "error_rows": 0,
+  "accuracy": 0.8164556962025317,
+  "graded_accuracy": 0.821656050955414,
+  "by_task_type": {
+    "mcq": {
+      "total": 158,
+      "correct": 129,
+      "graded": 157,
+      "ungraded": 1,
+      "errors": 0,
+      "accuracy": 0.8164556962025317,
+      "graded_accuracy": 0.821656050955414
+    }
+  },
+  "total_input_tokens": 8107512,
+  "total_output_tokens": 51989,
+  "agent_input_tokens": 8107512,
+  "agent_output_tokens": 51989,
+  "aux_by_source": {}
+}

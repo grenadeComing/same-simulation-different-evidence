@@ -1,0 +1,24 @@
+SOLUTION 1  River water
+    units   mmol/L
+    pH      6.0
+    pe      4.0
+    Cl      10
+    O(0)    0.26   # ~8 mg/L O2
+
+SOLUTION 2  Seawater
+    units   mmol/L
+    pH      8.1
+    pe      8.451
+    Cl      19000
+    O(0)    0.26   # ~8 mg/L O2
+
+MIX 1
+    1   0.7
+    2   0.3
+
+SELECTED_OUTPUT
+    -file mix_waters9.sel
+    -pe     true
+    -pH     true
+
+END

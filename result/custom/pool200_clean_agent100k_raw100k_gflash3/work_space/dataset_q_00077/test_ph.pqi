@@ -1,0 +1,8 @@
+SOLUTION 1
+    temp 150
+    water 1
+EQUILIBRIUM_PHASES 1
+    CO2(g) -0.39794  # log10(0.4)
+    NH3(g) -0.69897  # log10(0.2)
+    CH4(g) -0.39794  # log10(0.4)
+END

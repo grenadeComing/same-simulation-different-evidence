@@ -1,0 +1,42 @@
+TITLE 1D transport: Ca/Na-Cl with exchange (explicit Alkalinity)
+
+SOLUTION 0  Infilling
+    pH 7.0
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+    Alkalinity 0
+
+SOLUTION 1-10 Initial
+    pH 7.0
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+    Alkalinity 0
+
+EXCHANGE 1-10
+    X 0.001
+
+EQUILIBRATE 1
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -step true
+    -state true
+    -solution true
+    -totals Alkalinity
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions constant constant
+    -lengths 1
+    -dispersivities 0
+    -time_step 1
+    -diffusion_coefficient 0
+    -correct_disp true
+    -print_cells 3
+    -punch_cells 3
+END

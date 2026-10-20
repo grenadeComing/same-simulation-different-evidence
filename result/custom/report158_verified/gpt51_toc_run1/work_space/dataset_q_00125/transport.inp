@@ -1,0 +1,32 @@
+TITLE Transport Ca-Na exchange
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+SOLUTION 1
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+SELECTED_OUTPUT
+    -file exch_sel.out
+    -reset false
+USER_PUNCH
+    -headings step cell CaX2_frac CaX2 NaX
+10 REM Calculate equivalent fraction of CaX2 on exchanger in each cell
+20 PUNCH SIM_NO, CELL_NO, MOL("CaX2","exchange",CELL_NO)/(MOL("CaX2","exchange",CELL_NO)+MOL("NaX","exchange",CELL_NO)), MOL("CaX2","exchange",CELL_NO), MOL("NaX","exchange",CELL_NO)
+END
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 10*1
+    -boundary_conditions flux flux
+    -dispersivities 10*0
+    -punch_cells 1-10
+    -punch_frequency 1
+    -print_cells 1-10
+    -print_frequency 1
+END

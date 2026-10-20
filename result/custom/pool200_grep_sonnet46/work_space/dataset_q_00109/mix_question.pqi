@@ -1,0 +1,29 @@
+TITLE River water and Seawater mixing
+
+# Solution 1: River water, pH 6.0, Cl 10 mg/L
+SOLUTION 1 River Water
+    pH      6.0
+    temp    25.0
+    Cl      10.0   # mg/L as Cl
+
+# Solution 2: Seawater, pH 8.1, Cl 19000 mg/L
+SOLUTION 2 Seawater
+    pH      8.1
+    temp    25.0
+    Cl      19000.0   # mg/L as Cl
+
+# Mix 70% river water + 30% seawater
+MIX 1
+    1   0.7
+    2   0.3
+
+SAVE SOLUTION 3
+
+SELECTED_OUTPUT
+    -file           mix_result.sel
+    -reset          false
+    -solution       true
+    -charge_balance true
+    -pH             true
+
+END

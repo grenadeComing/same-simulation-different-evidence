@@ -1,0 +1,50 @@
+SOLUTION 0
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 1-10
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 11
+    pH 7 charge
+    Na 1
+    Cl 1
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -boundary_conditions flux flux
+    -initial_time 0
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+    -dump dump
+    -dump_frequency 1
+    -flow_direction forward
+    -correct_disp false
+
+INVERSE_MODELING 0
+    -solutions 0 11
+
+SELECTED_OUTPUT
+    -file selout.tab
+    -reset false
+
+USER_PUNCH
+    -head step cell sc
+    10 PUNCH STEP_NO, CELL_NO, SC
+
+PRINT
+    -selected_output true
+    -status false
+    -reset false

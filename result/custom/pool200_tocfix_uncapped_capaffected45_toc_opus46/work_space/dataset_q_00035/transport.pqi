@@ -1,0 +1,41 @@
+SOLUTION 0  # Infilling solution
+    pH      7.0
+    Na      1.0
+    Cl      1.0
+
+SOLUTION 1-10  # Initial solution in cells
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+
+EXCHANGE 1-10
+    X       0.001
+    -equilibrate 1
+
+PRINT
+    -selected_output true
+
+TRANSPORT
+    -cells          10
+    -shifts         10
+    -punch_cells    1
+    -punch_frequency 1
+
+SELECTED_OUTPUT
+    -file           result.out
+    -reset          false
+    -step           true
+    -totals         Ca Na Cl
+
+USER_PUNCH
+    -headings  cell CaX2_mol NaX_mol CaX2_equivfrac
+    -start
+    10 PUNCH CELL_NO
+    20 PUNCH MOL("CaX2")
+    30 PUNCH MOL("NaX")
+    40 a = 2 * MOL("CaX2")
+    50 b = MOL("NaX")
+    60 IF (a + b) > 0 THEN PUNCH a / (a + b) ELSE PUNCH -1
+    -end
+
+END

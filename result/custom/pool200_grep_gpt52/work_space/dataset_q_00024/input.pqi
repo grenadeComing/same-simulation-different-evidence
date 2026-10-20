@@ -1,0 +1,28 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+        -steps 10 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -step true
+USER_PUNCH
+    -headings step H2S_dissolved_mol
+    10 PUNCH STEP_NO, (0 - GAS("H2S(g)"))
+END

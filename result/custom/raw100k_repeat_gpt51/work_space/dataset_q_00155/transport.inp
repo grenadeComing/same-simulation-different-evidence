@@ -1,0 +1,35 @@
+SOLUTION 0-10
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 11
+    pH 7 charge
+    Na 1
+    Cl 1
+
+EXCHANGE 0-10
+    X- 0.001
+    -equilibrate with solution 1
+
+EXCHANGE 11
+    X- 0.001
+    -equilibrate with solution 11
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -boundary_conditions constant constant
+    -dispersivities 0
+    -initial_time 0
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+
+SELECTED_OUTPUT
+    -file trans.sel
+    -reset false
+    -molalities Ca+2

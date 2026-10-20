@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    pe 4
+    units mmol/kgw
+    C(4) 0.5
+    Mn 1
+
+RATES
+Calcite
+-start
+10 k = 0.001
+20 ssa = 10.0
+30 rate = k*ssa
+40 moles = rate * TIME
+50 SAVE moles
+-end
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m 1.0
+        -steps 10 in 100
+        -cvode false
+
+SELECTED_OUTPUT
+    -file calcite_kinetics.sel
+    -time true
+    -totals C
+    -kinetic_reactants Calcite
+    -step true
+END

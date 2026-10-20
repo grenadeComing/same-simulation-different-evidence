@@ -1,0 +1,44 @@
+SOLUTION 0-10
+    pH 7.0
+    temp 25.0
+END
+
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+END
+
+SOLUTION 1
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+END
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+END
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1.0
+    -length 1.0
+    -dispersivity 0.0
+    -boundary_conditions flux flux
+    -initial_time 0.0
+    -print_cells 10
+    -print_frequency 1
+    -punch_cells 10
+    -punch_frequency 1
+END
+
+SELECTED_OUTPUT
+    -file trans_sel.out
+    -reset false
+    -pH true
+    -pe true
+    -distance true
+    -time true
+END

@@ -1,0 +1,13 @@
+TITLE extract specific conductance
+INCLUDE$ ba_so4_temp.inp
+
+SELECTED_OUTPUT 2
+    -file sc.sel
+    -reset false
+    -step true
+    -temperature true
+    -totals Ba S(6)
+USER_PUNCH 2
+    -head step temp sc
+    10 PUNCH STEP_NO, TC, SC
+END

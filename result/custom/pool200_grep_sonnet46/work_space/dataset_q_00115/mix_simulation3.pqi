@@ -1,0 +1,30 @@
+TITLE Mix river water and seawater 0.7:0.3
+
+# Solution 1: River water, pH 6.0, Cl 10 mg/L
+# pe set by O2(g) equilibrium at atmospheric pO2 = 0.21 atm
+SOLUTION 1 River Water
+    temp      25
+    pH        6.0
+    pe        O2(g)  -0.68
+    units     mg/L
+    Cl        10
+
+# Solution 2: Seawater, pH 8.1, Cl 19000 mg/L
+SOLUTION 2 Seawater
+    temp      25
+    pH        8.1
+    pe        O2(g)  -0.68
+    units     mg/L
+    Cl        19000
+
+# Mix 70% river water + 30% seawater
+MIX 1
+    1    0.7
+    2    0.3
+
+SELECTED_OUTPUT
+    -file     mix_result3.sel
+    -reset    false
+    -si       O2(g)
+
+END

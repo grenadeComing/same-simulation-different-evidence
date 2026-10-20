@@ -1,0 +1,16 @@
+SOLUTION 1 Pure_water
+    pH 7 charge
+    temp 25
+    units mol/kgw
+    water 1
+REACTION 1
+    H2SO4 1
+    0.001 0.005 0.01 0.05 0.1
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings step a_H
+10 PUNCH STEP_NO, ACT("H+")
+END

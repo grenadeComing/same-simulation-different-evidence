@@ -1,0 +1,40 @@
+TITLE 1D transport with exchange; query SI(Halite) at cell 3, step 10
+
+SOLUTION 0  Infilling
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10 Initial
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -simulation true
+    -state true
+    -solution true
+    -distance true
+    -time true
+    -step true
+    -totals Na Cl Ca
+    -si Halite
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -initial_time 0
+    -print_cells 3
+    -print_frequency 1
+    -punch_cells 3
+    -punch_frequency 1
+END

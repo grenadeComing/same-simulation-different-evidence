@@ -1,0 +1,30 @@
+TITLE Albite kinetics with fixed-pressure H2S gas, pH 2, 200C
+SOLUTION 1
+    temp 200
+    pH 2
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+    -steps 10 in 100
+    -tol 1e-12
+
+SELECTED_OUTPUT
+    -file albite_h2s_sel.tsv
+    -reset false
+    -step true
+USER_PUNCH
+    -headings step H2S_gas_moles
+    10 PUNCH STEP_NO, GAS("H2S(g)")
+END

@@ -1,0 +1,25 @@
+TITLE Pure water equilibrated with CH4-CO2-NH3 gas at 150C, fixed pressure
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    pe 4
+    units mol/kgw
+    -water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g)  0.0  10
+    CO2(g)  0.0  10
+    NH3(g)  0.0  5
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -high_precision true
+    -pH true
+    -pe true
+    -ionic_strength true
+USER_PUNCH
+    -headings Specific_conductance_uS_per_cm
+    10 PUNCH SC
+END

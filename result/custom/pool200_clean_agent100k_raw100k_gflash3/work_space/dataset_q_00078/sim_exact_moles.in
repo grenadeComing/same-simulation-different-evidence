@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temp 150
+    -volume 868
+    CH4(g) 10
+    CO2(g) 10
+    NH3(g) 5
+USER_PUNCH
+    -headings density act_H2O pH pe
+    10 PUNCH RHO, LA("H2O"), -LA("H+"), pe
+SELECTED_OUTPUT
+    -file output.sel
+    -user_punch true
+END

@@ -1,0 +1,19 @@
+TITLE Albite kinetic dissolution with H2S gas at 200C with chloride acid and explicit pe
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Fe(+3) 0.004
+    Fe(+2) 0.004
+    Cl 0.02 charge
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+KINETICS 1
+    Albite
+        -m0 1
+        -m 1
+        -parms 1.0 10
+        -steps 1000 in 100
+END

@@ -1,0 +1,9 @@
+SOLUTION 1
+    pH 7.0
+    pe 4.0
+    temp 25
+    units mol/kgw
+REACTION 1
+    NaCl 1.0
+    0.015 moles
+END

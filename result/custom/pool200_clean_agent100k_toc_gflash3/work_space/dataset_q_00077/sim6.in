@@ -1,0 +1,24 @@
+TITLE Geochemistry Question - No Redox
+SOLUTION 1
+    units mol/kgw
+    temp 150
+    pH 7
+    pe 4
+    water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g) 10
+    CO2(g) 10
+    NH3(g) 5
+END
+# To disable redox, we can use the "mass balance" on components.
+# But in phreeqc.dat, CH4(g) is C(-4), CO2(g) is C(4), NH3(g) is N(-3).
+# They are already separate in terms of their master species except for the redox.
+# If we don't have an oxidant, they might not react anyway.
+# But in my simulation, they DID react. (N(-3) went to N(0)).
+# Let's try to use a database or settings that disable redox.
+# Actually, the simplest way is to use "SOLUTION_SPECIES" to remove the redox reactions.
+# But that's complicated.
+# Let's try to just use a very low initial pe, or high pe, and see if it matters.

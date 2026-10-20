@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 100
+    units mmol/kgw
+    Ca 50
+    pH 7 charge
+END
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 10
+    CO2(g) 0 0.0625   # 1/16
+    CH4(g) -0.50515 0.3125 # log10(5/16)
+    H2S(g) -0.20412 0.625  # log10(10/16)
+END

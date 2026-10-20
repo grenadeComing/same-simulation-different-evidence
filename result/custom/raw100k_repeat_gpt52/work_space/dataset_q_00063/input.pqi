@@ -1,0 +1,24 @@
+TITLE C(4) species count in solution after equilibration with minerals at 100C
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    units mmol/kgw
+    Ba 100
+    -water 1
+EQUILIBRIUM_PHASES 1
+    Talc 0 10
+    Rhodochrosite 0 10
+    Sepiolite 0 10
+    Sepiolite(d) 0 10
+    Pb(OH)2 0 10
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings C4_species_count
+10 cnt = 0
+20 FOR i = 1 TO TOT("C(+4)")
+30   cnt = cnt + 1
+40 NEXT i
+50 PUNCH cnt
+END

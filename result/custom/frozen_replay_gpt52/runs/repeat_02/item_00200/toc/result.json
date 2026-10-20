@@ -1,0 +1,27 @@
+{
+  "index": 200,
+  "row_index": 199,
+  "task_type": "mcq",
+  "truth": "B",
+  "prediction": "B",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": true,
+  "item_id": 200,
+  "condition": "toc",
+  "status": "submitted",
+  "calls": 2,
+  "estimated_cost_usd": 0.024227,
+  "input_tokens": 13452,
+  "output_tokens": 49,
+  "read_paths": [
+    {
+      "path": "thenardite_sel.txt",
+      "ok": true,
+      "start_line": null,
+      "end_line": null
+    }
+  ],
+  "checkpoint_fingerprint": "432d37d03e7c6d29e7d0bc1b319b780d7ec86b683854ebdd7493a2e3bb4d2aaa",
+  "remaining_steps": 20
+}

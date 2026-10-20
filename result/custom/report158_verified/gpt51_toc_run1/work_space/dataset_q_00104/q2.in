@@ -1,0 +1,13 @@
+TITLE Viscosity question 2
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    units mol/kgw
+
+SELECTED_OUTPUT
+    -file q2.sel
+    -reset false
+USER_PUNCH
+    -headings viscosity
+    10 PUNCH VISCOUS
+END

@@ -1,0 +1,49 @@
+TITLE 1D cation exchange transport problem
+
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+    units mol/kgw
+
+SOLUTION 1-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+    units mol/kgw
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+    units mol/kgw
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+
+USER_PUNCH
+    -headings step cell NaX_m CaX2_m
+    10 PUNCH STEP_NO
+    20 PUNCH CELL_NO
+    30 PUNCH EXCHANGE_MOL("NaX",1)
+    40 PUNCH EXCHANGE_MOL("CaX2",1)
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions constant constant
+    -initial_time 0
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+    -dump dump_tr
+    -dump_frequency 1
+
+SELECTED_OUTPUT
+    -file exch1.txt
+    -reset false
+END

@@ -1,0 +1,26 @@
+SOLUTION 1 DIC
+    temp 20
+    pH 7 charge
+    units mmol/kgw
+    C(4) 50 as HCO3
+SOLUTION 2 Ca
+    temp 20
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+MIX 1
+    1 0.5
+    2 0.5
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -temperature true
+    -si Aragonite Calcite
+USER_PUNCH
+    -headings step temp SI_Aragonite
+    10 PUNCH SIM_NO, TC, SI("Aragonite")
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+END

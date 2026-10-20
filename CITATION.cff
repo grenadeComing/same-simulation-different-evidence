@@ -1,0 +1,69 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy"
+authors:
+  - family-names: Zhang
+    given-names: Ke
+    affiliation: "University of California, Riverside"
+    orcid: "https://orcid.org/0009-0007-7018-2427"
+  - family-names: Chundur
+    given-names: Sahchit
+    affiliation: "University of California, Irvine"
+  - family-names: Owusu
+    given-names: Jerry Peprah
+    affiliation: "University of California, Irvine"
+  - family-names: Abdolhosseini Qomi
+    given-names: Mohammad Javad
+    affiliation: "University of California, Irvine"
+  - family-names: Raissi
+    given-names: Maziar
+    affiliation: "University of California, Riverside"
+repository-code: "https://github.com/grenadeComing/same-simulation-different-evidence"
+url: "https://arxiv.org/abs/2610.26836"
+license: MIT
+keywords:
+  - llm-agents
+  - tool-use
+  - context-management
+  - phreeqc
+  - ai-for-science
+  - benchmark
+preferred-citation:
+  type: article
+  title: "Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy"
+  authors:
+    - family-names: Zhang
+      given-names: Ke
+      affiliation: "University of California, Riverside"
+      orcid: "https://orcid.org/0009-0007-7018-2427"
+    - family-names: Chundur
+      given-names: Sahchit
+      affiliation: "University of California, Irvine"
+    - family-names: Owusu
+      given-names: Jerry Peprah
+      affiliation: "University of California, Irvine"
+    - family-names: Abdolhosseini Qomi
+      given-names: Mohammad Javad
+      affiliation: "University of California, Irvine"
+    - family-names: Raissi
+      given-names: Maziar
+      affiliation: "University of California, Riverside"
+  journal: "arXiv preprint arXiv:2610.26836"
+  year: 2026
+  doi: "10.48550/arXiv.2610.26836"
+  url: "https://arxiv.org/abs/2610.26836"
+references:
+  - type: article
+    title: "PHREEQC-MCQ-200: A Diagnostic Benchmark for Tool-Augmented Scientific Simulator Agents"
+    authors:
+      - family-names: Zhang
+        given-names: Ke
+      - family-names: Chundur
+        given-names: Sahchit
+      - family-names: Abdolhosseini Qomi
+        given-names: Mohammad Javad
+      - family-names: Raissi
+        given-names: Maziar
+    journal: "arXiv preprint arXiv:2607.00436"
+    year: 2026
+    doi: "10.48550/arXiv.2607.00436"

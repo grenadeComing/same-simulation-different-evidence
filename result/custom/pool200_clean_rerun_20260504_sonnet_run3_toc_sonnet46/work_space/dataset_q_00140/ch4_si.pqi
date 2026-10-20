@@ -1,0 +1,18 @@
+TITLE Equilibrium of pure water with CO2 at log PCO2 = -3.4, check SI of CH4
+
+SOLUTION 1 Pure water at pH 7.0
+    temp      25
+    pH        7.0
+    pe        4.0
+    units     mol/L
+    water     1.0
+
+EQUILIBRIUM_PHASES 1
+    CO2(g)    -3.4    10.0
+
+SELECTED_OUTPUT
+    -file     ch4_si.sel
+    -reset    false
+    -si       CH4(g)
+
+END

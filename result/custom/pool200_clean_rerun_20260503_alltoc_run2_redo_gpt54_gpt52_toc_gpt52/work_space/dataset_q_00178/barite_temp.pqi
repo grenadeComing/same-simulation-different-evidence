@@ -1,0 +1,15 @@
+TITLE Barite SI vs temperature steps
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    units mg/L
+    Ba 2.0
+    S(6) 15.0
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+SELECTED_OUTPUT
+    -file barite_sel.txt
+    -reset false
+    -temperature true
+    -si Barite
+END

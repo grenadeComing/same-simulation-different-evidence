@@ -1,0 +1,10 @@
+SOLUTION 1
+    temp 150
+    pressure 10
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT 1
+    -file SI_Quartz_10atm.txt
+    -si Quartz
+END

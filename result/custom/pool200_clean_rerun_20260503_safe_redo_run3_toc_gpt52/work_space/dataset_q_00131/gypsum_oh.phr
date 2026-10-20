@@ -1,0 +1,12 @@
+SOLUTION 1 Pure water
+    pH 7.0
+    temp 25
+    -water 1
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+SELECTED_OUTPUT
+    -reset false
+USER_PUNCH
+    -headings a_OH
+10 PUNCH ACT("OH-")
+END

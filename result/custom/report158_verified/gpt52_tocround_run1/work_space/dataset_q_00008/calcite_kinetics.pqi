@@ -1,0 +1,33 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    -water 1
+
+KINETICS 1
+    Calcite
+    -m0 1.0
+    -parms 1.0 10.0
+    -cvode true
+    -steps 1000 in 100 steps
+
+RATES
+Calcite
+-start
+10 sa = PARM(1)
+20 k  = PARM(2)
+30 rate = k*sa
+40 moles = rate*TIME
+50 SAVE moles
+-end
+
+SELECTED_OUTPUT
+    -file selected.tsv
+    -reset false
+    -time true
+    -step true
+    -kinetic_reactants Calcite
+END

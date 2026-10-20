@@ -1,0 +1,40 @@
+TITLE Transport problem 10 cells 10 shifts
+
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1
+    X- 0.001
+
+SOLUTION 2-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 2-10
+    X- 0.001
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1
+    -flow_direction      forward
+    -boundary_conditions constant
+    -initial_time        0
+    -print_cells         1-10
+    -print_frequency     1
+    -punch_cells         1-10
+    -punch_frequency     1
+
+USER_PUNCH
+    -headings Time Cell SC
+    10 PUNCH TOT("time"), CELL_NO, SC
+
+END

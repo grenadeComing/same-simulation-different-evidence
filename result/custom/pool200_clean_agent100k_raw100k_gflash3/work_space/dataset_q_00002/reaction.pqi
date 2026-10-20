@@ -1,0 +1,17 @@
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 4
+    C(4) 0.5
+    Mn 1
+    Cl 1.99 # balance charge
+    units mmol/kgw
+REACTION 1
+    Calcite 1
+    0.000001 0.000002 0.000003 0.000004 0.000005 0.000006 0.000007 0.000008 0.000009 0.00001
+SELECTED_OUTPUT
+    -file reaction.sel
+    -reset false
+    -reaction
+    -pH
+END

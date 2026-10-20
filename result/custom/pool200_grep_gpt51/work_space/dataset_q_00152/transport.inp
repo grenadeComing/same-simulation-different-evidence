@@ -1,0 +1,36 @@
+SOLUTION 0-10
+    pH 7.0
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 1e-3
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 10*1
+    -boundary_conditions flux flux
+    -initial_time 0
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+    -flow_direction forward
+    -correct_disp false
+    -diffusion_coefficient 0
+    -dump dump_file
+
+USER_PUNCH
+    -headings sim cell exch1_CaX2 exch1_NaX exch1_frac_CaX2
+    10 PUNCH SIM_NO, CELL_NO, MOL("CaX2",1), MOL("NaX",1), MOL("CaX2",1)/(MOL("CaX2",1)+MOL("NaX",1))
+
+END

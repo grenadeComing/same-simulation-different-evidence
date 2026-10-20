@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 100
+    units mmol/kgw
+    Ca 50
+    pH 7 charge
+END
+
+USE solution 1
+EQUILIBRIUM_PHASES 1
+    Calcite 0.0 100.0
+    Gypsum 0.0 100.0
+    CO2(g) -1.20412 100.0
+    CH4(g) -0.50515 100.0
+    H2S(g) -0.20412 100.0
+END

@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -totals H Mg Si O
+USER_PUNCH
+    -headings log_IAP_Chrysotile
+10 REM Chrysotile: Mg3Si2O5(OH)4 = 3Mg+2 + 2H4SiO4 + H2O - 2H+
+20 PUNCH LOG10((ACT("Mg+2")^3)*(ACT("H4SiO4")^2)*ACT("H2O")/(ACT("H+")^2))
+END
+END

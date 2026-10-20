@@ -1,0 +1,2 @@
+                 sim	               state	                soln	              dist_x	                time	                step	                  pH	                  pe	             Calcite	           d_Calcite	
+                   2	               react	                   1	                 -99	                   0	                   1	  6.488615935010e+00	 -1.151544053910e+00	  8.038447256803e-04	  8.038447256803e-04	

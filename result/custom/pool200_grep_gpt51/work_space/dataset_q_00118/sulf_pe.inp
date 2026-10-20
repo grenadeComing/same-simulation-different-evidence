@@ -1,0 +1,16 @@
+SOLUTION 1 Pure water
+    pH 7 charge
+    temp 25
+
+REACTION 1
+    H2SO4 1.0
+    0.001 0.005 0.01 0.05 0.1
+
+SELECTED_OUTPUT
+    -file sulf_sel.out
+    -reset false
+    -solution true
+    -pH true
+    -pe true
+    -totals S(6)
+END

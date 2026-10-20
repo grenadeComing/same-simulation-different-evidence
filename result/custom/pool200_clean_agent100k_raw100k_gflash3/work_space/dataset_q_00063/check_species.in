@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    units     mmol/kgw
+    Ba        100
+    C         1
+    Mg        1
+    Mn        1
+    Pb        1
+    Si        1
+SELECTED_OUTPUT 1
+    -file species.txt
+    -species true
+END

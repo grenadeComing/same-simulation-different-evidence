@@ -1,0 +1,19 @@
+TITLE 150C water with fixed-pressure gas phase
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    pe 4
+    redox pe
+    units mol/kgw
+    water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -temperature 150
+    -pressure 1
+    CH4(g) -0.1760912591 10
+    CO2(g) -0.1760912591 10
+    NH3(g) -0.4771212547 5
+SELECTED_OUTPUT
+    -reset false
+    -pH true
+END

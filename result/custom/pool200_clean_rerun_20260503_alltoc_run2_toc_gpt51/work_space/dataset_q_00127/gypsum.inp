@@ -1,0 +1,9 @@
+SOLUTION 1 Pure water in equilibrium with gypsum
+    pH 7.0 charge
+    temp 25.0
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+SELECTED_OUTPUT
+    -file gypsum_selout.txt
+    -ionic_strength true
+END

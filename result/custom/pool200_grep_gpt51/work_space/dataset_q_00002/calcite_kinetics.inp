@@ -1,0 +1,31 @@
+SOLUTION 1
+    temp      100
+    pH        5  charge
+    pe        4
+    C(4)      0.0005
+    Mn        0.001
+
+KINETICS 1
+    Calcite
+        -m        1.0
+        -m0       1.0
+        -parms    0.001 10.0
+        -steps    10 100
+
+RATES
+Calcite
+    -start
+    10 k = PARM(1)
+    20 ssa = PARM(2)
+    30 rate = k*ssa
+    40 moles = rate * TIME
+    50 SAVE moles
+    -end
+
+SELECTED_OUTPUT
+    -file calcite_kinetics.sel
+    -high_precision true
+    -step true
+    -pH true
+
+END

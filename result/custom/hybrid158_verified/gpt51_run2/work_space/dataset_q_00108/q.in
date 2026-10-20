@@ -1,0 +1,5 @@
+SOLUTION 1 Pure water in equilibrium with 10 mol gypsum
+    pH 7.0
+EQUILIBRIUM_PHASES
+    Gypsum 0 10
+END

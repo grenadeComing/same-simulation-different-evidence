@@ -1,0 +1,30 @@
+TITLE Ca species count using species list
+SOLUTION 1
+    temp 100
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 10
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 25
+    CO2(g) 1
+    CH4(g) 5
+    H2S(g) 10
+SELECTED_OUTPUT
+    -file ca_sel2.txt
+    -reset false
+USER_PUNCH
+    -headings Ca_species_count
+    10 cnt = 0
+    20 n = SYS("species", "Ca")
+    30 FOR i = 1 TO n
+    40   s$ = SYS("species", "Ca", i)
+    50   IF (MOL(s$) > 0) THEN cnt = cnt + 1
+    60 NEXT i
+    70 PUNCH cnt
+END

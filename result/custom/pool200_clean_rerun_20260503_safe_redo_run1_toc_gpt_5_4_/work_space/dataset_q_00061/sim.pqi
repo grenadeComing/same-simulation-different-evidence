@@ -1,0 +1,19 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    Ba        0.1
+    units     mol/kgw
+    water     1
+EQUILIBRIUM_PHASES 1
+    Talc            0 10
+    Rhodochrosite   0 10
+    Sepiolite       0 10
+    Sepiolite(d)    0 10
+    Pb(OH)2         0 10
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+USER_PUNCH
+    -headings Talc_delta Rhodo_delta Sepio_delta Sepiod_delta PbOH2_delta
+10 PUNCH EQUI_DELTA("Talc"), EQUI_DELTA("Rhodochrosite"), EQUI_DELTA("Sepiolite"), EQUI_DELTA("Sepiolite(d)"), EQUI_DELTA("Pb(OH)2")
+END

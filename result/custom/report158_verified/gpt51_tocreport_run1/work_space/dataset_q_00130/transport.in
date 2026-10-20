@@ -1,0 +1,47 @@
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X- 0.001
+
+EQUILIBRIUM_PHASES 1-10
+    H2O(g) 0 0
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -initial_time 0
+    -print_frequency 1
+    -punch_frequency 1
+    -warnings true
+    -dump "dump"
+    -dump_frequency 0
+    -multi_D false
+    -correct_disp true
+    -time_step 1
+    -boundary_conditions flux flux
+    -lengths 1
+    -dispersivities 0
+    -thermal_diffusion false
+    -diffusion_coefficient 0
+    -stagnant false
+    -punch_cells 4
+    -punch_frequency 1
+    -punch_simulation 1
+    -punch_time 10

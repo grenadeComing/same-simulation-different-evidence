@@ -1,0 +1,1 @@
+<<< None of the options. Computed alkalinity is 1.000e-01 eq/kg, so the problem as posed or interpreted in PHREEQC does not yield values in the 2.69e-02 range. >>>

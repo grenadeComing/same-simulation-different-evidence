@@ -1,0 +1,43 @@
+TITLE 1D Transport with Exchange - 10 cells, 10 shifts (mol/L units)
+
+# Initial solution: pH 7.0, Ca 1.0 mol/L, Cl 2.0 mol/L
+SOLUTION 1-10
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+
+# Infilling (inlet) solution: pH 7.0, Na 1.0 mol/L, Cl 1.0 mol/L
+SOLUTION 0
+    pH      7.0
+    Na      1.0
+    Cl      1.0
+
+# Exchange sites for all 10 cells, equilibrated with solution 1
+EXCHANGE 1-10
+    X       0.001
+    equilibrate 1
+
+SAVE solution 1-10
+
+TRANSPORT
+    cells           10
+    shifts          10
+    time_step       3600
+    length          0.1
+    dispersivity    0.0
+    flow_direction  forward
+    boundary_conditions flux flux
+    print_cells     3
+
+SELECTED_OUTPUT
+    file            transport_exchange3.sel
+    reset           false
+    step            true
+    solution        true
+    exchange        true
+
+USER_PUNCH
+    headings log_IAP_H2g
+    10 PUNCH SI("H2(g)") + LOG10(1.0)
+
+END

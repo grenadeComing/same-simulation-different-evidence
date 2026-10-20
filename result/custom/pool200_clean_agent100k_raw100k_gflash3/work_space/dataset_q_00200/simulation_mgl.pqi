@@ -1,0 +1,27 @@
+TITLE Calculate Thenardite SI with mg/L
+SOLUTION 1
+    temp 25
+    pH 8.0
+    units mg/L
+    density 1.0
+    Ca 50
+    Mg 12
+    Na 20
+    K 2
+    Alkalinity 150
+    S(6) 40
+    Cl 15
+END
+
+USE solution 1
+REACTION 1
+    H2O -1
+    50.0 moles
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Gypsum 0 0
+    Halite 0 0
+SELECTED_OUTPUT
+    -file solution_mgl.sel
+    -si Thenardite
+END

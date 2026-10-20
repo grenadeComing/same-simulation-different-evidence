@@ -1,0 +1,24 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    # No Cu or Ba
+    Cl 0.01 charge
+END
+
+SELECTED_OUTPUT
+    -file results_no_metals.sel
+    -reset false
+    -step
+    -ph
+END
+
+KINETICS 1
+    Calcite
+    -m0 1.0
+    -parms 1.0 1.0
+    -steps 1000 in 100
+END
+RUN_CELLS
+    -cells 1
+END

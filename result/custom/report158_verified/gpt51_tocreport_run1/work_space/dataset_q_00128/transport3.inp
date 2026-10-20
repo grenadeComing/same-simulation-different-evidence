@@ -1,0 +1,24 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 0-10
+    X- 0.001
+-equilibrate 1
+
+SOLUTION 1
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -lengths             10*1
+    -time_step           1
+    -flow_direction      forward
+    -boundary_conditions flux flux
+    -print_cells         4
+    -print_frequency     10
+END

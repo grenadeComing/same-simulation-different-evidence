@@ -1,0 +1,16 @@
+TITLE Chrysotile-Talc Pure Water Tight Tolerance
+SOLUTION 1
+    temp 150
+    pH 7
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+KNOBS
+    -iterations 1000
+    -convergence_tolerance 1e-15
+SELECTED_OUTPUT 1
+    -file output_tight.sel
+    -reset false
+    -mol MgOH+
+    -pH true
+END

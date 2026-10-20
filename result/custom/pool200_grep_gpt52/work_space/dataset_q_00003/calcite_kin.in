@@ -1,0 +1,33 @@
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 4
+    C(4) 0.5 mmol/kgw
+    Mn   1   mmol/kgw
+
+RATES
+Calcite_simple
+-start
+ 10 k = PARM(1)
+ 20 A = PARM(2)
+ 30 rate = k * A
+ 40 moles = rate * TIME
+ 50 if (moles > M) then moles = M
+ 60 SAVE moles
+-end
+
+KINETICS 1
+  Calcite_simple
+    -formula CaCO3 1
+    -m0 1
+    -parms 0.001 10.0
+    -steps 10 in 100
+    -tol 1e-12
+
+SELECTED_OUTPUT
+  -file calcite_kin.sel
+  -reset false
+  -time true
+  -step true
+  -totals C
+END

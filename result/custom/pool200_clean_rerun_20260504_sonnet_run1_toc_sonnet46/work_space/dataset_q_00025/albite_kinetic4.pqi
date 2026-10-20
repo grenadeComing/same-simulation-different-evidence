@@ -1,0 +1,42 @@
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4
+    redox     pe
+    units     mmol/kgw
+    density   1.0
+    Fe(3)     4.0
+    Fe(2)     4.0
+    -water    1.0 # kg
+
+RATES
+Albite
+-start
+10  rate = PARM(2) * PARM(1) * (M/M0)
+20  moles = rate * TIME
+30  if (moles > M) then moles = M
+40  SAVE moles
+-end
+
+KINETICS 1
+Albite
+    -m0   1.0
+    -m    1.0
+    -parms 1.0  10.0
+    -step 10 in 100
+    -tol  1e-8
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5.0
+    -volume   1000.0
+    -temperature 200.0
+    H2S(g)    5.0
+
+SELECTED_OUTPUT
+    -file     albite_kinetic4.out
+    -reset    false
+    -step     true
+    -si       Goethite
+
+END

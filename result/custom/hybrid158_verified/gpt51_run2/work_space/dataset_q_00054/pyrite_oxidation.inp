@@ -1,0 +1,16 @@
+SOLUTION 1
+    pH 7.0
+    temp 25.0
+    pe 4
+    redox pe
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    O2(g)   -0.7 10
+    Pyrite  0    0.1
+    Goethite 0 0
+    Gypsum   0 0
+SELECTED_OUTPUT
+    -file pyrite_oxidation.sel
+    -pH true
+    -totals Fe S O
+END

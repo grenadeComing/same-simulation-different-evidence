@@ -1,0 +1,36 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 0-10
+    X-   0.001
+
+EQUILIBRIUM_PHASES 0-10
+    Fix_H+   0.0   7.0
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -flow_direction      forward
+    -boundary_conditions flux flux
+    -lengths             1*1.0
+    -dispersivities      1*0.0
+    -time_step           1.0
+    -punch_cells         10
+    -print_cells         10
+    -print_frequency     1
+
+SELECTED_OUTPUT
+    -file sel.out
+    -reset false
+    -time true
+    -distance true
+    -solution true
+    -pH true
+    -pe true

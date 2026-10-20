@@ -1,0 +1,44 @@
+SOLUTION 0-10
+    pH 7.0
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+
+EXCHANGE_SPECIES
+    Na+ + X- = NaX
+        log_k 0
+    Ca+2 + 2X- = CaX2
+        log_k 0
+
+TRANSPORT
+    cells 10
+    shifts 10
+    length 1
+    time_step 1
+    flow_direction forward
+    boundary_conditions flux flux
+    initial_time 0
+    print_cells 1-10
+    print_frequency 1
+    punch_cells 1-10
+    punch_frequency 1
+    -warnings false
+
+SELECTED_OUTPUT
+    -file transport_sel.out
+    -reset false
+    -simulation true
+    -state true
+    -solution true
+    -si Halite
+    -dist -cells true
+    -step true

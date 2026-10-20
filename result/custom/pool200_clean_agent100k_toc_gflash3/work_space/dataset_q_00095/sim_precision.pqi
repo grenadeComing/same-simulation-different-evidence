@@ -1,0 +1,13 @@
+TITLE Chrysotile-Talc Equilibrium Precision
+SOLUTION 1
+    units mol/kgw
+    temp 150
+    pH 7
+    water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+USER_PUNCH 1
+    -headings MgOH+_mol
+    10 PUNCH MOL("MgOH+")
+END

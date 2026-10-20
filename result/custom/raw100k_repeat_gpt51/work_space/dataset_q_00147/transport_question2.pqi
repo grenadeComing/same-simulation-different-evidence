@@ -1,0 +1,44 @@
+TITLE Transport exchange problem
+
+SOLUTION 0
+    pH    7.0
+    Ca    1.0
+    Cl    2.0
+
+SOLUTION 1
+    pH    7.0
+    Na    1.0
+    Cl    1.0
+
+EXCHANGE 1
+    X-    0.001
+
+EQUILIBRIUM_PHASES 1
+
+COPY solution 0 2-10
+COPY exchange 1 2-10
+COPY equilibrium_phases 1 2-10
+
+TRANSPORT
+    -cells                 10
+    -shifts                10
+    -time_step             1
+    -flow_direction        forward
+    -boundary_conditions   flux flux
+    -lengths               1
+    -dispersivities        0
+    -punch_cells           1-10
+    -print_cells           1-10
+    -print_frequency       1
+    -punch_frequency       1
+
+SELECTED_OUTPUT
+    -file                  trans_sel.out
+    -reset                 false
+    -time                  true
+    -distance              true
+    -solution              true
+    -step                  true
+    -ph                    true
+    -totals                Na Ca Cl
+END

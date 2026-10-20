@@ -1,0 +1,34 @@
+
+# Solution 1: River water - pH 6.0, Cl 10 mg/L
+SOLUTION 1 River Water
+    pH      6.0
+    Cl      10      # mg/L as default unit
+    units   mg/L
+    temp    25
+
+# Solution 2: Seawater - pH 8.1, Cl 19000 mg/L
+SOLUTION 2 Seawater
+    pH      8.1
+    Cl      19000   # mg/L
+    units   mg/L
+    temp    25
+
+# Mix 70% river water and 30% seawater
+MIX 1
+    1   0.7
+    2   0.3
+
+SAVE SOLUTION 3
+
+END
+
+# Examine the mixed solution
+USE SOLUTION 3
+
+SELECTED_OUTPUT
+    -file           mix_output2.sel
+    -reset          false
+    -pH             true
+    -activities     H+
+
+END

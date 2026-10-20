@@ -1,0 +1,49 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    Fe(2) 4e-3
+    Fe(3) 4e-3
+    units mol/kgw
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 1.0
+
+KINETICS 1
+    Albite
+        -formula NaAlSi3O8 1
+        -m0 1
+        -parms 10 1.0
+        -steps 10*100
+        -bad_step_max 100
+
+RATES
+    Albite
+    -start
+    10 k = PARM(1)
+    20 ssa = PARM(2)
+    30 m = MOL("Albite")
+    40 if (m <= 0) then goto 200
+    50 rate = k * ssa
+    60 moles = rate * TIME
+    70 if (moles > m) then moles = m
+    80 SAVE moles
+    200 END
+    -end
+
+SELECTED_OUTPUT
+    -file albite_sel.out
+    -reset false
+    -time
+    -totals Fe(2) Fe(3)
+    -si Goethite
+    -step
+    -high_precision true
+
+USER_PUNCH
+    -headings step si_Goethite
+    10 PUNCH STEP_NO, SI("Goethite")
+
+END

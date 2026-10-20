@@ -1,0 +1,8 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge # This will make it neutral since only H and O are present
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+END

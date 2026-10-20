@@ -1,0 +1,10 @@
+TITLE Temp Check
+SOLUTION 1
+    temp 24.8
+REACTION 1
+    H2SO4 1.0
+    0.001 moles
+SELECTED_OUTPUT
+    -file res_temp248.sel
+    -pH true
+END

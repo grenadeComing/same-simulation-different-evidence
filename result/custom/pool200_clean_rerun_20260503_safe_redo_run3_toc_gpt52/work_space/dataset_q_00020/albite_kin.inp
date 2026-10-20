@@ -1,0 +1,27 @@
+TITLE Albite kinetic dissolution with H2S gas at 200C, pH 2
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    units mmol/kgw
+    Fe(+3) 4
+    Fe(+2) 4
+    -water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+        -tol 1e-12
+    -steps 10 in 100
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -head step Na Al S Fe
+10 PUNCH STEP_NO, TOT("Na"), TOT("Al"), TOT("S"), TOT("Fe")
+END

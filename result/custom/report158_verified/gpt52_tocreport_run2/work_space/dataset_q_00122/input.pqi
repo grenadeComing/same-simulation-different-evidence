@@ -1,0 +1,29 @@
+SOLUTION 1-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+    -water 1
+
+SOLUTION 0  Infilling
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+    -water 1
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -diffusion_coefficient 0
+    -dispersivities 0
+    -correct_disp true
+    -print_cells 1
+    -print_frequency 1
+END

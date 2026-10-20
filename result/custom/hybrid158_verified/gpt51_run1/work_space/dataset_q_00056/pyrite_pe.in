@@ -1,0 +1,9 @@
+SOLUTION 1
+    pH 7.0
+    temp 25.0
+EQUILIBRIUM_PHASES 1
+    O2(g)   -0.7   10.0
+    Pyrite  0.0    0.1
+    Goethite 0.0   0.0
+    Gypsum   0.0   0.0
+END

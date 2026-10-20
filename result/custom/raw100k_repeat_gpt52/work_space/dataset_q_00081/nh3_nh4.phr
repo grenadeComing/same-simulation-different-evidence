@@ -1,0 +1,16 @@
+TITLE NH3/NH4 speciation with fixed-pressure gas phase at 150C
+SOLUTION 1
+  temp 150
+  pH 7
+  pe 4
+  units kgw
+  -water 1
+EQUILIBRIUM_PHASES 1
+  CO2(g) -0.39794 10
+  CH4(g) -0.39794 10
+  NH3(g) -0.69897 5
+SELECTED_OUTPUT
+  -file sel.txt
+  -reset false
+  -molalities NH3 NH4+
+END

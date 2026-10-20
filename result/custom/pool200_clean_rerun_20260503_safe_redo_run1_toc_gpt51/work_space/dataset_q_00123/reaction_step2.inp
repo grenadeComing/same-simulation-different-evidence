@@ -1,0 +1,16 @@
+TITLE Sulfuric acid titration step 2
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    units mol/kgw
+
+REACTION 1
+    H2SO4 1
+    0.001 0.005 0.01 0.05 0.1
+
+SELECTED_OUTPUT
+    -file step2.sel
+    -reset false
+    -pH true
+
+END

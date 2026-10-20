@@ -1,0 +1,13 @@
+SOLUTION 1
+    Ca 1
+    S(-2) 1
+    C(4) 1
+    S(6) 1
+    temp 100
+END
+USER_PRINT
+10 t = SYS("aq", count, names$, type$, moles)
+20 FOR i = 1 TO count
+30   IF (INSTR(names$(i), "Ca") > 0) THEN PRINT names$(i)
+40 NEXT i
+END

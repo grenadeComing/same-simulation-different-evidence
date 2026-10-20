@@ -1,0 +1,35 @@
+SOLUTION 0-10
+    pH 7.0
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 0-10
+    X 1e-3
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1
+    -flow_direction      forward
+    -boundary_conditions flux flux
+    -length              1
+    -dispersivities      0
+    -correct_disp        false
+    -print_cells         1-10
+    -print_frequency     1
+    -punch_cells         1-10
+    -punch_frequency     1
+
+SELECTED_OUTPUT
+    -file trans3.sel
+    -reset false
+    -totals CaX2 NaX
+
+END

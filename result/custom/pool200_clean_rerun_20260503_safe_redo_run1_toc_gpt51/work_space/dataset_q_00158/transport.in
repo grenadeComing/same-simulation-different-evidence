@@ -1,0 +1,43 @@
+SOLUTION 0-10
+    pH 7.0
+    temp 25
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    temp 25
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE_SPECIES
+    X- = X-
+        -log_k 0.0
+
+EXCHANGE 0-9
+    X- 0.001
+    -equilibrate 1
+
+USE solution 0
+USE exchange 0
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions constant flux
+    -dispersivities 0
+    -punch_cells 1-10
+    -punch_frequency 1
+    -print_cells 1-10
+    -print_frequency 1
+
+SELECTED_OUTPUT
+    -file trans_sel.out
+    -reset false
+    -step true
+    -solution true
+    -sim true
+    -si H2O(g)

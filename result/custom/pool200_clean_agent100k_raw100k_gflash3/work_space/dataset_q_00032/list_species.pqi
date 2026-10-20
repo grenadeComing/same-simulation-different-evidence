@@ -1,0 +1,10 @@
+SOLUTION 1
+    Ca 1
+    C(4) 1
+END
+USER_PRINT
+10 t = SYS("species", count, name, type, moles)
+20 for i = 1 to count
+30   print name(i)
+40 next i
+END

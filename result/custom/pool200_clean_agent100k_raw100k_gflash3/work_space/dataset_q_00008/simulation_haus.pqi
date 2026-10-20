@@ -1,0 +1,38 @@
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 4
+    C 0.5 mmol/kgw
+    Mn 1 mmol/kgw
+    Cl 2.0 charge
+    units mmol/kgw
+
+EQUILIBRIUM_PHASES 1
+    Hausmannite 0 0
+
+RATES
+    Calcite
+    -start
+    10 sr_c = SR("Calcite")
+    20 k = 0.001
+    30 sa = 10.0
+    40 rate = k * sa * (1 - sr_c)
+    50 save rate * TIME
+    -end
+
+KINETICS 1
+    Calcite
+    -m 1.0
+    -m0 1.0
+    -steps 1000 in 100 steps
+    -tol 1e-10
+
+SELECTED_OUTPUT
+    -file solution_results_haus.txt
+    -reset false
+    -step
+    -time
+    -pe
+    -pH
+
+END

@@ -1,0 +1,22 @@
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 4
+    Mn 1e-3
+    C(4) 5e-4
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 10.0 1.0
+        -steps 1000 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -file calcite_kinetics.sel
+    -reset false
+    -time true
+    -pH true
+    -step true
+END

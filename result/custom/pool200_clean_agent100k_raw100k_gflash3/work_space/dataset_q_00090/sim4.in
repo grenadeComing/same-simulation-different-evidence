@@ -1,0 +1,11 @@
+TITLE Chrysotile-Talc Equilibrium No pH Init
+SOLUTION 1
+    temp 150
+    pH 7
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT 1
+    -file is_output.txt
+    -ionic_strength
+END

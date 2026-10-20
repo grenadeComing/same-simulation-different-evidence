@@ -1,0 +1,25 @@
+SOLUTION 1
+    temp 100
+    pH 5.0
+    pe 4.0
+    C(4) 0.5 mmol/kgw
+    Mn 1.0 mmol/kgw
+    units mmol/kgw
+RATES
+    MyCalcite
+    -start
+    10 rate = 1e-6 * (1 - SR("Calcite"))
+    20 save rate * TIME
+    -end
+KINETICS 1
+    MyCalcite
+    -formula CaCO3
+    -m0 1.0
+    -m 1.0
+    -steps 1000 in 100
+SELECTED_OUTPUT
+    -file result_1e6.sel
+    -reset false
+    -step
+    -ph
+END

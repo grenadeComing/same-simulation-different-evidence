@@ -1,0 +1,36 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(+3) 4e-3
+    Fe(+2) 4e-3
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+        -steps 10 100
+
+SELECTED_OUTPUT 1
+    -reset false
+    -high_precision true
+    -step true
+    -pH true
+    -totals Si
+
+USER_PUNCH 1
+    -headings si_species_count
+10 count = 0
+20 FOR i = 1 TO SPECIES_COUNT
+30   s$ = SPECIES_NAME$(i)
+40   IF INSTR(s$, "Si") > 0 THEN count = count + 1
+50 NEXT i
+60 PUNCH count
+
+END

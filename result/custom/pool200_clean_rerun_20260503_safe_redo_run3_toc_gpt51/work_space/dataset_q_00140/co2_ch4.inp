@@ -1,0 +1,15 @@
+SOLUTION 1 Pure water
+    temp 25
+    pH 7.0
+    pe 4
+    redox pe
+    units mol/kgw
+    density 1
+
+EQUILIBRIUM_PHASES 1
+    CO2(g)   -3.4 10
+
+SELECTED_OUTPUT
+    -file co2_ch4.sel
+    -saturation_indices CH4(g)
+END

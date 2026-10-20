@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp 100
+    units mmol/kgw
+    Ca 50
+    Cl 100
+    pH 7
+END
+USE solution 1
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 10
+    CO2(g) -1.20412
+    Mtg(g) -0.50515
+    H2Sg(g) -0.20412
+END
+SELECTED_OUTPUT
+    -file final_try_2.sel
+    -molalities Mtg
+END

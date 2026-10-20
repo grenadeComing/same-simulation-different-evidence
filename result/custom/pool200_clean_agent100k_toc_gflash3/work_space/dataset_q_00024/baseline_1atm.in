@@ -1,0 +1,19 @@
+
+SOLUTION 1
+    temp 200
+    pH 2
+    units mmol/kgw
+    Fe(2) 4
+    Fe(3) 4
+    Cl 10 charge
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    H2S(g) 0.0 10.0  # 1 atm
+
+SELECTED_OUTPUT 1
+    -file baseline_1atm.sel
+    -reset false
+    -equilibrium_phases H2S(g)
+
+END

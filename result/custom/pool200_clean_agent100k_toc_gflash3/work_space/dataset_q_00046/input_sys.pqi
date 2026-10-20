@@ -1,0 +1,19 @@
+SOLUTION 1
+    temp 100
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+EQUILIBRIUM_PHASES 1
+    Calcite 0 100
+    Gypsum 0 100
+    Aragonite 0 100
+    CO2(g) 0 100
+    CH4(g) 0.69897 100
+    H2S(g) 1 100
+USER_PUNCH 1
+    -file species_list.txt
+    10 n = SYS("Ca", count, names, types, moles)
+    20 FOR i = 1 TO n
+    30 PUNCH names(i)
+    40 NEXT i
+END

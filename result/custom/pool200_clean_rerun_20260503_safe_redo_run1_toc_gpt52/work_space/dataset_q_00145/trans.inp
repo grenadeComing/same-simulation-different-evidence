@@ -1,0 +1,35 @@
+TITLE 1D transport 10 cells 10 shifts with exchange
+
+SOLUTION 1-10 Initial in cells
+    pH 7.0
+    pe 4
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 0 Infilling solution
+    pH 7.0
+    pe 4
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -boundary_conditions flux flux
+    -flow_direction forward
+    -lengths 1
+    -dispersivities 0
+    -punch_cells 1
+    -punch_frequency 10
+END
+
+USER_PRINT
+10 PRINT "pe_step10_cell1", PE
+
+END

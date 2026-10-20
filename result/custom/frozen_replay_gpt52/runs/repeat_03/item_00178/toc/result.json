@@ -1,0 +1,27 @@
+{
+  "index": 178,
+  "row_index": 177,
+  "task_type": "mcq",
+  "truth": "A",
+  "prediction": "B",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": false,
+  "item_id": 178,
+  "condition": "toc",
+  "status": "submitted",
+  "calls": 2,
+  "estimated_cost_usd": 0.0196525,
+  "input_tokens": 10766,
+  "output_tokens": 58,
+  "read_paths": [
+    {
+      "path": "barite_temp.sel",
+      "ok": true,
+      "start_line": "1",
+      "end_line": "50"
+    }
+  ],
+  "checkpoint_fingerprint": "46528dc6666c6641f6451ddb0c7adc8eea68da6f32c39d01edb7518bd5213301",
+  "remaining_steps": 20
+}

@@ -1,0 +1,17 @@
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    C(-4) 5.0
+END
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    CH4(g) 0.0
+END
+SELECTED_OUTPUT
+    -file output.sel
+    -molalities CO2
+END
+USE solution 1
+USE gas_phase 1
+END

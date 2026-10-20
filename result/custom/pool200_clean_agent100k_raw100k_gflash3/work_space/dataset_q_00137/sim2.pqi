@@ -1,0 +1,7 @@
+SOLUTION 1
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10.0
+SELECTED_OUTPUT
+    -reset false
+    -ionic_strength true
+END

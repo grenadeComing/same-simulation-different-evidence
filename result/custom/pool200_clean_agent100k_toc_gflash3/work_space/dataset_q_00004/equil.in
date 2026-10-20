@@ -1,0 +1,10 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C         0.5
+    Mn        1
+EQUILIBRIUM_PHASES 1
+    Calcite 0 1.0
+END

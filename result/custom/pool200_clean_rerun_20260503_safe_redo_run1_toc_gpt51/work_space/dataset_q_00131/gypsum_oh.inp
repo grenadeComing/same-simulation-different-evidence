@@ -1,0 +1,9 @@
+SOLUTION 1 Pure water
+    pH 7.0
+    temp 25
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+SELECTED_OUTPUT
+    -file gypsum_oh.sel
+    -activities OH-
+END

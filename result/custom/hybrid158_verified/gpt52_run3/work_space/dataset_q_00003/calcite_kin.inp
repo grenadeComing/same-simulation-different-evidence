@@ -1,0 +1,25 @@
+TITLE Calcite kinetics, pH 2 (set by acid), 200C, Cu and Ba, pe 4
+
+SOLUTION 1
+    temp 200
+    pH   2
+    pe   4
+    units mmol/kgw
+    Cu   10
+    Ba   5
+    Cl   25  charge
+
+KINETICS 1
+    Calcite
+        -m0    1
+        -m     1
+        -parms 1.0  1.0  10
+        -steps 1000 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -file calcite_kin.sel
+    -reset false
+    -pH true
+
+END

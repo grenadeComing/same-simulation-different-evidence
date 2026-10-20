@@ -1,0 +1,28 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(3) 4e-3
+    Fe(2) 4e-3
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 1
+
+KINETICS 1
+    Albite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0 10.0
+        -steps 10 100
+
+SELECTED_OUTPUT
+    -file albite_h2s_sel.out
+    -reset false
+    -time
+    -totals Na
+    -molalities H+
+    -kinetic_reactants Albite
+USER_PUNCH
+    -head step time s_Albite m_Albite
+    10 PUNCH STEP_NO, TOT("time"), SI("Albite"), M("Albite")

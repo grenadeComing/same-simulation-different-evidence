@@ -1,0 +1,28 @@
+TITLE Albite kinetic dissolution with H2S gas
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    redox pe
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+    water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+KINETICS 1
+Albite
+    -m0 1
+    -m 1
+    -parms 1.0 10
+    -steps 1000 in 100
+    -tol 1e-12
+SELECTED_OUTPUT
+    -file albite_h2s.sel
+    -reset false
+    -step true
+    -time true
+    -ionic_strength true
+END

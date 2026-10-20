@@ -1,0 +1,40 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(2) 4e-3
+    Fe(3) 4e-3
+    units mol/kgw
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 1.0
+
+KINETICS 1
+    Albite_kin
+    -formula NaAlSi3O8 1
+    -m0 1.0
+    -m 1.0
+    -parms 10 1.0
+    -steps 1000 in 100 steps
+
+RATES
+    Albite_kin
+    -start
+    10 k = PARM(1)
+    20 ssa = PARM(2)
+    30 rate = k*ssa
+    40 if (M <= 0) then rate = 0
+    50 SAVE rate
+    -end
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file sel.csv
+    -reset false
+    -time true
+    -step true
+    -pe true
+
+END

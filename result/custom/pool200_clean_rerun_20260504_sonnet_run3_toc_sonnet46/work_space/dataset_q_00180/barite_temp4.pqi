@@ -1,0 +1,20 @@
+TITLE Barite saturation index with temperature increase from 25 to 95 C in 5 steps
+
+SOLUTION 1
+    temp      25
+    pH        7.0
+    pe        4.0
+    units     mg/L
+    Ba        2.0
+    S(6)      15.0
+
+REACTION_TEMPERATURE 1
+    25.0  42.5  60.0  77.5  95.0
+
+SELECTED_OUTPUT
+    -file   barite_temp4.sel
+    -reset  false
+    -temperature true
+    -si     Barite
+
+END

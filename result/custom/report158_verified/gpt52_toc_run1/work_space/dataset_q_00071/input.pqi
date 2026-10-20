@@ -1,0 +1,15 @@
+TITLE Pure water + gas mixture at 150C, fixed-pressure
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    pe 4
+    -water 1
+EQUILIBRIUM_PHASES 1
+    CO2(g) 0.4 10
+    CH4(g) 0.4 10
+    NH3(g) 0.2 5
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -equilibrium_phases CH4(g)
+END

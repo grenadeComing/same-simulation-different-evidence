@@ -1,0 +1,18 @@
+SOLUTION 1 Pure water
+    temp 25
+    pH 7 charge
+REACTION 1
+    H2SO4 1
+    0.001 0.005 0.01 0.05 0.1
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -simulation true
+    -state true
+    -solution true
+    -pH true
+    -ionic_strength true
+USER_PUNCH
+    -headings rxn step_i
+    10 PUNCH RXN, MU
+END

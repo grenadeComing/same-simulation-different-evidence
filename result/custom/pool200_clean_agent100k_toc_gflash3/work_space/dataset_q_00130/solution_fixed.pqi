@@ -1,0 +1,11 @@
+PHASES
+Fix_pH
+    H+ = H+
+    log_k 0
+SOLUTION 1
+    pH 7
+    pe 4
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+    Fix_pH -7.0 NaOH 10
+END

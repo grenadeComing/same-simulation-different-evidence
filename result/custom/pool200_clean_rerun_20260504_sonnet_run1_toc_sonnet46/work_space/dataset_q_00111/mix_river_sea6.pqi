@@ -1,0 +1,37 @@
+TITLE Mix river water (pH 6.0, Cl 10) and seawater (pH 8.1, Cl 19000) at 0.7:0.3 ratio
+# Testing with Na and Cl both at 19000 mg/L for seawater
+
+# Solution 1: River water
+SOLUTION 1 River Water
+    pH      6.0
+    temp    25
+    units   mg/L
+    Cl      10
+    Na      10   charge
+
+# Solution 2: Seawater
+SOLUTION 2 Seawater
+    pH      8.1
+    temp    25
+    units   mg/L
+    Cl      19000
+    Na      19000  charge
+
+# Mix 70% river water + 30% seawater
+MIX 1
+    1   0.7
+    2   0.3
+
+SAVE SOLUTION 3
+
+END
+
+USE SOLUTION 3
+
+SELECTED_OUTPUT
+    -file           mix_output6.sel
+    -reset          false
+    -solution       true
+    -pH             true
+
+END

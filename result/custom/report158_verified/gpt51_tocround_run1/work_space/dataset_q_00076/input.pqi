@@ -1,0 +1,9 @@
+SOLUTION 1 Pure water
+    pH      7.0  charge
+    temp    150
+EQUILIBRIUM_PHASES 1
+    Chrysotile   0.0   10
+    Talc         0.0   10
+END
+USE solution 1
+END

@@ -1,0 +1,29 @@
+SOLUTION 1  River Water
+    pH      6.0
+    temp    25.0
+    units   mg/L
+    Cl      10.0   charge
+
+SOLUTION 2  Seawater
+    pH      8.1
+    temp    25.0
+    units   mg/L
+    Cl      19000.0   charge
+
+MIX 1
+    1   0.7
+    2   0.3
+
+USER_PUNCH
+    -headings  Spec_Cond
+    -start
+10  PUNCH SC
+    -end
+
+SELECTED_OUTPUT
+    -file           mix_output4.sel
+    -reset          false
+    -solution       true
+    -pH             true
+
+END

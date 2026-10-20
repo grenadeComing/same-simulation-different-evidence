@@ -1,0 +1,2 @@
+                 sim	               state	                soln	              dist_x	                time	                step	                  pH	                  pe	                 Alk	
+                   4	               react	                   1	                 -99	                   0	                   1	  6.618226659790e+00	 -5.199071343434e+00	  5.159651911794e-03	

@@ -1,0 +1,36 @@
+SOLUTION 1-10
+    pH 7.0
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+END
+
+SOLUTION 0
+    pH 7.0
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+END
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+END
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1.0
+    -dispersivities 0.0
+    -diffusion_coefficient 0.0
+
+SELECTED_OUTPUT
+    -file solution_sc.out
+    -step
+    -solution
+USER_PUNCH
+    -headings SC
+    10 PUNCH SC
+END

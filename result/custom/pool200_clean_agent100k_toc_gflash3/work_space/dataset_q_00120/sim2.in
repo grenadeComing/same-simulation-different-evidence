@@ -1,0 +1,11 @@
+SOLUTION 1
+    pH 7.0
+    temp 25
+REACTION 1
+    H2SO4 1.0
+    0.166 moles
+SELECTED_OUTPUT
+    -file output2.sel
+    -reset false
+    -activities H+
+END

@@ -1,0 +1,33 @@
+TITLE Calcite kinetic dissolution at 100C, initial pH 5, pe 4
+SOLUTION 1 Hydrothermal
+    temp 100
+    pH   5
+    pe   4
+    units mmol/kgw
+    C(4) 0.5
+    Mn   1
+    -water 1
+
+RATES
+Calcite_simple
+-start
+ 10 SA = PARM(1)
+ 20 k = PARM(2)
+ 30 moles = k * SA * TIME
+ 40 SAVE moles
+-end
+
+KINETICS 1
+    Calcite_simple
+        -m0 1
+        -parms 10.0 0.001
+        -steps 10 in 100
+        -formula CaCO3 1
+
+SELECTED_OUTPUT
+    -file calcite_kin.sel
+    -reset false
+    -time true
+    -step true
+    -pH true
+END

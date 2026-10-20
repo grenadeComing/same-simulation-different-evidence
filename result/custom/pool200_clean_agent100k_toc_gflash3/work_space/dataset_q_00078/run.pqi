@@ -1,0 +1,22 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    units mol/kgw
+    water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5.7
+    -temperature 150
+    -volume 184.7 # volume of 5.7 atm and 150C and 25 moles
+    CH4(g) 2.28
+    CO2(g) 2.28
+    NH3(g) 1.14
+
+SELECTED_OUTPUT
+    -file result.sel
+    -pH true
+    -step
+
+END

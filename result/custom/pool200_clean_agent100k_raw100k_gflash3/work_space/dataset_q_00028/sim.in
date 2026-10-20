@@ -1,0 +1,13 @@
+SOLUTION 1
+    units mmol/kgw
+    temp 20
+    Na 50
+    Cl 50
+    Ca 25
+    C(4) 25
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10.0
+REACTION_TEMPERATURE 1
+    180
+END

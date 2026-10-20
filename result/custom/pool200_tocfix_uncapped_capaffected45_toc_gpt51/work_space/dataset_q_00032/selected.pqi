@@ -1,0 +1,33 @@
+SOLUTION 0 Initial
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 1-10 Cells
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 100 Inflow
+    pH 7 charge
+    Na 1
+    Cl 1
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions constant flux
+    -lengths 10*1
+    -dispersivities 10*0
+    -correct_disp false
+    -initial_time 0
+    -print_cells 4
+    -print_frequency 1
+
+END

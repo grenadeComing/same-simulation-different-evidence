@@ -1,0 +1,14 @@
+SOLUTION 1 Pure water
+    pH 7 charge
+    units mol/kgw
+END
+
+REACTION 1
+    H2SO4 1.0
+    0.001 0.005 0.01 0.05 0.1
+END
+
+SELECTED_OUTPUT
+    -file sel.out
+    -pH true
+END

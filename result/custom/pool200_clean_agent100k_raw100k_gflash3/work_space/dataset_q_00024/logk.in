@@ -1,0 +1,11 @@
+SOLUTION 1
+temp 200
+USER_PUNCH 1
+-start
+10 punch LK_PHASE("H2S(g)"), LK_PHASE("H2Sg(g)")
+20 punch LK_SPECIES("H2S"), LK_SPECIES("HS-"), LK_SPECIES("H2Sg"), LK_SPECIES("HSg-")
+-end
+SELECTED_OUTPUT 1
+-file logk.sel
+-user_punch true
+END

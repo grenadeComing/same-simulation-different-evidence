@@ -1,0 +1,24 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 0.01
+    Ba 0.005
+    units mol/kgw
+
+EQUILIBRIUM_PHASES 1
+    H2O(g) 0 0
+
+KINETICS 1
+    Calcite
+        -m0 1
+        -parms 1.0 1.0
+        -m 1
+        -tol 1e-10
+        -steps 10*100
+
+SELECTED_OUTPUT
+    -file calcite_kinetics_sel.tab
+    -reset false
+    -step true
+    -totals C(4) Cu(2)

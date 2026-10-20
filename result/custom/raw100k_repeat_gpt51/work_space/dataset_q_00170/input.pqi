@@ -1,0 +1,12 @@
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    Ca 0.01
+    Sr 0.01
+    C(4) 0.04 as HCO3
+
+SOLID_SOLUTIONS 1
+    Ca_Sr_carbonate
+        component Calcite 0.0
+        component Strontianite 0.0
+END

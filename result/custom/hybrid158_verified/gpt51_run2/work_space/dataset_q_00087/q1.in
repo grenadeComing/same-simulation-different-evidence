@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 25
+    pH 7.5
+    units mg/L
+    Ca 100
+    Alkalinity 250 as CaCO3
+
+SELECTED_OUTPUT
+    -reset false
+    -totals Ca C(4)
+    -si calcite
+    -ionic_strength true
+    -high_precision true
+    -user_punch true
+
+USER_PUNCH
+    -head SC_uScm
+    10 PUNCH SC

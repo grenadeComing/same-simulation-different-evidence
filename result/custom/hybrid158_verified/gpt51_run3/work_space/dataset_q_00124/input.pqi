@@ -1,0 +1,59 @@
+SOLUTION 0
+    pH 7.0 charge
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1
+    pH 7.0 charge
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE_SPECIES
+    X- = X-
+        log_k 0.0
+    Ca+2 + 2X- = CaX2
+        log_k 0.0
+    Na+ + X- = NaX
+        log_k 0.0
+
+EXCHANGE 1-10
+    X- 1e-3
+    -equilibrate 1
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1.0
+    -length              1.0
+    -flow_direction      forward
+    -boundary_conditions flux flux
+    -initial_time        0.0
+    -print_cells         1-10
+    -print_frequency     1
+    -punch_cells         8
+    -punch_frequency     1
+
+SELECTED_OUTPUT
+    -file sel.out
+    -time true
+    -distance true
+    -step true
+    -totals Ca Na Cl
+    -equilibrium_phases false
+    -saturation_indices false
+    -molalities false
+    -activities false
+    -kinetic_reactants false
+    -solid_solutions false
+    -gases false
+    -calculate_values false
+    -high_precision false
+    -selected_out true
+
+PRINT
+    -reset false
+    -echo true
+
+END

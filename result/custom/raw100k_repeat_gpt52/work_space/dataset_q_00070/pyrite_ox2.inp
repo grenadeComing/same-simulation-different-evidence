@@ -1,0 +1,23 @@
+TITLE Pyrite oxidation with fixed O2(g) and charge-balance with HCl
+SOLUTION 1
+    temp 25
+    units mol/kgw
+    pH 7 charge
+    Cl 1e-7 charge
+    -water 1
+EQUILIBRIUM_PHASES 1
+    Pyrite 0 0.1
+    Goethite 0 0
+    Gypsum 0 0
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -volume 1
+    O2(g) -0.7
+USER_PUNCH
+    -headings SC_uS_cm
+    10 PUNCH SC
+SELECTED_OUTPUT
+    -file pyrite_ox2.sel
+    -high_precision true
+END

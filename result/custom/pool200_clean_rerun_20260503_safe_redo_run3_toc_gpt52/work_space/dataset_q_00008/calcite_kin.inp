@@ -1,0 +1,39 @@
+TITLE Calcite kinetic dissolution; pe at step 47
+SOLUTION 1
+    temp 100
+    pH   5
+    pe   4
+    units mmol/kgw
+    C(4) 0.5
+    Mn   1
+    -water 1
+
+RATES
+Calcite
+-start
+10 sa = PARM(1)
+20 k  = PARM(2)
+30 if (M <= 0) then goto 200
+40 rate = k * sa
+50 moles = rate * TIME
+60 if (moles > M) then moles = M
+200 SAVE moles
+-end
+
+KINETICS 1
+    Calcite
+        -formula CaCO3
+        -m0    1
+        -m     1
+        -parms 10.0 0.001
+        -steps 10 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -file calcite_kin_sel.txt
+    -reset false
+    -time true
+    -step true
+    -pH true
+    -pe true
+END

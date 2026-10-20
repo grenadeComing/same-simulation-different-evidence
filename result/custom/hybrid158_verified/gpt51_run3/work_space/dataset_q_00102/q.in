@@ -1,0 +1,18 @@
+SOLUTION 1 Pure water
+    pH 7.0 charge
+
+REACTION 1
+    H2SO4  1.0
+    0.001 0.005 0.01 0.05 0.1 moles
+
+SELECTED_OUTPUT
+    -reset false
+    -solution 6
+    -activities H+
+    -high_precision true
+    -user_punch true
+
+USER_PUNCH
+    -headings act_H
+    10 PUNCH ACT("H+")
+END

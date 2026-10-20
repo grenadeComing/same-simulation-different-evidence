@@ -1,0 +1,24 @@
+TITLE 100C pure water pH 3 equilibrium with minerals
+
+SOLUTION 1
+    temp    100
+    pH      3.0
+    units   mol/kgw
+    water   1.0
+
+EQUILIBRIUM_PHASES 1
+    K-mica          0.0   10.0
+    Kaolinite       0.0   10.0
+    Dolomite        0.0   10.0
+    Epsomite        0.0   10.0
+    Fe(OH)3(a)      0.0   10.0
+    Halite          0.0   10.0
+
+SELECTED_OUTPUT
+    -file           fe_output.sel
+    -reset          false
+    -totals         Fe(+2) Fe(+3)
+    -temperature    true
+    -pH             true
+
+END

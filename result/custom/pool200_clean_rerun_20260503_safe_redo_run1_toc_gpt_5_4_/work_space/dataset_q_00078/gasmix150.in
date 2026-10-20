@@ -1,0 +1,27 @@
+TITLE Pure water equilibrated with fixed-pressure gas phase at 150 C
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    units mol/kgw
+    water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g) 0.4
+    CO2(g) 0.4
+    NH3(g) 0.2
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -high_precision true
+    -simulation true
+    -state true
+    -solution true
+    -pH true
+    -pe true
+    -ionic_strength true
+    -totals C N
+    -molalities CO2 CH4 NH3 NH4+ HCO3- CO3-2
+END

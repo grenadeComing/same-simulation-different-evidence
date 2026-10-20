@@ -1,0 +1,13 @@
+TITLE Pure water 150C with gas mixture using EQUILIBRIUM_PHASES only CO2(g)
+SOLUTION 1
+ temp 150
+ pH 7 charge
+ pe 4
+ units kgw
+ -water 1
+EQUILIBRIUM_PHASES 1
+ CO2(g) -0.3979400087
+SELECTED_OUTPUT
+ -file selected.txt
+ -pH true
+END

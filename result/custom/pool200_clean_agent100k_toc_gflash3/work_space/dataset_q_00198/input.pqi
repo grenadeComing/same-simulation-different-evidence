@@ -1,0 +1,25 @@
+SOLUTION 1
+    units mg/l
+    temp 25
+    pH 8.0
+    Ca 50
+    Mg 12
+    Na 20
+    K 2
+    Alkalinity 150
+    S(6) 40
+    Cl 15
+
+REACTION 1
+    H2O -1.0
+    50.0 moles
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Gypsum 0 0
+    Halite 0 0
+
+SELECTED_OUTPUT 1
+    -file solution_output.sel
+    -si Anhydrite
+END

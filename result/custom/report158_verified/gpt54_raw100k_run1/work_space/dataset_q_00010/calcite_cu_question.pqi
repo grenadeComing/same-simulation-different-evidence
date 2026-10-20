@@ -1,0 +1,23 @@
+TITLE Calcite kinetics with Cu and Ba at 200 C
+SOLUTION 1
+    temp      200
+    pH        2
+    pe        4
+    units     mmol/kgw
+    Cu        10
+    Ba        5
+KINETICS 1
+    Calcite
+        -formula CaCO3 1
+        -m0    1
+        -m     1
+        -parms 1.0 1.0
+        -steps 1000 in 100
+        -cvode false
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -step true
+    -time true
+    -totals C(4) Cu(2)
+END

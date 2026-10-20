@@ -1,0 +1,9 @@
+SOLUTION 1
+    temp 25
+    pH 7.5
+    Ca 2.4951 mmol/L
+    Alkalinity 4.9955 eq/L
+SELECTED_OUTPUT
+    -file output_final.txt
+    -si Aragonite
+END

@@ -1,0 +1,16 @@
+TITLE Pure water pH 7, 150C, eq with chrysotile and talc; count Si aqueous species
+SOLUTION 1
+  temp 150
+  pH   7 charge
+  units mol/kgw
+  -water 1
+EQUILIBRIUM_PHASES 1
+  Chrysotile 0 10
+  Talc       0 10
+SELECTED_OUTPUT
+  -file si_species.sel
+  -reset false
+USER_PUNCH
+  -headings n_Si_aq_species
+ 10 PUNCH TOT("Si")
+END

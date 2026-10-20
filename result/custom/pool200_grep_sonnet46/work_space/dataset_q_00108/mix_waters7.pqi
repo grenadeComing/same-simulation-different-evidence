@@ -1,0 +1,22 @@
+SOLUTION 1  River water
+    units   mmol/L
+    pH      6.0
+    pe      12.0
+    Cl      10
+
+SOLUTION 2  Seawater
+    units   mmol/L
+    pH      8.1
+    pe      12.0
+    Cl      19000
+
+MIX 1
+    1   0.7
+    2   0.3
+
+SELECTED_OUTPUT
+    -file mix_waters7.sel
+    -pe     true
+    -pH     true
+
+END

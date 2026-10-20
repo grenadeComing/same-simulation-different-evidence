@@ -1,0 +1,16 @@
+SOLUTION 1 PureWater
+    temp 25
+    pH 7 charge
+    units mol/kgw
+    -water 1
+REACTION 1
+    H2SO4 1
+    0.001 0.005 0.01 0.05 0.1
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -file sel.txt
+USER_PUNCH
+    -headings step ionic_strength
+10 PUNCH STEP_NO, IONIC_STRENGTH
+END

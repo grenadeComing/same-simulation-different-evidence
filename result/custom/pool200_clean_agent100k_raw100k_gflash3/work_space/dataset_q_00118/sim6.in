@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 25
+    pH 7.0
+REACTION 1
+    H2SO4 1.0
+    0.001 0.004 0.005 0.04 0.05
+INCREMENTAL_REACTIONS true
+SELECTED_OUTPUT
+    -file reaction_pe_6.sel
+    -reset false
+    -step
+    -pe
+    -pH
+END

@@ -1,0 +1,23 @@
+SOLUTION 1 Pure_water
+    temp 150
+    pH 7 charge
+    units mol/kgw
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+
+USER_PRINT
+-start
+10 PRINT "SC_uS_cm\t", SC
+-end
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -high_precision true
+    -pH true
+    -temperature true
+    -ionic_strength true
+END

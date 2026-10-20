@@ -1,0 +1,26 @@
+TITLE Final solution after stepwise H2SO4 addition, with USER_PUNCH
+SOLUTION 1 Pure water
+    pH 7 charge
+    temp 25
+    units mol/kgw
+END
+
+REACTION 1
+    H2SO4 1
+    0.001 0.005 0.01 0.05 0.1 moles
+END
+
+USER_PUNCH
+    -start
+    10 PUNCH TOT("S(6)")
+    -end
+END
+
+SELECTED_OUTPUT
+    -file acid_final2.sel
+    -reset false
+    -solution true
+    -pH true
+    -pe true
+    -step true
+END

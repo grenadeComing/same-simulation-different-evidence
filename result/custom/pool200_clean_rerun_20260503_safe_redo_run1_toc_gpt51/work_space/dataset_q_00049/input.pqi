@@ -1,0 +1,16 @@
+SOLUTION 1 Pure water 100C pH 3 charge
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+SELECTED_OUTPUT
+    -file selout.txt
+    -si true
+    -temperature true
+    -ionic_strength true
+USER_PUNCH
+    -headings sc
+    10 PUNCH SC

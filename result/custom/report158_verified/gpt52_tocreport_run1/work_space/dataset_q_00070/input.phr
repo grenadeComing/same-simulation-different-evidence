@@ -1,0 +1,15 @@
+TITLE 
+SOLUTION 1
+ temp 150
+ pH 7
+ pe 4
+ units kgw
+ -water 1
+GAS_PHASE 1
+ -fixed_pressure true
+ -pressure 1
+ -temperature 150
+ CH4(g) 0.4
+ CO2(g) 0.4
+ NH3(g) 0.2
+END

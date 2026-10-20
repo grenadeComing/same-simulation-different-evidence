@@ -1,0 +1,11 @@
+SOLUTION 1 Pure water
+    temp 25
+    pH 7.0
+EQUILIBRIUM_PHASES 1
+    CO2(g)  -3.4  10
+USE solution 1
+SELECTED_OUTPUT
+    -file co2_iap.sel
+    -reset false
+    -equilibrium_phases true
+END

@@ -1,0 +1,18 @@
+TITLE Viscosity for 5 mmol/kgw C(-4) at 15 C with fixed-pressure gas phase
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    pH 7 charge
+    C(-4) 5.0
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    -temperature 15
+    CH4(g) 0
+SELECTED_OUTPUT
+    -file visc.sel
+    -reset false
+USER_PUNCH
+    -headings viscosity_cP
+    10 PUNCH VISCOSITY
+END

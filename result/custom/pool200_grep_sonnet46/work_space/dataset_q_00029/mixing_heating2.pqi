@@ -1,0 +1,35 @@
+
+# Solution 1: 50 mmol/kg dissolved inorganic carbon
+SOLUTION 1
+    temp      20
+    pH        7.0
+    C(4)      50  # 50 mmol/kg DIC
+    units     mmol/kgw
+
+# Solution 2: 50 mmol/kg calcium
+SOLUTION 2
+    temp      20
+    pH        7.0
+    Ca        50  # 50 mmol/kg calcium
+    units     mmol/kgw
+
+# Mix 1:1 (equal masses) - use 1 kg each
+MIX 1
+    1   1.0
+    2   1.0
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0   0
+
+REACTION_TEMPERATURE 1
+    20  200  in 10 steps
+
+SAVE solution 3
+
+SELECTED_OUTPUT
+    -file     mixing_heating2.sel
+    -reset    false
+    -temperature  true
+    -equilibrium_phases  Calcite
+
+END

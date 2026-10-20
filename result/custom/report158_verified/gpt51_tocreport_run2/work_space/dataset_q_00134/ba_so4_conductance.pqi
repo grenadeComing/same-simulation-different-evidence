@@ -1,0 +1,12 @@
+SOLUTION 1
+    temp      25
+    pH        7.0 charge
+    units     mg/L
+    Ba        2.0
+    S(6)      15.0
+    -water    1 # kg
+
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+
+END

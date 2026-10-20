@@ -1,0 +1,751 @@
+# Dumpfile
+# Transport simulation 1  Shift 10
+#
+SOLUTION_RAW                 0 Solution after simulation 1.
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243360721
+  -total_o                   55.506216805187
+  -cb                        -3.1607253810484e-09
+  -density                   0.99710814024995
+  -viscosity                 0.89091869660108
+  -viscos_0                  0.89002391827256
+  -totals
+    Ca                       0.0010000000000001
+    Cl                       0.002
+    H(0)                     1.4149138092145e-25
+  -pH                        7
+  -pe                        4
+  -mu                        0.0030001044862679
+  -ah2o                      0.99994899637532
+  -mass_water                1
+  -soln_vol                  1.0029838856752
+  -total_alkalinity          3.1607256092199e-09
+  -activities
+    Ca                       -3.1020254319918
+    Cl                       -2.7251420157384
+    E                        -4
+    H(0)                     -29.999699989551
+    O(0)                     -29.999699989551
+  -gammas
+SOLUTION_RAW                 1 Solution after simulation 1.
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243360721
+  -total_o                   55.506216805187
+  -cb                        -3.1607253689056e-09
+  -density                   0.99713564917927
+  -viscosity                 0.89091869660108
+  -viscos_0                  0.89002391827256
+  -totals
+    Ca                       0.0010000000000001
+    Cl                       0.002
+    H(0)                     1.4149138131241e-21
+  -pH                        7
+  -pe                        1.9999999994
+  -mu                        0.0030001044862679
+  -ah2o                      0.99994899637532
+  -mass_water                1
+  -soln_vol                  1.0029838856752
+  -total_alkalinity          3.1607256092202e-09
+  -activities
+    Ca                       -3.1020254319918
+    Cl                       -2.7251420157384
+    E                        -1.9999999994
+    H(0)                     -23.1499999988
+    O(0)                     -46.080044304715
+  -gammas
+SOLUTION_RAW                 2 Solution after simulation 1.
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243360721
+  -total_o                   55.506216805187
+  -cb                        -3.160725371074e-09
+  -density                   0.99713564917927
+  -viscosity                 0.89091869660108
+  -viscos_0                  0.89002391827256
+  -totals
+    Ca                       0.0010000000000001
+    Cl                       0.002
+    H(0)                     1.4149138131241e-17
+  -pH                        7
+  -pe                        -6.0000016066653e-10
+  -mu                        0.0030001044862679
+  -ah2o                      0.99994899637532
+  -mass_water                1
+  -soln_vol                  1.0029838856752
+  -total_alkalinity          3.1607256092202e-09
+  -activities
+    Ca                       -3.1020254319918
+    Cl                       -2.7251420157384
+    E                        6.0000016066653e-10
+    H(0)                     -19.1499999988
+    O(0)                     -54.080044304715
+  -gammas
+SOLUTION_RAW                 3 Solution after simulation 1.
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243360721
+  -total_o                   55.506216805187
+  -cb                        -3.1607253709127e-09
+  -density                   0.99713564917927
+  -viscosity                 0.89091869660108
+  -viscos_0                  0.89002391827256
+  -totals
+    Ca                       0.0010000000000001
+    Cl                       0.002
+    H(0)                     9.7551211091884e-15
+  -pH                        6.9999999999997
+  -pe                        -1.4192513401427
+  -mu                        0.0030001044862679
+  -ah2o                      0.99994899637532
+  -mass_water                1
+  -soln_vol                  1.0029838856752
+  -total_alkalinity          3.1607256090577e-09
+  -activities
+    Ca                       -3.1020254319918
+    Cl                       -2.7251420157384
+    E                        1.4192513401427
+    H(0)                     -15.149999999823
+    O(0)                     -62.080044302669
+  -gammas
+SOLUTION_RAW                 4 Solution after simulation 1.
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243360721
+  -total_o                   55.506216805187
+  -cb                        -3.1607253703227e-09
+  -density                   0.99713564917927
+  -viscosity                 0.89091869660108
+  -viscos_0                  0.89002391827256
+  -totals
+    Ca                       0.0010000000000001
+    Cl                       0.002
+    H(0)                     4.2978865785128e-15
+  -pH                        6.9999999999985
+  -pe                        -1.2412624825153
+  -mu                        0.0030001044862679
+  -ah2o                      0.99994899637532
+  -mass_water                1
+  -soln_vol                  1.0029838856752
+  -total_alkalinity          3.1607256084637e-09
+  -activities
+    Ca                       -3.1020254319918
+    Cl                       -2.7251420157384
+    E                        1.2412624825153
+    H(0)                     -14.561191867655
+    O(0)                     -63.257660567005
+  -gammas
+SOLUTION_RAW                 5 Solution after simulation 1.
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243360721
+  -total_o                   55.506216805187
+  -cb                        -3.1607253700824e-09
+  -density                   0.99713564917927
+  -viscosity                 0.89091869660108
+  -viscos_0                  0.89002391827256
+  -totals
+    Ca                       0.0010000000000001
+    Cl                       0.002
+    H(0)                     4.1458864352759e-15
+  -pH                        6.999999999998
+  -pe                        -1.2334437082219
+  -mu                        0.0030001044862679
+  -ah2o                      0.99994899637532
+  -mass_water                1
+  -soln_vol                  1.0029838856752
+  -total_alkalinity          3.1607256082218e-09
+  -activities
+    Ca                       -3.1020254319918
+    Cl                       -2.7251420157384
+    E                        1.2334437082219
+    H(0)                     -14.682819868746
+    O(0)                     -63.014404564823
+  -gammas
+SOLUTION_RAW                 6 Solution after simulation 1.
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243360721
+  -total_o                   55.506216805187
+  -cb                        -3.1607253695474e-09
+  -density                   0.99713564917927
+  -viscosity                 0.89091869660108
+  -viscos_0                  0.89002391827256
+  -totals
+    Ca                       0.0010000000000001
+    Cl                       0.002
+    H(0)                     4.145346946448e-15
+  -pH                        6.9999999999969
+  -pe                        -1.2334154498169
+  -mu                        0.0030001044862679
+  -ah2o                      0.99994899637532
+  -mass_water                1
+  -soln_vol                  1.0029838856752
+  -total_alkalinity          3.1607256076831e-09
+  -activities
+    Ca                       -3.1020254319918
+    Cl                       -2.7251420157384
+    E                        1.2334154498169
+    H(0)                     -14.683135331535
+    O(0)                     -63.013773639246
+  -gammas
+SOLUTION_RAW                 7 Solution after simulation 1.
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243360721
+  -total_o                   55.506216805187
+  -cb                        -3.1607253694292e-09
+  -density                   0.99713564917927
+  -viscosity                 0.89091869660108
+  -viscos_0                  0.89002391827256
+  -totals
+    Ca                       0.0010000000000001
+    Cl                       0.002
+    H(0)                     4.1452276215736e-15
+  -pH                        6.9999999999966
+  -pe                        -1.2334091990878
+  -mu                        0.0030001044862679
+  -ah2o                      0.99994899637532
+  -mass_water                1
+  -soln_vol                  1.0029838856752
+  -total_alkalinity          3.1607256075641e-09
+  -activities
+    Ca                       -3.1020254319918
+    Cl                       -2.7251420157384
+    E                        1.2334091990878
+    H(0)                     -14.683174119766
+    O(0)                     -63.013696062784
+  -gammas
+SOLUTION_RAW                 8 Solution after simulation 1.
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243360721
+  -total_o                   55.506216805187
+  -cb                        -3.1607253691663e-09
+  -density                   0.99713564917927
+  -viscosity                 0.89091869660108
+  -viscos_0                  0.89002391827256
+  -totals
+    Ca                       0.0010000000000001
+    Cl                       0.002
+    H(0)                     4.1449629414023e-15
+  -pH                        6.9999999999961
+  -pe                        -1.2333953334062
+  -mu                        0.0030001044862679
+  -ah2o                      0.99994899637532
+  -mass_water                1
+  -soln_vol                  1.0029838856752
+  -total_alkalinity          3.1607256072994e-09
+  -activities
+    Ca                       -3.1020254319918
+    Cl                       -2.7251420157384
+    E                        1.2333953334062
+    H(0)                     -14.683192721093
+    O(0)                     -63.013658860129
+  -gammas
+SOLUTION_RAW                 9 Solution after simulation 1.
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243360721
+  -total_o                   55.506216805187
+  -cb                        -3.160725367818e-09
+  -density                   0.99713564917927
+  -viscosity                 0.89091869660108
+  -viscos_0                  0.89002391827256
+  -totals
+    Ca                       0.0010000000000001
+    Cl                       0.002
+    H(0)                     4.1436057284489e-15
+  -pH                        6.9999999999934
+  -pe                        -1.233324219786
+  -mu                        0.0030001044862679
+  -ah2o                      0.99994899637532
+  -mass_water                1
+  -soln_vol                  1.0029838856752
+  -total_alkalinity          3.1607256059419e-09
+  -activities
+    Ca                       -3.1020254319918
+    Cl                       -2.7251420157384
+    E                        1.233324219786
+    H(0)                     -14.683318438193
+    O(0)                     -63.013407425929
+  -gammas
+SOLUTION_RAW                 10 Solution after simulation 1.
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243360721
+  -total_o                   55.506216805188
+  -cb                        -3.1612312855026e-09
+  -density                   0.99713564917916
+  -viscosity                 0.89091869659983
+  -viscos_0                  0.89002391827256
+  -totals
+    Ca                       0.00099999999851201
+    Cl                       0.0019999999999551
+    O(0)                     1.7151108961814e-12
+  -pH                        6.9999950933877
+  -pe                        11.503406537396
+  -mu                        0.0030001044832821
+  -ah2o                      0.99994899637533
+  -mass_water                1
+  -soln_vol                  1.0029838856752
+  -total_alkalinity          3.1583002405023e-09
+  -activities
+    Ca                       -3.1020254325849
+    Cl                       -2.7251420157361
+    E                        -11.503406537396
+    H(0)                     -40.157699136721
+    O(0)                     -12.064646028872
+  -gammas
+SOLUTION_RAW                 11 Solution after simulation 1.
+  -temp                      25
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243360093
+  -total_o                   55.506216801175
+  -cb                        -1.4173167838632e-09
+  -density                   0.99710814024995
+  -viscosity                 0.89026271084721
+  -viscos_0                  0.8900239182799
+  -totals
+    Cl                       0.0010000000000003
+    H(0)                     1.4155655512664e-25
+    Na                       0.0010000000000003
+  -pH                        7
+  -pe                        4
+  -mu                        0.0010001041633462
+  -ah2o                      0.99996599645788
+  -mass_water                1
+  -soln_vol                  1.0029823544696
+  -total_alkalinity          1.4173167636722e-09
+  -activities
+    Cl                       -3.0155261275385
+    E                        -4
+    H(0)                     -29.999899989584
+    Na                       -3.0153914006475
+    O(0)                     -29.999899989584
+  -gammas
+EXCHANGE_RAW                 1 Exchange assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidate identifiers #
+  -exchange_gammas           1
+  -component                 X
+    # EXCHANGE_MODIFY candidate identifiers #
+    -totals
+      Ca                     0.00050000000001068
+      X                      0.0010000000000214
+    -charge_balance          0
+    -la                      1.100000302508
+    -phase_proportion        0
+    -formula_z               0
+  # EXCHANGE_MODIFY candidates with new_def=true #
+  -new_def                   0
+  -solution_equilibria       0
+  -n_solution                -999
+  # Exchange workspace variables #
+  -totals
+EXCHANGE_RAW                 2 Exchange assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidate identifiers #
+  -exchange_gammas           1
+  -component                 X
+    # EXCHANGE_MODIFY candidate identifiers #
+    -totals
+      Ca                     0.00050000000284933
+      X                      0.0010000000056987
+    -charge_balance          0
+    -la                      1.1000003025834
+    -phase_proportion        0
+    -formula_z               0
+  # EXCHANGE_MODIFY candidates with new_def=true #
+  -new_def                   0
+  -solution_equilibria       0
+  -n_solution                -999
+  # Exchange workspace variables #
+  -totals
+EXCHANGE_RAW                 3 Exchange assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidate identifiers #
+  -exchange_gammas           1
+  -component                 X
+    # EXCHANGE_MODIFY candidate identifiers #
+    -totals
+      Ca                     0.00050000000022249
+      X                      0.001000000000445
+    -charge_balance          0
+    -la                      1.1000003025053
+    -phase_proportion        0
+    -formula_z               0
+  # EXCHANGE_MODIFY candidates with new_def=true #
+  -new_def                   0
+  -solution_equilibria       0
+  -n_solution                -999
+  # Exchange workspace variables #
+  -totals
+EXCHANGE_RAW                 4 Exchange assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidate identifiers #
+  -exchange_gammas           1
+  -component                 X
+    # EXCHANGE_MODIFY candidate identifiers #
+    -totals
+      Ca                     0.00049999999996769
+      X                      0.00099999999993537
+    -charge_balance          0
+    -la                      1.1000003025053
+    -phase_proportion        0
+    -formula_z               0
+  # EXCHANGE_MODIFY candidates with new_def=true #
+  -new_def                   0
+  -solution_equilibria       0
+  -n_solution                -999
+  # Exchange workspace variables #
+  -totals
+EXCHANGE_RAW                 5 Exchange assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidate identifiers #
+  -exchange_gammas           1
+  -component                 X
+    # EXCHANGE_MODIFY candidate identifiers #
+    -totals
+      Ca                     0.00049999999996769
+      X                      0.00099999999993537
+    -charge_balance          0
+    -la                      1.1000003025053
+    -phase_proportion        0
+    -formula_z               0
+  # EXCHANGE_MODIFY candidates with new_def=true #
+  -new_def                   0
+  -solution_equilibria       0
+  -n_solution                -999
+  # Exchange workspace variables #
+  -totals
+EXCHANGE_RAW                 6 Exchange assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidate identifiers #
+  -exchange_gammas           1
+  -component                 X
+    # EXCHANGE_MODIFY candidate identifiers #
+    -totals
+      Ca                     0.00049999999996769
+      X                      0.00099999999993537
+    -charge_balance          0
+    -la                      1.1000003025053
+    -phase_proportion        0
+    -formula_z               0
+  # EXCHANGE_MODIFY candidates with new_def=true #
+  -new_def                   0
+  -solution_equilibria       0
+  -n_solution                -999
+  # Exchange workspace variables #
+  -totals
+EXCHANGE_RAW                 7 Exchange assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidate identifiers #
+  -exchange_gammas           1
+  -component                 X
+    # EXCHANGE_MODIFY candidate identifiers #
+    -totals
+      Ca                     0.00049999999996768
+      X                      0.00099999999993537
+    -charge_balance          0
+    -la                      1.1000003025053
+    -phase_proportion        0
+    -formula_z               0
+  # EXCHANGE_MODIFY candidates with new_def=true #
+  -new_def                   0
+  -solution_equilibria       0
+  -n_solution                -999
+  # Exchange workspace variables #
+  -totals
+EXCHANGE_RAW                 8 Exchange assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidate identifiers #
+  -exchange_gammas           1
+  -component                 X
+    # EXCHANGE_MODIFY candidate identifiers #
+    -totals
+      Ca                     0.00049999999996769
+      X                      0.00099999999993537
+    -charge_balance          0
+    -la                      1.1000003025053
+    -phase_proportion        0
+    -formula_z               0
+  # EXCHANGE_MODIFY candidates with new_def=true #
+  -new_def                   0
+  -solution_equilibria       0
+  -n_solution                -999
+  # Exchange workspace variables #
+  -totals
+EXCHANGE_RAW                 9 Exchange assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidate identifiers #
+  -exchange_gammas           1
+  -component                 X
+    # EXCHANGE_MODIFY candidate identifiers #
+    -totals
+      Ca                     0.00049999999996768
+      X                      0.00099999999993537
+    -charge_balance          0
+    -la                      1.1000003025053
+    -phase_proportion        0
+    -formula_z               0
+  # EXCHANGE_MODIFY candidates with new_def=true #
+  -new_def                   0
+  -solution_equilibria       0
+  -n_solution                -999
+  # Exchange workspace variables #
+  -totals
+EXCHANGE_RAW                 10 Exchange assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidate identifiers #
+  -exchange_gammas           1
+  -component                 X
+    # EXCHANGE_MODIFY candidate identifiers #
+    -totals
+      Ca                     0.00049999999997242
+      X                      0.00099999999994484
+    -charge_balance          0
+    -la                      1.100000302825
+    -phase_proportion        0
+    -formula_z               0
+  # EXCHANGE_MODIFY candidates with new_def=true #
+  -new_def                   0
+  -solution_equilibria       0
+  -n_solution                -999
+  # Exchange workspace variables #
+  -totals
+EQUILIBRIUM_PHASES_RAW       1 Pure-phase assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 H2O(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 0
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    H                        2
+    O                        1
+  # PPassemblage workspace variables #
+  -assemblage_totals
+EQUILIBRIUM_PHASES_RAW       2 Pure-phase assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 H2O(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 0
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    H                        2
+    O                        1
+  # PPassemblage workspace variables #
+  -assemblage_totals
+EQUILIBRIUM_PHASES_RAW       3 Pure-phase assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 H2O(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 0
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    H                        2
+    O                        1
+  # PPassemblage workspace variables #
+  -assemblage_totals
+EQUILIBRIUM_PHASES_RAW       4 Pure-phase assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 H2O(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 0
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    H                        2
+    O                        1
+  # PPassemblage workspace variables #
+  -assemblage_totals
+EQUILIBRIUM_PHASES_RAW       5 Pure-phase assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 H2O(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 0
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    H                        2
+    O                        1
+  # PPassemblage workspace variables #
+  -assemblage_totals
+EQUILIBRIUM_PHASES_RAW       6 Pure-phase assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 H2O(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 0
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    H                        2
+    O                        1
+  # PPassemblage workspace variables #
+  -assemblage_totals
+EQUILIBRIUM_PHASES_RAW       7 Pure-phase assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 H2O(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 0
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    H                        2
+    O                        1
+  # PPassemblage workspace variables #
+  -assemblage_totals
+EQUILIBRIUM_PHASES_RAW       8 Pure-phase assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 H2O(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 0
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    H                        2
+    O                        1
+  # PPassemblage workspace variables #
+  -assemblage_totals
+EQUILIBRIUM_PHASES_RAW       9 Pure-phase assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 H2O(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 0
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    H                        2
+    O                        1
+  # PPassemblage workspace variables #
+  -assemblage_totals
+EQUILIBRIUM_PHASES_RAW       10 Pure-phase assemblage after simulation 1.
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 H2O(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 0
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    H                        2
+    O                        1
+  # PPassemblage workspace variables #
+  -assemblage_totals
+END
+KNOBS
+	-iter            100
+	-tol       1.000e-15
+	-step      1.000e+02
+	-pe_s      1.000e+01
+	-diag      false
+SELECTED_OUTPUT 1
+	-file  sel_o$$$1.prn
+	-si   H2O(g)
+TRANSPORT
+	-cells     10
+	-shifts    10     1
+	-output_frequency     10
+	-selected_output_frequency     10
+	-bcon       3     3
+	-timest   1.00000e+00
+	-diffc    3.00000e-10
+	-tempr    2.00000e+00
+	-correct_disp False
+	-length
+   1.000e+00   1.000e+00   1.000e+00   1.000e+00   1.000e+00   1.000e+00   1.000e+00   1.000e+00
+   1.000e+00   1.000e+00
+	-disp
+   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00   0.000e+00
+   0.000e+00   0.000e+00
+	-punch_cells  1  2  3  4  5  6  7  8  9  10
+	-print_cells  1  2  3  4  5  6  7  8  9  10
+	-dump            $$$.dmp
+	-dump_frequency  10
+	-dump_restart    11
+END

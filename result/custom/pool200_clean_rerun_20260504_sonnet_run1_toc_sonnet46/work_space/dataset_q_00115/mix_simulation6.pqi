@@ -1,0 +1,34 @@
+TITLE River water and seawater mixing (0.7:0.3)
+# Only pH and Cl specified - using O2 to fix redox
+
+# Solution 1: River water, pH 6.0, Cl 10 mg/L
+SOLUTION 1 River Water
+    temp      25
+    pH        6.0
+    pe        4.0
+    units     mg/L
+    Cl        10.0
+    Na        10.0 charge
+    O(0)      1.0 O2(g) 0.2
+
+# Solution 2: Seawater, pH 8.1, Cl 19000 mg/L
+SOLUTION 2 Seawater
+    temp      25
+    pH        8.1
+    pe        4.0
+    units     mg/L
+    Cl        19000.0
+    Na        10500.0 charge
+    O(0)      1.0 O2(g) 0.2
+
+# Mix 70% river water and 30% seawater
+MIX 1
+    1    0.7
+    2    0.3
+
+SELECTED_OUTPUT
+    -file mix_output6.sel
+    -reset false
+    -si O2(g)
+
+END

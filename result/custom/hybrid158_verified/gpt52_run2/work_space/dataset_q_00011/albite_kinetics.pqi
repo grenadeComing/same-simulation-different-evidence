@@ -1,0 +1,28 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    Fe(2) 0.004
+    Fe(3) 0.004
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+    -steps 10 in 100
+
+SELECTED_OUTPUT
+    -file albite_sel.txt
+    -reset false
+    -time true
+    -step true
+    -kinetic_reactants Albite
+
+END

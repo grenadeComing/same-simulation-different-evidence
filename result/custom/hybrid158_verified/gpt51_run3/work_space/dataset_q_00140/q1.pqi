@@ -1,0 +1,15 @@
+SOLUTION 1
+    units mg/L
+    temp 25
+    Ba 2.0
+    S(6) 15.0 as SO4
+
+REACTION_TEMPERATURE 1
+    5
+    25 95
+
+SELECTED_OUTPUT
+    -reset false
+    -si Barite
+    -high_precision true
+END

@@ -1,0 +1,39 @@
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4.0
+    units     mmol/kgw
+    Cu        10.0
+    Ba        5.0
+
+RATES
+Calcite
+-start
+1  rem Calcite rate law with explicit rate constant
+2  rem PARM(1) = specific surface area (m^2/mol)
+3  rem PARM(2) = rate constant
+10 si_cc = SI("Calcite")
+20 kf = PARM(2)
+30 rate = kf * PARM(1) * (m/m0)^0.6 * (1 - 10^si_cc)
+40 moles = rate * TIME
+50 SAVE moles
+-end
+
+KINETICS 1
+Calcite
+    -tol   1e-8
+    -m0    1.0
+    -m     1.0
+    -parms 1.0  1e-5
+    -step  1000 in 100
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file   calcite_kinetics6.out
+    -reset  false
+    -step   true
+    -time   true
+    -molalities CO2
+
+END

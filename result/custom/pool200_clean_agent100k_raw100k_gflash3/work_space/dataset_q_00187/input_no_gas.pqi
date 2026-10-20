@@ -1,0 +1,7 @@
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    C(-4) 5.0
+    -water 1
+# No gas phase, but we let it reach redox equilibrium
+END

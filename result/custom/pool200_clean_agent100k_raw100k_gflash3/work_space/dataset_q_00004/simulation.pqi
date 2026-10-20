@@ -1,0 +1,35 @@
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 4
+    units mmol/kgw
+    C(4) 0.5
+    # Mn 1
+END
+
+RATES
+    Calcite_custom
+    -start
+    10 k = 0.001
+    20 area = 10.0 * m
+    30 rate = k * area * (1 - SR("Calcite"))
+    40 save rate * time
+    -end
+
+USE solution 1
+KINETICS 1
+    Calcite_custom
+    -formula CaCO3
+    -m0 1.0
+    -m 1.0
+    -step 1000 in 100
+    -runge_kutta 4
+
+SELECTED_OUTPUT
+    -file result.sel
+    -reset false
+    -step true
+USER_PUNCH
+    10 m_now = KIN("Calcite_custom")
+    20 if (STEP_NO == 1) then PUNCH LOG10((1.0 - m_now) / 10.0)
+END

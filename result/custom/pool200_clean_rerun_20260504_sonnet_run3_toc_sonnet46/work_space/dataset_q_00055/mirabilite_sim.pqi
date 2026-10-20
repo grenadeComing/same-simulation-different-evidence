@@ -1,0 +1,22 @@
+TITLE Equilibrium with minerals at 100C, pH 3
+
+SOLUTION 1
+    temp    100
+    pH      3.0
+    units   mol/L
+    water   1.0
+
+EQUILIBRIUM_PHASES 1
+    K-mica          0.0  10.0
+    Kaolinite       0.0  10.0
+    Dolomite        0.0  10.0
+    Epsomite        0.0  10.0
+    Fe(OH)3(a)      0.0  10.0
+    Halite          0.0  10.0
+
+SELECTED_OUTPUT
+    -file           mirabilite_sim.out
+    -reset          false
+    -si             Mirabilite
+
+END

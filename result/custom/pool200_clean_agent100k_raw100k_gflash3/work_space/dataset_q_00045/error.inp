@@ -1,0 +1,107 @@
+SOLUTION_RAW                 1 
+  -temp                      100
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01243491447
+  -total_o                   55.506217457237
+  -cb                        1.1600338558796e-16
+  -density                   0.95834682121751
+  -viscosity                 0.28158165051825
+  -viscos_0                  0.28158071228041
+  -totals
+    H(0)                     4.5037545742118e-24
+  -pH                        6.1191564704187
+  -pe                        4
+  -mu                        7.6096659239138e-07
+  -ah2o                      0.99999997412714
+  -mass_water                1
+  -soln_vol                  1.0434635891411
+  -total_alkalinity          -1.1600338558796e-16
+  -activities
+    E                        -4
+    H(0)                     -23.647449848459
+    O(0)                     -25.745632966668
+  -gammas
+EQUILIBRIUM_PHASES_RAW       1 
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 Aragonite
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 1000
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -component                 CH4(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0.69897
+      -moles                 1000
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0.69897
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -component                 CO2(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 1000
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -component                 Calcite
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 1000
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -component                 Gypsum
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 1000
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -component                 H2S(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    1
+      -moles                 1000
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                1
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    C                        4
+    Ca                       3
+    H                        10
+    O                        14
+    S                        2
+  # PPassemblage workspace variables #
+  -assemblage_totals

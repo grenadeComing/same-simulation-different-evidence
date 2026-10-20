@@ -1,0 +1,26 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3 0
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0 1.0
+        -steps 10  IN 100 STEPS
+
+SELECTED_OUTPUT
+    -file sel.out
+    -reset false
+    -pH true
+    -time true
+    -step true
+END

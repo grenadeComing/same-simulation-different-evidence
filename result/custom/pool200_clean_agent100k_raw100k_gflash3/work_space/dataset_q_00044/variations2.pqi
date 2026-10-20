@@ -1,0 +1,29 @@
+# Variation 4: 100C, P=0.01, 0.05, 0.10
+SOLUTION 4
+    temp 100
+    units mmol/kgw
+    Ca 50
+    pH 7 charge
+EQUILIBRIUM_PHASES 4
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 10
+    CO2(g) -2 10
+    CH4(g) -1.301 10
+    H2S(g) -1 10
+END
+
+# Variation 5: 25C, P=0.01, 0.05, 0.10
+SOLUTION 5
+    temp 25
+    units mmol/kgw
+    Ca 50
+    pH 7 charge
+EQUILIBRIUM_PHASES 5
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 10
+    CO2(g) -2 10
+    CH4(g) -1.301 10
+    H2S(g) -1 10
+END

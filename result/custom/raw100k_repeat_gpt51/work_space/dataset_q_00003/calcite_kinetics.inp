@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 4
+    units mmol/kgw
+    C(4) 0.5
+    Mn 1
+
+RATES
+Calcite_kin
+-start
+10 REM rate = k * SA (mol/s)
+20 rate = 0.001 * 10
+30 moles = rate * time
+40 SAVE moles
+-end
+
+KINETICS 1
+    Calcite_kin
+        -m0 1.0
+        -m  1.0
+        -steps 10 in 100
+        -formula CaCO3 1
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file selout.txt
+    -reset false
+    -time true
+    -step true
+    -totals C

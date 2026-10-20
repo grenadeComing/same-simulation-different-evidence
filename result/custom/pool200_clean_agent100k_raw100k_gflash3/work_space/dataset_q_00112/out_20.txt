@@ -1,0 +1,4 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	   si_H2O(g)	
+           1	      i_soln	           1	         -99	         -99	         -99	           6	           4	     -1.6336	
+           1	      i_soln	           2	         -99	         -99	         -99	         8.1	           4	     -1.6420	
+           1	       react	           1	         -99	           0	           1	     8.26493	     10.0318	     -1.6361	

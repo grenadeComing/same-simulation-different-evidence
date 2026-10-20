@@ -1,0 +1,17 @@
+SOLUTION 1 Pure water
+    temp 150
+    pH 7 charge
+    pe 4
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT
+    -reset false
+    -solution true
+    -totals Na K Ca Mg Si Al H(0) O(0)
+    -si Chrysotile Talc
+USER_PUNCH
+    -headings sc
+10 PUNCH SC
+END

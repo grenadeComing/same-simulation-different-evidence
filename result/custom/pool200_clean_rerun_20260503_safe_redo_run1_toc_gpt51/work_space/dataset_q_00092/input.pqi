@@ -1,0 +1,12 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+
+SELECTED_OUTPUT
+    -reset false
+    -si true
+    -molalities H4SiO4 H3SiO4- H2SiO4-2 HSiO3- SiO2(aq)
+END

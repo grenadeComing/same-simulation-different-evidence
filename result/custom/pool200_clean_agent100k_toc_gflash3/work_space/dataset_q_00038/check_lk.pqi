@@ -1,0 +1,9 @@
+SOLUTION 1
+    temp 100
+SELECTED_OUTPUT 1
+    -file logk_values.txt
+    -user_punch true
+USER_PUNCH 1
+    -head logK_calc logK_arag
+    10 PUNCH LK_PHASE("Calcite"), LK_PHASE("Aragonite")
+END

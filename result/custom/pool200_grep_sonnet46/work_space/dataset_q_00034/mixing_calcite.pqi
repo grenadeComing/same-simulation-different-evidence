@@ -1,0 +1,35 @@
+# Solution 1: 50 mmol/kg dissolved inorganic carbon (DIC)
+SOLUTION 1
+    temp      20
+    pH        7
+    units     mmol/kgw
+    C(4)      50
+
+# Solution 2: 50 mmol/kg calcium
+SOLUTION 2
+    temp      20
+    pH        7
+    units     mmol/kgw
+    Ca        50
+
+# Mix 1:1
+MIX 1
+    1   0.5
+    2   0.5
+
+# Allow calcite to equilibrate at each temperature step
+EQUILIBRIUM_PHASES 1
+    Calcite   0   0
+
+# Heat from 20 to 200 in 10 discrete steps
+REACTION_TEMPERATURE 1
+    20  38.9  57.8  76.7  95.6  114.4  133.3  152.2  171.1  190  200
+
+SELECTED_OUTPUT
+    -file   mixing_calcite.sel
+    -reset  false
+    -temperature    true
+    -totals         C Ca
+    -equilibrium_phases  Calcite
+
+END

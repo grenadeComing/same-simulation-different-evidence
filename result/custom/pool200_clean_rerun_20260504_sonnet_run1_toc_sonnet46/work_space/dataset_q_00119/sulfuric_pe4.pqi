@@ -1,0 +1,22 @@
+TITLE Add sulfuric acid in steps to pure water at pH 7.0 with pe=4
+
+# Step 0: Initial pure water at pH 7.0
+SOLUTION 1
+    pH 7.0
+    pe 4.0
+    temp 25
+    units mol/L
+
+REACTION 1
+    H2SO4  1
+    0.001  0.005  0.01  0.05  0.1  moles
+
+SELECTED_OUTPUT
+    -file sulfuric_pe4.sel
+    -reset false
+    -step true
+    -pH true
+    -pe true
+    -si H2(g)
+
+END

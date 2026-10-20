@@ -1,0 +1,29 @@
+SOLUTION 1
+    temp      100
+    pH        5    charge
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1
+
+KINETICS 1
+    Calcite
+        -m0   1.0
+        -steps 1000 in 100 steps
+
+RATES
+    Calcite
+        -start
+10 k = 0.001
+20 SA = 10.0
+30 m = k * SA * TIME
+40 SAVE m
+        -end
+
+SELECTED_OUTPUT
+    -file calcite_kinetics.sel
+    -high_precision true
+    -time true
+    -pH true
+
+END

@@ -1,0 +1,21 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    C 0.005
+    N(-3) 0.005
+END
+SOLUTION 2
+    temp 150
+    pH 7
+    pe 4
+    C 0.006
+    N(-3) 0.006
+END
+SOLUTION 3
+    temp 150
+    pH 7
+    pe 4
+    C 0.004
+    N(-3) 0.004
+END

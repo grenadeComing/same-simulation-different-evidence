@@ -1,0 +1,13 @@
+SOLUTION 1
+    temp 100
+    Ca 1
+    C 1
+    S 1
+    pH 7
+END
+USER_PRINT
+10 FOR i = 1 TO 1000
+20   n$ = EOL$(i)
+30   IF (INSTR(n$, "Ca") > 0) THEN PRINT n$
+40 NEXT i
+END

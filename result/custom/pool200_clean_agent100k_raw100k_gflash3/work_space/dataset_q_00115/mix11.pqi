@@ -1,0 +1,16 @@
+SOLUTION 1
+    pH      6.0
+    units   mg/l
+    Cl      10
+    Na      10 charge
+    pe      4.0
+SOLUTION 2
+    pH      8.1
+    units   mg/l
+    Cl      19000
+    Na      19000 charge
+    pe      4.0
+MIX 1
+    1       0.75
+    2       0.25
+END

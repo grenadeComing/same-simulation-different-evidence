@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    units mol/L
+    water 1
+
+EQUILIBRIUM_PHASES 1
+    Chrysotile  0  10
+    Talc        0  10
+
+SELECTED_OUTPUT
+    -file sim_chrysotile_talc.out
+    -reset false
+    -pH true
+    -pe true
+    -temperature true
+    -si Chrysotile Talc
+
+END

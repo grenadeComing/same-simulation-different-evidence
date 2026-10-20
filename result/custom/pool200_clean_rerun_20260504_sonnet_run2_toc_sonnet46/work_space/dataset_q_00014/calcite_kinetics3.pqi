@@ -1,0 +1,23 @@
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4.0
+    units     mmol/kgw
+    Cu        10.0
+    Ba        5.0
+
+KINETICS 1
+Calcite
+    -tol    1e-8
+    -m0     1.0
+    -m      1.0
+    -parms  1.0   10.0
+    -step   1000 in 100
+
+SELECTED_OUTPUT
+    -file   calcite_out3.sel
+    -reset  false
+    -time   true
+    -kinetic_reactants  Calcite
+
+END

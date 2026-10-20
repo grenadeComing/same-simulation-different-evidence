@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 25
+    units mg/L
+    Ba 2.0
+    S(6) 15.0
+
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+
+USER_PUNCH
+    -headings step S6_m
+    10 PUNCH STEP_NO, MOL("S(6)")
+
+END

@@ -1,0 +1,10 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    Mg 1
+    Si 1
+SELECTED_OUTPUT 1
+    -file SI_prec.txt
+    -si Chrysotile
+    -logk Chrysotile
+END

@@ -1,0 +1,17 @@
+SOLUTION 1
+    temp 100
+    ph 5
+    pe 4
+    C(4) 0.5 mmol/kgw
+    Mn 1.0 mmol/kgw
+    Cl 1.0 charge
+
+REACTION 1
+    Calcite 1.0
+    0.0002 moles in 20 steps
+
+SELECTED_OUTPUT
+    -file test.sel
+    -ph
+    -reaction
+END

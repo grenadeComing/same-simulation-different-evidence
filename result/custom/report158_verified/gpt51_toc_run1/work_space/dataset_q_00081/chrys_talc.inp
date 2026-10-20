@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    units mol/kgw
+
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+
+SELECTED_OUTPUT
+    -file chrys_talc.sel
+    -molalities MgOH+
+    -reset false
+END

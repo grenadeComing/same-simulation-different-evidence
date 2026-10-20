@@ -1,0 +1,16 @@
+TITLE CO2 Activity Calculation
+# Solution at 25°C, pH 7.5, 100 mg/L Ca, 250 mg/L Alkalinity as CaCO3
+
+SOLUTION 1
+    temp      25
+    pH        7.5
+    units     mg/L
+    Ca        100
+    Alkalinity 250 as CaCO3
+
+SELECTED_OUTPUT
+    -file     co2_activity.out
+    -reset    false
+    -activities CO2
+
+END

@@ -1,0 +1,21 @@
+SOLUTION 1
+    temp 25
+    pH 7
+    Ca 0.01
+    Sr 0.01
+    Alkalinity 0.04 as C
+
+SOLID_SOLUTIONS 1
+    Ca_Sr_carbonate
+        -comp Calcite 0.0
+        -comp Strontianite 0.0
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+SELECTED_OUTPUT
+    -file calcite_ss.sel
+    -equilibrium_phases Calcite
+    -solid_solutions true
+    -totals Ca Sr C(4)
+END

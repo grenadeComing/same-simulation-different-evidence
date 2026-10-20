@@ -1,0 +1,13 @@
+SOLUTION 1
+    temp 25
+    pH 7.0
+    water 1
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+SELECTED_OUTPUT
+    -file gypsum_h2.sel
+    -reset false
+USER_PUNCH
+    -headings H2_molality
+    10 PUNCH MOL("H2")
+END

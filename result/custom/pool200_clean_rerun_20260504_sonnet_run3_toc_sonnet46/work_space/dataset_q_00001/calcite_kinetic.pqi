@@ -1,0 +1,40 @@
+SOLUTION 1
+    temp      100
+    pH        5.0
+    pe        4.0
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1.0
+
+KINETICS 1
+Calcite
+    -m0   1.0
+    -m    1.0
+    -parms 10.0  0.001
+    -steps 1000 in 100
+
+RATES
+Calcite
+-start
+ 1  rem Calcite kinetic dissolution
+ 2  rem PARM(1) = specific surface area (m^2/mol)
+ 3  rem PARM(2) = rate constant (mol/m^2/s)
+ 10 si_cc = SI("Calcite")
+ 20 if (m <= 0 and si_cc < 0) then goto 200
+ 30 rate = PARM(1) * PARM(2) * (1 - 10^si_cc)
+ 40 moles = rate * (m/m0)^0.67 * TIME
+ 50 if (moles > m) then moles = m
+ 60 if (moles < -1e-8) then moles = -1e-8
+ 200 save moles
+-end
+
+SELECTED_OUTPUT
+    -file   calcite_kinetic.out
+    -reset  false
+    -step   true
+    -time   true
+    -pH     true
+    -pe     true
+    -si     Calcite
+
+END

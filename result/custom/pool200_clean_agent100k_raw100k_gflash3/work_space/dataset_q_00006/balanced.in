@@ -1,0 +1,25 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C         0.5
+    Mn        1
+    Cl        1.5 charge # Balance charge
+    -water    1
+
+KINETICS 1
+    Calcite
+    -m        1
+    -parms    10.0 0.67
+    -step     1000 in 100
+
+SELECTED_OUTPUT
+    -file                 results_balanced.txt
+    -step
+    -time
+    -totals               C
+    -molalities           Ca+2
+    -kinetics             Calcite
+
+END

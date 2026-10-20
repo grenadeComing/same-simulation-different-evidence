@@ -1,0 +1,2 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	si_Thenardite	
+           1	      i_soln	           1	         -99	         -99	         -99	           8	           4	     -9.4892	

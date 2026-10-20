@@ -1,0 +1,22 @@
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    pe 4
+    redox pe
+    units mmol/kgw
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    -temperature 25
+    O2(g)  -0.7
+
+EQUILIBRIUM_PHASES 1
+    Pyrite   0.0   0.1
+    Goethite 0.0   0
+    Gypsum   0.0   0
+
+SELECTED_OUTPUT
+    -file pyrite_oxidation.sel
+    -saturation_indices Hematite
+END

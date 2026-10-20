@@ -1,0 +1,38 @@
+SOLUTION 1
+    temp      100
+    pH        5.0
+    pe        4.0
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1.0
+
+RATES
+Calcite
+-start
+10  IF (M <= 0) THEN GOTO 100
+20  SI_Calcite = SI("Calcite")
+30  IF (SI_Calcite >= 0) THEN GOTO 100
+40  rate = PARM(2) * PARM(1)
+50  moles = rate * TIME
+60  IF (moles > M) THEN moles = M
+100 SAVE moles
+-end
+
+KINETICS 1
+Calcite
+    -m0   1.0
+    -m    1.0
+    -parms 10.0  0.001
+    -step 1000 in 100
+    -tol  1e-8
+
+SELECTED_OUTPUT
+    -file   calcite_kinetic3.sel
+    -reset  false
+    -step   true
+    -time   true
+    -pH     true
+    -pe     true
+    -si     Calcite
+
+END

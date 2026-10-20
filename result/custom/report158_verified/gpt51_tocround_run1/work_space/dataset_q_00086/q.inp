@@ -1,0 +1,20 @@
+SOLUTION_SPECIES
+H2O = H+ + OH-
+        log_k           -13.995
+
+SOLUTION 1
+    temp      25
+    pH        7.5
+    pe        4
+    units     mg/L
+    Ca        100
+    Alkalinity 250 as CaCO3
+END
+
+SELECTED_OUTPUT
+    -file q.sel
+    -reset true
+    -pH true
+    -charge_balance   true
+    -charge true
+END

@@ -1,0 +1,49 @@
+TITLE Sulfuric acid addition to pure water - viscosity calculation
+
+# Step 0: Initial pure water at pH 7.0
+SOLUTION 1
+    temp      25
+    pH        7.0
+    pe        4
+    units     mol/L
+    water     1  # kg
+
+SELECTED_OUTPUT
+    -file     sulfuric_acid_steps.sel
+    -reset    false
+    -step     true
+    -pH       true
+    -totals   S
+
+USER_PUNCH
+    -headings Viscosity
+    -start
+10  PUNCH VISCOSITY
+    -end
+
+# Step 1: Add 0.001 mol H2SO4
+REACTION 1
+    H2SO4     1
+    0.001
+
+# Step 2: Add 0.005 mol H2SO4
+REACTION 2
+    H2SO4     1
+    0.005
+
+# Step 3: Add 0.01 mol H2SO4
+REACTION 3
+    H2SO4     1
+    0.01
+
+# Step 4: Add 0.05 mol H2SO4
+REACTION 4
+    H2SO4     1
+    0.05
+
+# Step 5: Add 0.1 mol H2SO4
+REACTION 5
+    H2SO4     1
+    0.1
+
+END

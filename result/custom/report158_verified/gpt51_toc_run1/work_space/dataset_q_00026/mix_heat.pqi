@@ -1,0 +1,23 @@
+SOLUTION 1
+    temp 20
+    pH 7 charge
+    C(4) 0.05
+    units mol/kgw
+SOLUTION 2
+    temp 20
+    pH 7 charge
+    Ca 0.05
+    units mol/kgw
+MIX 1
+    1 0.5
+    2 0.5
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+SELECTED_OUTPUT
+    -file mix_heat_sel.out
+    -reset false
+    -temperature true
+    -si Aragonite
+END

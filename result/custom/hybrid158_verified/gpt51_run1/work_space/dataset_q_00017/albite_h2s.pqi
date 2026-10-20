@@ -1,0 +1,26 @@
+SOLUTION 1
+    temp      200
+    pH        2    charge
+    units     mol/kgw
+    Fe(2)     4e-3
+    Fe(3)     4e-3
+
+KINETICS 1
+    Albite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0 10.0
+        -time 1000 in 100
+
+GAS_PHASE 1
+    -fixed_pressure
+    -temperature 200
+    -pressure 5
+    H2S(g) 5
+
+SELECTED_OUTPUT
+    -file albite_h2s.sel
+    -reset false
+    -time true
+    -gas true
+END

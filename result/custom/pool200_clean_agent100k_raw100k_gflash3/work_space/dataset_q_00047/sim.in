@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 25
+    pH 3
+    Cl 1e-3
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+SAVE solution 2
+END
+USE solution 2
+REACTION_TEMPERATURE 2
+    100
+END

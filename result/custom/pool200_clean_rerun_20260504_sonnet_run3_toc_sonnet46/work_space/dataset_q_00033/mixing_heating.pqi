@@ -1,0 +1,42 @@
+
+# Solution 1: 50 mmol/kg dissolved inorganic carbon
+SOLUTION 1
+    temp      20
+    pH        7.0 charge
+    C(4)      50 mmol/kgw
+
+# Solution 2: 50 mmol/kg calcium
+SOLUTION 2
+    temp      20
+    pH        7.0 charge
+    Ca        50 mmol/kgw
+
+# Mix 1:1 and equilibrate with calcite at 20C
+MIX 1
+    1   0.5
+    2   0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0.0  0.0
+
+SAVE solution 3
+
+END
+
+# Now heat from 20 to 200 in 10 steps with calcite equilibrium
+# 10 steps means 10 temperature increments: 20->38->56->74->92->110->128->146->164->182->200
+# REACTION_TEMPERATURE with "in 10" needs exactly 2 temps
+USE solution 3
+EQUILIBRIUM_PHASES 2
+    Calcite   0.0  0.0
+
+REACTION_TEMPERATURE 1
+    20  200  in 10
+
+SELECTED_OUTPUT
+    -file   mixing_heating.sel
+    -reset  false
+    -temperature true
+    -si     Calcite Aragonite
+
+END

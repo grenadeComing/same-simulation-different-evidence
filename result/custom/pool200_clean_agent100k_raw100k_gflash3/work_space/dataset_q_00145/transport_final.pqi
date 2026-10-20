@@ -1,0 +1,30 @@
+SOLUTION 0  Infilling solution
+    units mmol/kgw
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10  Initial solution in cells
+    units mmol/kgw
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    -equilibrate 1
+    X 0.001
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1.0
+    -boundary_conditions flux flux
+
+SELECTED_OUTPUT
+    -file final_pe.sel
+    -reset false
+    -step
+    -solution
+    -pe
+
+END

@@ -1,0 +1,36 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(2) 0.004
+    Fe(3) 0.004
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -parms 1.0 10
+        -steps 10*100
+
+RATES
+    Albite
+    -start
+    10 sa = PARM(1)
+    20 k = PARM(2)
+    30 moles = k*sa*TIME
+    40 SAVE moles
+    -end
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file albite_kinetic.sel
+    -reset false
+    -simulation true
+    -state true
+    -step true
+    -si Goethite
+END

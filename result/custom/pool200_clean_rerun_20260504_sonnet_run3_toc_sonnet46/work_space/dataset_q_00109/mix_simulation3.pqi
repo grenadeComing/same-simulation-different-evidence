@@ -1,0 +1,36 @@
+SOLUTION 1  River Water
+    pH      6.0
+    temp    25.0
+    units   ppm
+    Cl      10.0
+    Na      10.0
+    Ca      5.0
+    Mg      2.0
+    S(6)    5.0
+    Alkalinity  20.0
+
+SOLUTION 2  Seawater
+    pH      8.1
+    temp    25.0
+    units   ppm
+    Cl      19000.0
+    Na      10500.0
+    Mg      1350.0
+    S(6)    2700.0
+    Ca      400.0
+    K       380.0
+    Alkalinity  142.0
+
+MIX 1
+    1   0.7
+    2   0.3
+
+SELECTED_OUTPUT
+    -file           mix_output3.sel
+    -reset          false
+    -solution       true
+    -pH             true
+    -charge_balance true
+    -totals         Cl Na
+
+END

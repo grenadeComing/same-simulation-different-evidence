@@ -1,0 +1,16 @@
+SOLUTION 1 River
+    pH 6.0
+    Cl 10
+SOLUTION 2 Seawater
+    pH 8.1
+    Cl 19000
+MIX 1
+    1 0.7
+    2 0.3
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+USER_PUNCH
+    -headings logIAP_O2g
+    10 PUNCH SI("O2(g)")
+END

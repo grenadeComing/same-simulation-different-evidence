@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 15
+    water 1
+    C(-4) 5 mmol/kgw
+
+GAS_PHASE 1
+    -fixed_pressure
+    -temperature 15
+    -pressure 1.0
+    CH4(g) 0
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+USER_PUNCH
+    -headings n_CH4_gas
+    10 PUNCH GAS("CH4(g)")
+END

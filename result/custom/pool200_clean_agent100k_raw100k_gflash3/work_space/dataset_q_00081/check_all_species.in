@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    C 0.1
+    N(-3) 0.1
+END
+SELECTED_OUTPUT
+    -file species.sel
+    -molalities *
+END
+RUN_CELLS
+    -cells 1
+END

@@ -1,0 +1,27 @@
+{
+  "index": 111,
+  "row_index": 110,
+  "task_type": "mcq",
+  "truth": "D",
+  "prediction": "A",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": false,
+  "item_id": 111,
+  "condition": "full",
+  "status": "submitted",
+  "calls": 2,
+  "estimated_cost_usd": 0.03277575,
+  "input_tokens": 18353,
+  "output_tokens": 47,
+  "read_paths": [
+    {
+      "path": "mix_sel.txt",
+      "ok": true,
+      "start_line": null,
+      "end_line": null
+    }
+  ],
+  "checkpoint_fingerprint": "222ebe31c9d97f0225400689ecb5703c940c5c4cb47cda9066c8ed09cc7f6a02",
+  "remaining_steps": 20
+}

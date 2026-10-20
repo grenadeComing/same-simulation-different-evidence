@@ -1,0 +1,22 @@
+SOLUTION 1
+    temp 25
+    units mg/L
+    Ba 2.0
+    S(6) 15.0
+END
+
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+END
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings step temp si_barite
+10 PUNCH STEP_NO, TC, SI("Barite")
+END
+
+RUN_CELLS
+    -cells 1
+END

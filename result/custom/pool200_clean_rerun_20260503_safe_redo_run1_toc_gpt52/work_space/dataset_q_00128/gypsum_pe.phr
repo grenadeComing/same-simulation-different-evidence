@@ -1,0 +1,14 @@
+SOLUTION 1
+    pH      7.0
+    temp    25
+    units   mol/kgw
+    -water  1
+EQUILIBRIUM_PHASES 1
+    Gypsum  0  10
+SELECTED_OUTPUT
+    -file gypsum_pe.sel
+    -reset false
+USER_PUNCH
+    -headings pe
+10 PUNCH PE
+END

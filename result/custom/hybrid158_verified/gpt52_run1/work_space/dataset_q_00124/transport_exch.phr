@@ -1,0 +1,35 @@
+TITLE 1D transport, 10 cells, exchange in all cells
+
+SOLUTION 0  Infilling solution
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10 Initial solution in cells
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+USER_PUNCH
+    -headings shift cell eqfrac_CaX2
+    10 PUNCH TOTAL_TIME, CELL_NO, EQUIV_FRACTION(CaX2)
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions constant constant
+    -lengths 10*1
+    -time_step 1
+    -diffusion_coefficient 0
+    -dispersivities 10*0
+    -punch_cells 1-10
+    -punch_frequency 1
+END

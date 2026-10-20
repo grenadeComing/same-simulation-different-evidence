@@ -1,0 +1,13 @@
+SOLUTION 1
+    temp 150
+    # No pH specified, defaults to neutral for the solutes (which are none)
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT 1
+    -file output_neutral.sel
+    -reset false
+    -pH true
+END

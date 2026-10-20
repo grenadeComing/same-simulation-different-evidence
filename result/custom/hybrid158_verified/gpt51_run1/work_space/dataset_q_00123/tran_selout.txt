@@ -1,0 +1,7 @@
+      dist_x	        step	       m_NaX	      m_CaX2	        m_X-	
+         -99	         -99	  0.0000e+00	  0.0000e+00	  0.0000e+00	
+         -99	         -99	  0.0000e+00	  0.0000e+00	  0.0000e+00	
+         -99	         -99	  0.0000e+00	  0.0000e+00	  0.0000e+00	
+         -99	         -99	  0.0000e+00	  5.0000e-04	  1.2589e+01	
+         -99	           1	  0.0000e+00	  5.0000e-04	  1.2589e+01	
+      Sum_resid	    Sum_Delta/U	     MaxFracErr	        Soln_11	    Soln_11_min	    Soln_11_max	         Soln_1	     Soln_1_min	     Soln_1_max	

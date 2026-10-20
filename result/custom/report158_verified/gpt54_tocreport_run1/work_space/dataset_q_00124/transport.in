@@ -1,0 +1,26 @@
+TITLE 1D transport exchange test
+SOLUTION 0 Initial
+    pH 7.0 charge
+    Ca 1.0
+    Cl 2.0
+SOLUTION 1-10
+    pH 7.0 charge
+    Ca 1.0
+    Cl 2.0
+SOLUTION 11 Infilling
+    pH 7.0 charge
+    Na 1.0
+    Cl 1.0
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+COPY solution 11 0
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -correct_disp true
+    -print_cells 8
+    -print_frequency 1
+END

@@ -1,0 +1,8 @@
+TITLE test no gas
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    units kgw
+    water 1
+END

@@ -1,0 +1,14 @@
+SOLUTION 1 Pure water
+    pH 7 charge
+INCREMENTAL_REACTIONS true
+REACTION 1
+    H2SO4
+    0.001 0.005 0.01 0.05 0.1 moles
+USE solution 1
+END
+USE solution 6
+END
+SELECTED_OUTPUT
+    -reset false
+    -pH true
+END

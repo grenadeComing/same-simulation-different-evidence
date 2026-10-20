@@ -1,0 +1,31 @@
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4
+    units     mmol/kgw
+    Fe(2)     4.0
+    Fe(3)     4.0
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5.0
+    -volume   1.0
+    -temperature 200
+    H2S(g)    5.0
+
+KINETICS 1
+Albite
+    -m0   1.0
+    -m    1.0
+    -parms 1.0  10.0
+    -step  10 in 100
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file   albite_kinetic.sel
+    -reset  false
+    -step
+    -totals Si
+
+END

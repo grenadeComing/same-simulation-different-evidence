@@ -1,0 +1,20 @@
+{
+  "index": 35,
+  "row_index": 34,
+  "task_type": "mcq",
+  "truth": "B",
+  "prediction": "B",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": true,
+  "item_id": 35,
+  "condition": "full",
+  "status": "submitted",
+  "calls": 1,
+  "estimated_cost_usd": 0.04124575,
+  "input_tokens": 23345,
+  "output_tokens": 28,
+  "read_paths": [],
+  "checkpoint_fingerprint": "e6d245c17575bacaa59efb0180ae495aa8d82026f781c594e2f7411516828142",
+  "remaining_steps": 18
+}

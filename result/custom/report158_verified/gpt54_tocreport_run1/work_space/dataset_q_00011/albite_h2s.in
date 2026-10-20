@@ -1,0 +1,15 @@
+TITLE Albite kinetic dissolution with H2S gas
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(3) 0.004
+    Fe(2) 0.004
+EQUILIBRIUM_PHASES 1
+    H2S(g) -0.30103 10
+KINETICS 1
+    Albite
+        -m0 1
+        -m 1
+        -parms 1.0 10
+        -steps 1000 in 100
+END

@@ -1,0 +1,27 @@
+{
+  "index": 152,
+  "row_index": 151,
+  "task_type": "mcq",
+  "truth": "B",
+  "prediction": "B",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": true,
+  "item_id": 152,
+  "condition": "full",
+  "status": "submitted",
+  "calls": 2,
+  "estimated_cost_usd": 0.1562085,
+  "input_tokens": 88894,
+  "output_tokens": 46,
+  "read_paths": [
+    {
+      "path": "sel.tsv",
+      "ok": true,
+      "start_line": null,
+      "end_line": null
+    }
+  ],
+  "checkpoint_fingerprint": "5330ab7593381852a7d82dfe320f15e8a7a6ba2ea135e9d9ebbc352ea3b1127b",
+  "remaining_steps": 18
+}

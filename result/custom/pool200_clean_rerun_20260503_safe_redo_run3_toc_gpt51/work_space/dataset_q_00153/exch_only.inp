@@ -1,0 +1,21 @@
+TITLE Batch exchange to get NaX in solution 1
+
+SOLUTION 1
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+    units mol/kgw
+
+EXCHANGE 1
+    X- 0.001
+    -equilibrate 1
+
+USER_PUNCH
+    -headings NaX_m CaX2_m
+    10 PUNCH MOL("NaX")
+    20 PUNCH MOL("CaX2")
+
+SELECTED_OUTPUT
+    -file exch_batch.txt
+    -reset false
+END

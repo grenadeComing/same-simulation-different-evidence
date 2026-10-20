@@ -1,0 +1,17 @@
+TITLE Include dissolved CH4 and H2S, equilibrate with CO2 and minerals
+SOLUTION 1
+    temp 100
+    pH 7 charge
+    Ca 50 mmol/kgw
+    C(-4) 5 mmol/kgw
+    S(-2) 10 mmol/kgw
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 10
+    CO2(g) 0 10
+SELECTED_OUTPUT
+    -file selected5.out
+    -reset false
+    -alkalinity true
+END

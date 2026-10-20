@@ -1,0 +1,26 @@
+TITLE Transport exchange problem
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+SOLUTION 1-10
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+EXCHANGE 0-9
+    X- 0.001
+TRANSPORT
+    cells 10
+    shifts 10
+    length 1.0
+    flow_direction forward
+    boundary_conditions flux flux
+    initial_time 0
+    time_step 1
+    print_cells 1-10
+    print_frequency 1
+    dump_frequency 0
+INCREMENTAL_REACTIONS true
+PRINT
+    -reset false
+END

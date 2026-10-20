@@ -1,0 +1,39 @@
+TITLE Transport SC question punch
+SOLUTION 0
+    pH 7 charge
+    Ca 1
+    Cl 2
+SOLUTION 1-10
+    pH 7 charge
+    Ca 1
+    Cl 2
+SOLUTION 11
+    pH 7 charge
+    Na 1
+    Cl 1
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -user_punch true
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions constant
+    -print_cells 1
+    -print_frequency 1
+    -punch_cells 1
+    -punch_frequency 1
+    -length 1
+    -dispersivities 0
+PRINT
+    -reset false
+    -status false
+USER_PUNCH
+    -headings step cell sc
+    10 PUNCH STEP_NO, CELL_NO, SC
+END

@@ -1,0 +1,28 @@
+SOLUTION 1
+    temp 100
+    Ca 1
+    C 1
+    S 1
+    pH 7
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 10
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 16
+    CO2(g) 1
+    CH4(g) 5
+    H2S(g) 10
+USER_PUNCH
+-headings SpeciesName
+10 t = SYS("aq", count, names$, type$, moles)
+20 FOR i = 1 TO count
+30   PUNCH names$(i)
+40 NEXT i
+END
+SELECTED_OUTPUT
+    -file species_list.txt
+    -user_punch true
+    -reset false
+END

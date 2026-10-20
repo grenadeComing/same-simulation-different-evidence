@@ -1,0 +1,21 @@
+SOLUTION 1
+    temp 100
+    pH 7
+    water 1  # kg
+
+EQUILIBRIUM_PHASES 1
+    K-mica        0  10
+    Kaolinite     0  10
+    Dolomite      0  10
+    Epsomite      0  10
+    Fe(OH)3(a)    0  10
+    Halite        0  10
+    Calcite       3  0
+
+SELECTED_OUTPUT
+    -file selected_output6.txt
+    -reset false
+    -pH
+    -molalities  Al(OH)4-
+
+END

@@ -1,0 +1,46 @@
+TITLE Transport problem for pe at step 10
+
+SOLUTION 0-10
+    temp 25
+    pH 7.0
+    pe 4
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+    -water 1 # kg
+
+SOLUTION 11
+    temp 25
+    pH 7.0
+    pe 4
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+    -water 1 # kg
+
+EXCHANGE 1-10
+    X-Na 0.0
+    X 0.001
+
+EQUILIBRIUM_PHASES 0-10
+    O2(g) -0.7
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -dispersivities 0
+    -punch_cells 1-10
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_frequency 1
+
+SELECTED_OUTPUT
+    -file transport_sel.out
+    -reset false
+    -time true
+    -distance true
+    -totals Na Ca Cl
+    -pH true
+    -pe true

@@ -1,0 +1,13 @@
+SOLUTION 1 Pure water
+    pH 7.0
+
+REACTION 1
+    H2SO4 1
+    0.001 moles
+
+SELECTED_OUTPUT
+    -file q1.sel
+    -pH true
+    -step true
+    -high_precision true
+    -reset false

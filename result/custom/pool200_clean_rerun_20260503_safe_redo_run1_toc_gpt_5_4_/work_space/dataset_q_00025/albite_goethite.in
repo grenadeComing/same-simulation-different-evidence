@@ -1,0 +1,27 @@
+TITLE Albite kinetics with H2S gas, 200C
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Fe(+3) 4
+    Fe(+2) 4
+    Cl 4 charge
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+KINETICS 1
+    Albite
+        -m0 1
+        -m 1
+        -parms 1.0 10
+        -steps 1000 in 100
+        -tol 1e-12
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -step true
+    -time true
+    -si Goethite
+END

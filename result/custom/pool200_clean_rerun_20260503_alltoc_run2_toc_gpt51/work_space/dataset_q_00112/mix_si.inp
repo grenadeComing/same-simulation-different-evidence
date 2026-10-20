@@ -1,0 +1,24 @@
+SOLUTION 1 River
+    pH 6.0
+    temp 25
+    units mg/L
+    Cl 10
+
+SOLUTION 2 Seawater
+    pH 8.1
+    temp 25
+    units mg/L
+    Cl 19000
+
+MIX 1
+    1 0.7
+    2 0.3
+
+EQUILIBRIUM_PHASES 1
+    H2O(g) 0 0
+
+SELECTED_OUTPUT
+    -reset false
+    -solution 1
+    -si H2O(g)
+END

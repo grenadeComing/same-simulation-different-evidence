@@ -1,0 +1,49 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(3) 4e-3
+    Fe(2) 4e-3
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10.0
+        -tol 1e-10
+    -steps 100 in 10
+
+RATES
+Albite
+-start
+  10 ssa = PARM(1)
+  20 k = PARM(2)
+  30 rate = k*ssa * 1e-6
+  40 if (M <= 0) then rate = 0
+  50 SAVE rate
+-end
+
+SELECTED_OUTPUT
+  -file sel.txt
+  -reset false
+USER_PUNCH
+  -headings step si_species_count
+-start
+  10 cnt = 0
+  20 FOR i = 1 TO SPECIATION_COUNT
+  30   n$ = SPECIATION_NAME$(i)
+  40   IF (SPECIATION_MOLES(i) > 0) THEN
+  50     IF (INSTR(n$, "Si") > 0) THEN cnt = cnt + 1
+  60   ENDIF
+  70 NEXT i
+  80 PUNCH STEP_NO, cnt
+-end
+
+PRINT
+  -reset false
+  -status false
+END

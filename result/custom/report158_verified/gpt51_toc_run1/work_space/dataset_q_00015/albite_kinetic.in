@@ -1,0 +1,40 @@
+SOLUTION 1
+    temp      200
+    pH        2 charge
+    units     mmol/kgw
+    Fe(2)     4
+    Fe(3)     4
+    -water    1 # kg
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    H2S(g)   5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m        1
+        -parm    10 1.0
+        -steps    10 100
+        -cvode
+
+RATES
+Albite
+-start
+10 k = PARM(1)
+20 ssa = PARM(2)
+30 rate = k * ssa
+40 SAVE rate
+80 END
+-end
+
+SELECTED_OUTPUT
+    -file albite_kinetic.sel
+    -reset false
+    -time true
+    -step true
+    -ionic_strength true
+    -high_precision true
+
+END

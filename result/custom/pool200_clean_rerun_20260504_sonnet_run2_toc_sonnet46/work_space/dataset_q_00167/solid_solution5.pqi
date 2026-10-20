@@ -1,0 +1,20 @@
+SOLUTION 1
+    pH      7.0
+    temp    25.0
+    units   mol/kgw
+    Ca      0.01
+    Sr      0.01
+    Alkalinity 0.04
+
+SOLID_SOLUTIONS 1
+    Ca_Sr_carbonate
+        -comp Calcite 0.0
+        -comp Strontianite 0.0
+
+SELECTED_OUTPUT
+    -file solid_solution5.out
+    -reset false
+    -activities Ca+2 Sr+2
+    -si Calcite Strontianite
+
+END

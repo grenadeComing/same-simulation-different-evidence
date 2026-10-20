@@ -1,0 +1,33 @@
+TITLE 1D exchange transport
+SOLUTION 0
+    pH 7
+    Ca 1e-3
+    Cl 2e-3
+SOLUTION 1-10
+    pH 7
+    Ca 1e-3
+    Cl 2e-3
+SOLUTION 11
+    pH 7
+    Na 1e-3
+    Cl 1e-3
+EXCHANGE 1-10
+    X- 0.001
+INVERSE_MODELING 1
+    -solutions 0 11
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -length 1
+    -boundary_conditions flux flux
+    -flow_direction forward
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+USER_PUNCH
+    -head step cell sc8
+    10 sc = SC
+    20 IF (CELL_NO EQ 8) THEN PUNCH SIM_NO, CELL_NO, sc
+END

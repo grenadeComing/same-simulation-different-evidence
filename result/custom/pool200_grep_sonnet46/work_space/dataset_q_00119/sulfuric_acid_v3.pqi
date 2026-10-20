@@ -1,0 +1,18 @@
+TITLE Add 0.1 mol H2SO4 to pure water at pH 7.0 (single step)
+
+SOLUTION 1
+    pH      7.0
+    pe      4.0
+    temp    25
+    units   mol/L
+
+REACTION 1
+    H2SO4   1
+    0.1
+
+SELECTED_OUTPUT
+    -file   sulfuric_result_v3.sel
+    -reset  false
+    -si     H2(g)
+
+END

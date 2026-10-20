@@ -1,0 +1,1 @@
+<<< None of the options (A–D) matches the PHREEQC result. At reaction step 100, the modeled saturation index of Witherite is -11.54 (approximately), whereas the choices are clustered around -9.35. >>>

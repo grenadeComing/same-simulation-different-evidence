@@ -1,0 +1,24 @@
+SOLUTION 1
+    temp 100
+    pH 3
+    pe 4
+    redox pe
+    units mol/L
+    water 1 kg
+
+EQUILIBRIUM_PHASES 1
+    K-mica          0  10
+    Kaolinite       0  10
+    Dolomite        0  10
+    Epsomite        0  10
+    Fe(OH)3(a)      0  10
+    Halite          0  10
+
+SELECTED_OUTPUT
+    -file pe_output4.sel
+    -pe true
+    -pH true
+    -temperature true
+    -si Fe(OH)3(a) Dolomite K-mica Kaolinite Epsomite Halite
+
+END

@@ -1,0 +1,45 @@
+SOLUTION 0-10
+    temp 25
+    pH 7.0
+    pe 4
+    units mmol/kgw
+    Ca 1.0
+    Na 0.0
+    Cl 2.0
+
+SOLUTION 11
+    temp 25
+    pH 7.0
+    pe 4
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 0-10
+    X- 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -length 1
+    -time_step 1
+    -dump_frequency 0
+    -print_cells 1-10
+    -print_frequency 10
+
+SELECTED_OUTPUT
+    -file trans.sel
+    -reset false
+    -time true
+    -distance true
+    -solution true
+    -pH true
+    -pe true
+    -totals Na Ca Cl
+    -equilibrium_phases true
+    -saturation_indices true
+    -ionic_strength true
+    -step true

@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp      25
+    pH        7
+    pe        4
+    units     mg/L
+    Ba        2.0
+    S(6)      15.0
+
+REACTION_TEMPERATURE 1
+    39.0  53.0  67.0  81.0  95.0
+
+SELECTED_OUTPUT
+    -file     ba_sulfate5.out
+    -reset    false
+    -temperature  true
+    -step         true
+
+END

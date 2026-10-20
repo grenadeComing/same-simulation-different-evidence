@@ -1,0 +1,15 @@
+SOLUTION 1 Mix
+    temp 25
+    pH 7.0
+    units mg/L
+    Cl 164.09
+
+SELECTED_OUTPUT
+    -file visc_only.sel
+    -reset false
+    -solution true
+END
+USER_PUNCH
+    -headings viscosity
+    10 PUNCH VISCOSITY
+END

@@ -1,0 +1,29 @@
+SOLUTION 1
+    temp      200
+    pH        2
+    units     mmol/kgw
+    Fe(2)     4
+    Fe(3)     4
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    -volume 1000
+    -temperature 200
+    H2S(g) 5.0
+
+KINETICS 1
+    Albite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0  10
+        -tol 1e-8
+
+    -steps 1000 in 100
+
+SELECTED_OUTPUT
+    -file result7.out
+    -saturation_indices Goethite
+    -step
+
+END

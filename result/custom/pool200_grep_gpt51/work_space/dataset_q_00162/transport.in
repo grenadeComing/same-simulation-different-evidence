@@ -1,0 +1,36 @@
+TITLE Transport alkalinity problem
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+END
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+END
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+END
+
+SELECTED_OUTPUT
+    -file sel.out
+    -reset false
+    -solution true
+    -alkalinity true
+END
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1*1.0
+    -time_step 1.0
+    -boundary_conditions flux flux
+    -initial_time 0
+    -flow_direction forward
+    -print_cells 3
+    -print_frequency 1
+END

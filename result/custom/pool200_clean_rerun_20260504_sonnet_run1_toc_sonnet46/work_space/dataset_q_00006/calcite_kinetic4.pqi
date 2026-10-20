@@ -1,0 +1,39 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1.0
+
+RATES
+Calcite_k
+-start
+10  si_cc = SI("Calcite")
+20  IF (M <= 0) THEN GOTO 200
+30  area = PARM(1)
+40  k = PARM(2)
+50  rate = k * area * (M/M0)^0.67 * (1 - 10^si_cc)
+60  IF (rate < 0) THEN rate = 0
+70  moles = rate * TIME
+80  IF (moles > M) THEN moles = M
+200 SAVE moles
+-end
+
+KINETICS 1
+Calcite_k
+    -formula Calcite 1
+    -tol    1e-8
+    -m0     1.0
+    -m      1.0
+    -parms  10.0   0.001
+    -steps  1000 in 100
+
+SELECTED_OUTPUT
+    -file   calcite_kinetic4.out
+    -reset  false
+    -step   true
+    -time   true
+    -totals C Mn Ca
+
+END

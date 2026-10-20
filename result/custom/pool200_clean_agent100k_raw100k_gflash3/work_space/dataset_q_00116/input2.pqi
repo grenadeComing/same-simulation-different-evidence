@@ -1,0 +1,12 @@
+SOLUTION 1
+    pH 7.0
+    temp 25
+    water 1 # kg
+REACTION 1
+    H2SO4 1.0
+    0.166
+SELECTED_OUTPUT 1
+    -file solution_results_2.txt
+    -pH true
+    -step true
+END

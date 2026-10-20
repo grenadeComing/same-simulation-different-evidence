@@ -1,0 +1,2 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	      m_NH4+	       m_NH3	     la_NH4+	      la_NH3	       la_H+	
+           3	       react	           1	         -99	           0	           1	      6.9965	    -5.90052	  2.7887e-05	  7.0855e-05	 -4.5581e+00	 -4.1496e+00	 -6.9965e+00	

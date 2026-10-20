@@ -1,0 +1,21 @@
+TITLE Ba solution equilibration with mineral assemblage at 100C
+SOLUTION 1
+    temp 100
+    pH 5
+    units mmol/kgw
+    Ba 100
+    water 1
+EQUILIBRIUM_PHASES 1
+    Talc 0 10
+    Rhodochrosite 0 10
+    Sepiolite 0 10
+    Sepiolite(d) 0 10
+    Pb(OH)2 0 10
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -high_precision true
+    -ph true
+    -totals Ba Mg Si Mn Pb C(4)
+    -equilibrium_phases Talc Rhodochrosite Sepiolite Sepiolite(d) Pb(OH)2
+END

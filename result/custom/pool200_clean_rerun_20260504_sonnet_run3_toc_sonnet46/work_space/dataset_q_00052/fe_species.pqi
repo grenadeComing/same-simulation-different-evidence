@@ -1,0 +1,23 @@
+TITLE Fe(2) vs Fe(3) species count at 100C, pH 3, equilibrium with minerals
+
+SOLUTION 1
+    temp    100
+    pH      3.0
+    units   mol/kgw
+    water   1.0
+
+EQUILIBRIUM_PHASES 1
+    K-mica        0.0  10.0
+    Kaolinite     0.0  10.0
+    Dolomite      0.0  10.0
+    Epsomite      0.0  10.0
+    Fe(OH)3(a)    0.0  10.0
+    Halite        0.0  10.0
+
+SELECTED_OUTPUT
+    -file   fe_species.out
+    -reset  false
+    -totals Fe(2) Fe(3)
+    -molalities Fe+2 FeOH+ FeSO4 FeHCO3+ FeCO3 FeHSO4+ Fe+3 FeOH+2 Fe(OH)2+ Fe(OH)3 Fe(OH)4- FeSO4+ Fe2(OH)2+4 Fe3(OH)4+5 FeCl+2 FeCl2+ FeHSO4+2
+
+END

@@ -1,0 +1,16 @@
+SOLUTION 1 Pure water
+    temp 25
+    pH 7.0 charge
+
+GAS_PHASE 1
+    -fixed_pressure true
+    -pressure 10
+    CO2(g)  -3.4
+
+SELECTED_OUTPUT
+    -file co2_activity.sel
+    -reset false
+    -pH true
+    -totals H(0)
+    -totals H
+END

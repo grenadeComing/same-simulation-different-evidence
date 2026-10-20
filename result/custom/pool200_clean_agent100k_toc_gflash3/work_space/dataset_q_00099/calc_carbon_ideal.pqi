@@ -1,0 +1,9 @@
+SOLUTION 1
+    temp 25
+    pH 7.5
+    units mol/kgw
+    Ca 2.49501e-3
+    Alkalinity 4.99545e-3
+SELECTED_OUTPUT 1
+    -totals C
+END

@@ -1,0 +1,28 @@
+SOLUTION 1
+    temp 100
+    pH 3 charge
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -high_precision true
+
+USER_PUNCH
+    -headings Al_aq_species_count
+10 count = 0
+20 FOR i = 1 TO MOLALITIES
+30   IF (INSTR$(MOLALITY_NAME$(i),"Al") > 0) THEN
+40     IF (MOLALITY(i) > 1e-40) THEN count = count + 1
+50   ENDIF
+60 NEXT i
+70 PUNCH count
+END

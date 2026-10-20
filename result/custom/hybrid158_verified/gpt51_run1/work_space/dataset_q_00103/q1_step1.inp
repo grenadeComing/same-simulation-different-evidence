@@ -1,0 +1,13 @@
+SOLUTION 1 Pure water
+    pH 7.0
+    units mol/kgw
+
+REACTION 1
+    H2SO4 1.0
+    0.001
+
+SELECTED_OUTPUT
+    -file q1_step1.sel
+    -pH true
+    -step true
+END

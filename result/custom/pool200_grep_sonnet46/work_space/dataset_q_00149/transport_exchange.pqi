@@ -1,0 +1,40 @@
+TITLE 1D Transport with Ion Exchange
+
+# Initial solution: pH 7.0, Ca 1.0 mmol/L, Cl 2.0 mmol/L
+SOLUTION 1-10
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+    units   mmol/L
+
+# Infilling (inlet) solution: pH 7.0, Na 1.0 mmol/L, Cl 1.0 mmol/L
+SOLUTION 0
+    pH      7.0
+    Na      1.0
+    Cl      1.0
+    units   mmol/L
+
+# Exchange sites: 0.001 mol per cell, equilibrated with solution 1
+EXCHANGE 1-10
+    X       0.001
+    equilibrate 1
+
+TRANSPORT
+    -cells          10
+    -shifts         10
+    -time_step      3600
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -diffusion_coefficient 0.0
+    -dispersivity  0.0
+    -print_cells    1
+    -print_frequency 1
+
+SELECTED_OUTPUT
+    -file           transport_exchange.sel
+    -reset          false
+    -step           true
+    -totals         Na Ca Cl
+    -molalities     NaX CaX2 X-
+
+END

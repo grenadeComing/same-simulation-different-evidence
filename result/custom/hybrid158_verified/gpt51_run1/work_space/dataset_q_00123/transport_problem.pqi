@@ -1,0 +1,42 @@
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrium 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -lengths 1 1 1 1 1 1 1 1 1 1
+    -boundary_conditions flux flux
+    -print_cells 1-10
+    -print_frequency 1
+    -punch_cells 1-10
+    -punch_frequency 1
+    -time_step 1
+    -initial_time 0
+
+INVERSE_MODELING 1
+    -solutions 11 1
+
+SELECTED_OUTPUT
+    -file tran_selout.txt
+    -reset false
+    -step true
+    -distance true
+    -molalities NaX CaX2 X-
+END

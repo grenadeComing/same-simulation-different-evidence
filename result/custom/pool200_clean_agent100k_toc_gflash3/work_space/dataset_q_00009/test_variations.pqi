@@ -1,0 +1,52 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+    Cl 100 charge
+END
+
+# Variation 1: Built-in Calcite rate with PARMS 1.0 1.0
+KINETICS 1
+    Calcite
+    -m0 1.0
+    -parms 1.0 1.0
+    -steps 1000 in 100
+END
+
+# Variation 2: Built-in Calcite rate with PARMS 10.0 1.0
+KINETICS 2
+    Calcite
+    -m0 1.0
+    -parms 10.0 1.0
+    -steps 1000 in 100
+END
+
+# Variation 3: Built-in Calcite rate with PARMS 1.0 10.0
+KINETICS 3
+    Calcite
+    -m0 1.0
+    -parms 1.0 10.0
+    -steps 1000 in 100
+END
+
+SELECTED_OUTPUT
+    -file results.sel
+    -reset false
+    -step
+    -ph
+END
+
+USE solution 1
+USE kinetics 1
+END
+
+USE solution 1
+USE kinetics 2
+END
+
+USE solution 1
+USE kinetics 3
+END

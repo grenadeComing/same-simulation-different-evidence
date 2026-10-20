@@ -1,0 +1,22 @@
+SOLUTION 0  Initial (inflow)
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10  Initial in cells
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions constant constant
+    -initial_time 0
+    -time_step 1
+END

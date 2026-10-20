@@ -1,0 +1,33 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1
+    -length              1
+    -boundary_conditions flux flux
+    -flow_direction      forward
+    -dispersivity        0
+    -correct_disp        false
+    -initial_time        0
+    -print_cells         1-10
+    -print_frequency     1
+    -punch_cells         1
+    -punch_frequency     1
+
+SELECTED_OUTPUT
+    -file exch1.txt
+    -reset false
+    -step
+    -equilibrium_phases

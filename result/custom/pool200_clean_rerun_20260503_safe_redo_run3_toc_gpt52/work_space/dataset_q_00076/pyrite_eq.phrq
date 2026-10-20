@@ -1,0 +1,26 @@
+TITLE Pyrite oxidation equilibrium, 1 kg pure water, fixed O2(g)
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure true
+    -pressure 1
+    O2(g)  -0.7
+
+EQUILIBRIUM_PHASES 1
+    Pyrite  0  0.1
+    Goethite 0  0
+    Gypsum   0  0
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -pH true
+    -pe true
+    -totals Fe S(6)
+USER_PUNCH
+    -headings Fe2_molal Fe3_molal
+    10 PUNCH MOL("Fe+2"), MOL("Fe+3")
+END

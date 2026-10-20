@@ -1,0 +1,38 @@
+SOLUTION 1
+    temp      200
+    pH        2.0    charge
+    pe        4
+    units     mmol/kgw
+    Cu        10
+    Ba        5
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0   1
+
+RATES
+Calcite_kin
+-start
+10 REM Calcite dissolution rate: mol/s = k * A
+20 k = 10
+30 A = 1.0
+40 moles = k * A * TIME
+50 SAVE moles
+-end
+
+KINETICS 1
+    Calcite_kin
+        -formula   CaCO3 1
+        -m0        1
+        -m        1
+        -parms
+        -steps     10 in 100 steps
+        -cvode false
+
+SELECTED_OUTPUT
+    -file calcite_selout.csv
+    -reset false
+    -time true
+    -step true
+    -pH true
+
+END

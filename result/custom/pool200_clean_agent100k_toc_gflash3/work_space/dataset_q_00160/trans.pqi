@@ -1,0 +1,38 @@
+TITLE Transport Problem
+SOLUTION 0  Infilling solution
+    units   mol/kgw
+    pH      7.0
+    Na      1.0
+    Cl      1.0
+    pe      0.0
+    H(0)    0.001
+
+SOLUTION 1-10  Initial solution
+    units   mol/kgw
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+    pe      0.0
+    H(0)    0.001
+
+EXCHANGE 1-10
+    -equilibrate 1
+    X 0.001
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1.0
+    -dispersivity 0.0
+    -timest 1.0
+
+SELECTED_OUTPUT
+    -file solution_results.sel
+    -reset false
+    -step true
+    -soln true
+    -si H2(g)
+    -pH
+    -pe
+
+END

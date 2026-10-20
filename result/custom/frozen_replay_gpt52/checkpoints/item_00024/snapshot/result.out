@@ -1,0 +1,455 @@
+   Input file: /workspace/albite_h2s.phr
+  Output file: /workspace/result.out
+Database file: /database/phreeqc.dat
+
+------------------
+Reading data base.
+------------------
+
+	SOLUTION_MASTER_SPECIES
+	SOLUTION_SPECIES
+	PHASES
+	EXCHANGE_MASTER_SPECIES
+	EXCHANGE_SPECIES
+	SURFACE_MASTER_SPECIES
+	SURFACE_SPECIES
+	MEAN_GAMMAS
+	RATES
+	END
+------------------------------------
+Reading input data for simulation 1.
+------------------------------------
+
+	TITLE Albite kinetics + fixed-pressure H2S(g), 200 C
+	SOLUTION 1
+	    temp 200
+	    pH 2 charge
+	    Fe(+3) 4e-3
+	    Fe(+2) 4e-3
+	    water 1
+	GAS_PHASE 1
+	    fixed_pressure
+	    pressure 5
+	    H2S(g) 5
+	KINETICS 1
+	    Albite
+	        m0 1
+	        m  1
+	        parms 1.0 10
+	        tol 1e-12
+	    steps 10 100
+	SELECTED_OUTPUT
+	    file sel.txt
+	    reset false
+	    time true
+	    step true
+	    totals S(-2)
+	END
+-----
+TITLE
+-----
+
+ Albite kinetics + fixed-pressure H2S(g), 200 C
+
+-------------------------------------------
+Beginning of initial solution calculations.
+-------------------------------------------
+
+Initial solution 1.	
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Fe(2)             4.000e-06   4.000e-06
+	Fe(3)             4.000e-06   4.000e-06
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   6.085      Charge balance
+                                       pe  =   4.000    
+      Specific Conductance (µS/cm, 200°C)  = 4
+                          Density (g/cm³)  =   0.86467
+                               Volume (L)  =   1.15651
+                        Viscosity (mPa s)  =   0.13460
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   7.701e-06
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   1.200e-05
+                         Temperature (°C)  = 200.00
+                  Electrical balance (eq)  =   1.272e-18
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =   0.00
+                               Iterations  =  12
+                                  Total H  = 1.110125e+02
+                                  Total O  = 5.550624e+01
+
+---------------------------------Redox couples---------------------------------
+
+	Redox couple             pe  Eh (volts)
+
+	Fe(2)/Fe(3)         -1.6495     -0.1549
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             5.865e-06   5.834e-06    -5.232    -5.234    -0.002    -26.47
+   H+              8.265e-07   8.222e-07    -6.083    -6.085    -0.002      0.00
+   H2O             5.551e+01   1.000e+00     1.744    -0.000     0.000     20.84
+Fe(2)         4.000e-06
+   FeOH+           2.165e-06   2.154e-06    -5.665    -5.667    -0.002     (0)  
+   Fe+2            1.509e-06   1.478e-06    -5.821    -5.830    -0.009    -23.06
+   Fe(OH)2         3.264e-07   3.264e-07    -6.486    -6.486     0.000     (0)  
+   Fe(OH)3-        4.378e-11   4.356e-11   -10.359   -10.361    -0.002     (0)  
+Fe(3)         4.000e-06
+   Fe(OH)3         3.490e-06   3.490e-06    -5.457    -5.457     0.000     (0)  
+   Fe(OH)4-        3.272e-07   3.256e-07    -6.485    -6.487    -0.002     (0)  
+   Fe(OH)2+        1.830e-07   1.821e-07    -6.737    -6.740    -0.002     (0)  
+   FeOH+2          7.045e-12   6.901e-12   -11.152   -11.161    -0.009     (0)  
+   Fe+3            1.395e-18   1.332e-18   -17.855   -17.876    -0.020     (0)  
+   Fe2(OH)2+4      1.461e-23   1.345e-23   -22.835   -22.871    -0.036     (0)  
+   Fe3(OH)4+5      2.220e-32   1.950e-32   -31.654   -31.710    -0.056     (0)  
+H(0)          3.193e-24
+   H2              1.596e-24   1.596e-24   -23.797   -23.797     0.000     28.55
+O(0)          1.268e-09
+   O2              6.338e-10   6.338e-10    -9.198    -9.198     0.000     39.37
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(473 K,   1 atm)
+
+  Fe(OH)3(a)       -4.51      0.38    4.89  Fe(OH)3
+  Goethite          5.31      0.38   -4.93  FeOOH
+  H2(g)           -20.99    -23.80   -2.81  H2
+  H2O(g)            1.15     -0.00   -1.15  H2O
+  Hematite         13.13      0.76  -12.37  Fe2O3
+  O2(g)            -6.33     -9.20   -2.87  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+-----------------------------------------
+Beginning of batch-reaction calculations.
+-----------------------------------------
+
+Reaction step 1.
+
+Using solution 1.	
+Using gas phase 1.	
+Using kinetics 1.	
+
+Kinetics 1.	
+
+	Time step: 10 seconds
+
+	Rate name       Delta Moles Total Moles   Reactant        Coefficient
+
+	Albite           -3.928e-07   1.000e+00   Albite                    1
+
+-----------------------------------Gas phase-----------------------------------
+
+Total pressure:  5.00      atmospheres          (Peng-Robinson calculation)
+    Gas volume:   4.69e-01 liters
+  Molar volume:   7.68e+00 liters/mole
+   P * Vm / RT:  0.98942  (Compressibility Factor Z) 
+
+                                                        Moles in gas
+                                            ----------------------------------
+Component         log P           P    phi     Initial       Final       Delta
+
+H2S(g)             0.70   5.000e+00  0.989   2.131e-01   6.105e-02  -1.520e-01
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Al                3.928e-07   3.928e-07
+	Fe                8.000e-06   8.000e-06
+	Na                3.928e-07   3.928e-07
+	S                 1.520e-01   1.520e-01
+	Si                1.178e-06   1.178e-06
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   3.941      Charge balance
+                                       pe  =  -2.610      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm, 200°C)  = 107
+                          Density (g/cm³)  =   0.86300
+                               Volume (L)  =   1.16475
+                        Viscosity (mPa s)  =   0.13462
+                        Activity of water  =   0.997
+                 Ionic strength (mol/kgw)  =   1.197e-04
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   1.631e-05
+                         Temperature (°C)  = 200.00
+                           Pressure (atm)  =  5.00
+                  Electrical balance (eq)  =  -2.231e-13
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =  30
+                                  Total H  = 1.113165e+02
+                                  Total O  = 5.550624e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   H+              1.168e-04   1.146e-04    -3.932    -3.941    -0.009      0.00
+   OH-             4.283e-08   4.197e-08    -7.368    -7.377    -0.009    -26.36
+   H2O             5.551e+01   9.975e-01     1.744    -0.001     0.000     20.84
+Al            3.928e-07
+   Al(OH)2+        1.890e-07   1.852e-07    -6.724    -6.732    -0.009     (0)  
+   Al(OH)4-        1.839e-07   1.802e-07    -6.735    -6.744    -0.009     (0)  
+   Al(OH)3         1.101e-08   1.101e-08    -7.958    -7.958     0.000     (0)  
+   AlOH+2          8.841e-09   8.159e-09    -8.054    -8.088    -0.035    -50.77
+   Al+3            2.317e-11   1.939e-11   -10.635   -10.712    -0.077    -82.01
+   AlSO4+          5.186e-14   5.083e-14   -13.285   -13.294    -0.009     (0)  
+   AlHSO4+2        2.428e-17   2.240e-17   -16.615   -16.650    -0.035     (0)  
+   Al(SO4)2-       5.477e-19   5.368e-19   -18.261   -18.270    -0.009     (0)  
+Fe(2)         8.000e-06
+   Fe(HS)2         7.237e-06   7.238e-06    -5.140    -5.140     0.000     (0)  
+   Fe+2            6.631e-07   6.121e-07    -6.178    -6.213    -0.035    -22.78
+   Fe(HS)3-        9.274e-08   9.088e-08    -7.033    -7.042    -0.009     (0)  
+   FeOH+           6.515e-09   6.385e-09    -8.186    -8.195    -0.009     (0)  
+   FeSO4           1.638e-10   1.638e-10    -9.786    -9.786     0.000    -33.40
+   Fe(OH)2         6.941e-12   6.941e-12   -11.159   -11.159     0.000     (0)  
+   FeHSO4+         3.026e-12   2.966e-12   -11.519   -11.528    -0.009     (0)  
+   Fe(OH)3-        6.781e-18   6.647e-18   -17.169   -17.177    -0.009     (0)  
+Fe(3)         4.932e-13
+   Fe(OH)2+        4.324e-13   4.238e-13   -12.364   -12.373    -0.009     (0)  
+   Fe(OH)3         5.827e-14   5.828e-14   -13.235   -13.235     0.000     (0)  
+   FeOH+2          2.426e-15   2.239e-15   -14.615   -14.650    -0.035     (0)  
+   Fe(OH)4-        3.979e-17   3.900e-17   -16.400   -16.409    -0.009     (0)  
+   Fe+3            7.195e-20   6.022e-20   -19.143   -19.220    -0.077     (0)  
+   FeSO4+          1.548e-21   1.518e-21   -20.810   -20.819    -0.009     (0)  
+   FeHSO4+2        7.965e-24   7.347e-24   -23.099   -23.134    -0.035     (0)  
+   Fe(SO4)2-       1.043e-26   1.022e-26   -25.982   -25.990    -0.009     (0)  
+   Fe2(OH)2+4      1.956e-30   1.416e-30   -29.709   -29.849    -0.140     (0)  
+   Fe3(OH)4+5      0.000e+00   0.000e+00   -44.102   -44.321    -0.219     (0)  
+H(0)          1.027e-06
+   H2              5.135e-07   5.135e-07    -6.289    -6.289     0.000     28.55
+Na            3.928e-07
+   Na+             3.927e-07   3.849e-07    -6.406    -6.415    -0.009      0.05
+   NaSO4-          1.778e-11   1.743e-11   -10.750   -10.759    -0.009    -34.60
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -44.218   -44.218     0.000     39.34
+S(-2)         1.520e-01
+   H2S             1.472e-01   1.472e-01    -0.832    -0.832     0.000     56.04
+   (H2S)2          2.344e-03   2.344e-03    -2.630    -2.630     0.000     -4.79
+   HS-             1.176e-04   1.153e-04    -3.930    -3.938    -0.009      4.47
+   Fe(HS)2         7.237e-06   7.238e-06    -5.140    -5.140     0.000     (0)  
+   Fe(HS)3-        9.274e-08   9.088e-08    -7.033    -7.042    -0.009     (0)  
+   S-2             2.512e-10   2.318e-10    -9.600    -9.635    -0.035     (0)  
+S(6)          6.287e-07
+   HSO4-           4.110e-07   4.028e-07    -6.386    -6.395    -0.009     28.62
+   SO4-2           2.175e-07   2.007e-07    -6.662    -6.697    -0.035    -27.55
+   FeSO4           1.638e-10   1.638e-10    -9.786    -9.786     0.000    -33.40
+   NaSO4-          1.778e-11   1.743e-11   -10.750   -10.759    -0.009    -34.60
+   FeHSO4+         3.026e-12   2.966e-12   -11.519   -11.528    -0.009     (0)  
+   AlSO4+          5.186e-14   5.083e-14   -13.285   -13.294    -0.009     (0)  
+   AlHSO4+2        2.428e-17   2.240e-17   -16.615   -16.650    -0.035     (0)  
+   Al(SO4)2-       5.477e-19   5.368e-19   -18.261   -18.270    -0.009     (0)  
+   FeSO4+          1.548e-21   1.518e-21   -20.810   -20.819    -0.009     (0)  
+   FeHSO4+2        7.965e-24   7.347e-24   -23.099   -23.134    -0.035     (0)  
+   Fe(SO4)2-       1.043e-26   1.022e-26   -25.982   -25.990    -0.009     (0)  
+Si            1.178e-06
+   H4SiO4          1.178e-06   1.178e-06    -5.929    -5.929     0.000     46.23
+   H3SiO4-         1.488e-11   1.458e-11   -10.827   -10.836    -0.009     10.32
+   H2SiO4-2        4.682e-19   4.321e-19   -18.330   -18.364    -0.035     (0)  
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(473 K,   5 atm)
+
+  Al(OH)3(a)       -2.51      1.11    3.62  Al(OH)3
+  Albite          -19.96    -30.94  -10.98  NaAlSi3O8
+  Chalcedony       -3.66     -5.93   -2.27  SiO2
+  Fe(OH)3(a)      -12.29     -7.40    4.89  Fe(OH)3
+  FeS(ppt)         -2.30     -6.21   -3.91  FeS
+  Gibbsite         -0.82      1.11    1.93  Al(OH)3
+  Goethite         -2.47     -7.40   -4.93  FeOOH
+  H2(g)            -3.48     -6.29   -2.81  H2
+  H2O(g)            1.15     -0.00   -1.15  H2O
+  H2S(g)            0.69     -7.88   -8.57  H2S	 Pressure   5.0 atm, phi 0.989
+  Hematite         -2.43    -14.80  -12.37  Fe2O3
+  Kaolinite        -7.51     -9.64   -2.13  Al2Si2O5(OH)4
+  Mackinawite      -1.56     -6.21   -4.65  FeS
+  Melanterite     -11.44    -12.92   -1.48  FeSO4:7H2O
+  Mirabilite      -18.19    -19.54   -1.35  Na2SO4:10H2O
+  O2(g)           -41.35    -44.22   -2.87  O2
+  Pyrite            3.99    -11.43  -15.41  FeS2
+  Quartz           -3.57     -5.93   -2.36  SiO2
+  SiO2(a)          -4.12     -5.93   -1.81  SiO2
+  Sulfur           -0.47      1.83    2.30  S
+  Thenardite      -17.72    -19.53   -1.81  Na2SO4
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+Reaction step 2.
+
+Using solution 1.	
+Using gas phase 1.	
+Using kinetics 1.	
+
+Kinetics 1.	
+
+	Time step: 100 seconds
+
+	Rate name       Delta Moles Total Moles   Reactant        Coefficient
+
+	Albite           -3.910e-06   1.000e+00   Albite                    1
+
+-----------------------------------Gas phase-----------------------------------
+
+Total pressure:  5.00      atmospheres          (Peng-Robinson calculation)
+    Gas volume:   4.69e-01 liters
+  Molar volume:   7.68e+00 liters/mole
+   P * Vm / RT:  0.98942  (Compressibility Factor Z) 
+
+                                                        Moles in gas
+                                            ----------------------------------
+Component         log P           P    phi     Initial       Final       Delta
+
+H2S(g)             0.70   5.000e+00  0.989   2.131e-01   6.105e-02  -1.520e-01
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Al                3.910e-06   3.910e-06
+	Fe                8.000e-06   8.000e-06
+	Na                3.910e-06   3.910e-06
+	S                 1.520e-01   1.520e-01
+	Si                1.173e-05   1.173e-05
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   3.948      Charge balance
+                                       pe  =  -2.618      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm, 200°C)  = 107
+                          Density (g/cm³)  =   0.86300
+                               Volume (L)  =   1.16475
+                        Viscosity (mPa s)  =   0.13462
+                        Activity of water  =   0.997
+                 Ionic strength (mol/kgw)  =   1.233e-04
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.038e-05
+                         Temperature (°C)  = 200.00
+                           Pressure (atm)  =  5.00
+                  Electrical balance (eq)  =  -6.704e-16
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =  35
+                                  Total H  = 1.113165e+02
+                                  Total O  = 5.550627e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   H+              1.151e-04   1.128e-04    -3.939    -3.948    -0.009      0.00
+   OH-             4.350e-08   4.262e-08    -7.361    -7.370    -0.009    -26.36
+   H2O             5.551e+01   9.975e-01     1.744    -0.001     0.000     20.84
+Al            3.910e-06
+   Al(OH)4-        1.860e-06   1.823e-06    -5.730    -5.739    -0.009     (0)  
+   Al(OH)2+        1.854e-06   1.817e-06    -5.732    -5.741    -0.009     (0)  
+   Al(OH)3         1.096e-07   1.097e-07    -6.960    -6.960     0.000     (0)  
+   AlOH+2          8.548e-08   7.880e-08    -7.068    -7.103    -0.035    -50.77
+   Al+3            2.209e-10   1.844e-10    -9.656    -9.734    -0.078    -82.00
+   AlSO4+          4.984e-13   4.884e-13   -12.302   -12.311    -0.009     (0)  
+   AlHSO4+2        2.300e-16   2.119e-16   -15.638   -15.674    -0.036     (0)  
+   Al(SO4)2-       5.318e-18   5.210e-18   -17.274   -17.283    -0.009     (0)  
+Fe(2)         8.000e-06
+   Fe(HS)2         7.254e-06   7.254e-06    -5.139    -5.139     0.000     (0)  
+   Fe+2            6.452e-07   5.949e-07    -6.190    -6.226    -0.035    -22.77
+   Fe(HS)3-        9.442e-08   9.250e-08    -7.025    -7.034    -0.009     (0)  
+   FeOH+           6.431e-09   6.302e-09    -8.192    -8.201    -0.009     (0)  
+   FeSO4           1.608e-10   1.608e-10    -9.794    -9.794     0.000    -33.40
+   Fe(OH)2         6.957e-12   6.957e-12   -11.158   -11.158     0.000     (0)  
+   FeHSO4+         2.927e-12   2.868e-12   -11.534   -11.542    -0.009     (0)  
+   Fe(OH)3-        6.904e-18   6.765e-18   -17.161   -17.170    -0.009     (0)  
+Fe(3)         4.864e-13
+   Fe(OH)2+        4.258e-13   4.172e-13   -12.371   -12.380    -0.009     (0)  
+   Fe(OH)3         5.826e-14   5.826e-14   -13.235   -13.235     0.000     (0)  
+   FeOH+2          2.354e-15   2.170e-15   -14.628   -14.664    -0.035     (0)  
+   Fe(OH)4-        4.041e-17   3.960e-17   -16.394   -16.402    -0.009     (0)  
+   Fe+3            6.885e-20   5.748e-20   -19.162   -19.240    -0.078     (0)  
+   FeSO4+          1.494e-21   1.463e-21   -20.826   -20.835    -0.009     (0)  
+   FeHSO4+2        7.573e-24   6.977e-24   -23.121   -23.156    -0.036     (0)  
+   Fe(SO4)2-       1.017e-26   9.961e-27   -25.993   -26.002    -0.009     (0)  
+   Fe2(OH)2+4      1.846e-30   1.330e-30   -29.734   -29.876    -0.142     (0)  
+   Fe3(OH)4+5      0.000e+00   0.000e+00   -44.132   -44.355    -0.222     (0)  
+H(0)          1.032e-06
+   H2              5.162e-07   5.162e-07    -6.287    -6.287     0.000     28.55
+Na            3.910e-06
+   Na+             3.910e-06   3.831e-06    -5.408    -5.417    -0.009      0.05
+   NaSO4-          1.788e-10   1.752e-10    -9.748    -9.756    -0.009    -34.57
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -44.222   -44.222     0.000     39.34
+S(-2)         1.520e-01
+   H2S             1.472e-01   1.472e-01    -0.832    -0.832     0.000     56.04
+   (H2S)2          2.344e-03   2.344e-03    -2.630    -2.630     0.000     -4.79
+   HS-             1.195e-04   1.171e-04    -3.923    -3.932    -0.009      4.47
+   Fe(HS)2         7.254e-06   7.254e-06    -5.139    -5.139     0.000     (0)  
+   Fe(HS)3-        9.442e-08   9.250e-08    -7.025    -7.034    -0.009     (0)  
+   S-2             2.594e-10   2.391e-10    -9.586    -9.621    -0.035     (0)  
+S(6)          6.294e-07
+   HSO4-           4.090e-07   4.007e-07    -6.388    -6.397    -0.009     28.62
+   SO4-2           2.200e-07   2.028e-07    -6.658    -6.693    -0.035    -27.54
+   NaSO4-          1.788e-10   1.752e-10    -9.748    -9.756    -0.009    -34.57
+   FeSO4           1.608e-10   1.608e-10    -9.794    -9.794     0.000    -33.40
+   FeHSO4+         2.927e-12   2.868e-12   -11.534   -11.542    -0.009     (0)  
+   AlSO4+          4.984e-13   4.884e-13   -12.302   -12.311    -0.009     (0)  
+   AlHSO4+2        2.300e-16   2.119e-16   -15.638   -15.674    -0.036     (0)  
+   Al(SO4)2-       5.318e-18   5.210e-18   -17.274   -17.283    -0.009     (0)  
+   FeSO4+          1.494e-21   1.463e-21   -20.826   -20.835    -0.009     (0)  
+   FeHSO4+2        7.573e-24   6.977e-24   -23.121   -23.156    -0.036     (0)  
+   Fe(SO4)2-       1.017e-26   9.961e-27   -25.993   -26.002    -0.009     (0)  
+Si            1.173e-05
+   H4SiO4          1.173e-05   1.173e-05    -4.931    -4.931     0.000     46.23
+   H3SiO4-         1.505e-10   1.474e-10    -9.822    -9.831    -0.009     10.32
+   H2SiO4-2        4.812e-18   4.436e-18   -17.318   -17.353    -0.035     (0)  
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(473 K,   5 atm)
+
+  Al(OH)3(a)       -1.51      2.11    3.62  Al(OH)3
+  Albite          -14.96    -25.94  -10.98  NaAlSi3O8
+  Chalcedony       -2.66     -4.93   -2.27  SiO2
+  Fe(OH)3(a)      -12.29     -7.40    4.89  Fe(OH)3
+  FeS(ppt)         -2.30     -6.21   -3.91  FeS
+  Gibbsite          0.17      2.11    1.93  Al(OH)3
+  Goethite         -2.47     -7.40   -4.93  FeOOH
+  H2(g)            -3.48     -6.29   -2.81  H2
+  H2O(g)            1.15     -0.00   -1.15  H2O
+  H2S(g)            0.69     -7.88   -8.57  H2S	 Pressure   5.0 atm, phi 0.989
+  Hematite         -2.43    -14.80  -12.37  Fe2O3
+  Kaolinite        -3.52     -5.65   -2.13  Al2Si2O5(OH)4
+  Mackinawite      -1.56     -6.21   -4.65  FeS
+  Melanterite     -11.44    -12.93   -1.48  FeSO4:7H2O
+  Mirabilite      -16.19    -17.54   -1.35  Na2SO4:10H2O
+  O2(g)           -41.35    -44.22   -2.87  O2
+  Pyrite            3.98    -11.43  -15.41  FeS2
+  Quartz           -2.57     -4.93   -2.36  SiO2
+  SiO2(a)          -3.12     -4.93   -1.81  SiO2
+  Sulfur           -0.48      1.83    2.30  S
+  Thenardite      -15.72    -17.53   -1.81  Na2SO4
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+------------------
+End of simulation.
+------------------
+
+------------------------------------
+Reading input data for simulation 2.
+------------------------------------
+
+----------------------------------
+End of Run after 0.004341 Seconds.
+----------------------------------
+

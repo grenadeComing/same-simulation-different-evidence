@@ -1,0 +1,21 @@
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    C(-4) 5.0
+    water 1.0
+
+GAS_PHASE 1
+    -fixed_volume
+    -volume 1.0
+    -temperature 15
+    CH4(g) 0.0
+
+SELECTED_OUTPUT
+    -file density_v6.sel
+    -reset false
+    -high_precision true
+
+USER_PUNCH
+    -headings density
+    10 PUNCH RHO
+END

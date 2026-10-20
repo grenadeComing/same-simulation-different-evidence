@@ -1,0 +1,250 @@
+   Input file: /workspace/q1.phrq
+  Output file: /workspace/result.out
+Database file: /database/phreeqc.dat
+
+------------------
+Reading data base.
+------------------
+
+	SOLUTION_MASTER_SPECIES
+	SOLUTION_SPECIES
+	PHASES
+	EXCHANGE_MASTER_SPECIES
+	EXCHANGE_SPECIES
+	SURFACE_MASTER_SPECIES
+	SURFACE_SPECIES
+	MEAN_GAMMAS
+	RATES
+	END
+------------------------------------
+Reading input data for simulation 1.
+------------------------------------
+
+	SOLUTION 1
+	    temp 100
+	    pH   5 charge
+	    units mmol/kgw
+	    Ba   100
+	    water 1
+	EQUILIBRIUM_PHASES 1
+	    Talc            0 10
+	    Rhodochrosite   0 10
+	    Sepiolite       0 10
+	    Sepiolite(d)    0 10
+	    Pb(OH)2         0 10
+	SELECTED_OUTPUT
+	    reset false
+	    high_precision true
+	    ph true
+	END
+-------------------------------------------
+Beginning of initial solution calculations.
+-------------------------------------------
+
+Initial solution 1.	
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ba                1.000e-01   1.000e-01
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =  11.343      Charge balance
+                                       pe  =   4.000    
+      Specific Conductance (µS/cm, 100°C)  = 83030
+                          Density (g/cm³)  =   0.97648
+                               Volume (L)  =   1.04163
+                        Viscosity (mPa s)  =   0.29674
+                        Activity of water  =   0.995
+                 Ionic strength (mol/kgw)  =   2.996e-01
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   2.000e-01
+                         Temperature (°C)  = 100.00
+                  Electrical balance (eq)  =   3.192e-15
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =   0.00
+                               Iterations  =  11
+                                  Total H  = 1.112124e+02
+                                  Total O  = 5.570624e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.998e-01   1.265e-01    -0.699    -0.898    -0.198     -4.53
+   H+              6.020e-12   4.542e-12   -11.220   -11.343    -0.122      0.00
+   H2O             5.551e+01   9.949e-01     1.744    -0.002     0.000     18.80
+Ba            1.000e-01
+   Ba+2            9.978e-02   1.967e-02    -1.001    -1.706    -0.705     -9.27
+   BaOH+           2.158e-04   1.460e-04    -3.666    -3.836    -0.170     (0)  
+H(0)          1.501e-34
+   H2              7.507e-35   8.043e-35   -34.125   -34.095     0.030     28.57
+O(0)          2.602e-05
+   O2              1.301e-05   1.394e-05    -4.886    -4.856     0.030     33.90
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(373 K,   1 atm)
+
+  H2(g)           -30.99    -34.09   -3.10  H2
+  H2O(g)           -0.01     -0.00    0.00  H2O
+  O2(g)            -1.74     -4.86   -3.11  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+-----------------------------------------
+Beginning of batch-reaction calculations.
+-----------------------------------------
+
+Reaction step 1.
+
+Using solution 1.	
+Using pure phase assemblage 1.	
+
+-------------------------------Phase assemblage--------------------------------
+
+                                                      Moles in assemblage
+Phase               SI  log IAP  log K(T, P)   Initial       Final       Delta
+
+Pb(OH)2           0.00     6.09      6.09    1.000e+01   1.000e+01  -2.216e-08
+Rhodochrosite     0.00   -11.34    -11.34    1.000e+01   1.000e+01  -3.160e-04
+Sepiolite        -4.34     9.84     14.18    1.000e+01           0  -1.000e+01
+Sepiolite(d)     -8.82     9.84     18.66    1.000e+01           0  -1.000e+01
+Talc             -0.00    14.57     14.57    1.000e+01   2.333e+01   1.333e+01
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ba                5.604e-02   1.000e-01
+	C                 1.771e-04   3.160e-04
+	Mg                5.531e-11   9.868e-11
+	Mn                1.771e-04   3.160e-04
+	Pb                1.242e-08   2.216e-08
+	Si                3.736e+00   6.667e+00
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.417      Charge balance
+                                       pe  =   7.873      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm, 100°C)  = 10116
+                          Density (g/cm³)  =   1.11762
+                               Volume (L)  =   2.18200
+                        Viscosity (mPa s)  =   0.28612
+                        Activity of water  =   0.936
+                 Ionic strength (mol/kgw)  =   1.685e-01
+                       Mass of water (kg)  =   1.784e+00
+                 Total alkalinity (eq/kg)  =   1.124e-01
+                       Total CO2 (mol/kg)  =   1.771e-04
+                         Temperature (°C)  = 100.00
+                  Electrical balance (eq)  =   3.005e-15
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =   0.00
+                               Iterations  =  19
+                                  Total H  = 2.245458e+02
+                                  Total O  = 1.257072e+02
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             2.063e-05   1.410e-05    -4.686    -4.851    -0.165     -4.95
+   H+              4.923e-08   3.832e-08    -7.308    -7.417    -0.109      0.00
+   H2O             5.551e+01   9.355e-01     1.744    -0.029     0.000     18.80
+Ba            5.604e-02
+   Ba+2            5.594e-02   1.389e-02    -1.252    -1.857    -0.605     -9.64
+   BaHCO3+         9.868e-05   7.078e-05    -4.006    -4.150    -0.144     (0)  
+   BaCO3           2.850e-06   2.963e-06    -5.545    -5.528     0.017    -10.31
+   BaOH+           1.604e-08   1.149e-08    -7.795    -7.940    -0.145     (0)  
+C(-4)         0.000e+00
+   CH4             0.000e+00   0.000e+00  -112.042  -112.026     0.017     41.06
+C(4)          1.771e-04
+   BaHCO3+         9.868e-05   7.078e-05    -4.006    -4.150    -0.144     (0)  
+   HCO3-           6.925e-05   5.016e-05    -4.160    -4.300    -0.140     24.57
+   CO2             5.349e-06   5.487e-06    -5.272    -5.261     0.011     38.89
+   BaCO3           2.850e-06   2.963e-06    -5.545    -5.528     0.017    -10.31
+   MnCO3           3.487e-07   3.625e-07    -6.458    -6.441     0.017     (0)  
+   CO3-2           3.326e-07   9.156e-08    -6.478    -7.038    -0.560     -5.98
+   MnHCO3+         3.109e-07   2.228e-07    -6.507    -6.652    -0.145     (0)  
+   PbCO3           3.152e-09   3.276e-09    -8.501    -8.485     0.017     (0)  
+   PbHCO3+         1.144e-10   8.204e-11    -9.942   -10.086    -0.144     (0)  
+   Pb(CO3)2-2      2.846e-12   7.535e-13   -11.546   -12.123    -0.577     (0)  
+   (CO2)2          2.688e-12   2.795e-12   -11.571   -11.554     0.017     77.78
+   MgHCO3+         2.962e-14   2.060e-14   -13.528   -13.686    -0.158      5.94
+   MgCO3           4.383e-15   4.556e-15   -14.358   -14.341     0.017    -17.07
+H(0)          1.973e-34
+   H2              9.866e-35   1.026e-34   -34.006   -33.989     0.017     28.57
+Mg            5.531e-11
+   Mg+2            5.483e-11   1.648e-11   -10.261   -10.783    -0.522    -23.66
+   MgOH+           4.400e-13   3.271e-13   -12.357   -12.485    -0.129     (0)  
+   MgHCO3+         2.962e-14   2.060e-14   -13.528   -13.686    -0.158      5.94
+   MgCO3           4.383e-15   4.556e-15   -14.358   -14.341     0.017    -17.07
+Mn(2)         1.771e-04
+   Mn+2            1.707e-04   4.984e-05    -3.768    -4.302    -0.535    -19.22
+   MnOH+           5.773e-06   4.137e-06    -5.239    -5.383    -0.145     (0)  
+   MnCO3           3.487e-07   3.625e-07    -6.458    -6.441     0.017     (0)  
+   MnHCO3+         3.109e-07   2.228e-07    -6.507    -6.652    -0.145     (0)  
+   Mn(OH)3-        1.604e-17   1.150e-17   -16.795   -16.939    -0.145     (0)  
+Mn(3)         6.933e-18
+   Mn+3            6.933e-18   7.276e-19   -17.159   -18.138    -0.979     (0)  
+O(0)          1.458e-05
+   O2              7.290e-06   7.579e-06    -5.137    -5.120     0.017     33.90
+Pb            1.242e-08
+   Pb+2            7.778e-09   2.059e-09    -8.109    -8.686    -0.577    -15.89
+   PbCO3           3.152e-09   3.276e-09    -8.501    -8.485     0.017     (0)  
+   PbOH+           1.366e-09   9.802e-10    -8.864    -9.009    -0.144     (0)  
+   PbHCO3+         1.144e-10   8.204e-11    -9.942   -10.086    -0.144     (0)  
+   Pb(OH)2         8.956e-12   9.310e-12   -11.048   -11.031     0.017     (0)  
+   Pb(CO3)2-2      2.846e-12   7.535e-13   -11.546   -12.123    -0.577     (0)  
+   Pb(OH)3-        3.638e-15   2.610e-15   -14.439   -14.583    -0.144     (0)  
+   Pb2OH+3         8.987e-16   4.518e-17   -15.046   -16.345    -1.299     (0)  
+   Pb3(OH)4+2      1.238e-16   3.278e-17   -15.907   -16.484    -0.577     (0)  
+   Pb(OH)4-2       5.513e-19   1.460e-19   -18.259   -18.836    -0.577     (0)  
+Si            3.736e+00
+   H4SiO4          3.624e+00   3.767e+00     0.559     0.576     0.017     48.82
+   H3SiO4-         1.122e-01   7.805e-02    -0.950    -1.108    -0.158     27.12
+   H2SiO4-2        1.163e-05   3.201e-06    -4.934    -5.495    -0.560     (0)  
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(373 K,   1 atm)
+
+  Cerussite        -3.31    -15.72  -12.41  PbCO3
+  CH4(g)         -109.02   -112.03   -3.00  CH4
+  Chalcedony        3.49      0.63   -2.86  SiO2
+  Chrysotile      -11.44     13.27   24.71  Mg3Si2O5(OH)4
+  CO2(g)           -3.28     -5.26   -1.98  CO2
+  H2(g)           -30.89    -33.99   -3.10  H2
+  H2O(g)           -0.03     -0.03    0.00  H2O
+  Hausmannite      15.85     62.06   46.20  Mn3O4
+  Manganite         0.42     25.76   25.34  MnOOH
+  O2(g)            -2.01     -5.12   -3.11  O2
+  Pb(OH)2           0.00      6.09    6.09  Pb(OH)2
+  Pyrochroite      -4.73     10.47   15.20  Mn(OH)2
+  Pyrolusite        9.24     41.02   31.79  MnO2:H2O
+  Quartz            3.73      0.63   -3.10  SiO2
+  Rhodochrosite     0.00    -11.34  -11.34  MnCO3
+  Sepiolite        -4.34      9.84   14.18  Mg2Si3O7.5OH:3H2O
+  Sepiolite(d)     -8.82      9.84   18.66  Mg2Si3O7.5OH:3H2O
+  SiO2(a)           2.85      0.63   -2.22  SiO2
+  Talc             -0.00     14.57   14.57  Mg3Si4O10(OH)2
+  Witherite         0.14     -8.90   -9.04  BaCO3
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+------------------
+End of simulation.
+------------------
+
+------------------------------------
+Reading input data for simulation 2.
+------------------------------------
+
+----------------------------------
+End of Run after 0.003676 Seconds.
+----------------------------------
+

@@ -1,0 +1,24 @@
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    pe 4
+    redox pe
+    units mol/kgw
+
+EQUILIBRIUM_PHASES 1
+    Pyrite 0 0.1
+    Goethite 0 0
+    Gypsum 0 0
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    -temperature 25
+    -volume 1
+    O2(g) -0.7
+
+SELECTED_OUTPUT
+    -file pyrite2.sel
+    -molalities SO4-2
+    -high_precision true
+END

@@ -1,0 +1,38 @@
+SOLUTION 0  # Infilling solution
+    pH      7.0
+    Na      1.0
+    Cl      1.0
+    temp    25.0
+
+SOLUTION 1-10  # Initial solution in cells
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+    temp    25.0
+
+EXCHANGE 1-10
+    X       0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells          10
+    -shifts         10
+    -lengths        1.0
+    -dispersivities 0.0
+    -time_step      1.0
+    -boundary_conditions  flux  flux
+    -diffusion_coefficient 0.0
+    -punch_cells    1
+    -punch_frequency 1
+
+SELECTED_OUTPUT
+    -file           result.out
+    -reset          false
+    -step
+    -totals         Ca Na Cl
+    -molalities     CaX2 NaX
+
+PRINT
+    -reset true
+
+END

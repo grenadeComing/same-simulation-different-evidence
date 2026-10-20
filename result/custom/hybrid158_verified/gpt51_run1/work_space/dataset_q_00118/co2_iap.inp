@@ -1,0 +1,10 @@
+SOLUTION 1 Pure water
+    pH 7.0 charge
+    temp 25.0
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -si CO2(g)
+END

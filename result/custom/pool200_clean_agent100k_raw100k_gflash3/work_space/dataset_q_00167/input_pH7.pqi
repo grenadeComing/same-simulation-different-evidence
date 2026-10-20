@@ -1,0 +1,26 @@
+PHASES
+Fix_pH
+    H+ = H+
+    log_k 0
+END
+
+SOLUTION 1
+    units mol/kgw
+    temp 25
+    pH 7
+    Ca 0.01
+    Sr 0.01
+    Alkalinity 0.04
+END
+
+USE solution 1
+SOLID_SOLUTIONS 1
+    Ca_Sr_carbonate
+        -comp1 Calcite 0.0
+        -comp2 Strontianite 0.0
+EQUILIBRIUM_PHASES 1
+    Fix_pH -7.0 NaOH 10.0
+SELECTED_OUTPUT 1
+    -file solution_results_pH7.sel
+    -activities Ca+2
+END

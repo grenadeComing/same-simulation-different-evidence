@@ -1,0 +1,21 @@
+SOLUTION 1
+    pH 7
+    temp 20
+REACTION 1
+    H2SO4 1.0
+    0.1
+END
+SOLUTION 2
+    pH 7
+    temp 25
+REACTION 2
+    H2SO4 1.0
+    0.1
+END
+SOLUTION 3
+    pH 7
+    temp 30
+REACTION 3
+    H2SO4 1.0
+    0.1
+END

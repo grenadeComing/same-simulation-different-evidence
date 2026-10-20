@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp 100
+    pH 3 charge
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+SELECTED_OUTPUT
+    -file al_species.sel
+    -reset false
+    -temperature true
+    -totals Al
+    -molalities Al+3 Al+2 Al+ AlOH+2 AlOH+ Al(OH)2+ Al(OH)3 Al(OH)4- AlSO4+ AlHSO4+ AlF+2 AlF+3 AlF+4 AlF2+ AlF3 AlF4- AlF5-2 AlF6-3 AlCl+2 AlCl+ AlCl2+ AlCl3 AlCl4- AlH2PO4+2 AlHPO4+ AlPO4 AlH2PO4+ HAlO2(aq) AlO2- Al(OH)2F+ Al(OH)2F2 Al(OH)3F Al(OH)4F-
+USER_PUNCH
+    -headings n_Al_species
+    10 PUNCH TOT("Al")/TOT("Al")
+END

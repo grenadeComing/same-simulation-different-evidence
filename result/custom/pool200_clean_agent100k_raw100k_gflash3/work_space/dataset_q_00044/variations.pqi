@@ -1,0 +1,41 @@
+# Variation 1: 25C, P_total=16, Calcite+Gypsum, pH charge
+SOLUTION 1
+    temp 25
+    units mmol/kgw
+    Ca 50
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Gypsum 0 10
+    CO2(g) 0 10
+    CH4(g) 0.69897 10
+    H2S(g) 1.0 10
+END
+
+# Variation 2: 25C, P_total=1, ratios 1:5:10, Calcite+Gypsum, pH charge
+SOLUTION 2
+    temp 25
+    units mmol/kgw
+    Ca 50
+    pH 7 charge
+EQUILIBRIUM_PHASES 2
+    Calcite 0 10
+    Gypsum 0 10
+    CO2(g) -1.2041 10
+    CH4(g) -0.5051 10
+    H2S(g) -0.2041 10
+END
+
+# Variation 3: 25C, P_total=16, Aragonite+Gypsum, pH charge
+SOLUTION 3
+    temp 25
+    units mmol/kgw
+    Ca 50
+    pH 7 charge
+EQUILIBRIUM_PHASES 3
+    Aragonite 0 10
+    Gypsum 0 10
+    CO2(g) 0 10
+    CH4(g) 0.69897 10
+    H2S(g) 1.0 10
+END

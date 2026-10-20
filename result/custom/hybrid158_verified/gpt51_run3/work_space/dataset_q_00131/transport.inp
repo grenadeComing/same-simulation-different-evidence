@@ -1,0 +1,47 @@
+TITLE Transport Na-Ca exchange
+
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+    units mmol/kgw
+
+SOLUTION 1
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+    units mmol/kgw
+
+EXCHANGE_SPECIES
+    X- = X-
+        -log_k 0.0
+EXCHANGE 1-10
+    X- 0.001
+    equilibrate 1
+
+USE solution 0
+USE exchange 1
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1
+    -length              1
+    -flow_direction      forward
+    -boundary_conditions flux flux
+    -punch_cells         1-10
+    -print_cells         1-10
+    -print_frequency     1
+    -punch_frequency     1
+    -correct_disp        false
+
+SELECTED_OUTPUT
+    -file transport.sel
+    -reset false
+    -time true
+    -distance true
+    -solution true
+    -pH true
+    -totals Na Ca Cl
+    -activities Na+
+END

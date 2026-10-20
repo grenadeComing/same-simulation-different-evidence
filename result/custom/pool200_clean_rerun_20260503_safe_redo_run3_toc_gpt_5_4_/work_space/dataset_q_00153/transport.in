@@ -1,0 +1,24 @@
+TITLE Exchange transport test
+SOLUTION 0 Infilling
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10 Initial
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -print_frequency 1
+    -selected_output_frequency 1
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+USER_PUNCH
+    -headings step cell mol_NaX mNa
+10 PUNCH STEP_NO, CELL_NO, MOL("NaX"), MOL("Na+")
+END

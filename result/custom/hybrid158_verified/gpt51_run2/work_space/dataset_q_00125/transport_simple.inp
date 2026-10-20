@@ -1,0 +1,15 @@
+TITLE Batch exchange problem
+SOLUTION 1
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+EXCHANGE_SPECIES
+    NaX = Na+ + X-
+    log_k 0.0
+    CaX2 = Ca+2 + 2X-
+    log_k 0.3
+EXCHANGE 1
+    X 0.001
+USE solution 1
+USE exchange 1
+END

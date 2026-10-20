@@ -1,0 +1,46 @@
+TITLE Calcite kinetic dissolution; query SI(Aragonite) at step 47
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    pe 4
+    C(4) 0.5 mmol/kgw
+    Mn   1 mmol/kgw
+    -water 1
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 10.0 1.0
+        -step 10 in 100
+        -tol 1e-12
+
+RATES
+Calcite_custom
+-start
+10 k = 0.001
+20 area = PARM(1)
+30 si = SI("Calcite")
+40 if (si > 0) then goto 200
+50 rate = k * area
+60 moles = rate * TIME
+70 SAVE moles
+200 END
+-end
+
+# Use custom kinetic rate as requested (k=0.001, area=10)
+KINETICS 2
+    Calcite_custom
+        -m0 1.0
+        -m  1.0
+        -parms 10.0
+        -step 10 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -time true
+    -step true
+    -si Aragonite
+END

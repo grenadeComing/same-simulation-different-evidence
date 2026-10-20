@@ -1,0 +1,20 @@
+SOLUTION 1 Pure water pH 7 at 150C
+    temp 150
+    pH 7 charge
+
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+
+SELECTED_OUTPUT
+    -reset false
+    -temperature true
+    -ionic_strength true
+    -totals all
+    -high_precision true
+USER_PUNCH
+    -headings sc
+    -start
+    10 PUNCH SC
+    -end
+END

@@ -1,0 +1,22 @@
+SOLUTION 1
+    temp      150
+    pH        7
+    pe        4
+    units     mol/kgw
+    water     1 # kg
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    -temperature 150
+    -volume 1.0
+    CH4(g)   10.0
+    CO2(g)   10.0
+    NH3(g)    5.0
+
+SELECTED_OUTPUT
+    -file     nh3_ch4_co2.out
+    -reset    false
+    -molalities  NH4+  NH3
+
+END

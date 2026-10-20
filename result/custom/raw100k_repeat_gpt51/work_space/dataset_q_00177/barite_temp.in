@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 25
+    units mg/L
+    Ba 2.0
+    S(6) 15.0
+    pH 7 charge
+
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+
+SELECTED_OUTPUT
+    -file barite_temp.sel
+    -si Barite
+    -temperature true
+END

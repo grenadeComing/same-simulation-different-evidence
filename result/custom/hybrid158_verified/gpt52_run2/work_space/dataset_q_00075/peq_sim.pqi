@@ -1,0 +1,15 @@
+TITLE pe for pure water pH 7, 150C, eq with chrysotile and talc
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -pH true
+    -pe true
+END

@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp 100
+    pH 3
+    Cl 1 charge
+    water 1
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+SELECTED_OUTPUT 2
+    -file sim2.sel
+    -totals Mg
+USER_PUNCH 2
+    -headings Total_Moles_Mg Mass_H2O
+    10 PUNCH TOT("Mg") * MASS
+    20 PUNCH MASS
+END

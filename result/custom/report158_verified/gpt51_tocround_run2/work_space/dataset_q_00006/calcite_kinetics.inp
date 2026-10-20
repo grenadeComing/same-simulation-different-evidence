@@ -1,0 +1,37 @@
+SOLUTION 1
+    temp      200
+    pH        2 charge
+    pe        4
+    Cu        0.01
+    Ba        0.005
+
+KINETICS 1
+    Calcite
+        -formula   CaCO3 1
+        -m         1
+        -parms     10 1.0
+        -steps     1000 in 100 steps
+
+RATES
+Calcite
+-start
+10 REM rate constant (par1) and surface area (par2)
+20 k = PARM(1)
+30 sarea = PARM(2)
+40 rate = k * sarea
+50 moles = rate * TIME
+60 SAVE moles
+-end
+
+INCREMENTAL_REACTIONS true
+
+USER_PUNCH
+    -headings Step Alkalinity
+    -start
+10 PUNCH SIM_TIME, TOT("Alkalinity")
+    -end
+
+SELECTED_OUTPUT
+    -file calcite_kinetics.sel
+    -user_punch true
+    -reset false

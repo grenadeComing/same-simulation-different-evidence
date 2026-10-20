@@ -1,0 +1,19 @@
+SOLUTION 1 Pure water
+    temp 150
+    pH 7 charge
+    pe 4
+    units mol/kgw
+    -water 1
+GAS_PHASE 1 Fixed P
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g) 0 10
+    CO2(g) 0 10
+    NH3(g) 0 5
+SELECTED_OUTPUT
+    -file q1.sel
+    -reset false
+    -high_precision true
+    -molalities CO2 HCO3- CO3-2 H2CO3
+END

@@ -1,0 +1,15 @@
+TITLE Equilibrium with CO2, check CH4 saturation index
+
+SOLUTION 1 Pure water
+    pH      7.0
+    temp    25.0
+    units   mol/L
+
+EQUILIBRIUM_PHASES 1
+    CO2(g)  -3.4    10.0
+
+SELECTED_OUTPUT
+    -file   co2_ch4.sel
+    -si     CH4(g)
+
+END

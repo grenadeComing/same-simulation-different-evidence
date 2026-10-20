@@ -1,0 +1,33 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    Cu 0.01
+    Ba 0.005
+
+KINETICS 1
+    Calcite
+        -formula CaCO3 1
+        -m0 1
+        -parm 10 1.0
+        -steps 100*10
+        -cvode
+
+RATES
+    Calcite
+    -start
+        10 rem Rate expression: rate = k * A
+        20 k = PARM(1)
+        30 ssa = PARM(2)
+        40 rate = k * ssa
+        100 SAVE rate
+    -end
+
+SELECTED_OUTPUT
+    -file calcite_kinetics2.sel
+    -reset false
+    -time true
+    -totals Ca C(4)
+    -kinetic_reactants Calcite
+    -step true
+END

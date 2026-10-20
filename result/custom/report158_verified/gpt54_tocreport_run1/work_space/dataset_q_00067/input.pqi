@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    redox pe
+    water 1
+    C(-4) 1e-20
+    C(4) 1e-20
+    N(-3) 1e-20
+GAS_PHASE 1
+    -fixed_pressure
+    -temperature 150
+    -pressure 1
+    -volume 1
+    CH4(g)  -0.91629 10
+    CO2(g)  -0.91629 10
+    NH3(g)  -1.60944 5
+END

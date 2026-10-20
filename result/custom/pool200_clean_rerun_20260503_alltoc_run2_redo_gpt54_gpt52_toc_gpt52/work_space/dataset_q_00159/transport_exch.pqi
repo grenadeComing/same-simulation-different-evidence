@@ -1,0 +1,38 @@
+TITLE 1D transport with exchange; SI Halite at cell 3 at shift 10
+
+SOLUTION 0  Initial solution
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11  Influent
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -print_cells 3
+    -punch_cells 3
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset true
+    -high_precision true
+
+USER_PUNCH
+    -headings shift cell SI_Halite
+10 IF (STATE$ = "transp" AND TRANSPORT_STEP_NO = 10 AND CELL_NO = 3) THEN PUNCH TRANSPORT_STEP_NO, CELL_NO, SI("Halite")
+END

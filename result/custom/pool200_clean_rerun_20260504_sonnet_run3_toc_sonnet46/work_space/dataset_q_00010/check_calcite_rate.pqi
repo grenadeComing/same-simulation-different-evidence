@@ -1,0 +1,27 @@
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4.0
+    units     mmol/kgw
+    Cu        10.0
+    Ba        5.0
+
+PRINT
+    -reset false
+
+KINETICS 1
+Calcite
+    -tol   1e-8
+    -m0    1.0
+    -m     1.0
+    -parms 1.0   0.6
+    -step  10 in 1
+
+SELECTED_OUTPUT
+    -file   check_calcite_rate.out
+    -reset  false
+    -step   true
+    -time   true
+    -si     Witherite Calcite
+
+END

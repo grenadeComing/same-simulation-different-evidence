@@ -1,0 +1,39 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE_SPECIES
+    X- = X-
+        -log_k 0.0
+    Na+ + X- = NaX
+        log_k 0.0
+    Ca+2 + 2X- = CaX2
+        log_k 0.8
+
+EXCHANGE 0-10
+    X- 0.001
+-equilibrate 1
+
+SOLUTION 1
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -lengths             1*1
+    -time_step           1
+    -flow_direction      forward
+    -boundary_conditions flux flux
+    -punch_cells         4
+    -print_cells         4
+    -print_frequency     1
+
+SELECTED_OUTPUT
+    -file exch4.csv
+    -reset false
+    -totals Na
+    -equilibria X(4)
+END

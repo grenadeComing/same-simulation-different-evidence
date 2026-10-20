@@ -1,0 +1,34 @@
+TITLE Mix 50 mmol/kg DIC with 50 mmol/kg Ca (1:1) and heat to 200C with calcite equil
+
+SOLUTION 1 DIC solution
+    temp 20
+    pH   7 charge
+    units mmol/kgw
+    C(4) 50
+
+SOLUTION 2 Ca solution
+    temp 20
+    pH   7 charge
+    units mmol/kgw
+    Ca   50
+
+MIX 1
+    1 0.5
+    2 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+REACTION_TEMPERATURE 1
+    20 40 60 80 100 120 140 160 180 200
+
+SELECTED_OUTPUT
+    -reset false
+    -temperature true
+    -si Calcite
+    -activities Ca+2 CO3-2
+
+USER_PUNCH
+    -headings T_C SI_Calcite logIAP_Calcite
+    10 PUNCH TK, SI("Calcite"), LOG10(ACT("Ca+2")*ACT("CO3-2"))
+END

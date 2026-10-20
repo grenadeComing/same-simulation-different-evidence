@@ -1,0 +1,13 @@
+SOLUTION 1
+    temp 25
+    Ba 2.0 mg/L
+    S(6) 15.0 mg/L
+    -units mg/L
+
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+
+EQUILIBRIUM_PHASES 1
+    Barite 0 0
+
+END

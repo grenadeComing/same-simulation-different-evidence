@@ -1,0 +1,14 @@
+SOLUTION 1
+    units mol/kgw
+    temp 25
+    pH 7.0
+    water 1
+EQUILIBRIUM_PHASES 1
+    O2(g) -0.7
+    Pyrite 0.0 0.1
+    Goethite 0.0 0.0
+    Gypsum 0.0 0.0
+SELECTED_OUTPUT
+    -file result.sel
+    -pe true
+END

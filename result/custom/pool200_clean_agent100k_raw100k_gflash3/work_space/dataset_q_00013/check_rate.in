@@ -1,0 +1,5 @@
+USER_PRINT
+10 s = "Calcite"
+20 PRINT "Rate for ", s
+30 END
+END

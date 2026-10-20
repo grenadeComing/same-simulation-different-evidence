@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 10 mmol/kgw
+    Ba 5 mmol/kgw
+    Cl 1 charge
+KINETICS 1
+Calcite
+    -m0 1.0
+    -m 1.0
+    -parms 1.0 10.0
+    -steps 1000 in 100
+SELECTED_OUTPUT 1
+    -file solution_results_high_prec.sel
+    -reset false
+    -step true
+    -molalities CO2
+    -totals C
+END

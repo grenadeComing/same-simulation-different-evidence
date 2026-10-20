@@ -1,0 +1,22 @@
+TITLE Add sulfuric acid in cumulative steps to pure water at pH 7.0
+
+# Initial solution: pure water at pH 7.0
+SOLUTION 1
+    pH      7.0
+    temp    25.0
+    units   mol/L
+
+# Add all steps cumulatively: 0.001 + 0.005 + 0.01 + 0.05 + 0.1 = 0.166 mol H2SO4
+REACTION 1
+    H2SO4   1.0
+    0.001 0.005 0.01 0.05 0.1
+
+SELECTED_OUTPUT
+    -file           sulfuric_acid2.sel
+    -reset          false
+    -solution       true
+    -step           true
+    -pH             true
+    -activities     H+
+
+END

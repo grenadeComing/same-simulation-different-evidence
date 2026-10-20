@@ -1,0 +1,29 @@
+SOLUTION 1
+  temp 25
+  pH 7 charge
+  units mol/kgw
+  -water 1
+
+GAS_PHASE 1
+  -fixed_pressure
+  -volume 1
+  O2(g) -0.7
+
+REACTION 1
+  Pyrite 1
+  0.1
+
+EQUILIBRIUM_PHASES 1
+  Goethite 0 0
+  Gypsum 0 0
+
+SELECTED_OUTPUT
+  -file selected6.tsv
+  -reset false
+  -saturation_indices Pyrite
+END
+
+USER_PUNCH
+  -headings SI_Pyrite
+  10 PUNCH SI("Pyrite")
+END

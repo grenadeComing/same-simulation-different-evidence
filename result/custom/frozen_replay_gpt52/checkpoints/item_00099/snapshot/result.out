@@ -1,0 +1,129 @@
+   Input file: /workspace/calc_totc.pqi
+  Output file: /workspace/result.out
+Database file: /database/phreeqc.dat
+
+------------------
+Reading data base.
+------------------
+
+	SOLUTION_MASTER_SPECIES
+	SOLUTION_SPECIES
+	PHASES
+	EXCHANGE_MASTER_SPECIES
+	EXCHANGE_SPECIES
+	SURFACE_MASTER_SPECIES
+	SURFACE_SPECIES
+	MEAN_GAMMAS
+	RATES
+	END
+------------------------------------
+Reading input data for simulation 1.
+------------------------------------
+
+	SOLUTION 1
+	    temp 25
+	    pH 7.5
+	    units mg/L
+	    Ca 100
+	    Alkalinity 250 as CaCO3
+	END
+-------------------------------------------
+Beginning of initial solution calculations.
+-------------------------------------------
+
+Initial solution 1.	
+
+WARNING: Equivalent wt for alkalinity should be Ca.5(CO3).5. Using 50.0455 g/eq.
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Alkalinity        4.997e-03   4.997e-03
+	Ca                2.496e-03   2.496e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.500    
+                                       pe  =   4.000    
+      Specific Conductance (µS/cm,  25°C)  = 463
+                          Density (g/cm³)  =   0.99737
+                               Volume (L)  =   1.00306
+                        Viscosity (mPa s)  =   0.89357
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   7.377e-03
+                       Mass of water (kg)  =   1.000e+00
+                    Total carbon (mol/kg)  =   5.287e-03
+                       Total CO2 (mol/kg)  =   5.287e-03
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -5.431e-06
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.06
+                               Iterations  =   7
+                                  Total H  = 1.110174e+02
+                                  Total O  = 5.552176e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             3.508e-07   3.200e-07    -6.455    -6.495    -0.040     -4.05
+   H+              3.427e-08   3.162e-08    -7.465    -7.500    -0.035      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+C(4)          5.287e-03
+   HCO3-           4.907e-03   4.496e-03    -2.309    -2.347    -0.038     24.63
+   CO2             3.193e-04   3.197e-04    -3.496    -3.495     0.000     34.43
+   CaHCO3+         3.253e-05   2.984e-05    -4.488    -4.525    -0.037    122.68
+   CaCO3           1.924e-05   1.928e-05    -4.716    -4.715     0.001    -14.60
+   CO3-2           9.462e-06   6.667e-06    -5.024    -5.176    -0.152     -3.72
+   (CO2)2          1.873e-09   1.876e-09    -8.728    -8.727     0.001     68.87
+Ca            2.496e-03
+   Ca+2            2.444e-03   1.721e-03    -2.612    -2.764    -0.152    -17.97
+   CaHCO3+         3.253e-05   2.984e-05    -4.488    -4.525    -0.037    122.68
+   CaCO3           1.924e-05   1.928e-05    -4.716    -4.715     0.001    -14.60
+   CaOH+           9.884e-09   9.031e-09    -8.005    -8.044    -0.039     (0)  
+H(0)          1.413e-26
+   H2              7.067e-27   7.079e-27   -26.151   -26.150     0.001     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -40.081   -40.080     0.001     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  Aragonite         0.40     -7.94   -8.34  CaCO3
+  Calcite           0.54     -7.94   -8.48  CaCO3
+  CO2(g)           -2.03     -3.50   -1.47  CO2
+  H2(g)           -23.05    -26.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -37.19    -40.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+------------------
+End of simulation.
+------------------
+
+------------------------------------
+Reading input data for simulation 2.
+------------------------------------
+
+	SELECTED_OUTPUT
+	    reset false
+	    high_precision true
+	USER_PUNCH
+	    headings TotC_molkgw
+	    10 PUNCH TOT("C")
+	END
+------------------
+End of simulation.
+------------------
+
+------------------------------------
+Reading input data for simulation 3.
+------------------------------------
+
+----------------------------------
+End of Run after 0.003379 Seconds.
+----------------------------------
+

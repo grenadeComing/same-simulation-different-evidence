@@ -1,0 +1,11 @@
+TITLE Pyrite oxidation in pure water with fixed O2; allow goethite and gypsum precipitation
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    -water 1
+EQUILIBRIUM_PHASES 1
+    Pyrite 0 0.1
+    O2(g)   -0.7 10
+    Goethite 0 0
+    Gypsum   0 0
+END

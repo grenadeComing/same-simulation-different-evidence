@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp      20
+    pH        8 charge
+    C(4)      50 mmol/kgw
+    units     mmol/kgw
+
+SOLUTION 2
+    temp      20
+    pH        8 charge
+    Ca        50 mmol/kgw
+    units     mmol/kgw
+
+MIX 1
+    1 0.5
+    2 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+
+SELECTED_OUTPUT 1
+    -temperature    true
+    -molalities     Ca+2 CaCO3(aq) CaHCO3+ CaOH+ CaSO4 CaCl+ CaF+ CaHCO3+ CaCO3(aq)
+    -reset false
+
+USER_PUNCH 1
+    -headings step temperature nCa_species
+10  PUNCH STEP_NO, TC, TOT("Ca")
+
+END

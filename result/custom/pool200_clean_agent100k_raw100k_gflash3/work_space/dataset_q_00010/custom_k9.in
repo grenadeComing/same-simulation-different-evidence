@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 10
+    Ba 5
+    units mmol/kgw
+
+RATES
+    Calcite_custom
+    -start
+    10 k = 1e-9
+    20 area = 1.0
+    30 rate = k * area * (1 - SR("Calcite"))
+    40 save rate
+    -end
+
+KINETICS 1
+    Calcite_custom
+    -formula CaCO3 1.0
+    -m 1.0
+    -m0 1.0
+    -steps 1000 in 100
+
+SELECTED_OUTPUT
+    -file custom_k9.sel
+    -reset false
+    -step
+    -si Witherite
+    -high_precision true
+
+END

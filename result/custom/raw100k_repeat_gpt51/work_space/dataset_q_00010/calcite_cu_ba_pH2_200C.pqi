@@ -1,0 +1,46 @@
+SOLUTION 1
+    temp      200
+    pH        2 charge
+    pe        4
+    units     mmol/kgw
+    Cu        10
+    Ba        5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 1
+
+RATES
+Calcite
+-start
+10 REM Calcite dissolution rate (simple): rate = k * SA
+20 k = 10
+30 SA = 1.0
+40 m = MOL("Calcite")
+50 if (m <= 0) then goto 100
+60 rate = k * SA
+70 moles = rate * TIME
+80 SAVE moles
+100 END
+-end
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m    1.0
+        -formula CaCO3 1
+        -tol 1e-8
+        -steps 1000 in 100 steps
+
+SELECTED_OUTPUT
+    -file witherite_si.csv
+    -reset false
+    -time true
+    -si Witherite
+
+USER_PUNCH
+-headings step
+-start
+10 PUNCH STEP_NO
+-end
+
+END

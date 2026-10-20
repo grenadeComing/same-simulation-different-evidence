@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp      25
+    pH        7.0
+    pe        4
+    redox     pe
+    units     mol/kgw
+    water     1
+EQUILIBRIUM_PHASES 1
+    Pyrite   0   0.1
+    O2(g)   -0.7 0
+    Goethite 0   0
+    Gypsum   0   0
+SAVE solution 1
+END

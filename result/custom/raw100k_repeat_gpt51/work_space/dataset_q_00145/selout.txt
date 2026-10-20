@@ -1,0 +1,7 @@
+       state	        soln	          pH	          pe	
+      i_soln	           0	     6.99361	           4	
+      i_soln	           1	     6.99705	           4	
+      i_soln	           2	     6.99361	           4	
+       react	           0	     6.99361	           4	
+      transp	           1	     6.99705	           4	
+      transp	           1	     6.99361	           4	

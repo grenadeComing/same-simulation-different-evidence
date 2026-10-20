@@ -1,0 +1,40 @@
+{
+  "model": "gpt-5.2",
+  "method": "custom_agent_hybrid",
+  "context_mode": "hybrid",
+  "dataset": "dataset_158_verified.jsonl",
+  "run_name": "hybrid158_verified/gpt52_run1",
+  "max_steps": 24,
+  "workers": 4,
+  "task_filter": "all",
+  "start_index": null,
+  "end_index": null,
+  "started_at": "2026-10-11T09:07:48-07:00",
+  "ended_at": "2026-10-11T09:21:40-07:00",
+  "elapsed_seconds": 832.381,
+  "seconds_per_row": 5.268,
+  "total_rows": 158,
+  "graded_rows": 152,
+  "ungraded_rows": 6,
+  "correct_rows": 108,
+  "error_rows": 0,
+  "accuracy": 0.6835443037974683,
+  "graded_accuracy": 0.7105263157894737,
+  "by_task_type": {
+    "mcq": {
+      "total": 158,
+      "correct": 108,
+      "graded": 152,
+      "ungraded": 6,
+      "errors": 0,
+      "accuracy": 0.6835443037974683,
+      "graded_accuracy": 0.7105263157894737
+    }
+  },
+  "total_input_tokens": 9996559,
+  "total_output_tokens": 72937,
+  "agent_input_tokens": 9996559,
+  "agent_output_tokens": 72937,
+  "aux_by_source": {},
+  "max_full_chars": 100000
+}

@@ -1,0 +1,26 @@
+SOLUTION 1 DIC
+    temp 20
+    pH   7 charge
+    C(4) 0.05  # mol/kgw
+SOLUTION 2 Ca
+    temp 20
+    pH   7 charge
+    Ca   0.05  # mol/kgw
+
+MIX 1
+    1 0.5
+    2 0.5
+SAVE solution 10
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+USER_PUNCH
+    -headings step temp n_Ca_aq
+10 PUNCH STEP_NO, TC, TOT("Ca")

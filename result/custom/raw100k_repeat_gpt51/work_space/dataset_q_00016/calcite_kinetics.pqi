@@ -1,0 +1,26 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0 1.0
+        -time 1000 in 100
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file selout.csv
+    -reset false
+    -time true
+    -totals C(4) Cu(2)
+
+USER_PUNCH
+    -head step time_tot C4 Cu2
+    10 PUNCH KIN_TIME, TOT("C(4)"), TOT("Cu(2)")

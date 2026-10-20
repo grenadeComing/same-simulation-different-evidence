@@ -1,0 +1,18 @@
+SOLUTION 1 River
+    temp 25
+    units mg/L
+    pH 6.0 charge
+    Cl 10
+SOLUTION 2 Seawater
+    temp 25
+    units mg/L
+    pH 8.1 charge
+    Cl 19000
+MIX 1
+    1 0.7
+    2 0.3
+SELECTED_OUTPUT
+    -file mix_hcl3.sel
+    -reset false
+    -molalities HCl
+END

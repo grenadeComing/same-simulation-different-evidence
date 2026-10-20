@@ -1,0 +1,27 @@
+TITLE Stoichiometric Albite dissolution (1 mol total) with H2S gas at 200C
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    -volume 1
+    H2S(g) 5
+
+REACTION 1
+    Albite 1
+    1
+    1000*0.01
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -reaction true
+    -totals Na Al Si Fe S
+
+END

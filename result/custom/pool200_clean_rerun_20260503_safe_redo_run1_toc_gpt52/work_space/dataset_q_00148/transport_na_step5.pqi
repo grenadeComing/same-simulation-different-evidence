@@ -1,0 +1,33 @@
+SOLUTION 1-10
+    -units mol/kgw
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 0
+    -units mol/kgw
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1
+    -dispersivities 0
+
+SELECTED_OUTPUT
+    -file selected.csv
+    -reset false
+
+USER_PUNCH
+    -headings step cell Na
+10 PUNCH STEP_NO, CELL_NO, TOT("Na")
+
+END

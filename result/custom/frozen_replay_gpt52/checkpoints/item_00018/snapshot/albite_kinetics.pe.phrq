@@ -1,0 +1,41 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+
+GAS_PHASE 1
+    -fixed_pressure true
+    -pressure 5
+    H2S(g) 5
+
+RATES
+Albite_kin
+-start
+10 rate_const
+20 sa = PARM(1)
+30 k = PARM(2)
+40 m = MOL("Albite")
+50 if (m <= 0) then goto 200
+60 rate = k * sa
+70 moles = rate * TIME
+80 if (moles > m) then moles = m
+90 SAVE moles
+200 end
+
+KINETICS 1
+    Albite
+        -formula NaAlSi3O8 1
+        -m0 1
+        -parms 1.0 10
+        -steps 100*10
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -time true
+    -step true
+    -pH true
+    -pe true
+END

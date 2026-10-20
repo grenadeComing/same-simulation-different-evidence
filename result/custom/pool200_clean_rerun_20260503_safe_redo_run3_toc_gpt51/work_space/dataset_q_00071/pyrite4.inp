@@ -1,0 +1,24 @@
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    units mol/kgw
+    Alkalinity 0
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    O2(g) -0.7
+
+EQUILIBRIUM_PHASES 1
+    O2(g) -0.7 10
+    Pyrite 0 0.1
+    Goethite 0 10
+    Gypsum 0 10
+
+SELECTED_OUTPUT
+    -file pyrite4.sel
+    -alkalinity true
+    -high_precision true
+    -sim  true
+
+END

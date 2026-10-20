@@ -1,0 +1,12 @@
+TITLE Final step: 0.1 mol H2SO4 in pure water
+
+SOLUTION 1
+    pH      7.0
+    temp    25.0
+    units   mol/L
+
+REACTION 1
+    H2SO4   1.0
+    0.1 moles
+
+END

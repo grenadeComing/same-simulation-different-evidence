@@ -1,0 +1,46 @@
+
+# Solution 1: 50 mmol/kg dissolved inorganic carbon, charge balanced with Na
+SOLUTION 1
+    temp      20
+    pH        7  charge
+    units     mmol/kgw
+    C(4)      50
+    Na        50
+
+# Solution 2: 50 mmol/kg calcium, charge balanced with Cl
+SOLUTION 2
+    temp      20
+    pH        7  charge
+    units     mmol/kgw
+    Ca        50
+    Cl        100
+
+# Mix solutions 1 and 2 in 1:1 ratio and equilibrate with calcite
+MIX 1
+    1    0.5
+    2    0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0   0
+
+SAVE solution 3
+
+END
+
+# Now heat from 20 to 200 in 10 steps with calcite equilibrium
+USE solution 3
+
+EQUILIBRIUM_PHASES 2
+    Calcite   0   0
+
+REACTION_TEMPERATURE 1
+    20  200  in 10 steps
+
+SELECTED_OUTPUT
+    -file     mixing_heating3.sel
+    -reset    false
+    -temperature  true
+    -pH           true
+    -si           Calcite
+
+END

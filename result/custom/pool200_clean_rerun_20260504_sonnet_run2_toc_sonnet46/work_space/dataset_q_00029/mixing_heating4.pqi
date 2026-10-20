@@ -1,0 +1,26 @@
+# Simulation: Mix two solutions 1:1
+# After mixing: 25 mmol/kg C and 25 mmol/kg Ca
+# But the question asks about moles in the mixture (2 kg water total)
+# Let's try with the mixed solution having 50 mmol/kg each (no dilution interpretation)
+# i.e., each solution contributes 50 mmol to 1 kg of mixed water
+
+SOLUTION 1
+    temp      20
+    pH        7.0
+    C(4)      50 mmol/kgw
+    Ca        50 mmol/kgw
+    units     mmol/kgw
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0.0   0.0
+
+REACTION_TEMPERATURE 1
+    20.0  38.0  56.0  74.0  92.0  110.0  128.0  146.0  164.0  182.0  200.0
+
+SELECTED_OUTPUT
+    -file   mixing_heating4.sel
+    -reset  false
+    -temperature true
+    -equilibrium_phases Calcite
+
+END

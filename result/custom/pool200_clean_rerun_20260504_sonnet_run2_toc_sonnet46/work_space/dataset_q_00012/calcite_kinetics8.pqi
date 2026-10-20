@@ -1,0 +1,51 @@
+TITLE Calcite kinetic dissolution in acidic solution at 200C
+
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4.0
+    units     mmol/kgw
+    Cu        10.0
+    Ba        5.0
+
+KINETICS 1
+Calcite
+    -tol    1e-8
+    -m0     1.0
+    -m      1.0
+    -parms  1.0  0.6
+    -step   1000 in 100
+
+RATES
+Calcite
+-start
+1  rem Calcite rate: Plummer et al. 1978, modified with rate constant k=10
+10 si_cc = SI("Calcite")
+20 if (m <= 0 and si_cc < 0) then goto 200
+30 k1 = 10^(0.198 - 444.0 / (273.16 + TC))
+40 k2 = 10^(2.84 - 2177.0 / (273.16 + TC))
+50 if TC <= 25 then k3 = 10^(-5.86 - 317.0 / (273.16 + TC))
+60 if TC > 25 then k3 = 10^(-1.1 - 1737.0 / (273.16 + TC))
+70 t = 1
+80 if m0 > 0 then t = m/m0
+90 if t = 0 then t = 1
+100 area = PARM(1) * (t)^PARM(2)
+110 rf = k1 * ACT("H+") + k2 * ACT("CO2") + k3 * ACT("H2O")
+120 sat_ratio = 10^si_cc
+130 rb = k1 * ACT("H+") * sat_ratio + k2 * ACT("CO2") * sat_ratio + k3 * ACT("H2O") * sat_ratio
+140 rate = 10 * area * (rf - rb)
+150 if rate < 0 and m <= 0 then rate = 0
+160 moles = rate * TIME
+200 save moles
+-end
+
+SELECTED_OUTPUT
+    -file   calcite_kinetics8.out
+    -reset  false
+    -step   true
+    -time   true
+    -pH     true
+    -alkalinity true
+    -totals Ca Ba Cu C
+
+END

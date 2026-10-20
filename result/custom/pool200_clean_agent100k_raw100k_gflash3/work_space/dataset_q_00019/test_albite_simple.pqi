@@ -1,0 +1,17 @@
+
+SOLUTION 1
+    temp 200
+    pH 2
+    units mmol/kgw
+    Cl 10 charge
+KINETICS 1
+    Albite
+    -m0 1.0
+    -parms 1.0 1.0
+    -steps 1000 in 100
+SELECTED_OUTPUT
+    -file albite_simple.sel
+    -reset false
+    -step
+    -totals Si
+END

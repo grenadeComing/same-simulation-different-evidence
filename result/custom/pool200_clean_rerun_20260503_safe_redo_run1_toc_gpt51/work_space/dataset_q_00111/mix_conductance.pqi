@@ -1,0 +1,23 @@
+SOLUTION 1 River
+    temp 25
+    pH 6.0
+    pe 4
+    Cl 10
+
+SOLUTION 2 Seawater
+    temp 25
+    pH 8.1
+    pe 4
+    Cl 19000
+
+MIX 1
+    1 0.7
+    2 0.3
+
+USER_PUNCH
+    -headings sc
+    10 PUNCH SC
+END
+SELECTED_OUTPUT
+    -user_punch true
+END

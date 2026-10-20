@@ -1,0 +1,13 @@
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    C(-4) 5.0
+GAS_PHASE 1
+    -fixed_pressure
+    -temperature 15
+    CH4(g) 0
+SELECTED_OUTPUT
+    -file methane_q.sel
+    -reset false
+    -molalities CH4
+END

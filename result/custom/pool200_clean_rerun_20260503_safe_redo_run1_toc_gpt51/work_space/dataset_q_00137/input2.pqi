@@ -1,0 +1,12 @@
+SOLUTION 1 Pure water
+    pH 7.0
+    temp 25.0
+EQUILIBRIUM_PHASES 1
+    CO2(g)  -3.4 10
+END
+
+SELECTED_OUTPUT 1
+    -file sel.out
+    -reset false
+    -ionic_strength true
+END

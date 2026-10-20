@@ -1,0 +1,7 @@
+SOLUTION 1
+    temp 100
+END
+REACTION_SPECIES 1
+    CH4 + 2 H2O = CO2 + 8 H+ + 8 e-
+    log_k 0
+END

@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp 100
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+END
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 0  # Start with 0 to see if it precipitates, or just to check SI
+    CO2(g) 0 1.0
+    CH4(g) 0.69897 5.0
+    H2S(g) 1.0 10.0
+END
+SELECTED_OUTPUT
+    -file output.sel
+    -si Aragonite Calcite Gypsum
+    -gas CO2(g) CH4(g) H2S(g)
+END

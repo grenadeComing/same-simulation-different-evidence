@@ -1,0 +1,25 @@
+SOLUTION 1
+    temp 20
+    units mmol/kgw
+    pH 7 charge
+    C(4) 50
+
+SOLUTION 2
+    temp 20
+    units mmol/kgw
+    pH 7 charge
+    Ca 50
+
+MIX 1
+    1 1
+    2 1
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+SELECTED_OUTPUT
+    -file mix_calcite.sel
+    -pH true
+    -totals C(4) Ca
+    -equilibrium_phases Calcite
+END

@@ -1,0 +1,38 @@
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 1
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+
+TRANSPORT
+    -cells             10
+    -shifts            10
+    -time_step         1
+    -lengths           10*1
+    -boundary_conditions  flux flux
+    -initial_time      0
+    -flow_direction    forward
+    -dispersivities    10*0
+    -correct_disp      false
+    -punch_cells       3
+    -print_cells       3
+    -print_frequency   10
+    -inlet_solution    1   # not a valid keyword in this version, instead use SOLUTION 0 and -boundary_conditions reset
+END
+
+SELECTED_OUTPUT
+    -file              sel3.out
+    -reset             false
+    -simulation        true
+    -state             true
+    -totals            Na
+    -activities        Na+
+    -step              true
+END

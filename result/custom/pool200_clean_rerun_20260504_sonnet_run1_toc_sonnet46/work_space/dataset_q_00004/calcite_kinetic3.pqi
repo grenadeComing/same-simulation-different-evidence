@@ -1,0 +1,39 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1.0
+
+RATES
+Calcite_custom
+-start
+10  si_cc = SI("Calcite")
+20  IF (m <= 0) THEN GOTO 60
+30  rate = PARM(1) * PARM(2) * (m/m0)^0.67 * (1 - 10^si_cc)
+40  moles = rate * TIME
+50  GOTO 70
+60  moles = 0
+70  SAVE moles
+-end
+
+KINETICS 1
+Calcite_custom
+    -formula CaCO3
+    -m0    1.0
+    -m     1.0
+    -parms 10.0  0.001
+    -step  1000 in 100
+    -tol   1e-8
+
+SELECTED_OUTPUT
+    -file   calcite_kinetic3.out
+    -reset  false
+    -time   true
+    -pH     true
+    -pe     true
+    -si     Calcite
+    -kinetic_reactants  Calcite_custom
+
+END

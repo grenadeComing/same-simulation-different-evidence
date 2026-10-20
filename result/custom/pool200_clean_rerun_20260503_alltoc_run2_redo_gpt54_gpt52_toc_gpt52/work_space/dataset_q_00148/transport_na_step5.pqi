@@ -1,0 +1,39 @@
+SOLUTION 0 Initial
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+SOLUTION 1-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+SOLUTION 11 Inflow
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -print_cells 1
+    -print_frequency 1
+    -punch_cells 1
+    -punch_frequency 1
+
+SELECTED_OUTPUT
+    -reset false
+    -step true
+    -state true
+    -solution true
+    -totals Na
+END
+
+USER_PUNCH
+    -head step soln Na
+    10 PUNCH STEP_NO, SOLN_NO, TOT("Na")
+END

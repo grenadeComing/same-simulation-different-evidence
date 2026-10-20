@@ -1,0 +1,25 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    units mmol/kgw
+    Fe(2) 4
+    Fe(3) 4
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    H2S(g) 0.69897 100
+
+KINETICS 1
+Albite
+    -m 1
+    -m0 1
+    -parms 1.0 1e-4  # Slowed down to ensure it runs
+    -time 1000 in 100
+
+SELECTED_OUTPUT 1
+    -file output.sel
+    -reset false
+    -step
+    -totals Ba Na Al Si Fe S
+    -mol Albite
+END

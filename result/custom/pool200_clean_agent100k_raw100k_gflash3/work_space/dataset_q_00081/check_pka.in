@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    N(-3) 0.1
+END
+SELECTED_OUTPUT
+    -file pka.sel
+    -molalities NH4+ NH3
+    -activities NH4+ NH3 H+
+END
+RUN_CELLS
+    -cells 1
+END

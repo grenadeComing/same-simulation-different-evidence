@@ -1,0 +1,21 @@
+TITLE Pure water equilibrated with fixed-pressure gas (set by initial moles ratio) at 150C
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    redox pe
+    units mol/kgw
+    water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g)  -0.3979400087  # log10(10/25)
+    CO2(g)  -0.3979400087
+    NH3(g)  -0.6989700043  # log10(5/25)
+SELECTED_OUTPUT
+    -file sel3.txt
+    -reset false
+    -pH true
+    -pe true
+END

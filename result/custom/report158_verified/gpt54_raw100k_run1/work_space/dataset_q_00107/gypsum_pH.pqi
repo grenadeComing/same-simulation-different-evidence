@@ -1,0 +1,9 @@
+SOLUTION 1 Pure water
+    temp      25
+    pH        7.0
+    pe        4
+    redox     pe
+    units     mol/kgw
+EQUILIBRIUM_PHASES 1
+    Gypsum    0 10
+END

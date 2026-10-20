@@ -1,0 +1,7 @@
+TITLE Chrysotile-Talc Equilibrium No pH Init
+SOLUTION 1
+    temp 150
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+END

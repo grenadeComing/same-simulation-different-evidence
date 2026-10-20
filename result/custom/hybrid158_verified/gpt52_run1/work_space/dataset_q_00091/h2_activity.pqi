@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 25
+    pH   7.5
+    Ca   100 mg/L
+    Alkalinity 250 mg/L as CaCO3
+    units mg/L
+END
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings a_H2
+10 PUNCH ACT("H2")
+END

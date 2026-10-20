@@ -1,0 +1,26 @@
+SOLUTION 1 Pure_DIC
+    temp 20
+    pH 7 charge
+    C(4) 0.05 mol/kgw
+
+SOLUTION 2 Pure_Ca
+    temp 20
+    pH 7 charge
+    Ca 0.05 mol/kgw
+
+MIX 1
+    1 0.5
+    2 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+
+SELECTED_OUTPUT
+    -file calcite_mix.sel
+    -reset false
+    -temperature true
+    -si Calcite
+END

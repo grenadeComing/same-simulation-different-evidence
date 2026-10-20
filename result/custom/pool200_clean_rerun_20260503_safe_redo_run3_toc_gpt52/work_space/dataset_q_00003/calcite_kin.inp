@@ -1,0 +1,35 @@
+TITLE Calcite kinetics at 100C, pH 5, pe 4; track C molality at step 100
+SOLUTION 1
+    temp 100
+    pH 5
+    pe 4
+    units mmol/kgw
+    C 0.5
+    Mn 1
+
+RATES
+Calcite_simple
+-start
+  k = PARM(2)
+  SA = PARM(1)
+  if (M <= 0) then goto 200
+  rate = k*SA
+  moles = rate * TIME
+200 SAVE moles
+-end
+
+KINETICS 1
+    Calcite_simple
+        -m0 1.0
+        -parms 10.0 0.001
+        -steps 10 in 100
+        -tol 1e-12
+        -formula Ca 1 C 1 O 3
+
+SELECTED_OUTPUT
+    -file calcite_kin.sel
+    -reset false
+    -time true
+    -step true
+    -totals C
+END

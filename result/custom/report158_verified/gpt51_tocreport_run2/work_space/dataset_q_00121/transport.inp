@@ -1,0 +1,39 @@
+SOLUTION 0-10
+    pH 7.0 charge
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0 charge
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+
+EQUILIBRIUM_PHASES 1-10
+
+EXCHANGE_SPECIES
+    Na+ + X- = NaX
+        log_k 0.0
+    Ca+2 + 2X- = CaX2
+        log_k 0.0
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1.0
+    -flow_direction      forward
+    -length              1.0
+    -dispersivity        0.0
+    -correct_disp        false
+    -print_cells         1
+    -print_frequency     1
+    -punch_cells         1
+    -punch_frequency     1
+    -initial_time        0.0
+    -boundary_conditions flux flux
+
+PRINT
+    -reset false
+    -status true

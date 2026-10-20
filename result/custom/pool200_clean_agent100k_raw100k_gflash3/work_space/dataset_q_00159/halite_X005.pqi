@@ -1,0 +1,26 @@
+TITLE Halite SI with X 0.005
+SOLUTION 0
+    units mmol/kgw
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10
+    units mmol/kgw
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X 0.005
+    -equilibrate 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1.0
+    -punch_cells 3
+    -punch_frequency 10
+SELECTED_OUTPUT
+    -file solution_X005.sel
+    -reset false
+    -step
+    -si Halite
+END

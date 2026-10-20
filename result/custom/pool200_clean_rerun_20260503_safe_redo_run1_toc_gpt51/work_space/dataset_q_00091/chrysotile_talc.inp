@@ -1,0 +1,23 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+
+SELECTED_OUTPUT
+    -file chrysotile_talc.sel
+    -reset false
+    -si Chrysotile Talc
+    -ionic_strength true
+    -pH true
+    -totals Mg Si O H
+
+USER_PUNCH
+    -headings log_IAP_Chrysotile
+    -start
+    10 REM Calculate log IAP for Chrysotile: Mg3Si2O5(OH)4 + 6 H+ = H2O + 2 H4SiO4 + 3 Mg+2
+    20 log_IAP = 2*LOG10(TOT("H4SiO4")) + 3*LOG10(MOL("Mg+2")) - 6*LOG10(ACT("H+"))
+    30 PUNCH log_IAP
+    -end

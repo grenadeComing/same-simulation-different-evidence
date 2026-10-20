@@ -1,0 +1,18 @@
+PHASES
+Fix_H+
+    H+ = H+
+    log_k 0
+SOLUTION 1
+    temp 100
+    pH 3
+    Cl 1 charge
+    water 1
+EQUILIBRIUM_PHASES 1
+    Fix_H+ -3.0 HCl 500
+    K-mica 0 100
+    Kaolinite 0 100
+    Dolomite 0 100
+    Epsomite 0 100
+    Fe(OH)3(a) 0 100
+    Halite 0 100
+END

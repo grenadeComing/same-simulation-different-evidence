@@ -1,0 +1,12 @@
+SOLUTION 1
+    pH 6.999
+    temp 25
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10
+END
+SOLUTION 2
+    pH 7.001
+    temp 25
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10
+END

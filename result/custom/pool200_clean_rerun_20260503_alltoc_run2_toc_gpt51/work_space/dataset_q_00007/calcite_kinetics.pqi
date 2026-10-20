@@ -1,0 +1,22 @@
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    pe 4
+    units mmol/kgw
+    C(4) 0.5
+    Mn 1
+
+KINETICS 1
+    Calcite
+        -m0 1
+        -m 1
+        -parms 10.0 1.0
+        -step 10 in 100
+
+SELECTED_OUTPUT
+    -file sel_out.txt
+    -reset false
+    -simulation true
+    -time true
+    -step true
+    -si Aragonite

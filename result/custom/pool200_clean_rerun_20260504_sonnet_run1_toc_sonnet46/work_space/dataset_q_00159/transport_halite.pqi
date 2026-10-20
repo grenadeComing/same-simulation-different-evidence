@@ -1,0 +1,37 @@
+TITLE 1D Transport Problem - 10 cells, 10 shifts
+
+# Initial solution in all cells: pH 7.0, Ca 1.0, Cl 2.0
+SOLUTION 1-10
+    pH      7.0
+    Ca      1.0
+    Cl      2.0
+
+# Infilling (inlet) solution: pH 7.0, Na 1.0, Cl 1.0
+SOLUTION 0
+    pH      7.0
+    Na      1.0
+    Cl      1.0
+
+# Exchange sites in all 10 cells: 0.001 mol, equilibrated with solution 1
+EXCHANGE 1-10
+    X       0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells          10
+    -shifts         10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -diffusion_coefficient 0
+    -dispersivity      0
+    -time_step         1
+    -punch_cells       1-10
+    -punch_frequency   10
+
+SELECTED_OUTPUT
+    -file           transport_halite.sel
+    -reset          false
+    -solution       true
+    -si             Halite
+
+END

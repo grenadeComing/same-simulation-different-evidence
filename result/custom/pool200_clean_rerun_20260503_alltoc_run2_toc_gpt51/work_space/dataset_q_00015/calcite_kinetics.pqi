@@ -1,0 +1,39 @@
+SOLUTION 1
+    temp      200
+    pH        2 charge
+    pe        4
+    units     mmol/kgw
+    Cu        10
+    Ba        5
+    C(4)      1e-9
+
+KINETICS 1
+    Calcite
+        -formula   Calcite 1
+        -m0        1
+        -parms    10 1.0
+        -tol      1e-8
+        -steps    100*10
+        -bad_step_max 1000
+
+RATES
+Calcite
+-start
+10 REM: par1 = rate constant, par2 = specific surface area
+20 k = PARM(1)
+30 ssa = PARM(2)
+40 rate = k * ssa
+50 moles = rate * TIME
+60 SAVE moles
+-end
+
+USER_PUNCH
+    -headings step SI_Witherite
+    10 PUNCH KIN_TIME, SI("Witherite")
+
+SELECTED_OUTPUT
+    -file witherite_si.txt
+    -reset false
+    -user_punch true
+
+END

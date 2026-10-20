@@ -1,0 +1,44 @@
+SOLUTION 0 Infilling
+    temp      25
+    pH        7.0
+    pe        4
+    redox     pe
+    units     mmol/kgw
+    density   1
+    Na        1.0
+    Cl        1.0
+
+SOLUTION 1-10 Initial
+    temp      25
+    pH        7.0
+    pe        4
+    redox     pe
+    units     mmol/kgw
+    density   1
+    Ca        1.0
+    Cl        2.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells                 10
+    -shifts                10
+    -flow_direction        forward
+    -boundary_conditions   flux flux
+    -correct_disp          false
+    -lengths               1
+    -dispersivities        0
+    -time_step             1
+    -print_cells           3
+    -print_frequency       1
+
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -step true
+    -distance true
+    -solution true
+    -alkalinity true
+END

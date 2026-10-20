@@ -1,0 +1,42 @@
+TITLE Albite kinetic dissolution at 200C with fixed P(H2S)
+
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    Fe(3) 4e-3
+    Fe(2) 4e-3
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+
+RATES
+Albite
+-start
+10 k = 10
+20 sa = 1.0
+30 rate = k*sa
+40 moles = rate*TIME
+50 if (moles > M) then moles = M
+60 SAVE moles
+-end
+
+KINETICS 1
+    Albite
+        -m0 1.0
+        -formula NaAlSi3O8 1
+    -steps 100*10
+
+USER_PUNCH
+    -head step tot_Si
+10 PUNCH STEP_NO, TOT("Si")
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -user_punch true
+
+END

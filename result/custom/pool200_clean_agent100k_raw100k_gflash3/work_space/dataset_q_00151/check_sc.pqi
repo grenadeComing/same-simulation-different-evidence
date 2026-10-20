@@ -1,0 +1,9 @@
+SOLUTION 1
+    pH 7.0
+    units mmol/L
+    Ca 1.0
+    Cl 2.0
+
+SELECTED_OUTPUT
+    -specific_conductance
+END

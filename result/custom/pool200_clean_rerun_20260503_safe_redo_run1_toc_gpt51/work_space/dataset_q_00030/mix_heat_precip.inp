@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp 20
+    pH 7 charge
+    C(4) 0.05
+
+SOLUTION 2
+    temp 20
+    pH 7 charge
+    Ca 0.05
+
+MIX 1
+    1 0.5
+    2 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+
+USE mix 1
+USE equilibrium_phases 1
+USE reaction_temperature 1
+
+SELECTED_OUTPUT 1
+    -file mix_heat_precip.sel
+    -reset false
+    -temperature true
+    -equilibrium_phases Calcite
+    -step true
+
+END

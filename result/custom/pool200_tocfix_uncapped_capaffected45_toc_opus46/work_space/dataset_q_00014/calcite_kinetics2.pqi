@@ -1,0 +1,34 @@
+RATES
+Calcite
+    -start
+    10 rate = 10 * 1.0 * (1 - SR("Calcite"))
+    20 moles = rate * TIME
+    30 SAVE moles
+    -end
+
+SOLUTION 1
+    temp      200
+    pH        2
+    pe        4
+    units     mmol/kgw
+    Cu        10
+    Ba        5
+
+KINETICS 1
+    Calcite
+        -m0  1
+        -m   1
+        -tol 1e-8
+
+    -steps 1000 in 100
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file result2.out
+    -reset false
+    -step
+    -time
+    -kinetic_reactants Calcite
+
+END

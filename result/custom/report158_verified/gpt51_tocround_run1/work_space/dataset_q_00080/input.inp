@@ -1,0 +1,13 @@
+SOLUTION 1 Pure water at pH 7, 150C
+    temp 150
+    pH 7 charge
+    pe 4
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+SELECTED_OUTPUT
+    -reset false
+    -si Quartz
+END

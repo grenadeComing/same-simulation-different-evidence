@@ -1,0 +1,3 @@
+     Calcite	   d_Calcite	   Aragonite	 d_Aragonite	      Gypsum	    d_Gypsum	
+  0.0000e+00	  0.0000e+00	  0.0000e+00	  0.0000e+00	  0.0000e+00	  0.0000e+00	
+  3.6459e-02	  3.6459e-02	  0.0000e+00	  0.0000e+00	  0.0000e+00	  0.0000e+00	

@@ -1,0 +1,29 @@
+SOLUTION 1
+    temp      25
+    pH        8.0
+    units     ppm
+    Ca        50
+    Mg        12
+    Na        20
+    K         2
+    Alkalinity 150
+    S(6)      40
+    Cl        15
+    water     0.997021 # 1 L of solution
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0.0 0.0
+    Gypsum    0.0 0.0
+    Halite    0.0 0.0
+
+REACTION 1
+    H2O       -1.0
+    50.0 moles
+
+SELECTED_OUTPUT 1
+    -file output_1L.sel
+    -reset false
+    -molalities Ca+2
+    -high_precision true
+
+END

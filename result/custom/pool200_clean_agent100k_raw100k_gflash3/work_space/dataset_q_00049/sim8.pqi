@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 100
+    pH 3
+    Cl 1 charge
+    water 1
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+USER_PRINT
+    10 PRINT FORMAT "%10.2f" SC
+END

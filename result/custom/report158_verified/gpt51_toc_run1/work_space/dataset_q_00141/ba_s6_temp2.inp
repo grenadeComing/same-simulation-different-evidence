@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 25
+    units mg/L
+    Ba 2.0
+    S(6) 15.0 as SO4
+
+REACTION_TEMPERATURE 1
+    25.0 95.0 in 5 steps
+
+SELECTED_OUTPUT
+    -reset false
+    -solution true
+    -step true
+    -high_precision true
+    -molalities S(6)
+END

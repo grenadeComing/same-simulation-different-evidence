@@ -1,0 +1,24 @@
+TITLE Calcite kinetics with Cu and Ba at 200 C
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+RATES
+CustomCalcite
+-start
+10 rate = PARM(1) * PARM(2)
+20 moles = rate * TIME
+30 if (moles > M) then moles = M
+40 SAVE moles
+-end
+KINETICS 1
+CustomCalcite
+    -formula Calcite 1
+    -m0 1
+    -m 1
+    -parms 1.0 10
+    -steps 1000 in 100
+END

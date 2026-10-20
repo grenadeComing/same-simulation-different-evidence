@@ -1,0 +1,27 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 8
+    units mol/kgw
+    Cu 0.01
+    Ba 0.005
+    Cl 0.04 charge
+END
+
+SELECTED_OUTPUT
+    -file output.sel
+    -reset false
+    -step
+    -ph
+    -time
+    -high_precision true
+END
+
+USE solution 1
+KINETICS 1
+Calcite
+    -m0 1.0
+    -m 1.0
+    -parms 1.0 0.6
+    -steps 1000 in 100
+END

@@ -1,0 +1,17 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+END
+SELECTED_OUTPUT
+    -file chrys_talc.sel
+    -reset false
+    -si    Chrysotile  Talc
+USER_PUNCH
+    -head   lgIAP_Chrysotile
+    -start
+    10 PUNCH SI("Chrysotile") + LOG10(K_PHASE("Chrysotile"))
+    -end
+END

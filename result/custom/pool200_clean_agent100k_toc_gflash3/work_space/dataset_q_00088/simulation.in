@@ -1,0 +1,13 @@
+PHASES
+Fix_H+
+    H+ = H+
+    log_k 0.0
+SOLUTION 1
+    temp 150
+    pH 7
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+    Fix_H+ -7.0 NaOH 10.0
+END

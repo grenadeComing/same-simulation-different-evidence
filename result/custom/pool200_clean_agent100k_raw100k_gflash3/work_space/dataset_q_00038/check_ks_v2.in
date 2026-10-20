@@ -1,0 +1,28 @@
+SOLUTION 1
+    temp 100
+    pressure 1
+END
+USE solution 1
+USER_PUNCH 1
+    -head T P logK_calc logK_arag diff
+    10 PUNCH TC, PRESSURE, LK_PHASE("Calcite"), LK_PHASE("Aragonite"), LK_PHASE("Calcite") - LK_PHASE("Aragonite")
+END
+SELECTED_OUTPUT 1
+    -file values.sel
+    -user_punch 1
+END
+
+SOLUTION 2
+    temp 100
+    pressure 16
+END
+USE solution 2
+USER_PUNCH 1
+    -head T P logK_calc logK_arag diff
+    10 PUNCH TC, PRESSURE, LK_PHASE("Calcite"), LK_PHASE("Aragonite"), LK_PHASE("Calcite") - LK_PHASE("Aragonite")
+END
+SELECTED_OUTPUT 1
+    -file values.sel
+    -user_punch 1
+    -append true
+END

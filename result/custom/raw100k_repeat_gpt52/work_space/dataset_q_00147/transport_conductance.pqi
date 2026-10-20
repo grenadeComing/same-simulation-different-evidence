@@ -1,0 +1,35 @@
+TITLE 1D transport, 10 cells 10 shifts, exchange in all cells
+
+SOLUTION 0 Infilling
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10 Initial
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -print_cells 1
+    -punch_cells 1
+
+SELECTED_OUTPUT
+    -file selected_transport.txt
+    -reset false
+
+USER_PUNCH
+    -headings step cell sc_uS_cm
+    10 PUNCH STEP_NO, CELL_NO, SC
+
+PRINT
+    -selected_output true
+END

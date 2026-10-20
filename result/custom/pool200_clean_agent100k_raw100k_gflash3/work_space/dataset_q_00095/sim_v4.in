@@ -1,0 +1,15 @@
+TITLE Variation 4
+SOLUTION 1
+    temp 25
+    pH 7.0
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+REACTION_TEMPERATURE 1
+    150
+SELECTED_OUTPUT 1
+    -file output_v4.sel
+    -reset false
+    -molalities MgOH+
+    -pH true
+END

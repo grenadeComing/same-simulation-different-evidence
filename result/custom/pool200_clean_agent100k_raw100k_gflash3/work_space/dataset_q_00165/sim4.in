@@ -1,0 +1,11 @@
+SOLUTION 1
+    temp 25
+    pH 7
+    units mol/kgw
+    Ca 0.01
+    Sr 0.01
+    Alkalinity 0.04
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Strontianite 0 0
+END

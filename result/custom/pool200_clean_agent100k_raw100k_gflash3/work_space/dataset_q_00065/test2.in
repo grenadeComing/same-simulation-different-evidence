@@ -1,0 +1,23 @@
+PHASES
+Fix_pH
+    H+ = H+
+    log_k 0
+SOLUTION 1
+    temp 100
+    pH 5
+    units mol/kgw
+    Mg 0
+    Si 3.333
+    Ba 0.1
+    Mn 0.009
+    Pb 0.0013
+EQUILIBRIUM_PHASES 1
+    Talc 0 10
+    Rhodochrosite 0 10
+    Pb(OH)2 0 10
+    Fix_pH -5.0 HCl 10.0
+SELECTED_OUTPUT 1
+    -file SI_results_test2.txt
+    -si Sepiolite(d)
+    -pH true
+END

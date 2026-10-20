@@ -1,0 +1,27 @@
+# Simulation: Add sulfuric acid in steps to pure water at pH 7.0
+# Steps: 0.001, 0.005, 0.01, 0.05, 0.1 moles of H2SO4
+# Using a single REACTION block with multiple steps
+# Treating sulfate as non-redox-active by using S(6) only
+
+SOLUTION 1  Pure water at pH 7.0
+    temp      25
+    pH        7.0
+    pe        4.0
+    units     mol/L
+    water     1.0  # 1 kg of water
+
+# Add H2SO4 as H+ and SO4-2 (2 H+ per H2SO4, 1 SO4-2 per H2SO4)
+# H2SO4 -> 2H+ + SO4-2
+REACTION 1
+    H2SO4   1.0
+    0.001  0.005  0.01  0.05  0.1
+
+SELECTED_OUTPUT
+    -file   sulfuric_acid_output6.txt
+    -reset  false
+    -step   true
+    -pH     true
+    -pe     true
+    -totals S(6)
+
+END

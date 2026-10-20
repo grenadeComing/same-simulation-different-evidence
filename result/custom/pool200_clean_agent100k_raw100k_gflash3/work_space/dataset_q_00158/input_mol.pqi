@@ -1,0 +1,27 @@
+SOLUTION 0
+    pH 7.0
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10
+    pH 7.0
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1.0
+    -dispersivity 0.0
+    -print_cells 4
+    -print_frequency 10
+SELECTED_OUTPUT
+    -file output_mol.sel
+    -reset false
+    -solution true
+    -step true
+    -si H2O(g)
+END

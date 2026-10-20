@@ -1,0 +1,4 @@
+# No changes to the script, just want to check if I can specify the database. 
+# But the instructions say "Do NOT include a DATABASE line". 
+# The external database is provided. Let's see which one it is.
+# In the previous output, it said: "Database file: .../phreeqc.dat"

@@ -1,0 +1,16 @@
+SOLUTION 1
+    units mg/L
+    temp 25
+    pH 7 charge
+    Ba 2.0
+    S(6) 15.0
+REACTION_TEMPERATURE 1
+    25 95 in 5
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings step temp m_S6
+10 PUNCH STEP_NO, TC, TOT("S(6)")
+END

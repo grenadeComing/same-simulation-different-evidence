@@ -1,0 +1,184 @@
+   Input file: /workspace/input.pqi
+  Output file: /workspace/result.out
+Database file: /database/phreeqc.dat
+
+------------------
+Reading data base.
+------------------
+
+	SOLUTION_MASTER_SPECIES
+	SOLUTION_SPECIES
+	PHASES
+	EXCHANGE_MASTER_SPECIES
+	EXCHANGE_SPECIES
+	SURFACE_MASTER_SPECIES
+	SURFACE_SPECIES
+	MEAN_GAMMAS
+	RATES
+	END
+------------------------------------
+Reading input data for simulation 1.
+------------------------------------
+
+	SOLUTION 1 PureWater_pH7_150C
+	    temp 150
+	    pH 7 charge
+	    units mol/kgw
+	    water 1
+	EQUILIBRIUM_PHASES 1
+	    Chrysotile 0 10
+	    Talc 0 10
+	SELECTED_OUTPUT
+	    file selected.txt
+	    ionic_strength true
+	END
+-------------------------------------------
+Beginning of initial solution calculations.
+-------------------------------------------
+
+Initial solution 1.	PureWater_pH7_150C
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Pure water     
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   5.813      Charge balance
+                                       pe  =   4.000    
+      Specific Conductance (µS/cm, 150°C)  = 1
+                          Density (g/cm³)  =   0.91701
+                               Volume (L)  =   1.09050
+                        Viscosity (mPa s)  =   0.18261
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   1.541e-06
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =  -1.323e-19
+                         Temperature (°C)  = 150.00
+                           Pressure (atm)  =  4.70
+                  Electrical balance (eq)  =   1.323e-19
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =   0.00
+                               Iterations  =   6
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   H+              1.541e-06   1.538e-06    -5.812    -5.813    -0.001      0.00
+   OH-             1.541e-06   1.538e-06    -5.812    -5.813    -0.001    -12.11
+   H2O             5.551e+01   1.000e+00     1.744    -0.000     0.000     19.65
+H(0)          1.389e-23
+   H2              6.945e-24   6.945e-24   -23.158   -23.158     0.000     28.56
+O(0)          4.560e-18
+   O2              2.280e-18   2.280e-18   -17.642   -17.642     0.000     35.91
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(423 K,   5 atm)
+
+  H2(g)           -20.18    -23.16   -2.98  H2
+  H2O(g)            0.66     -0.00   -0.66  H2O
+  O2(g)           -14.60    -17.64   -3.04  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+-----------------------------------------
+Beginning of batch-reaction calculations.
+-----------------------------------------
+
+Reaction step 1.
+
+Using solution 1.	PureWater_pH7_150C
+Using pure phase assemblage 1.	
+
+-------------------------------Phase assemblage--------------------------------
+
+                                                      Moles in assemblage
+Phase               SI  log IAP  log K(T, P)   Initial       Final       Delta
+
+Chrysotile        0.00    21.14     21.14    1.000e+01   1.000e+01  -1.782e-05
+Talc              0.00    11.36     11.36    1.000e+01   1.000e+01   5.562e-06
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Mg                3.677e-05   3.677e-05
+	Si                1.339e-05   1.339e-05
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.435      Charge balance
+                                       pe  =  -2.151      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm, 150°C)  = 45
+                          Density (g/cm³)  =   0.91701
+                               Volume (L)  =   1.09050
+                        Viscosity (mPa s)  =   0.18266
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   9.480e-05
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   7.355e-05
+                         Temperature (°C)  = 150.00
+                           Pressure (atm)  =  4.70
+                  Electrical balance (eq)  =  -1.047e-13
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =  11
+                                  Total H  = 1.110125e+02
+                                  Total O  = 5.550631e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             6.536e-05   6.437e-05    -4.185    -4.191    -0.007    -12.08
+   H+              3.730e-08   3.675e-08    -7.428    -7.435    -0.007      0.00
+   H2O             5.551e+01   1.000e+00     1.744    -0.000     0.000     19.65
+H(0)          1.593e-14
+   H2              7.965e-15   7.965e-15   -14.099   -14.099     0.000     28.56
+Mg            3.677e-05
+   Mg+2            2.900e-05   2.729e-05    -4.538    -4.564    -0.026    -30.27
+   MgOH+           7.778e-06   7.661e-06    -5.109    -5.116    -0.007     (0)  
+O(0)          3.467e-36
+   O2              1.734e-36   1.734e-36   -35.761   -35.761     0.000     35.91
+Si            1.339e-05
+   H4SiO4          1.294e-05   1.294e-05    -4.888    -4.888     0.000     47.65
+   H3SiO4-         4.505e-07   4.436e-07    -6.346    -6.353    -0.007     21.50
+   H2SiO4-2        4.187e-11   3.940e-11   -10.378   -10.404    -0.026     (0)  
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(423 K,   5 atm)
+
+  Chalcedony       -2.36     -4.89   -2.53  SiO2
+  Chrysotile        0.00     21.14   21.14  Mg3Si2O5(OH)4
+  H2(g)           -11.12    -14.10   -2.98  H2
+  H2O(g)            0.66     -0.00   -0.66  H2O
+  O2(g)           -32.72    -35.76   -3.04  O2
+  Quartz           -2.21     -4.89   -2.68  SiO2
+  Sepiolite        -7.50      5.95   13.45  Mg2Si3O7.5OH:3H2O
+  Sepiolite(d)    -12.71      5.95   18.66  Mg2Si3O7.5OH:3H2O
+  SiO2(a)          -2.90     -4.89   -1.99  SiO2
+  Talc              0.00     11.36   11.36  Mg3Si4O10(OH)2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+------------------
+End of simulation.
+------------------
+
+------------------------------------
+Reading input data for simulation 2.
+------------------------------------
+
+----------------------------------
+End of Run after 0.003437 Seconds.
+----------------------------------
+

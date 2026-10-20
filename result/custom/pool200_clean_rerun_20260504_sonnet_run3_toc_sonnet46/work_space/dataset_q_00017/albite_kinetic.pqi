@@ -1,0 +1,39 @@
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4
+    redox     pe
+    units     mmol/kgw
+    density   1.0
+    Fe(2)     4.0
+    Fe(3)     4.0
+    -water    1.0 # kg
+
+EQUILIBRIUM_PHASES 1
+    H2S(g)    0.699  10.0   # log(5 atm) = 0.699, fixed pressure with large amount
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5.0
+    -volume   1.0
+    -temperature 200.0
+    H2S(g)    5.0
+
+KINETICS 1
+    Albite
+        -m0   1.0
+        -m    1.0
+        -parms 1.0  10.0
+        -step  10 in 100
+        -tol   1e-12
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT 1
+    -file     albite_kinetic.sel
+    -reset    false
+    -step     true
+    -time     true
+    -kinetic_reactants  Albite
+
+END

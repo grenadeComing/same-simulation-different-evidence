@@ -1,0 +1,22 @@
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    pe 4
+
+GAS_PHASE 1
+    -fixed_pressure 1.0
+    -temperature 25
+    O2(g)  -0.7
+
+EQUILIBRIUM_PHASES 1
+    Pyrite    0   0.1
+    Goethite  0   10
+    Gypsum    0   10
+
+SELECTED_OUTPUT
+    -file pyrite.sel
+    -totals Fe(2) Fe(3)
+    -pH true
+    -pe true
+    -molalities Fe+2 Fe+3
+END

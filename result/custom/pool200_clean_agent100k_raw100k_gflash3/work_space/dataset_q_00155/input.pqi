@@ -1,0 +1,31 @@
+SOLUTION 0
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+    units mmol/kgw
+
+SOLUTION 1-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+    units mmol/kgw
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1
+    -dispersivity 0
+    -punch_cells 1
+    -punch_frequency 1
+
+SELECTED_OUTPUT
+    -file transport.sel
+    -reset false
+    -step
+    -molalities Ca+2
+
+END

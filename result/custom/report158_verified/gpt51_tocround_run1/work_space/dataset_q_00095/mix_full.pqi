@@ -1,0 +1,25 @@
+SOLUTION 1 River
+    temp 25
+    pH 6.0
+    units mg/L
+    Cl 10
+
+SOLUTION 2 Seawater
+    temp 25
+    pH 8.1
+    units mg/L
+    Cl 19000
+
+MIX 1
+    1 0.7
+    2 0.3
+
+SELECTED_OUTPUT
+    -file mix_full.sel
+    -reset false
+    -solution true
+END
+USER_PUNCH
+    -headings viscosity
+    10 PUNCH VISCOSITY
+END

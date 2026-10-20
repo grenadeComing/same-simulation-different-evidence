@@ -1,0 +1,25 @@
+SOLUTION 1 River
+    pH 6.0 charge
+    Cl 10
+SOLUTION 2 Seawater
+    pH 8.1 charge
+    Cl 19000
+MIX 1
+    1 0.7
+    2 0.3
+EQUILIBRIUM_PHASES 1
+    O2(g) -0.678
+USE mix 1
+SAVE solution 1
+END
+USE solution 1
+REACTION
+    O2 1
+    -1e-8
+USE solution 1
+USER_PUNCH
+    -headings log_IAP_O2g
+    -start
+    10 PUNCH LOG10(MOLES("O2"))
+    -end
+END

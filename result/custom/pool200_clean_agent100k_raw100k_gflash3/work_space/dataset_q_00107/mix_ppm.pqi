@@ -1,0 +1,19 @@
+SOLUTION 1 River water
+    units ppm
+    pH 6.0
+    Cl 10
+    Na 10 charge
+END
+SOLUTION 2 Seawater
+    units ppm
+    pH 8.1
+    Cl 19000
+    Na 19000 charge
+END
+MIX 1
+    1 0.7
+    2 0.3
+SELECTED_OUTPUT
+    -file output.sel
+    -pH true
+END

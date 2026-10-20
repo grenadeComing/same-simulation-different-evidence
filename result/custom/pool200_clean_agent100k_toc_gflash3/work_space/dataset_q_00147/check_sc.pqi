@@ -1,0 +1,14 @@
+
+SOLUTION 0
+    pH 7.0
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+END
+
+SOLUTION 1
+    pH 7.0
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+END

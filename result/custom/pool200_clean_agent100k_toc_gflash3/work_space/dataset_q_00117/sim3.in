@@ -1,0 +1,9 @@
+SOLUTION 1
+    pH 7
+REACTION 1
+    H2SO4 1.0
+    0.1
+SELECTED_OUTPUT 1
+    -file out.sel
+    -ionic_strength
+END

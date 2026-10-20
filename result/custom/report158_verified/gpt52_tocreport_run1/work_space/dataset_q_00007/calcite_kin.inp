@@ -1,0 +1,21 @@
+TITLE Calcite kinetics; pH at step 10
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    units mmol/kgw
+    Cu 1e-8
+    Ba 1e-8
+    -water 1
+
+KNOBS
+    -iterations 200
+
+KINETICS 1
+    Calcite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+        -tol 1e-12
+    -steps 10 in 100
+END

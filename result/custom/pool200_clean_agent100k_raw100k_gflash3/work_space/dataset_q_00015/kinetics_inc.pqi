@@ -1,0 +1,35 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 10 mmol/kgw
+    Ba 5 mmol/kgw
+    Cl 100 charge
+
+RATES
+Calcite
+-start
+10 k = PARM(2)
+20 ssa = PARM(1)
+30 if (M <= 0) then goto 100
+40 rate = k * ssa * (M/M0)^0.67 * (1 - SR("Calcite"))
+50 moles = rate * TIME
+60 if (moles > M) then moles = M
+70 SAVE moles
+100 END
+-end
+
+KINETICS 1
+Calcite
+    -m0 1
+    -m 1
+    -parms 1.0 10
+    -steps 1000 in 100
+    -cvode true
+    -incremental true
+SELECTED_OUTPUT
+    -file result.sel
+    -reset false
+    -step true
+    -si witherite
+END

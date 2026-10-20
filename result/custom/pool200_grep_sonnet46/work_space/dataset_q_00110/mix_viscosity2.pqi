@@ -1,0 +1,33 @@
+SOLUTION 1  River water
+    pH      6.0
+    temp    25
+    units   mg/L
+    Cl      10      charge
+
+SOLUTION 2  Seawater
+    pH      8.1
+    temp    25
+    units   mg/L
+    Cl      19000
+    Na      10760   charge
+    Mg      1290
+    Ca      411
+    K       399
+    S(6)    2712    as SO4
+    Alkalinity  142
+
+MIX 1
+    1   0.7
+    2   0.3
+
+SELECTED_OUTPUT
+    -file   mix_viscosity2.out
+    -reset  false
+
+USER_PUNCH
+    -headings viscosity
+    -start
+10  PUNCH VISCOSITY
+    -end
+
+END

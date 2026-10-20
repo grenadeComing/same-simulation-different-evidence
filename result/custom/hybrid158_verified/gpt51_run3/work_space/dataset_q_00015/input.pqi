@@ -1,0 +1,30 @@
+SOLUTION 1
+    temp 200
+    units mol/kgw
+    pH 2 charge
+    Fe(2) 4e-3
+    Fe(3) 4e-3
+
+GAS_PHASE 1
+    -fixed_pressure true
+    -pressure 1
+    -temperature 200
+    -volume 1
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0 1.0
+        -steps 10*100
+        -cvode true
+
+SELECTED_OUTPUT
+    -file sel.out
+    -reset false
+    -time true
+    -step true
+    -ionic_strength true
+
+END

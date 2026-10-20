@@ -1,0 +1,11 @@
+SOLUTION 1
+    units mol/kgw
+    pH 7.0
+    temp 25
+    Ca 0.01505
+    S(6) 0.01505
+SELECTED_OUTPUT
+    -file solution_results.txt
+    -high_precision true
+    -molalities H2
+END

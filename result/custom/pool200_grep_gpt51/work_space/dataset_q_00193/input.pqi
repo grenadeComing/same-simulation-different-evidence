@@ -1,0 +1,33 @@
+SOLUTION 1
+    temp 25
+    pH 8.0
+    units ppm
+    Ca 50
+    Mg 12
+    Na 20
+    K 2
+    Alkalinity 150 as HCO3
+    S(6) 40
+    Cl 15
+END
+
+USE solution 1
+REACTION 1
+    H2O -1
+    50 moles
+END
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Gypsum 0 0
+    Halite 0 0
+END
+
+SELECTED_OUTPUT
+    -reset false
+    -solution 1
+    -totals Ca Mg Na K C(4) S(6) Cl
+USER_PUNCH
+    -headings sc
+10 PUNCH SC
+END

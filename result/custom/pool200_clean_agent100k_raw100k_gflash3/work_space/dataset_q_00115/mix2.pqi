@@ -1,0 +1,14 @@
+SOLUTION 1 River Water
+    units   mg/l
+    pH      6.0
+    Cl      10
+    pe      4.0
+SOLUTION 2 Seawater
+    units   mg/l
+    pH      8.1
+    Cl      19000
+    pe      4.0
+MIX 1
+    1       0.7
+    2       0.3
+END

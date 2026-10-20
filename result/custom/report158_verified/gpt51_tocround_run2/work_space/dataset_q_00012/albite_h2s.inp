@@ -1,0 +1,39 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    units mmol/kgw
+    Fe(2) 4
+    Fe(3) 4
+
+GAS_PHASE 1
+    -fixed_pressure true
+    -pressure 1
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+    -m0 1.0
+    -m  1.0
+    -parms 10 1.0
+    -steps 10 in 100 steps
+
+RATES
+Albite
+-start
+10 k = PARM(1)
+20 ssa = PARM(2)
+30 rate = k * ssa
+40 moles = rate * TIME
+50 SAVE moles
+-end
+
+USER_PUNCH
+    -headings Step pe
+    -start
+10 PUNCH KIN_TIME, PE
+    -end
+
+SELECTED_OUTPUT
+    -file albite_h2s.sel
+    -reset false
+    -user_punch true

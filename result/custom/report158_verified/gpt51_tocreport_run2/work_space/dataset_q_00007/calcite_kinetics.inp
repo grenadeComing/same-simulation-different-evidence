@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+
+KINETICS 1
+    Calcite
+        -formula CaCO3 1
+        -m0 1
+        -parms 10 1.0
+        -steps 10 in 100
+        -cvode false
+
+RATES
+    Calcite
+    -start
+    10 k = PARM(1)
+    20 ssa = PARM(2)
+    30 rate = k * ssa
+    40 moles = rate * TIME
+    50 SAVE moles
+    -end
+
+SELECTED_OUTPUT
+    -file selout.csv
+    -time true
+    -pH true
+
+END

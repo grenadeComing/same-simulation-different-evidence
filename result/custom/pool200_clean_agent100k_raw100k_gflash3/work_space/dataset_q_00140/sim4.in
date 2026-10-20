@@ -1,0 +1,9 @@
+SOLUTION 1
+    temp 25
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10
+SELECTED_OUTPUT 1
+    -file output.sel
+    -si CH4(g)
+END

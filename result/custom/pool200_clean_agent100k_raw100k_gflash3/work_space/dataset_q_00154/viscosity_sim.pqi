@@ -1,0 +1,32 @@
+SOLUTION 0
+    temp    25
+    pH      7.0
+    units   mmol/kgw
+    Na      1.0
+    Cl      1.0
+
+SOLUTION 1-10
+    temp    25
+    pH      7.0
+    units   mmol/kgw
+    Ca      1.0
+    Cl      2.0
+
+EXCHANGE 1-10
+    X       0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -punch_cells 1
+    -punch_frequency 6
+
+SELECTED_OUTPUT
+    -file solution_1_step_6.sel
+    -reset false
+
+USER_PUNCH
+    -headings step viscosity
+    10 PUNCH STEP_NO, VISCOSITY
+END

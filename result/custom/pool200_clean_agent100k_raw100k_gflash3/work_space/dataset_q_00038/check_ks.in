@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 100
+END
+USE solution 1
+PHASES
+    Calcite
+    Aragonite
+END
+USER_PUNCH 1
+    -head logK_calc logK_arag SI_arag
+    10 PUNCH LK_PHASE("Calcite"), LK_PHASE("Aragonite"), LK_PHASE("Calcite") - LK_PHASE("Aragonite")
+END
+SELECTED_OUTPUT 1
+    -file values.sel
+    -user_punch 1
+END

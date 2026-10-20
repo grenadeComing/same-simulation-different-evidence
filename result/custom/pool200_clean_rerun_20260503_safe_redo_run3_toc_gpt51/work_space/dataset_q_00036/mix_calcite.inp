@@ -1,0 +1,26 @@
+TITLE Mixing DIC and Ca solutions, heating with calcite eq
+SOLUTION 1
+    temp 20
+    units mmol/kgw
+    C(4) 50 charge
+SOLUTION 2
+    temp 20
+    units mmol/kgw
+    Ca 50
+MIX 1
+    1 1
+    2 1
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+SELECTED_OUTPUT 1
+    -reset false
+    -temperature true
+    -si Calcite
+USER_PUNCH 1
+    -headings log_IAP_Calcite
+    -start
+    10 PUNCH SI("Calcite") + LOG10(10)
+    -end
+END

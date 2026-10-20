@@ -1,0 +1,17 @@
+TITLE Al species count
+SOLUTION 1
+    temp 100
+    pH 3 charge
+    water 1
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -molalities Al+3 AlOH+2 Al(OH)2+ Al(OH)3 Al(OH)4- AlSO4+ AlHSO4+2 Al(SO4)2- AlF+2 AlF2+ AlF3 AlF4- AlH3SiO4+2 Al(SiO(OH)3)+2 AlCO3+ Al(CO3)2-3 AlO2- Al(OH)5-2
+END

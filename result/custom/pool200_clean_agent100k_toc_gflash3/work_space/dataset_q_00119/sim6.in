@@ -1,0 +1,18 @@
+SOLUTION 1
+    pH 7.0
+    pe 4.0
+REACTION 1
+    H2SO4 1.0
+    0.1
+USER_PUNCH
+    -headings phase si logIAP logK
+    -start
+10 n = PUNCH_PHASES(a$)
+20 FOR i = 1 TO n
+30   PUNCH a$(i), SI(a$(i)), SI(a$(i)) + 3.10, -3.10
+40 NEXT i
+    -end
+SELECTED_OUTPUT
+    -file all_phases.txt
+    -user_punch true
+END

@@ -1,0 +1,20 @@
+SOLUTION 1 River
+    pH 6.0
+    Cl 10
+    -units mg/L
+
+SOLUTION 2 Seawater
+    pH 8.1
+    Cl 19000
+    -units mg/L
+
+MIX 1
+    1 0.7
+    2 0.3
+
+SELECTED_OUTPUT
+    -reset false
+USER_PUNCH
+    -headings Cl_molality
+    10 PUNCH MOL("Cl-")
+END

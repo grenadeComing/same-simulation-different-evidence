@@ -1,0 +1,35 @@
+
+# Solution 1: River water - pH 6.0, Cl 10 mmol/kgw
+SOLUTION 1 River Water
+    temp    25
+    pH      6.0
+    Cl      10      # mmol/kgw (default)
+
+# Solution 2: Seawater - pH 8.1, Cl 19000 mmol/kgw (= 19 mol/kgw - too high)
+# Standard seawater Cl is ~550 mmol/kgw = 19000 mg/L / 35.45 g/mol = 536 mmol/L
+# Let's use mg/L for seawater: 19000 mg/L / 35.45 = 536 mmol/L
+# But the question says Cl 19000 - let's try mmol/kgw
+SOLUTION 2 Seawater
+    temp    25
+    pH      8.1
+    Cl      19000   # mmol/kgw
+
+# Mix 70% river water and 30% seawater
+MIX 1
+    1   0.7
+    2   0.3
+
+SAVE SOLUTION 3
+
+END
+
+# Examine the mixed solution
+USE SOLUTION 3
+
+SELECTED_OUTPUT
+    -file           mix_output5.sel
+    -reset          false
+    -pH             true
+    -activities     H+
+
+END

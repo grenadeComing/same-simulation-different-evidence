@@ -1,0 +1,9 @@
+SOLUTION 1
+    temp 25
+    pH 7.0 charge
+EQUILIBRIUM_PHASES 1
+    CO2(g) -3.4 10
+SELECTED_OUTPUT 1
+    -file solution_results_2.txt
+    -molalities OH-
+END

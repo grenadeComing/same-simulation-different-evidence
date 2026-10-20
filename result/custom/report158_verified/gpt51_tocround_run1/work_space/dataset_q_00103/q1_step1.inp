@@ -1,0 +1,12 @@
+SOLUTION 1 Pure water
+    pH 7 charge
+
+REACTION 1
+    H2SO4 1.0
+    0.001
+
+SELECTED_OUTPUT
+    -file q1_step1.sel
+    -reset false
+    -pH true
+END

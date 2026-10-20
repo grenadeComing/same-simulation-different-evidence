@@ -1,0 +1,17 @@
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    C 5.0
+    -redox C(-4)/C(+4)
+
+GAS_PHASE 1
+    -fixed_pressure
+    -temperature 15
+    -pressure 1.0
+    CH4(g) 0
+
+SELECTED_OUTPUT
+    -file c_minus4_fix.sel
+    -molalities C(-4)
+    -high_precision true
+END

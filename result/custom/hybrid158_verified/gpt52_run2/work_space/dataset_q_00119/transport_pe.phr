@@ -1,0 +1,41 @@
+TITLE 1D transport, 10 cells, exchange
+SOLUTION 0 Initial
+    pH      7.0
+    pe      4.0
+    Ca      1.0
+    Cl      2.0
+    -water  1
+
+SOLUTION 1-10 Initial_cells
+    pH      7.0
+    pe      4.0
+    Ca      1.0
+    Cl      2.0
+    -water  1
+
+SOLUTION 11 Influent
+    pH      7.0
+    pe      4.0
+    Na      1.0
+    Cl      1.0
+    -water  1
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -print_frequency 10
+    -punch_frequency 10
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -solution true
+    -pe true
+END

@@ -1,0 +1,36 @@
+TITLE 1D transport: Ca/Cl initial, Na/Cl inflow, exchange in all cells
+
+SOLUTION 0 Inflow
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10 Initial cells
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+PRINT
+    -selected_output true
+    -exchange true
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1
+    -dispersivities 0
+    -diffusion_coefficient 0
+    -punch_cells 1
+    -punch_frequency 1
+END

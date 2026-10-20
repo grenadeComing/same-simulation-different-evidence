@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp      25
+    pH        7.0
+    units     mol/kgw
+    water     1
+
+EQUILIBRIUM_PHASES 1
+    Gypsum    0.0 10.0
+    Fix_pH    -7.0 HCl   -force_equality
+PHASES
+    Fix_pH
+    H+ = H+
+    log_k 0.0
+END

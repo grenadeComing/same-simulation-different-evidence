@@ -1,0 +1,19 @@
+TITLE 1 kg pure water (pH 7, pe 4) equilibrated with fixed-pressure gas phase at 150C
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    pe 4
+    -water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g)  0.4  10
+    CO2(g)  0.4  10
+    NH3(g)  0.2  5
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -molalities NH3 NH4+ NO3- NO2-
+    -totals N
+END

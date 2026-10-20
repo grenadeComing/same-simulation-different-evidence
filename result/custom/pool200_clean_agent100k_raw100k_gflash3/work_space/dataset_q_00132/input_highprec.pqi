@@ -1,0 +1,18 @@
+SOLUTION 1
+    pH 7.0
+    temp 25
+    units mol/kgw
+    water 1
+
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+
+SELECTED_OUTPUT 1
+    -file output_highprec.sel
+    -reset false
+    -high_precision true
+
+USER_PUNCH 1
+    -headings m_CaHSO4
+    10 PUNCH MOL("CaHSO4+")
+END

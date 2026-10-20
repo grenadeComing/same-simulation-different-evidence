@@ -1,0 +1,31 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Cu 10
+    Ba 5
+KINETICS 1
+    Calcite 1
+    -m0 1
+    -parms 10 1.0
+    -steps 10*10
+RATES
+Calcite
+    -start
+    10 REM rate constant k (parm(1)), surface area SA (parm(2))
+    20 k = parm(1)
+    30 SA = parm(2)
+    60 rate = k*SA
+    70 moles = rate*time
+    110 SAVE moles
+    -end
+SELECTED_OUTPUT
+    -file sel_calcite_pH2_200C.txt
+    -reset false
+    -time true
+    -pH true
+USER_PUNCH
+    -headings step
+    10 PUNCH STEP_NO
+END

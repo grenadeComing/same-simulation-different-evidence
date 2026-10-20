@@ -1,0 +1,23 @@
+SOLUTION 1  River Water
+    pH      6.0
+    pe      4.0
+    Cl      10
+    temp    25
+
+SOLUTION 2  Seawater
+    pH      8.1
+    pe      4.0
+    Cl      19000
+    temp    25
+
+MIX 1
+    1   0.7
+    2   0.3
+
+SELECTED_OUTPUT
+    -file   mix_output2.sel
+    -reset  false
+    -pe     true
+    -pH     true
+
+END

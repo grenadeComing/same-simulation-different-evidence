@@ -1,0 +1,35 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+    -steps 10 100
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+USER_PUNCH
+    -headings step si_totals
+10 PUNCH STEP_NO
+20 c=0
+30 FOR i = 1 TO COUNT_TOTALS
+40  name$ = TOT_NAME$(i)
+50  IF INSTR(name$,"Si")>0 THEN
+60    m = TOTMOL(i)
+70    IF m > 0 THEN c = c + 1
+80  ENDIF
+90 NEXT i
+100 PUNCH c
+END

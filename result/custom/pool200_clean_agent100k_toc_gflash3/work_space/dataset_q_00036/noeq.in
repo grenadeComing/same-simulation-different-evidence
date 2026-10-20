@@ -1,0 +1,23 @@
+SOLUTION 1
+    units mmol/kgw
+    temp 20
+    C(4) 50
+    Na 50 charge
+SOLUTION 2
+    units mmol/kgw
+    temp 20
+    Ca 50
+    Cl 100 charge
+MIX 1
+    1 0.5
+    2 0.5
+REACTION_TEMPERATURE 1
+    200
+SELECTED_OUTPUT 1
+    -file noeq.sel
+    -high_precision true
+    -si Calcite
+USER_PUNCH
+    -headings logK logIAP
+    10 PUNCH LK_PHASE("Calcite"), SI("Calcite") + LK_PHASE("Calcite")
+END

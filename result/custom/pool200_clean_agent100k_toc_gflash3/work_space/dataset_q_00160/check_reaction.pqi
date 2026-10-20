@@ -1,0 +1,12 @@
+SELECTED_OUTPUT
+    -file species.sel
+    -reset false
+    -equilibrium_phases H2(g)
+END
+SOLUTION 1
+    pH 7
+    pe 0
+END
+RUN_CELLS
+    -cells 1
+END

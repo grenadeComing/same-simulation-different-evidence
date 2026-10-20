@@ -1,0 +1,22 @@
+TITLE Geochemical equilibration at 100C, pH 5, 100 mmol/kgw Ba
+
+SOLUTION 1
+    temp        100
+    pH          5
+    Ba          100 mmol/kgw
+    units       mmol/kgw
+    water       1 kg
+
+EQUILIBRIUM_PHASES 1
+    Talc            0   10
+    Rhodochrosite   0   10
+    Sepiolite       0   10
+    Sepiolite(d)    0   10
+    Pb(OH)2         0   10
+
+SELECTED_OUTPUT
+    -file           mineral_equilibration.sel
+    -reset          false
+    -equilibrium_phases  Talc Rhodochrosite Sepiolite Sepiolite(d) Pb(OH)2
+
+END

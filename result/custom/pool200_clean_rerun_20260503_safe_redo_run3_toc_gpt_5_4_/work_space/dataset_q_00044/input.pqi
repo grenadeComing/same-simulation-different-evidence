@@ -1,0 +1,30 @@
+SOLUTION 1
+    temp 100
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+    Gypsum 0 10
+    Aragonite 0 10
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 16
+    -temperature 25
+    CO2(g) 1
+    CH4(g) 5
+    H2S(g) 10
+SELECTED_OUTPUT
+    -file selected.out
+    -high_precision true
+    -simulation true
+    -state true
+    -solution true
+    -ph true
+    -ionic_strength true
+    -totals Ca C S
+    -molalities Ca+2 HCO3- CO3-2 SO4-2 HS- H2S CH4 CO2
+USER_PUNCH
+    -headings SC
+    10 PUNCH SC
+END

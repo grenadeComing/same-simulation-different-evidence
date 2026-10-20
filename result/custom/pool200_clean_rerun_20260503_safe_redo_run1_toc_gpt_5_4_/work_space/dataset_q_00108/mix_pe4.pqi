@@ -1,0 +1,25 @@
+SOLUTION 1 River
+    temp 25
+    units mg/L
+    pH 6.0
+    pe 11.24
+    Cl 10
+SOLUTION 2 Seawater
+    temp 25
+    units mg/L
+    pH 8.1
+    pe 11.24
+    Cl 19000
+MIX 1
+    1 0.7
+    2 0.3
+SELECTED_OUTPUT
+    -file mix_pe4.sel
+    -reset false
+    -high_precision true
+    -simulation true
+    -state true
+    -solution true
+    -pe true
+    -pH true
+END

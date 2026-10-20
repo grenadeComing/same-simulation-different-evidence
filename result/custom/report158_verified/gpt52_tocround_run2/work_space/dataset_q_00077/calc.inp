@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT
+    -file selected.csv
+    -reset false
+    -user_punch true
+USER_PUNCH
+    -headings logK_Chrysotile SI_Chrysotile logIAP_Chrysotile
+    10 PUNCH EQUI("Chrysotile"), SI("Chrysotile"), EQUI("Chrysotile")+SI("Chrysotile")
+END

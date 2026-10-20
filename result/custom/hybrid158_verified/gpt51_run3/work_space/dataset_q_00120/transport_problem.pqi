@@ -1,0 +1,50 @@
+SOLUTION 0-10
+    pH 7.0 charge
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0 charge
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 0-10
+    X 0.001
+    -equilibrate 1
+
+EXCHANGE_MASTER_SPECIES
+    X   X-   0  X-
+
+EXCHANGE_SPECIES
+    Na+ + X- = NaX
+        log_k 0
+    Ca+2 + 2X- = CaX2
+        log_k 0
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -time_step           1
+    -flow_direction      forward
+    -boundary_conditions flux flux
+    -length              1
+    -dispersivity        0
+    -correct_disp        false
+    -initial_time        0
+    -print_cells         1-10
+    -print_frequency     1
+    -punch_cells         1-10
+
+SELECTED_OUTPUT
+    -file                caX2_step5.sel
+    -reset false
+    -time true
+    -step true
+    -distance true
+    -totals Ca
+    -equilibrium_phases false
+    -equilibrium_phases false
+
+USER_PUNCH
+    -head step cell CaX2_moles
+    10 PUNCH SIM_NO, CELL_NO

@@ -1,0 +1,16 @@
+SOLUTION 1 Pure water
+    temp 150
+    pH 7 charge
+
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -high_precision true
+    -solution true
+    -equilibrium_phases true
+
+END

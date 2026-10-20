@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C         0.5
+    Mn        1
+    Cl        1.5 charge
+    -water    1
+
+EQUILIBRIUM_PHASES 1
+    Fix_pH    -5 HCl 10
+    -force_equality
+
+PHASES
+    Fix_pH
+    H+ = H+
+    log_k 0
+
+KINETICS 1
+    Calcite
+    -m        1
+    -parms    10.0 0
+    -step     1000 in 100
+
+SELECTED_OUTPUT
+    -file                 results_fixed_pH.txt
+    -step
+    -time
+    -totals               C
+
+END

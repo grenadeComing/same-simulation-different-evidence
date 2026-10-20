@@ -1,0 +1,40 @@
+SOLUTION 1
+    temp 100
+    pH 3 charge
+    water 1
+EQUILIBRIUM_PHASES 1
+    K-mica 0 10
+    Kaolinite 0 10
+    Dolomite 0 10
+    Epsomite 0 10
+    Fe(OH)3(a) 0 10
+    Halite 0 10
+USER_PUNCH
+    -headings Al_species_count
+10 cnt = 0
+20 IF MOL("Al+3") > 0 THEN cnt = cnt + 1
+30 IF MOL("AlOH+2") > 0 THEN cnt = cnt + 1
+40 IF MOL("Al(OH)2+") > 0 THEN cnt = cnt + 1
+50 IF MOL("Al(OH)3") > 0 THEN cnt = cnt + 1
+60 IF MOL("Al(OH)4-") > 0 THEN cnt = cnt + 1
+70 IF MOL("AlSO4+") > 0 THEN cnt = cnt + 1
+80 IF MOL("Al(SO4)2-") > 0 THEN cnt = cnt + 1
+90 IF MOL("AlHSO4+2") > 0 THEN cnt = cnt + 1
+100 IF MOL("Al(SO4)3-3") > 0 THEN cnt = cnt + 1
+110 IF MOL("AlF+2") > 0 THEN cnt = cnt + 1
+120 IF MOL("AlF2+") > 0 THEN cnt = cnt + 1
+130 IF MOL("AlF3") > 0 THEN cnt = cnt + 1
+140 IF MOL("AlF4-") > 0 THEN cnt = cnt + 1
+150 IF MOL("AlH3SiO4+2") > 0 THEN cnt = cnt + 1
+160 IF MOL("AlH2SiO4+") > 0 THEN cnt = cnt + 1
+170 IF MOL("AlHSiO4") > 0 THEN cnt = cnt + 1
+180 IF MOL("Al(HSiO4)2-") > 0 THEN cnt = cnt + 1
+190 IF MOL("AlHPO4+2") > 0 THEN cnt = cnt + 1
+200 IF MOL("AlH2PO4+2") > 0 THEN cnt = cnt + 1
+210 IF MOL("AlPO4") > 0 THEN cnt = cnt + 1
+220 IF MOL("AlO2-") > 0 THEN cnt = cnt + 1
+230 PUNCH cnt
+SELECTED_OUTPUT
+    -file al_species.sel
+    -user_punch true
+END

@@ -1,0 +1,13 @@
+SOLUTION 1
+    temp 15
+    C(-4) 5e-3
+GAS_PHASE 1
+    -fixed_pressure
+    -temperature 15
+    -volume 1
+    -pressure 1.0
+    CH4(g) 0
+END
+USE solution 1
+USE gas_phase 1
+END

@@ -1,0 +1,42 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    redox pe
+    Fe(2) 4e-3
+    Fe(3) 4e-3
+    units mol/kgw
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -formula NaAlSi3O8 1
+        -m0 1.0
+        -m 1.0
+        -parms 10 1.0
+        -steps 10 10 100 steps
+
+RATES
+    Albite
+    -start
+    10 k = PARM(1)
+    20 ssa = PARM(2)
+    30 rate = k * ssa
+    40 moles = rate * TIME
+    50 SAVEd_MOLES = moles
+    60 SAVE moles
+    -end
+
+SELECTED_OUTPUT
+    -file albite_kinetic_pe.sel
+    -reset false
+    -time true
+    -step true
+    -pH true
+    -pe true
+    -kinetic_reactant 1
+END

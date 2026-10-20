@@ -1,0 +1,11 @@
+SOLUTION 1
+    pH 7.0
+    temp 25
+END
+USE solution 1
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+SELECTED_OUTPUT 1
+    -file results.sel
+    -molalities H2
+END

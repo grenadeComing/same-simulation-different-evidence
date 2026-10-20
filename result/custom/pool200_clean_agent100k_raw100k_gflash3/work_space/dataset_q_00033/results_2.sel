@@ -1,0 +1,4 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	        temp	si_aragonite	si_aragonite	
+           1	      i_soln	           1	         -99	         -99	         -99	           7	           4	      20.000	   -999.9990	   -999.9990	
+           1	      i_soln	           2	         -99	         -99	         -99	           7	           4	      20.000	   -999.9990	   -999.9990	
+           1	       react	           1	         -99	           0	           1	     5.14112	     5.19486	     160.000	     -0.8194	     -0.8194	

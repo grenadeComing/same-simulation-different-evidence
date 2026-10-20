@@ -1,0 +1,26 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 10 mmol/kgw
+    Ba 5 mmol/kgw
+    Cl 1e-1 charge # Sufficient Cl to balance pH 2
+END
+
+RATES
+Calcite_custom
+-start
+10 k = PARM(1)
+20 ssa = PARM(2)
+30 rate = k * ssa * (1 - SR("Calcite"))
+40 moles = rate * TIME
+50 SAVE moles
+-end
+
+KINETICS 1
+Calcite_custom
+    -m 1.0
+    -m0 1.0
+    -parms 10 1.0
+    -steps 1000 in 100
+END

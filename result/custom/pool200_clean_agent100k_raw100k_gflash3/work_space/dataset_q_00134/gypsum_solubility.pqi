@@ -1,0 +1,7 @@
+SOLUTION 1
+    units mol/L
+    pH 7.0
+    temp 25
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+END

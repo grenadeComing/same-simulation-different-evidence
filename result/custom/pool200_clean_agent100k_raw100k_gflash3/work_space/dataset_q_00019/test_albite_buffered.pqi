@@ -1,0 +1,29 @@
+
+PHASES
+Fix_H+
+    H+ = H+
+    log_k 0
+SOLUTION 1
+    temp 200
+    pH 2
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+    Cl 20 charge
+EQUILIBRIUM_PHASES 1
+    Fix_H+ -2.0 HCl 10
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+KINETICS 1
+    Albite
+    -m0 1.0
+    -parms 1.0 10
+    -steps 1000 in 100
+SELECTED_OUTPUT
+    -file albite_buffered.sel
+    -reset false
+    -step
+    -totals Si
+END

@@ -1,0 +1,17 @@
+SOLUTION 1 River Water
+    pH      6.0
+    Cl      10
+    units   mg/l
+    Na      1 charge
+SOLUTION 2 Seawater
+    pH      8.1
+    Cl      19000
+    units   mg/l
+    Na      1 charge
+MIX 1
+    1       0.7
+    2       0.3
+EQUILIBRIUM_PHASES 1
+    FIX_PH 6.63  HCl  -10
+    # This is a trick to fix pH in PHREEQC, but I'll just use a simpler way.
+END

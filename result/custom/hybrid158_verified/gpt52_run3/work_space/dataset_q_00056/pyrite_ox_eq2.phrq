@@ -1,0 +1,19 @@
+TITLE Pyrite oxidation equilibrium; pH 7; fixed O2(g) logP=-0.7; allow goethite gypsum
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    units mol/kgw
+    -water 1
+
+# redox controlled by O2(g) at fixed partial pressure
+EQUILIBRIUM_PHASES 1
+    O2(g)     -0.7  10
+    Pyrite     0    0.1
+    Goethite   0    0
+    Gypsum     0    0
+
+SELECTED_OUTPUT
+    -reset false
+    -pH true
+    -pe true
+END

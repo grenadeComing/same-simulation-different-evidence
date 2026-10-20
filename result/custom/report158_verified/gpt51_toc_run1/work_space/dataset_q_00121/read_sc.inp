@@ -1,0 +1,12 @@
+RUN_CELLS
+    -cells 1
+    -start_time 5
+    -end_time 5
+
+SELECTED_OUTPUT
+    -file sc.sel
+    -reset false
+    -solution 1
+    -step true
+    -si true
+END

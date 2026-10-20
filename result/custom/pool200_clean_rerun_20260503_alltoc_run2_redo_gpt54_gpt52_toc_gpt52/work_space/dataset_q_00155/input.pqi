@@ -1,0 +1,44 @@
+TITLE 1D transport with cation exchange
+
+SOLUTION 1-10
+    pH 7.0 charge
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 0
+    pH 7.0 charge
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+
+# Equilibrate exchange with initial solution in each cell
+USE solution 1
+EQUILIBRATE 1-10 with_exchange 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -print_cells 1
+    -print_frequency 1
+    -punch_cells 1
+    -punch_frequency 1
+    -lengths 10*1
+    -dispersivities 0
+
+SELECTED_OUTPUT
+    -file selected.csv
+    -reset false
+    -high_precision true
+
+USER_PUNCH
+    -headings step cell Ca_m
+10 PUNCH STEP_NO, CELL_NO, TOT("Ca")
+
+END

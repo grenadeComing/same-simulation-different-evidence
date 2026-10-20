@@ -1,0 +1,16 @@
+SOLUTION 1 Pure water
+    temp 25
+    pH 7 charge
+    pe 4
+    units mol/kgw
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+
+SELECTED_OUTPUT
+    -file gypsum_oh.sel
+    -reset false
+USER_PUNCH
+    -headings a_OH
+10 PUNCH ACT("OH-")

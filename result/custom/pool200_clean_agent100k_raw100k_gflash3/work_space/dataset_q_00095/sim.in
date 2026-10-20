@@ -1,0 +1,14 @@
+TITLE Simulate equilibrium with Chrysotile and Talc at 150C
+SOLUTION 1
+    temp 150
+    pH 7.0
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT 1
+    -file output.sel
+    -reset false
+    -molalities MgOH+
+    -pH true
+END

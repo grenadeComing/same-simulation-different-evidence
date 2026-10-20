@@ -1,0 +1,25 @@
+SOLUTION 1 Pure water
+    pH 7.0 charge
+    temp 25
+    units mol/kgw
+    -water 1
+REACTION 1
+    H2SO4 1
+    0.001
+REACTION 2
+    H2SO4 1
+    0.005
+REACTION 3
+    H2SO4 1
+    0.01
+REACTION 4
+    H2SO4 1
+    0.05
+REACTION 5
+    H2SO4 1
+    0.1
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -pH true
+END

@@ -1,0 +1,69 @@
+{
+  "index": 14,
+  "row_index": 13,
+  "task_type": "mcq",
+  "truth": "D",
+  "prediction": "A",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": false,
+  "item_id": 14,
+  "condition": "full",
+  "status": "submitted",
+  "calls": 9,
+  "estimated_cost_usd": 0.95301675,
+  "input_tokens": 542517,
+  "output_tokens": 258,
+  "read_paths": [
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "1",
+      "end_line": "220"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "1050",
+      "end_line": "1085"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "920",
+      "end_line": "950"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "780",
+      "end_line": "820"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "570",
+      "end_line": "620"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "640",
+      "end_line": "700"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "1120",
+      "end_line": "1160"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "1230",
+      "end_line": "1270"
+    }
+  ],
+  "checkpoint_fingerprint": "f3ccbde34ae7d898dbf63402c33f19a2d7009b5453130879637561faf0f004df",
+  "remaining_steps": 18
+}

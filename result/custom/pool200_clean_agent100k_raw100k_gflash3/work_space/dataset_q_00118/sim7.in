@@ -1,0 +1,15 @@
+SOLUTION 1
+    temp 25
+    pH 7.0
+    pe 4.0
+REACTION 1
+    H2SO4 1.0
+    0.1
+KNOBS
+    -tolerance 1e-15
+SELECTED_OUTPUT
+    -file reaction_pe_7.sel
+    -reset false
+    -step
+    -pe
+END

@@ -1,0 +1,34 @@
+TITLE 1D transport: Na/Ca exchange; report a(Na+) in cell 3 at shift 10
+SOLUTION 0  Infilling
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10 Initial
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate with solution 1
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+USER_PUNCH
+    -head shift cell a_Na
+10 PUNCH SIM_NO, CELL_NO, ACT("Na+")
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1
+    -dispersivities 0
+    -diffusion_coefficient 0
+    -punch_cells 3
+    -punch_frequency 1
+END

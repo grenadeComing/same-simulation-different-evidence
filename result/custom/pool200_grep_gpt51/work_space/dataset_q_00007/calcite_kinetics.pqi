@@ -1,0 +1,35 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn(2)     1
+    -water    1
+
+KINETICS 1
+    Calcite_kin
+        -formula  CaCO3 1
+        -m        1
+        -m0       1
+        -parms    0.001 10.0
+        -steps    10 100
+
+RATES
+Calcite_kin
+    -start
+    10 k = PARM(1)
+    20 ssa = PARM(2)
+    30 rate = k * ssa
+    40 moles = rate * TIME
+    50 SAVE moles
+    -end
+
+SELECTED_OUTPUT
+    -file calcite_kinetics.sel
+    -reset false
+    -time true
+    -step true
+    -si Aragonite
+
+END

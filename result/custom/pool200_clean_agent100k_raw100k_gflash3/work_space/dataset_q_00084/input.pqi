@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    pe 4
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    Fix_pH -7.0 HCl 10
+    Fix_pe -4.0 O2(g) 10
+    CH4(g) -0.3979 10
+    CO2(g) -0.3979 10
+    NH3(g) -0.6990 10
+PHASES
+Fix_pH
+    H+ = H+
+    log_k 0
+Fix_pe
+    e- = e-
+    log_k 0
+END

@@ -1,0 +1,1 @@
+<<< None of the listed options matches the simulated pe value (-2.15147). The correct pe from PHREEQC for pure water at pH 7 and 150°C equilibrated with 10 moles of chrysotile and 10 moles of talc is approximately -2.151, so none of A–D is correct. >>>

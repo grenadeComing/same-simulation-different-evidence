@@ -1,0 +1,49 @@
+TITLE Kinetic dissolution of Calcite in hydrothermal solution at 100C
+# Custom rate law: rate = k * A * (1 - SR(Calcite))
+
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1.0
+
+RATES
+Calcite
+-start
+10  si_cc = SI("Calcite")
+20  IF (M <= 0) THEN GOTO 200
+30  IF (si_cc >= 0) THEN GOTO 200
+40  area = PARM(1)
+50  k = PARM(2)
+60  sr = 10^si_cc
+70  rate = k * area * (1 - sr)
+80  moles = rate * TIME
+90  IF (moles > M) THEN moles = M
+100 IF (moles < 0) THEN moles = 0
+110 SAVE moles
+120 GOTO 210
+200 SAVE 0
+210 END
+-end
+
+KINETICS 1
+Calcite
+    -m0    1.0
+    -m     1.0
+    -parms 10.0  0.001
+    -step  1000 in 100
+    -tol   1e-8
+
+SELECTED_OUTPUT
+    -file   calcite_kinetic8.sel
+    -reset  false
+    -step   true
+    -time   true
+    -pH     true
+    -pe     true
+    -si     Calcite
+    -totals Ca C(4) Mn
+
+END

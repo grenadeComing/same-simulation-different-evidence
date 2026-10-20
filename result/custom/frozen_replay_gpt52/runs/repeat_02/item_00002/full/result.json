@@ -1,0 +1,57 @@
+{
+  "index": 2,
+  "row_index": 1,
+  "task_type": "mcq",
+  "truth": "C",
+  "prediction": "B",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": false,
+  "item_id": 2,
+  "condition": "full",
+  "status": "submitted",
+  "calls": 9,
+  "estimated_cost_usd": 0.31574900000000006,
+  "input_tokens": 178524,
+  "output_tokens": 238,
+  "read_paths": [
+    {
+      "path": "calcite_kin.sel",
+      "ok": true,
+      "start_line": "1",
+      "end_line": "120"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "1",
+      "end_line": "60"
+    },
+    {
+      "path": "phreeqc.log",
+      "ok": true,
+      "start_line": "1",
+      "end_line": "40"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "60",
+      "end_line": "140"
+    },
+    {
+      "path": "calcite_kin.sel",
+      "ok": true,
+      "start_line": "1",
+      "end_line": "5"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "140",
+      "end_line": "220"
+    }
+  ],
+  "checkpoint_fingerprint": "dd42933dc9f0cc55dedcaf43c4a8a9e06e8c85f764d6c0f71ac9ec33227ea9f3",
+  "remaining_steps": 14
+}

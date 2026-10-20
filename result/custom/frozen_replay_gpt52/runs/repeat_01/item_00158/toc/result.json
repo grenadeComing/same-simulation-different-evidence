@@ -1,0 +1,27 @@
+{
+  "index": 158,
+  "row_index": 157,
+  "task_type": "mcq",
+  "truth": "D",
+  "prediction": "D",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": true,
+  "item_id": 158,
+  "condition": "toc",
+  "status": "submitted",
+  "calls": 2,
+  "estimated_cost_usd": 0.03336375,
+  "input_tokens": 18593,
+  "output_tokens": 59,
+  "read_paths": [
+    {
+      "path": "selected_output_1.sel",
+      "ok": true,
+      "start_line": "1",
+      "end_line": "200"
+    }
+  ],
+  "checkpoint_fingerprint": "c9cfac0c77fc91fd10f0089689462fd937b701792fb13ccd69dfcc685302ec31",
+  "remaining_steps": 20
+}

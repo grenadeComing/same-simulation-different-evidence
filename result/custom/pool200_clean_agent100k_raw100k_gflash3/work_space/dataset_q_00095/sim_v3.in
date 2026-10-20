@@ -1,0 +1,13 @@
+TITLE Variation 3 - Pure Water
+SOLUTION 1
+    temp 150
+    pH 7.0 charge
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+SELECTED_OUTPUT 1
+    -file output_v3.sel
+    -reset false
+    -molalities MgOH+
+    -pH true
+END

@@ -1,0 +1,29 @@
+TITLE Mix 50 mmol/kg DIC with 50 mmol/kg Ca, 1:1; heat 20C to 200C in 10 steps; allow calcite ppt/diss
+
+SOLUTION 1 DIC solution
+    temp 20
+    pH 7 charge
+    units mmol/kgw
+    C(4) 50
+
+SOLUTION 2 Ca solution
+    temp 20
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+
+MIX 1
+    1 0.5
+    2 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+REACTION_TEMPERATURE 1
+    20 200 in 10 steps
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -si Calcite
+END

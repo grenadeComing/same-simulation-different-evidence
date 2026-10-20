@@ -1,0 +1,2 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	   logK_calc	   logK_arag	
+           1	      i_soln	           1	         -99	         -99	         -99	           7	           4	 -9.6128e+00	 -9.1659e+00	

@@ -1,0 +1,8 @@
+SOLUTION 1
+SELECTED_OUTPUT
+    -file species.sel
+    -reset false
+USER_PUNCH
+    10 PUNCH LK_SPECIES("HCl")
+    20 PUNCH LG(GAMMA("HCl"))
+END

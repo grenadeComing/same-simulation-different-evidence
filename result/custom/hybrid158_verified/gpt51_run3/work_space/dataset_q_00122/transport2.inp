@@ -1,0 +1,52 @@
+SOLUTION 0-10
+    pH 7 charge
+    Ca 1
+    Cl 2
+
+SOLUTION 11
+    pH 7 charge
+    Na 1
+    Cl 1
+
+EXCHANGE_MASTER_SPECIES
+    X  X-
+
+EXCHANGE_SPECIES
+    X- + Na+ = NaX
+        log_k 0
+    2X- + Ca+2 = CaX2
+        log_k 0
+
+EXCHANGE 1-10
+    X 0.001
+
+TRANSPORT
+    -cells                 10
+    -shifts                10
+    -time_step             1
+    -length                1
+    -punch_cells           1
+    -punch_frequency       1
+    -print_cells           1
+    -print_frequency       1
+    -flow_direction        forward
+    -boundary_conditions   flux flux
+    -dispersivities        0
+    -correct_disp          false
+    -initial_time          0
+    -warnings              false
+
+BOUNDARY_CONDITIONS
+    0   0   0
+
+PRINT
+    -reset false
+    -selected_out true
+
+SELECTED_OUTPUT
+    -file transport2.sel
+    -reset false
+    -time true
+    -distance true
+    -totals Na
+    -high_precision true

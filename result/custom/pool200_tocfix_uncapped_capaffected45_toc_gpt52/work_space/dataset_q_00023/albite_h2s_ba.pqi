@@ -1,0 +1,32 @@
+TITLE Albite kinetics + fixed P H2S(g), check Ba at steps 10 and 70
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    -volume 1
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+        -tol 1e-12
+    -steps 10 60 290 640
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+    -high_precision true
+    -time true
+    -totals Ba
+
+END

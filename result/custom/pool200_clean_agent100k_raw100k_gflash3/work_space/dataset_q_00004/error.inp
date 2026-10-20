@@ -1,0 +1,77 @@
+SOLUTION_RAW                 1 
+  -temp                      100
+  -pressure                  1
+  -potential                 0
+  -total_h                   111.01246466962
+  -total_o                   55.507237421758
+  -cb                        0.0019898261008757
+  -density                   0.9584240864912
+  -viscosity                 0.28191226084762
+  -viscos_0                  0.28158071299639
+  -totals
+    C(4)                     0.0005
+    H(0)                     7.792673815397e-22
+    Mn(2)                    0.001
+    Mn(3)                    2.5380490232916e-21
+  -pH                        5
+  -pe                        4
+  -mu                        0.0020123516891883
+  -ah2o                      0.99997434287702
+  -mass_water                1
+  -soln_vol                  1.0434601141405
+  -total_alkalinity          1.0173899124301e-05
+  -activities
+    C(4)                     -9.9008718513878
+    E                        -4
+    H(0)                     -21.40914226251
+    Mn(2)                    -3.0993077046589
+    Mn(3)                    -20.80835806104
+    O(0)                     -30.222270401878
+  -gammas
+KINETICS_RAW                 1 
+  # KINETICS_MODIFY candidate identifiers #
+  -step_divide               1
+  -rk                        4
+  -bad_step_max              500
+  -use_cvode                 0
+  -cvode_steps               100
+  -cvode_order               5
+  -component                 Calcite_custom
+      # KINETICS_MODIFY candidate identifiers #
+      -tol                   1e-08
+      -m                     1
+      -m0                    1
+      -namecoef
+        CaCO3                1
+      -d_params
+        
+      # KineticsComp workspace variables #
+      -moles                 0
+      -initial_moles         0
+  -equal_increments           1
+  -count                     100
+  -steps             
+    1000 
+  # KINETICS workspace variables #
+  -totals                    
+EQUILIBRIUM_PHASES_RAW       1 
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 Rhodochrosite
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0
+      -moles                 0
+      -force_equality        1
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    C                        1
+    Mn                       1
+    O                        3
+  # PPassemblage workspace variables #
+  -assemblage_totals

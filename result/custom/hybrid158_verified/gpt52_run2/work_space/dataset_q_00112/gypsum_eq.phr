@@ -1,0 +1,14 @@
+SOLUTION 1 Pure water pH 7
+    pH 7 charge
+    temp 25
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+SELECTED_OUTPUT
+    -file gypsum_sel.txt
+    -reset false
+USER_PUNCH
+    -headings m_gypsum
+10 PUNCH EQUI("Gypsum")
+END

@@ -1,0 +1,21 @@
+SOLUTION 1
+    temp 150
+    pH   7 charge
+    pe   4
+    N 1e-20
+    C 1e-20
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g)  0.4 10
+    CO2(g)  0.4 10
+    NH3(g)  0.2 5
+
+SELECTED_OUTPUT
+    -file n_sel.txt
+    -reset false
+    -molalities NH4+ NH3
+END

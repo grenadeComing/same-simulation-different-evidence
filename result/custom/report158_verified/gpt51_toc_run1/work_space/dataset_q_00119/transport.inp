@@ -1,0 +1,44 @@
+TITLE Transport problem pe question
+
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+    units mmol/kgw
+
+SOLUTION 1
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+    units mmol/kgw
+
+SOLUTION 2-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+    units mmol/kgw
+
+EXCHANGE 1-10
+    X 0.001
+
+TRANSPORT
+    -cells               10
+    -shifts              10
+    -lengths             10*1.0
+    -time_step           1.0
+    -flow_direction      forward
+    -boundary_conditions  flux flux
+    -print_cells         10
+    -print_frequency     10
+    -punch_cells         10
+    -punch_frequency     10
+    -initial_time        0
+
+SELECTED_OUTPUT
+    -file transport.sel
+    -reset false
+    -solution true
+    -totals Na Ca Cl
+    -pH true
+    -pe true
+END

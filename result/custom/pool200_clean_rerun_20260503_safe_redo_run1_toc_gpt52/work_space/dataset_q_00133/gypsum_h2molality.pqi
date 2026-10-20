@@ -1,0 +1,16 @@
+SOLUTION 1 Pure water
+    temp 25
+    pH   7.0 charge
+    pe   4
+    units mol/kgw
+    -water 1
+
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+
+SELECTED_OUTPUT
+    -file gypsum_h2molality.sel
+    -reset false
+    -molalities H2
+
+END

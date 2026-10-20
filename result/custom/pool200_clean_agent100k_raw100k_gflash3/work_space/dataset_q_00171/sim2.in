@@ -1,0 +1,28 @@
+SOLUTION 1
+    pH 7
+    temp 25
+    units mol/kgw
+    Ca 0.01
+    Sr 0.01
+    Alkalinity 0.04
+END
+
+SOLID_SOLUTIONS 1
+    Ca_Sr_carbonate
+        -comp1 Calcite 0.0
+        -comp2 Strontianite 0.0
+END
+
+EQUILIBRIUM_PHASES 1
+    Fix_pH -7.0 HCl -10.0
+    Phase_CO2(g) -3.5  1.0 # This was just a thought, but let's just use pH fix
+PHASES
+Fix_pH
+    H+ = H+
+    log_k 0.0
+END
+
+USE solution 1
+USE solid_solution 1
+USE equilibrium_phases 1
+END

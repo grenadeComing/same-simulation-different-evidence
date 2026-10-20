@@ -1,0 +1,12 @@
+SOLUTION 1 Pure water pH 7 150C
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+END
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -si true
+    -description true
+    -species true
+END

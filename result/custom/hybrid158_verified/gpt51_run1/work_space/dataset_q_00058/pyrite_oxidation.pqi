@@ -1,0 +1,25 @@
+SOLUTION 1 Pure water with neutral pH
+    temp      25
+    pH        7.0 charge
+    units     mol/kgw
+    pe        4
+    redox     pe
+    -water    1
+
+EQUILIBRIUM_PHASES 1
+    O2(g)   -0.7   10
+    Pyrite  0.0    0.1
+    Goethite  0.0  0
+    Gypsum    0.0  0
+
+SELECTED_OUTPUT
+    -reset   false
+    -alkalinity  true
+    -pH          true
+    -totals      Fe S O
+    -si          Goethite Gypsum
+    -equilibrium_phases true
+    -molalities Fe+2 Fe+3 SO4-2
+    -high_precision true
+
+END

@@ -1,0 +1,27 @@
+SOLUTION 1
+    temp 20
+    pH 7 charge
+    C(4) 50 mmol/kgw
+
+SOLUTION 2
+    temp 20
+    pH 7 charge
+    Ca 50 mmol/kgw
+
+MIX 1
+    1 1
+    2 1
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+REACTION_TEMPERATURE 1
+    20 200 in 10
+
+SELECTED_OUTPUT
+    -reset false
+    -temperature true
+    -si Calcite
+    -totals Ca C(4)
+    -molalities Ca+2 CO3-2 HCO3-
+    -equilibrium_phases Calcite

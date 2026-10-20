@@ -1,0 +1,17 @@
+SOLUTION 1
+    units mol/kgw
+    temp 25
+    pH 7.0
+    water 1
+EQUILIBRIUM_PHASES 1
+    Gypsum 0.0 10.0
+USER_PUNCH
+    -headings ionic_strength Ca_mol SO4_mol OH_mol H_mol HSO4_mol
+    -start
+    10 PUNCH MU
+    20 PUNCH MOL("Ca+2"), MOL("SO4-2"), MOL("OH-"), MOL("H+"), MOL("HSO4-")
+    -end
+SELECTED_OUTPUT
+    -file species_molalities.txt
+    -user_punch true
+END

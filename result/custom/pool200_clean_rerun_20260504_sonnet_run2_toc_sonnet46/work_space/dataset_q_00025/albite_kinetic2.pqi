@@ -1,0 +1,37 @@
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4
+    redox     pe
+    units     mmol/kgw
+    Fe(2)     4.0
+    Fe(3)     4.0
+    water     1.0 # kg
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5.0
+    -volume   1.0
+    -temperature 200
+    H2S(g)    0.699   # log(5 atm)
+
+KINETICS 1
+Albite
+    -m0   1.0
+    -m    1.0
+    -parms 1.0  10.0
+    -step 1000 in 100
+    -tol  1e-8
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT 1
+    -file   albite_kinetic2.sel
+    -reset  false
+    -step
+    -time
+    -pH
+    -pe
+    -si     Goethite Albite Hematite Pyrite
+
+END

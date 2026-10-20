@@ -1,0 +1,10 @@
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    C(-4) 5.0
+SELECTED_OUTPUT 1
+    -file density.txt
+USER_PUNCH 1
+    -head density
+    10 PUNCH RHO
+END

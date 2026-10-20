@@ -1,0 +1,19 @@
+SOLUTION 1
+    pH 7.0
+    pe 4 charge
+    temp 25.0
+EQUILIBRIUM_PHASES 1
+    Pyrite 0.0 0.1
+    O2(g)  -0.7
+    Goethite 0.0 0.0
+    Gypsum 0.0 0.0
+USE solution 1
+REACTION_TEMPERATURE 1
+    25.0
+REACTION 1
+    Pyrite 0.1 moles
+USE solution 1
+SELECTED_OUTPUT
+    -file pyrite_selout2.txt
+    -si Hematite
+END

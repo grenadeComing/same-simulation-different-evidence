@@ -1,0 +1,30 @@
+TITLE Calcite kinetic dissolution in acidic solution with Cu and Ba
+
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4.0
+    units     mmol/kgw
+    Cu        10.0
+    Ba        5.0
+
+KINETICS 1
+Calcite
+    -tol   1e-8
+    -m0    1.0
+    -m     1.0
+    -parms 1.0   0.6
+    -step  1000 in 100
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file   calcite_kinetics.out
+    -reset  false
+    -step   true
+    -time   true
+    -pH     true
+    -pe     true
+    -kinetic_reactants  Calcite
+
+END

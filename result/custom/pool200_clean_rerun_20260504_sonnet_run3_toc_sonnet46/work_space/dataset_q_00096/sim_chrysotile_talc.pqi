@@ -1,0 +1,21 @@
+TITLE Pure water at pH 7, 150C, equilibrium with Chrysotile and Talc
+
+SOLUTION 1
+    temp      150
+    pH        7
+    pe        4
+    units     mol/kgw
+    water     1  # kg
+
+EQUILIBRIUM_PHASES 1
+    Chrysotile   0   10
+    Talc         0   10
+
+SELECTED_OUTPUT
+    -file     sim_chrysotile_talc.out
+    -reset    false
+    -pH       true
+    -temp     true
+    -totals   Mg Si
+
+END

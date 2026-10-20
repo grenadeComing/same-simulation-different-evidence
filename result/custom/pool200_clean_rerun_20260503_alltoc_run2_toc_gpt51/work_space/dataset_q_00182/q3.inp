@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    C(-4) 5.0
+END
+
+SELECTED_OUTPUT
+    -reset true
+    -solution 1
+    -temperature
+END
+
+USER_PUNCH
+    -headings viscosity
+10 PUNCH VISCOUS
+END

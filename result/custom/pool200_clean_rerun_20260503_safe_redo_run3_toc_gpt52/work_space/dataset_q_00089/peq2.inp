@@ -1,0 +1,16 @@
+TITLE pe from water redox couple (O(-2)/O(0)) at 150C with chrysotile+talc
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    units mol/kgw
+    -water 1
+    redox pe
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+SELECTED_OUTPUT
+    -file peq2.sel
+    -reset false
+    -pH true
+    -pe true
+END

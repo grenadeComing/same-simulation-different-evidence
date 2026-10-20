@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 25
+    pH 7
+    Ca 0.01 charge
+    Sr 0.01
+    Alkalinity 0.04
+SOLID_SOLUTIONS 1
+    Ca_Sr_carbonate
+        -comp1 Calcite 1e-12
+        -comp2 Strontianite 1e-12
+SELECTED_OUTPUT
+    -file ss_sel.out
+    -solid_solutions true
+END

@@ -1,0 +1,17 @@
+TITLE Mix DIC and Ca solutions, heat to 200 C with calcite precip/dissolve
+SOLUTION 1
+    temp 20
+    pH 7 charge
+    C(4) 50 mmol/kgw
+SOLUTION 2
+    temp 20
+    pH 7 charge
+    Ca 50 mmol/kgw
+MIX 1
+    1 1
+    2 1
+EQUILIBRIUM_PHASES 1
+    Calcite 0 10
+REACTION_TEMPERATURE 1
+    20 40 60 80 100 120 140 160 180 200
+END

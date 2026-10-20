@@ -1,0 +1,30 @@
+TITLE 1D cation exchange transport
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+SOLUTION 1-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+EXCHANGE 1-10
+    X- 0.001
+EQUILIBRIUM_PHASES 1-10
+    H2O(g) 0 0
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+PRINT
+    -reset false
+    -status false
+SELECTED_OUTPUT
+    -file transport.sel
+    -reset false
+USER_PUNCH
+    -head Step SC_1
+    10 PUNCH SIM_NO, SC(1)
+END

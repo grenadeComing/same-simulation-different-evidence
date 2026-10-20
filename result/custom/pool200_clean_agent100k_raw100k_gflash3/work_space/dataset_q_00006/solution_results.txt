@@ -1,0 +1,2 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	           C	      m_Ca+2	k_Calcite_diss	dk_Calcite_diss	
+           1	      i_soln	           1	         -99	         -99	         -99	           5	           4	  5.0000e-04	  0.0000e+00	  0.0000e+00	  0.0000e+00	

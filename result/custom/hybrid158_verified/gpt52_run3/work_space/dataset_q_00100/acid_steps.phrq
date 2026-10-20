@@ -1,0 +1,22 @@
+TITLE H2SO4 additions to pure water (pH 7)
+SOLUTION 1 Pure water
+    temp 25
+    pH   7 charge
+    pe   4
+    units mol/kgw
+    -water 1
+
+REACTION 1
+    H2SO4 1
+    0.001 0.005 0.01 0.05 0.1
+
+SELECTED_OUTPUT
+    -file acid_steps.sel
+    -reset false
+    -pH true
+    -totals S(6)
+
+USER_PUNCH
+    -headings step_mol_H2SO4
+    10 PUNCH RXN
+END

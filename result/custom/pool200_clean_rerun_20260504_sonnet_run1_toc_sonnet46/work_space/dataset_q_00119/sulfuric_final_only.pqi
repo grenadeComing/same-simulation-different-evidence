@@ -1,0 +1,18 @@
+TITLE Add sulfuric acid - final step only (0.1 mol) to pure water at pH 7.0
+
+SOLUTION 1
+    pH 7.0
+    temp 25
+    units mol/L
+
+REACTION 1
+    H2SO4  1
+    0.1 moles
+
+SELECTED_OUTPUT
+    -file sulfuric_final.sel
+    -reset false
+    -pH true
+    -si H2(g)
+
+END

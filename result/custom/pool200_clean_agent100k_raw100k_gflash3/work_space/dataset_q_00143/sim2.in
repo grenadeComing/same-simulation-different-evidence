@@ -1,0 +1,13 @@
+SOLUTION 1
+    temp 25
+    pH 7.0 CO2(g) -3.4
+    units mol/L
+SELECTED_OUTPUT
+    -file output2.sel
+    -reset false
+USER_PUNCH
+    -headings log_IAP SI_CO2 log_K
+    10 PUNCH SI("CO2(g)") + LK_PHASE("CO2(g)")
+    20 PUNCH SI("CO2(g)")
+    30 PUNCH LK_PHASE("CO2(g)")
+END

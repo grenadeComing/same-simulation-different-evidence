@@ -1,0 +1,8 @@
+SOLUTION 1
+    pH 7.0
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+USER_PRINT
+    10 PRINT "SC: ", SC
+END

@@ -1,0 +1,28 @@
+SOLUTION 1
+    temp 100
+    pH   5 charge
+    units mmol/kgw
+    Ba   100
+    water 1
+
+EQUILIBRIUM_PHASES 1
+    Talc            0 10
+    Rhodochrosite   0 10
+    Sepiolite       0 10
+    Sepiolite(d)    0 10
+    Pb(OH)2         0 10
+
+USER_PUNCH
+    -headings C4_species_count
+10 count = 0
+20 IF MOL("CO2")    > 0 THEN count = count + 1
+30 IF MOL("HCO3-")  > 0 THEN count = count + 1
+40 IF MOL("CO3-2")  > 0 THEN count = count + 1
+50 IF MOL("H2CO3")  > 0 THEN count = count + 1
+60 PUNCH count
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -user_punch true
+END

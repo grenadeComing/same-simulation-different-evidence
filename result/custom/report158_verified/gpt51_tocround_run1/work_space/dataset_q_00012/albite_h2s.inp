@@ -1,0 +1,41 @@
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    units mmol/kgw
+    Fe(2) 4
+    Fe(3) 4
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    -temperature 200
+    H2S(g) 5
+
+KINETICS 1
+    Albite_kin
+        -m0 1.0
+        -parms 1.0 10.0
+        -steps 10 100
+
+RATES Albite_kin
+-start
+10  area = PARM(1)
+20  k = PARM(2)
+30  m = MOL("Albite")
+40  if m <= 0 then goto 90
+50  rate = k * area
+60  moles = rate * TIME
+70  SAVE moles
+90  END
+-end
+
+INCREMENTAL_REACTIONS true
+
+SELECTED_OUTPUT
+    -file albite_h2s.sel
+    -reset false
+    -time true
+    -step true
+    -pe true
+END

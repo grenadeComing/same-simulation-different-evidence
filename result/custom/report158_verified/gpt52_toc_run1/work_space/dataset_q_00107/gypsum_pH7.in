@@ -1,0 +1,16 @@
+SOLUTION 1 Pure_water_pH7
+    temp 25
+    pH 7 charge
+    pe 4
+    redox pe
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    Gypsum 0 10
+SELECTED_OUTPUT
+    -file gypsum_pH7.sel
+    -reset false
+USER_PUNCH
+    -headings pH
+10 PUNCH -LA("H+")*-1
+END

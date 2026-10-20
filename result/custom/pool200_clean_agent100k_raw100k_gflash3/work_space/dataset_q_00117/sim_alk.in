@@ -1,0 +1,13 @@
+# Case with initial alkalinity
+SOLUTION 1
+    pH 7.0
+    units mol/kgw
+    temp 25
+    Alkalinity 1.0e-3 # Some arbitrary alkalinity
+REACTION 1
+    H2SO4 1.0
+    0.1 moles
+SELECTED_OUTPUT
+    -file output_alk.sel
+    -mu
+END

@@ -1,0 +1,35 @@
+TITLE Albite kinetic dissolution with fixed P H2S(g)
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    -volume 1
+    H2S(g) 5
+
+RATES
+Albite_kin
+-start
+10 rate = PARM(1)*PARM(2)
+20 m = rate*TIME
+30 SAVE m
+-end
+
+KINETICS 1
+    Albite
+        -m0 1
+        -parms 10 1.0
+        -formula Albite 1
+        -steps 100*10
+
+SELECTED_OUTPUT
+    -reset false
+USER_PUNCH
+    -headings step pe
+10 PUNCH STEP_NO, -LA("e-")
+END

@@ -1,0 +1,9 @@
+SOLUTION 1
+    pH 7
+    temp 25
+    Ca 1.0
+    Cl 2.0
+END
+SELECTED_OUTPUT
+    -file species.sel
+    -molalities HCl

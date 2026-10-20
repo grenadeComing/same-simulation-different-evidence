@@ -1,0 +1,31 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C         0.5
+    Mn        1
+    Cl        1.5 charge
+    -water    1
+
+RATES
+    Calcite_custom
+    -start
+    10 rate = 3.0e-8 * (1 - SR("Calcite"))
+    20 moles = rate * TIME
+    30 SAVE moles
+    -end
+
+KINETICS 1
+    Calcite_custom
+    -formula  CaCO3 1
+    -m        1
+    -step     1000 in 100
+
+SELECTED_OUTPUT
+    -file                 results_custom.txt
+    -step
+    -time
+    -totals               C
+
+END

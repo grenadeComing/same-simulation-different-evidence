@@ -1,0 +1,32 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X- 0.001
+    -equilibrate 1
+
+SELECTED_OUTPUT
+    -file sel.out
+    -reset false
+    -step true
+    -totals Ca Na Cl
+    -molalities Ca+2 Na+ Cl-
+    -equilibrium_phases CaX2
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1.0
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -dispersivities 0.0
+    -punch_cells 1-10
+    -punch_frequency 1
+END

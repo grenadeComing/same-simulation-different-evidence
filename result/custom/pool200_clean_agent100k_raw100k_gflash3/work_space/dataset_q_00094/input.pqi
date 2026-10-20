@@ -1,0 +1,11 @@
+SOLUTION 1
+    temp 150
+    pH 7
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+USER_PUNCH
+    -headings SI_Quartz logK_Quartz log_a_H4SiO4
+    10 PUNCH SI("Quartz"), LOGK("Quartz"), LA("H4SiO4")
+END

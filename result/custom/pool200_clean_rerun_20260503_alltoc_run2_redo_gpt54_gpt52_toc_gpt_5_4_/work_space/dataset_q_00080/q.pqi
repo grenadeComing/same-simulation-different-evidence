@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    pe 4
+    C(4) 0
+    C(-4) 0
+    N(-3) 0
+    water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CH4(g) 0 10
+    CO2(g) 0 10
+    NH3(g) 0 5
+END

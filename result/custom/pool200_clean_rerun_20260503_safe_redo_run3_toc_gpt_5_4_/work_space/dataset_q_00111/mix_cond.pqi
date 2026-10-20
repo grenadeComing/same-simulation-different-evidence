@@ -1,0 +1,25 @@
+SOLUTION 1 River water
+    temp 25
+    pH 6.0
+    Cl 10
+SOLUTION 2 Seawater
+    temp 25
+    pH 8.1
+    Cl 19000
+MIX 1
+    1 0.7
+    2 0.3
+USER_PUNCH
+    -headings SC
+    10 PUNCH SC
+SELECTED_OUTPUT
+    -file mix_cond.sel
+    -reset false
+    -simulation true
+    -state true
+    -solution true
+    -ph true
+    -ionic_strength true
+    -totals Cl
+    -user_punch true
+END

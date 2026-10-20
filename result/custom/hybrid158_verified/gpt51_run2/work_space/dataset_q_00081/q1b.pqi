@@ -1,0 +1,18 @@
+SOLUTION 1 Pure water
+    temp      150
+    pH        7 charge
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+END
+SELECTED_OUTPUT
+    -reset true
+    -high_precision true
+    -molalities MgOH+
+    -user_punch true
+USER_PUNCH
+    -headings step m_MgOH_plus
+    -start
+    10 PUNCH STEP_NO, MOL("MgOH+")
+    -end
+END

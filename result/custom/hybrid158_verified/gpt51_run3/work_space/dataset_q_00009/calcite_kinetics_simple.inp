@@ -1,0 +1,33 @@
+TITLE Calcite kinetics simplified
+
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 4
+    Cu 0.01
+    Ba 0.005
+
+KINETICS 1
+    Calcite_kin
+        -formula CaCO3 1
+        -m0 1
+        -parms 10 1.0
+        -steps 1000 in 10 steps
+
+RATES
+Calcite_kin
+    -start
+    10 k = PARM(1)
+    20 sA = PARM(2)
+    30 rate = k * sA
+    40 moles = rate * TIME
+    50 SAVE moles
+    -end
+
+SELECTED_OUTPUT
+    -file selout_simple.txt
+    -reset false
+    -high_precision true
+    -si Witherite
+
+END

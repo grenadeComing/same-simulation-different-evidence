@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 20
+    pH 7 charge
+    units mmol/kgw
+    C 50 as HCO3
+SOLUTION 2
+    temp 20
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+MIX 1
+    1 1
+    2 1
+REACTION_TEMPERATURE 1
+    20 40 60 80 100 120 140 160 180 200
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+END

@@ -1,0 +1,10 @@
+TITLE Sulfuric acid titration
+SOLUTION 1 Pure water
+    pH 7 charge
+    temp 25
+
+REACTION 1
+    H2SO4 1
+    1.001 moles
+
+END

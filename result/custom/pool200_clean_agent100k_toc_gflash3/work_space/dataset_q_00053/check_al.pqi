@@ -1,0 +1,10 @@
+SOLUTION 1
+    Al 1
+    S 1
+EQUILIBRIUM_PHASES 1
+    Fix_H+ -3.0 HCl 10.0
+PHASES
+    Fix_H+
+    H+ = H+
+    log_k 0
+END

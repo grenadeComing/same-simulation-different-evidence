@@ -1,0 +1,18 @@
+TITLE C(-4) 5 mmol/kgw, 15C, fixed gas phase P=1, CH4(g)=0
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    C(-4) 5.0
+    -water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -temperature 15
+    -pressure 1.0
+    CH4(g) 0
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+USER_PUNCH
+    -headings density
+10 PUNCH RHO
+END

@@ -1,0 +1,23 @@
+SOLUTION 1
+    units mmol/kgw
+    C(4) 50
+    pH 7 charge
+SOLUTION 2
+    units mmol/kgw
+    Ca 50
+    pH 7 charge
+MIX 1
+    1 0.5
+    2 0.5
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+REACTION_TEMPERATURE 1
+    20 200 in 10
+SELECTED_OUTPUT 1
+    -file output.sel
+    -temperature
+    -step
+USER_PUNCH 1
+    -headings rho
+    10 PUNCH RHO
+END

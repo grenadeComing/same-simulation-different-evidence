@@ -1,0 +1,32 @@
+SOLUTION 1
+    temp 25
+    pH 8.0
+    units ppm
+    Ca 50
+    Mg 12
+    Na 20
+    K 2
+    Alkalinity 150 as CaCO3
+    S(6) 40
+    Cl 15
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Gypsum 0 0
+    Halite 0 0
+REACTION 1
+    H2O -1
+    50.0 moles
+SELECTED_OUTPUT
+    -file selected.out
+    -high_precision true
+    -solution true
+    -state true
+    -pH true
+    -ionic_strength true
+    -totals Ca Mg Na K S(6) Cl C(4) Alkalinity
+    -molalities Ca+2 Mg+2 Na+ K+ SO4-2 Cl- HCO3- CO3-2 CaSO4 NaSO4- MgSO4
+    -si Calcite Gypsum Halite
+USER_PUNCH
+    -headings SC
+    10 PUNCH SC
+END

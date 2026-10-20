@@ -1,0 +1,9 @@
+SOLUTION 1 Pure water
+    pH 7.0
+EQUILIBRIUM_PHASES 1
+    Gypsum 0.0 10.0
+SELECTED_OUTPUT
+    -file gypsum_sel.out
+    -ionic_strength  true
+    -high_precision  true
+END

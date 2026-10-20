@@ -1,0 +1,47 @@
+SOLUTION 0
+    pH 7.0
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+END
+
+SOLUTION 1-10
+    pH 7.0
+    units mol/kgw
+    Ca 1.0
+    Cl 2.0
+END
+
+SOLUTION 11
+    pH 7.0
+    units mol/kgw
+    Na 1.0
+    Cl 1.0
+END
+
+EXCHANGE 1-10
+    X- 0.001
+END
+
+TRANSPORT
+    cells 10
+    shifts 10
+    length 1
+    time_step 1
+    flow_direction forward
+    boundary_conditions flux flux
+    initial_time 0
+    print_cells 1-10
+    print_frequency 10
+    punch_cells 1-10
+    punch_frequency 10
+    solution 11
+END
+
+SELECTED_OUTPUT
+    -file trans.sel
+    -reset false
+    -step true
+    -solution true
+    -alkalinity true
+END

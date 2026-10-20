@@ -1,0 +1,21 @@
+
+SOLUTION 1
+    temp 200
+    pH 2
+    Fe(2) 4 mmol/kgw
+    Fe(3) 4 mmol/kgw
+    Cl 1.0 charge
+    units mmol/kgw
+
+EQUILIBRIUM_PHASES 1
+    H2S(g) 0.69897 10.0
+    Albite 0 1.0
+
+SELECTED_OUTPUT
+    -file equilibrium_output.sel
+    -reset false
+    -ionic_strength true
+    -charge_balance true
+    -percent_error true
+
+END

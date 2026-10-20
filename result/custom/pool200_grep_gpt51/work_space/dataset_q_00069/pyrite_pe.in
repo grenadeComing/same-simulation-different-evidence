@@ -1,0 +1,19 @@
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    pe 4
+    redox pe
+
+EQUILIBRIUM_PHASES 1
+    Pyrite 0 0.1
+    Goethite 0 0
+    Gypsum 0 0
+
+GAS_PHASE 1
+    -fixed_pressure
+    -temperature 25
+    -volume 1
+    O2(g)   -0.7
+    N2(g)   0
+
+END

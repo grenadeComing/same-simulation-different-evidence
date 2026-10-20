@@ -1,0 +1,41 @@
+SOLUTION 0
+    pH 7.0
+    Ca 1.0
+    Cl 2.0 charge
+SOLUTION 1
+    pH 7.0
+    Na 1.0
+    Cl 1.0 charge
+
+EXCHANGE 1-10
+    X- 0.001
+
+SOLUTION 2-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0 charge
+
+SELECTED_OUTPUT
+    -file selout.txt
+    -reset false
+    -time true
+    -distance true
+    -step true
+    -equilibria EXCHANGE 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -dispersivities 0
+    -correct_disp     false
+    -print_cells 1-10
+    -punch_cells 1-10
+    -print_frequency 1
+    -punch_frequency 1
+    -initial_time 0
+    -warnings false
+END

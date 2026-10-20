@@ -1,0 +1,21 @@
+SOLUTION 1 Pure water pH 7, 150C
+    temp 150
+    pH   7 charge
+    units mol/kgw
+    water 1
+
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc       0 10
+
+SELECTED_OUTPUT
+    -file si_sel.txt
+    -reset false
+USER_PUNCH
+    -headings species name molality
+    10 PUNCH SPECIES_COUNT
+    20 FOR i = 1 TO SPECIES_COUNT
+    30   s$ = SPECIES_NAME$(i)
+    40   IF (INSTR(s$, "Si") > 0) THEN PUNCH s$, SPECIES_MOLALITY(i)
+    50 NEXT i
+END

@@ -1,0 +1,44 @@
+TITLE 1D transport with exchange, 10 cells, 10 shifts; query a_Na+ in solution 3 at step 10
+
+SOLUTION 1  Initial solution (cells)
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 0  Influent solution
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+COPY solution 1 2-10
+
+EXCHANGE 1-10
+    equilibrate 1
+    X 0.001
+
+END
+RUN_CELLS
+    -cells 1-10
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -lengths 1
+    -dispersivities 0
+    -diffusion_coefficient 0
+    -punch_cells 3
+
+SELECTED_OUTPUT
+    -file sel.csv
+    -reset false
+    -high_precision true
+    -time true
+    -step true
+    -solution true
+
+USER_PUNCH
+    -headings a_Na
+    10 PUNCH ACT("Na+")

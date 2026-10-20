@@ -1,0 +1,1190 @@
+   Input file: /workspace/transport.pqi
+  Output file: /workspace/result.out
+Database file: /database/phreeqc.dat
+
+------------------
+Reading data base.
+------------------
+
+	SOLUTION_MASTER_SPECIES
+	SOLUTION_SPECIES
+	PHASES
+	EXCHANGE_MASTER_SPECIES
+	EXCHANGE_SPECIES
+	SURFACE_MASTER_SPECIES
+	SURFACE_SPECIES
+	MEAN_GAMMAS
+	RATES
+	END
+------------------------------------
+Reading input data for simulation 1.
+------------------------------------
+
+	SOLUTION 0  Initial (for exchange equilibration)
+	    pH 7.0
+	    Ca 1.0
+	    Cl 2.0
+	SOLUTION 1-10  Initial cells
+	    pH 7.0
+	    Ca 1.0
+	    Cl 2.0
+	SOLUTION 11  Influent
+	    pH 7.0
+	    Na 1.0
+	    Cl 1.0
+	EXCHANGE 1-10
+	    X 0.001
+	    equilibrate 1
+	TRANSPORT
+	    cells 10
+	    shifts 10
+	    time_step 1
+	    flow_direction forward
+	    boundary_conditions flux flux
+	    initial_time 0
+	    print_cells 1
+	    print_frequency 1
+	SELECTED_OUTPUT
+WARNING: No cell-lengths were read; length = 1 m assumed.
+WARNING: No dispersivities were read; disp = 0 assumed.
+	    reset false
+	    high_precision true
+	    ph true
+	    molalities Ca+2
+	END
+-------------------------------------------
+Beginning of initial solution calculations.
+-------------------------------------------
+
+Initial solution 0.	Initial (for exchange equilibration)
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                1.000e-03   1.000e-03
+	Cl                2.000e-03   2.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000    
+                                       pe  =   4.000    
+      Specific Conductance (µS/cm,  25°C)  = 255
+                          Density (g/cm³)  =   0.99714
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89092
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.161e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -3.161e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   4
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.075e-07   1.012e-07    -6.968    -6.995    -0.026     -4.08
+   H+              1.057e-07   1.000e-07    -6.976    -7.000    -0.024      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+Ca            1.000e-03
+   Ca+2            1.000e-03   7.906e-04    -3.000    -3.102    -0.102    -18.06
+   CaOH+           1.393e-09   1.312e-09    -8.856    -8.882    -0.026     (0)  
+Cl            2.000e-03
+   Cl-             2.000e-03   1.883e-03    -2.699    -2.725    -0.026     18.10
+   HCl             6.468e-11   6.487e-11   -10.189   -10.188     0.001     (0)  
+H(0)          1.415e-25
+   H2              7.075e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+Initial solution 1.	Initial cells
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                1.000e-03   1.000e-03
+	Cl                2.000e-03   2.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000    
+                                       pe  =   4.000    
+      Specific Conductance (µS/cm,  25°C)  = 255
+                          Density (g/cm³)  =   0.99714
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89092
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.161e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -3.161e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   4 (8 overall)
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.075e-07   1.012e-07    -6.968    -6.995    -0.026     -4.08
+   H+              1.057e-07   1.000e-07    -6.976    -7.000    -0.024      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+Ca            1.000e-03
+   Ca+2            1.000e-03   7.906e-04    -3.000    -3.102    -0.102    -18.06
+   CaOH+           1.393e-09   1.312e-09    -8.856    -8.882    -0.026     (0)  
+Cl            2.000e-03
+   Cl-             2.000e-03   1.883e-03    -2.699    -2.725    -0.026     18.10
+   HCl             6.468e-11   6.487e-11   -10.189   -10.188     0.001     (0)  
+H(0)          1.415e-25
+   H2              7.075e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+Initial solution 11.	Influent
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Cl                1.000e-03   1.000e-03
+	Na                1.000e-03   1.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000    
+                                       pe  =   4.000    
+      Specific Conductance (µS/cm,  25°C)  = 122
+                          Density (g/cm³)  =   0.99708
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89026
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   1.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   1.417e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -1.417e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   3 (11 overall)
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.049e-07   1.012e-07    -6.979    -6.995    -0.016     -4.11
+   H+              1.035e-07   1.000e-07    -6.985    -7.000    -0.015      0.00
+   H2O             5.551e+01   1.000e+00     1.744    -0.000     0.000     18.07
+Cl            1.000e-03
+   Cl-             1.000e-03   9.649e-04    -3.000    -3.016    -0.016     18.07
+   HCl             3.321e-11   3.324e-11   -10.479   -10.478     0.000     (0)  
+H(0)          1.416e-25
+   H2              7.078e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+Na            1.000e-03
+   Na+             1.000e-03   9.652e-04    -3.000    -3.015    -0.015     -1.48
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  Halite           -7.60     -6.03    1.57  NaCl
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+-------------------------------------------------------
+Beginning of initial exchange-composition calculations.
+-------------------------------------------------------
+
+Exchange 1.	
+
+X                1.000e-03 mol
+
+	                               Equiv-    Equivalent      Log 
+	Species             Moles      alents      Fraction     Gamma
+
+	CaX2              5.000e-04   1.000e-03   1.000e+00    -0.102
+
+-----------------------------------------
+Beginning of batch-reaction calculations.
+-----------------------------------------
+
+Reaction step 1.
+
+Using solution 0.	Initial (for exchange equilibration)
+Using exchange 1.	Exchange assemblage after simulation 1.
+
+-----------------------------Exchange composition------------------------------
+
+X                1.000e-03 mol
+
+	                               Equiv-    Equivalent      Log 
+	Species             Moles      alents      Fraction     Gamma
+
+	CaX2              5.000e-04   1.000e-03   1.000e+00    -0.102
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                1.000e-03   1.000e-03
+	Cl                2.000e-03   2.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000      Charge balance
+                                       pe  =   4.000      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm,  25°C)  = 255
+                          Density (g/cm³)  =   0.99714
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89092
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.161e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -3.161e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   0
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.075e-07   1.012e-07    -6.968    -6.995    -0.026     -4.08
+   H+              1.057e-07   1.000e-07    -6.976    -7.000    -0.024      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+Ca            1.000e-03
+   Ca+2            1.000e-03   7.906e-04    -3.000    -3.102    -0.102    -18.06
+   CaOH+           1.393e-09   1.312e-09    -8.856    -8.882    -0.026     (0)  
+Cl            2.000e-03
+   Cl-             2.000e-03   1.883e-03    -2.699    -2.725    -0.026     18.10
+   HCl             6.468e-11   6.487e-11   -10.189   -10.188     0.001     (0)  
+H(0)          1.415e-25
+   H2              7.075e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+------------------------------------
+Beginning of transport calculations.
+------------------------------------
+
+-------------------------------
+Equilibrating initial solutions
+-------------------------------
+
+Using solution 1.	Initial cells
+Using exchange 1.	Exchange assemblage after simulation 1.
+
+-----------------------------Exchange composition------------------------------
+
+X                1.000e-03 mol
+
+	                               Equiv-    Equivalent      Log 
+	Species             Moles      alents      Fraction     Gamma
+
+	CaX2              5.000e-04   1.000e-03   1.000e+00    -0.102
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                1.000e-03   1.000e-03
+	Cl                2.000e-03   2.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000      Charge balance
+                                       pe  =   4.000      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm,  25°C)  = 255
+                          Density (g/cm³)  =   0.99714
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89092
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.161e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -3.161e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   0
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.075e-07   1.012e-07    -6.968    -6.995    -0.026     -4.08
+   H+              1.057e-07   1.000e-07    -6.976    -7.000    -0.024      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+Ca            1.000e-03
+   Ca+2            1.000e-03   7.906e-04    -3.000    -3.102    -0.102    -18.06
+   CaOH+           1.393e-09   1.312e-09    -8.856    -8.882    -0.026     (0)  
+Cl            2.000e-03
+   Cl-             2.000e-03   1.883e-03    -2.699    -2.725    -0.026     18.10
+   HCl             6.468e-11   6.487e-11   -10.189   -10.188     0.001     (0)  
+H(0)          1.415e-25
+   H2              7.075e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+
+Calculating transport: 10 (mobile) cells, 10 shifts, 1 mixruns...
+
+Transport step   1.
+
+Transport step   1. Mixrun   1.
+
+Using mix 1.	
+Using exchange 1.	Exchange assemblage after simulation 1.
+
+Mixture 1.	
+
+	  0.000e+00 Solution 0	Solution after simulation 1.                           
+	  1.000e+00 Solution 1	Solution after simulation 1.                           
+	  3.000e-10 Solution 2	Solution after simulation 1.                           
+
+-----------------------------Exchange composition------------------------------
+
+X                1.000e-03 mol
+
+	                               Equiv-    Equivalent      Log 
+	Species             Moles      alents      Fraction     Gamma
+
+	CaX2              5.000e-04   1.000e-03   1.000e+00    -0.102
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                1.000e-03   1.000e-03
+	Cl                2.000e-03   2.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000      Charge balance
+                                       pe  =   4.000      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm,  25°C)  = 255
+                          Density (g/cm³)  =   0.99714
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89092
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.161e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -3.161e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   0
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.075e-07   1.012e-07    -6.968    -6.995    -0.026     -4.08
+   H+              1.057e-07   1.000e-07    -6.976    -7.000    -0.024      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+Ca            1.000e-03
+   Ca+2            1.000e-03   7.906e-04    -3.000    -3.102    -0.102    -18.06
+   CaOH+           1.393e-09   1.312e-09    -8.856    -8.882    -0.026     (0)  
+Cl            2.000e-03
+   Cl-             2.000e-03   1.883e-03    -2.699    -2.725    -0.026     18.10
+   HCl             6.468e-11   6.487e-11   -10.189   -10.188     0.001     (0)  
+H(0)          1.415e-25
+   H2              7.075e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+Transport step   2.
+
+Transport step   2. Mixrun   1.
+
+Using mix 1.	
+Using exchange 1.	Exchange assemblage after simulation 1.
+
+Mixture 1.	
+
+	  0.000e+00 Solution 0	Solution after simulation 1.                           
+	  1.000e+00 Solution 1	Solution after simulation 1.                           
+	  3.000e-10 Solution 2	Solution after simulation 1.                           
+
+-----------------------------Exchange composition------------------------------
+
+X                1.000e-03 mol
+
+	                               Equiv-    Equivalent      Log 
+	Species             Moles      alents      Fraction     Gamma
+
+	CaX2              5.000e-04   1.000e-03   1.000e+00    -0.102
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                1.000e-03   1.000e-03
+	Cl                2.000e-03   2.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000      Charge balance
+                                       pe  =   4.000      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm,  25°C)  = 255
+                          Density (g/cm³)  =   0.99714
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89092
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.161e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -3.161e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   0
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.075e-07   1.012e-07    -6.968    -6.995    -0.026     -4.08
+   H+              1.057e-07   1.000e-07    -6.976    -7.000    -0.024      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+Ca            1.000e-03
+   Ca+2            1.000e-03   7.906e-04    -3.000    -3.102    -0.102    -18.06
+   CaOH+           1.393e-09   1.312e-09    -8.856    -8.882    -0.026     (0)  
+Cl            2.000e-03
+   Cl-             2.000e-03   1.883e-03    -2.699    -2.725    -0.026     18.10
+   HCl             6.468e-11   6.487e-11   -10.189   -10.188     0.001     (0)  
+H(0)          1.415e-25
+   H2              7.075e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+Transport step   3.
+
+Transport step   3. Mixrun   1.
+
+Using mix 1.	
+Using exchange 1.	Exchange assemblage after simulation 1.
+
+Mixture 1.	
+
+	  0.000e+00 Solution 0	Solution after simulation 1.                           
+	  1.000e+00 Solution 1	Solution after simulation 1.                           
+	  3.000e-10 Solution 2	Solution after simulation 1.                           
+
+-----------------------------Exchange composition------------------------------
+
+X                1.000e-03 mol
+
+	                               Equiv-    Equivalent      Log 
+	Species             Moles      alents      Fraction     Gamma
+
+	CaX2              5.000e-04   1.000e-03   1.000e+00    -0.102
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                1.000e-03   1.000e-03
+	Cl                2.000e-03   2.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000      Charge balance
+                                       pe  =   4.000      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm,  25°C)  = 255
+                          Density (g/cm³)  =   0.99714
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89092
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.161e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -3.161e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   0
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.075e-07   1.012e-07    -6.968    -6.995    -0.026     -4.08
+   H+              1.057e-07   1.000e-07    -6.976    -7.000    -0.024      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+Ca            1.000e-03
+   Ca+2            1.000e-03   7.906e-04    -3.000    -3.102    -0.102    -18.06
+   CaOH+           1.393e-09   1.312e-09    -8.856    -8.882    -0.026     (0)  
+Cl            2.000e-03
+   Cl-             2.000e-03   1.883e-03    -2.699    -2.725    -0.026     18.10
+   HCl             6.468e-11   6.487e-11   -10.189   -10.188     0.001     (0)  
+H(0)          1.415e-25
+   H2              7.075e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+Transport step   4.
+
+Transport step   4. Mixrun   1.
+
+Using mix 1.	
+Using exchange 1.	Exchange assemblage after simulation 1.
+
+Mixture 1.	
+
+	  0.000e+00 Solution 0	Solution after simulation 1.                           
+	  1.000e+00 Solution 1	Solution after simulation 1.                           
+	  3.000e-10 Solution 2	Solution after simulation 1.                           
+
+-----------------------------Exchange composition------------------------------
+
+X                1.000e-03 mol
+
+	                               Equiv-    Equivalent      Log 
+	Species             Moles      alents      Fraction     Gamma
+
+	CaX2              5.000e-04   1.000e-03   1.000e+00    -0.102
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                1.000e-03   1.000e-03
+	Cl                2.000e-03   2.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000      Charge balance
+                                       pe  =   4.000      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm,  25°C)  = 255
+                          Density (g/cm³)  =   0.99714
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89092
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.161e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -3.161e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   0
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.075e-07   1.012e-07    -6.968    -6.995    -0.026     -4.08
+   H+              1.057e-07   1.000e-07    -6.976    -7.000    -0.024      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+Ca            1.000e-03
+   Ca+2            1.000e-03   7.906e-04    -3.000    -3.102    -0.102    -18.06
+   CaOH+           1.393e-09   1.312e-09    -8.856    -8.882    -0.026     (0)  
+Cl            2.000e-03
+   Cl-             2.000e-03   1.883e-03    -2.699    -2.725    -0.026     18.10
+   HCl             6.468e-11   6.487e-11   -10.189   -10.188     0.001     (0)  
+H(0)          1.415e-25
+   H2              7.075e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+Transport step   5.
+
+Transport step   5. Mixrun   1.
+
+Using mix 1.	
+Using exchange 1.	Exchange assemblage after simulation 1.
+
+Mixture 1.	
+
+	  0.000e+00 Solution 0	Solution after simulation 1.                           
+	  1.000e+00 Solution 1	Solution after simulation 1.                           
+	  3.000e-10 Solution 2	Solution after simulation 1.                           
+
+-----------------------------Exchange composition------------------------------
+
+X                1.000e-03 mol
+
+	                               Equiv-    Equivalent      Log 
+	Species             Moles      alents      Fraction     Gamma
+
+	CaX2              5.000e-04   1.000e-03   1.000e+00    -0.102
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                1.000e-03   1.000e-03
+	Cl                2.000e-03   2.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000      Charge balance
+                                       pe  =   4.000      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm,  25°C)  = 255
+                          Density (g/cm³)  =   0.99714
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89092
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.161e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -3.161e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   0
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.075e-07   1.012e-07    -6.968    -6.995    -0.026     -4.08
+   H+              1.057e-07   1.000e-07    -6.976    -7.000    -0.024      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+Ca            1.000e-03
+   Ca+2            1.000e-03   7.906e-04    -3.000    -3.102    -0.102    -18.06
+   CaOH+           1.393e-09   1.312e-09    -8.856    -8.882    -0.026     (0)  
+Cl            2.000e-03
+   Cl-             2.000e-03   1.883e-03    -2.699    -2.725    -0.026     18.10
+   HCl             6.468e-11   6.487e-11   -10.189   -10.188     0.001     (0)  
+H(0)          1.415e-25
+   H2              7.075e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+Transport step   6.
+
+Transport step   6. Mixrun   1.
+
+Using mix 1.	
+Using exchange 1.	Exchange assemblage after simulation 1.
+
+Mixture 1.	
+
+	  0.000e+00 Solution 0	Solution after simulation 1.                           
+	  1.000e+00 Solution 1	Solution after simulation 1.                           
+	  3.000e-10 Solution 2	Solution after simulation 1.                           
+
+-----------------------------Exchange composition------------------------------
+
+X                1.000e-03 mol
+
+	                               Equiv-    Equivalent      Log 
+	Species             Moles      alents      Fraction     Gamma
+
+	CaX2              5.000e-04   1.000e-03   1.000e+00    -0.102
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                1.000e-03   1.000e-03
+	Cl                2.000e-03   2.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000      Charge balance
+                                       pe  =   4.000      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm,  25°C)  = 255
+                          Density (g/cm³)  =   0.99714
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89092
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.161e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -3.161e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   0
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.075e-07   1.012e-07    -6.968    -6.995    -0.026     -4.08
+   H+              1.057e-07   1.000e-07    -6.976    -7.000    -0.024      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+Ca            1.000e-03
+   Ca+2            1.000e-03   7.906e-04    -3.000    -3.102    -0.102    -18.06
+   CaOH+           1.393e-09   1.312e-09    -8.856    -8.882    -0.026     (0)  
+Cl            2.000e-03
+   Cl-             2.000e-03   1.883e-03    -2.699    -2.725    -0.026     18.10
+   HCl             6.468e-11   6.487e-11   -10.189   -10.188     0.001     (0)  
+H(0)          1.415e-25
+   H2              7.075e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+Transport step   7.
+
+Transport step   7. Mixrun   1.
+
+Using mix 1.	
+Using exchange 1.	Exchange assemblage after simulation 1.
+
+Mixture 1.	
+
+	  0.000e+00 Solution 0	Solution after simulation 1.                           
+	  1.000e+00 Solution 1	Solution after simulation 1.                           
+	  3.000e-10 Solution 2	Solution after simulation 1.                           
+
+-----------------------------Exchange composition------------------------------
+
+X                1.000e-03 mol
+
+	                               Equiv-    Equivalent      Log 
+	Species             Moles      alents      Fraction     Gamma
+
+	CaX2              5.000e-04   1.000e-03   1.000e+00    -0.102
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                1.000e-03   1.000e-03
+	Cl                2.000e-03   2.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000      Charge balance
+                                       pe  =   4.000      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm,  25°C)  = 255
+                          Density (g/cm³)  =   0.99714
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89092
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.161e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -3.161e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   0
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.075e-07   1.012e-07    -6.968    -6.995    -0.026     -4.08
+   H+              1.057e-07   1.000e-07    -6.976    -7.000    -0.024      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+Ca            1.000e-03
+   Ca+2            1.000e-03   7.906e-04    -3.000    -3.102    -0.102    -18.06
+   CaOH+           1.393e-09   1.312e-09    -8.856    -8.882    -0.026     (0)  
+Cl            2.000e-03
+   Cl-             2.000e-03   1.883e-03    -2.699    -2.725    -0.026     18.10
+   HCl             6.468e-11   6.487e-11   -10.189   -10.188     0.001     (0)  
+H(0)          1.415e-25
+   H2              7.075e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+Transport step   8.
+
+Transport step   8. Mixrun   1.
+
+Using mix 1.	
+Using exchange 1.	Exchange assemblage after simulation 1.
+
+Mixture 1.	
+
+	  0.000e+00 Solution 0	Solution after simulation 1.                           
+	  1.000e+00 Solution 1	Solution after simulation 1.                           
+	  3.000e-10 Solution 2	Solution after simulation 1.                           
+
+-----------------------------Exchange composition------------------------------
+
+X                1.000e-03 mol
+
+	                               Equiv-    Equivalent      Log 
+	Species             Moles      alents      Fraction     Gamma
+
+	CaX2              5.000e-04   1.000e-03   1.000e+00    -0.102
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                1.000e-03   1.000e-03
+	Cl                2.000e-03   2.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000      Charge balance
+                                       pe  =   4.000      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm,  25°C)  = 255
+                          Density (g/cm³)  =   0.99714
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89092
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.161e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -3.161e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   0
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.075e-07   1.012e-07    -6.968    -6.995    -0.026     -4.08
+   H+              1.057e-07   1.000e-07    -6.976    -7.000    -0.024      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+Ca            1.000e-03
+   Ca+2            1.000e-03   7.906e-04    -3.000    -3.102    -0.102    -18.06
+   CaOH+           1.393e-09   1.312e-09    -8.856    -8.882    -0.026     (0)  
+Cl            2.000e-03
+   Cl-             2.000e-03   1.883e-03    -2.699    -2.725    -0.026     18.10
+   HCl             6.468e-11   6.487e-11   -10.189   -10.188     0.001     (0)  
+H(0)          1.415e-25
+   H2              7.075e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+Transport step   9.
+
+Transport step   9. Mixrun   1.
+
+Using mix 1.	
+Using exchange 1.	Exchange assemblage after simulation 1.
+
+Mixture 1.	
+
+	  0.000e+00 Solution 0	Solution after simulation 1.                           
+	  1.000e+00 Solution 1	Solution after simulation 1.                           
+	  3.000e-10 Solution 2	Solution after simulation 1.                           
+
+-----------------------------Exchange composition------------------------------
+
+X                1.000e-03 mol
+
+	                               Equiv-    Equivalent      Log 
+	Species             Moles      alents      Fraction     Gamma
+
+	CaX2              5.000e-04   1.000e-03   1.000e+00    -0.102
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                1.000e-03   1.000e-03
+	Cl                2.000e-03   2.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000      Charge balance
+                                       pe  =   4.000      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm,  25°C)  = 255
+                          Density (g/cm³)  =   0.99714
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89092
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.161e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -3.161e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   0
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.075e-07   1.012e-07    -6.968    -6.995    -0.026     -4.08
+   H+              1.057e-07   1.000e-07    -6.976    -7.000    -0.024      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+Ca            1.000e-03
+   Ca+2            1.000e-03   7.906e-04    -3.000    -3.102    -0.102    -18.06
+   CaOH+           1.393e-09   1.312e-09    -8.856    -8.882    -0.026     (0)  
+Cl            2.000e-03
+   Cl-             2.000e-03   1.883e-03    -2.699    -2.725    -0.026     18.10
+   HCl             6.468e-11   6.487e-11   -10.189   -10.188     0.001     (0)  
+H(0)          1.415e-25
+   H2              7.075e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+Transport step  10.
+
+Transport step  10. Mixrun   1.
+
+Using mix 1.	
+Using exchange 1.	Exchange assemblage after simulation 1.
+
+Mixture 1.	
+
+	  0.000e+00 Solution 0	Solution after simulation 1.                           
+	  1.000e+00 Solution 1	Solution after simulation 1.                           
+	  3.000e-10 Solution 2	Solution after simulation 1.                           
+
+-----------------------------Exchange composition------------------------------
+
+X                1.000e-03 mol
+
+	                               Equiv-    Equivalent      Log 
+	Species             Moles      alents      Fraction     Gamma
+
+	CaX2              5.000e-04   1.000e-03   1.000e+00    -0.102
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                1.000e-03   1.000e-03
+	Cl                2.000e-03   2.000e-03
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000      Charge balance
+                                       pe  =   4.000      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm,  25°C)  = 255
+                          Density (g/cm³)  =   0.99714
+                               Volume (L)  =   1.00298
+                        Viscosity (mPa s)  =   0.89092
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   3.000e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.161e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -3.161e-09
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -0.00
+                               Iterations  =   0
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.075e-07   1.012e-07    -6.968    -6.995    -0.026     -4.08
+   H+              1.057e-07   1.000e-07    -6.976    -7.000    -0.024      0.00
+   H2O             5.551e+01   9.999e-01     1.744    -0.000     0.000     18.07
+Ca            1.000e-03
+   Ca+2            1.000e-03   7.906e-04    -3.000    -3.102    -0.102    -18.06
+   CaOH+           1.393e-09   1.312e-09    -8.856    -8.882    -0.026     (0)  
+Cl            2.000e-03
+   Cl-             2.000e-03   1.883e-03    -2.699    -2.725    -0.026     18.10
+   HCl             6.468e-11   6.487e-11   -10.189   -10.188     0.001     (0)  
+H(0)          1.415e-25
+   H2              7.075e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+------------------
+End of simulation.
+------------------
+
+------------------------------------
+Reading input data for simulation 2.
+------------------------------------
+
+----------------------------------
+End of Run after 0.007676 Seconds.
+----------------------------------
+

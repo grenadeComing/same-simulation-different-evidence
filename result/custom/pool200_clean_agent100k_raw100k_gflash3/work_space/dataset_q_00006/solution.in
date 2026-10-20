@@ -1,0 +1,34 @@
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    redox     pe
+    units     mmol/kgw
+    C         0.5
+    Mn        1
+    -water    1 # kg
+
+RATES
+    Calcite_diss
+    -start
+    10 k = 0.001
+    20 area = 10.0
+    30 rate = k * area * (1 - SR("Calcite"))
+    40 moles = rate * TIME
+    50 SAVE moles
+    -end
+
+KINETICS 1
+    Calcite_diss
+    -m        1
+    -step     1000 in 100
+
+SELECTED_OUTPUT
+    -file                 solution_results.txt
+    -step
+    -time
+    -totals               C
+    -molalities           Ca+2
+    -kinetics             Calcite_diss
+
+END

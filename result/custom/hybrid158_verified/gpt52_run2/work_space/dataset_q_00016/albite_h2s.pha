@@ -1,0 +1,30 @@
+TITLE Albite kinetics + fixed-pressure H2S(g); track Ba at steps 10 and 70
+
+SOLUTION 1
+    temp 200
+    pH   2 charge
+    units mol/kgw
+    Fe(3) 0.004
+    Fe(2) 0.004
+
+GAS_PHASE 1
+    -fixed_pressure true
+    -pressure 5
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+        -tol 1e-12
+    -steps 10*10
+
+SELECTED_OUTPUT
+    -file selected.csv
+    -reset false
+    -time true
+    -step true
+    -totals Ba
+
+END

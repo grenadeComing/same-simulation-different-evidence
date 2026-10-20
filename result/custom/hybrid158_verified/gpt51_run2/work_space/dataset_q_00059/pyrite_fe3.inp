@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 25
+    pH 7.0 charge
+    pe 4
+    redox pe
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    O2(g)   -0.7  10
+    Pyrite  0.0   0.1
+    Goethite 0.0  0
+    Gypsum   0.0  0
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -molalities Fe+3 Fe+3OH Fe+3(OH)2 Fe+3(OH)3- Fe+3(OH)4- Fe+3Cl+ FeCl+2 FeCl+3 FeCl2+ FeCl3(aq)
+END

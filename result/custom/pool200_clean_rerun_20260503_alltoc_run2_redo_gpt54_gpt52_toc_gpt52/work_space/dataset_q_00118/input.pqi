@@ -1,0 +1,16 @@
+SOLUTION 1
+  pH 7.0 charge
+  temp 25
+  pe 4
+  units mol/kgw
+  water 1
+
+REACTION 1
+  H2SO4 1
+  0.001 0.005 0.01 0.05 0.1
+
+SELECTED_OUTPUT
+  -reset false
+  -pH true
+  -pe true
+END

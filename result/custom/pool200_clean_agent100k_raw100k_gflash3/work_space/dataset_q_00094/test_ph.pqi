@@ -1,0 +1,17 @@
+SOLUTION 1
+    temp 150
+    pH 4
+    units mol/kgw
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+END
+
+SOLUTION 2
+    temp 150
+    pH 10
+    units mol/kgw
+EQUILIBRIUM_PHASES 2
+    Chrysotile 0 10
+    Talc 0 10
+END

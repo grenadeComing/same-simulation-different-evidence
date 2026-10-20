@@ -1,0 +1,18 @@
+TITLE pe for 5 mmol/kgw C(-4) at 15C with fixed gas phase P=1, CH4(g)=0
+SOLUTION 1
+    temp 15
+    pH 7 charge
+    pe 0
+    units mmol/kgw
+    C(-4) 5.0
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    -temperature 15
+    CH4(g) 0
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -pH true
+    -pe true
+END

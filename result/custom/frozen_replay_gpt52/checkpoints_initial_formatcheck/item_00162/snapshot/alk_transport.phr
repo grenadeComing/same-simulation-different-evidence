@@ -1,0 +1,39 @@
+TITLE 1D transport: Ca-Cl initial, Na-Cl inflow, exchange 0.001 mol/cell
+
+SOLUTION 0  Inflow
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10 Initial in cells
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+
+# Equilibrate each cell solution with its exchange assemblage
+EQUILIBRATE 1-10 with EXCHANGE 1-10
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -simulation true
+    -state true
+    -solution true
+    -time true
+    -step true
+    -totals Alkalinity
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -diffusion_coefficient 0
+    -dispersivities 0
+    -correct_disp true
+    -punch_cells 3
+END

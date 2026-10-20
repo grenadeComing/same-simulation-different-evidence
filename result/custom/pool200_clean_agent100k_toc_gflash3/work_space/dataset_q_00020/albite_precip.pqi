@@ -1,0 +1,45 @@
+
+RATES
+Albite_diss
+-start
+10 k = PARM(1)
+20 ssa = PARM(2)
+30 if (M <= 0) then goto 100
+40 sr_albite = SR("Albite")
+50 if (sr_albite > 1) then sr_albite = 1
+60 rate = k * ssa * (M/M0) * (1 - sr_albite)
+70 moles = rate * TIME
+80 SAVE moles
+100 END
+-end
+
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    units mmol/kgw
+    Fe(2) 4
+    Fe(3) 4
+    Cl 100 charge
+
+EQUILIBRIUM_PHASES 1
+    H2S(g) 0.69897 10
+    Quartz 0 0
+    Kaolinite 0 0
+    Pyrite 0 0
+    # I'll also add a way to fix pH if needed, but let's see without it first.
+
+KINETICS 1
+Albite_diss
+    -formula NaAlSi3O8
+    -m 1.0
+    -m0 1.0
+    -parms 10 1.0
+    -steps 1000 in 100
+
+SELECTED_OUTPUT 1
+    -file output_precip.sel
+    -reset false
+    -time true
+    -totals Fe Na S Al Si
+END

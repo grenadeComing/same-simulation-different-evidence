@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    C(-4) 5.0
+    pe 4
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    -temp 15
+    CH4(g) 0.0
+SELECTED_OUTPUT 1
+    -file select.out
+    -pe true
+END

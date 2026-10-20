@@ -1,0 +1,61 @@
+TITLE Sulfuric acid addition to pure water - viscosity calculation
+
+# Initial pure water at pH 7.0
+SOLUTION 1
+    temp      25
+    pH        7.0
+    pe        4
+    units     mol/L
+    water     1  # kg
+
+# Add sulfuric acid in steps: 0.001, 0.005, 0.01, 0.05, 0.1 mol
+REACTION 1
+    H2SO4     1
+    0.001  0.005  0.01  0.05  0.1
+
+SELECTED_OUTPUT
+    -file     sulfuric_acid_viscosity.out
+    -reset    false
+    -step     true
+    -pH       true
+    -temperature true
+    -ionic_strength true
+    -totals   S
+
+USER_PUNCH
+    -headings Step pH Temp_C IonicStrength Viscosity S_total
+    -start
+10  PUNCH STEP_NO
+20  PUNCH -LA("H+")
+30  PUNCH TC
+40  PUNCH MU
+50  REM Calculate viscosity using Mao and Duan (2009) or similar approach
+60  REM Using PHREEQC built-in viscosity calculation
+70  REM Viscosity of water at temperature T (in Celsius)
+80  T = TC
+90  REM Pure water viscosity (mPa.s) - Korson et al. formula
+100 REM log(eta/eta_20) = (20-T)/(T+96) * (1.2364 - 0.001374*(20-T) + 0.00000353*(20-T)^2)
+110 REM At 25C, pure water viscosity = 0.8904 mPa.s
+120 REM Using Jones-Dole equation for electrolyte solutions
+130 REM eta/eta0 = 1 + A*sqrt(I) + B*I
+140 REM For H2SO4: A = 0.0643, B = 0.0300 (approximate)
+150 REM
+160 REM Use PHREEQC's built-in viscosity via SOLN_VOL or similar
+170 REM Actually compute using the Laliberte model or simple approach
+180 REM
+190 REM Water viscosity at 25C
+200 eta0 = 0.8904  # mPa.s at 25C
+210 REM
+220 REM Jones-Dole: eta/eta0 = 1 + A*sqrt(I) + B*I
+230 REM For SO4-2 solutions, use appropriate coefficients
+240 I = MU
+250 REM For H2SO4: A ~ 0.0643, B ~ 0.0300
+260 A_coef = 0.0643
+270 B_coef = 0.0300
+280 eta_rel = 1 + A_coef * SQR(I) + B_coef * I
+290 eta = eta0 * eta_rel
+300 PUNCH eta
+310 PUNCH TOT("S")
+    -end
+
+END

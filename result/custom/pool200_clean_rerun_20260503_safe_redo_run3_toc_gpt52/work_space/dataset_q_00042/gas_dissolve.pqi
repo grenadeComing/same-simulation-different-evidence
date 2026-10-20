@@ -1,0 +1,28 @@
+TITLE 100C Ca solution + calcite/gypsum/aragonite + gas phase (25C)
+SOLUTION 1
+    temp 100
+    units mmol/kgw
+    Ca 50 charge
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+    Aragonite 0 0
+    Gypsum 0 0
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 25
+    CO2(g) 1
+    CH4(g) 5
+    H2S(g) 10
+
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+USER_PUNCH
+    -headings dCO2 dCH4 dH2S
+10 PUNCH GAS("CO2(g)")
+20 PUNCH GAS("CH4(g)")
+30 PUNCH GAS("H2S(g)")
+END

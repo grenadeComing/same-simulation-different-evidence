@@ -1,0 +1,99 @@
+{
+  "index": 150,
+  "row_index": 149,
+  "task_type": "mcq",
+  "truth": "A",
+  "prediction": null,
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": null,
+  "item_id": 150,
+  "condition": "toc",
+  "status": "max_steps",
+  "calls": 13,
+  "estimated_cost_usd": 0.46694199999999997,
+  "input_tokens": 263800,
+  "output_tokens": 378,
+  "read_paths": [
+    {
+      "path": "selected.txt",
+      "ok": true,
+      "start_line": null,
+      "end_line": null
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "6400",
+      "end_line": "6465"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "7400",
+      "end_line": "7485"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "5400",
+      "end_line": "5480"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "4300",
+      "end_line": "4375"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "6000",
+      "end_line": "6065"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "6080",
+      "end_line": "6125"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "6048",
+      "end_line": "6068"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "5968",
+      "end_line": "6015"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "4890",
+      "end_line": "4960"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "4500",
+      "end_line": "4565"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "4700",
+      "end_line": "4760"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "5140",
+      "end_line": "5225"
+    }
+  ],
+  "checkpoint_fingerprint": "2f42f861cc5f4b86808c6ab65910b8339a7428978f99ff02d3e7df23a6f39f5c",
+  "remaining_steps": 13
+}

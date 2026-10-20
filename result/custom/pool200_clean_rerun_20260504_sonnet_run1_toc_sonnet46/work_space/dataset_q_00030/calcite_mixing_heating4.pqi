@@ -1,0 +1,26 @@
+# Simulation: Mix two solutions 1:1
+# The mixed solution has 25 mmol/kg C and 25 mmol/kg Ca (after 1:1 mixing)
+# But question says 50 mmol/kg each - perhaps they mean the mixed solution
+# Let's try: mixed solution with 50 mmol/kg C AND 50 mmol/kg Ca
+# Then heat from 20 to 200°C in 10 steps
+
+SOLUTION 1
+    temp      20
+    pH        7
+    units     mmol/kgw
+    C(4)      50
+    Ca        50
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0   0
+
+REACTION_TEMPERATURE 1
+    20  38  56  74  92  110  128  146  164  182  200
+
+SELECTED_OUTPUT
+    -file   calcite_mixing_heating4.sel
+    -reset  false
+    -temperature    true
+    -equilibrium_phases  Calcite
+
+END

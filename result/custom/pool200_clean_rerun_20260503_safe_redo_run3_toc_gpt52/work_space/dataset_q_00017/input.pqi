@@ -1,0 +1,32 @@
+TITLE Albite kinetic dissolution with H2S gas, pH 2, 200C
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    pe 0
+    units mmol/kgw
+    Fe(3) 4
+    Fe(2) 4
+    -water 1
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -m0 1
+        -m  1
+        -parms 1.0 10
+        -steps 10 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -time true
+    -step true
+
+USER_PUNCH
+    -head step time Albite_m Albite_dissolved
+10 PUNCH STEP_NO, TOTAL_TIME, KIN("Albite"), (1 - KIN("Albite"))

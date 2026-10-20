@@ -1,0 +1,2 @@
+        step	        cell	       NaX_m	      CaX2_m	
+  0.0000e+00	  0.0000e+00	

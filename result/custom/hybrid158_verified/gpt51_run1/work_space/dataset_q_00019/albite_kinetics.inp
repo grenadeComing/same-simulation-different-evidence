@@ -1,0 +1,38 @@
+TITLE Albite kinetics with gas H2S
+SOLUTION 1
+    temp 200
+    pH 2 charge
+    Fe(3) 4e-3
+    Fe(2) 4e-3
+    units mol/kgw
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 5
+    H2S(g) 5
+
+KINETICS 1
+    Albite
+        -formula NaAlSi3O8 1
+        -m0 1.0
+        -m        1.0
+        -parms 10 1.0
+        -steps 1000 100
+RATES
+    Albite
+    -start
+10  k = PARM(1)
+20  ssa = PARM(2)
+30  rate = k * ssa
+40  moles = rate * TIME
+50  SAVE moles
+    -end
+
+SELECTED_OUTPUT
+    -file albite_kinetics.sel
+    -reset false
+    -time true
+    -step true
+    -si true
+    -molalities SiO2(aq) H4SiO4 H3SiO4- H2SiO4-2 HSiO3- H2SiO3 SiO3-2 Si(OH)4 SiO2OH- HSiO2O2-
+END

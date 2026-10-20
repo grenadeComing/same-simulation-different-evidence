@@ -1,0 +1,11 @@
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    C(-4) 5.0
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1.0
+    -temp 15
+    CH4(g) 0
+    H2O(g) 0
+END

@@ -1,0 +1,19 @@
+TITLE Equilibrium oxidation of pyrite in pure water with fixed PO2; allow goethite and gypsum
+SOLUTION 1 Pure water initial pH 7
+    temp 25
+    pH 7 charge
+    units mol/kgw
+    -water 1
+EQUILIBRIUM_PHASES 1
+    O2(g)   -0.7  10
+    Pyrite  0     0.1
+    Goethite 0   0
+    Gypsum   0   0
+SELECTED_OUTPUT
+    -file pyrite_ox.sel
+    -reset false
+    -pH true
+    -pe true
+    -totals Fe S(6) S(-2)
+    -molalities Fe+2 Fe+3
+END

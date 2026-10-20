@@ -1,0 +1,22 @@
+TITLE Equilibrate pure water with fixed-pressure gas phase at 150 C
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    pe 4
+    redox pe
+    units mol/kgw
+    water 1
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -temperature 150
+    CO2(g) 0.4 10
+    CH4(g) 0.4 10
+    NH3(g) 0.2 5
+SELECTED_OUTPUT
+    -file selected.csv
+    -reset false
+    -high_precision true
+    -totals C
+    -molalities CO2 HCO3- CO3-2 CH4
+END

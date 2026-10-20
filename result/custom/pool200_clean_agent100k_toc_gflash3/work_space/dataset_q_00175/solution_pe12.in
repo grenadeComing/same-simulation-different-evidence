@@ -1,0 +1,14 @@
+SOLUTION 1
+    temp 25
+    units mg/l
+    Ba 2.0
+    S(6) 15.0
+    pe 12
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+SELECTED_OUTPUT 1
+    -file output_pe12.sel
+    -temperature true
+    -ionic_strength true
+    -step true
+END

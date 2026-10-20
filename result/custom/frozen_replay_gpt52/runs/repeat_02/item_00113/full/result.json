@@ -1,0 +1,27 @@
+{
+  "index": 113,
+  "row_index": 112,
+  "task_type": "mcq",
+  "truth": "C",
+  "prediction": "C",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": true,
+  "item_id": 113,
+  "condition": "full",
+  "status": "submitted",
+  "calls": 2,
+  "estimated_cost_usd": 0.02747675,
+  "input_tokens": 15229,
+  "output_tokens": 59,
+  "read_paths": [
+    {
+      "path": "selected_output_1.sel",
+      "ok": true,
+      "start_line": "1",
+      "end_line": "20"
+    }
+  ],
+  "checkpoint_fingerprint": "717b91eb94037dc43cf377b5b29a37726c2552c7f2f97d597a7619a9bd69c172",
+  "remaining_steps": 20
+}

@@ -1,0 +1,10 @@
+SOLUTION 1
+    temp 25
+    pH 7.0
+    pe 4
+    redox pe
+    units mol/kgw
+    water 1
+REACTION 1
+    H2SO4 0.001
+END

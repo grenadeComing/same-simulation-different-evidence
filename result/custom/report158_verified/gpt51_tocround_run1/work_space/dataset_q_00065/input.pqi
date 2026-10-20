@@ -1,0 +1,23 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    pe 4
+    units mol/kgw
+
+EQUILIBRIUM_PHASES 1
+    N2(g) 0 0
+
+GAS_PHASE 1
+    -fixed_pressure true
+    -pressure 1
+    -temperature 150
+    -volume 1
+    CH4(g) 10
+    CO2(g) 10
+    NH3(g) 5
+
+SELECTED_OUTPUT
+    -file selected.out
+    -saturation_indices N2(g)
+    -high_precision true
+END

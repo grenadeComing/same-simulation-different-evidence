@@ -1,0 +1,62 @@
+# Simulation: Add sulfuric acid sequentially to pure water at pH 7.0
+# Each step adds to the PREVIOUS solution
+# Steps: 0.001, 0.005, 0.01, 0.05, 0.1 moles of H2SO4
+
+SOLUTION 1  Pure water at pH 7.0
+    pH      7.0
+    temp    25.0
+    units   mol/L
+
+# Step 1: Add 0.001 mol H2SO4
+REACTION 1
+    H2SO4   1.0
+    0.001 moles
+
+SAVE SOLUTION 1
+END
+
+# Step 2: Add 0.005 mol H2SO4 to previous solution
+USE SOLUTION 1
+REACTION 2
+    H2SO4   1.0
+    0.005 moles
+
+SAVE SOLUTION 1
+END
+
+# Step 3: Add 0.01 mol H2SO4 to previous solution
+USE SOLUTION 1
+REACTION 3
+    H2SO4   1.0
+    0.01 moles
+
+SAVE SOLUTION 1
+END
+
+# Step 4: Add 0.05 mol H2SO4 to previous solution
+USE SOLUTION 1
+REACTION 4
+    H2SO4   1.0
+    0.05 moles
+
+SAVE SOLUTION 1
+END
+
+# Step 5: Add 0.1 mol H2SO4 to previous solution
+USE SOLUTION 1
+REACTION 5
+    H2SO4   1.0
+    0.1 moles
+
+SELECTED_OUTPUT
+    -file   sulfuric_output5.sel
+    -pH     true
+    -pe     true
+    -totals S(6)
+
+SAVE SOLUTION 1
+END
+
+# Print final solution
+USE SOLUTION 1
+END

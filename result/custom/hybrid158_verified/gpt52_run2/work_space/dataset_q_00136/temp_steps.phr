@@ -1,0 +1,20 @@
+SOLUTION 1
+    temp 25
+    units mg/L
+    pH 7 charge
+    Ba 2.0
+    S(6) 15.0
+
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+
+SELECTED_OUTPUT
+    -reset false
+    -high_precision true
+    -totals Ba S(6)
+
+USER_PUNCH
+    -headings step temp Ba_molality
+10  PUNCH STEP_NO, TC, MOL("Ba+2")
+
+END

@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 200
+    pH 2
+    pe 4
+    Cu 0.01
+    Ba 0.005
+    units mol/kgw
+
+KINETICS 1
+    Calcite
+        -m0 1.0
+        -m  1.0
+        -parms 1.0 1.0
+        -steps 10 0.01 second
+
+END

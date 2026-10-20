@@ -1,0 +1,25 @@
+SOLUTION 0
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+    units mmol/kgw
+SOLUTION 1-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+    units mmol/kgw
+EXCHANGE 1-10
+    -equilibrate 1
+    X 0.001
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -lengths 1
+    -punch_frequency 5
+SELECTED_OUTPUT
+    -file output.sel
+    -reset false
+    -step true
+    -molalities CaX2
+    -high_precision true
+END

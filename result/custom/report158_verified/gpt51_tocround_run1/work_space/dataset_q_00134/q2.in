@@ -1,0 +1,18 @@
+SOLUTION 1
+    temp 25
+    units mg/L
+    Ba 2.0
+    S(6) 15.0
+
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+
+SELECTED_OUTPUT
+    -file sel_sc.out
+    -reset false
+    -step true
+    -temperature true
+    -si true
+    -ionic_strength true
+    -conductivity true
+END

@@ -1,0 +1,19 @@
+SOLUTION 1
+    temp 20
+    pH 7 charge
+    C(4) 50 mmol/kgw
+
+SOLUTION 2
+    temp 20
+    pH 7 charge
+    Ca 50 mmol/kgw
+    C(4) 0
+
+MIX 1
+    1 0.5
+    2 0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+
+END

@@ -1,0 +1,7 @@
+SOLUTION 1
+    temp 15
+    units mmol/kgw
+    C(-4) 5.0
+USER_PRINT
+    10 PRINT "DENSITY: ", RHO
+END

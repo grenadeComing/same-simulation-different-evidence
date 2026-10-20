@@ -1,0 +1,7 @@
+SOLUTION 1
+    temp 25
+    water 1
+REACTION 1
+    H2SO4 1.0
+    0.1
+END

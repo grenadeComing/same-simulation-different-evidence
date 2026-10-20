@@ -1,0 +1,13 @@
+SOLUTION 1 pH 7.5, 100 mg/L Ca, 250 mg/L Alkalinity as CaCO3
+    temp      25
+    units     mg/L
+    pH        7.5
+    Ca        100
+    Alkalinity 250 as CaCO3
+
+SELECTED_OUTPUT
+    -file     total_carbon.out
+    -reset    false
+    -totals   C
+
+END

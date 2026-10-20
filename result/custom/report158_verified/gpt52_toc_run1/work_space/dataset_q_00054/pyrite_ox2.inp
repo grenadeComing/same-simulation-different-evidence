@@ -1,0 +1,21 @@
+TITLE Pyrite oxidation with O2(g) fixed; allow pyrite to oxidize (REACTION), precipitate goethite/gypsum
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    units mol/kgw
+    water 1
+EQUILIBRIUM_PHASES 1
+    Goethite 0 0
+    Gypsum 0 0
+GAS_PHASE 1
+    -fixed_pressure true
+    -pressure 1
+    O2(g) -0.7
+REACTION 1
+    Pyrite 1
+    0.1
+SELECTED_OUTPUT
+    -file selected2.txt
+    -reset false
+    -pH true
+END

@@ -1,0 +1,12 @@
+SOLUTION 1
+    temp 100
+    pH 7
+    water 1
+END
+EQUILIBRIUM_PHASES 1
+    CH4(g) -0.50515  # log10(5/16)
+END
+SELECTED_OUTPUT
+    -reset false
+    -m CH4
+END

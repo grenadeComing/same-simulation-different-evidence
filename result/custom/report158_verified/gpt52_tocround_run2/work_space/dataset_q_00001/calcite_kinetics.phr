@@ -1,0 +1,35 @@
+TITLE Calcite kinetic dissolution, hydrothermal solution
+SOLUTION 1
+    temp 100
+    pH   5
+    pe   4
+    units mmol/kgw
+    C(4) 0.5
+    Mn   1
+    -water 1
+
+RATES
+Calcite_simple
+-start
+10 k = PARM(2)
+20 sa = PARM(1)
+30 moles = k*sa*TIME
+40 if (moles > M) then moles = M
+50 SAVE moles
+-end
+
+KINETICS 1
+    Calcite_simple
+        -formula CaCO3 1
+        -m0 1
+        -m  1
+        -parms 10.0 0.001
+        -steps 10 in 100
+        -tol 1e-12
+
+SELECTED_OUTPUT
+    -reset false
+    -time true
+    -step true
+    -pH true
+END

@@ -1,0 +1,15 @@
+SOLUTION 1
+    units mg/L
+    temp 25
+    pH 7 charge
+    Ba 2.0
+    S(6) 15.0
+REACTION_TEMPERATURE 1
+    25 95 in 5
+SELECTED_OUTPUT
+    -file selected.csv
+    -reset false
+USER_PUNCH
+    -headings step temp spec_cond
+10 PUNCH STEP_NO, TC, SC
+END

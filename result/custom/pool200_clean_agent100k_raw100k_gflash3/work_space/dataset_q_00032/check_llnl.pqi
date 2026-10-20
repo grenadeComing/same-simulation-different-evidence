@@ -1,0 +1,8 @@
+DATABASE llnl.dat
+SOLUTION 1
+    Ca 1
+    C(4) 1
+END
+REACTION_TEMPERATURE 1
+    160
+END

@@ -1,0 +1,22 @@
+PHASES
+Fix_pH
+H+ = H+
+log_k 0
+END
+
+SOLUTION 1
+    temp 100
+    pH 5
+    units mmol/kgw
+    Ba 100
+    Cl 200  # Initial guess for charge balance
+    water 1 kg
+
+EQUILIBRIUM_PHASES 1
+    Rhodochrosite 0 10
+    Talc 0 10
+    Sepiolite 0 10
+    Sepiolite(d) 0 10
+    Pb(OH)2 0 10
+    Fix_pH -5 HCl 10
+END

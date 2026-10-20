@@ -1,0 +1,13 @@
+PHASES
+Fix_pH
+H+ = H+
+log_k 0
+END
+
+SOLUTION 1
+temp 100
+EQUILIBRIUM_PHASES 1
+Halite 0 100
+Epsomite 0 100
+Fix_pH -3.0 HCl 100
+END

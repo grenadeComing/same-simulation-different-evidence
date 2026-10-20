@@ -1,0 +1,37 @@
+SOLUTION 0
+    pH 7.0
+    temp 25
+    units mmol/kgw
+    Na 1.0
+    Cl 1.0
+SOLUTION 1-10
+    pH 7.0
+    temp 25
+    units mmol/kgw
+    Ca 1.0
+    Cl 2.0
+EXCHANGE_MASTER_SPECIES
+    X X-
+EXCHANGE_SPECIES
+    X- = X-
+    Na+ + X- = NaX
+    Ca+2 + 2 X- = CaX2
+EXCHANGE 1-10
+    X 0.001
+EQUILIBRIUM_PHASES 1-10
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -simulation true
+    -state true
+    -solution true
+    -distance true
+    -time true
+USER_PUNCH
+    -headings NaX
+10 PUNCH MOL("NaX")
+END

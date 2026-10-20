@@ -1,0 +1,18 @@
+SOLUTION 1 River Water
+    pH 6.0
+    temp 26
+    units mg/l
+    Cl 10
+SOLUTION 2 Seawater
+    pH 8.1
+    temp 26
+    units mg/l
+    Cl 19000
+MIX 1
+    1 0.7
+    2 0.3
+SELECTED_OUTPUT
+    -file solution.sel
+    -activities H+
+    -pH
+END

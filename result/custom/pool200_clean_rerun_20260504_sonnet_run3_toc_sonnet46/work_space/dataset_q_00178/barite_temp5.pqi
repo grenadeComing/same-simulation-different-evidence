@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp      25
+    units     mg/L
+    Ba        2.0
+    S(6)      15.0   as SO4
+
+REACTION_TEMPERATURE 1
+    25.0  40.0  55.0  70.0  85.0  95.0
+
+SELECTED_OUTPUT
+    -file     barite_temp5.sel
+    -reset    false
+    -temperature  true
+    -si       Barite
+
+END

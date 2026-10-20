@@ -1,0 +1,15 @@
+SOLUTION 1
+    units     mg/L
+    temp      25
+    pH        7 charge
+    Ba        2.0
+    S(6)      15.0
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+SELECTED_OUTPUT
+    -file sel.tsv
+    -reset false
+USER_PUNCH
+    -headings step temp ionic_strength
+10 PUNCH STEP_NO, TK-273.15, MU
+END

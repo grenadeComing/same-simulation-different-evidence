@@ -1,0 +1,19 @@
+TITLE Viscosity question
+SOLUTION 1
+    temp 25
+    pH 7 charge
+    units mol/kgw
+
+REACTION 1
+    H2SO4 1
+    0.001 in 5 steps
+
+SELECTED_OUTPUT
+    -file q.sel
+    -step true
+    -reset false
+    -totals H(0)
+USER_PUNCH
+    -headings viscosity
+    10 PUNCH VISCOUS
+END

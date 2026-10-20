@@ -1,0 +1,23 @@
+TITLE Calcite kinetic dissolution; SI(Aragonite) at step 47
+SOLUTION 1
+    temp 100
+    pH   5
+    pe   4
+    units mmol/kgw
+    C(4) 0.5
+    Mn   1
+    -water 1
+
+KINETICS 1
+    Calcite
+        -m0 1
+        -m  1
+        -parms 10.0 0.001
+    -steps 10 in 100
+
+SELECTED_OUTPUT
+    -reset false
+    -time true
+    -step true
+    -si Aragonite
+END

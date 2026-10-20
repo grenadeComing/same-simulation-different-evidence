@@ -1,0 +1,26 @@
+PHASES
+Fix_pH
+    H+ = H+
+    log_k 0
+
+SOLUTION 1
+    temp 25
+    pH 5
+    pe 4
+    units mmol/kgw
+    Ba 100
+    water 1
+
+EQUILIBRIUM_PHASES 1
+    Talc 0 10
+    Rhodochrosite 0 10
+    Pb(OH)2 0 10
+    Fix_pH -5.0 HCl 10.0
+
+SELECTED_OUTPUT 1
+    -file output.sel
+    -reset false
+USER_PUNCH 1
+    -headings Mn3_moles
+    10 PUNCH TOT("Mn(3)")
+END

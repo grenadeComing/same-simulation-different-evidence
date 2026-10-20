@@ -1,0 +1,39 @@
+TITLE 1D transport, exchange in all cells
+
+SOLUTION 0 Infilling
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+SOLUTION 1-10 Initial
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1-10
+    X 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -flow_direction forward
+    -boundary_conditions constant constant
+    -initial_time 0
+    -time_step 1
+    -lengths 1
+    -dispersivities 0
+    -diffusion_coefficient 0
+    -punch_cells 1
+
+SELECTED_OUTPUT
+    -file selected.csv
+    -reset false
+    -high_precision true
+    -simulation true
+    -state true
+    -step true
+
+USER_PUNCH
+    -headings NaX
+10 PUNCH MOL("NaX")

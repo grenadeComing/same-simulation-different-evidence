@@ -1,0 +1,20 @@
+TITLE 100C Ba solution pH 5 equilibrate with talc/rhodochrosite/sepiolite(d)/Pb(OH)2
+SOLUTION 1
+    temp 100
+    pH 5 charge
+    units mmol/kgw
+    Ba 100
+    water 1
+EQUILIBRIUM_PHASES 1
+    Talc 0 10
+    Rhodochrosite 0 10
+    Sepiolite 0 10
+    Sepiolite(d) 0 10
+    Pb(OH)2 0 10
+SELECTED_OUTPUT
+    -file sel.txt
+    -reset false
+USER_PUNCH
+    -headings Talc_m Rhodo_m Sep_m Sepd_m PbOH2_m
+10 PUNCH EQUI("Talc"), EQUI("Rhodochrosite"), EQUI("Sepiolite"), EQUI("Sepiolite(d)"), EQUI("Pb(OH)2")
+END

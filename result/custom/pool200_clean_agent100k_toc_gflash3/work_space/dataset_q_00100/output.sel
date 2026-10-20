@@ -1,0 +1,2 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	      charge	      m_Ca+2	     m_HCO3-	     m_CO3-2	       m_OH-	        m_H+	   m_CaHCO3+	     m_CaOH+	
+           1	      i_soln	           1	         -99	         -99	         -99	         7.5	           4	-5.43109e-06	  2.4441e-03	  4.9069e-03	  9.4623e-06	  3.5080e-07	  3.4272e-08	  3.2532e-05	  9.8839e-09	

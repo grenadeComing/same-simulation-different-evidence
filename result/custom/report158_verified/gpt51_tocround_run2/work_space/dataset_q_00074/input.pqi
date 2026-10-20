@@ -1,0 +1,12 @@
+SOLUTION 1 Pure water pH 7 150C
+EQUILIBRIUM_PHASES 1
+    Chrysotile 0 10
+    Talc 0 10
+END
+SELECTED_OUTPUT
+    -file selout.txt
+    -reset false
+USER_PUNCH
+    -headings sc
+    10 PUNCH SC
+END

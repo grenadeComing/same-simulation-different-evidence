@@ -1,0 +1,26 @@
+SOLUTION 1
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+EXCHANGE 1
+    X- 0.001
+    -equilibrate 1
+
+SELECTED_OUTPUT
+    -file exch_eq.txt
+    -reset false
+    -exchange 1
+    -totals Ca Na
+    -si no
+    -equilibrium_phases no
+    -molalities no
+    -activities no
+    -kinetic_reactants no
+    -solid_solutions no
+    -gases no
+    -isotopes no
+    -calculate_values no
+    -ionic_strength no
+    -percent_error no
+    -water no

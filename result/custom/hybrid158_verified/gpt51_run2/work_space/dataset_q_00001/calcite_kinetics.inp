@@ -1,0 +1,36 @@
+SOLUTION 1
+    temp      100
+    pH        5.0    charge
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1
+
+KINETICS 1
+    Calcite  1.0
+    -m0          1.0
+    -steps       1000 in 100 steps
+
+RATES
+Calcite
+-start
+10 REM Kinetic dissolution of calcite
+20 k = 0.001
+30 ssa = 10.0
+40 rate_mol = k * ssa
+50 moles = rate_mol * TIME
+60 SAVE moles
+-end
+
+USER_PUNCH
+    -head   step   time   pH
+    -start
+10 PUNCH STEP_NO, TOTAL_TIME, -LA("H+" )
+    -end
+
+SELECTED_OUTPUT
+    -file   calcite_kinetics.sel
+    -reset  false
+    -user_punch true
+
+END

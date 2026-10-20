@@ -1,0 +1,33 @@
+SOLUTION 1
+    temp 25
+    pH 7.0
+    units mol/kgw
+    water 1.0
+
+EQUILIBRIUM_PHASES 1
+    O2(g) -0.67 10.0
+    Goethite 0.0 0.0
+    Gypsum 0.0 0.0
+    Pyrite 0.0 0.1
+
+SELECTED_OUTPUT 1
+    -file selected_67.out
+    -si Pyrite
+END
+
+SOLUTION 2
+    temp 25
+    pH 7.0
+    units mol/kgw
+    water 1.0
+
+EQUILIBRIUM_PHASES 2
+    O2(g) -0.677 10.0
+    Goethite 0.0 0.0
+    Gypsum 0.0 0.0
+    Pyrite 0.0 0.1
+
+SELECTED_OUTPUT 2
+    -file selected_677.out
+    -si Pyrite
+END

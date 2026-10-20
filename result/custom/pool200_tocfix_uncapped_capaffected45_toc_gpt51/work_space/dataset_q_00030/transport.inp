@@ -1,0 +1,45 @@
+SOLUTION 0-10
+    pH 7.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 0
+    pH 7.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 0-10
+    X- 0.001
+    -equilibrate 1
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -flow_direction forward
+    -lengths 1
+    -dispersivities 0
+    -boundary_conditions flux flux
+    -print_cells 1
+    -print_frequency 1
+    -punch_cells 1
+    -punch_frequency 1
+
+SELECTED_OUTPUT
+    -file selout.csv
+    -reset false
+    -simulation true
+    -state true
+    -time true
+    -step true
+    -totals Na Ca Cl
+
+USER_PUNCH
+    -head Simulation State Cell Time Step Na Ca Cl SC
+    10 PUNCH SIM_NO
+    20 PUNCH -STATE
+    30 PUNCH CELL_NO
+    40 PUNCH TOT("Na")
+    50 PUNCH TOT("Ca")
+    60 PUNCH TOT("Cl")
+    70 PUNCH SC

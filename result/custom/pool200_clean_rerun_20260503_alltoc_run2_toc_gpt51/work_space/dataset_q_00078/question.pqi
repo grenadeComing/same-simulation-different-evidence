@@ -1,0 +1,27 @@
+SOLUTION 1
+    temp 150
+    pH 7 charge
+    pe 4
+    units mol/kgw
+
+GAS_PHASE 1
+    -temperature 150
+    -fixed_pressure
+    -pressure 1
+    CH4(g) 10
+    CO2(g) 10
+    NH3(g) 5
+
+SELECTED_OUTPUT
+    -file selected.out
+    -reset false
+    -si CO2(g)
+    -si CH4(g)
+    -si NH3(g)
+    -si H2O(g)
+    -si O2(g)
+    -pH true
+    -pe true
+    -totals C N
+    -molalities CO2 CH4 NH3
+END

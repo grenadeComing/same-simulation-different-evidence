@@ -1,0 +1,18 @@
+SOLUTION 1
+    units mmol/kgw
+    temp 200
+    Ca 25
+    C(4) 25
+    Na 25
+    Cl 50
+REACTION_PRESSURE 1
+    1.0
+EQUILIBRIUM_PHASES 1
+    Calcite 0 1
+SELECTED_OUTPUT 1
+    -file press1.sel
+    -high_precision true
+USER_PUNCH
+    -headings logK
+    10 PUNCH LK_PHASE("Calcite")
+END

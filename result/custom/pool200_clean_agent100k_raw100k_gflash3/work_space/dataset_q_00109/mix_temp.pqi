@@ -1,0 +1,14 @@
+SOLUTION 1
+    units mmol/kgw
+    pH 6.0
+    Cl 10
+    temp 15
+SOLUTION 2
+    units mmol/kgw
+    pH 8.1
+    Cl 19000
+    temp 15
+MIX 1
+    1 0.7
+    2 0.3
+END

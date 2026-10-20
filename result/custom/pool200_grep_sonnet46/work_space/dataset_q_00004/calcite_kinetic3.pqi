@@ -1,0 +1,27 @@
+TITLE Kinetic dissolution of Calcite - built-in rate with parms 10.0 and 0.001
+
+SOLUTION 1
+    temp      100
+    pH        5
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1.0
+
+KINETICS 1
+Calcite
+    -tol    1e-8
+    -m0     1.0
+    -m      1.0
+    -parms  10.0  0.001
+    -steps  1000 in 100
+
+SELECTED_OUTPUT
+    -file   calcite_kinetic3.sel
+    -reset  false
+    -time   true
+    -pH     true
+    -si     Calcite
+    -kinetic_reactants  Calcite
+
+END

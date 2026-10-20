@@ -1,0 +1,27 @@
+SOLUTION 1 River
+    temp    25
+    pH      6.0
+    units   mg/L
+    Cl      10
+
+SOLUTION 2 Seawater
+    temp    25
+    units   mmol/kgw
+    Na      469.0
+    K       10.2
+    Mg      52.8
+    Ca      10.3
+    Cl      545.0
+    S(6)    28.2
+    C(4)    2.3
+    B       0.8
+    Sr      0.09
+    F       0.07
+    Br      0.83
+    pH      8.1
+
+MIX 1
+    1 0.7
+    2 0.3
+
+END

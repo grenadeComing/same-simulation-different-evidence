@@ -1,0 +1,36 @@
+SOLUTION 1
+    temp      200
+    pH        2.0
+    pe        4.0
+    units     mmol/kgw
+    Cu        10.0
+    Ba        5.0
+
+RATES
+Calcite
+-start
+10 si_cc = SI("Calcite")
+20 if (M <= 0 and si_cc < 0) then goto 200
+30 k1 = 10 * ACT("H+")
+40 rate = PARM(1) * k1 * (1 - 10^si_cc)
+50 moles = rate * TIME
+60 if (moles > M) then moles = M
+200 SAVE moles
+-end
+
+KINETICS 1
+Calcite
+    -tol   1e-8
+    -m0    1.0
+    -m     1.0
+    -parms 1.0   0.6
+    -step  1000 in 100
+
+SELECTED_OUTPUT
+    -file   calcite_kinetics2.out
+    -reset  false
+    -step   true
+    -time   true
+    -molalities CO2
+
+END

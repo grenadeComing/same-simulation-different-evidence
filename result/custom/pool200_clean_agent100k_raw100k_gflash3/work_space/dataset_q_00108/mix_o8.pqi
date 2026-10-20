@@ -1,0 +1,14 @@
+SOLUTION 1 River
+    pH 6.0
+    units mg/L
+    Cl 10
+    O(0) 8.0
+SOLUTION 2 Seawater
+    pH 8.1
+    units mg/L
+    Cl 19000
+    O(0) 8.0
+MIX 1
+    1 0.7
+    2 0.3
+END

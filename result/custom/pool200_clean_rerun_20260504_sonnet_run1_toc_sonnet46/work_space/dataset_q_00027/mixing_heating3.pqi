@@ -1,0 +1,39 @@
+# Simulation: Mix two solutions 1:1, then heat from 20°C to 200°C in 10 steps
+# Solution 1: 50 mmol/kg dissolved inorganic carbon (DIC) - using Na2CO3 to get carbonate
+# Solution 2: 50 mmol/kg calcium - using CaCl2
+# Account for calcite precipitation/dissolution
+
+SOLUTION 1  # 50 mmol/kg DIC as Na2CO3
+    temp      20
+    pH        11.3  charge
+    units     mmol/kgw
+    Na        100
+    C(4)      50
+
+SOLUTION 2  # 50 mmol/kg Ca as CaCl2
+    temp      20
+    pH        7  charge
+    units     mmol/kgw
+    Ca        50
+    Cl        100
+
+# Mix solutions 1:1 with calcite equilibrium and heat
+MIX 1
+    1   0.5
+    2   0.5
+
+EQUILIBRIUM_PHASES 1
+    Calcite   0   10
+
+REACTION_TEMPERATURE 1
+    20  200  in  10  steps
+
+SELECTED_OUTPUT
+    -file     mixing_heating3.sel
+    -reset    false
+    -temperature  true
+    -pH           true
+    -si           Calcite
+    -equilibrium_phases  Calcite
+
+END

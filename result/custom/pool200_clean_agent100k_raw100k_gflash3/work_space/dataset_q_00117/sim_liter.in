@@ -1,0 +1,12 @@
+SOLUTION 1
+    units mol/kgw
+    pH 7.0
+    temp 25
+    water 0.99704
+REACTION 1
+    H2SO4 1.0
+    0.1 moles
+SELECTED_OUTPUT
+    -file output_liter.sel
+    -mu
+END

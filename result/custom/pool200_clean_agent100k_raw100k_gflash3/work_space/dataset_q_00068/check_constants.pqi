@@ -1,0 +1,8 @@
+SELECTED_OUTPUT
+    -file constants.txt
+PHASES
+O2(g)
+END
+RUN_CELLS
+    -cells 1
+END

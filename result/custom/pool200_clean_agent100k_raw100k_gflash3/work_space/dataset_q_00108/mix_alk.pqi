@@ -1,0 +1,24 @@
+SOLUTION 1 River
+    pH 6.0
+    units mg/L
+    Cl 10
+    Alkalinity 0.5 unit meq/L
+EQUILIBRIUM_PHASES 1
+    O2(g) -0.677 10
+SAVE SOLUTION 1
+END
+
+SOLUTION 2 Seawater
+    pH 8.1
+    units mg/L
+    Cl 19000
+    Alkalinity 2.3 unit meq/L
+EQUILIBRIUM_PHASES 2
+    O2(g) -0.677 10
+SAVE SOLUTION 2
+END
+
+MIX 1
+    1 0.7
+    2 0.3
+END

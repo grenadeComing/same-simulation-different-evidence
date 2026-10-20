@@ -1,0 +1,16 @@
+SOLUTION 1
+    temp 100
+    pH 7 charge
+    units mmol/kgw
+    Ca 50
+EQUILIBRIUM_PHASES 1
+    Calcite 0 100
+    Gypsum 0 100
+    Aragonite 0 100
+    CO2(g) 0 100
+    CH4(g) 0.69897 100
+    H2S(g) 1 100
+SELECTED_OUTPUT
+    -file species_check.sel
+    -molalities CaHS+ CaS Ca(HS)2 Ca(SO4)2-2 Ca(CO3)2-2 CaOH2 Ca(OH)2
+END

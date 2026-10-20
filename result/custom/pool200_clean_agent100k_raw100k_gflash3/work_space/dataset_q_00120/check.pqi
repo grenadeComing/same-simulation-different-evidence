@@ -1,0 +1,10 @@
+SOLUTION 1
+    pH 7.0
+    temp 25
+REACTION 1
+    H2SO4 1.0
+    0.1 moles
+SELECTED_OUTPUT 1
+    -file out2.sel
+    -activities H+
+END

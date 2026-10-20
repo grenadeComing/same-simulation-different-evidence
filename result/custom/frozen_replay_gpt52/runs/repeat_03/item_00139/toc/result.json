@@ -1,0 +1,33 @@
+{
+  "index": 139,
+  "row_index": 138,
+  "task_type": "mcq",
+  "truth": "A",
+  "prediction": "A",
+  "tolerance": null,
+  "tolerance_mode": null,
+  "is_correct": true,
+  "item_id": 139,
+  "condition": "toc",
+  "status": "submitted",
+  "calls": 3,
+  "estimated_cost_usd": 0.022176,
+  "input_tokens": 11984,
+  "output_tokens": 86,
+  "read_paths": [
+    {
+      "path": "co2_delta.sel",
+      "ok": true,
+      "start_line": "1",
+      "end_line": "20"
+    },
+    {
+      "path": "result.out",
+      "ok": true,
+      "start_line": "95",
+      "end_line": "112"
+    }
+  ],
+  "checkpoint_fingerprint": "1f5d7e98e8883706dfab145c256d28b27b36b8a6c4d867ce4a6612c3b9439341",
+  "remaining_steps": 20
+}

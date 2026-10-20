@@ -1,0 +1,17 @@
+TITLE Pure water at pH 7.0 equilibrated with 10 moles of gypsum
+
+SOLUTION 1
+    pH      7.0
+    temp    25.0
+    units   mol/L
+    water   1.0  # kg
+
+EQUILIBRIUM_PHASES 1
+    Gypsum   0.0   10.0
+
+SELECTED_OUTPUT
+    -file           gypsum_equilibrium.sel
+    -reset          false
+    -molalities     H2
+
+END

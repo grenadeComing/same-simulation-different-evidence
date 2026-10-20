@@ -1,0 +1,19 @@
+TITLE Ba-SO4 solution, heat 25 to 95 C in 5 steps; report specific conductance at step 4
+SOLUTION 1
+    units mg/L
+    temp 25
+    pH 7 charge
+    Ba 2.0
+    S(6) 15.0
+REACTION_TEMPERATURE 1
+    25 95 in 5 steps
+SELECTED_OUTPUT
+    -file selected.txt
+    -reset false
+    -temperature true
+    -step true
+    -totals Ba S(6)
+USER_PUNCH
+    -headings SpecificConductance_uS_per_cm
+    10 PUNCH SC
+END

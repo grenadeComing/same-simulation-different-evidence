@@ -1,0 +1,117 @@
+SOLUTION_RAW                 1 
+  -temp                      200
+  -pressure                  15.363976862169
+  -potential                 0
+  -total_h                   111.03066742869
+  -total_o                   55.512076664816
+  -cb                        1.0796086376756e-13
+  -density                   0.86604881587421
+  -viscosity                 0.13525286277608
+  -viscos_0                  0.13458814160221
+  -totals
+    Cl                       0.026514099058652
+    Fe(2)                    0.0040000000000001
+    Fe(3)                    0.0040000000000753
+    H(0)                     4.6380351970308e-16
+  -pH                        2
+  -pe                        4
+  -mu                        0.032396152402275
+  -ah2o                      0.99920590217047
+  -mass_water                1
+  -soln_vol                  1.1564000797671
+  -total_alkalinity          -0.014514099058685
+  -activities
+    Cl                       -1.6965930362742
+    E                        -4
+    Fe(2)                    -2.822677252907
+    Fe(3)                    -5.7883328956973
+    H(0)                     -15.631456340336
+    O(0)                     -25.538373051377
+  -gammas
+KINETICS_RAW                 1 
+  # KINETICS_MODIFY candidate identifiers #
+  -step_divide               1
+  -rk                        4
+  -bad_step_max              500
+  -use_cvode                 0
+  -cvode_steps               100
+  -cvode_order               5
+  -component                 Albite
+      # KINETICS_MODIFY candidate identifiers #
+      -tol                   1e-08
+      -m                     1
+      -m0                    1
+      -namecoef
+        Albite               1
+      -d_params
+        1 10 
+      # KineticsComp workspace variables #
+      -moles                 0
+      -initial_moles         0
+  -equal_increments           1
+  -count                     100
+  -steps             
+    1000 
+  # KINETICS workspace variables #
+  -totals                    
+EQUILIBRIUM_PHASES_RAW       1 
+  # EXCHANGE_MODIFY candidates; use new_def=true #
+  -new_def                   0
+  -component                 Fix_Fe2
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -add_formula           FeCl2
+      -si                    -2.3979
+      -moles                 10
+      -force_equality        1
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                -2.3979
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -component                 Fix_Fe3
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -add_formula           FeCl3
+      -si                    -2.3979
+      -moles                 10
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                -2.3979
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -component                 Fix_pH
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -add_formula           HCl
+      -si                    -2
+      -moles                 10
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                -2
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -component                 H2S(g)
+      # EQUILIBRIUM_PHASES_MODIFY candidate identifiers #
+      -si                    0.69897
+      -moles                 10
+      -force_equality        0
+      -dissolve_only         0
+      -precipitate_only      0
+      # PPassemblage workspace variables #
+      -si_org                0.69897
+      -delta                 0
+      -initial_moles         0
+      -totals                
+  -eltList                   # List of all elements in phases and alternate reactions
+    Cl                       6
+    Fe                       4
+    H                        4
+    S                        1
+  # PPassemblage workspace variables #
+  -assemblage_totals

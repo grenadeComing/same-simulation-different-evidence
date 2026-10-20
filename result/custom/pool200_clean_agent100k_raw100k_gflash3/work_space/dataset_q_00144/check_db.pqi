@@ -1,0 +1,7 @@
+SELECTED_OUTPUT
+    -file species.sel
+    -reset false
+    -reaction true
+END
+SOLUTION 1
+END

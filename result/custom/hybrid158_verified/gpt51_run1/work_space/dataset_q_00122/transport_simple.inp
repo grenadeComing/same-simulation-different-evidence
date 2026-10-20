@@ -1,0 +1,28 @@
+TITLE Simplified exchange transport (single cell) to reproduce known example
+
+SOLUTION 1
+    pH 7.0
+    temp 25
+    Na 1.0
+    Cl 1.0
+END
+
+EXCHANGE 1
+    X- 0.001
+END
+
+EXCHANGE_MASTER_SPECIES
+    X-  X-  0  X-  35.45
+EXCHANGE_SPECIES
+    Na+ + X- = NaX
+        log_k 0.0
+END
+
+EQUILIBRIUM_PHASES 1
+    Fix_pH 7.0 NaOH 10
+END
+
+SELECTED_OUTPUT
+    -file simple.sel
+    -totals Na
+END

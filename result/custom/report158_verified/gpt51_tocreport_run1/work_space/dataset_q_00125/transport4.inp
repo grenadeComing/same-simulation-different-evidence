@@ -1,0 +1,46 @@
+SOLUTION 0-10
+    pH 7.0
+    temp 25.0
+    Ca 1.0
+    Cl 2.0
+
+SOLUTION 11
+    pH 7.0
+    temp 25.0
+    Na 1.0
+    Cl 1.0
+
+EXCHANGE 1-10
+    X 0.001
+
+USE solution 0
+USE exchange 1
+EQUILIBRIUM_PHASES 1
+    CaX2 0 0
+END
+
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -boundary_conditions flux closed
+    -flow_direction forward
+    -initial_time 0
+    -print_frequency 1
+    -punch_frequency 1
+    -correct_disp false
+    -diffc 0
+    -dispersivities 0
+    -stagnant 0
+    -multi_D false
+
+SELECTED_OUTPUT
+    -file selout.txt
+    -step true
+    -molalities Ca+2 Na+
+
+PRINT
+    -reset false
+    -status true
+    -selected_output true

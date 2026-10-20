@@ -1,0 +1,18 @@
+TITLE Mixing DIC and Ca solutions 1:1 then heating with calcite eq
+SOLUTION 1 DIC
+    temp 20
+    units mmol/kgw
+    C(4) 50 charge
+SOLUTION 2 Ca
+    temp 20
+    units mmol/kgw
+    Ca 50
+MIX 1
+    1 0.5
+    2 0.5
+USE MIX 1
+EQUILIBRIUM_PHASES 1
+    Calcite 0 0
+REACTION_TEMPERATURE 1
+    20 200 in 10
+END

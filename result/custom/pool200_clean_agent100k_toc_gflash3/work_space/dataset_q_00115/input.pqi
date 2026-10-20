@@ -1,0 +1,15 @@
+
+SOLUTION 1 River
+    pH 6.0
+    units mg/L
+    Cl 10
+    Na 1 charge
+SOLUTION 2 Seawater
+    pH 8.1
+    units mg/L
+    Cl 19000
+    Na 1 charge
+MIX 1
+    1 0.3
+    2 0.7
+END

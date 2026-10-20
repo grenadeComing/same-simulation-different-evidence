@@ -1,0 +1,3 @@
+         sim	       state	        soln	      dist_x	        time	        step	          pH	          pe	        temp	     si_Talc	si_Rhodochrosite	si_Sepiolite	si_Sepiolite(d)	  si_Pb(OH)2	
+           1	      i_soln	           1	         -99	         -99	         -99	           5	           4	     100.000	    -77.1160	    -21.8610	    -60.2091	    -64.6855	     -9.6884	
+           1	       react	           1	         -99	           0	           1	     5.78628	    -0.27831	     100.000	      0.0000	      0.0000	     -4.3381	     -8.8145	     -0.0000	

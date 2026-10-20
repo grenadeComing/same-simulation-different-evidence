@@ -1,0 +1,19 @@
+SOLUTION 1
+    temp      150
+    pH        7
+    units     mol/L
+    water     1  # kg
+
+EQUILIBRIUM_PHASES 1
+    Chrysotile   0   10
+    Talc         0   10
+
+SELECTED_OUTPUT
+    -file     chrysotile_talc.out
+    -reset    false
+    -pH       true
+    -temp     true
+    -si       Chrysotile Talc
+    -totals   Mg Si
+
+END

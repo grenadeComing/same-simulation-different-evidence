@@ -1,0 +1,33 @@
+TITLE Calcite kinetic dissolution, hydrothermal, ask
+SOLUTION 1
+    temp      100
+    pH        5    charge
+    pe        4
+    units     mmol/kgw
+    C(4)      0.5
+    Mn        1
+    -water    1 # kg
+KINETICS 1
+    Calcite
+        -formula   CaCO3 1
+        -m0        1
+        -parms    10.0 0.001
+        -steps    10*10 90*11
+RATES
+Calcite
+-start
+10 REM: parms: specific surface area (SSA), rate constant k
+20 SSA = PARM(1)
+30 k   = PARM(2)
+40 rate = k * SSA
+50 moles = rate * TIME
+60 SAVE moles
+-end
+SELECTED_OUTPUT
+    -reset false
+    -time               true
+    -si                 Aragonite
+USER_PUNCH
+    -headings step
+    10 PUNCH STEP_NO
+END

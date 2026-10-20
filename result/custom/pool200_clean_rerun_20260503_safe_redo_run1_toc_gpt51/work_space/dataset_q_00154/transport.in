@@ -1,0 +1,31 @@
+TITLE Viscosity transport problem
+SOLUTION 0
+    pH 7 charge
+    Na 1
+    Cl 1
+SOLUTION 1-10
+    pH 7 charge
+    Ca 1
+    Cl 2
+EXCHANGE 1-10
+    X- 0.001
+SELECTED_OUTPUT
+    -file sel.out
+    -reset false
+    -time true
+    -totals Na Ca
+USER_PUNCH
+    -head step visco
+    10 PUNCH STEP_NO, VISCO
+TRANSPORT
+    -cells 10
+    -shifts 10
+    -time_step 1
+    -lengths 1
+    -flow_direction forward
+    -boundary_conditions flux flux
+    -print_cells 1
+    -print_frequency 1
+PRINT
+    -reset false
+END
