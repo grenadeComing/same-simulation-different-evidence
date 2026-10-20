@@ -1,6 +1,6 @@
 # Same Simulation, Different Evidence
 
-Code, data, and run outputs for **Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy** ([arXiv:2610.26836](https://arxiv.org/abs/2610.26836)).
+Code, data, and run outputs for **Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy** ([arXiv:2610.26836](https://arxiv.org/abs/2610.26836)). The verified items and per-item predictions are also on Hugging Face: [grenadeComing/same-simulation-different-evidence](https://huggingface.co/datasets/grenadeComing/same-simulation-different-evidence).
 
 An agent harness can paste a long tool output into the context (inline) or save it to a file that the agent reads on demand (retrieval). We study where retrieval costs accuracy with PHREEQC, a deterministic geochemistry simulator, on 158 execution-verified multiple-choice items:
 
